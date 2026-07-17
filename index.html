@@ -92,6 +92,16 @@
             font-size: 0.9rem;
             color: #6c757d;
         }
+
+        /* Stil för AI-chatten när den aktiveras */
+        #robotel-chat {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #eef5ff;
+            border: 1px solid #b6d4fe;
+            border-radius: 6px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -130,11 +140,47 @@
             <p>[Klistra in din engelska text till manifestet här...]</p>
         </section>
 
+        <!-- CHATT-RUTA (Dold som standard) -->
+        <div id="robotel-chat" style="display: none;">
+            <h3>Interaktiv AI-assistent (Robotel)</h3>
+            <p>Har du frågor om manifestet? Ställ dina frågor till AI-modellen.</p>
+            <!-- Din länk/knapp till Cloudflare-chatten läggs här -->
+            <a href="https://theworldmanifesto.svenyngerstedt2.workers.dev/" target="_blank" style="display:inline-block; padding:10px 20px; background:var(--accent-color); color:#fff; text-decoration:none; border-radius:4px; font-weight:bold;">Starta Robotel AI</a>
+        </div>
+
         <footer>
             <p>© Världsmanifestet – Alla rättigheter förbehållna.</p>
         </footer>
 
     </div>
+
+    <!-- SMART DETEKTERINGSSKRIPT (Ligger precis före </body>) -->
+    <script>
+      async function testCloudflareConnection() {
+        const controller = new AbortController();
+        // Sätt en klocka på max 2.5 sekunder
+        const timeoutId = setTimeout(() => controller.abort(), 2500);
+
+        try {
+          // Testar om Cloudflare-anslutningen fungerar
+          const response = await fetch('https://theworldmanifesto.svenyngerstedt2.workers.dev/', {
+            method: 'HEAD',
+            mode: 'no-cors',
+            signal: controller.signal
+          });
+
+          // Om anslutningen gick igenom (Väst): Visa chatt-rutan!
+          document.getElementById('robotel-chat').style.display = 'block';
+        } catch (error) {
+          // Om anslutningen spärras (t.ex. Kina / GFW):
+          // Chatten förblir dold tyst utan att störa sidan.
+          console.log('Sidan körs i rent textläge.');
+        }
+      }
+
+      // Kör testet så fort sidan har laddats klart
+      window.addEventListener('DOMContentLoaded', testCloudflareConnection);
+    </script>
 
 </body>
 </html>
