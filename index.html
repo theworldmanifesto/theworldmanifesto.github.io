@@ -159,27 +159,20 @@
     <script>
       async function testCloudflareConnection() {
         const controller = new AbortController();
-        // Sätt en klocka på max 2.5 sekunder
         const timeoutId = setTimeout(() => controller.abort(), 2500);
 
         try {
-          // Testar om Cloudflare-anslutningen fungerar
-          const response = await fetch('https://robotel-gemini-live.svenyngerstedt2.workers.dev/', {
-            method: 'HEAD',
-            mode: 'no-cors',
+          await fetch('https://robotel-gemini-live.svenyngerstedt2.workers.dev/ping', {
+            method: 'GET',
             signal: controller.signal
           });
 
-          // Om anslutningen gick igenom (Väst): Visa chatt-rutan!
           document.getElementById('robotel-chat').style.display = 'block';
         } catch (error) {
-          // Om anslutningen spärras (t.ex. Kina / GFW):
-          // Chatten förblir dold tyst utan att störa sidan.
           console.log('Sidan körs i rent textläge.');
         }
       }
 
-      // Kör testet så fort sidan har laddats klart
       window.addEventListener('DOMContentLoaded', testCloudflareConnection);
     </script>
 
