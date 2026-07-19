@@ -64,19 +64,24 @@
                 <img src="https://raw.githubusercontent.com/theworldmanifesto/theworldmanifesto.github.io/f836ed686d73627fa53296dc066bd8f93ad081d2/Freedom%20Staircase.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
             </div>
 
-           <!-- Flaggor som fungerar som länkar -->
-<div style="font-size: 32px; margin-bottom: 10px;">
-    <a href="EN.html" style="text-decoration: none;">🇬🇧</a> 
-    <a href="CN.html" style="text-decoration: none;">🇨🇳</a> 
-    <a href="SE.html" style="text-decoration: none;">🇸🇪</a>
-</div>
+<!-- Flexbox-container som linjerar flaggor och text perfekt -->
+<div style="max-width: 450px; margin: 0 auto 25px auto; font-family: Georgia, serif;">
+    
+    <!-- Raden med flaggor -->
+    <div style="display: flex; justify-content: space-between; font-size: 32px; margin-bottom: 5px; padding: 0 40px;">
+        <div style="flex: 1; text-align: center;"><a href="EN.html" style="text-decoration: none;">🇬🇧</a></div>
+        <div style="flex: 1; text-align: center;"><a href="CN.html" style="text-decoration: none;">🇨🇳</a></div>
+        <div style="flex: 1; text-align: center;"><a href="SE.html" style="text-decoration: none;">🇸🇪</a></div>
+    </div>
 
-            <!-- Språklänkar -->
-            <div style="font-size: 18px; color: #666; margin-bottom: 15px;">
-                | &nbsp; <a href="EN" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; 
-                | &nbsp; <a href="CN" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; 
-                | &nbsp; <a href="SE" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |
-            </div>
+    <!-- Raden med textlänkar -->
+    <div style="display: flex; justify-content: space-between; font-size: 18px; color: #666;">
+        <div style="flex: 1; text-align: center;">| &nbsp; <a href="EN.html" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; |</div>
+        <div style="flex: 1; text-align: center;">| &nbsp; <a href="CN.html" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; |</div>
+        <div style="flex: 1; text-align: center;">| &nbsp; <a href="SE.html" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |</div>
+    </div>
+
+</div>
 
             <!-- Fler språk -->
             <div style="font-size: 18px; color: #666;">
