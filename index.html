@@ -84,9 +84,31 @@
 </div>
 
             <!-- Fler språk -->
-            <div style="font-size: 18px; color: #666;">
-                | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
-            </div>
+<div style="font-size: 18px; color: #666;">
+    | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
+</div>
+
+<!-- Container för din Cloudflare-grej (dold som standard) -->
+<div id="cloudflare-section" style="display: none; text-align: center; margin-top: 20px;">
+    <!-- Klistra in din faktiska Cloudflare-kod/widget HÄR -->
+    <!-- Exempel: <script src="https://challenges.cloudflare.com/..."></script> -->
+    <p style="font-size: 14px; color: #666;">Cloudflare skyddad anslutning</p>
+</div>
+
+<script>
+    try {
+        // Kontrollera besökarens lokala tidszon i webbläsaren
+        const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        
+        // Om tidszonen INTE är Kina (Asia/Shanghai), visa Cloudflare-sektionen
+        if (userTimeZone !== 'Asia/Shanghai' && userTimeZone !== 'Asia/Chongqing' && userTimeZone !== 'Asia/Urumqi') {
+            document.getElementById('cloudflare-section').style.display = 'block';
+        }
+    } catch (e) {
+        // Om webbläsaren är gammal eller blockerar kontrollen, visa den för säkerhets skull inte i Kina
+        document.getElementById('cloudflare-section').style.display = 'block';
+    }
+</script>
         </main>
 
         <!-- Sidfot längst ner -->
