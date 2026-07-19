@@ -88,25 +88,23 @@
     | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
 </div>
 
-<!-- Container för din Cloudflare-grej (dold som standard) -->
-<div id="cloudflare-section" style="display: none; text-align: center; margin-top: 20px;">
-    <!-- Klistra in din faktiska Cloudflare-kod/widget HÄR -->
-    <iframe src="https://spread-the-word.svenyngerstedt2.workers.dev/slogans" style="width:100%;height:430px;border:none;border-radius:16px;"></iframe>
-    <p style="font-size: 14px; color: #666;">Cloudflare skyddad anslutning</p>
+<!-- Container för din externa grej (helt anonymt namn och dold som standard) -->
+<div id="extra-content" style="display: none; text-align: center; margin-top: 20px;">
+    <!-- HÄR klistrar du in din faktiska Cloudflare-kod/skript -->
 </div>
 
 <script>
     try {
-        // Kontrollera besökarens lokala tidszon i webbläsaren
-        const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        // Kollar webbläsarens tidszon lokalt
+        const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
         
-        // Om tidszonen INTE är Kina (Asia/Shanghai), visa Cloudflare-sektionen
-        if (userTimeZone !== 'Asia/Shanghai' && userTimeZone !== 'Asia/Chongqing' && userTimeZone !== 'Asia/Urumqi') {
-            document.getElementById('cloudflare-section').style.display = 'block';
+        // Om besökaren INTE är i Kinas tidszoner, aktivera sektionen
+        if (tz !== 'Asia/Shanghai' && tz !== 'Asia/Chongqing' && tz !== 'Asia/Urumqi') {
+            document.getElementById('extra-content').style.display = 'block';
         }
     } catch (e) {
-        // Om webbläsaren är gammal eller blockerar kontrollen, visa den för säkerhets skull inte i Kina
-        document.getElementById('cloudflare-section').style.display = 'block';
+        // Fallback om webbläsaren blockerar tidszonskollen
+        document.getElementById('extra-content').style.display = 'block';
     }
 </script>
         </main>
