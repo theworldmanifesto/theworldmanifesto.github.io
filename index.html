@@ -8,7 +8,7 @@
         /* All design styrs lokalt för att klara brandväggar */
         body {
             font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            line-height: 1.25; /* Behagligt radavstånd för läsning */
+            line-height: 1.25;
             color: #1a1a1a;
             background-color: #fcfcfc;
             margin: 0;
@@ -19,72 +19,81 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
-        }
-
-        header {
-            text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-family: Georgia, serif;
-            font-size: 36px; /* Exakt storlek enligt önskemål */
-            font-weight: normal;
-            color: #111;
-            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 85vh;
+            justify-content: space-between;
         }
 
         main {
-            font-size: 18px; /* Tydlig och läsvänlig storlek för boktext */
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-            text-align: justify; /* Valfritt: ger raka marginaler som i en bok */
+            text-align: center;
         }
 
         footer {
-            margin-top: 50px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+            margin-top: 60px;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+
+        .webmaster {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .webmaster a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .copyright {
             font-size: 14px;
             color: #666;
-            text-align: center;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header>
-            <h1>The World Manifesto</h1>
-<img src="https://raw.githubusercontent.com/theworldmanifesto/theworldmanifesto.github.io/f836ed686d73627fa53296dc066bd8f93ad081d2/Freedom%20Staircase.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
-            <!-- Flaggorna samlade och centrerade -->
-<div style="text-align: center; font-size: 32px; margin-top: 20px; margin-bottom: 10px;">
-    🇬🇧 🇨🇳 🇸🇪
-</div>
-
-<!-- Textlänkarna med raka streck emellan -->
-<div style="text-align: center; font-family: Georgia, serif; font-size: 18px; color: #666;">
-    | &nbsp; <a href="EN.html" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; 
-    | &nbsp; <a href="CN.html" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; 
-    | &nbsp; <a href="SE.html" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |
-</div>
-<div style="text-align: center; font-family: Georgia, serif; font-size: 18px; color: #666; margin-top: 15px;">
-    | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
-</div>
-        </header>
-
+        
         <main>
-            <!-- HÄR KLISTRAR VI IN DIN TEXT -->
-            <p>Här kan vi lägga in ditt manifest. Om du har texten redo är det bara att skicka över det första stycket eller kapitlet, så formaterar jag in det i koden åt dig med rätt HTML-taggar.</p>
+            <!-- Titel -->
+            <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 30px;">The World Manifesto</h1>
+
+            <!-- Bild i halva sin storlek -->
+            <div style="margin-bottom: 25px;">
+                <img src="https://raw.githubusercontent.com/theworldmanifesto/theworldmanifesto.github.io/f836ed686d73627fa53296dc066bd8f93ad081d2/Freedom%20Staircase.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
+            </div>
+
+            <!-- Flaggor -->
+            <div style="font-size: 32px; margin-bottom: 10px;">
+                🇬🇧 🇨🇳 🇸🇪
+            </div>
+
+            <!-- Språklänkar -->
+            <div style="font-size: 18px; color: #666; margin-bottom: 15px;">
+                | &nbsp; <a href="EN" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; 
+                | &nbsp; <a href="CN" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; 
+                | &nbsp; <a href="SE" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |
+            </div>
+
+            <!-- Fler språk -->
+            <div style="font-size: 18px; color: #666;">
+                | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
+            </div>
         </main>
 
+        <!-- Sidfot längst ner -->
         <footer>
-            <p>© 2026 The World Manifesto.</p>
+            <!-- Nästlängst ned -->
+            <div class="webmaster">
+                <a href="mailto:theworldmanifesto@gmail.com">E-mail webbmaster</a>
+            </div>
+            <!-- Allra längst ned -->
+            <div class="copyright">
+                The World Manifesto &nbsp; &nbsp; – &nbsp; &nbsp; Published 2026
+            </div>
         </footer>
+
     </div>
 
 </body>
