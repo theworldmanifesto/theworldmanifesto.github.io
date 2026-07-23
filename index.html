@@ -134,7 +134,7 @@
             <!-- Titel -->
             <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
 
-            <!-- Slogan visas automatiskt här under rubriken (med ID som matchar skriptet) -->
+            <!-- Slogan visas automatiskt här under rubriken -->
             <div class="slogan-box" id="slogans-box"></div>
 
             <!-- Bild i halva sin storlek -->
@@ -142,23 +142,11 @@
                 <img src="https://raw.githubusercontent.com/theworldmanifesto/theworldmanifesto.github.io/f836ed686d73627fa53296dc066bd8f93ad081d2/Freedom%20Staircase.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
             </div>
 
-            <!-- Flexbox-container som linjerar flaggor och text perfekt -->
-            <div style="max-width: 450px; margin: 0 auto 25px auto; font-family: Georgia, serif;">
-                
-                <!-- Raden med flaggor -->
-                <div style="display: flex; justify-content: space-between; font-size: 32px; margin-bottom: 5px; padding: 0 40px;">
-                    <div style="flex: 1; text-align: center;"><a href="EN.html" style="text-decoration: none;">🇬🇧</a></div>
-                    <div style="flex: 1; text-align: center;"><a href="ZH.html" style="text-decoration: none;">🇨🇳</a></div>
-                    <div style="flex: 1; text-align: center;"><a href="SV.html" style="text-decoration: none;">🇸🇪</a></div>
-                </div>
-
-                <!-- Raden med textlänkar -->
-                <div style="display: flex; justify-content: space-between; font-size: 18px; color: #666;">
-                    <div style="flex: 1; text-align: center;">| &nbsp; <a href="EN.html" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; |</div>
-                    <div style="flex: 1; text-align: center;">| &nbsp; <a href="ZH.html" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; |</div>
-                    <div style="flex: 1; text-align: center;">| &nbsp; <a href="SV.html" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |</div>
-                </div>
-
+            <!-- Endast textlänkar för språken -->
+            <div style="display: flex; justify-content: space-between; font-size: 18px; color: #666; max-width: 450px; margin: 0 auto 25px auto; font-family: Georgia, serif;">
+                <div style="flex: 1; text-align: center;">| &nbsp; <a href="EN.html" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; |</div>
+                <div style="flex: 1; text-align: center;">| &nbsp; <a href="CN.html" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; |</div>
+                <div style="flex: 1; text-align: center;">| &nbsp; <a href="SE.html" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |</div>
             </div>
 
             <!-- Fler språk -->
@@ -179,7 +167,7 @@
 
     </div>
 
-    <!-- Skript som slumpar fram EN slogan från JSON-filen -->
+    <!-- Skript som hanterar både arrayer och objekt med index-nycklar -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -187,16 +175,19 @@
 
             fetch('world_manifesto_slogans.json')
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Kunde inte läsa in JSON-filen');
-                    }
+                    if (!response.ok) throw new Error('Kunde inte läsa in JSON');
                     return response.json();
                 })
                 .then(data => {
-                    const slogans = data[currentLang] || data['SV'] || data['SE'] || data['EN'] || [];
+                    const raw = data[currentLang] || data['SV'] || data['SE'] || data['EN'];
+                    // Klarar både ["a","b"] och {"0":"a","1":"b"}
+                    const slogans = Array.isArray(raw) ? raw : (raw ? Object.values(raw) : []);
+
                     if (slogans.length > 0) {
                         const randomIndex = Math.floor(Math.random() * slogans.length);
                         document.getElementById('slogans-box').innerHTML = '”' + slogans[randomIndex] + '”';
+                    } else {
+                        console.error('Inga slogans hittade för', currentLang);
                     }
                 })
                 .catch(err => console.error('Fel vid laddning av slogans:', err));
