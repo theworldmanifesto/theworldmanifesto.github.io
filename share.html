@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotes - The World Manifesto</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #f9f9f9; color: #222; }
+    h1 { text-align: center; }
+    .controls { text-align: center; margin-bottom: 30px; }
+    select { padding: 8px 12px; font-size: 1rem; border-radius: 5px; }
+    .quote-card { background: #fff; border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 8px; position: relative; }
+    .quote-num { font-weight: bold; color: #0066cc; margin-bottom: 5px; }
+    .quote-text { font-size: 1.1rem; line-height: 1.5; }
+    .copy-btn { margin-top: 10px; background: #eee; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+    .copy-btn:hover { background: #ccc; }
+  </style>
+</head>
+<body>
 
+  <h1>💬 Quotes & Manifesto Excerpts</h1>
+  
+  <div class="controls">
+    <label for="lang-select"><b>Välj språk / Choose Language: </b></label>
+    <select id="lang-select" onchange="loadQuotes(this.value)">
+      <!-- Fylls på automatiskt av JS -->
+    </select>
+  </div>
+
+  <div id="quotes-list">Laddar citat...</div>
+
+  <script>
+    let allQuotes = {};
+
+    fetch('world_manifesto_quotes.json')
+      .then(res => res.json())
+      .then(data => {
+        allQuotes = data;
+        const select = document.getElementById('lang-select');
+        
+        // Fyll språk-dropdown med alla 44 språk
+        Object.keys(data).forEach(lang => {
+          const opt = document.createElement('option');
+          opt.value = lang;
+          opt.textContent = lang;
+          if (lang === 'SV') opt.selected = true;
+          select.appendChild(opt);
+        });
+
+        loadQuotes('SV');
+      });
+
+    function loadQuotes(lang) {
+      const container = document.getElementById('quotes-list');
+      container.innerHTML = '';
+      const quotes = allQuotes[lang] || [];
+
+      quotes.forEach((text, index) => {
+        const card = document.createElement('div');
+        card.className = 'quote-card';
+        card.innerHTML = `
+          <div class="quote-num">#${index}</div>
+          <div class="quote-text">${text}</div>
+          <button class="copy-btn" onclick="navigator.clipboard.writeText('${text.replace(/'/g, "\\'")}')">📋 Kopiera citat</button>
+        `;
+        container.appendChild(card);
+      });
+    }
+  </script>
+
+</body>
+</html>
