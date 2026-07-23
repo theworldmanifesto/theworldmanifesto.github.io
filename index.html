@@ -109,6 +109,28 @@
             </script>
         </main>
 
+// LADDAR SLOGAN (world_manifesto_slogans.json)
+<div id="slogan-container" style="text-align: center; padding: 20px; font-style: italic; font-size: 1.2rem;">
+  <p id="slogan-text">Laddar slogan...</p>
+</div>
+
+<script>
+  // Hämta vald språkkod från URL eller standard till 'EN' / 'SV'
+  const currentLang = new URLSearchParams(window.location.search).get('lang') || 'SV';
+
+  fetch('world_manifesto_slogans.json')
+    .then(response => response.json())
+    .then(data => {
+      const slogans = data[currentLang] || data['EN'] || [];
+      if (slogans.length > 0) {
+        // Välj en slumpmässig slogan eller visa den första
+        const randomIndex = Math.floor(Math.random() * slogans.length);
+        document.getElementById('slogan-text').innerText = slogans[randomIndex];
+      }
+    })
+    .catch(err => console.error('Kunde inte ladda slogans:', err));
+</script>
+        
         <!-- Sidfot längst ner -->
         <footer>
             <!-- Nästlängst ned -->
