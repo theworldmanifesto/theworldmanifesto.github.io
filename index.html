@@ -64,12 +64,12 @@
         /* Mobilanpassning för skärmar mindre än 600px */
         @media (max-width: 600px) {
             .menu-toggle {
-                display: block; /* Visar menyknappen på mobilen */
+                display: block;
                 margin: 0 auto;
             }
 
             .menu-links {
-                display: none; /* Döljer länkarna tills man trycker på knappen */
+                display: none;
                 flex-direction: column;
                 text-align: center;
                 gap: 12px;
@@ -77,7 +77,7 @@
             }
 
             .menu-links.active {
-                display: flex; /* Fäller ut menyn */
+                display: flex;
             }
         }
         
@@ -134,10 +134,8 @@
             <!-- Titel -->
             <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
 
-            <!-- Slogan visas automatiskt här under rubriken -->
-            <div class="slogan-box">
-                <span id="slogan-text"></span>
-            </div>
+            <!-- Slogan visas automatiskt här under rubriken (med ID som matchar skriptet) -->
+            <div class="slogan-box" id="slogans-box"></div>
 
             <!-- Bild i halva sin storlek -->
             <div style="margin-bottom: 25px;">
@@ -171,11 +169,9 @@
 
         <!-- Sidfot längst ner -->
         <footer>
-            <!-- Nästlängst ned -->
             <div class="webmaster">
                 <a href="mailto:theworldmanifesto@outlook.com">✉️ &nbsp;E-mail webbmaster</a>
             </div>
-            <!-- Allra längst ned -->
             <div class="copyright">
                 The World Manifesto &nbsp; &nbsp; – &nbsp; &nbsp; Published 2026
             </div>
@@ -183,26 +179,24 @@
 
     </div>
 
-    <!-- Skript för att ladda slumpmässig slogan från JSON -->
+    <!-- Skript som slumpar fram EN slogan från JSON-filen -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const urlParams = new URLSearchParams(window.location.search);
-            // Hämtar språkkod och gör om till stora bokstäver (t.ex. 'sv' -> 'SV')
             const currentLang = (urlParams.get('lang') || 'SV').toUpperCase();
 
             fetch('world_manifesto_slogans.json')
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error('Kunde inte läsa in world_manifesto_slogans.json');
+                        throw new Error('Kunde inte läsa in JSON-filen');
                     }
                     return response.json();
                 })
                 .then(data => {
-                    // Söker efter språket, med fallback om det saknas
                     const slogans = data[currentLang] || data['SV'] || data['SE'] || data['EN'] || [];
                     if (slogans.length > 0) {
                         const randomIndex = Math.floor(Math.random() * slogans.length);
-                        document.getElementById('slogan-text').innerText = '”' + slogans[randomIndex] + '”';
+                        document.getElementById('slogans-box').innerHTML = '”' + slogans[randomIndex] + '”';
                     }
                 })
                 .catch(err => console.error('Fel vid laddning av slogans:', err));
