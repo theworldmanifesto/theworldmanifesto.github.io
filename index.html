@@ -15,72 +15,72 @@
             padding: 0;
         }
 
-/* Stilren och minimalistisk navigering */
-.site-nav {
-    width: 100%;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 10px 0;
-    font-family: Georgia, serif;
-}
+        /* Stilren och minimalistisk navigering */
+        .site-nav {
+            width: 100%;
+            background-color: #f7f7f7;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 10px 0;
+            font-family: Georgia, serif;
+        }
 
-.nav-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: 1px solid #ccc;
-    padding: 6px 12px;
-    font-size: 16px;
-    font-family: Georgia, serif;
-    cursor: pointer;
-    border-radius: 4px;
-}
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            font-size: 16px;
+            font-family: Georgia, serif;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 
-.menu-links {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    justify-content: center;
-}
+        .menu-links {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+        }
 
-.menu-links a {
-    color: #1a1a1a;
-    text-decoration: none;
-    font-size: 16px;
-}
+        .menu-links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 16px;
+        }
 
-.menu-links a:hover {
-    text-decoration: underline;
-}
+        .menu-links a:hover {
+            text-decoration: underline;
+        }
 
-/* Mobilanpassning för skärmar mindre än 600px */
-@media (max-width: 600px) {
-    .menu-toggle {
-        display: block; /* Visar menyknappen på mobilen */
-        margin: 0 auto;
-    }
+        /* Mobilanpassning för skärmar mindre än 600px */
+        @media (max-width: 600px) {
+            .menu-toggle {
+                display: block; /* Visar menyknappen på mobilen */
+                margin: 0 auto;
+            }
 
-    .menu-links {
-        display: none; /* Döljer länkarna tills man trycker på knappen */
-        flex-direction: column;
-        text-align: center;
-        gap: 12px;
-        padding-top: 15px;
-    }
+            .menu-links {
+                display: none; /* Döljer länkarna tills man trycker på knappen */
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+                padding-top: 15px;
+            }
 
-    .menu-links.active {
-        display: flex; /* Fäller ut menyn */
-    }
-}
-       
+            .menu-links.active {
+                display: flex; /* Fäller ut menyn */
+            }
+        }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -167,26 +167,6 @@
             <div style="font-size: 18px; color: #666;">
                 | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
             </div>
-
-            <!-- Container för din externa grej -->
-            <div id="extra-content" style="display: none; text-align: center; margin-top: 20px;">
-                <!-- HÄR klistrar du in din faktiska Cloudflare-kod/skript -->
-            </div>
-
-            <script>
-                try {
-                    // Kollar webbläsarens tidszon lokalt
-                    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-                    
-                    // Om besökaren INTE är i Kinas tidszoner, aktivera sektionen
-                    if (tz !== 'Asia/Shanghai' && tz !== 'Asia/Chongqing' && tz !== 'Asia/Urumqi') {
-                        document.getElementById('extra-content').style.display = 'block';
-                    }
-                } catch (e) {
-                    // Fallback om webbläsaren blockerar tidszonskollen
-                    document.getElementById('extra-content').style.display = 'block';
-                }
-            </script>
         </main>
 
         <!-- Sidfot längst ner -->
@@ -207,19 +187,25 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const urlParams = new URLSearchParams(window.location.search);
-            const currentLang = urlParams.get('lang') || 'SV';
+            // Hämtar språkkod och gör om till stora bokstäver (t.ex. 'sv' -> 'SV')
+            const currentLang = (urlParams.get('lang') || 'SV').toUpperCase();
 
             fetch('world_manifesto_slogans.json')
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Kunde inte läsa in world_manifesto_slogans.json');
+                    }
+                    return response.json();
+                })
                 .then(data => {
-                    // Söker efter nyckeln (SV, SE eller EN)
+                    // Söker efter språket, med fallback om det saknas
                     const slogans = data[currentLang] || data['SV'] || data['SE'] || data['EN'] || [];
                     if (slogans.length > 0) {
                         const randomIndex = Math.floor(Math.random() * slogans.length);
                         document.getElementById('slogan-text').innerText = '”' + slogans[randomIndex] + '”';
                     }
                 })
-                .catch(err => console.error('Kunde inte ladda slogans:', err));
+                .catch(err => console.error('Fel vid laddning av slogans:', err));
         });
     </script>
 
