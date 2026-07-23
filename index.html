@@ -15,6 +15,72 @@
             padding: 0;
         }
 
+/* Stilren och minimalistisk navigering */
+.site-nav {
+    width: 100%;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    font-family: Georgia, serif;
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobilanpassning för skärmar mindre än 600px */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: block; /* Visar menyknappen på mobilen */
+        margin: 0 auto;
+    }
+
+    .menu-links {
+        display: none; /* Döljer länkarna tills man trycker på knappen */
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding-top: 15px;
+    }
+
+    .menu-links.active {
+        display: flex; /* Fäller ut menyn */
+    }
+}
+       
         .container {
             max-width: 800px;
             margin: 0 auto;
