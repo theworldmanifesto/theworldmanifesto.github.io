@@ -49,6 +49,15 @@
             font-size: 14px;
             color: #666;
         }
+
+        /* Stil för slogan */
+        .slogan-box {
+            margin: 10px 0 25px 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #444;
+            min-height: 1.5em;
+        }
     </style>
 </head>
 <body>
@@ -57,7 +66,12 @@
         
         <main>
             <!-- Titel -->
-            <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 30px;">The World Manifesto</h1>
+            <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
+
+            <!-- Slogan visas automatiskt här under rubriken -->
+            <div class="slogan-box">
+                <span id="slogan-text"></span>
+            </div>
 
             <!-- Bild i halva sin storlek -->
             <div style="margin-bottom: 25px;">
@@ -88,7 +102,7 @@
                 | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
             </div>
 
-            <!-- Container för din externa grej (helt anonymt namn och dold som standard) -->
+            <!-- Container för din externa grej -->
             <div id="extra-content" style="display: none; text-align: center; margin-top: 20px;">
                 <!-- HÄR klistrar du in din faktiska Cloudflare-kod/skript -->
             </div>
@@ -109,28 +123,6 @@
             </script>
         </main>
 
-// LADDAR SLOGAN (world_manifesto_slogans.json)
-<div id="slogan-container" style="text-align: center; padding: 20px; font-style: italic; font-size: 1.2rem;">
-  <p id="slogan-text">Laddar slogan...</p>
-</div>
-
-<script>
-  // Hämta vald språkkod från URL eller standard till 'EN' / 'SV'
-  const currentLang = new URLSearchParams(window.location.search).get('lang') || 'SV';
-
-  fetch('world_manifesto_slogans.json')
-    .then(response => response.json())
-    .then(data => {
-      const slogans = data[currentLang] || data['EN'] || [];
-      if (slogans.length > 0) {
-        // Välj en slumpmässig slogan eller visa den första
-        const randomIndex = Math.floor(Math.random() * slogans.length);
-        document.getElementById('slogan-text').innerText = slogans[randomIndex];
-      }
-    })
-    .catch(err => console.error('Kunde inte ladda slogans:', err));
-</script>
-        
         <!-- Sidfot längst ner -->
         <footer>
             <!-- Nästlängst ned -->
@@ -144,6 +136,26 @@
         </footer>
 
     </div>
+
+    <!-- Skript för att ladda slumpmässig slogan från JSON -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const currentLang = urlParams.get('lang') || 'SV';
+
+            fetch('world_manifesto_slogans.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Söker efter nyckeln (SV, SE eller EN)
+                    const slogans = data[currentLang] || data['SV'] || data['SE'] || data['EN'] || [];
+                    if (slogans.length > 0) {
+                        const randomIndex = Math.floor(Math.random() * slogans.length);
+                        document.getElementById('slogan-text').innerText = '”' + slogans[randomIndex] + '”';
+                    }
+                })
+                .catch(err => console.error('Kunde inte ladda slogans:', err));
+        });
+    </script>
 
 </body>
 </html>
