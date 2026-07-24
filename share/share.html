@@ -1,1 +1,345 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World Manifesto — Share Quotes</title>
+    <style>
+        body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 1.25;
+            color: #1a1a1a;
+            background-color: #fcfcfc;
+            margin: 0;
+            padding: 0;
+        }
 
+        .site-nav {
+            width: 100%;
+            background-color: #f7f7f7;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 10px 0;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            font-size: 16px;
+            font-family: Georgia, serif;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .menu-links {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .menu-links a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .menu-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .menu-toggle { display: block; margin: 0 auto; }
+            .menu-links { display: none; flex-direction: column; text-align: center; gap: 12px; padding-top: 15px; }
+            .menu-links.active { display: flex; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 85vh;
+            justify-content: space-between;
+        }
+
+        main { text-align: center; }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: normal;
+            margin: 0 0 8px 0;
+        }
+
+        header p {
+            color: #555;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .lang-bar {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            padding: 8px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        .lang-select {
+            margin: 8px 0 24px 0;
+            padding: 4px 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+
+        .quote-card {
+            padding: 24px;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+            font-style: italic;
+            color: #333;
+        }
+
+        .share-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        .btn-x { background: #000; color: #fff; }
+        .btn-fb { background: #1877F2; color: #fff; }
+        .btn-wa { background: #25D366; color: #fff; }
+        .btn-tg { background: #26A5E4; color: #fff; }
+        .btn-em { background: #555; color: #fff; }
+        .btn-copy { background: #fff; color: #000; border: 1px solid #ccc; }
+
+        .read-more {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .read-more a {
+            color: #555;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+
+        .webmaster { font-size: 16px; margin-bottom: 15px; }
+        .webmaster a { color: #1a1a1a; text-decoration: none; }
+        .copyright { font-size: 14px; color: #666; }
+
+        .back-link {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-link a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-nav">
+        <div class="nav-container">
+            <button class="menu-toggle" onclick="document.querySelector('.menu-links').classList.toggle('active')">☰</button>
+            <div class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="EN.html">English</a>
+                <a href="ZH.html">简体中文</a>
+                <a href="SV.html">Svenska</a>
+                <a href="lang.html">🌐 More Languages</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <main>
+            <div class="back-link">
+                <a href="index.html">← Back to Home</a>
+            </div>
+
+            <header>
+                <h1>Share with others on the Internet</h1>
+                <p>Refer to this manifesto by leaving quotes on various social media.</p>
+            </header>
+
+            <div class="lang-bar" id="lang-bar">Below are shown 24 quotes that are taken from The World Manifesto</div>
+
+            <select id="lang-select" class="lang-select" onchange="if(this.value)window.location.href='?lang='+this.value">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+                <option value="hi">हिन्दी</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ar">العربية</option>
+                <option value="bn">বাংলা</option>
+                <option value="pt">Português</option>
+                <option value="ru">Русский</option>
+                <option value="ur">اردو</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="de">Deutsch</option>
+                <option value="ja">日本語</option>
+                <option value="sw">Kiswahili</option>
+                <option value="tl">Filipino</option>
+                <option value="tr">Türkçe</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="ko">한국어</option>
+                <option value="fa">فارسی</option>
+                <option value="th">ไทย</option>
+                <option value="it">Italiano</option>
+                <option value="pl">Polski</option>
+                <option value="uk">Українська</option>
+                <option value="nl">Nederlands</option>
+                <option value="ro">Română</option>
+                <option value="el">Ελληνικά</option>
+                <option value="hu">Magyar</option>
+                <option value="cs">Čeština</option>
+                <option value="sv">Svenska</option>
+                <option value="bg">Български</option>
+                <option value="hr">Hrvatski</option>
+                <option value="sk">Slovenčina</option>
+                <option value="no">Norsk</option>
+                <option value="da">Dansk</option>
+                <option value="fi">Suomi</option>
+                <option value="he">עברית</option>
+                <option value="af">Afrikaans</option>
+                <option value="zu">isiZulu</option>
+                <option value="xh">isiXhosa</option>
+                <option value="is">Íslenska</option>
+                <option value="fo">Føroyskt</option>
+                <option value="crs">Seselwa</option>
+                <option value="se">Davvisámegiella</option>
+                <option value="fit">Meänkieli</option>
+            </select>
+
+            <div id="quotes-container"></div>
+
+            <p class="read-more">
+                Want to read it all? <a href="https://sites.google.com/view/worldmanifesto/home/lang" target="_blank">Read the full manifesto in 42 languages →</a>
+            </p>
+        </main>
+
+        <footer>
+            <div class="webmaster">
+                <a href="mailto:theworldmanifesto@outlook.com">✉️ &nbsp;E-mail webbmaster</a>
+            </div>
+            <div class="copyright">
+                The World Manifesto &nbsp; &nbsp; – &nbsp; &nbsp; Published 2026
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const PAGE = "https://sites.google.com/view/worldmanifesto/";
+        const MANIFESTO = "The World Manifesto";
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentLang = (urlParams.get('lang') || 'sv').toUpperCase();
+
+        document.getElementById('lang-select').value = (urlParams.get('lang') || 'sv').toLowerCase();
+
+        function escapeHtml(s) {
+            return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        fetch('world_manifesto_quotes.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Kunde inte läsa JSON');
+                return response.json();
+            })
+            .then(data => {
+                const quotesData = data[currentLang] || data['SV'] || data['EN'] || {};
+                const quotes = Object.values(quotesData);
+                const container = document.getElementById('quotes-container');
+
+                quotes.forEach((text, idx) => {
+                    const escText = escapeHtml(text);
+                    const shareText = '"' + text + '" — The World Manifesto ' + PAGE;
+                    const encText = encodeURIComponent(shareText);
+                    const encQuote = encodeURIComponent(text);
+
+                    const card = document.createElement('div');
+                    card.className = 'quote-card';
+                    card.innerHTML = `
+                        <div class="quote-text">"${escText}"</div>
+                        <div class="share-row">
+                            <a class="btn btn-x" href="https://x.com/intent/tweet?text=${encText}" target="_blank">Share on X</a>
+                            <a class="btn btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(PAGE)}&quote=${encQuote}" target="_blank">Facebook</a>
+                            <a class="btn btn-wa" href="https://wa.me/?text=${encText}" target="_blank">WhatsApp</a>
+                            <a class="btn btn-tg" href="https://t.me/share/url?url=${encodeURIComponent(PAGE)}&text=${encQuote}" target="_blank">Telegram</a>
+                            <a class="btn btn-em" href="mailto:?subject=${encodeURIComponent(MANIFESTO)}&body=${encText}" target="_blank">Email</a>
+                            <a class="btn btn-copy" href="#" data-text="${encText}">Copy Link</a>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+
+                // Copy button functionality
+                container.querySelectorAll('.btn-copy').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const text = decodeURIComponent(btn.dataset.text);
+                        navigator.clipboard.writeText(text);
+                        const old = btn.textContent;
+                        btn.textContent = 'Copied!';
+                        setTimeout(() => btn.textContent = old, 1200);
+                    });
+                });
+
+                // Update lang-bar with count
+                document.getElementById('lang-bar').textContent =
+                    'Below are shown ' + quotes.length + ' quotes that are taken from ' + MANIFESTO;
+            })
+            .catch(err => console.error('Fel:', err));
+    </script>
+
+</body>
+</html>
