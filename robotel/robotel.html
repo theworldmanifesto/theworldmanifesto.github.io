@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotel — The World Manifesto</title>
+    <style>
+        body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 1.25;
+            color: #1a1a1a;
+            background-color: #fcfcfc;
+            margin: 0;
+            padding: 0;
+        }
 
+        .site-nav {
+            width: 100%;
+            background-color: #f7f7f7;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 10px 0;
+            position: relative;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 8px 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            display: inline-block;
+        }
+
+        .dropbtn:hover {
+            background: #fff;
+            border-color: #999;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            margin-top: 6px;
+            background-color: #fff;
+            min-width: 240px;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            overflow: hidden;
+            z-index: 999;
+        }
+
+        .dropdown-content a {
+            color: #1a1a1a;
+            padding: 11px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+            font-family: system-ui, sans-serif;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f7f7f7;
+        }
+
+        @media (min-width: 601px) {
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-container { justify-content: center; }
+            .dropdown-content {
+                position: static;
+                margin-top: 10px;
+                box-shadow: none;
+                width: 100vw;
+                max-width: 320px;
+            }
+            .dropdown.active .dropdown-content {
+                display: block;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 85vh;
+            justify-content: space-between;
+        }
+
+        main { text-align: center; }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+
+        .webmaster { font-size: 16px; margin-bottom: 15px; }
+        .webmaster a { color: #1a1a1a; text-decoration: none; }
+        .copyright { font-size: 14px; color: #666; }
+    </style>
+</head>
+<body>
+
+    <div class="site-nav">
+        <div class="nav-container">
+            <div class="dropdown" id="homeDropdown">
+                <a href="../index.html" class="dropbtn" id="homeBtn">🌐HOME</a>
+                <div class="dropdown-content">
+                    <a href="../lang/en.html">🇬🇧 ENGLISH</a>
+                    <a href="../lang/zh.html">🇨🇳 简体中文</a>
+                    <a href="../lang/sv.html">🇸🇪 SVENSKA</a>
+                    <a href="../lang.html">🌐 More Languages</a>
+                    <a href="../freedom-staircase.html">🪜 Freedom Staircase</a>
+                    <a href="../tropics.html">🌎 The Tropics</a>
+                    <a href="robotel.html">👄 Robotel</a>
+                    <a href="../share.html">🗨️ Share</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <main>
+            <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 20px;">Robotel</h1>
+
+            <div id="chat-container" style="font-family: Arial, sans-serif; max-width: 500px; margin: 20px auto; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+                <div style="background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: #1e293b; display: flex; justify-content: space-between; align-items: center;">
+                    <span>🤖 Robotel, the World Manifesto's answering robot.</span>
+                    <button onclick="clearChat()" style="background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 14px;">Rensa</button>
+                </div>
+                <div id="chat-box" style="height: 350px; overflow-y: auto; padding: 15px; background: #ffffff; display: flex; flex-direction: column; gap: 10px;">
+                    <div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">🌍 Write your question here...</div>
+                </div>
+                <div style="display: flex; padding: 10px; border-top: 1px solid #e2e8f0; background: #f8fafc;">
+                    <input type="text" id="user-input" placeholder="🌍 Write your question here..." style="flex: 1; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; outline: none;">
+                    <button onclick="sendMessage()" style="margin-left: 8px; background: #2563eb; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: bold;">Send</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="webmaster">
+                <a href="mailto:theworldmanifesto@outlook.com">✉️ &nbsp;E-mail webbmaster</a>
+            </div>
+            <div class="copyright">
+                The World Manifesto &nbsp; &nbsp; – &nbsp; &nbsp; Published 2026
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    let currentLanguage = navigator.language || navigator.userLanguage || 'sv-SE';
+
+    document.getElementById('user-input').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') sendMessage();
+    });
+
+    async function sendMessage() {
+        const input = document.getElementById('user-input');
+        const box = document.getElementById('chat-box');
+        const text = input.value.trim();
+        if (!text) return;
+
+        box.innerHTML += `<div style="background: #2563eb; color: white; padding: 10px 14px; border-radius: 8px; align-self: flex-end; max-width: 80%;">${text}</div>`;
+        input.value = '';
+        box.scrollTop = box.scrollHeight;
+
+        const thinkingDiv = document.createElement('div');
+        thinkingDiv.id = 'thinking';
+        thinkingDiv.style.cssText = 'background: #f1f5f9; color: #94a3b8; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%; font-style: italic;';
+        thinkingDiv.textContent = '🤔 Robotel is thinking...';
+        box.appendChild(thinkingDiv);
+        box.scrollTop = box.scrollHeight;
+
+        try {
+            const response = await fetch('https://robotel-gemini-live.svenyngerstedt2.workers.dev/', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    question: text,
+                    language: currentLanguage
+                })
+            });
+            const data = await response.json();
+
+            document.getElementById('thinking')?.remove();
+
+            if (data.language && data.language !== currentLanguage) {
+                currentLanguage = data.language;
+            }
+
+            let reply = data.reply;
+            reply = reply.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" style="color: #2563eb; text-decoration: underline;">$1</a>');
+            reply = reply.replace(/\n/g, '<br>');
+
+            box.innerHTML += `<div style="background: #ffffff; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">${reply}</div>`;
+        } catch (err) {
+            document.getElementById('thinking')?.remove();
+            box.innerHTML += `<div style="background: #ef4444; color: white; padding: 10px 14px; border-radius: 8px; align-self: flex-start;">❌ Couldn't reach Robotel right now.</div>`;
+        }
+        box.scrollTop = box.scrollHeight;
+    }
+
+    function clearChat() {
+        const box = document.getElementById('chat-box');
+        currentLanguage = navigator.language || navigator.userLanguage || 'sv-SE';
+        box.innerHTML = `<div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">🧹 Chatten har rensats. Ställ din fråga till Robotel!</div>`;
+    }
+    </script>
+
+</body>
+</html>
