@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The World Manifesto</title>
     <style>
+        /* All design styrs lokalt för att klara brandväggar */
         body {
             font-family: Georgia, Cambria, "Times New Roman", Times, serif;
             line-height: 1.25;
@@ -14,11 +15,13 @@
             padding: 0;
         }
 
+        /* Stilren och minimalistisk navigering */
         .site-nav {
             width: 100%;
             background-color: #f7f7f7;
             border-bottom: 1px solid #e5e5e5;
             padding: 10px 0;
+            font-family: Georgia, serif;
         }
 
         .nav-container {
@@ -58,12 +61,26 @@
             text-decoration: underline;
         }
 
+        /* Mobilanpassning för skärmar mindre än 600px */
         @media (max-width: 600px) {
-            .menu-toggle { display: block; margin: 0 auto; }
-            .menu-links { display: none; flex-direction: column; text-align: center; gap: 12px; padding-top: 15px; }
-            .menu-links.active { display: flex; }
-        }
+            .menu-toggle {
+                display: block;
+                margin: 0 auto;
+            }
 
+            .menu-links {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+                padding-top: 15px;
+            }
+
+            .menu-links.active {
+                display: flex;
+            }
+        }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -74,7 +91,9 @@
             justify-content: space-between;
         }
 
-        main { text-align: center; }
+        main {
+            text-align: center;
+        }
 
         footer {
             margin-top: 60px;
@@ -82,183 +101,61 @@
             font-family: Georgia, serif;
         }
 
-        .webmaster { font-size: 16px; margin-bottom: 15px; }
-        .webmaster a { color: #1a1a1a; text-decoration: none; }
-        .copyright { font-size: 14px; color: #666; }
-
-        /* Slogan-box */
-        #slogan-box {
-            max-width: 680px;
-            margin: 10px auto 25px auto;
-            border: 1px solid #ddd;
-            border-radius: 16px;
-            padding: 28px 24px;
-            text-align: center;
+        .webmaster {
+            font-size: 16px;
+            margin-bottom: 15px;
         }
 
-        #slogan-text {
-            font-size: 22px;
-            line-height: 1.45;
-            min-height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.4s;
-            font-style: italic;
-            color: #444;
-        }
-
-        .dots {
-            display: flex;
-            gap: 7px;
-            justify-content: center;
-            margin: 14px 0;
-        }
-
-        .dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #ddd;
-            cursor: pointer;
-        }
-
-        .dot.on { background: #111; }
-
-        .btns {
-            display: flex;
-            gap: 6px;
-            justify-content: center;
-            flex-wrap: wrap;
-            font-family: sans-serif;
-        }
-
-        .b {
-            padding: 7px 12px;
-            border-radius: 20px;
+        .webmaster a {
+            color: #1a1a1a;
             text-decoration: none;
-            font-size: 12px;
-            font-weight: bold;
-            cursor: pointer;
         }
 
-        .bx { background: #000; color: #fff; }
-        .bf { background: #1877F2; color: #fff; }
-        .bw { background: #25D366; color: #fff; }
-        .bt { background: #26A5E4; color: #fff; }
-        .bm { background: #666; color: #fff; }
-        .bc { background: #fff; color: #000; border: 1px solid #ccc; }
+        .copyright {
+            font-size: 14px;
+            color: #666;
+        }
 
-        .lang-select {
-            margin-top: 8px;
-            padding: 4px 8px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            font-size: 13px;
-            font-family: sans-serif;
+        /* Stil för slogan */
+        .slogan-box {
+            margin: 10px 0 25px 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #444;
+            min-height: 1.5em;
         }
     </style>
 </head>
 <body>
 
-    <div class="site-nav">
-        <div class="nav-container">
-            <button class="menu-toggle" onclick="document.querySelector('.menu-links').classList.toggle('active')">☰</button>
-            <div class="menu-links">
-                <a href="EN.html">English</a>
-                <a href="ZH.html">简体中文</a>
-                <a href="SV.html">Svenska</a>
-                <a href="lang.html">🌐 More Languages</a>
-            </div>
-        </div>
-    </div>
-
     <div class="container">
+        
         <main>
+            <!-- Titel -->
             <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
 
-            <!-- Slogan-box med knappar -->
-            <div id="slogan-box">
-                <div id="slogan-text"></div>
-                <div id="dots" class="dots"></div>
-                <div class="btns">
-                    <a id="btn-x" class="b bx" href="#">Share on X</a>
-                    <a id="btn-fb" class="b bf" href="#">Facebook</a>
-                    <a id="btn-wa" class="b bw" href="#">WhatsApp</a>
-                    <a id="btn-tg" class="b bt" href="#">Telegram</a>
-                    <a id="btn-em" class="b bm" href="#">Email</a>
-                    <a id="btn-copy" class="b bc" href="#">Copy Link</a>
-                </div>
-                <select id="lang-select" class="lang-select" onchange="if(this.value)window.location.href='?lang='+this.value">
-                    <option value="en">English</option>
-                    <option value="zh">中文</option>
-                    <option value="hi">हिन्दी</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                    <option value="ar">العربية</option>
-                    <option value="bn">বাংলা</option>
-                    <option value="pt">Português</option>
-                    <option value="ru">Русский</option>
-                    <option value="ur">اردو</option>
-                    <option value="id">Bahasa Indonesia</option>
-                    <option value="de">Deutsch</option>
-                    <option value="ja">日本語</option>
-                    <option value="sw">Kiswahili</option>
-                    <option value="tl">Filipino</option>
-                    <option value="tr">Türkçe</option>
-                    <option value="vi">Tiếng Việt</option>
-                    <option value="ko">한국어</option>
-                    <option value="fa">فارسی</option>
-                    <option value="th">ไทย</option>
-                    <option value="it">Italiano</option>
-                    <option value="pl">Polski</option>
-                    <option value="uk">Українська</option>
-                    <option value="nl">Nederlands</option>
-                    <option value="ro">Română</option>
-                    <option value="el">Ελληνικά</option>
-                    <option value="hu">Magyar</option>
-                    <option value="cs">Čeština</option>
-                    <option value="sv">Svenska</option>
-                    <option value="bg">Български</option>
-                    <option value="hr">Hrvatski</option>
-                    <option value="sk">Slovenčina</option>
-                    <option value="no">Norsk</option>
-                    <option value="da">Dansk</option>
-                    <option value="fi">Suomi</option>
-                    <option value="he">עברית</option>
-                    <option value="af">Afrikaans</option>
-                    <option value="zu">isiZulu</option>
-                    <option value="xh">isiXhosa</option>
-                    <option value="is">Íslenska</option>
-                    <option value="fo">Føroyskt</option>
-                    <option value="crs">Seselwa</option>
-                    <option value="se">Davvisámegiella</option>
-                    <option value="fit">Meänkieli</option>
-                </select>
-            </div>
+            <!-- Slogan visas automatiskt här under rubriken -->
+            <div class="slogan-box" id="slogans-box"></div>
 
+            <!-- Bild i halva sin storlek -->
             <div style="margin-bottom: 25px;">
                 <img src="https://raw.githubusercontent.com/theworldmanifesto/theworldmanifesto.github.io/f836ed686d73627fa53296dc066bd8f93ad081d2/Freedom%20Staircase.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
             </div>
 
-            <div style="max-width: 450px; margin: 0 auto 25px auto; font-family: Georgia, serif;">
-                <div style="display: flex; justify-content: space-between; font-size: 32px; margin-bottom: 5px; padding: 0 40px;">
-                    <div style="flex: 1; text-align: center;"><a href="EN.html" style="text-decoration: none;">🇬🇧</a></div>
-                    <div style="flex: 1; text-align: center;"><a href="ZH.html" style="text-decoration: none;">🇨🇳</a></div>
-                    <div style="flex: 1; text-align: center;"><a href="SV.html" style="text-decoration: none;">🇸🇪</a></div>
-                </div>
-                <div style="display: flex; justify-content: space-between; font-size: 18px; color: #666;">
-                    <div style="flex: 1; text-align: center;">| &nbsp; <a href="EN.html" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; |</div>
-                    <div style="flex: 1; text-align: center;">| &nbsp; <a href="ZH.html" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; |</div>
-                    <div style="flex: 1; text-align: center;">| &nbsp; <a href="SV.html" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |</div>
-                </div>
+            <!-- Endast textlänkar för språken (inga flaggor) -->
+            <div style="display: flex; justify-content: space-between; font-size: 18px; color: #666; max-width: 450px; margin: 0 auto 25px auto; font-family: Georgia, serif;">
+                <div style="flex: 1; text-align: center;">| &nbsp; <a href="EN.html" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; |</div>
+                <div style="flex: 1; text-align: center;">| &nbsp; <a href="CN.html" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; |</div>
+                <div style="flex: 1; text-align: center;">| &nbsp; <a href="SE.html" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |</div>
             </div>
 
+            <!-- Fler språk -->
             <div style="font-size: 18px; color: #666;">
                 | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
             </div>
         </main>
 
+        <!-- Sidfot längst ner -->
         <footer>
             <div class="webmaster">
                 <a href="mailto:theworldmanifesto@outlook.com">✉️ &nbsp;E-mail webbmaster</a>
@@ -267,95 +164,32 @@
                 The World Manifesto &nbsp; &nbsp; – &nbsp; &nbsp; Published 2026
             </div>
         </footer>
+
     </div>
 
+    <!-- Uppdaterat skript med Object.values() -->
     <script>
-        const PAGE = "https://sites.google.com/view/worldmanifesto/";
-        const MANIFESTO = "The World Manifesto";
-        const COPIED = "Copied!";
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const currentLang = (urlParams.get('lang') || 'SV').toUpperCase();
 
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentLang = (urlParams.get('lang') || 'sv').toUpperCase();
-
-        // Sätt valt språk i rullgardinen
-        document.getElementById('lang-select').value = (urlParams.get('lang') || 'sv').toLowerCase();
-
-        let slogans = [];
-        let i = 0, paused = false;
-
-        const btnX = document.getElementById('btn-x');
-        const btnFb = document.getElementById('btn-fb');
-        const btnWa = document.getElementById('btn-wa');
-        const btnTg = document.getElementById('btn-tg');
-        const btnEm = document.getElementById('btn-em');
-        const btnCopy = document.getElementById('btn-copy');
-        const q = document.getElementById('slogan-text');
-        const dots = document.getElementById('dots');
-
-        function openNew(u) { window.open(u, '_blank', 'noopener'); }
-
-        function show() {
-            q.style.opacity = 0;
-            setTimeout(() => {
-                const t = slogans[i];
-                const share = '"' + t + '" ' + PAGE;
-                q.textContent = '"' + t + '"';
-                q.style.opacity = 1;
-
-                const uX = 'https://x.com/intent/tweet?text=' + encodeURIComponent(share);
-                const uF = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(PAGE) + '&quote=' + encodeURIComponent(t);
-                const uW = 'https://wa.me/?text=' + encodeURIComponent(share);
-                const uT = 'https://t.me/share/url?url=' + encodeURIComponent(PAGE) + '&text=' + encodeURIComponent('"' + t + '"');
-                const uM = 'mailto:?subject=' + encodeURIComponent(MANIFESTO) + '&body=' + encodeURIComponent(share);
-
-                btnX.onclick = (e) => { e.preventDefault(); openNew(uX); };
-                btnFb.onclick = (e) => { e.preventDefault(); openNew(uF); };
-                btnWa.onclick = (e) => { e.preventDefault(); openNew(uW); };
-                btnTg.onclick = (e) => { e.preventDefault(); openNew(uT); };
-                btnEm.onclick = (e) => { e.preventDefault(); window.location.href = uM; };
-                btnCopy.onclick = (e) => {
-                    e.preventDefault();
-                    navigator.clipboard.writeText(share);
-                    const old = btnCopy.textContent;
-                    btnCopy.textContent = COPIED;
-                    setTimeout(() => btnCopy.textContent = old, 1200);
-                };
-
-                [...dots.children].forEach((a, b) => a.className = b === i ? 'dot on' : 'dot');
-            }, 200);
-        }
-
-        document.getElementById('slogan-box').onmouseenter = () => paused = true;
-        document.getElementById('slogan-box').onmouseleave = () => paused = false;
-
-        function next() {
-            if (!paused && slogans.length > 0) {
-                i = (i + 1) % slogans.length;
-                show();
-            }
-        }
-
-        fetch('world_manifesto_slogans.json')
-            .then(response => {
-                if (!response.ok) throw new Error('Kunde inte läsa JSON');
-                return response.json();
-            })
-            .then(data => {
-                const slogansData = data[currentLang] || data['SV'] || data['EN'] || {};
-                slogans = Object.values(slogansData);
-
-                if (slogans.length > 0) {
-                    slogans.forEach((_, idx) => {
-                        const d = document.createElement('span');
-                        d.className = 'dot' + (idx === 0 ? ' on' : '');
-                        d.onclick = () => { i = idx; show(); };
-                        dots.appendChild(d);
-                    });
-                    show();
-                    setInterval(next, 10000);
-                }
-            })
-            .catch(err => console.error('Fel:', err));
+            fetch('world_manifesto_slogans.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Kunde inte läsa in JSON-filen');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const slogansData = data[currentLang] || data['SV'] || data['SE'] || data['EN'] || {};
+                    const slogans = Object.values(slogansData);
+                    if (slogans.length > 0) {
+                        const randomIndex = Math.floor(Math.random() * slogans.length);
+                        document.getElementById('slogans-box').innerHTML = '”' + slogans[randomIndex] + '”';
+                    }
+                })
+                .catch(err => console.error('Fel vid laddning av slogans:', err));
+        });
     </script>
 
 </body>
