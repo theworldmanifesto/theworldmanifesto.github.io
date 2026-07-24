@@ -127,4 +127,63 @@
         footer {
             margin-top: 60px;
             text-align: center;
-            font-family: Georgia
+            font-family: Georgia, serif;
+        }
+
+        .webmaster { font-size: 16px; margin-bottom: 15px; }
+        .webmaster a { color: #1a1a1a; text-decoration: none; }
+        .copyright { font-size: 14px; color: #666; }
+
+        /* Slogan-box */
+        #slogan-box {
+            max-width: 680px;
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        #slogan-text {
+            font-size: 22px;
+            line-height: 1.45;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.4s;
+            font-style: italic;
+            color: #444;
+        }
+
+        .dots {
+            display: flex;
+            gap: 7px;
+            justify-content: center;
+            margin: 14px 0;
+        }
+
+        .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+        }
+
+        .dot.on { background: #111; }
+
+        .btns {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+        }
+
+        .b {
+            padding: 7px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
