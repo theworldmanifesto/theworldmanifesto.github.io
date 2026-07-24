@@ -1,196 +1,37 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The World Manifesto</title>
-    <style>
-        /* All design styrs lokalt för att klara brandväggar */
-        body {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            line-height: 1.25;
-            color: #1a1a1a;
-            background-color: #fcfcfc;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Stilren och minimalistisk navigering */
-        .site-nav {
-            width: 100%;
-            background-color: #f7f7f7;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 10px 0;
-            font-family: Georgia, serif;
-        }
-
-        .nav-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: 1px solid #ccc;
-            padding: 6px 12px;
-            font-size: 16px;
-            font-family: Georgia, serif;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        .menu-links {
-            display: flex;
-            gap: 20px;
-            width: 100%;
-            justify-content: center;
-        }
-
-        .menu-links a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .menu-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* Mobilanpassning för skärmar mindre än 600px */
-        @media (max-width: 600px) {
-            .menu-toggle {
-                display: block;
-                margin: 0 auto;
-            }
-
-            .menu-links {
-                display: none;
-                flex-direction: column;
-                text-align: center;
-                gap: 12px;
-                padding-top: 15px;
-            }
-
-            .menu-links.active {
-                display: flex;
-            }
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            min-height: 85vh;
-            justify-content: space-between;
-        }
-
-        main {
-            text-align: center;
-        }
-
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            font-family: Georgia, serif;
-        }
-
-        .webmaster {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .webmaster a {
-            color: #1a1a1a;
-            text-decoration: none;
-        }
-
-        .copyright {
-            font-size: 14px;
-            color: #666;
-        }
-
-        /* Stil för slogan */
-        .slogan-box {
-            margin: 10px 0 25px 0;
-            font-style: italic;
-            font-size: 1.1rem;
-            color: #444;
-            min-height: 1.5em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌐 More Languages - The World Manifesto</title>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; }
+    h1 { text-align: center; }
+    .lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 30px; }
+    .lang-card { background: #f0f4f8; border: 1px solid #d0d7de; padding: 12px; border-radius: 6px; text-align: center; text-decoration: none; color: #0969da; font-weight: bold; }
+    .lang-card:hover { background: #0969da; color: #fff; }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        
-        <main>
-            <!-- Titel -->
-            <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
+  <h1>🌐 More Languages / 44 Languages</h1>
+  <p style="text-align: center;">Välj språk för att läsa Världsmanifestet på ditt modersmål:</p>
 
-            <!-- Slogan visas automatiskt här under rubriken -->
-            <div class="slogan-box" id="slogans-box"></div>
-
-            <!-- Bild i halva sin storlek -->
-            <div style="margin-bottom: 25px;">
-                <img src="https://raw.githubusercontent.com/theworldmanifesto/theworldmanifesto.github.io/f836ed686d73627fa53296dc066bd8f93ad081d2/Freedom%20Staircase.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
-            </div>
-
-            <!-- Endast textlänkar för språken (inga flaggor) -->
-            <div style="display: flex; justify-content: space-between; font-size: 18px; color: #666; max-width: 450px; margin: 0 auto 25px auto; font-family: Georgia, serif;">
-                <div style="flex: 1; text-align: center;">| &nbsp; <a href="EN.html" style="color: #1a1a1a; text-decoration: none;">English</a> &nbsp; |</div>
-                <div style="flex: 1; text-align: center;">| &nbsp; <a href="CN.html" style="color: #1a1a1a; text-decoration: none;">简体中文</a> &nbsp; |</div>
-                <div style="flex: 1; text-align: center;">| &nbsp; <a href="SE.html" style="color: #1a1a1a; text-decoration: none;">Svenska</a> &nbsp; |</div>
-            </div>
-
-            <!-- Fler språk -->
-            <div style="font-size: 18px; color: #666;">
-                | &nbsp; 🌐 &nbsp; <a href="lang.html" style="color: #1a1a1a; text-decoration: none;">More Languages</a> &nbsp; |
-            </div>
-        </main>
-
-        <!-- Sidfot längst ner -->
-        <footer>
-            <div class="webmaster">
-                <a href="mailto:theworldmanifesto@outlook.com">✉️ &nbsp;E-mail webbmaster</a>
-            </div>
-            <div class="copyright">
-                The World Manifesto &nbsp; &nbsp; – &nbsp; &nbsp; Published 2026
-            </div>
-        </footer>
-
-    </div>
-
-    <!-- Uppdaterat skript med Object.values() -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const currentLang = (urlParams.get('lang') || 'SV').toUpperCase();
-
-            fetch('world_manifesto_slogans.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Kunde inte läsa in JSON-filen');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    const slogansData = data[currentLang] || data['SV'] || data['SE'] || data['EN'] || {};
-                    const slogans = Object.values(slogansData);
-                    if (slogans.length > 0) {
-                        const randomIndex = Math.floor(Math.random() * slogans.length);
-                        document.getElementById('slogans-box').innerHTML = '”' + slogans[randomIndex] + '”';
-                    }
-                })
-                .catch(err => console.error('Fel vid laddning av slogans:', err));
-        });
-    </script>
+  <div class="lang-grid">
+    <a class="lang-card" href="manifesto.html?lang=SV">🇸🇪 Svenska (SV)</a>
+    <a class="lang-card" href="manifesto.html?lang=EN">🇬🇧 English (EN)</a>
+    <a class="lang-card" href="manifesto.html?lang=DE">🇩🇪 Deutsch (DE)</a>
+    <a class="lang-card" href="manifesto.html?lang=FR">🇫🇷 Français (FR)</a>
+    <a class="lang-card" href="manifesto.html?lang=ES">🇪🇸 Español (ES)</a>
+    <a class="lang-card" href="manifesto.html?lang=IT">🇮🇹 Italiano (IT)</a>
+    <a class="lang-card" href="manifesto.html?lang=PT">🇵🇹 Português (PT)</a>
+    <a class="lang-card" href="manifesto.html?lang=RU">🇷🇺 Русский (RU)</a>
+    <a class="lang-card" href="manifesto.html?lang=ZH">🇨🇳 中文 (ZH)</a>
+    <a class="lang-card" href="manifesto.html?lang=JA">🇯🇵 日本語 (JA)</a>
+    <a class="lang-card" href="manifesto.html?lang=AR">🇸🇦 العربية (AR)</a>
+    <a class="lang-card" href="manifesto.html?lang=HI">🇮🇳 हिन्दी (HI)</a>
+    <!-- Fyll på med resterande av dina 44 språk koder här -->
+  </div>
 
 </body>
 </html>
