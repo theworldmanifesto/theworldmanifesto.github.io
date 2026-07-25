@@ -355,16 +355,16 @@
         function escapeHtml(s) {
             return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         }
-        fetch('../world_manifesto_slogans.json')
+        fetch('../share/world_manifesto_quotes.json')
             .then(response => {
-                if (!response.ok) return fetch('world_manifesto_slogans.json');
+                if (!response.ok) return fetch('world_manifesto_quotes.json');
                 return response;
             })
             .then(r => r.json())
             .then(data => {
                 const tryFetch = (name) => fetch('../' + name).then(r => r.ok ? r.json() : null).catch(() => null);
                 // Försök quotes först, fallback till slogans om quotes inte finns
-                return fetch('../world_manifesto_quotes.json')
+                return fetch('../share/world_manifesto_quotes.json')
                     .then(r => r.ok ? r.json() : null)
                     .then(q => q || data)
                     .catch(() => data);
