@@ -1197,7 +1197,7 @@
         const geometry = new THREE.SphereGeometry(globeRadius, 128, 128);
         const textureLoader = new THREE.TextureLoader();
         // ⚠️ REPLACE WITH YOUR OWN EARTH TEXTURE ⚠️
-        const earthTex = textureLoader.load('https://lh3.googleusercontent.com/u/0/d/1bwDxtprkqT4cjNJ46WC2TUCsCJrHt-Rd=w2048');
+        const earthTex = textureLoader.load('../tropics/Earth Globe.png');
         const material = new THREE.MeshStandardMaterial({ map: earthTex, roughness: 0.5, metalness: 0.1 });
         const globeMesh = new THREE.Mesh(geometry, material);
         globeGroup.add(globeMesh);
