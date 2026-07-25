@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotel — The World Manifesto</title>
+
+    <!-- Kina-säker: Kolla språk + tidszon INNAN något CF-anrop görs -->
+    <script>
+    (function(){
+        try {
+            var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || navigator.userLanguage || ''];
+            var isZh = langs.some(function(l){ return l && l.toLowerCase().startsWith('zh'); });
+            var isChinaTimezone = false;
+            if (window.Intl && Intl.DateTimeFormat) {
+                try {
+                    var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                    if (tz === 'Asia/Shanghai' || tz === 'Asia/Chongqing' || tz === 'Asia/Harbin' || tz === 'Asia/Urumqi') {
+                        isChinaTimezone = true;
+                    }
+                } catch(e){}
+            }
+            // Spara globalt så chatten kan kolla det
+            window.__isChinaVisitor = isZh || isChinaTimezone;
+        } catch(e){
+            window.__isChinaVisitor = false;
+        }
+    })();
+    </script>
+
     <style>
         body {
             font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -13,8 +37,6 @@
             margin: 0;
             padding: 0;
         }
-
-        /* --- MENY - EXAKT SOM DIN FUNGERANDE INDEX --- */
         .site-nav {
             width: 100%;
             background-color: #f7f7f7;
@@ -83,7 +105,6 @@
             }
             .dropdown.active .dropdown-content { display: block; }
         }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -118,7 +139,7 @@
                     <a href="../lang.html">🌐 More Languages</a>
                     <a href="../freedom-staircase.html">🪜 Freedom Staircase</a>
                     <a href="../tropics.html">🌎 The Tropics</a>
-                    <a href="../robotel.html">👄 Robotel</a>
+                    <a href="../robotel.html" id="robotel-menu-item">👄 Robotel</a>
                     <a href="../share/share.html">🗨 Share</a>
                 </div>
             </div>
@@ -129,6 +150,7 @@
         <main>
             <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 20px;">Robotel</h1>
 
+            <!-- Normal chat-container -->
             <div id="chat-container" style="font-family: Arial, sans-serif; max-width: 500px; margin: 20px auto; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); text-align: left;">
                 <div style="background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: #1e293b; display: flex; justify-content: space-between; align-items: center;">
                     <span>🤖 Robotel, the World Manifesto's answering robot.</span>
@@ -142,6 +164,14 @@
                     <button onclick="sendMessage()" style="margin-left: 8px; background: #2563eb; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: bold;">Send</button>
                 </div>
             </div>
+
+            <!-- Kina-block - visas bara för zh / Shanghai -->
+            <div id="china-block" style="display:none; max-width:500px; margin:20px auto; padding:24px; border:1px solid #e2e8f0; border-radius:12px; background:#fff; text-align:left; font-family: system-ui, sans-serif;">
+                <h2 style="margin-top:0;">Robotel är inte tillgänglig i din region</h2>
+                <p style="color:#444; line-height:1.5;">För att skydda tillgängligheten för vår huvudwebbplats på GitHub Pages gör vi inga anrop till externa tjänster från denna region.</p>
+                <p><a href="../index.html" style="color:#2563eb;">← Tillbaka till startsidan</a></p>
+            </div>
+
         </main>
 
         <footer>
@@ -155,7 +185,7 @@
     </div>
 
     <script>
-    // --- MENY LOGIK - SAKNADES I CF-KODEN (därför helvitsida på mobil) ---
+    // --- MENY LOGIK ---
     (function(){
         const dropdown = document.getElementById('homeDropdown');
         const btn = document.getElementById('homeBtn');
@@ -175,9 +205,18 @@
                 isOpen = false;
             }
         });
+        // Dölj Robotel-länken även på robotel.html själv för kinesiska besökare
+        if(window.__isChinaVisitor){
+            document.querySelectorAll('a[href*="robotel"]').forEach(function(el){ el.remove(); });
+            // Visa block-meddelande, göm chatten - INGET CF-anrop kommer att göras
+            var chat = document.getElementById('chat-container');
+            var block = document.getElementById('china-block');
+            if(chat) chat.style.display = 'none';
+            if(block) block.style.display = 'block';
+        }
     })();
 
-    // --- ROBOTEL CHAT - FIXAD ---
+    // --- ROBOTEL CHAT - Kina-säker ---
     let currentLanguage = navigator.language || 'sv-SE';
 
     const inputEl = document.getElementById('user-input');
@@ -190,6 +229,11 @@
     }
 
     async function sendMessage() {
+        // KRITISKT: Om kinesisk besökare, gör INGET fetch till CF
+        if(window.__isChinaVisitor){
+            return;
+        }
+
         const text = inputEl.value.trim();
         if (!text) return;
 
@@ -222,7 +266,6 @@
             }
 
             let reply = data.reply || 'No reply';
-            // Länkar klickbara
             reply = reply.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" style="color: #2563eb; text-decoration: underline;">$1</a>');
             reply = reply.replace(/\n/g, '<br>');
 
@@ -236,6 +279,7 @@
     }
 
     function clearChat() {
+        if(window.__isChinaVisitor) return;
         currentLanguage = navigator.language || 'sv-SE';
         boxEl.innerHTML = `<div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">🧹 Chatten har rensats. Ställ din fråga till Robotel!</div>`;
     }
