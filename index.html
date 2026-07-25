@@ -37,19 +37,6 @@
             position: relative;
             display: inline-block;
         }
-        .dropdown::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 100%;
-            height: 12px;
-            background: transparent;
-            display: none;
-        }
-        .dropdown:hover::after {
-            display: block;
-        }
 
         .dropbtn {
             color: #1a1a1a;
@@ -72,7 +59,7 @@
             display: none;
             position: absolute;
             left: 0;
-            top: calc(100% + 8px);
+            top: 100%;
             margin-top: 0;
             background-color: #fff;
             min-width: 240px;
