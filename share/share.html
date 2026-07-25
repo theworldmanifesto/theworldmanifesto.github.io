@@ -14,54 +14,97 @@
             padding: 0;
         }
 
+        /* --- MENY - Fixad för Firefox, ingen glipa - från index.html --- */
         .site-nav {
             width: 100%;
             background-color: #f7f7f7;
             border-bottom: 1px solid #e5e5e5;
             padding: 10px 0;
+            position: relative;
+            z-index: 100;
         }
-
         .nav-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 0 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
         }
-
-        .menu-toggle {
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 12px;
+            background: transparent;
             display: none;
-            background: none;
-            border: 1px solid #ccc;
-            padding: 6px 12px;
-            font-size: 16px;
-            font-family: Georgia, serif;
-            cursor: pointer;
-            border-radius: 4px;
+            pointer-events: auto;
         }
-
-        .menu-links {
-            display: flex;
-            gap: 20px;
-            width: 100%;
-            justify-content: center;
+        .dropdown:hover::after {
+            display: block;
         }
-
-        .menu-links a {
+        .dropbtn {
             color: #1a1a1a;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 8px 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            display: inline-block;
         }
-
-        .menu-links a:hover {
-            text-decoration: underline;
+        .dropbtn:hover {
+            background: #fff;
+            border-color: #999;
         }
-
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: calc(100% + 8px);
+            margin-top: 0;
+            background-color: #fff;
+            min-width: 240px;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            overflow: hidden;
+            z-index: 999;
+        }
+        .dropdown-content a {
+            color: #1a1a1a;
+            padding: 11px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+            font-family: system-ui, sans-serif;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .dropdown-content a:last-child { border-bottom: none; }
+        .dropdown-content a:hover { background-color: #f7f7f7; }
+        @media (min-width: 601px) {
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        }
         @media (max-width: 600px) {
-            .menu-toggle { display: block; margin: 0 auto; }
-            .menu-links { display: none; flex-direction: column; text-align: center; gap: 12px; padding-top: 15px; }
-            .menu-links.active { display: flex; }
+            .nav-container { justify-content: center; }
+            .dropdown-content {
+                position: static;
+                margin-top: 10px;
+                box-shadow: none;
+                width: 100vw;
+                max-width: 320px;
+            }
+            .dropdown.active .dropdown-content { display: block; }
+            .dropdown::after { display: none !important; }
         }
 
         .container {
@@ -172,37 +215,30 @@
         .webmaster { font-size: 16px; margin-bottom: 15px; }
         .webmaster a { color: #1a1a1a; text-decoration: none; }
         .copyright { font-size: 14px; color: #666; }
-
-        .back-link {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .back-link a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-size: 15px;
-        }
-    </style>
+</style>
 </head>
 <body>
 
+    <!-- RIKTIGA MENYN - samma som index.html och robotel.html, anpassad för /share/share.html -->
     <div class="site-nav">
         <div class="nav-container">
-            <button class="menu-toggle" onclick="document.querySelector('.menu-links').classList.toggle('active')">☰</button>
-            <div class="menu-links">
-                <a href="index.html">Home</a>
-                <a href="EN.html">English</a>
-                <a href="ZH.html">简体中文</a>
-                <a href="SV.html">Svenska</a>
-                <a href="lang.html">🌐 More Languages</a>
+            <div class="dropdown" id="homeDropdown">
+                <a href="../index.html" class="dropbtn" id="homeBtn">🌐HOME</a>
+                <div class="dropdown-content">
+                    <a href="../lang/en.html">🇬🇧 ENGLISH</a>
+                    <a href="../lang/zh.html">🇨🇳 简体中文</a>
+                    <a href="../lang/sv.html">🇸🇪 SVENSKA</a>
+                    <a href="../lang.html">🌐 More Languages</a>
+                    <a href="../freedom-staircase.html">🪜 Freedom Staircase</a>
+                    <a href="../tropics.html">🌎 The Tropics</a>
+                    <a href="../robotel/robotel.html">👄 Robotel</a>
+                    <a href="share.html">💬 Share</a>
+                </div>
             </div>
         </div>
-    </div>
 
     <div class="container">
         <main>
-
             <header>
                 <h1>Share with others on the Internet</h1>
                 <p>Refer to this manifesto by leaving quotes on various social media.</p>
@@ -258,7 +294,7 @@
             <div id="quotes-container"></div>
 
             <p class="read-more">
-                Want to read it all? <a href="../lang/lang.html" >Read the full manifesto in 42 languages →</a>
+                Want to read it all? <a href="h../lang/lang.html" >Read the full manifesto in 42 languages →</a>
             </p>
         </main>
 
@@ -273,7 +309,29 @@
     </div>
 
     <script>
-        const PAGE = "/";
+        // MENY LOGIK - samma som index.html och robotel.html
+        (function(){
+            const dropdown = document.getElementById('homeDropdown');
+            const btn = document.getElementById('homeBtn');
+            let isOpen = false;
+            btn.addEventListener('click', function(e){
+                if(window.innerWidth <= 600){
+                    if(!isOpen){
+                        e.preventDefault();
+                        dropdown.classList.add('active');
+                        isOpen = true;
+                    }
+                }
+            });
+            document.addEventListener('click', function(e){
+                if(!dropdown.contains(e.target)){
+                    dropdown.classList.remove('active');
+                    isOpen = false;
+                }
+            });
+        })();
+
+        const PAGE = "https://theworldmanifesto.github.io/";
         const MANIFESTO = "The World Manifesto";
 
         const urlParams = new URLSearchParams(window.location.search);
