@@ -37,6 +37,19 @@
             position: relative;
             display: inline-block;
         }
+        .dropdown::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 12px;
+            background: transparent;
+            display: none;
+        }
+        .dropdown:hover::after {
+            display: block;
+        }
 
         .dropbtn {
             color: #1a1a1a;
@@ -59,8 +72,8 @@
             display: none;
             position: absolute;
             left: 0;
-            top: 100%;
-            margin-top: 6px;
+            top: calc(100% + 8px);
+            margin-top: 0;
             background-color: #fff;
             min-width: 240px;
             border: 1px solid #e5e5e5;
@@ -204,22 +217,6 @@
             font-family: sans-serif;
         }
     </style>
-
-    
-        <!-- Kina-säker meny: dölj Robotel för zh-besökare så CF-anropet inte triggar censur -->
-    <script>
-    (function(){
-        try {
-            var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || navigator.userLanguage || ''];
-            var isZh = langs.some(function(l){ return l && l.toLowerCase().startsWith('zh'); });
-            if(isZh){
-                document.addEventListener('DOMContentLoaded', function(){
-                    document.querySelectorAll('a[href*="robotel"]').forEach(function(el){ el.remove(); });
-                });
-            }
-        } catch(e){}
-    })();
-    </script>
 </head>
 <body>
 
@@ -235,8 +232,8 @@
                     <a href="lang.html">🌐 More Languages</a>
                     <a href="freedom-staircase.html">🪜 Freedom Staircase</a>
                     <a href="tropics.html">🌎 The Tropics</a>
-                    <a href="robotel.html" id="robotel-menu-item">👄 Robotel</a>
-                    <a href="share/share.html">🗨 Share</a>
+                    <a href="robotel.html">👄 Robotel</a>
+                    <a href="share.html">Share</a>
                 </div>
             </div>
         </div>
@@ -309,6 +306,8 @@
                     <option value="cs">Čeština</option>
                     <option value="sv">Svenska</option>
                     <option value="bg">Български</option>
+                    <option value="hr">Hrvatski</option>
+                    <option value="sk">Slovenčina</option>
                     <option value="no">Norsk</option>
                     <option value="da">Dansk</option>
                     <option value="fi">Suomi</option>
