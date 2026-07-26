@@ -12,6 +12,45 @@
         
         .ui-element { position: absolute; z-index: 10; background: rgba(27, 0, 39, 0.85); color: #fff; border: 1px solid #4a154b; border-radius: 8px; backdrop-filter: blur(5px); }
         
+        /* TILLBAKA-KNAPP */
+        #back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 200;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background 0.2s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #back-button:hover {
+            background: rgba(255, 215, 0, 0.25);
+            border-color: #FFD700;
+            transform: scale(1.05);
+        }
+        #back-button:active {
+            transform: scale(0.95);
+        }
+        @media (max-width: 600px) {
+            #back-button {
+                top: 12px;
+                left: 12px;
+                padding: 6px 12px;
+                font-size: 13px;
+                border-radius: 30px;
+            }
+        }
+        
         /* LANGUAGE SELECTOR - compact dropdown */
         #language-selector {
             bottom: 55px;
@@ -48,13 +87,22 @@
         /* SÖKPANEL - responsiv och kompakt */
         #search-panel { 
             top: 10px; 
-            left: 10px; 
+            left: 70px; /* flyttas lite höger så den inte krockar med tillbaka-knappen */
             width: auto;
             min-width: 180px;
             max-width: 240px;
             padding: 5px 8px; 
             border-radius: 40px;
             z-index: 100;
+        }
+
+        @media (max-width: 600px) {
+            #search-panel {
+                left: 60px;
+                min-width: 140px;
+                max-width: 180px;
+                top: 8px;
+            }
         }
 
         #search-input { 
@@ -330,6 +378,9 @@
     <script src="../tropics/Three_js_r128/OrbitControls.js"></script>
 </head>
 <body>
+
+    <!-- TILLBAKA-KNAPP -->
+    <a href="../index.html" id="back-button" title="Tillbaka till startsidan">← Tillbaka</a>
 
     <div id="canvas-container"></div>
     <div id="labels-container" style="position: absolute; width:100%; height:100%; top:0; left:0; pointer-events:none; z-index:5;"></div>
