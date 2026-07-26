@@ -1200,18 +1200,18 @@
         textCanvas.height = 400;
         const ctx = textCanvas.getContext('2d');
         
-        // Golden gradient background
+        // Golden gradient background (originally #FFD700 #FFC107 #FFD700 )
         const gradient = ctx.createLinearGradient(0, 0, 0, textCanvas.height);
-        gradient.addColorStop(0, '#FFD700');
-        gradient.addColorStop(0.5, '#FFC107');
-        gradient.addColorStop(1, '#FFD700');
+        gradient.addColorStop(0, '#FFF900');
+        gradient.addColorStop(0.5, '#FFE307');
+        gradient.addColorStop(1, '#FFF900');
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, textCanvas.width, textCanvas.height);
         
-        // Text settings
+        // Text settings (originally #7A0000)
         ctx.textAlign = 'left';
         ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#7A0000';
+        ctx.fillStyle = '#000000';
         ctx.font = 'bold 39px "Segoe UI", Arial, sans-serif';
         
         // Text: "✦   THE WORLD MANIFESTO   "
