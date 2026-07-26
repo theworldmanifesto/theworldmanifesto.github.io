@@ -2,6 +2,7 @@
 <html lang="sv">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The World Manifesto</title>
 <style>
     body {
@@ -10,13 +11,108 @@
         color: #1a1a1a;
         background-color: #fcfcfc;
         margin: 0;
-        padding: 0; /* Justerat till 0 för att matcha index.html */
+        padding: 0;
+    }
+
+    /* --- MENY --- */
+    .site-nav {
+        width: 100%;
+        background-color: #f7f7f7;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 10px 0;
+        position: relative;
+        z-index: 100;
+    }
+
+    .nav-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropbtn {
+        color: #1a1a1a;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 8px 14px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: #fff;
+        display: inline-block;
+    }
+
+    .dropbtn:hover {
+        background: #fff;
+        border-color: #999;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        margin-top: 0;
+        background-color: #fff;
+        min-width: 240px;
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .dropdown-content a {
+        color: #1a1a1a;
+        padding: 11px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        font-family: system-ui, sans-serif;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .dropdown-content a:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f7f7f7;
+    }
+
+    @media (min-width: 601px) {
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .nav-container { justify-content: center; }
+        .dropdown-content {
+            position: static;
+            margin-top: 10px;
+            box-shadow: none;
+            width: 100vw;
+            max-width: 320px;
+        }
+        .dropdown.active .dropdown-content {
+            display: block;
+        }
     }
     
+    /* --- SIDLAYOUT --- */
     .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 40px 20px; /* Tillagt för att matcha index.html */
+        padding: 40px 20px;
         display: flex;
         flex-direction: column;
         min-height: 85vh;
@@ -55,7 +151,7 @@
         margin: 0 auto 6px;
     }
 
-    /* --- CSS FÖR FOOTER (Hämtad från index.html) --- */
+    /* --- FOOTER --- */
     footer {
         margin-top: 60px;
         text-align: center;
@@ -66,8 +162,43 @@
     .webmaster a { color: #1a1a1a; text-decoration: none; }
     .copyright { font-size: 14px; color: #666; }
 </style>
+
+<!-- Kina-säker meny: dölj Robotel för zh-besökare -->
+<script>
+(function(){
+    try {
+        var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || navigator.userLanguage || ''];
+        var isZh = langs.some(function(l){ return l && l.toLowerCase().startsWith('zh'); });
+        if(isZh){
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelectorAll('a[href*="robotel"]').forEach(function(el){ el.remove(); });
+            });
+        }
+    } catch(e){}
+})();
+</script>
+
 </head>
 <body>
+
+<!-- MENY -->
+<div class="site-nav">
+    <div class="nav-container">
+        <div class="dropdown" id="homeDropdown">
+            <a href="index.html" class="dropbtn" id="homeBtn">🌐HOME</a>
+            <div class="dropdown-content">
+                <a href="lang/en.html">🇬🇧 ENGLISH</a>
+                <a href="lang/zh.html">🇨🇳 简体中文</a>
+                <a href="lang/sv.html">🇸🇪 SVENSKA</a>
+                <a href="lang.html">🌐 More Languages</a>
+                <a href="freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
+                <a href="tropics/tropics.html">🌎 The Tropics</a>
+                <a href="robotel/robotel.html" id="robotel-menu-item">👄 Robotel</a>
+                <a href="share/share.html">💬 Share</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container">
     <main>
@@ -136,6 +267,34 @@
     <p style="margin-top:30px;color:#666">Alla flaggor laddas lokalt från /flags/ på samma domän - inga externa anrop. Funkar i Kina, funkar i Chrome/Edge. FIT = Meänkieli = fit.svg (Meänflaku), SE = Nordsamiska = dsg.svg (Sámi-leavga).</p>
     -->
 </div>
+
+<script>
+    // --- MENY LOGIK: Hover på desktop, klick på mobil ---
+    (function(){
+        const dropdown = document.getElementById('homeDropdown');
+        const btn = document.getElementById('homeBtn');
+        let isOpen = false;
+
+        btn.addEventListener('click', function(e){
+            // På mobil: första klicket öppnar menyn, andra klicket går till index.html
+            if(window.innerWidth <= 600){
+                if(!isOpen){
+                    e.preventDefault();
+                    dropdown.classList.add('active');
+                    isOpen = true;
+                }
+            }
+        });
+
+        // Stäng menyn om man klickar utanför
+        document.addEventListener('click', function(e){
+            if(!dropdown.contains(e.target)){
+                dropdown.classList.remove('active');
+                isOpen = false;
+            }
+        });
+    })();
+</script>
 
 </body>
 </html>
