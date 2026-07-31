@@ -1,130 +1,111 @@
 /* ==========================================================================
    SHARED NAVIGATION MENU (menu.css)
-   Supports body ID scoping for page-specific active state and positioning.
+   Exakt kopierad från ursprungliga index.html
    ========================================================================== */
 
-/* Base Navigation Container - Placerad i linje med innehållets vänsterkant (max-width 800px) */
+/* Header-remsan längst upp */
 .site-nav {
-    position: fixed;
-    top: 10px;
-    left: calc(50% - 400px + 20px); /* Centrerar utifrån 800px container: 50% - (800px / 2) + 20px padding */
-    z-index: 300;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    padding: 5px 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    width: 100%;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    position: relative;
+    z-index: 100;
 }
 
+/* Centrerad behållare med max 800px bredd */
 .nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
-/* Dropdown Wrapper */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Button */
 .dropbtn {
     color: #1a1a1a;
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
-    padding: 6px 12px;
+    padding: 8px 14px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: #fff;
     display: inline-block;
-    transition: all 0.2s ease;
-    cursor: pointer;
 }
 
 .dropbtn:hover {
-    background: #f7f7f7;
+    background: #fff;
     border-color: #999;
 }
 
-/* Dropdown Menu Content */
 .dropdown-content {
     display: none;
     position: absolute;
     left: 0;
     top: 100%;
-    margin-top: 4px;
-    background-color: #fff;
-    min-width: 220px;
-    border: 1px solid #e5e5e5;
+    margin-top: 0;
     border-radius: 10px;
+    background-color: #fff;
+    min-width: 240px;
+    border: 1px solid #e5e5e5;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     z-index: 999;
 }
 
 .dropdown-content a {
+    border-radius: 16px;
     color: #1a1a1a;
-    padding: 10px 14px;
+    padding: 11px 16px;
     text-decoration: none;
     display: block;
-    font-size: 14px;
+    font-size: 15px;
     font-family: system-ui, -apple-system, sans-serif;
     border-bottom: 1px solid #f0f0f0;
-    transition: background-color 0.15s ease;
 }
 
 .dropdown-content a:last-child {
     border-bottom: none;
+    border-radius: 16px;
 }
 
 .dropdown-content a:hover {
+    border-radius: 16px;
     background-color: #f7f7f7;
 }
 
-/* Desktop Hover Interaction */
+/* Desktop: öppna på hover över 🌐HOME */
 @media (min-width: 601px) {
     .dropdown:hover .dropdown-content {
         display: block;
     }
 }
 
-/* Responsiv anpassning för smalare skärmar och mobil */
-@media (max-width: 840px) {
-    .site-nav {
-        left: 20px; /* Om skärmen är smalare än 840px ligger den 20px från vänsterkanten */
-    }
-}
-
+/* Mobil anpassning */
 @media (max-width: 600px) {
-    .site-nav {
-        top: 6px;
-        left: 10px;
-        padding: 4px 6px;
-    }
-    .dropbtn {
-        font-size: 14px;
-        padding: 4px 10px;
+    .nav-container { 
+        justify-content: center; 
     }
     .dropdown-content {
         position: static;
-        margin-top: 6px;
+        margin-top: 10px;
         box-shadow: none;
         width: 100vw;
-        max-width: 280px;
+        max-width: 320px;
     }
     .dropdown.active .dropdown-content {
         display: block;
     }
 }
 
-/* ==========================================================================
-   BODY-ID SPECIFIC OVERRIDES & ACTIVE HIGHLIGHTS
-   ========================================================================== */
-
-/* Active Link Highlighting based on Body ID */
+/* Markerad aktiv länk baserat på Body ID */
 body#home-page .dropdown-content a[href*="index.html"],
 body#tropics-page .dropdown-content a[href*="tropics"],
 body#freedom-page .dropdown-content a[href*="freedom-staircase"],
@@ -133,9 +114,4 @@ body#robotel-page .dropdown-content a[href*="robotel"] {
     font-weight: bold;
     background-color: #eef6ff;
     color: #0066cc;
-}
-
-/* Page Specific Customization via Body ID */
-body#tropics-page .site-nav {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
