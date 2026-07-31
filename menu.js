@@ -1,15 +1,23 @@
-// menu.js - Genererar menyn, anpassar första knappen och döljer Robotel vid Kina-kriterier
+// menu.js - Genererar menyn och hanterar relativa sökvägar för undermappar
 
 document.addEventListener("DOMContentLoaded", function () {
     const menuContainer = document.getElementById("main-menu");
     if (!menuContainer) return;
 
+    // Känn av om filen ligger i en undermapp (kollar om skriptet läses in från "../menu.js")
+    const scripts = document.getElementsByTagName('script');
+    let prefix = "";
+    for (let s of scripts) {
+        if (s.src && s.src.includes('../menu.js')) {
+            prefix = "../";
+            break;
+        }
+    }
+
     // 1. Kriteriekontroll för Kina (BÅDA kriterierna måste uppfyllas)
-    // Kriterium A: Webbläsarens språk är inställt på Kina ('zh', 'zh-CN', 'zh-hans' etc.)
     const userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
     const isChinaLang = userLang.startsWith('zh');
 
-    // Kriterium B: Enhetens tidszon är inställd på Kina ('Asia/Shanghai', 'Asia/Urumqi', 'Asia/Chongqing' etc.)
     let isChinaTimeZone = false;
     try {
         const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -17,31 +25,28 @@ document.addEventListener("DOMContentLoaded", function () {
             isChinaTimeZone = true;
         }
     } catch (e) {
-        // Om tidszon inte kan läsas av
         isChinaTimeZone = false;
     }
 
-    // Om BÅDA stämmer -> dölj Robotel
     const hideRobotel = isChinaLang && isChinaTimeZone;
 
-    // 2. Bygg HTML för menyn
+    // 2. Bygg HTML för menyn med prefix (../ om i undermapp)
     let html = `
     <div class="site-nav">
         <div class="nav-container">
             <div class="dropdown" id="homeDropdown">
-                <a href="index.html" class="dropbtn" id="homeBtn">🌐HOME</a>
+                <a href="${prefix}index.html" class="dropbtn" id="homeBtn">🌐HOME</a>
                 <div class="dropdown-content">
-                    <a id="detected-lang-link" href="lang/sv.html">🇸🇪 SVENSKA</a>
-                    <a href="lang/en.html">🇬🇧 ENGLISH</a>
-                    <a href="lang/zh.html">🇨🇳 简体中文</a>
-                    <a href="lang/lang.html">🌐 More Languages</a>
-                    <a href="freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
-                    <a href="tropics/tropics.html">🌎 The Tropics</a>
-                    <a href="share/share.html">💬 Share</a>`;
+                    <a id="detected-lang-link" href="${prefix}lang/sv.html">🇸🇪 SVENSKA</a>
+                    <a href="${prefix}lang/en.html">🇬🇧 ENGLISH</a>
+                    <a href="${prefix}lang/zh.html">🇨🇳 简体中文</a>
+                    <a href="${prefix}lang/lang.html">🌐 More Languages</a>
+                    <a href="${prefix}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
+                    <a href="${prefix}tropics/tropics.html">🌎 The Tropics</a>
+                    <a href="${prefix}share/share.html">💬 Share</a>`;
 
-    // Lägg bara till Robotel om besökaren INTE uppfyller båda Kina-kriterierna
     if (!hideRobotel) {
-        html += `\n                    <a href="robotel/robotel.html">👄 Robotel</a>`;
+        html += `\n                    <a href="${prefix}robotel/robotel.html">👄 Robotel</a>`;
     }
 
     html += `
@@ -52,21 +57,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuContainer.innerHTML = html;
 
-    // 3. Dynamisk förstalänk för språk (om besökaren har t.ex. Tyska, Spanska, osv.)
+    // 3. Dynamisk förstalänk för språk
     const langData = {
-        'es': { url: 'lang/es.html', text: '🇪🇸 ESPAÑOL' },
-        'fr': { url: 'lang/fr.html', text: '🇫🇷 FRANÇAIS' },
-        'de': { url: 'lang/de.html', text: '🇩🇪 DEUTSCH' },
-        'ru': { url: 'lang/ru.html', text: '🇷🇺 РУССКИЙ' },
-        'ja': { url: 'lang/ja.html', text: '🇯🇵 日本語' },
-        'fi': { url: 'lang/fi.html', text: '🇫🇮 SUOMI' },
-        'no': { url: 'lang/no.html', text: '🇳🇴 NORSK' },
-        'da': { url: 'lang/da.html', text: '🇩🇰 DANSK' },
-        'it': { url: 'lang/it.html', text: '🇮🇹 ITALIANO' },
-        'pt': { url: 'lang/pt.html', text: '🇵🇹 PORTUGUÊS' },
-        'hi': { url: 'lang/hi.html', text: '🇮🇳 हिन्दी' },
-        'ar': { url: 'lang/ar.html', text: '🇸🇦 العربية' }
-        // Fyll på med fler av dina 42 språk vid behov
+        'es': { url: `${prefix}lang/es.html`, text: '🇪🇸 ESPAÑOL' },
+        'fr': { url: `${prefix}lang/fr.html`, text: '🇫🇷 FRANÇAIS' },
+        'de': { url: `${prefix}lang/de.html`, text: '🇩🇪 DEUTSCH' },
+        'ru': { url: `${prefix}lang/ru.html`, text: '🇷🇺 РУССКИЙ' },
+        'ja': { url: `${prefix}lang/ja.html`, text: '🇯🇵 日本語' },
+        'fi': { url: `${prefix}lang/fi.html`, text: '🇫🇮 SUOMI' },
+        'no': { url: `${prefix}lang/no.html`, text: '🇳🇴 NORSK' },
+        'da': { url: `${prefix}lang/da.html`, text: '🇩🇰 DANSK' },
+        'it': { url: `${prefix}lang/it.html`, text: '🇮🇹 ITALIANO' },
+        'pt': { url: `${prefix}lang/pt.html`, text: '🇵🇹 PORTUGUÊS' },
+        'hi': { url: `${prefix}lang/hi.html`, text: '🇮🇳 हिन्दी' },
+        'ar': { url: `${prefix}lang/ar.html`, text: '🇸🇦 العربية' }
     };
 
     const shortLang = userLang.slice(0, 2);
