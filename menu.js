@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="site-nav">
         <div class="nav-container">
             <div class="dropdown" id="homeDropdown">
-                <a href="${prefix}index.html" class="dropbtn" id="homeBtn">🏠 HOME</a>
+                <a href="${prefix}index.html" class="dropbtn" id="homeBtn">🌐HOME</a>
                 <div class="dropdown-content">
                     <a id="detected-lang-link" href="${prefix}lang/sv.html">🇸🇪 SVENSKA</a>
                     <a href="${prefix}lang/en.html">🇬🇧 ENGLISH</a>
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="${prefix}share/share.html">💬 Share</a>`;
 
     if (!hideRobotel) {
-        html += `\n                    <a href="${prefix}robotel/robotel.html">🤖 Robotel</a>`;
+        html += `\n                    <a href="${prefix}robotel/robotel.html">👄 Robotel</a>`;
     }
 
     html += `
