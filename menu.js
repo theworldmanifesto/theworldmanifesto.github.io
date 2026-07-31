@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="${prefix}share/share.html">💬 Share</a>`;
 
     if (!hideRobotel) {
-        html += `\n                    <a href="${prefix}robotel/robotel.html">👄 Robotel</a>`;
+        html += `\n                    <a href="${prefix}robotel/robotel.html">🤖 Robotel</a>`;
     }
 
     html += `
