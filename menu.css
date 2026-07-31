@@ -1,68 +1,79 @@
-/* menu.css - Separerad design för navigeringsmenyn */
+/* ==========================================================================
+   SHARED NAVIGATION MENU (menu.css)
+   Supports body ID scoping for page-specific active state and positioning.
+   ========================================================================== */
 
+/* Base Navigation Container */
 .site-nav {
-    width: 100%;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 10px 0;
-    position: relative;
-    z-index: 100;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 300;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 5px 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .nav-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
+/* Dropdown Wrapper */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+/* Dropdown Button */
 .dropbtn {
     color: #1a1a1a;
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
-    padding: 8px 14px;
+    padding: 6px 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: #fff;
     display: inline-block;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .dropbtn:hover {
-    background: #fff;
+    background: #f7f7f7;
     border-color: #999;
 }
 
+/* Dropdown Menu Content */
 .dropdown-content {
     display: none;
     position: absolute;
     left: 0;
     top: 100%;
-    margin-top: 0;
-    border-radius: 16px; /* Rundade hörn */
+    margin-top: 4px;
     background-color: #fff;
-    min-width: 240px;
+    min-width: 220px;
     border: 1px solid #e5e5e5;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     z-index: 999;
 }
 
 .dropdown-content a {
     color: #1a1a1a;
-    padding: 11px 16px;
+    padding: 10px 14px;
     text-decoration: none;
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     font-family: system-ui, -apple-system, sans-serif;
     border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.15s ease;
 }
 
 .dropdown-content a:last-child {
@@ -73,26 +84,53 @@
     background-color: #f7f7f7;
 }
 
-/* Desktop: Öppna på hover */
+/* Desktop Hover Interaction */
 @media (min-width: 601px) {
     .dropdown:hover .dropdown-content {
         display: block;
     }
 }
 
-/* Mobil: Öppna på klick */
+/* Mobile Responsive Adjustments */
 @media (max-width: 600px) {
-    .nav-container { 
-        justify-content: center; 
+    .site-nav {
+        top: 6px;
+        left: 6px;
+        padding: 4px 6px;
+    }
+    .dropbtn {
+        font-size: 14px;
+        padding: 4px 10px;
     }
     .dropdown-content {
         position: static;
-        margin-top: 10px;
+        margin-top: 6px;
         box-shadow: none;
         width: 100vw;
-        max-width: 320px;
+        max-width: 280px;
     }
     .dropdown.active .dropdown-content {
         display: block;
     }
+}
+
+/* ==========================================================================
+   BODY-ID SPECIFIC OVERRIDES & ACTIVE HIGHLIGHTS
+   ========================================================================== */
+
+/* Active Link Highlighting based on Body ID */
+body#home-page .dropdown-content a[href*="index.html"],
+body#tropics-page .dropdown-content a[href*="tropics"],
+body#freedom-page .dropdown-content a[href*="freedom-staircase"],
+body#share-page .dropdown-content a[href*="share"],
+body#robotel-page .dropdown-content a[href*="robotel"] {
+    font-weight: bold;
+    background-color: #eef6ff;
+    color: #0066cc;
+}
+
+/* Page Specific Positioning Customization via Body ID */
+body#tropics-page .site-nav {
+    /* Tropics specific overlay styling if needed */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
