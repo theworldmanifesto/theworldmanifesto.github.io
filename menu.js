@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let prefix = "";
     for (let s of scripts) {
         if (s.src && s.src.includes('../menu.js')) {
-            prefix = "../";
+            prefix = "//";
             break;
         }
     }
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a id="detected-lang-link" href="${prefix}lang/sv.html">🇸🇪 SVENSKA</a>
                     <a href="${prefix}lang/en.html">🇬🇧 ENGLISH</a>
                     <a href="${prefix}lang/zh.html">🇨🇳 简体中文</a>
-                    <a href="../lang/lang.html">🌐 More Languages</a>
+                    <a href="${prefix}lang/lang.html">🌐 More Languages</a>
                     <a href="${prefix}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
                     <a href="${prefix}tropics/tropics.html">🌎 The Tropics</a>
                     <a href="${prefix}share/share.html">💬 Share</a>`;
