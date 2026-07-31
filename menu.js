@@ -4,15 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuContainer = document.getElementById("main-menu");
     if (!menuContainer) return;
 
-    // Känn av om filen ligger i en undermapp (kollar om skriptet läses in från "../menu.js")
-    const scripts = document.getElementsByTagName('script');
-    let prefix = "";
-    for (let s of scripts) {
-        if (s.src && s.src.includes('../menu.js')) {
-            prefix = "./";
-            break;
-        }
+// Känn av om filen ligger i en undermapp genom att kolla om script-taggen har src="../menu.js"
+const scripts = document.getElementsByTagName('script');
+let prefix = "";
+
+for (let s of scripts) {
+    const src = s.getAttribute('src'); // getAttribute bevarar den skrivna koden "../menu.js"
+    if (src && src.includes('../menu.js')) {
+        prefix = "../"; // Tvinga länkar att gå upp ett mapplås när vi är i en undermapp!
+        break;
     }
+}
 
     // 1. Kriteriekontroll för Kina (BÅDA kriterierna måste uppfyllas)
     const userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
