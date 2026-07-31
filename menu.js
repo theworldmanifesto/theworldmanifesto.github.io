@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="https://theworldmanifesto.github.io/lang/en.html">🇬🇧 ENGLISH</a>
                     <a href="https://theworldmanifesto.github.io/lang/zh.html">🇨🇳 简体中文</a>
                     <a href="https://theworldmanifesto.github.io/lang/lang.html">🌐 More Languages</a>
-                    <a href="https://theworldmanifesto.github.io/freedom-staircase.html">🪜 Freedom Staircase</a>
+                    <a href="https://theworldmanifesto.github.io/freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
                     <a href="https://theworldmanifesto.github.io/tropics/tropics.html">🌎 The Tropics</a>
                     <a href="https://theworldmanifesto.github.io/share/share.html">💬 Share</a>`;
 
