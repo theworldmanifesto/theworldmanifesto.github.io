@@ -3,12 +3,11 @@
    Supports body ID scoping for page-specific active state and positioning.
    ========================================================================== */
 
-/* Base Navigation Container - Standard: placeras till HÖGER */
+/* Base Navigation Container - Placerad i linje med innehållets vänsterkant (max-width 800px) */
 .site-nav {
     position: fixed;
     top: 10px;
-    right: 10px; /* Ändrat från left till right som standard */
-    left: auto;  /* Säkerställer att den inte låses till vänster */
+    left: calc(50% - 400px + 20px); /* Centrerar utifrån 800px container: 50% - (800px / 2) + 20px padding */
     z-index: 300;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
@@ -50,12 +49,11 @@
     border-color: #999;
 }
 
-/* Dropdown Menu Content - Standard fälls ut mot högerkanten */
+/* Dropdown Menu Content */
 .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;   /* Ändrat från left: 0 så att undermenyn inte hamnar utanför skärmen till höger */
-    left: auto;
+    left: 0;
     top: 100%;
     margin-top: 4px;
     background-color: #fff;
@@ -93,12 +91,17 @@
     }
 }
 
-/* Mobile Responsive Adjustments */
+/* Responsiv anpassning för smalare skärmar och mobil */
+@media (max-width: 840px) {
+    .site-nav {
+        left: 20px; /* Om skärmen är smalare än 840px ligger den 20px från vänsterkanten */
+    }
+}
+
 @media (max-width: 600px) {
     .site-nav {
         top: 6px;
-        right: 6px; /* Justerat för mobil högerjustering */
-        left: auto;
+        left: 10px;
         padding: 4px 6px;
     }
     .dropbtn {
@@ -132,22 +135,7 @@ body#robotel-page .dropdown-content a[href*="robotel"] {
     color: #0066cc;
 }
 
-/* Page Specific Positioning Customization via Body ID */
-/* UNDANTAG: Enbart Tropics-sidan placerar menyn till VÄNSTER */
+/* Page Specific Customization via Body ID */
 body#tropics-page .site-nav {
-    left: 10px;
-    right: auto;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-body#tropics-page .dropdown-content {
-    left: 0;
-    right: auto;
-}
-
-@media (max-width: 600px) {
-    body#tropics-page .site-nav {
-        left: 6px;
-        right: auto;
-    }
 }
