@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let prefix = "";
     for (let s of scripts) {
         if (s.src && s.src.includes('../menu.js')) {
-            prefix = "/";
+            prefix = "./";
             break;
         }
     }
