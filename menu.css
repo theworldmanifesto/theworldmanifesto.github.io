@@ -107,7 +107,14 @@
 
 /* Markerad aktiv länk baserat på Body ID */
 body#home-page .dropdown-content a[href*="index.html"],
-body#tropics-page .dropdown-content a[href*="tropics"],
+
+/* body#tropics-page .dropdown-content a[href*="tropics"], */
+
+body#tropics-page .dropdown {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 body#freedom-page .dropdown-content a[href*="freedom-staircase"],
 body#share-page .dropdown-content a[href*="share"],
 body#robotel-page .dropdown-content a[href*="robotel"] {
