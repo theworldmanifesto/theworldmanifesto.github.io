@@ -3,11 +3,12 @@
    Supports body ID scoping for page-specific active state and positioning.
    ========================================================================== */
 
-/* Base Navigation Container */
+/* Base Navigation Container - Standard: placeras till HÖGER */
 .site-nav {
     position: fixed;
     top: 10px;
-    left: 10px;
+    right: 10px; /* Ändrat från left till right som standard */
+    left: auto;  /* Säkerställer att den inte låses till vänster */
     z-index: 300;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
@@ -49,11 +50,12 @@
     border-color: #999;
 }
 
-/* Dropdown Menu Content */
+/* Dropdown Menu Content - Standard fälls ut mot högerkanten */
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 0;
+    right: 0;   /* Ändrat från left: 0 så att undermenyn inte hamnar utanför skärmen till höger */
+    left: auto;
     top: 100%;
     margin-top: 4px;
     background-color: #fff;
@@ -95,7 +97,8 @@
 @media (max-width: 600px) {
     .site-nav {
         top: 6px;
-        left: 6px;
+        right: 6px; /* Justerat för mobil högerjustering */
+        left: auto;
         padding: 4px 6px;
     }
     .dropbtn {
@@ -130,7 +133,21 @@ body#robotel-page .dropdown-content a[href*="robotel"] {
 }
 
 /* Page Specific Positioning Customization via Body ID */
+/* UNDANTAG: Enbart Tropics-sidan placerar menyn till VÄNSTER */
 body#tropics-page .site-nav {
-    /* Tropics specific overlay styling if needed */
+    left: 10px;
+    right: auto;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+body#tropics-page .dropdown-content {
+    left: 0;
+    right: auto;
+}
+
+@media (max-width: 600px) {
+    body#tropics-page .site-nav {
+        left: 6px;
+        right: auto;
+    }
 }
