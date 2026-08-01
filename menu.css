@@ -115,6 +115,16 @@ body#tropics-page .dropdown-content {
     margin-left: 0 !important; /* Tar bort eventuellt oönskat avstånd/indrag */
 }
 
+body#tropics-page .dropdown {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+body#tropics-page .dropbtn {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 body#tropics-page .dropdown-content a[href*="tropics"],
 body#freedom-page .dropdown-content a[href*="freedom-staircase"],
 body#share-page .dropdown-content a[href*="share"],
