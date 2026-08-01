@@ -107,27 +107,7 @@
 
 /* Markerad aktiv länk baserat på Body ID */
 body#home-page .dropdown-content a[href*="index.html"],
-
-/* body#tropics-page .dropdown-content a[href*="tropics"], */
-
-/* ==========================================================================
-   BODY-ID SPECIFIC OVERRIDES & ACTIVE HIGHLIGHTS
-   ========================================================================== */
-
-/* Tropics-specifik positionering */
-body#tropics-page .site-nav {
-    left: 10px;
-    right: auto;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Tvinga rullgardinsmenyn att starta exakt i linje med knappen (0px från vänsterkanten) */
-body#tropics-page .dropdown-content {
-    left: 0 !important;
-    right: auto !important;
-    margin-left: 0 !important; /* Tar bort eventuellt oönskat avstånd/indrag */
-}
-
+body#tropics-page .dropdown-content a[href*="tropics"],
 body#freedom-page .dropdown-content a[href*="freedom-staircase"],
 body#share-page .dropdown-content a[href*="share"],
 body#robotel-page .dropdown-content a[href*="robotel"] {
