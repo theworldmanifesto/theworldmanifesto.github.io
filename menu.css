@@ -110,10 +110,7 @@ body#home-page .dropdown-content a[href*="index.html"],
 
 /* body#tropics-page .dropdown-content a[href*="tropics"], */
 
-body#tropics-page .dropdown {
-    margin-left: 0;
-    padding-left: 0;
-}
+body#tropics-page .dropdown-content a[href*="tropics"],
 
 body#freedom-page .dropdown-content a[href*="freedom-staircase"],
 body#share-page .dropdown-content a[href*="share"],
