@@ -5,29 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>The World Manifesto - Multilingual Tropical Globe | 3D Interactive Atlas</title>
 
-    <!-- Global Menu CSS -->
-    <link rel="stylesheet" href="../menu.css">
-
-    <style>
+<style>
         * { box-sizing: border-box; }
         body { margin: 0; overflow: hidden; background-color: #1B0027; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         #canvas-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        /* --- ÖVRIGA UI-ELEMENT (nedre vänster, staplade) --- */
-        .ui-element {
-            position: fixed;
-            z-index: 100;
-            background: rgba(27, 0, 39, 0.85);
-            color: #fff;
-            border: 1px solid #4a154b;
-            border-radius: 8px;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-        }
+        .ui-element { position: absolute; z-index: 10; background: rgba(27, 0, 39, 0.85); color: #fff; border: 1px solid #4a154b; border-radius: 8px; backdrop-filter: blur(5px); }
         
-        /* Språkmeny – längst ner */
+        /* LANGUAGE SELECTOR - compact dropdown */
         #language-selector {
-            bottom: 10px;
+            bottom: 55px;
             left: 10px;
             padding: 4px 8px;
             border-radius: 40px;
@@ -35,6 +22,7 @@
             backdrop-filter: blur(8px);
             z-index: 110;
         }
+        
         #lang-dropdown {
             background: rgba(27, 0, 39, 0.95);
             color: #fff;
@@ -46,183 +34,214 @@
             outline: none;
             font-weight: 500;
         }
+        
         #lang-dropdown:hover {
             background: #1B0027;
             border-color: #FFD700;
         }
+        
         #lang-dropdown option {
             background: #1B0027;
             color: #fff;
         }
         
-        /* Sökruta – ovanför språkmenyn */
-        #search-panel {
-            bottom: 70px;
-            left: 10px;
+        /* SÖKPANEL - responsiv och kompakt */
+        #search-panel { 
+            top: 10px; 
+            left: 10px; 
             width: auto;
             min-width: 180px;
             max-width: 240px;
-            padding: 5px 8px;
+            padding: 5px 8px; 
             border-radius: 40px;
             z-index: 100;
         }
-        #search-input {
-            width: 100%;
-            padding: 5px 10px;
-            border-radius: 30px;
-            border: 1px solid #555;
-            background: #222;
-            color: #fff;
+
+        #search-input { 
+            width: 100%; 
+            padding: 5px 10px; 
+            border-radius: 30px; 
+            border: 1px solid #555; 
+            background: #222; 
+            color: #fff; 
             font-size: 11px;
             outline: none;
         }
         #search-input:focus { border-color: #FFD700; }
         
-        #autocomplete-list {
-            background: #1f092a;
-            border: 1px solid #4a154b;
-            max-height: 160px;
-            overflow-y: auto;
-            position: absolute;
-            width: calc(100% - 16px);
-            left: 8px;
-            margin-top: 6px;
-            border-radius: 12px;
-            display: none;
+        #autocomplete-list { 
+            background: #1f092a; 
+            border: 1px solid #4a154b; 
+            max-height: 160px; 
+            overflow-y: auto; 
+            position: absolute; 
+            width: calc(100% - 16px); 
+            left: 8px; 
+            margin-top: 6px; 
+            border-radius: 12px; 
+            display: none; 
             z-index: 101;
         }
-        .autocomplete-item {
-            padding: 6px 10px;
-            cursor: pointer;
-            font-size: 11px;
+        
+        .autocomplete-item { 
+            padding: 6px 10px; 
+            cursor: pointer; 
+            font-size: 11px; 
             border-bottom: 1px solid #3a1a3f;
             color: #fff;
         }
         .autocomplete-item:hover { background: #ffd96633; }
         .autocomplete-item:last-child { border-bottom: none; }
         
-        /* Kontrollpanel (knappar) – ovanför sökrutan */
-        #control-panel {
-            bottom: 120px;
-            left: 10px;
-            width: auto;
-            padding: 5px 10px;
+        /* KONTROLLPANEL - horisontell och kompakt */
+        #control-panel { 
+            bottom: 10px; 
+            left: 10px; 
+            width: auto; 
+            padding: 5px 10px; 
             display: flex;
             gap: 8px;
             border-radius: 40px;
         }
-        .panel-btn {
-            padding: 4px 12px;
-            border: none;
-            border-radius: 40px;
-            color: white;
-            font-weight: 600;
+        
+        .panel-btn { 
+            padding: 4px 12px; 
+            border: none; 
+            border-radius: 40px; 
+            color: white; 
+            font-weight: 600; 
             font-size: 10px;
-            cursor: pointer;
-            transition: 0.2s;
+            cursor: pointer; 
+            transition: 0.2s; 
             white-space: nowrap;
         }
+        
         #tour-btn { background: #059669; }
         #tour-btn.active { background: #e67e22; }
         #rotate-btn { background: #4b5563; }
         #rotate-btn.active { background: #3b82f6; }
         .panel-btn:active { transform: scale(0.95); }
         
-        /* INFO-KORT */
-        #info-card {
-            top: 10px;
-            right: 10px;
-            width: 260px;
+        /* INFO-KORT - kompakt */
+        #info-card { 
+            top: 10px; 
+            right: 10px; 
+            width: 260px; 
             max-width: calc(100vw - 20px);
-            padding: 8px 12px;
-            display: none;
+            padding: 8px 12px; 
+            display: none; 
             font-size: 11px;
             border-radius: 16px;
             z-index: 100;
         }
+        
         #info-close { float: right; cursor: pointer; font-size: 16px; color: #aaa; line-height: 1; }
         #info-close:hover { color: #fff; }
-        .badge {
-            display: inline-block;
-            padding: 2px 7px;
-            font-size: 9px;
-            font-weight: bold;
-            border-radius: 20px;
-            text-transform: uppercase;
-            margin-bottom: 5px;
+        
+        .badge { 
+            display: inline-block; 
+            padding: 2px 7px; 
+            font-size: 9px; 
+            font-weight: bold; 
+            border-radius: 20px; 
+            text-transform: uppercase; 
+            margin-bottom: 5px; 
         }
         .badge.country { background: #007bff; }
         .badge.island { background: #17a2b8; }
         .badge.territory { background: #8a2be2; }
-        #info-title { margin: 0 0 5px 0; font-size: 1rem; }
-        #info-desc { margin: 0; font-size: 10px; color: #ccc; line-height: 1.35; }
-        .climate-stat {
-            margin-top: 6px;
-            padding-top: 5px;
-            border-top: 1px solid #444;
-            font-size: 9px;
-            color: #FFD700;
+        
+        #info-title {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
         }
-        .climate-val {
-            font-size: 14px;
-            font-weight: bold;
-            color: #fff;
-            font-family: monospace;
+        
+        #info-desc {
+            margin: 0;
+            font-size: 10px;
+            color: #ccc;
+            line-height: 1.35;
+        }
+        
+        .climate-stat { 
+            margin-top: 6px; 
+            padding-top: 5px; 
+            border-top: 1px solid #444; 
+            font-size: 9px; 
+            color: #FFD700; 
+        }
+        .climate-val { 
+            font-size: 14px; 
+            font-weight: bold; 
+            color: #fff; 
+            font-family: monospace; 
         }
         
         /* POLARKORT */
-        #polar-card {
-            top: 10px;
-            right: 10px;
-            width: 250px;
+        #polar-card { 
+            top: 10px; 
+            right: 10px; 
+            width: 250px; 
             max-width: calc(100vw - 20px);
-            padding: 8px 12px;
-            display: none;
-            background: rgba(5, 25, 50, 0.96);
-            border: 1px solid #4a90e2;
+            padding: 8px 12px; 
+            display: none; 
+            background: rgba(5, 25, 50, 0.96); 
+            border: 1px solid #4a90e2; 
             border-radius: 16px;
-            box-shadow: 0 0 15px rgba(74, 144, 226, 0.4);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            box-shadow: 0 0 15px rgba(74, 144, 226, 0.4); 
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
             z-index: 100;
         }
-        #polar-title { margin: 0 0 3px; font-size: 12px; }
-        .polar-temp {
-            font-size: 22px;
-            font-weight: 800;
-            color: #a5ecff;
-            text-shadow: 0 0 10px rgba(165, 236, 255, 0.5);
-            margin: 3px 0;
-            font-family: monospace;
+        
+        #polar-title {
+            margin: 0 0 3px;
+            font-size: 12px;
         }
+        
+        .polar-temp { 
+            font-size: 22px; 
+            font-weight: 800; 
+            color: #a5ecff; 
+            text-shadow: 0 0 10px rgba(165, 236, 255, 0.5); 
+            margin: 3px 0; 
+            font-family: monospace; 
+        }
+        
         .polar-record { font-size: 8px; color: #cccccc; margin-top: 2px; }
         .record-normal { font-style: normal; }
         .record-temp { font-style: italic; }
-        #polar-desc { margin: 3px 0 0; font-size: 10px; }
-        .snow-mass {
+        
+        #polar-desc {
+            margin: 3px 0 0;
             font-size: 10px;
-            color: #ffffff;
-            background: rgba(255,255,255,0.15);
-            padding: 3px 8px;
-            border-radius: 8px;
-            margin-top: 5px;
-            border-left: 3px solid #fff;
         }
         
-        /* GLOBE-ETIKETTER */
-        .globe-label {
-            position: absolute;
-            z-index: 15;
-            pointer-events: auto;
-            cursor: pointer;
-            white-space: nowrap;
-            user-select: none;
-            display: none;
+        .snow-mass { 
+            font-size: 10px; 
+            color: #ffffff; 
+            background: rgba(255,255,255,0.15); 
+            padding: 3px 8px; 
+            border-radius: 8px; 
+            margin-top: 5px; 
+            border-left: 3px solid #fff; 
         }
-        .label-country {
-            color: #ffffff;
-            font-weight: bold;
-            font-size: 9px;
+
+        /* GLOBE-ETIKETTER */
+        .globe-label { 
+            position: absolute; 
+            z-index: 15; 
+            pointer-events: auto; 
+            cursor: pointer; 
+            white-space: nowrap; 
+            user-select: none; 
+            display: none; 
+        }
+        
+        .label-country { 
+            color: #ffffff; 
+            font-weight: bold; 
+            font-size: 9px; 
             background: rgba(0,0,0,0.65);
             padding: 1px 5px;
             border-radius: 16px;
@@ -230,72 +249,105 @@
             text-shadow: 1px 1px 1px #000;
             border-left: 2px solid gold;
         }
-        .label-island {
-            color: #a0e0ff;
-            font-style: italic;
-            font-size: 9px;
+        
+        .label-island { 
+            color: #a0e0ff; 
+            font-style: italic; 
+            font-size: 9px; 
             background: rgba(0,0,0,0.55);
             padding: 1px 5px;
             border-radius: 16px;
             text-shadow: 1px 1px 1px #000;
         }
-        .label-ocean {
-            color: #6ba2ff;
-            font-family: 'Times New Roman', Georgia, serif;
-            font-style: italic;
-            font-size: 10px;
-            letter-spacing: 2px;
-            pointer-events: none;
-            font-weight: bold;
+        
+        .label-ocean { 
+            color: #6ba2ff; 
+            font-family: 'Times New Roman', Georgia, serif; 
+            font-style: italic; 
+            font-size: 10px; 
+            letter-spacing: 2px; 
+            pointer-events: none; 
+            font-weight: bold; 
             background: none;
-            text-shadow: 0px 0px 3px rgba(0,0,0,0.9);
+            text-shadow: 0px 0px 3px rgba(0,0,0,0.9); 
+        }
+
+        /* EXTRA FÖR MINDRE SKÄRMAR */
+        @media (max-width: 600px) {
+            .panel-btn {
+                padding: 3px 10px;
+                font-size: 9px;
+            }
+            
+            #control-panel {
+                gap: 5px;
+                padding: 4px 8px;
+            }
+            
+            #search-panel {
+                min-width: 150px;
+                padding: 4px 7px;
+            }
+            
+            #search-input {
+                font-size: 10px;
+                padding: 4px 8px;
+            }
+            
+            .globe-label {
+                font-size: 8px;
+            }
+            
+            .label-country, .label-island {
+                padding: 1px 4px;
+            }
+            
+            #language-selector {
+                bottom: 52px;
+                padding: 3px 6px;
+            }
+            
+            #lang-dropdown {
+                font-size: 9px;
+                padding: 3px 6px;
+            }
         }
         
-        @media (max-width: 600px) {
-            .panel-btn { padding: 3px 10px; font-size: 9px; }
-            #control-panel { gap: 5px; padding: 4px 8px; bottom: 115px; }
-            #search-panel { min-width: 150px; padding: 4px 7px; bottom: 65px; }
-            #search-input { font-size: 10px; padding: 4px 8px; }
-            .globe-label { font-size: 8px; }
-            .label-country, .label-island { padding: 1px 4px; }
-            #language-selector { bottom: 8px; padding: 3px 6px; }
-            #lang-dropdown { font-size: 9px; padding: 3px 6px; }
-        }
         @media (max-width: 450px) {
-            .panel-btn { padding: 3px 8px; font-size: 8px; }
-            #lang-dropdown { font-size: 8px; padding: 2px 5px; }
+            .panel-btn {
+                padding: 3px 8px;
+                font-size: 8px;
+            }
+            
+            #lang-dropdown {
+                font-size: 8px;
+                padding: 2px 5px;
+            }
         }
     </style>
 
-    <script src="../tropics/Three_js_r128/three.min.js"></script>
-    <script src="../tropics/Three_js_r128/OrbitControls.js"></script>
-    <!-- Inläsning av centraliserad meny -->
-    <script src="../menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 </head>
-<body id="tropics-page">
-
-    <!-- Behållare för dynamiskt genererad meny -->
-    <div id="main-menu"></div>
+<body>
 
     <div id="canvas-container"></div>
     <div id="labels-container" style="position: absolute; width:100%; height:100%; top:0; left:0; pointer-events:none; z-index:5;"></div>
     
-    <!-- SPRÅKMENY (längst ner) -->
+    <!-- LANGUAGE SELECTOR - compact dropdown -->
     <div id="language-selector" class="ui-element">
         <select id="lang-dropdown">
             <option value="en">🇬🇧 English</option>
-            <option value="sv" selected>🇸🇪 Svenska</option>
+            <option value="sv">🇸🇪 Svenska</option>
             <option value="zh">🇨🇳 中文</option>
         </select>
     </div>
     
-    <!-- SÖKRUTA (mitten) -->
     <div id="search-panel" class="ui-element">
         <input type="text" id="search-input" placeholder="Search tropical destination..." autocomplete="off">
         <div id="autocomplete-list"></div>
     </div>
 
-    <!-- KONTROLLKNAPPAR (överst i gruppen) -->
     <div id="control-panel" class="ui-element">
         <button id="tour-btn" class="panel-btn">🌍 Round-Trip</button>
         <button id="rotate-btn" class="panel-btn">🔄 Rotate</button>
@@ -323,17 +375,18 @@
     </div>
 
     <script>
-        // Helper function - Celsius formatting
+        // Helper function - Celsius only
         function formatTemp(celsiusStr) {
             let cleanCelsius = celsiusStr ? celsiusStr.replace('+', '') : '24';
             return `${cleanCelsius}°C`;
         }
 
-        // ==================== MULTILINGUAL DATABASE ====================
+        // ==================== COMPLETE MULTILINGUAL DATABASE ====================
         const PLACES_DATA = [
+            // --- CENTRAL & SOUTH AMERICA ---
             { lat: 22.88, lon: -102.55, type: 'country', coldestWinter: '+14.5', 
               en: { name: 'Mexico', desc: 'Northern gateway to the tropics, where the Tropic of Cancer divides the arid north from the humid south.' },
-              sv: { name: 'Mexiko', desc: 'Norra porten till tropikerna, där Kräftans vändkrets delar det torra norr från det fuktiga söder.' },
+              sv: { name: 'Mexico', desc: 'Norra porten till tropikerna, där Kräftans vändkrets delar det torra norr från det fuktiga söder.' },
               zh: { name: '墨西哥', desc: '通往热带北部的门户，北回归线将干旱的北部与潮湿的南部隔开。' } },
             { lat: 17.18, lon: -88.49, type: 'country', coldestWinter: '+21.2', 
               en: { name: 'Belize', desc: 'A lush Mesoamerican country with dense mangroves, rainforests, and the second-largest barrier reef.' },
@@ -363,19 +416,1102 @@
               en: { name: 'Panama', desc: 'The historic narrow land bridge of the Americas with an equatorial climate.' },
               sv: { name: 'Panama', desc: 'Den historiska smala landbryggan i Amerika med ett ekvatoriellt klimat.' },
               zh: { name: '巴拿马', desc: '美洲历史悠久的狭窄陆桥，拥有赤道气候。' } },
+            { lat: 4.57, lon: -74.29, type: 'country', coldestWinter: '+24.2', 
+              en: { name: 'Colombia', desc: 'A mega-diverse tropical nation from Pacific and Caribbean coasts to the Amazon.' },
+              sv: { name: 'Colombia', desc: 'En mega-mångfaldig tropisk nation från Stillahavskusten till Amazonas.' },
+              zh: { name: '哥伦比亚', desc: '一个超级多样化的热带国家，从太平洋和加勒比海岸延伸到亚马逊。' } },
+            { lat: 6.42, lon: -66.58, type: 'country', coldestWinter: '+23.5', 
+              en: { name: 'Venezuela', desc: 'Home to the world\'s highest waterfall, vast tropical savannas, and warm Caribbean islands.' },
+              sv: { name: 'Venezuela', desc: 'Hem till världens högsta vattenfall, vidsträckta tropiska savanner och varma karibiska öar.' },
+              zh: { name: '委内瑞拉', desc: '世界上最高瀑布的故乡，拥有广阔的热带稀树草原和温暖的加勒比岛屿。' } },
+            { lat: 4.96, lon: -58.93, type: 'country', coldestWinter: '+25.0', 
+              en: { name: 'Guyana', desc: 'A densely forested country covered by pristine equatorial wilderness.' },
+              sv: { name: 'Guyana', desc: 'Ett tätt skogsklätt land täckt av orörd ekvatoriell vildmark.' },
+              zh: { name: '圭亚那', desc: '一个森林茂密的国家，覆盖着原始的赤道荒野。' } },
+            { lat: 4.21, lon: -56.02, type: 'country', coldestWinter: '+25.2', 
+              en: { name: 'Suriname', desc: 'One of the greenest nations on earth, blanketed by tropical rainforests.' },
+              sv: { name: 'Suriname', desc: 'En av världens grönaste nationer, nästan helt täckt av tropiska regnskogar.' },
+              zh: { name: '苏里南', desc: '地球上最绿色的国家之一，几乎完全被热带雨林覆盖。' } },
+            { lat: 3.43, lon: -53.12, type: 'country', coldestWinter: '+25.1', 
+              en: { name: 'French Guiana', desc: 'A French overseas department blanketed by pristine Amazonian rainforest.' },
+              sv: { name: 'Franska Guyana', desc: 'Ett franskt utomeuropeiskt departement täckt av orörd Amazonas regnskog.' },
+              zh: { name: '法属圭亚那', desc: '法国海外领地，覆盖着原始的亚马逊雨林。' } },
+            { lat: -1.83, lon: -78.18, type: 'country', coldestWinter: '+24.8', 
+              en: { name: 'Ecuador', desc: 'Named after the Equator itself, offering eternal tropical warmth.' },
+              sv: { name: 'Ecuador', desc: 'Uppkallad efter Ekvatorn själv, erbjuder evig tropisk värme.' },
+              zh: { name: '厄瓜多尔', desc: '以赤道本身命名，提供永恒的热带温暖。' } },
+            { lat: -9.19, lon: -75.01, type: 'country', coldestWinter: '+22.0', 
+              en: { name: 'Peru', desc: 'A land of rich microclimates with dry tropical coasts and Amazonian jungles.' },
+              sv: { name: 'Peru', desc: 'Ett land med rika mikroklimat och otämjda Amazonas djungler.' },
+              zh: { name: '秘鲁', desc: '一个拥有丰富微气候和未开发的亚马逊丛林的土地。' } },
+            { lat: -16.29, lon: -63.58, type: 'country', coldestWinter: '+19.5', 
+              en: { name: 'Bolivia', desc: 'Encompasses massive warm tropical plains and lowlands.' },
+              sv: { name: 'Bolivia', desc: 'Omfattar enorma varma tropiska slätter och lågland.' },
+              zh: { name: '玻利维亚', desc: '包含广阔的热带平原和低地。' } },
+            { lat: -21.69, lon: -58.44, type: 'country', coldestWinter: '+16.2', 
+              en: { name: 'Paraguay', desc: 'Bisected by the Tropic of Capricorn with hot, humid subtropical climates.' },
+              sv: { name: 'Paraguay', desc: 'Delad av Stenbockens vändkrets med hett, fuktigt subtropiskt klimat.' },
+              zh: { name: '巴拉圭', desc: '被南回归线一分为二，拥有炎热潮湿的亚热带气候。' } },
+            { lat: -14.23, lon: -51.92, type: 'country', coldestWinter: '+22.8', 
+              en: { name: 'Brazil', desc: 'A tropical superpower containing the vast Amazon basin and endless sunny beaches.' },
+              sv: { name: 'Brasilien', desc: 'En tropisk supermakt som innehåller Amazonas bäcken och soliga stränder.' },
+              zh: { name: '巴西', desc: '一个热带超级大国，拥有广阔的亚马逊盆地和无尽的阳光海滩。' } },
+              
+            // --- CARIBBEAN ---
+            { lat: 23.03, lon: -77.39, type: 'country', coldestWinter: '+18.4', 
+              en: { name: 'Bahamas', desc: 'An archipelago on the edge of the Tropic of Cancer, famous for crystal clear waters.' },
+              sv: { name: 'Bahamas', desc: 'En arkipelag vid Kräftans vändkrets, känd för kristallklart vatten.' },
+              zh: { name: '巴哈马', desc: '位于北回归线边缘的群岛，以清澈的海水闻名。' } },
+            { lat: 21.52, lon: -77.78, type: 'country', coldestWinter: '+19.1', 
+              en: { name: 'Cuba', desc: 'The largest island in the Caribbean, rich with rhythm and history.' },
+              sv: { name: 'Cuba', desc: 'Den största ön i Karibien, rik på rytm och historia.' },
+              zh: { name: '古巴', desc: '加勒比地区最大的岛屿，富有节奏和历史。' } },
+            { lat: 18.10, lon: -77.29, type: 'country', coldestWinter: '+22.5', 
+              en: { name: 'Jamaica', desc: 'A Caribbean island defined by lush mountains, rainforests, and reef-lined beaches.' },
+              sv: { name: 'Jamaica', desc: 'En karibisk ö med frodiga berg, regnskogar och korallstränder.' },
+              zh: { name: '牙买加', desc: '一个加勒比岛屿，拥有茂密的山脉、雨林和珊瑚礁海滩。' } },
+            { lat: 19.97, lon: -71.78, type: 'country', coldestWinter: '+21.8', 
+              en: { name: 'Haiti', desc: 'Occupying western Hispaniola with a mountainous, sun-drenched Caribbean climate.' },
+              sv: { name: 'Haiti', desc: 'Ockuperar västra Hispaniola med ett bergigt soldränkt karibiskt klimat.' },
+              zh: { name: '海地', desc: '占据伊斯帕尼奥拉岛西部，拥有多山的、阳光明媚的加勒比气候。' } },
+            { lat: 19.23, lon: -70.16, type: 'country', coldestWinter: '+21.9', 
+              en: { name: 'Dominican Republic', desc: 'A vibrant Caribbean nation with the highest mountain peaks in the region.' },
+              sv: { name: 'Dominikanska Republiken', desc: 'En livfull karibisk nation med de högsta bergstopparna i regionen.' },
+              zh: { name: '多米尼加共和国', desc: '一个充满活力的加勒比国家，拥有该地区最高的山峰。' } },
+            { lat: 18.42, lon: -66.59, type: 'territory', coldestWinter: '+22.1', 
+              en: { name: 'Puerto Rico', desc: 'A vibrant Caribbean island blending rainforested mountains with Spanish architecture.' },
+              sv: { name: 'Puerto Rico', desc: 'En livfull karibisk ö med regnskogsbeklädda berg och spansk arkitektur.' },
+              zh: { name: '波多黎各', desc: '一个充满活力的加勒比岛屿，融合了雨林覆盖的山脉和西班牙建筑。' } },
+            { lat: 17.35, lon: -62.78, type: 'country', coldestWinter: '+22.1', 
+              en: { name: 'St. Kitts & Nevis', desc: 'A scenic volcanic dual-island nation cloaked in fertile green slopes.' },
+              sv: { name: 'St. Kitts & Nevis', desc: 'En naturskön vulkanisk tvåö-nation.' },
+              zh: { name: '圣基茨和尼维斯', desc: '一个风景如画的火山双岛国家，覆盖着肥沃的绿色山坡。' } },
+            { lat: 16.56, lon: -61.79, type: 'country', coldestWinter: '+22.4', 
+              en: { name: 'Antigua & Barbuda', desc: 'A sun-drenched twin-island nation famous for 365 coral-sand beaches.' },
+              sv: { name: 'Antigua & Barbuda', desc: 'En soldränkt tvåö-nation känd för 365 korallsandsstränder.' },
+              zh: { name: '安提瓜和巴布达', desc: '一个阳光普照的双岛国家，以365个珊瑚沙滩闻名。' } },
+            { lat: 10.69, lon: -61.22, type: 'country', coldestWinter: '+23.7', 
+              en: { name: 'Trinidad & Tobago', desc: 'The southernmost Caribbean islands with an equatorial climate.' },
+              sv: { name: 'Trinidad & Tobago', desc: 'De sydligaste karibiska öarna med ekvatoriellt klimat.' },
+              zh: { name: '特立尼达和多巴哥', desc: '加勒比地区最南端的岛屿，拥有赤道气候。' } },
+            { lat: 15.41, lon: -61.37, type: 'country', coldestWinter: '+22.0', 
+              en: { name: 'Dominica', desc: 'The Nature Island of the Caribbean, covered in untouched rainforests.' },
+              sv: { name: 'Dominica', desc: 'Karibiens naturö, täckt av orörda regnskogar.' },
+              zh: { name: '多米尼克', desc: '加勒比的自然之岛，覆盖着原始的雨林。' } },
+            { lat: 12.11, lon: -61.67, type: 'country', coldestWinter: '+23.1', 
+              en: { name: 'Grenada', desc: 'The Spice Isle of the Caribbean with lush volcanic ridges.' },
+              sv: { name: 'Grenada', desc: 'Kryddön med frodiga vulkaniska åsar.' },
+              zh: { name: '格林纳达', desc: '香料之岛，拥有郁郁葱葱的火山脊。' } },
+            { lat: 13.19, lon: -58.04, type: 'country', coldestWinter: '+23.2', 
+              en: { name: 'Barbados', desc: 'An easternmost coral island hit by cooling Atlantic trade winds.' },
+              sv: { name: 'Barbados', desc: 'En östlig korallö påverkad av svalkande atlantiska passadvindar.' },
+              zh: { name: '巴巴多斯', desc: '一个最东端的珊瑚岛，受到凉爽的大西洋信风影响。' } },
+            { lat: 14.00, lon: -62.46, type: 'country', coldestWinter: '+23.5', 
+              en: { name: 'St. Lucia', desc: 'Famous for the majestic volcanic Pitons and sulfur springs.' },
+              sv: { name: 'St. Lucia', desc: 'Känd för de majestätiska vulkaniska Pitons och svavelkällor.' },
+              zh: { name: '圣卢西亚', desc: '以雄伟的火山双峰和硫磺泉闻名。' } },
+            { lat: 13.15, lon: -62.70, type: 'country', coldestWinter: '+22.8', 
+              en: { name: 'St. Vincent', desc: 'A rugged volcanic island chain with the active La Soufrière volcano.' },
+              sv: { name: 'St. Vincent', desc: 'En karg vulkanisk ökedja med den aktiva La Soufrière vulkanen.' },
+              zh: { name: '圣文森特', desc: '一个崎岖的火山岛链，拥有活跃的苏弗里耶尔火山。' } },
+              
+            // --- WEST AFRICA ---
+            { lat: 16.02, lon: -24.01, type: 'country', coldestWinter: '+19.8', 
+              en: { name: 'Cape Verde', desc: 'An emerald volcanic archipelago off the West African coast.' },
+              sv: { name: 'Kap Verde', desc: 'En smaragdgrön vulkanisk arkipelag utanför Västafrikas kust.' },
+              zh: { name: '佛得角', desc: '西非海岸外的翡翠绿色火山群岛。' } },
+            { lat: 0.18, lon: 6.61, type: 'country', coldestWinter: '+22.4', 
+              en: { name: 'São Tomé & Príncipe', desc: 'An equatorial island nation in the Gulf of Guinea with dramatic cloud forests.' },
+              sv: { name: 'São Tomé & Príncipe', desc: 'En ekvatoriell önation i Guineabukten med dramatiska molnskogar.' },
+              zh: { name: '圣多美和普林西比', desc: '几内亚湾的一个赤道岛国，拥有壮观的云雾林。' } },
+            { lat: 14.49, lon: -14.45, type: 'country', coldestWinter: '+18.2', 
+              en: { name: 'Senegal', desc: 'Located on Africa\'s western edge with a warm tropical climate.' },
+              sv: { name: 'Senegal', desc: 'Ligger på Afrikas västra kant med varmt tropiskt klimat.' },
+              zh: { name: '塞内加尔', desc: '位于非洲西部边缘，拥有温暖的热带气候。' } },
+            { lat: 13.44, lon: -15.31, type: 'country', coldestWinter: '+19.0', 
+              en: { name: 'Gambia', desc: 'A narrow West African nation snaking along the Gambia River.' },
+              sv: { name: 'Gambia', desc: 'En smal västafrikansk nation som slingrar sig längs Gambiafloden.' },
+              zh: { name: '冈比亚', desc: '一个狭窄的西非国家，沿着冈比亚河蜿蜒而行。' } },
+            { lat: 11.80, lon: -15.18, type: 'country', coldestWinter: '+22.1', 
+              en: { name: 'Guinea-Bissau', desc: 'A flat tropical coastal country with massive mangrove swamps.' },
+              sv: { name: 'Guinea-Bissau', desc: 'Ett platt tropiskt kustland med massiva mangroveskogar.' },
+              zh: { name: '几内亚比绍', desc: '一个平坦的热带沿海国家，拥有巨大的红树林沼泽。' } },
+            { lat: 9.94, lon: -9.69, type: 'country', coldestWinter: '+20.5', 
+              en: { name: 'Guinea', desc: 'The water tower of West Africa, giving birth to major regional rivers.' },
+              sv: { name: 'Guinea', desc: 'Västafrikas vattentorn, källa till flera stora regionala floder.' },
+              zh: { name: '几内亚', desc: '西非的水塔，主要区域河流的发源地。' } },
+            { lat: 8.46, lon: -11.77, type: 'country', coldestWinter: '+23.4', 
+              en: { name: 'Sierra Leone', desc: 'A hot coastal land lined with white sand beaches and rainforests.' },
+              sv: { name: 'Sierra Leone', desc: 'Ett hett kustland med vita sandstränder som övergår i täta regnskogar.' },
+              zh: { name: '塞拉利昂', desc: '一个炎热的海岸土地，拥有白色沙滩和茂密的雨林。' } },
+            { lat: 6.42, lon: -9.42, type: 'country', coldestWinter: '+23.9', 
+              en: { name: 'Liberia', desc: 'A coastal nation saturated by warm monsoonal rains.' },
+              sv: { name: 'Liberia', desc: 'En kustnation mättad av varma monsunregn.' },
+              zh: { name: '利比里亚', desc: '一个被温暖的季风雨浸透的沿海国家。' } },
+            { lat: 7.53, lon: -5.54, type: 'country', coldestWinter: '+24.0', 
+              en: { name: "Cote d'Ivoire", desc: 'A major agricultural hub with sunny coastal lagoons and cocoa plantations.' },
+              sv: { name: 'Elfenbenskusten', desc: 'Ett viktigt jordbrukscentrum med soliga kustlaguner och kakaoplantager.' },
+              zh: { name: '科特迪瓦', desc: '一个重要的农业中心，拥有阳光明媚的沿海泻湖和可可种植园。' } },
+            { lat: 12.23, lon: -1.56, type: 'country', coldestWinter: '+17.9', 
+              en: { name: 'Burkina Faso', desc: 'A landlocked country in the dry tropical Sahel zone.' },
+              sv: { name: 'Burkina Faso', desc: 'Ett inland i den torra tropiska Sahelzonen.' },
+              zh: { name: '布基纳法索', desc: '一个位于干燥热带萨赫勒地带的内陆国家。' } },
+            { lat: 7.84, lon: -1.02, type: 'country', coldestWinter: '+23.6', 
+              en: { name: 'Ghana', desc: 'A golden West African nation rich in tropical forests and coastal heat.' },
+              sv: { name: 'Ghana', desc: 'En gyllene västafrikansk nation rik på tropiska skogar.' },
+              zh: { name: '加纳', desc: '一个金色的西非国家，富含热带森林和沿海热量。' } },
+            { lat: 8.61, lon: 0.82, type: 'country', coldestWinter: '+23.1', 
+              en: { name: 'Togo', desc: 'A narrow slip of land in the Gulf of Guinea.' },
+              sv: { name: 'Togo', desc: 'En smal landremsa i Guineabukten.' },
+              zh: { name: '多哥', desc: '几内亚湾的一条狭窄土地。' } },
+            { lat: 9.40, lon: 2.31, type: 'country', coldestWinter: '+23.3', 
+              en: { name: 'Benin', desc: 'A key West African corridor featuring the dry Dahomey Gap.' },
+              sv: { name: 'Benin', desc: 'En viktig västafrikansk korridor med den torra Dahomey-klyftan.' },
+              zh: { name: '贝宁', desc: '一个重要的西非走廊，拥有干燥的达荷美缺口。' } },
+            { lat: 17.60, lon: 8.08, type: 'country', coldestWinter: '+14.1', 
+              en: { name: 'Niger', desc: 'A large nation where the southern Sahel provides hot tropical land.' },
+              sv: { name: 'Niger', desc: 'En stor nation där södra Sahel tillhandahåller varmt tropiskt jordbruksland.' },
+              zh: { name: '尼日尔', desc: '一个幅员辽阔的国家，南部萨赫勒提供炎热的热带农业用地。' } },
+            { lat: 9.08, lon: 8.67, type: 'country', coldestWinter: '+21.0', 
+              en: { name: 'Nigeria', desc: 'A powerhouse nation from equatorial wetlands to warm savannas.' },
+              sv: { name: 'Nigeria', desc: 'En stormakt från ekvatoriella våtmarker till varma savanner.' },
+              zh: { name: '尼日利亚', desc: '一个从赤道湿地到温暖稀树草原的强国。' } },
+            { lat: 15.45, lon: 18.73, type: 'country', coldestWinter: '+15.5', 
+              en: { name: 'Chad', desc: 'Stretches from dry desert to rich tropical marshes.' },
+              sv: { name: 'Tchad', desc: 'Sträcker sig från torr öken till rika tropiska kärr.' },
+              zh: { name: '乍得', desc: '从干燥的沙漠延伸到丰富的热带沼泽。' } },
+            { lat: 4.50, lon: 12.35, type: 'country', coldestWinter: '+21.8', 
+              en: { name: 'Cameroon', desc: 'Known as "Africa in miniature" with every major tropical climate.' },
+              sv: { name: 'Kamerun', desc: 'Känd som "Afrika i miniatyr" med alla tropiska klimatzoner.' },
+              zh: { name: '喀麦隆', desc: '被称为"非洲缩影"，拥有所有主要的热带气候区。' } },
+            { lat: 6.61, lon: 20.93, type: 'country', coldestWinter: '+20.2', 
+              en: { name: 'Central African Republic', desc: 'A vast plateau nation of savannas and equatorial jungles.' },
+              sv: { name: 'Centralafrikanska republiken', desc: 'En vidsträckt inland av savanner och ekvatorialdjungler.' },
+              zh: { name: '中非共和国', desc: '一个广阔的内陆高原国家，拥有稀树草原和赤道丛林。' } },
+            { lat: 1.65, lon: 10.26, type: 'country', coldestWinter: '+24.1', 
+              en: { name: 'Equatorial Guinea', desc: 'A small hyper-humid equatorial territory with volcanic islands.' },
+              sv: { name: 'Ekvatorialguinea', desc: 'Ett litet hyperfuktigt ekvatoriellt territorium med vulkaniska öar.' },
+              zh: { name: '赤道几内亚', desc: '一个微小的超湿润赤道领土，拥有火山岛。' } },
+            { lat: -0.85, lon: 11.60, type: 'country', coldestWinter: '+24.3', 
+              en: { name: 'Gabon', desc: 'Over 85% of its territory covered by untouched rainforest.' },
+              sv: { name: 'Gabon', desc: 'Över 85% av dess territorium täckt av orörd regnskog.' },
+              zh: { name: '加蓬', desc: '超过85%的领土被原始雨林覆盖。' } },
+            { lat: -0.17, lon: 15.82, type: 'country', coldestWinter: '+23.9', 
+              en: { name: 'Congo Republic', desc: 'Sits on the Equator, cloaked in the Congo river basin wilderness.' },
+              sv: { name: 'Republiken Kongo', desc: 'Ligger direkt på Ekvatorn, höljd i Kongoflodens vildmark.' },
+              zh: { name: '刚果共和国', desc: '坐落在赤道上，笼罩在刚果河流域的荒野中。' } },
+            { lat: -4.03, lon: 21.75, type: 'country', coldestWinter: '+23.1', 
+              en: { name: 'DR Congo', desc: 'The heart of Central Africa with the second-largest rainforest on Earth.' },
+              sv: { name: 'Demokratiska republiken Kongo', desc: 'Centralafrikas hjärta med den näst största regnskogen på jorden.' },
+              zh: { name: '刚果民主共和国', desc: '中非的心脏，拥有地球上第二大雨林。' } },
+              
+            // --- EAST & SOUTH AFRICA ---
+            { lat: -12.18, lon: 44.44, type: 'country', coldestWinter: '+22.1', 
+              en: { name: 'Comoros', desc: 'A volcanic island cluster in the warm Mozambique Channel.' },
+              sv: { name: 'Komorerna', desc: 'En vulkanisk ögrupp i den varma Moçambiquekanalen.' },
+              zh: { name: '科摩罗', desc: '莫桑比克海峡的一个火山岛群。' } },
+            { lat: -21.11, lon: 55.53, type: 'island', coldestWinter: '+18.2', 
+              en: { name: 'Réunion', desc: 'A French overseas department with a massive active volcano.' },
+              sv: { name: 'Réunion', desc: 'Ett franskt utomeuropeiskt departement med en massiv aktiv vulkan.' },
+              zh: { name: '留尼汪', desc: '法国海外领地，拥有巨大的活火山。' } },
+            { lat: 15.00, lon: 30.00, type: 'country', coldestWinter: '+16.8', 
+              en: { name: 'Sudan', desc: 'Bridges arid landscapes with tropical monsoonal zones.' },
+              sv: { name: 'Sudan', desc: 'Överbryggar torra landskap med tropiska monsunzoner.' },
+              zh: { name: '苏丹', desc: '连接干旱景观与热带季风区。' } },
+            { lat: 6.87, lon: 31.30, type: 'country', coldestWinter: '+24.6', 
+              en: { name: 'South Sudan', desc: 'A humid tropical country dominated by the Sudd wetlands.' },
+              sv: { name: 'Sydsudan', desc: 'Ett fuktigt tropiskt land dominerat av Sudd-våtmarkerna.' },
+              zh: { name: '南苏丹', desc: '一个湿润的热带国家，由苏德湿地主导。' } },
+            { lat: 15.17, lon: 39.78, type: 'country', coldestWinter: '+19.2', 
+              en: { name: 'Eritrea', desc: 'Stretches along the hot Red Sea coast with tropical escarpments.' },
+              sv: { name: 'Eritrea', desc: 'Sträcker sig längs Röda havets heta kust med tropiska berg.' },
+              zh: { name: '厄立特里亚', desc: '沿着红海炎热的海岸延伸，拥有热带悬崖。' } },
+            { lat: 11.82, lon: 42.59, type: 'country', coldestWinter: '+25.1', 
+              en: { name: 'Djibouti', desc: 'One of the hottest places on Earth at the Horn of Africa.' },
+              sv: { name: 'Djibouti', desc: 'En av de hetaste platserna på jorden vid Afrikas horn.' },
+              zh: { name: '吉布提', desc: '非洲之角地球上最热的地方之一。' } },
+            { lat: 9.14, lon: 40.48, type: 'country', coldestWinter: '+15.4', 
+              en: { name: 'Ethiopia', desc: 'A rugged nation with massive high-altitude plateaus.' },
+              sv: { name: 'Etiopien', desc: 'En karg nation med massiva höga platåer.' },
+              zh: { name: '埃塞俄比亚', desc: '一个崎岖的国家，拥有巨大的高海拔高原。' } },
+            { lat: 5.15, lon: 46.19, type: 'country', coldestWinter: '+24.8', 
+              en: { name: 'Somalia', desc: 'Possesses the longest coastline on the African continent.' },
+              sv: { name: 'Somalia', desc: 'Har den längsta kustlinjen på den afrikanska kontinenten.' },
+              zh: { name: '索马里', desc: '拥有非洲大陆最长的海岸线。' } },
+            { lat: 1.37, lon: 32.29, type: 'country', coldestWinter: '+21.3', 
+              en: { name: 'Uganda', desc: 'The "Pearl of Africa" bordering Lake Victoria.' },
+              sv: { name: 'Uganda', desc: 'Afrikas pärla vid Victoriasjön.' },
+              zh: { name: '乌干达', desc: '"非洲明珠"，毗邻维多利亚湖。' } },
+            { lat: -0.02, lon: 37.90, type: 'country', coldestWinter: '+20.9', 
+              en: { name: 'Kenya', desc: 'Sitting on the Equator with warm savannas and an Indian Ocean coast.' },
+              sv: { name: 'Kenya', desc: 'Ligger precis på Ekvatorn med varma savanner och Indiska oceanens kust.' },
+              zh: { name: '肯尼亚', desc: '坐落在赤道上，拥有温暖的稀树草原和印度洋海岸。' } },
+            { lat: -1.94, lon: 29.87, type: 'country', coldestWinter: '+17.2', 
+              en: { name: 'Rwanda', desc: 'The land of a thousand hills with equatorial cloud forests.' },
+              sv: { name: 'Rwanda', desc: 'De tusen kullarnas land med frodiga ekvatoriella molnskogar.' },
+              zh: { name: '卢旺达', desc: '千丘之国，拥有郁郁葱葱的赤道云雾林。' } },
+            { lat: -3.37, lon: 29.91, type: 'country', coldestWinter: '+18.0', 
+              en: { name: 'Burundi', desc: 'A high-elevation tropical state along Lake Tanganyika.' },
+              sv: { name: 'Burundi', desc: 'En högt belägen tropisk stat vid Tanganyikasjön.' },
+              zh: { name: '布隆迪', desc: '一个位于坦噶尼喀湖畔的高海拔热带国家。' } },
+            { lat: -6.36, lon: 34.88, type: 'country', coldestWinter: '+20.5', 
+              en: { name: 'Tanzania', desc: 'A massive East African territory with the Serengeti plains.' },
+              sv: { name: 'Tanzania', desc: 'Ett massivt östafrikanskt territorium med Serengeti-slätterna.' },
+              zh: { name: '坦桑尼亚', desc: '一个广阔东非领土，拥有塞伦盖蒂平原。' } },
+            { lat: -11.20, lon: 17.87, type: 'country', coldestWinter: '+18.1', 
+              en: { name: 'Angola', desc: 'A vast country with a stunning tropical Atlantic coastline.' },
+              sv: { name: 'Angola', desc: 'Ett vidsträckt land med en fantastisk tropisk Atlantkust.' },
+              zh: { name: '安哥拉', desc: '一个幅员辽阔的国家，拥有令人惊叹的热带大西洋海岸线。' } },
+            { lat: -13.13, lon: 27.84, type: 'country', coldestWinter: '+15.9', 
+              en: { name: 'Zambia', desc: 'A tropical plateau nation renowned for Victoria Falls.' },
+              sv: { name: 'Zambia', desc: 'En tropisk platånation känd för Victoriafallen.' },
+              zh: { name: '赞比亚', desc: '一个以维多利亚瀑布闻名的热带高原国家。' } },
+            { lat: -13.25, lon: 34.30, type: 'country', coldestWinter: '+16.0', 
+              en: { name: 'Malawi', desc: 'A beautiful country dominated by Lake Malawi.' },
+              sv: { name: 'Malawi', desc: 'Ett vackert land dominerat av Malawisjön.' },
+              zh: { name: '马拉维', desc: '一个美丽的国家，以马拉维湖为主。' } },
+            { lat: -18.66, lon: 35.52, type: 'country', coldestWinter: '+19.8', 
+              en: { name: 'Mozambique', desc: 'A spectacular tropical coastline along the Indian Ocean.' },
+              sv: { name: 'Moçambique', desc: 'En spektakulär tropisk kustlinje längs Indiska oceanen.' },
+              zh: { name: '莫桑比克', desc: '沿着印度洋的壮观热带海岸线。' } },
+            { lat: -19.01, lon: 29.15, type: 'country', coldestWinter: '+14.2', 
+              en: { name: 'Zimbabwe', desc: 'A landlocked subtropical plateau.' },
+              sv: { name: 'Zimbabwe', desc: 'En inlandsskyddad subtropisk platå.' },
+              zh: { name: '津巴布韦', desc: '一个内陆亚热带高原。' } },
+            { lat: -22.32, lon: 24.68, type: 'country', coldestWinter: '+11.5', 
+              en: { name: 'Botswana', desc: 'The Tropic of Capricorn cuts through its southern plains.' },
+              sv: { name: 'Botswana', desc: 'Stenbockens vändkrets skär genom dess södra slätter, känd för Okavangodeltat.' },
+              zh: { name: '博茨瓦纳', desc: '南回归线穿过其南部平原，以奥卡万戈三角洲闻名。' } },
+            { lat: -22.45, lon: 18.49, type: 'country', coldestWinter: '+12.8', 
+              en: { name: 'Namibia', desc: 'Where the ancient Namib desert meets the south Atlantic.' },
+              sv: { name: 'Namibia', desc: 'Där den uråldriga Namiböknen möter södra Atlanten.' },
+              zh: { name: '纳米比亚', desc: '古老的纳米布沙漠与南大西洋交汇的地方。' } },
+            { lat: -18.76, lon: 46.86, type: 'country', coldestWinter: '+17.4', 
+              en: { name: 'Madagascar', desc: 'The world\'s fourth-largest island, a unique evolutionary wonderland.' },
+              sv: { name: 'Madagaskar', desc: 'Världens fjärde största ö, en unik evolutionär underverk.' },
+              zh: { name: '马达加斯加', desc: '世界第四大岛，一个独特的进化奇迹。' } },
+              
+            // --- ASIA ---
+            { lat: 22.88, lon: 45.07, type: 'country', coldestWinter: '+14.9', 
+              en: { name: 'Saudi Arabia', desc: 'The Tropic of Cancer runs through its desert heart.' },
+              sv: { name: 'Saudiarabien', desc: 'Kräftans vändkrets löper rakt genom dess ökenhjärta.' },
+              zh: { name: '沙特阿拉伯', desc: '北回归线贯穿其沙漠心脏。' } },
+            { lat: 15.55, lon: 48.51, type: 'country', coldestWinter: '+19.0', 
+              en: { name: 'Yemen', desc: 'Positioned at the tip of the Arabian Peninsula.' },
+              sv: { name: 'Jemen', desc: 'Ligger vid spetsen av den Arabiska halvön.' },
+              zh: { name: '也门', desc: '位于阿拉伯半岛的顶端。' } },
+            { lat: 21.47, lon: 55.97, type: 'country', coldestWinter: '+20.1', 
+              en: { name: 'Oman', desc: 'Where desert meets the Indian Ocean with a lush monsoon season.' },
+              sv: { name: 'Oman', desc: 'Där öken möter Indiska oceanen med en frodig monsunsäsong.' },
+              zh: { name: '阿曼', desc: '沙漠与印度洋相遇的地方，南部拥有郁郁葱葱的季风季节。' } },
+            { lat: 20.59, lon: 78.96, type: 'country', coldestWinter: '+18.5', 
+              en: { name: 'India', desc: 'The Tropic of Cancer bisects India, leaving the south in tropical weather.' },
+              sv: { name: 'Indien', desc: 'Kräftans vändkrets delar Indien, lämnar söder i tropiskt väder.' },
+              zh: { name: '印度', desc: '北回归线将印度一分为二，南部沉浸在热带天气中。' } },
+            { lat: 22.93, lon: 90.35, type: 'country', coldestWinter: '+17.2', 
+              en: { name: 'Bangladesh', desc: 'Sits on the Tropic of Cancer with the world\'s largest river delta.' },
+              sv: { name: 'Bangladesh', desc: 'Ligger på Kräftans vändkrets med världens största floddelta.' },
+              zh: { name: '孟加拉国', desc: '位于北回归线上，拥有世界上最大的河流三角洲。' } },
+            { lat: 7.87, lon: 80.77, type: 'island', coldestWinter: '+24.5', 
+              en: { name: 'Sri Lanka', desc: 'A teardrop-shaped tropical island jewel in the Indian Ocean.' },
+              sv: { name: 'Sri Lanka', desc: 'En tårformad tropisk öjuvel i Indiska oceanen.' },
+              zh: { name: '斯里兰卡', desc: '印度洋中的一滴泪珠状热带岛屿宝石。' } },
+            { lat: 21.91, lon: 95.95, type: 'country', coldestWinter: '+19.8', 
+              en: { name: 'Myanmar', desc: 'A Southeast Asian country with golden pagodas and dense jungles.' },
+              sv: { name: 'Myanmar', desc: 'Ett sydostasiatiskt land med gyllene pagoder och täta djungler.' },
+              zh: { name: '缅甸', desc: '一个东南亚国家，拥有金色佛塔和茂密的丛林。' } },
             { lat: 15.87, lon: 100.99, type: 'country', coldestWinter: '+22.0', 
-              en: { name: 'Thailand', desc: 'Heart of Indochina with lush tropical islands and rich cultural heritage.' },
-              sv: { name: 'Thailand', desc: 'Indokinas hjärta med frodiga tropiska öar och ett rikt kulturarv.' },
-              zh: { name: '泰国', desc: '印度支那的心脏，拥有郁郁葱葱的热带岛屿和丰富的文化遗产。' } }
+              en: { name: 'Thailand', desc: 'The beating heart of Southeast Asia with gorgeous tropical islands.' },
+              sv: { name: 'Thailand', desc: 'Sydostasiens hjärta med fantastiska tropiska öar.' },
+              zh: { name: '泰国', desc: '东南亚的心脏，拥有美丽的热带岛屿。' } },
+            { lat: 19.85, lon: 102.49, type: 'country', coldestWinter: '+18.9', 
+              en: { name: 'Laos', desc: 'A mountainous landlocked tropical state along the Mekong River.' },
+              sv: { name: 'Laos', desc: 'En bergig inlandstropisk stat längs Mekongfloden.' },
+              zh: { name: '老挝', desc: '一个多山的内陆热带国家，沿着湄公河。' } },
+            { lat: 12.56, lon: 104.99, type: 'country', coldestWinter: '+23.5', 
+              en: { name: 'Cambodia', desc: 'A tropical lowland nation with the ancient temples of Angkor Wat.' },
+              sv: { name: 'Kambodja', desc: 'Ett tropiskt lågland med Angkor Wat.' },
+              zh: { name: '柬埔寨', desc: '一个热带低地国家，拥有吴哥窟的古老寺庙。' } },
+            { lat: 14.05, lon: 108.27, type: 'country', coldestWinter: '+20.1', 
+              en: { name: 'Vietnam', desc: 'Stretching along the South China Sea with lush Mekong Delta.' },
+              sv: { name: 'Vietnam', desc: 'Sträcker sig längs Sydkinesiska havet med frodigt Mekongdelta.' },
+              zh: { name: '越南', desc: '沿着南海延伸，拥有郁郁葱葱的湄公河三角洲。' } },
+            { lat: 4.21, lon: 101.97, type: 'country', coldestWinter: '+24.2', 
+              en: { name: 'Malaysia', desc: 'Home to some of the planet\'s oldest tropical rainforests.' },
+              sv: { name: 'Malaysia', desc: 'Hem till några av planetens äldsta tropiska regnskogar.' },
+              zh: { name: '马来西亚', desc: '拥有地球上一些最古老的热带雨林。' } },
+            { lat: 4.54, lon: 114.73, type: 'country', coldestWinter: '+24.0', 
+              en: { name: 'Brunei', desc: 'A sultanate on the island of Borneo with rich rainforests.' },
+              sv: { name: 'Brunei', desc: 'Ett sultanat på ön Borneo med rika regnskogar.' },
+              zh: { name: '文莱', desc: '婆罗洲岛上的苏丹国，拥有丰富的雨林。' } },
+            { lat: 1.35, lon: 103.81, type: 'country', coldestWinter: '+25.4', 
+              en: { name: 'Singapore', desc: 'A hyper-modern city-state located 137 kilometers north of the equator.' },
+              sv: { name: 'Singapore', desc: 'En hypermodern stadsstat 137 kilometer norr om ekvatorn.' },
+              zh: { name: '新加坡', desc: '一个位于赤道以北137公里的超现代城市国家。' } },
+            { lat: 12.87, lon: 121.77, type: 'country', coldestWinter: '+23.9', 
+              en: { name: 'Philippines', desc: 'A sprawling archipelago of over 7,000 tropical islands.' },
+              sv: { name: 'Filippinerna', desc: 'En vidsträckt skärgård med över 7000 tropiska öar.' },
+              zh: { name: '菲律宾', desc: '一个由超过7000个热带岛屿组成的广阔群岛。' } },
+            { lat: -0.78, lon: 113.92, type: 'country', coldestWinter: '+25.0', 
+              en: { name: 'Indonesia', desc: 'The world\'s ultimate emerald equatorial archipelago.' },
+              sv: { name: 'Indonesien', desc: 'Världens yttersta smaragdekvatoriella skärgård.' },
+              zh: { name: '印度尼西亚', desc: '世界上终极的翡翠赤道群岛。' } },
+            { lat: -8.87, lon: 125.72, type: 'country', coldestWinter: '+22.8', 
+              en: { name: 'Timor-Leste', desc: 'A warm mountainous island nation.' },
+              sv: { name: 'Östtimor', desc: 'En varm bergig önation.' },
+              zh: { name: '东帝汶', desc: '一个温暖的多山岛国。' } },
+              
+            // --- OCEANIA ---
+            { lat: -22.52, lon: 133.77, type: 'country', coldestWinter: '+15.0', 
+              en: { name: 'Australia', desc: 'Bisected by the Tropic of Capricorn with tropical savannas in the north.' },
+              sv: { name: 'Australien', desc: 'Delad av Stenbockens vändkrets med tropiska savanner i norr.' },
+              zh: { name: '澳大利亚', desc: '被南回归线一分为二，北部拥有热带稀树草原。' } },
+            { lat: -6.31, lon: 143.95, type: 'country', coldestWinter: '+22.1', 
+              en: { name: 'Papua New Guinea', desc: 'An incredibly rugged island nation with isolated tropical jungles.' },
+              sv: { name: 'Papua Nya Guinea', desc: 'En otroligt karg önation med isolerade tropiska djungler.' },
+              zh: { name: '巴布亚新几内亚', desc: '一个极其崎岖的岛国，拥有孤立的热带丛林。' } },
+            { lat: -9.64, lon: 160.15, type: 'country', coldestWinter: '+24.2', 
+              en: { name: 'Solomon Islands', desc: 'A vast South Pacific network of volcanic islands and atolls.' },
+              sv: { name: 'Salomonöarna', desc: 'Ett vidsträckt sydstillahavsnätverk av vulkaniska öar och atoller.' },
+              zh: { name: '所罗门群岛', desc: '南太平洋广阔的火山岛和环礁网络。' } },
+            { lat: -15.37, lon: 166.95, type: 'country', coldestWinter: '+21.5', 
+              en: { name: 'Vanuatu', desc: 'A dynamic Y-shaped archipelago of volcanic islands.' },
+              sv: { name: 'Vanuatu', desc: 'En dynamisk Y-formad skärgård av vulkaniska öar.' },
+              zh: { name: '瓦努阿图', desc: '一个动态的Y形火山群岛。' } },
+            { lat: -17.71, lon: 178.06, type: 'country', coldestWinter: '+22.0', 
+              en: { name: 'Fiji', desc: 'A South Pacific archipelago of more than 300 islands.' },
+              sv: { name: 'Fiji', desc: 'En sydstillahavsskärgård med mer än 300 öar.' },
+              zh: { name: '斐济', desc: '南太平洋群岛，拥有300多个岛屿。' } },
+            { lat: -13.75, lon: -172.10, type: 'country', coldestWinter: '+24.9', 
+              en: { name: 'Samoa', desc: 'The heart of Polynesia with intense equatorial warmth.' },
+              sv: { name: 'Samoa', desc: 'Polynesiens hjärta med intensiv ekvatoriell värme.' },
+              zh: { name: '萨摩亚', desc: '波利尼西亚的心脏，拥有强烈的赤道温暖。' } },
+            { lat: -21.17, lon: -175.20, type: 'country', coldestWinter: '+19.8', 
+              en: { name: 'Tonga', desc: 'An archipelago of over 170 islands in the South Pacific.' },
+              sv: { name: 'Tonga', desc: 'En skärgård med över 170 öar i södra Stilla havet.' },
+              zh: { name: '汤加', desc: '南太平洋的一个由170多个岛屿组成的群岛。' } },
+            { lat: -3.37, lon: -168.73, type: 'country', coldestWinter: '+25.2', 
+              en: { name: 'Kiribati', desc: 'A massive ocean nation of 33 atolls spanning all four hemispheres.' },
+              sv: { name: 'Kiribati', desc: 'En massiv oceanisk nation med 33 atoller som sträcker sig över alla fyra halvklot.' },
+              zh: { name: '基里巴斯', desc: '一个由33个环礁组成的广阔海洋国家，横跨所有四个半球。' } },
+            { lat: 7.42, lon: 150.55, type: 'country', coldestWinter: '+24.8', 
+              en: { name: 'Micronesia', desc: 'An expanse of hundreds of small palm-covered islands.' },
+              sv: { name: 'Mikronesiska federationen', desc: 'En vidsträckt samling av hundratals små palmklädda öar.' },
+              zh: { name: '密克罗尼西亚', desc: '数百个小型棕榈覆盖岛屿的广阔区域。' } },
+            { lat: 7.51, lon: 134.58, type: 'country', coldestWinter: '+25.0', 
+              en: { name: 'Palau', desc: 'A diving wonderland with unique limestone Rock Islands.' },
+              sv: { name: 'Palau', desc: 'Ett dykarunderland med unika kalkstensklippöar.' },
+              zh: { name: '帕劳', desc: '一个潜水仙境，拥有独特的石灰岩岩石群岛。' } },
+            { lat: -7.10, lon: 177.64, type: 'country', coldestWinter: '+25.4', 
+              en: { name: 'Tuvalu', desc: 'A low-lying Pacific atoll nation in equatorial warmth.' },
+              sv: { name: 'Tuvalu', desc: 'En lågt liggande stillahavsatollnation i ekvatoriell värme.' },
+              zh: { name: '图瓦卢', desc: '一个低洼的太平洋环礁国家，沉浸在赤道温暖中。' } },
+            { lat: -0.52, lon: 166.91, type: 'country', coldestWinter: '+25.6', 
+              en: { name: 'Nauru', desc: 'A solitary raised coral island just south of the Equator.' },
+              sv: { name: 'Nauru', desc: 'En ensam upphöjd korallö precis söder om ekvatorn.' },
+              zh: { name: '瑙鲁', desc: '一个位于赤道以南的孤立凸起珊瑚岛。' } },
+            { lat: 7.13, lon: 171.18, type: 'country', coldestWinter: '+25.1', 
+              en: { name: 'Marshall Islands', desc: 'A vast Pacific collection of low-lying coral atolls.' },
+              sv: { name: 'Marshallöarna', desc: 'En vidsträckt stillahavssamling av lågt liggande korallatoller.' },
+              zh: { name: '马绍尔群岛', desc: '一个广阔的太平洋低洼珊瑚环礁群。' } },
+              
+            // --- REMOTE ISLANDS ---
+            { lat: 19.89, lon: -155.58, type: 'island', coldestWinter: '+22.1', 
+              en: { name: 'Hawaii', desc: 'An isolated volcanic chain in the central Pacific.' },
+              sv: { name: 'Hawaii', desc: 'En isolerad vulkanisk kedja i centrala Stilla havet.' },
+              zh: { name: '夏威夷', desc: '太平洋中部一个孤立的火山链。' } },
+            { lat: 3.20, lon: 73.22, type: 'country', coldestWinter: '+25.3', 
+              en: { name: 'Maldives', desc: 'A flawless string of over a thousand tiny coral atolls.' },
+              sv: { name: 'Maldiverna', desc: 'En perfekt rad av över tusen små korallatoller.' },
+              zh: { name: '马尔代夫', desc: '一千多个小珊瑚环礁的完美串。' } },
+            { lat: -4.67, lon: 55.49, type: 'country', coldestWinter: '+24.9', 
+              en: { name: 'Seychelles', desc: 'An archipelago of granite and coral islands.' },
+              sv: { name: 'Seychellerna', desc: 'En skärgård av granit- och korallöar.' },
+              zh: { name: '塞舌尔', desc: '花岗岩和珊瑚岛组成的群岛。' } },
+            { lat: -6.16, lon: 39.20, type: 'island', coldestWinter: '+23.8', 
+              en: { name: 'Zanzibar', desc: 'A mythical spice island off the coast of Tanzania.' },
+              sv: { name: 'Zanzibar', desc: 'En mytisk kryddö utanför Tanzanias kust.' },
+              zh: { name: '桑给巴尔', desc: '坦桑尼亚海岸外的一个神话般的香料岛。' } },
+            { lat: -20.34, lon: 57.55, type: 'country', coldestWinter: '+19.2', 
+              en: { name: 'Mauritius', desc: 'A volcanic island nation with beautiful lagoons.' },
+              sv: { name: 'Mauritius', desc: 'En vulkanisk önation med vackra laguner.' },
+              zh: { name: '毛里求斯', desc: '一个拥有美丽泻湖的火山岛国。' } },
+            { lat: -8.40, lon: 115.18, type: 'island', coldestWinter: '+24.1', 
+              en: { name: 'Bali', desc: 'Indonesia\'s iconic paradise with lush volcanic slopes.' },
+              sv: { name: 'Bali', desc: 'Indonesiens ikoniska paradis med frodiga vulkaniska sluttningar.' },
+              zh: { name: '巴厘岛', desc: '印度尼西亚的标志性天堂，拥有郁郁葱葱的火山坡。' } },
+            { lat: 0.96, lon: 114.55, type: 'island', coldestWinter: '+24.0', 
+              en: { name: 'Borneo', desc: 'A legendary giant island blanketed in prehistoric rainforest.' },
+              sv: { name: 'Borneo', desc: 'En legendarisk jätteö täckt av förhistorisk regnskog.' },
+              zh: { name: '婆罗洲', desc: '一个被史前雨林覆盖的传奇巨岛。' } },
+            { lat: -17.65, lon: -149.42, type: 'island', coldestWinter: '+22.3', 
+              en: { name: 'Tahiti', desc: 'The crowning jewel of French Polynesia.' },
+              sv: { name: 'Tahiti', desc: 'Franska Polynesiens kronjuvel.' },
+              zh: { name: '塔希提岛', desc: '法属波利尼西亚的明珠。' } },
+            { lat: -0.95, lon: -90.96, type: 'island', coldestWinter: '+20.5', 
+              en: { name: 'Galapagos', desc: 'A volcanic Pacific archipelago straddling the equator.' },
+              sv: { name: 'Galápagosöarna', desc: 'En vulkanisk stillahavsskärgård som ligger på ekvatorn.' },
+              zh: { name: '加拉帕戈斯', desc: '一个位于赤道上的火山太平洋群岛。' } },
+              
+            // --- OCEANS ---
+            { lat: 0, lon: -160, type: 'ocean', coldestWinter: null,
+              en: { name: 'Pacific Ocean', desc: '' }, sv: { name: 'Stilla havet', desc: '' }, zh: { name: '太平洋', desc: '' } },
+            { lat: 0, lon: -25, type: 'ocean', coldestWinter: null,
+              en: { name: 'Atlantic Ocean', desc: '' }, sv: { name: 'Atlanten', desc: '' }, zh: { name: '大西洋', desc: '' } },
+            { lat: -10, lon: 80, type: 'ocean', coldestWinter: null,
+              en: { name: 'Indian Ocean', desc: '' }, sv: { name: 'Indiska oceanen', desc: '' }, zh: { name: '印度洋', desc: '' } },
+            { lat: 15, lon: -75, type: 'ocean', coldestWinter: null,
+              en: { name: 'Caribbean Sea', desc: '' }, sv: { name: 'Karibiska havet', desc: '' }, zh: { name: '加勒比海', desc: '' } },
+            { lat: 25, lon: -90, type: 'ocean', coldestWinter: null,
+              en: { name: 'Gulf of Mexico', desc: '' }, sv: { name: 'Mexikanska golfen', desc: '' }, zh: { name: '墨西哥湾', desc: '' } },
+            { lat: 12, lon: 114.5, type: 'ocean', coldestWinter: null,
+              en: { name: 'South China Sea', desc: '' }, sv: { name: 'Sydkinesiska havet', desc: '' }, zh: { name: '南海', desc: '' } }
         ];
 
-        // Language Handling
-        let currentLang = 'sv';
-        const langSelect = document.getElementById('lang-dropdown');
-        langSelect.addEventListener('change', (e) => {
-            currentLang = e.target.value;
-            // Refresh UI if necessary
+        // Build PLACES array from the multilingual data
+        let currentLang = 'en';
+        let PLACES = [];
+        
+        function rebuildPlacesArray(lang) {
+            return PLACES_DATA.map(place => ({
+                name: place[lang].name,
+                lat: place.lat,
+                lon: place.lon,
+                type: place.type,
+                coldestWinter: place.coldestWinter,
+                desc: place[lang].desc,
+                _data: place
+            }));
+        }
+        
+        // Initialize with English
+        PLACES = rebuildPlacesArray('en');
+        
+        // Translation strings for UI elements
+        const UI_TEXTS = {
+            en: {
+                searchPlaceholder: "Search tropical destination...",
+                tourBtn: "🌍 Round-Trip",
+                tourBtnActive: "⏹️ Stop",
+                rotateBtn: "🔄 Rotate",
+                rotateBtnActive: "⏹️ Stop",
+                coldestMonth: "Coldest month:",
+                country: "Country",
+                island: "Island",
+                territory: "Territory",
+                polarArctic: "❄️ ARCTIC CIRCLE",
+                polarAntarctic: "🧊 ANTARCTIC CIRCLE",
+                polarArcticDesc: "Sea ice and polar night dominate this frozen realm.",
+                polarAntarcticDesc: "The coldest, windiest, and driest continent on Earth.",
+                snowMass: "❄️ Snow mass:",
+                tons: "",
+                polarTempArctic: "-28°C",
+                polarTempAntarctic: "-49°C"
+            },
+            sv: {
+                searchPlaceholder: "Sök tropisk destination...",
+                tourBtn: "🌍 Rundresa",
+                tourBtnActive: "⏹️ Stopp",
+                rotateBtn: "🔄 Rotera",
+                rotateBtnActive: "⏹️ Stopp",
+                coldestMonth: "Kallaste månaden:",
+                country: "Land",
+                island: "Ö",
+                territory: "Territorium",
+                polarArctic: "❄️ ARKTIS",
+                polarAntarctic: "🧊 ANTARKTIS",
+                polarArcticDesc: "Havsis och polarnatt dominerar detta frusna rike.",
+                polarAntarcticDesc: "Den kallaste, blåsigaste och torraste kontinenten på jorden.",
+                snowMass: "❄️ Snömassa:",
+                tons: "",
+                polarTempArctic: "-28°C",
+                polarTempAntarctic: "-49°C"
+            },
+            zh: {
+                searchPlaceholder: "搜索热带目的地...",
+                tourBtn: "🌍 环球之旅",
+                tourBtnActive: "⏹️ 停止",
+                rotateBtn: "🔄 旋转",
+                rotateBtnActive: "⏹️ 停止",
+                coldestMonth: "最冷月份:",
+                country: "国家",
+                island: "岛屿",
+                territory: "领土",
+                polarArctic: "❄️ 北极圈",
+                polarAntarctic: "🧊 南极圈",
+                polarArcticDesc: "海冰和极夜主导着这个冰冻的领域。",
+                polarAntarcticDesc: "地球上最冷、风最大、最干燥的大陆。",
+                snowMass: "❄️ 积雪质量:",
+                tons: "",
+                polarTempArctic: "-28°C",
+                polarTempAntarctic: "-49°C"
+            }
+        };
+        
+        // Function to update UI text based on selected language
+        function updateUILanguage(lang) {
+            const texts = UI_TEXTS[lang];
+            
+            // Update search placeholder
+            document.getElementById('search-input').placeholder = texts.searchPlaceholder;
+            
+            // Update buttons (if not in active state)
+            if (!tourInterval) {
+                document.getElementById('tour-btn').innerHTML = texts.tourBtn;
+            }
+            if (!autoRotateFlag) {
+                document.getElementById('rotate-btn').innerHTML = texts.rotateBtn;
+            }
+        }
+        
+        // Function to update info card with current language
+        let currentInfoItem = null;
+        
+        function updateInfoCardLanguage(lang) {
+            if (currentInfoItem && currentInfoItem._data) {
+                const data = currentInfoItem._data;
+                currentInfoItem.name = data[lang].name;
+                currentInfoItem.desc = data[lang].desc;
+                
+                document.getElementById('info-title').innerText = currentInfoItem.name;
+                document.getElementById('info-desc').innerText = currentInfoItem.desc || (currentInfoItem.type === 'ocean' ? '' : 'Tropical destination');
+                
+                const texts = UI_TEXTS[lang];
+                if (currentInfoItem.type === 'country') {
+                    document.getElementById('info-badge').innerHTML = `🌎 ${texts.country}`;
+                } else if (currentInfoItem.type === 'island') {
+                    document.getElementById('info-badge').innerHTML = `🏝️ ${texts.island}`;
+                } else if (currentInfoItem.type === 'territory') {
+                    document.getElementById('info-badge').innerHTML = `📌 ${texts.territory}`;
+                }
+                
+                document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(currentInfoItem.coldestWinter)}</span>`;
+            }
+        }
+        
+        // Switch language function
+        function switchLanguage(lang) {
+            currentLang = lang;
+            
+            // Rebuild PLACES array with new language
+            const newPlaces = rebuildPlacesArray(lang);
+            
+            // Update existing place objects with new names and descriptions
+            PLACES.forEach((place, idx) => {
+                if (idx < newPlaces.length) {
+                    place.name = newPlaces[idx].name;
+                    place.desc = newPlaces[idx].desc;
+                    place._data = PLACES_DATA[idx];
+                    
+                    // Update DOM element text
+                    if (place.dom) {
+                        place.dom.innerText = place.name;
+                    }
+                }
+            });
+            
+            // Update UI texts
+            updateUILanguage(lang);
+            
+            // Update info card if open
+            if (currentInfoItem && currentInfoItem._data) {
+                updateInfoCardLanguage(lang);
+            }
+        }
+
+        // --- SEARCH FUNCTIONALITY ---
+        const searchInput = document.getElementById('search-input');
+        const autocompleteList = document.getElementById('autocomplete-list');
+        
+        function updateSearchResults() {
+            const value = searchInput.value.toLowerCase().trim();
+            autocompleteList.innerHTML = '';
+            
+            if (!value) {
+                autocompleteList.style.display = 'none';
+                return;
+            }
+            
+            const searchablePlaces = PLACES.filter(p => p.type !== 'ocean');
+            const matches = searchablePlaces.filter(place => 
+                place.name.toLowerCase().includes(value)
+            ).slice(0, 10);
+            
+            if (matches.length > 0) {
+                matches.forEach(match => {
+                    const div = document.createElement('div');
+                    div.className = 'autocomplete-item';
+                    div.textContent = match.name;
+                    div.addEventListener('click', function() {
+                        searchInput.value = match.name;
+                        autocompleteList.style.display = 'none';
+                        stopTour();
+                        openInfoCard(match);
+                        flyToPlace(match);
+                    });
+                    autocompleteList.appendChild(div);
+                });
+                autocompleteList.style.display = 'block';
+            } else {
+                autocompleteList.style.display = 'none';
+            }
+        }
+        
+        // Language switcher - dropdown event
+        const langDropdown = document.getElementById('lang-dropdown');
+        langDropdown.addEventListener('change', (e) => {
+            const lang = e.target.value;
+            switchLanguage(lang);
+            if (searchInput.value.trim()) {
+                updateSearchResults();
+            }
         });
+        
+        searchInput.addEventListener('input', updateSearchResults);
+        
+        document.addEventListener('click', function(e) {
+            if (e.target !== searchInput && !autocompleteList.contains(e.target)) {
+                autocompleteList.style.display = 'none';
+            }
+        });
+
+        // --- THREE.JS SCENE SETUP ---
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color('#1B0027');
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 1.2, 12.5);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.autoRotate = false;
+        controls.enableZoom = true;
+        controls.zoomSpeed = 0.8;
+        controls.rotateSpeed = 0.8;
+        controls.minDistance = 9.0;
+        controls.maxDistance = 18.0;
+
+        // Lighting
+        scene.add(new THREE.AmbientLight(0xffffff, 0.8));
+        const dirLight = new THREE.DirectionalLight(0xffffff, 0.7);
+        dirLight.position.set(10, 15, 5);
+        scene.add(dirLight);
+        
+        // --- GEMINI'S STARFIELD - no cubes, just beautiful points! ---
+        function createStarfield() {
+            const starGeometry = new THREE.BufferGeometry();
+            const starMaterial = new THREE.PointsMaterial({ 
+                color: 0xffffff,
+                size: 0.15,
+                transparent: true,
+                opacity: 0.8,
+                sizeAttenuation: true
+            });
+
+            const starVertices = [];
+            for (let i = 0; i < 5000; i++) {
+                const x = (Math.random() - 0.5) * 2000;
+                const y = (Math.random() - 0.5) * 2000;
+                const z = (Math.random() - 0.5) * 2000;
+                starVertices.push(x, y, z);
+            }
+
+            starGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starVertices, 3));
+            const stars = new THREE.Points(starGeometry, starMaterial);
+            scene.add(stars);
+            return stars;
+        }
+
+        // Create the starfield
+        const starField = createStarfield();
+
+        // --- ROTATING SUN/PLANET (from DeepSeek version) ---
+        const sunRadius = 0.65;
+        const sunGeometrySphere = new THREE.SphereGeometry(sunRadius, 96, 96);
+        
+        // Canvas: 1150 × 400
+        const textCanvas = document.createElement('canvas');
+        textCanvas.width = 1150;
+        textCanvas.height = 400;
+        const ctx = textCanvas.getContext('2d');
+        
+        // Golden gradient background
+        const gradient = ctx.createLinearGradient(0, 0, 0, textCanvas.height);
+        gradient.addColorStop(0, '#FFD700');
+        gradient.addColorStop(0.5, '#FFC107');
+        gradient.addColorStop(1, '#FFD700');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, textCanvas.width, textCanvas.height);
+        
+        // Text settings
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+        ctx.fillStyle = '#7A0000';
+        ctx.font = 'bold 39px "Segoe UI", Arial, sans-serif';
+        
+        // Text: "✦   THE WORLD MANIFESTO   "
+        const cleanText = "✦   THE WORLD MANIFESTO   ";
+        ctx.fillText(cleanText, 30, textCanvas.height / 2);
+        ctx.fillText(cleanText, 590, textCanvas.height / 2);
+        
+        // Create texture
+        const sunTextTexture = new THREE.CanvasTexture(textCanvas);
+        sunTextTexture.wrapS = THREE.ClampToEdgeWrapping;
+        sunTextTexture.wrapT = THREE.ClampToEdgeWrapping;
+        sunTextTexture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+        sunTextTexture.minFilter = THREE.LinearMipmapLinearFilter;
+        sunTextTexture.magFilter = THREE.LinearFilter;
+        
+        const sunMaterialTex = new THREE.MeshBasicMaterial({ 
+            map: sunTextTexture,
+            side: THREE.DoubleSide
+        });
+        
+        const sunMesh = new THREE.Mesh(sunGeometrySphere, sunMaterialTex);
+        const sunOrbitGroup = new THREE.Group();
+        scene.add(sunOrbitGroup);
+        sunMesh.position.set(8.5, 1.5, 0);
+        sunOrbitGroup.add(sunMesh);
+
+        // --- POLAR CAPS (from DeepSeek version) ---
+        function createPolarCap(isNorth) {
+            const capGeo = new THREE.SphereGeometry(globeRadius + 0.08, 64, 64, 0, Math.PI * 2, 0, (90 - 23.436) * Math.PI / 180);
+            const capMat = new THREE.MeshBasicMaterial({
+                color: 0xaae0ff,
+                transparent: true,
+                opacity: 0.0,
+                side: THREE.DoubleSide
+            });
+            const cap = new THREE.Mesh(capGeo, capMat);
+            if (!isNorth) cap.rotation.x = Math.PI;
+            return cap;
+        }
+        
+        // Globe
+        const globeRadius = 5;
+        const globeGroup = new THREE.Group();
+        scene.add(globeGroup);
+        const geometry = new THREE.SphereGeometry(globeRadius, 128, 128);
+        const textureLoader = new THREE.TextureLoader();
+        // ⚠️ REPLACE WITH YOUR OWN EARTH TEXTURE ⚠️
+        const earthTex = textureLoader.load('https://lh3.googleusercontent.com/u/0/d/1bwDxtprkqT4cjNJ46WC2TUCsCJrHt-Rd=w2048');
+        const material = new THREE.MeshStandardMaterial({ map: earthTex, roughness: 0.5, metalness: 0.1 });
+        const globeMesh = new THREE.Mesh(geometry, material);
+        globeGroup.add(globeMesh);
+        
+        // Add polar caps to globe
+        const northPolarCap = createPolarCap(true);
+        const southPolarCap = createPolarCap(false);
+        globeGroup.add(northPolarCap);
+        globeGroup.add(southPolarCap);
+
+        // Latitude lines
+        function createSolidLatitudeLine(latitude, color) {
+            const points = [];
+            const radLat = (latitude * Math.PI) / 180;
+            const y = globeRadius * Math.sin(radLat);
+            const r = globeRadius * Math.cos(radLat);
+            for (let i = 0; i <= 360; i++) {
+                const theta = (i / 180) * Math.PI * 2;
+                const x = -r * Math.sin(theta);
+                const z = r * Math.cos(theta);
+                points.push(new THREE.Vector3(x, y, z));
+            }
+            const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
+            const lineMaterial = new THREE.LineBasicMaterial({ color: color });
+            return new THREE.Line(lineGeometry, lineMaterial);
+        }
+
+        // Equator - dashed
+        const equatorLat = 0;
+        const radLatEq = (equatorLat * Math.PI) / 180;
+        const yEq = globeRadius * Math.sin(radLatEq);
+        const rEq = globeRadius * Math.cos(radLatEq);
+        
+        const dashCount = 180;
+        const dashPoints = [];
+        for (let i = 0; i <= dashCount; i++) {
+            const theta = (i / dashCount) * Math.PI * 2;
+            if (i % 2 === 0) {
+                const x = -rEq * Math.sin(theta);
+                const z = rEq * Math.cos(theta);
+                dashPoints.push(new THREE.Vector3(x, yEq, z));
+            }
+        }
+        const dashGeometry = new THREE.BufferGeometry().setFromPoints(dashPoints);
+        const dashMaterial = new THREE.PointsMaterial({ color: 0xffdd88, size: 0.08 });
+        const equatorDashes = new THREE.Points(dashGeometry, dashMaterial);
+        globeGroup.add(equatorDashes);
+        
+        const equatorPoints = [];
+        for (let i = 0; i <= 360; i++) {
+            const theta = (i / 180) * Math.PI * 2;
+            const x = -rEq * Math.sin(theta);
+            const z = rEq * Math.cos(theta);
+            equatorPoints.push(new THREE.Vector3(x, yEq, z));
+        }
+        const equatorGeometry = new THREE.BufferGeometry().setFromPoints(equatorPoints);
+        const equatorMaterial = new THREE.LineBasicMaterial({ color: 0xffdd88, transparent: true, opacity: 0.3 });
+        const equatorLine = new THREE.Line(equatorGeometry, equatorMaterial);
+        globeGroup.add(equatorLine);
+        
+        // Tropics - SOLID lines
+        globeGroup.add(createSolidLatitudeLine(23.44, 0xff6666));
+        globeGroup.add(createSolidLatitudeLine(-23.44, 0x77aaff));
+
+        function latLonToVec(lat, lon, rad) {
+            const phi = lat * Math.PI / 180;
+            const theta = (180 - (lon - 90)) * Math.PI / 180;
+            const x = -rad * Math.cos(phi) * Math.sin(theta);
+            const y = rad * Math.sin(phi);
+            const z = rad * Math.cos(phi) * Math.cos(theta);
+            return new THREE.Vector3(x, y, z);
+        }
+
+        // Create labels
+        const labelsContainer = document.getElementById('labels-container');
+        PLACES.forEach(place => {
+            const div = document.createElement('div');
+            div.className = `globe-label label-${place.type}`;
+            div.innerText = place.name;
+            if (place.type !== 'ocean') {
+                div.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    stopTour();
+                    openInfoCard(place);
+                    flyToPlace(place);
+                });
+            }
+            labelsContainer.appendChild(div);
+            const anchor = new THREE.Object3D();
+            const pos = latLonToVec(place.lat, place.lon, globeRadius + 0.04);
+            anchor.position.copy(pos);
+            globeGroup.add(anchor);
+            place.threeObj = anchor;
+            place.dom = div;
+        });
+
+        // Fly-to animation
+        let animating = false;
+        let targetCamPos = null;
+        let targetCtrlTarget = null;
+        function flyToPlace(place) {
+            const worldPos = place.threeObj.getWorldPosition(new THREE.Vector3());
+            const dir = worldPos.clone().normalize();
+            const distance = camera.position.length();
+            targetCamPos = dir.multiplyScalar(distance);
+            targetCtrlTarget = new THREE.Vector3(0,0,0);
+            animating = true;
+        }
+
+        // Auto-rotate
+        let autoRotateFlag = false;
+        const rotateBtn = document.getElementById('rotate-btn');
+        rotateBtn.addEventListener('click', () => {
+            autoRotateFlag = !autoRotateFlag;
+            const texts = UI_TEXTS[currentLang];
+            if(autoRotateFlag) {
+                rotateBtn.classList.add('active');
+                rotateBtn.innerHTML = texts.rotateBtnActive;
+                if(tourInterval) stopTour();
+            } else {
+                rotateBtn.classList.remove('active');
+                rotateBtn.innerHTML = texts.rotateBtn;
+            }
+        });
+
+        // Info Card
+        const infoCard = document.getElementById('info-card');
+        const infoTitle = document.getElementById('info-title');
+        const infoBadge = document.getElementById('info-badge');
+        const infoDesc = document.getElementById('info-desc');
+        const climateStat = document.getElementById('climate-stat-container');
+        
+        function openInfoCard(item) {
+            currentInfoItem = item;
+            if(polarCard.style.display === 'block') polarCard.style.display = 'none';
+            infoTitle.innerText = item.name;
+            const texts = UI_TEXTS[currentLang];
+            
+            if(item.type === 'country') {
+                infoBadge.innerHTML = `🌎 ${texts.country}`;
+                infoBadge.className = 'badge country';
+                infoDesc.innerText = item.desc || (item._data ? item._data[currentLang].desc : '');
+                climateStat.style.display = 'block';
+                document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(item.coldestWinter)}</span>`;
+            } else if(item.type === 'island') {
+                infoBadge.innerHTML = `🏝️ ${texts.island}`;
+                infoBadge.className = 'badge island';
+                infoDesc.innerText = item.desc || (item._data ? item._data[currentLang].desc : '');
+                climateStat.style.display = 'block';
+                document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(item.coldestWinter)}</span>`;
+            } else if(item.type === 'territory') {
+                infoBadge.innerHTML = `📌 ${texts.territory}`;
+                infoBadge.className = 'badge territory';
+                infoDesc.innerText = item.desc || (item._data ? item._data[currentLang].desc : '');
+                climateStat.style.display = 'block';
+                document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(item.coldestWinter)}</span>`;
+            } else if(item.type === 'ocean') {
+                infoBadge.innerHTML = `🌊 OCEAN`;
+                infoBadge.className = 'badge';
+                infoDesc.innerText = '';
+                climateStat.style.display = 'none';
+            }
+            infoCard.style.display = 'block';
+        }
+        document.getElementById('info-close').addEventListener('click', () => { infoCard.style.display = 'none'; currentInfoItem = null; });
+
+        // Tour System
+        let tourInterval = null;
+        let tourDestinations = PLACES.filter(p => p.type !== 'ocean');
+        let visitedIdx = [];
+        let currentTourDest = null;
+        const tourBtn = document.getElementById('tour-btn');
+        
+        function getDistanceBetween(p1, p2) {
+            const v1 = latLonToVec(p1.lat, p1.lon, 1);
+            const v2 = latLonToVec(p2.lat, p2.lon, 1);
+            return v1.distanceTo(v2);
+        }
+        
+        function nextTourStep() {
+            visitedIdx.push(currentTourDest);
+            const texts = UI_TEXTS[currentLang];
+            tourBtn.innerHTML = `🌐 ${visitedIdx.length}/${tourDestinations.length}`;
+            flyToPlace(currentTourDest);
+            openInfoCard(currentTourDest);
+            if(visitedIdx.length >= tourDestinations.length) visitedIdx = [];
+            let nearest = null;
+            let minDist = Infinity;
+            for(let d of tourDestinations) {
+                if(visitedIdx.includes(d)) continue;
+                const dist = getDistanceBetween(currentTourDest, d);
+                if(dist < minDist) { minDist = dist; nearest = d; }
+            }
+            if(nearest) currentTourDest = nearest;
+            else {
+                visitedIdx = [];
+                currentTourDest = tourDestinations[Math.floor(Math.random() * tourDestinations.length)];
+            }
+        }
+        
+        function startTour() {
+            tourBtn.classList.add('active');
+            visitedIdx = [];
+            const rand = Math.floor(Math.random() * tourDestinations.length);
+            currentTourDest = tourDestinations[rand];
+            nextTourStep();
+            tourInterval = setInterval(nextTourStep, 4800);
+        }
+        
+        function stopTour() {
+            if(tourInterval) { clearInterval(tourInterval); tourInterval = null; }
+            tourBtn.classList.remove('active');
+            const texts = UI_TEXTS[currentLang];
+            tourBtn.innerHTML = texts.tourBtn;
+        }
+        tourBtn.addEventListener('click', () => { if(tourInterval) stopTour(); else startTour(); });
+
+        // --- POLAR DETECTION (from DeepSeek version) ---
+        const polarCard = document.getElementById('polar-card');
+        const polarRecordDiv = document.getElementById('polar-record');
+        const snowWeightSpan = document.getElementById('snow-weight');
+        
+        function updatePolarUI() {
+            const cameraDirection = camera.position.clone().normalize();
+            const threshold = 0.78;
+            let polarActive = false;
+            const texts = UI_TEXTS[currentLang];
+
+            if (cameraDirection.y >= threshold) {
+                polarActive = true;
+                const intensity = (cameraDirection.y - threshold) / (1 - threshold);
+                northPolarCap.material.opacity = intensity * 0.65;
+                southPolarCap.material.opacity = 0;
+                document.getElementById('polar-title').innerHTML = texts.polarArctic;
+                const temp = -20.0 - (intensity * 20.0);
+                document.getElementById('polar-temp').innerHTML = `${temp.toFixed(1)}°C`;
+                polarRecordDiv.innerHTML = `<span class="record-normal">all-time cold record in 1991 </span><span class="record-temp">-69.6°C</span>`;
+                document.getElementById('polar-desc').innerHTML = texts.polarArcticDesc;
+                snowWeightSpan.innerText = "4 000 000 000 000";
+            } else if (cameraDirection.y <= -threshold) {
+                polarActive = true;
+                const intensity = (Math.abs(cameraDirection.y) - threshold) / (1 - threshold);
+                southPolarCap.material.opacity = intensity * 0.65;
+                northPolarCap.material.opacity = 0;
+                document.getElementById('polar-title').innerHTML = texts.polarAntarctic;
+                const temp = -35.0 - (intensity * 30.0);
+                document.getElementById('polar-temp').innerHTML = `${temp.toFixed(1)}°C`;
+                polarRecordDiv.innerHTML = `<span class="record-normal">all-time cold record in 1983 </span><span class="record-temp">-89.2°C</span>`;
+                document.getElementById('polar-desc').innerHTML = texts.polarAntarcticDesc;
+                snowWeightSpan.innerText = "27 000 000 000 000 000";
+            } else {
+                northPolarCap.material.opacity = 0;
+                southPolarCap.material.opacity = 0;
+                polarRecordDiv.innerHTML = "";
+                if (polarCard.style.display === 'block') {
+                    polarCard.style.opacity = '0';
+                    setTimeout(() => { if (polarCard.style.opacity === '0') polarCard.style.display = 'none'; }, 500);
+                }
+                return;
+            }
+
+            if (polarActive) {
+                if (infoCard.style.display === 'block') { infoCard.style.display = 'none'; }
+                polarCard.style.display = 'block';
+                setTimeout(() => { polarCard.style.opacity = '1'; }, 10);
+            }
+        }
+
+        // --- Animation Loop ---
+        const vecHelper = new THREE.Vector3();
+        function animate() {
+            requestAnimationFrame(animate);
+            if(autoRotateFlag && !animating && !tourInterval) {
+                globeGroup.rotation.y += 0.003;
+            }
+            
+            // Rotate the sun orbiter
+            sunOrbitGroup.rotation.y += 0.003;
+            
+            // Stars rotate slowly
+            starField.rotation.y += 0.00005;
+            
+            if(animating && targetCamPos) {
+                camera.position.lerp(targetCamPos, 0.07);
+                controls.target.lerp(targetCtrlTarget, 0.07);
+                if(camera.position.distanceTo(targetCamPos) < 0.1) animating = false;
+            }
+            controls.update();
+            updatePolarUI();
+            
+            PLACES.forEach(place => {
+                if(!place.threeObj) return;
+                const worldPos = place.threeObj.getWorldPosition(vecHelper);
+                const dot = worldPos.clone().normalize().dot(camera.position.clone().normalize());
+                if(dot < 0.15) { place.dom.style.display = 'none'; return; }
+                worldPos.project(camera);
+                const x = (worldPos.x * 0.5 + 0.5) * window.innerWidth;
+                const y = (-worldPos.y * 0.5 + 0.5) * window.innerHeight;
+                place.dom.style.transform = `translate3d(${x}px, ${y}px, 0px) translate(-50%, -50%)`;
+                place.dom.style.display = 'block';
+            });
+            renderer.render(scene, camera);
+        }
+        
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+        
+        // Initialize UI with English
+        updateUILanguage('en');
+        
+        animate();
     </script>
 </body>
 </html>
