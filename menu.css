@@ -1,6 +1,5 @@
 /* ==========================================================================
    SHARED NAVIGATION MENU (menu.css)
-   Exakt kopierad från ursprungliga index.html
    ========================================================================== */
 
 /* Header-remsan längst upp */
@@ -114,4 +113,21 @@ body#robotel-page .dropdown-content a[href*="robotel"] {
     font-weight: bold;
     background-color: #eef6ff;
     color: #0066cc;
+}
+
+/* ==========================================================================
+   TROPICS-SPECIFIKA ANPASSNINGAR (body#tropics-page)
+   ========================================================================== */
+
+/* Ta bort padding så knappen trycks ända ut mot vänsterkanten */
+body#tropics-page .nav-container {
+    padding-left: 10px;
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Tvinga rullgardinsmenyn att ligga i exakt linje med knappen (0px från dess vänsterkant) */
+body#tropics-page .dropdown-content {
+    left: 0 !important;
+    margin-left: 0 !important;
 }
