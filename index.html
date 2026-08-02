@@ -206,9 +206,6 @@
 
     </div>
 
-    <!-- LÄNK TILL DEN SEPARERADE MENY-JS:EN -->
-    <script src="menu.js"></script>
-
     <!-- SLOGAN-LOGIK -->
     <script>
         const PAGE = "https://sites.google.com/view/worldmanifesto/";
@@ -298,7 +295,11 @@
             .catch(err => console.error('Fel:', err));
     </script>
 
-<script src="footer.js"></script>
+    <!-- Meny LÄNK TILL DEN SEPARERADE MENY-JS:EN (ETT STEG UPP) -->
+    <script src="../menu.js"></script>
+
+    <!-- Sidfot LÄNK TILL DEN SEPARERADE FOTNOT-JS:EN (ETTS STEG NER) -->
+    <script src="../footer.js"></script>
     
 </body>
 </html>
