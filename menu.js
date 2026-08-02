@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'el': { home: '🏠ΑΡΧΙΚΗ' },
         'hu': { home: '🏠FŐOLDAL' },
         'cs': { home: '🏠DOMŮ' },
-        'sv': { home: '⌂OHEM' },
+        'sv': { home: '⌂' },
         'bg': { home: '🏠НАЧАЛО' },
         'no': { home: '🏠HJEM' },
         'da': { home: '🏠HJEM' },
