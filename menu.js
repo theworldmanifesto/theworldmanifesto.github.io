@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <a href="/lang/lang.html">🌐 More Languages</a>
                         <a href="/freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
                         <a href="/tropics/tropics.html">🌎 The Tropics</a>
-                        <a href="/robotel/robotel.html">👄 Robotel</a>
+                        <a href="/robotel/robotel.html">🤖 Robotel</a>
                         <a href="/share/share.html">💬 Share</a>
                     </div>
                 </div>
