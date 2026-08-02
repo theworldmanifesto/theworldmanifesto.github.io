@@ -335,8 +335,6 @@
 
     <!-- === DIN TROPICS JAVASCRIPT === -->
     <script>
-        // --- MENY: hover på desktop, klick på mobil (från menu.js) ---
-        // (Denna funktionalitet finns nu i menu.js)
 
         // Helper function - Celsius only
         function formatTemp(celsiusStr) {
@@ -1376,9 +1374,6 @@
             let polarActive = false;
             const texts = UI_TEXTS[currentLang];
 
-            if (cameraDirection.y >= threshold) {
-                polarActive = true;
-                const intensity = (cameraDirection.y - threshold) / (1 - threshold);
                 northPolarCap.material.opacity = intensity * 0.65;
                 southPolarCap.material.opacity = 0;
                 document.getElementById('polar-title').innerHTML = texts.polarArctic;
