@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'el': { home: '🏠ΑΡΧΙΚΗ' },
         'hu': { home: '🏠FŐOLDAL' },
         'cs': { home: '🏠DOMŮ' },
-        'sv': { home: '⌂ HEM' },
+        'sv': { home: '⌂-HEM' },
         'bg': { home: '🏠НАЧАЛО' },
         'no': { home: '🏠HJEM' },
         'da': { home: '🏠HJEM' },
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'he': { home: '🏠בית' },
         'af': { home: '🏠TUIS' },
         
-        // --- MINDRE/REGIONALA SPRÅK ---
+        // --- MINDRE/REGIONALA SPRÅK ----
         'zu': { home: '🏠IKHAYA' },
         'xh': { home: '🏠IKHAYA' },
         'is': { home: '🏠HEIM' },
