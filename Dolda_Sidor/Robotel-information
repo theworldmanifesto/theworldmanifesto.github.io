@@ -1,5 +1,0 @@
-Robotel på Cloudflare.
-Robotel körs från Cloudflare och Agenten (AI-modellen/Assistenten) som används för att besvara sajtens besökares frågor är "Meta Llama 3.3 70B Instruct" (@cf/meta/llama-3.3-70b-instruct-fp8-fast).
-
-Robotel på Gnosari.
-Det finns en reserv-svarsrobot på "app.gnosari.com" unde Agent-namnet "world-manifesto" (https://app.gnosari.com/gnosari-chat-widget-advanced.js).
