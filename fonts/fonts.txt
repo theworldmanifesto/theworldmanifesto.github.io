@@ -3,5 +3,5 @@ Homemade Apple - helt gratis att lagra på GitHub och skicka till besökarna
 Liberation Sans - helt gratis att lagra på GitHub och skicka till besökarna
 EB Garamond - helt gratis att lagra på GitHub och skicka till besökarna
 Roboto - helt gratis att lagra på GitHub och skicka till besökarna
-Arial (förinstallerade systemfonter som ite får redistribueras fritt som filer)
-Georgia (förinstallerade systemfonter som ite får redistribueras fritt som filer)
+Arial (förinstallerade systemfonter i Windows/Mac/iOS/Android som ite får redistribueras fritt som filer)
+Georgia (förinstallerade systemfonter i Windows/Mac/iOS/Android som ite får redistribueras fritt som filer)
