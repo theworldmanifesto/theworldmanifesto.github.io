@@ -1,19 +1,45 @@
+/* ======================================== */
+/* GRUNDLÄGGANDE STYLING                     */
+/* ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Georgia', serif;
+    padding: 2.5cm;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 2.0;
+}
+
+/* ======================================== */
+/* FÖRSTA SIDAN                             */
+/* ======================================== */
+
+/* BOKTITELRUBRIK - Dancing Script 36pt */
 .book-title {
     font-family: 'Dancing Script', cursive;
     font-size: 36pt;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1em; /* En tom rad */
 }
 
+/* SPRÅKNAMN med flagga */
 .language-name {
     font-family: 'Georgia', serif;
     font-size: 12pt;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1em; /* En tom rad */
 }
 
+/* Flagga - 20px */
 .flag-icon {
     display: inline-block;
     width: 20px;
@@ -22,18 +48,129 @@
     margin-right: 0.3em;
 }
 
+/* BRÖDTEXT - första sidan */
 .body-text {
     font-family: 'Georgia', serif;
     font-size: 12pt;
     font-weight: normal;
     line-height: 2.0;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 2em; /* Två tomma rader */
 }
 
+/* FÖRFATTARE */
 .author {
     font-family: 'Georgia', serif;
     font-size: 12pt;
     font-weight: normal;
     text-align: center;
+    margin-bottom: 2em;
+}
+
+/* ======================================== */
+/* KAPITELRUBRIKER (A–T)                    */
+/* ======================================== */
+
+.chapter-title {
+    font-family: 'Georgia', serif;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 2em; /* Två tomrader efter */
+    word-break: break-word;
+}
+
+/* ======================================== */
+/* PUNKTLISTOR                              */
+/* ======================================== */
+
+/* Bokstavslista - A., B., C. */
+.letter-list {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 2.0;
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+.letter-list strong {
+    font-weight: bold;
+}
+
+/* Nummerlista - 1., 2., 3. */
+.number-list {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 2.0;
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+.number-list strong {
+    font-weight: bold;
+}
+
+/* ======================================== */
+/* VANLIGA STYCKEN                          */
+/* ======================================== */
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 2.0;
+    margin-bottom: 1em; /* En tomrad mellan stycken */
+}
+
+/* ======================================== */
+/* AVGRÄNSARE ============================== */
+/* ======================================== */
+
+.divider {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 2em 0;
+}
+
+/* ======================================== */
+/* INNEHÅLLSFÖRTECKNING                     */
+/* ======================================== */
+
+.toc {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    line-height: 2.0;
+    margin-bottom: 1em;
+}
+
+.toc a {
+    color: #000;
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* ======================================== */
+/* DOLDA TECKEN (bindestreck & kolon)       */
+/* ======================================== */
+
+.hidden-char {
+    color: #FFFFEF;
+}
+
+/* ======================================== */
+/* RESPONSIV DESIGN                         */
+/* ======================================== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 1.5cm;
+    }
+    .book-title {
+        font-size: 28pt;
+    }
 }
