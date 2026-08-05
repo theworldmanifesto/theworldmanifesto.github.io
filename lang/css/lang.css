@@ -68,10 +68,11 @@ body {
     background-color: #ffffff;
     font-family: 'Georgia', serif;
     padding: 2.5cm;
-    max-width: 800px;
+    max-width: 100%; /* ← Ändrat från 800px till 100% */
+    width: 100%;     /* ← Tillåter full bredd */
     margin: 0 auto;
     line-height: 2.0;
-    text-align: center; /* ← VIKTIGT: Centrerar all text */
+    text-align: center;
 }
 
 /* ======================================== */
@@ -105,4 +106,54 @@ body {
     font-size: 12pt;
     font-weight: bold;
     margin: 0;
+}
+
+/* ======================================== */
+/* FLAGGA                                   */
+/* ======================================== */
+
+.flag-icon {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0;
+}
+
+/* ======================================== */
+/* RESPONSIV DESIGN – SMARTPHONES           */
+/* ======================================== */
+
+@media (max-width: 600px) {
+    body {
+        padding: 1.5cm; /* Mindre marginaler på mobiler */
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .book-title {
+        font-size: 28pt; /* Mindre rubrik på mobiler */
+    }
+    
+    .body-text {
+        font-size: 12pt; /* Något mindre brödtext på mobiler */
+    }
+    
+    .language-name {
+        font-size: 11pt;
+    }
+    
+    .author {
+        font-size: 11pt;
+    }
+}
+
+/* ======================================== */
+/* RESPONSIV DESIGN – STORA SKÄRMAR         */
+/* ======================================== */
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 900px; /* Begränsad bredd på stora skärmar för läsbarhet */
+    }
 }
