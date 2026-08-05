@@ -45,16 +45,6 @@
 }
 
 /* ======================================== */
-/* SYSTEMFONTER (ej uppladdade)             */
-/* ======================================== */
-/* 
-   Dessa fonter används som fallback och finns förinstallerade:
-   - Georgia (systemfont)
-   - Arial (systemfont)
-   - Liberation Sans (systemfont i Linux)
-*/
-
-/* ======================================== */
 /* GRUNDLÄGGANDE STYLING                     */
 /* ======================================== */
 
@@ -64,15 +54,27 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #ffffff;
     font-family: 'Georgia', serif;
-    padding: 2.5cm;
-    max-width: 100%; /* ← Ändrat från 800px till 100% */
-    width: 100%;     /* ← Tillåter full bredd */
-    margin: 0 auto;
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     line-height: 2.0;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%; /* ← Viktig för iPhone */
 }
 
 /* ======================================== */
@@ -81,21 +83,23 @@ body {
 
 .language-name {
     font-family: 'Georgia', serif;
-    font-size: 12pt;
+    font-size: clamp(11pt, 3vw, 12pt);
     font-weight: normal;
     margin: 0;
 }
 
 .book-title {
     font-family: 'Dancing Script', cursive;
-    font-size: 36pt;
+    font-size: clamp(28pt, 10vw, 48pt);
     font-weight: normal;
     margin: 0;
+    line-height: 1.2;
+    word-break: break-word;
 }
 
 .body-text {
     font-family: 'Homemade Apple', cursive;
-    font-size: 13pt;
+    font-size: clamp(12pt, 4.5vw, 16pt);
     font-weight: normal;
     line-height: 2.0;
     margin: 0;
@@ -103,7 +107,7 @@ body {
 
 .author {
     font-family: 'Georgia', serif;
-    font-size: 12pt;
+    font-size: clamp(11pt, 3vw, 14pt);
     font-weight: bold;
     margin: 0;
 }
@@ -114,46 +118,156 @@ body {
 
 .flag-icon {
     display: inline-block;
-    width: 20px;
+    width: clamp(16px, 4vw, 24px);
     height: auto;
     vertical-align: middle;
     margin-right: 0;
 }
 
 /* ======================================== */
-/* RESPONSIV DESIGN – SMARTPHONES           */
+/* IPHONE-SPECIFIKA REGLER                   */
 /* ======================================== */
 
-@media (max-width: 600px) {
+/* iPhone SE, 6, 7, 8 (små skärmar) */
+@media only screen and (max-width: 375px) {
     body {
-        padding: 1.5cm; /* Mindre marginaler på mobiler */
-        max-width: 100%;
-        width: 100%;
+        padding: 4% !important;
     }
     
     .book-title {
-        font-size: 28pt; /* Mindre rubrik på mobiler */
+        font-size: 32pt !important;
     }
     
     .body-text {
-        font-size: 12pt; /* Något mindre brödtext på mobiler */
-    }
-    
-    .language-name {
-        font-size: 11pt;
+        font-size: 13pt !important;
     }
     
     .author {
-        font-size: 11pt;
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 18px !important;
+    }
+}
+
+/* iPhone X, 11, 12, 13, 14 (medium) */
+@media only screen and (min-width: 376px) and (max-width: 430px) {
+    body {
+        padding: 5% !important;
+    }
+    
+    .book-title {
+        font-size: 38pt !important;
+    }
+    
+    .body-text {
+        font-size: 14pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 20px !important;
+    }
+}
+
+/* iPhone Plus / Pro Max (stora) */
+@media only screen and (min-width: 431px) and (max-width: 500px) {
+    body {
+        padding: 6% !important;
+    }
+    
+    .book-title {
+        font-size: 42pt !important;
+    }
+    
+    .body-text {
+        font-size: 15pt !important;
+    }
+    
+    .author {
+        font-size: 13pt !important;
+    }
+    
+    .flag-icon {
+        width: 22px !important;
     }
 }
 
 /* ======================================== */
-/* RESPONSIV DESIGN – STORA SKÄRMAR         */
+/* ANDROID / ÖVRIGA MOBILER                 */
 /* ======================================== */
 
-@media (min-width: 1200px) {
+/* Alla mobiler (inklusive Android) */
+@media only screen and (max-width: 768px) {
     body {
-        max-width: 900px; /* Begränsad bredd på stora skärmar för läsbarhet */
+        padding: 5% !important;
+    }
+    
+    .book-title {
+        font-size: clamp(28pt, 10vw, 42pt) !important;
+    }
+    
+    .body-text {
+        font-size: clamp(12pt, 4.5vw, 15pt) !important;
+    }
+    
+    .author {
+        font-size: clamp(11pt, 3vw, 13pt) !important;
+    }
+}
+
+/* ======================================== */
+/* SURFPLATTOR                              */
+/* ======================================== */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        padding: 2.5cm !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+    
+    .book-title {
+        font-size: 36pt !important;
+    }
+    
+    .body-text {
+        font-size: 13pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+}
+
+/* ======================================== */
+/* STORA SKÄRMAR                            */
+/* ======================================== */
+
+@media only screen and (min-width: 1025px) {
+    body {
+        padding: 2.5cm !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+    }
+    
+    .book-title {
+        font-size: 36pt !important;
+    }
+    
+    .body-text {
+        font-size: 13pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 20px !important;
     }
 }
