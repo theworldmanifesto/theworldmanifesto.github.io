@@ -74,7 +74,33 @@ body {
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
-    -webkit-text-size-adjust: 100%; /* ← Viktig för iPhone */
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ======================================== */
+/* SIDANS INNEHÅLL (centrerad)              */
+/* ======================================== */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ======================================== */
+/* TOMRADER (ersätter <br>)                 */
+/* ======================================== */
+
+.spacer-1 {
+    height: 1em; /* En tom rad */
+}
+
+.spacer-2 {
+    height: 2em; /* Två tomma rader */
 }
 
 /* ======================================== */
@@ -90,11 +116,11 @@ body {
 
 .book-title {
     font-family: 'Dancing Script', cursive;
-    font-size: clamp(28pt, 10vw, 48pt);
+    font-size: clamp(24pt, 8vw, 48pt);
     font-weight: normal;
     margin: 0;
     line-height: 1.2;
-    word-break: break-word;
+    white-space: nowrap;
 }
 
 .body-text {
@@ -128,6 +154,13 @@ body {
 /* IPHONE-SPECIFIKA REGLER                   */
 /* ======================================== */
 
+@supports (-webkit-touch-callout: none) {
+    .book-title {
+        font-size: clamp(26pt, 9vw, 48pt) !important;
+        white-space: nowrap !important;
+    }
+}
+
 /* iPhone SE, 6, 7, 8 (små skärmar) */
 @media only screen and (max-width: 375px) {
     body {
@@ -135,7 +168,8 @@ body {
     }
     
     .book-title {
-        font-size: 32pt !important;
+        font-size: 26pt !important;
+        white-space: nowrap !important;
     }
     
     .body-text {
@@ -158,7 +192,8 @@ body {
     }
     
     .book-title {
-        font-size: 38pt !important;
+        font-size: 32pt !important;
+        white-space: nowrap !important;
     }
     
     .body-text {
@@ -181,7 +216,8 @@ body {
     }
     
     .book-title {
-        font-size: 42pt !important;
+        font-size: 36pt !important;
+        white-space: nowrap !important;
     }
     
     .body-text {
@@ -201,14 +237,14 @@ body {
 /* ANDROID / ÖVRIGA MOBILER                 */
 /* ======================================== */
 
-/* Alla mobiler (inklusive Android) */
 @media only screen and (max-width: 768px) {
     body {
         padding: 5% !important;
     }
     
     .book-title {
-        font-size: clamp(28pt, 10vw, 42pt) !important;
+        font-size: clamp(24pt, 7.5vw, 38pt) !important;
+        white-space: nowrap !important;
     }
     
     .body-text {
@@ -221,42 +257,25 @@ body {
 }
 
 /* ======================================== */
-/* SURFPLATTOR                              */
+/* DATOR / STORA SKÄRMAR                    */
 /* ======================================== */
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
-        padding: 2.5cm !important;
-        max-width: 700px !important;
-        margin: 0 auto !important;
-    }
-    
-    .book-title {
-        font-size: 36pt !important;
-    }
-    
-    .body-text {
-        font-size: 13pt !important;
-    }
-    
-    .author {
-        font-size: 12pt !important;
-    }
-}
-
-/* ======================================== */
-/* STORA SKÄRMAR                            */
-/* ======================================== */
-
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 769px) {
     body {
         padding: 2.5cm !important;
         max-width: 800px !important;
         margin: 0 auto !important;
+        display: block !important; /* ← Återställer för datorer */
+    }
+    
+    .page-container {
+        display: block !important; /* ← Återställer för datorer */
+        max-width: 100%;
     }
     
     .book-title {
         font-size: 36pt !important;
+        white-space: nowrap !important;
     }
     
     .body-text {
