@@ -17,10 +17,10 @@
     <!-- FÖRSTA SIDAN                             -->
     <!-- ======================================== -->
 
-    <!-- BOKTITELRUBRIK - Dancing Script 36pt -->
+    <!-- BOKTITELRUBRIK -->
     <h1 class="book-title">El Manifiesto Mundial</h1>
 
-    <!-- SPRÅKNAMN med SVG-flagga 20px -->
+    <!-- SPRÅKNAMN med flagga -->
     <p class="language-name">
         <img src="flags/es.svg" alt="Bandera de España" class="flag-icon" width="20" height="auto">
         Español
@@ -32,8 +32,15 @@
         Abundancia Definitiva
     </p>
 
-    <!-- FÖRFATTARE -->
-    <p class="author">Sven Yngerstedt</p>
+    <!-- FÖRFATTARE + tomrader (hämtas från author.js) -->
+    <div id="author-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/author.js"></script>
+    <script>
+        // Sätt in författarsektionen från author.js
+        document.getElementById('author-container').innerHTML = getAuthorHTML();
+    </script>
 
 </body>
 </html>
