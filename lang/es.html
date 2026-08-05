@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Manifiesto Mundial</title>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts (för webboptimerade fonter) -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Homemade+Apple&family=EB+Garamond&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Lang CSS -->
@@ -20,27 +20,29 @@
     <!-- BOKTITELRUBRIK - Dancing Script 36pt -->
     <h1 class="book-title">El Manifiesto Mundial</h1>
 
+    <!-- En tom rad (mellan rubrik och flagga) -->
+    <br>
+
     <!-- SPRÅKNAMN med SVG-flagga 20px -->
     <p class="language-name">
         <img src="flags/es.svg" alt="Bandera de España" class="flag-icon" width="20" height="auto">
         Español
     </p>
 
-    <!-- BRÖDTEXT -->
+    <!-- En tom rad (efter flaggan) -->
+    <br>
+
+    <!-- BRÖDTEXT - Homemade Apple 13pt -->
     <p class="body-text">
         El Manifiesto por la<br>
         Abundancia Definitiva
     </p>
 
-    <!-- FÖRFATTARE + tomrader (hämtas från author.js) -->
-    <div id="author-container"></div>
+    <!-- Två tomma rader (efter brödtexten) -->
+    <br><br>
 
-    <!-- JavaScript -->
-    <script src="js/author.js"></script>
-    <script>
-        // Sätt in författarsektionen från author.js
-        document.getElementById('author-container').innerHTML = getAuthorHTML();
-    </script>
+    <!-- FÖRFATTARE - Georgia 12pt fet -->
+    <p class="author">Sven Yngerstedt</p>
 
 </body>
 </html>
