@@ -1,2 +1,3 @@
 Arial (pre-installed system fonts in Windows/Mac/iOS/Android that may not be freely redistributed as files)
 Georgia (pre-installed system fonts in Windows/Mac/iOS/Android that may not be freely redistributed as files)
+Liberation Sans (system font in Linux, identical to Arial)
