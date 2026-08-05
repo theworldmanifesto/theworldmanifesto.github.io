@@ -1,48 +1,108 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Manifiesto Mundial</title>
-    
-    <!-- Google Fonts (för webboptimerade fonter) -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Homemade+Apple&family=EB+Garamond&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Lang CSS -->
-    <link rel="stylesheet" href="css/lang.css">
-</head>
-<body>
+/* ======================================== */
+/* LOKALA FONTER (från /fonts/)             */
+/* ======================================== */
 
-    <!-- ======================================== -->
-    <!-- FÖRSTA SIDAN                             -->
-    <!-- ======================================== -->
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../fonts/DancingScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    <!-- SPRÅKNAMN med SVG-flagga 20px (ÖVERST) -->
-    <p class="language-name">
-        <img src="flags/es.svg" alt="Bandera de España" class="flag-icon" width="20" height="auto">
-        Español
-    </p>
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../fonts/DancingScript-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
-    <!-- En tom rad (efter flaggan) -->
-    <br>
+@font-face {
+    font-family: 'Homemade Apple';
+    src: url('../../fonts/HomemadeApple-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    <!-- BOKTITELRUBRIK - Dancing Script 36pt -->
-    <h1 class="book-title">El Manifiesto Mundial</h1>
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
-    <!-- En tom rad (mellan rubrik och brödtext) -->
-    <br>
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
-    <!-- BRÖDTEXT - Homemade Apple 13pt -->
-    <p class="body-text">
-        El Manifiesto por la<br>
-        Abundancia Definitiva
-    </p>
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/EBGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    <!-- Två tomma rader (efter brödtexten) -->
-    <br><br>
+/* ======================================== */
+/* SYSTEMFONTER (ej uppladdade)             */
+/* ======================================== */
+/* 
+   Dessa fonter används som fallback och finns förinstallerade:
+   - Georgia (systemfont)
+   - Arial (systemfont)
+   - Liberation Sans (systemfont i Linux)
+*/
 
-    <!-- FÖRFATTARE - Georgia 12pt fet -->
-    <p class="author">Sven Yngerstedt</p>
+/* ======================================== */
+/* GRUNDLÄGGANDE STYLING                     */
+/* ======================================== */
 
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Georgia', serif;
+    padding: 2.5cm;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 2.0;
+    text-align: center; /* ← VIKTIGT: Centrerar all text */
+}
+
+/* ======================================== */
+/* FÖRSTA SIDAN                             */
+/* ======================================== */
+
+.language-name {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    margin: 0;
+}
+
+.book-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36pt;
+    font-weight: normal;
+    margin: 0;
+}
+
+.body-text {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 13pt;
+    font-weight: normal;
+    line-height: 2.0;
+    margin: 0;
+}
+
+.author {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 0;
+}
