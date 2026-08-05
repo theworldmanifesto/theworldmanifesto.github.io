@@ -1,1 +1,39 @@
+.book-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36pt;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1em;
+}
 
+.language-name {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.flag-icon {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0.3em;
+}
+
+.body-text {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    line-height: 2.0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.author {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    text-align: center;
+}
