@@ -1,36 +1,48 @@
-/* ======================================== */
-/* FÖRSTA SIDAN                             */
-/* ======================================== */
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Manifiesto Mundial</title>
+    
+    <!-- Google Fonts (för webboptimerade fonter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Homemade+Apple&family=EB+Garamond&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lang CSS -->
+    <link rel="stylesheet" href="css/lang.css">
+</head>
+<body>
 
-.language-name {
-    font-family: 'Georgia', serif;
-    font-size: 12pt;
-    font-weight: normal;
-    text-align: center;
-    margin: 0;
-}
+    <!-- ======================================== -->
+    <!-- FÖRSTA SIDAN                             -->
+    <!-- ======================================== -->
 
-.book-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 36pt;
-    font-weight: normal;
-    text-align: center;
-    margin: 0;
-}
+    <!-- SPRÅKNAMN med SVG-flagga 20px (ÖVERST) -->
+    <p class="language-name">
+        <img src="flags/es.svg" alt="Bandera de España" class="flag-icon" width="20" height="auto">
+        Español
+    </p>
 
-.body-text {
-    font-family: 'Homemade Apple', cursive;
-    font-size: 13pt;
-    font-weight: normal;
-    line-height: 2.0;
-    text-align: center;
-    margin: 0;
-}
+    <!-- En tom rad (efter flaggan) -->
+    <br>
 
-.author {
-    font-family: 'Georgia', serif;
-    font-size: 12pt;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-}
+    <!-- BOKTITELRUBRIK - Dancing Script 36pt -->
+    <h1 class="book-title">El Manifiesto Mundial</h1>
+
+    <!-- En tom rad (mellan rubrik och brödtext) -->
+    <br>
+
+    <!-- BRÖDTEXT - Homemade Apple 13pt -->
+    <p class="body-text">
+        El Manifiesto por la<br>
+        Abundancia Definitiva
+    </p>
+
+    <!-- Två tomma rader (efter brödtexten) -->
+    <br><br>
+
+    <!-- FÖRFATTARE - Georgia 12pt fet -->
+    <p class="author">Sven Yngerstedt</p>
+
+</body>
+</html>
