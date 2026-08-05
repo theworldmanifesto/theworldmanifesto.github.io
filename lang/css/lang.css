@@ -174,3 +174,18 @@ p {
         font-size: 28pt;
     }
 }
+/* ======================================== */
+/* FÖRFATTARE (från author.js)              */
+/* ======================================== */
+
+.author-section {
+    text-align: center;
+}
+
+.author {
+    font-family: 'Georgia', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+}
