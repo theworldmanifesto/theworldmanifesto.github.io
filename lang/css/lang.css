@@ -1,4 +1,60 @@
 /* ======================================== */
+/* LOKALA FONTER (från /fonts/)             */
+/* ======================================== */
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homemade Apple';
+    src: url('../fonts/HomemadeApple-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../fonts/EBGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ======================================== */
+/* SYSTEMFONTER (ej uppladdade)             */
+/* ======================================== */
+/* 
+   Dessa fonter används som fallback och finns förinstallerade:
+   - Georgia (systemfont)
+   - Arial (systemfont)
+   - Liberation Sans (systemfont i Linux)
+*/
+
+/* ======================================== */
 /* GRUNDLÄGGANDE STYLING                     */
 /* ======================================== */
 
@@ -21,25 +77,22 @@ body {
 /* FÖRSTA SIDAN                             */
 /* ======================================== */
 
-/* BOKTITELRUBRIK - Dancing Script 36pt */
 .book-title {
     font-family: 'Dancing Script', cursive;
     font-size: 36pt;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 1em; /* En tom rad */
+    margin-bottom: 1em;
 }
 
-/* SPRÅKNAMN med flagga */
 .language-name {
     font-family: 'Georgia', serif;
     font-size: 12pt;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 1em; /* En tom rad */
+    margin-bottom: 1em;
 }
 
-/* Flagga - 20px */
 .flag-icon {
     display: inline-block;
     width: 20px;
@@ -48,19 +101,14 @@ body {
     margin-right: 0.3em;
 }
 
-/* BRÖDTEXT - första sidan */
 .body-text {
-    font-family: 'Georgia', serif;
-    font-size: 12pt;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 13pt;
     font-weight: normal;
     line-height: 2.0;
     text-align: center;
-    margin-bottom: 0; /* Hanteras av author.js */
+    margin-bottom: 0;
 }
-
-/* ======================================== */
-/* FÖRFATTARE (från author.js)              */
-/* ======================================== */
 
 .author-section {
     text-align: center;
