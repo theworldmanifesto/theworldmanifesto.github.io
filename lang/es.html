@@ -2,78 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>El Manifiesto Mundial</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Homemade+Apple&display=swap" rel="stylesheet">
-    <style>
-        /* ÅTERSTÄLL ALLT */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background: #fff;
-            font-family: Georgia, serif;
-            padding: 2.5cm;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 100vh;
-        }
-        .page-container { max-width: 800px; margin: 0 auto; width: 100%; }
-
-        /* TOMRADER (TESTVERSION) */
-        .spacer-2 {
-            display: block !important;
-            height: 2em !important;
-            min-height: 2em !important;
-            background: rgba(255, 0, 0, 0.1); /* RÖD BAKGRUND FÖR ATT SYNAS */
-            line-height: 1 !important;
-        }
-
-        /* STILAR */
-        .language-name { font-size: 12pt; margin: 0; }
-        .book-title {
-            font-family: 'Dancing Script', cursive;
-            font-size: 36pt;
-            font-weight: normal;
-            margin: 0;
-            white-space: nowrap;
-        }
-        .body-text {
-            font-family: 'Homemade Apple', cursive;
-            font-size: 13pt;
-            line-height: 2.0;
-            margin: 0;
-        }
-        .author {
-            font-family: Georgia, serif;
-            font-size: 12pt;
-            font-weight: bold;
-            margin: 0;
-        }
-        .flag-icon { width: 20px; vertical-align: middle; margin-right: 6px; }
-    </style>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Homemade+Apple&family=EB+Garamond&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lang CSS -->
+    <link rel="stylesheet" href="css/lang.css">
 </head>
 <body>
-<div class="page-container">
 
-    <p class="language-name">
-        <img src="https://theworldmanifesto.github.io/lang/flags/es.svg" alt="Bandera de España" class="flag-icon"> Español
-    </p>
+    <div class="page-container">
 
-    <div class="spacer-2"></div> <!-- TVÅ TOMRADER -->
+        <p class="language-name">
+            <img src="flags/es.svg" alt="Bandera de España" class="flag-icon" width="20" height="auto">&nbsp;&nbsp;Español
+        </p>
 
-    <h1 class="book-title">El Manifiesto Mundial</h1>
+        <div class="spacer-2"></div>
 
-    <div class="spacer-2"></div> <!-- TVÅ TOMRADER -->
+        <h1 class="book-title">El Manifiesto Mundial</h1>
 
-    <p class="body-text">
-        El Manifiesto por la<br>Abundancia Definitiva
-    </p>
+        <div class="spacer-2"></div>
 
-    <div class="spacer-2"></div> <!-- TVÅ TOMRADER -->
+        <p class="body-text">
+            El Manifiesto por la<br>
+            Abundancia Definitiva
+        </p>
 
-    <p class="author">Sven Yngerstedt</p>
+        <div class="spacer-2"></div>
 
-</div>
+        <p class="author">Sven Yngerstedt</p>
+
+    </div>
+
 </body>
 </html>
