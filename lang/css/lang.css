@@ -282,3 +282,17 @@ body {
         width: 20px !important;
     }
 }
+
+/* ======================================== */
+/* TOMRADER – SÄKER METOD                   */
+/* ======================================== */
+
+.spacer-2 {
+    display: block;
+    height: 2em;
+    min-height: 2em;
+    line-height: 2em; /* ← Viktigt för att &nbsp; ska ta plats */
+    color: transparent; /* Gör texten osynlig */
+    background: transparent; /* Ingen bakgrund */
+    overflow: hidden; /* Döljer eventuellt innehåll som spills över */
+}
