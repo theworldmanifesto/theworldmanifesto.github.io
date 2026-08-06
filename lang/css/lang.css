@@ -92,7 +92,7 @@ body {
 }
 
 /* ======================================== */
-/* TOMRADER (ersätter <br>)                 */
+/* TOMRADER                                 */
 /* ======================================== */
 
 .spacer-1 {
@@ -265,11 +265,11 @@ body {
         padding: 2.5cm !important;
         max-width: 800px !important;
         margin: 0 auto !important;
-        display: block !important; /* ← Återställer för datorer */
+        display: block !important;
     }
     
     .page-container {
-        display: block !important; /* ← Återställer för datorer */
+        display: block !important;
         max-width: 100%;
     }
     
