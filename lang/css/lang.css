@@ -1,4 +1,14 @@
 /* ======================================== */
+/* FÖRFATTARENS NAMN – STYLING              */
+/* ======================================== */
+.author {
+    font-family: 'Georgia', serif;
+    font-size: clamp(11pt, 3vw, 14pt);
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ======================================== */
 /* TOMRADER – SÄKER LÖSNING                 */
 /* ======================================== */
 
