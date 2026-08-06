@@ -1,4 +1,22 @@
 /* ======================================== */
+/* TOMRADER – SÄKER LÖSNING                 */
+/* ======================================== */
+
+.spacer-1 {
+    display: block !important;
+    height: 1em !important;
+    min-height: 1em !important;
+    line-height: 1 !important;
+}
+
+.spacer-2 {
+    display: block !important;
+    height: 2em !important;
+    min-height: 2em !important;
+    line-height: 1 !important;
+}
+
+/* ======================================== */
 /* LOKALA FONTER (från /fonts/)             */
 /* ======================================== */
 
