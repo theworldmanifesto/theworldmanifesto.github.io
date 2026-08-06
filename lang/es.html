@@ -35,13 +35,17 @@
             Abundancia Definitiva
         </p>
 
-        <!-- Två tomma rader -->
-        <br><br>
-
-        <!-- FÖRFATTARE - Georgia 12pt fet -->
-        <p class="author">Sven Yngerstedt</p>
+        <!-- FÖRFATTARE – hämtas från author.js (inklusive tomrader) -->
+        <div id="author-container"></div>
 
     </div>
+
+    <!-- JavaScript -->
+    <script src="js/author.js"></script>
+    <script>
+        // Sätt in författarsektionen från author.js
+        document.getElementById('author-container').innerHTML = getAuthorHTML();
+    </script>
 
 </body>
 </html>
