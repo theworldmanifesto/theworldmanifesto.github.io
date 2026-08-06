@@ -6,16 +6,16 @@ const AUTHOR_NAME = "Sven Yngerstedt";
 // Generera HTML för författarsektionen
 function getAuthorHTML() {
     if (AUTHOR_NAME && AUTHOR_NAME.trim() !== "") {
-        // Om namn finns: returnera namn med två tomrader före och en efter
-        return `<div class="author-section">
-                    <br><br>
-                    <p class="author">${AUTHOR_NAME}</p>
-                    <br>
-                </div>`;
+        // Om namn finns: två tomrader före + namn + en tomrad efter
+        return `
+            <br><br>
+            <p class="author">${AUTHOR_NAME}</p>
+            <br>
+        `;
     } else {
-        // Om inget namn: returnera bara två tomrader (för att behålla layouten)
-        return `<div class="author-section">
-                    <br><br>
-                </div>`;
+        // Om inget namn: bara två tomrader (för att behålla layouten)
+        return `
+            <br><br>
+        `;
     }
 }
