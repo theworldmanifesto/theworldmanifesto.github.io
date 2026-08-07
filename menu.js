@@ -1,112 +1,149 @@
 // ============================================================
-// MENU.JS - Global meny för The World Manifesto
+// MENY – The World Manifesto (med språkstöd)
+// ============================================================
+// Denna fil skapar en enhetlig meny för hela webbplatsen.
+// Den laddas in i alla HTML-sidor via <script src="menu.js"></script>
 // ============================================================
 
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+    'use strict';
 
-    // 1. Känn av sidans språk från <html lang="...">
-    const currentLang = document.documentElement.lang || 'en';
-
-    // 2. Ordbok för meny-text på alla 42 språk
-    const translations = {
-        // --- STÖRRE SPRÅK ---
-        'en': { home: '🏠HOME' },
-        'zh': { home: '🏠首页' },
-        'hi': { home: '🏠होम' },
-        'es': { home: '🏠INICIO' },
-        'fr': { home: '🏠ACCUEIL' },
-        'ar': { home: '🏠الرئيسية' },
-        'bn': { home: '🏠হোম' },
-        'pt': { home: '🏠INÍCIO' },
-        'ru': { home: '🏠ГЛАВНАЯ' },
-        'ur': { home: '🏠ہوم' },
-        'id': { home: '🏠BERANDA' },
-        'de': { home: '🏠STARTSEITE' },
-        'ja': { home: '🏠ホーム' },
-        'sw': { home: '🏠NYUMBA' },
-        'tl': { home: '🏠HOME' },
-        'tr': { home: '🏠ANA SAYFA' },
-        'vi': { home: '🏠TRANG CHỦ' },
-        'ko': { home: '🏠홈' },
-        'fa': { home: '🏠خانه' },
-        'it': { home: '🏠HOME' },
-        'th': { home: '🏠หน้าแรก' },
-        'pl': { home: '🏠STRONA GŁÓWNA' },
-        'uk': { home: '🏠ГОЛОВНА' },
-        'nl': { home: '🏠HOME' },
-        'ro': { home: '🏠ACASĂ' },
-        'el': { home: '🏠ΑΡΧΙΚΗ' },
-        'hu': { home: '🏠FŐOLDAL' },
-        'cs': { home: '🏠DOMŮ' },
-        'sv': { home: '🏠HEM' },
-        'bg': { home: '🏠НАЧАЛО' },
-        'no': { home: '🏠HJEM' },
-        'da': { home: '🏠HJEM' },
-        'fi': { home: '🏠ETUSIVU' },
-        'he': { home: '🏠בית' },
-        'af': { home: '🏠TUIS' },
-        
-        // --- MINDRE/REGIONALA SPRÅK ----
-        'zu': { home: '🏠IKHAYA' },
-        'xh': { home: '🏠IKHAYA' },
-        'is': { home: '🏠HEIM' },
-        'fo': { home: '🏠HEIM' },
-        'crs': { home: '🏠LAKAZ' },
-        'se': { home: '🏠RUOKTU' },
-        'fit': { home: '🏠KOTI' }
+    // ------------------------------------------------------------
+    // 1. SPRÅKÖVERSÄTTNINGAR FÖR MENY
+    // ------------------------------------------------------------
+    const menuTranslations = {
+        'sv': { home: 'Hem', freedom: 'Frihetstrappan', tropics: 'Tropikerna', robotel: 'Robotel', share: 'Dela' },
+        'en': { home: 'Home', freedom: 'Freedom Staircase', tropics: 'The Tropics', robotel: 'Robotel', share: 'Share' },
+        'es': { home: 'Inicio', freedom: 'Escalera de la Libertad', tropics: 'Los Trópicos', robotel: 'Robotel', share: 'Compartir' },
+        'zh': { home: '首页', freedom: '自由阶梯', tropics: '热带地区', robotel: '机器人', share: '分享' },
+        'fr': { home: 'Accueil', freedom: 'Escalier de la Liberté', tropics: 'Les Tropiques', robotel: 'Robotel', share: 'Partager' },
+        'de': { home: 'Startseite', freedom: 'Freiheitstreppe', tropics: 'Die Tropen', robotel: 'Robotel', share: 'Teilen' },
+        'it': { home: 'Home', freedom: 'Scala della Libertà', tropics: 'I Tropici', robotel: 'Robotel', share: 'Condividi' },
+        'pt': { home: 'Início', freedom: 'Escada da Liberdade', tropics: 'Os Trópicos', robotel: 'Robotel', share: 'Compartilhar' },
+        'ru': { home: 'Главная', freedom: 'Лестница Свободы', tropics: 'Тропики', robotel: 'Роботель', share: 'Поделиться' },
+        'ja': { home: 'ホーム', freedom: '自由の階段', tropics: '熱帯地域', robotel: 'ロボテル', share: 'シェア' },
+        'ko': { home: '홈', freedom: '자유의 계단', tropics: '열대 지역', robotel: '로보텔', share: '공유' },
+        'ar': { home: 'الرئيسية', freedom: 'درج الحرية', tropics: 'المناطق الاستوائية', robotel: 'روبوتيل', share: 'مشاركة' },
+        'hi': { home: 'होम', freedom: 'स्वतंत्रता की सीढ़ी', tropics: 'उष्णकटिबंधीय', robotel: 'रोबोटेल', share: 'साझा करें' },
+        'bn': { home: 'হোম', freedom: 'স্বাধীনতার সিঁড়ি', tropics: 'গ্রীষ্মমন্ডলীয়', robotel: 'রোবোটেল', share: 'শেয়ার করুন' },
+        'id': { home: 'Beranda', freedom: 'Tangga Kebebasan', tropics: 'Daerah Tropis', robotel: 'Robot', share: 'Bagikan' },
+        'tl': { home: 'Bahay', freedom: 'Hagdan ng Kalayaan', tropics: 'Tropiko', robotel: 'Robot', share: 'Ibahagi' },
+        'vi': { home: 'Trang chủ', freedom: 'Cầu thang Tự do', tropics: 'Vùng Nhiệt đới', robotel: 'Người máy', share: 'Chia sẻ' },
+        'th': { home: 'หน้าแรก', freedom: 'บันไดแห่งอิสรภาพ', tropics: 'เขตร้อน', robotel: 'หุ่นยนต์', share: 'แชร์' },
+        'tr': { home: 'Ana Sayfa', freedom: 'Özgürlük Merdiveni', tropics: 'Tropikler', robotel: 'Robot', share: 'Paylaş' },
+        'fa': { home: 'خانه', freedom: 'پله‌های آزادی', tropics: 'مناطق گرمسیری', robotel: 'ربات', share: 'اشتراک‌گذاری' },
+        'he': { home: 'בית', freedom: 'גרם המדרגות של החופש', tropics: 'האזורים הטרופיים', robotel: 'רובוט', share: 'שתף' },
+        'sw': { home: 'Nyumbani', freedom: 'Ngazi ya Uhuru', tropics: 'Nchi za Tropiki', robotel: 'Roboti', share: 'Shiriki' },
+        'zu': { home: 'Ikhaya', freedom: 'Izitebhisi Zenkululeko', tropics: 'Izindawo Ezishisayo', robotel: 'Irobhothi', share: 'Yabelana' },
+        'xh': { home: 'Ikhaya', freedom: 'Izitepsi Zenkululeko', tropics: 'Iindawo Ezishushu', robotel: 'Irobhothi', share: 'Yabelana' },
+        'nl': { home: 'Home', freedom: 'Vrijheidstrap', tropics: 'De Tropen', robotel: 'Robot', share: 'Delen' },
+        'pl': { home: 'Strona główna', freedom: 'Schody Wolności', tropics: 'Tropiki', robotel: 'Robot', share: 'Udostępnij' },
+        'uk': { home: 'Головна', freedom: 'Сходи Свободи', tropics: 'Тропіки', robotel: 'Робот', share: 'Поділитися' },
+        'ro': { home: 'Acasă', freedom: 'Scara Libertății', tropics: 'Tropice', robotel: 'Robot', share: 'Distribuie' },
+        'el': { home: 'Αρχική', freedom: 'Σκάλα της Ελευθερίας', tropics: 'Τροπικές Περιοχές', robotel: 'Ρομπότ', share: 'Κοινοποίηση' },
+        'cs': { home: 'Domů', freedom: 'Schodiště Svobody', tropics: 'Tropy', robotel: 'Robot', share: 'Sdílet' },
+        'hu': { home: 'Főoldal', freedom: 'Szabadság Lépcső', tropics: 'Trópusok', robotel: 'Robot', share: 'Megosztás' },
+        'sk': { home: 'Domov', freedom: 'Schodisko Slobody', tropics: 'Tropy', robotel: 'Robot', share: 'Zdieľať' },
+        'bg': { home: 'Начало', freedom: 'Стълба на Свободата', tropics: 'Тропици', robotel: 'Робот', share: 'Сподели' },
+        'hr': { home: 'Početna', freedom: 'Stube Slobode', tropics: 'Tropi', robotel: 'Robot', share: 'Podijeli' },
+        'no': { home: 'Hjem', freedom: 'Frihetstrappen', tropics: 'Tropene', robotel: 'Robot', share: 'Del' },
+        'da': { home: 'Hjem', freedom: 'Frihedstrappen', tropics: 'Troperne', robotel: 'Robot', share: 'Del' },
+        'fi': { home: 'Koti', freedom: 'Vapauden Portaat', tropics: 'Trooppiset Alueet', robotel: 'Robotti', share: 'Jaa' },
+        'is': { home: 'Heim', freedom: 'Frelsisstiginn', tropics: 'Hitabeltið', robotel: 'Vélmenni', share: 'Deila' },
+        'fo': { home: 'Heim', freedom: 'Frelsisstigin', tropics: 'Hitabeltið', robotel: 'Robot', share: 'Deila' },
+        'crs': { home: 'Lakaz', freedom: 'Leskalye Liberte', tropics: 'Tropik', robotel: 'Robo', share: 'Partaz' },
+        'se': { home: 'Ruohta', freedom: 'Friddjavuođa Rámpa', tropics: 'Davvisámegiella', robotel: 'Robot', share: 'Juogat' },
+        'fit': { home: 'Koti', freedom: 'Vapauten Portaat', tropics: 'Tropiikit', robotel: 'Robotti', share: 'Jaa' },
+        // Standard (fallback)
+        'default': { home: 'Home', freedom: 'Freedom Staircase', tropics: 'The Tropics', robotel: 'Robotel', share: 'Share' }
     };
 
-    // Välj språket från listan, eller fallback till engelska
-    const t = translations[currentLang] || translations['en'];
+    // ------------------------------------------------------------
+    // 2. HÄMTA AKTUELLT SPRÅK
+    // ------------------------------------------------------------
+    function getCurrentLanguage() {
+        // Kolla URL-parametern
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get('lang');
+        if (langParam && menuTranslations[langParam]) {
+            return langParam;
+        }
 
-    // 3. Skapa menyn med dynamisk HOME-text
-    const menuHTML = `
-        <div class="site-nav">
-            <div class="nav-container">
-                <div class="dropdown" id="homeDropdown">
-                    <a href="/index.html" class="dropbtn" id="homeBtn">${t.home}</a>
-                    <div class="dropdown-content">
-                        <a href="/lang/en.html">🇬🇧 ENGLISH</a>
-                        <a href="/lang/zh.html">🇨🇳 简体中文</a>
-                        <a href="/lang/sv.html">🇸🇪 SVENSKA</a>
-                        <a href="/lang/lang.html">🌐 More Languages</a>
-                        <a href="/freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
-                        <a href="/tropics/tropics.html">🌎 The Tropics</a>
-                        <a href="/robotel/robotel.html">🤖 Robotel</a>
-                        <a href="/share/share.html">💬 Share</a>
-                    </div>
-                </div>
+        // Kolla webbläsarens språk
+        const browserLang = navigator.language || navigator.languages?.[0] || 'en';
+        const langCode = browserLang.split('-')[0].toLowerCase();
+        if (menuTranslations[langCode]) {
+            return langCode;
+        }
+
+        // Fallback
+        return 'en';
+    }
+
+    // ------------------------------------------------------------
+    // 3. SKAPA MENYN
+    // ------------------------------------------------------------
+    function createMenu() {
+        const currentLang = getCurrentLanguage();
+        const t = menuTranslations[currentLang] || menuTranslations['default'];
+
+        const menuHTML = `
+            <div id="menu" style="
+                background-color: #f8f8f8;
+                padding: 12px 20px;
+                text-align: center;
+                border-bottom: 1px solid #e0e0e0;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 16px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 8px 20px;
+            ">
+                <a href="/" style="color: #1a1a1a; text-decoration: none; font-weight: bold; transition: color 0.3s;" 
+                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                    🏠 ${t.home}
+                </a>
+                <a href="/freedom-staircase/freedom-staircase.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
+                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                    🪜 ${t.freedom}
+                </a>
+                <a href="/tropics/tropics.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
+                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                    🌴 ${t.tropics}
+                </a>
+                <a href="/robotel/robotel.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
+                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                    🤖 ${t.robotel}
+                </a>
+                <a href="/share/share.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
+                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                    📤 ${t.share}
+                </a>
             </div>
-        </div>
-    `;
+        `;
 
-    // Hitta containern och sätt in menyn
-    const menuContainer = document.getElementById('main-menu');
-    if (menuContainer) {
-        menuContainer.innerHTML = menuHTML;
+        // Sätt in menyn i #main-menu
+        const menuContainer = document.getElementById('main-menu');
+        if (menuContainer) {
+            menuContainer.innerHTML = menuHTML;
+        } else {
+            // Fallback: sätt in i början av body
+            const body = document.body;
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = menuHTML;
+            body.insertBefore(tempDiv.firstElementChild, body.firstChild);
+        }
     }
 
-    // --- MOBIL: KLICK ÖPPNAR MENYN ---
-    const dropdown = document.getElementById('homeDropdown');
-    const btn = document.getElementById('homeBtn');
-    let isOpen = false;
-
-    if (btn && dropdown) {
-        btn.addEventListener('click', function(e) {
-            if (window.innerWidth <= 600) {
-                if (!isOpen) {
-                    e.preventDefault();
-                    dropdown.classList.add('active');
-                    isOpen = true;
-                }
-            }
-        });
-
-        document.addEventListener('click', function(e) {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove('active');
-                isOpen = false;
-            }
-        });
+    // ------------------------------------------------------------
+    // 4. KÖR NÄR DOM ÄR REDO
+    // ------------------------------------------------------------
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', createMenu);
+    } else {
+        createMenu();
     }
-});
+
+})();
