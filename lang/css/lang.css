@@ -1,1 +1,51 @@
+/* ======================================== */
+/* GRUNDLÄGGANDE STYLING – ENDAST ARIA     */
+/* ======================================== */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14pt;
+    line-height: 2.0;
+    padding: 2.5cm;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+}
+
+/* Alla element ärver Arial */
+h1, p, .book-title, .language-name, .body-text, .author, .page-container {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Specialregler för storlekar */
+.book-title {
+    font-size: 36pt; /* Stor rubrik */
+    font-weight: bold;
+}
+
+.language-name {
+    font-size: 14pt; /* Samma som brödtexten */
+}
+
+.body-text {
+    font-size: 14pt;
+}
+
+.author {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* Flaggan – justera storlek om den blir för stor */
+.flag-icon {
+    width: 24px; /* Eller vad som passar */
+    vertical-align: middle;
+}
