@@ -8,91 +8,96 @@
 </head>
 <body>
     <div class="page-container">
-        <!-- SPRÅKNAMN med flagga -->
         <p class="language-name" id="language-name">
             <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
             <span id="language-label"></span>
         </p>
         <br><br>
-
-        <!-- BOKTITEL -->
         <h1 class="book-title" id="book-title">The World Manifesto</h1>
         <br>
-
-        <!-- BRÖDTEXT -->
         <p class="body-text" id="body-text"></p>
-
-        <!-- FÖRFATTARE -->
         <div id="author-container"></div>
     </div>
 
     <script src="js/author.js"></script>
     <script>
-        // SPRÅKDATA – flaggor och språknamn
+        // ALLA 42 SPRÅK med korrekta flaggor
         const languages = {
-            'en': { flag: 'flags/en.svg', name: 'English' },
-            'es': { flag: 'flags/es.svg', name: 'Español' },
             'sv': { flag: 'flags/sv.svg', name: 'Svenska' },
-            'zh': { flag: 'flags/zh.svg', name: '中文' },
+            'en': { flag: 'flags/en.svg', name: 'English' },
+            'zh': { flag: 'flags/zh.svg', name: '简体中文' },
+            'hi': { flag: 'flags/hi.svg', name: 'हिन्दी' },
+            'es': { flag: 'flags/es.svg', name: 'Español' },
             'fr': { flag: 'flags/fr.svg', name: 'Français' },
-            'de': { flag: 'flags/de.svg', name: 'Deutsch' },
-            'it': { flag: 'flags/it.svg', name: 'Italiano' },
+            'ar': { flag: 'flags/ar.svg', name: 'العربية' },
+            'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia' },
+            'bn': { flag: 'flags/bn.svg', name: 'বাংলা' },
             'pt': { flag: 'flags/pt.svg', name: 'Português' },
             'ru': { flag: 'flags/ru.svg', name: 'Русский' },
-            'ja': { flag: 'flags/ja.svg', name: '日本語' },
-            'ko': { flag: 'flags/ko.svg', name: '한국어' },
-            'ar': { flag: 'flags/ar.svg', name: 'العربية' },
-            'hi': { flag: 'flags/hi.svg', name: 'हिन्दी' },
-            'bn': { flag: 'flags/bn.svg', name: 'বাংলা' },
-            'ur': { flag: 'flags/ur.svg', name: 'اردو' },
-            'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia' },
-            'tl': { flag: 'flags/tl.svg', name: 'Filipino' },
-            'vi': { flag: 'flags/vi.svg', name: 'Tiếng Việt' },
-            'th': { flag: 'flags/th.svg', name: 'ไทย' },
-            'fa': { flag: 'flags/fa.svg', name: 'فارسی' },
-            'he': { flag: 'flags/he.svg', name: 'עברית' },
-            'sw': { flag: 'flags/sw.svg', name: 'Kiswahili' },
-            'zu': { flag: 'flags/zu.svg', name: 'isiZulu' },
-            'xh': { flag: 'flags/xh.svg', name: 'isiXhosa' },
-            'af': { flag: 'flags/af.svg', name: 'Afrikaans' },
-            'nl': { flag: 'flags/nl.svg', name: 'Nederlands' },
-            'pl': { flag: 'flags/pl.svg', name: 'Polski' },
             'uk': { flag: 'flags/uk.svg', name: 'Українська' },
+            'bg': { flag: 'flags/bg.svg', name: 'Български' },
+            'ur': { flag: 'flags/ur.svg', name: 'اردو' },
+            'ja': { flag: 'flags/ja.svg', name: '日本語' },
+            'tl': { flag: 'flags/tl.svg', name: 'Filipino' },
+            'de': { flag: 'flags/de.svg', name: 'Deutsch' },
+            'ko': { flag: 'flags/ko.svg', name: '한국어' },
+            'th': { flag: 'flags/th.svg', name: 'ไทย' },
+            'vi': { flag: 'flags/vi.svg', name: 'Tiếng Việt' },
+            'tr': { flag: 'flags/tr.svg', name: 'Türkçe' },
+            'fa': { flag: 'flags/fa.svg', name: 'فارسی' },
+            'sw': { flag: 'flags/sw.svg', name: 'Kiswahili' },
+            'it': { flag: 'flags/it.svg', name: 'Italiano' },
+            'pl': { flag: 'flags/pl.svg', name: 'Polski' },
+            'nl': { flag: 'flags/nl.svg', name: 'Nederlands' },
             'ro': { flag: 'flags/ro.svg', name: 'Română' },
             'el': { flag: 'flags/el.svg', name: 'Ελληνικά' },
-            'hu': { flag: 'flags/hu.svg', name: 'Magyar' },
+            'af': { flag: 'flags/af.svg', name: 'Afrikaans' },
+            'zu': { flag: 'flags/zu.svg', name: 'isiZulu' },
+            'xh': { flag: 'flags/xh.svg', name: 'isiXhosa' },
             'cs': { flag: 'flags/cs.svg', name: 'Čeština' },
-            'sk': { flag: 'flags/sk.svg', name: 'Slovenčina' },
-            'bg': { flag: 'flags/bg.svg', name: 'Български' },
-            'hr': { flag: 'flags/hr.svg', name: 'Hrvatski' },
-            'no': { flag: 'flags/no.svg', name: 'Norsk' },
-            'da': { flag: 'flags/da.svg', name: 'Dansk' },
-            'fi': { flag: 'flags/fi.svg', name: 'Suomi' },
-            'is': { flag: 'flags/is.svg', name: 'Íslenska' },
-            'fo': { flag: 'flags/fo.svg', name: 'Føroyskt' },
-            'se': { flag: 'flags/se.svg', name: 'Davvisámegiella' },
+            'hu': { flag: 'flags/hu.svg', name: 'Magyar' },
+            'he': { flag: 'flags/he.svg', name: 'עברית' },
+            'crs': { flag: 'flags/crs.svg', name: 'Seselwa' },
+            'se': { flag: 'flags/dsg.svg', name: 'Davvisámegiella' },  // ← Nordsamiska
             'fit': { flag: 'flags/fit.svg', name: 'Meänkieli' },
-            'crs': { flag: 'flags/crs.svg', name: 'Seselwa' }
+            'no': { flag: 'flags/no.svg', name: 'Norsk' },
+            'fi': { flag: 'flags/fi.svg', name: 'Suomi' },
+            'da': { flag: 'flags/da.svg', name: 'Dansk' },
+            'is': { flag: 'flags/is.svg', name: 'Íslenska' },
+            'fo': { flag: 'flags/fo.svg', name: 'Føroyskt' }
         };
 
-        // Hämta språk från URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const lang = urlParams.get('lang') || 'en';
-        const langData = languages[lang] || languages['en'];
+        // Automatisk språkdetektering
+        function getPreferredLanguage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang && languages[urlLang]) {
+                return urlLang;
+            }
 
-        // Sätt flagga och språknamn
+            const browserLang = navigator.language || navigator.languages?.[0] || 'en';
+            const langCode = browserLang.split('-')[0].toLowerCase();
+
+            if (languages[langCode]) {
+                return langCode;
+            }
+
+            return 'en';
+        }
+
+        const lang = getPreferredLanguage();
+        const langData = languages[lang];
+
         document.getElementById('flag-icon').src = langData.flag;
         document.getElementById('flag-icon').alt = langData.name;
         document.getElementById('language-label').textContent = langData.name;
 
-        // Ladda text från lang_texts/
         async function loadText() {
             try {
                 const response = await fetch(`lang_texts/${lang}.txt`);
                 if (!response.ok) throw new Error('Textfil saknas');
                 const text = await response.text();
                 
-                // Parsa texten
                 const lines = text.split('\n').filter(line => line.trim() !== '');
                 if (lines.length >= 2) {
                     document.getElementById('book-title').textContent = lines[0].trim();
@@ -100,13 +105,11 @@
                 }
             } catch (error) {
                 console.error('Fel vid laddning:', error);
-                // Fallback
                 document.getElementById('book-title').textContent = 'The World Manifesto';
                 document.getElementById('body-text').textContent = 'Text could not be loaded.';
             }
         }
 
-        // Ladda text och författare
         loadText();
         if (typeof getAuthorHTML === 'function') {
             document.getElementById('author-container').innerHTML = getAuthorHTML();
