@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The World Manifesto</title>
-
-    <!-- LÄNK TILL DEN SEPARERADE MENY-CSS:EN -->
     <link rel="stylesheet" href="menu.css">
-
     <style>
         body {
             font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -17,7 +14,6 @@
             margin: 0;
             padding: 0;
         }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -27,19 +23,7 @@
             min-height: 85vh;
             justify-content: space-between;
         }
-
         main { text-align: center; }
-
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            font-family: Georgia, serif;
-        }
-
-        .webmaster { font-size: 16px; margin-bottom: 15px; }
-        .webmaster a { color: #1a1a1a; text-decoration: none; }
-        .copyright { font-size: 14px; color: #666; }
-
         #slogan-box {
             max-width: 680px;
             margin: 30px auto;
@@ -48,7 +32,6 @@
             padding: 28px 24px;
             text-align: center;
         }
-
         #slogan-text {
             font-size: 22px;
             line-height: 1.45;
@@ -60,14 +43,12 @@
             font-style: italic;
             color: #444;
         }
-
         .dots {
             display: flex;
             gap: 7px;
             justify-content: center;
             margin: 14px 0;
         }
-
         .dot {
             width: 7px;
             height: 7px;
@@ -75,9 +56,7 @@
             background: #ddd;
             cursor: pointer;
         }
-
         .dot.on { background: #111; }
-
         .btns {
             display: flex;
             gap: 6px;
@@ -85,7 +64,6 @@
             flex-wrap: wrap;
             font-family: sans-serif;
         }
-
         .b {
             padding: 7px 12px;
             border-radius: 20px;
@@ -94,14 +72,12 @@
             font-weight: bold;
             cursor: pointer;
         }
-
         .bx { background: #000; color: #fff; }
         .bf { background: #1877F2; color: #fff; }
         .bw { background: #25D366; color: #fff; }
         .bt { background: #26A5E4; color: #fff; }
         .bm { background: #666; color: #fff; }
         .bc { background: #fff; color: #000; border: 1px solid #ccc; }
-
         .lang-select {
             margin-top: 8px;
             padding: 4px 8px;
@@ -110,8 +86,6 @@
             font-size: 13px;
             font-family: sans-serif;
         }
-
-        /* Språkflaggor i menyraden */
         .lang-flags {
             display: flex;
             gap: 12px;
@@ -119,17 +93,14 @@
             margin: 15px 0;
             flex-wrap: wrap;
         }
-
         .lang-flags a {
             text-decoration: none;
             font-size: 28px;
             transition: transform 0.2s;
         }
-
         .lang-flags a:hover {
             transform: scale(1.2);
         }
-
         .lang-flags .lang-label {
             font-size: 14px;
             color: #666;
@@ -140,7 +111,6 @@
 </head>
 <body>
 
-    <!-- HÄR INJECTAS DEN SEPARERADE MENYN AUTOMATISKT -->
     <div id="main-menu"></div>
 
     <div class="container">
@@ -151,27 +121,163 @@
                 <img src="/pics/freedom_staircase_main_page.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
             </div>
 
-            <!-- SPRÅKFLAGGOR (istället för textlänkar) -->
+            <!-- SPRÅKFLAGGOR – pekar nu på read.html -->
             <div class="lang-flags">
                 <div>
-                    <a href="lang/en.html">🇬🇧</a>
+                    <a href="lang/read.html?lang=en">🇬🇧</a>
                     <span class="lang-label">English</span>
                 </div>
                 <div>
-                    <a href="lang/zh.html">🇨🇳</a>
+                    <a href="lang/read.html?lang=zh">🇨🇳</a>
                     <span class="lang-label">中文</span>
                 </div>
                 <div>
-                    <a href="lang/es.html">🇪🇸</a>
+                    <a href="lang/read.html?lang=es">🇪🇸</a>
                     <span class="lang-label">Español</span>
                 </div>
                 <div>
-                    <a href="lang/sv.html">🇸🇪</a>
+                    <a href="lang/read.html?lang=sv">🇸🇪</a>
                     <span class="lang-label">Svenska</span>
                 </div>
                 <div>
-                    <a href="lang/lang.html">🌐</a>
-                    <span class="lang-label">More</span>
+                    <a href="lang/read.html?lang=fr">🇫🇷</a>
+                    <span class="lang-label">Français</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=de">🇩🇪</a>
+                    <span class="lang-label">Deutsch</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=ar">🇸🇦</a>
+                    <span class="lang-label">العربية</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=ja">🇯🇵</a>
+                    <span class="lang-label">日本語</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=ko">🇰🇷</a>
+                    <span class="lang-label">한국어</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=hi">🇮🇳</a>
+                    <span class="lang-label">हिन्दी</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=pt">🇵🇹</a>
+                    <span class="lang-label">Português</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=ru">🇷🇺</a>
+                    <span class="lang-label">Русский</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=it">🇮🇹</a>
+                    <span class="lang-label">Italiano</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=id">🇮🇩</a>
+                    <span class="lang-label">Bahasa Indonesia</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=nl">🇳🇱</a>
+                    <span class="lang-label">Nederlands</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=pl">🇵🇱</a>
+                    <span class="lang-label">Polski</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=vi">🇻🇳</a>
+                    <span class="lang-label">Tiếng Việt</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=th">🇹🇭</a>
+                    <span class="lang-label">ไทย</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=tr">🇹🇷</a>
+                    <span class="lang-label">Türkçe</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=uk">🇺🇦</a>
+                    <span class="lang-label">Українська</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=ro">🇷🇴</a>
+                    <span class="lang-label">Română</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=el">🇬🇷</a>
+                    <span class="lang-label">Ελληνικά</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=hu">🇭🇺</a>
+                    <span class="lang-label">Magyar</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=cs">🇨🇿</a>
+                    <span class="lang-label">Čeština</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=sk">🇸🇰</a>
+                    <span class="lang-label">Slovenčina</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=bg">🇧🇬</a>
+                    <span class="lang-label">Български</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=hr">🇭🇷</a>
+                    <span class="lang-label">Hrvatski</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=no">🇳🇴</a>
+                    <span class="lang-label">Norsk</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=da">🇩🇰</a>
+                    <span class="lang-label">Dansk</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=fi">🇫🇮</a>
+                    <span class="lang-label">Suomi</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=he">🇮🇱</a>
+                    <span class="lang-label">עברית</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=af">🇿🇦</a>
+                    <span class="lang-label">Afrikaans</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=zu">🇿🇦</a>
+                    <span class="lang-label">isiZulu</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=xh">🇿🇦</a>
+                    <span class="lang-label">isiXhosa</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=is">🇮🇸</a>
+                    <span class="lang-label">Íslenska</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=fo">🇫🇴</a>
+                    <span class="lang-label">Føroyskt</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=crs">🇸🇨</a>
+                    <span class="lang-label">Seselwa</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=se">🇳🇴</a>
+                    <span class="lang-label">Davvisámegiella</span>
+                </div>
+                <div>
+                    <a href="lang/read.html?lang=fit">🇸🇪</a>
+                    <span class="lang-label">Meänkieli</span>
                 </div>
             </div>
 
@@ -186,7 +292,7 @@
                     <a id="btn-em" class="b bm" href="#">Email</a>
                     <a id="btn-copy" class="b bc" href="#">Copy Link</a>
                 </div>
-                <select id="lang-select" class="lang-select" onchange="if(this.value)window.location.href='?lang='+this.value">
+                <select id="lang-select" class="lang-select" onchange="if(this.value)window.location.href='lang/read.html?lang='+this.value">
                     <option value="en">English</option>
                     <option value="zh">中文</option>
                     <option value="hi">हिन्दी</option>
@@ -235,7 +341,6 @@
             </div>
 
         </main>
-
     </div>
 
     <!-- SLOGAN-LOGIK -->
@@ -327,10 +432,7 @@
             .catch(err => console.error('Fel:', err));
     </script>
 
-    <!-- Meny LÄNK TILL DEN SEPARERADE MENY-JS:EN -->
     <script src="menu.js"></script>
-
-    <!-- Sidfot LÄNK TILL DEN SEPARERADE FOTNOT-JS:EN -->
     <script src="footer.js"></script>
     
 </body>
