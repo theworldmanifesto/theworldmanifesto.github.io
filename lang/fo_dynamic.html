@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Heimsskráin</title>
+    <link rel="stylesheet" href="css/lang.css">
+</head>
+<body>
+    <div class="page-container">
+        <p class="language-name">
+            <img src="flags/fo.svg" alt="Føroyskt" class="flag-icon" width="20" height="auto">&nbsp;&nbsp;Føroyskt
+        </p>
+        <br><br>
+        <div id="content">Laddar...</div>
+        <div id="author-container"></div>
+    </div>
+    <script src="js/author.js"></script>
+    <script src="js/copyright.js"></script>
+    <script>
+        async function loadLanguageText() {
+            try {
+                const response = await fetch('lang_texts/fo.txt');
+                if (!response.ok) throw new Error('Kunde inte ladda textfil');
+                const text = await response.text();
+                // Simple conversion: split by separator and paragraphs
+                const lines = text.split('\n');
+                let html = '';
+                for (let line of lines) {
+                    line = line.trim();
+                    if (line === '') {
+                        html += '<br>';
+                    } else if (line === '=======================================') {
+                        html += '<hr class="separator">';
+                    } else if (line.startsWith('•')) {
+                        html += `<p class="bullet">${line}</p>`;
+                    } else if (/^(FORMÁLI|PREFACE|I\.\s|II\.\s|III\.\s|IV\.\s|V\.\s|VI\.\s)/.test(line)) {
+                        html += `<h2 class="chapter-title">${line}</h2>`;
+                    } else {
+                        html += `<p class="body-text">${line}</p>`;
+                    }
+                }
+                document.getElementById('content').innerHTML = html;
+            } catch (e) {
+                console.error(e);
+                document.getElementById('content').innerHTML = '<p>Kunde inte ladda text</p>';
+            }
+            if (typeof getAuthorHTML === 'function') {
+                document.getElementById('author-container').innerHTML = getAuthorHTML();
+            }
+        }
+        loadLanguageText();
+    </script>
+</body>
+</html>
