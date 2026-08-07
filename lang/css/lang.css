@@ -1,5 +1,65 @@
 /* ======================================== */
-/* GRUNDLÄGGANDE STYLING – ENDAST ARIA     */
+/* FÖRFATTARENS NAMN – STYLING              */
+/* ======================================== */
+.author {
+    font-family: 'Georgia', serif;
+    font-size: clamp(11pt, 3vw, 14pt);
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ======================================== */
+/* TOMRADER – SÄKER LÖSNING                 */
+/* ======================================== */
+
+/* ======================================== */
+/* LOKALA FONTER (från /fonts/)             */
+/* ======================================== */
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../fonts/DancingScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../fonts/DancingScript-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homemade Apple';
+    src: url('../../fonts/HomemadeApple-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/EBGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ======================================== */
+/* GRUNDLÄGGANDE STYLING                     */
 /* ======================================== */
 
 * {
@@ -8,44 +68,227 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    font-size: 14pt;
+    font-family: 'Georgia', serif;
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     line-height: 2.0;
-    padding: 2.5cm;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ======================================== */
+/* SIDANS INNEHÅLL (centrerad)              */
+/* ======================================== */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
-    color: #000000;
 }
 
-/* Alla element ärver Arial */
-h1, p, .book-title, .language-name, .body-text, .author, .page-container {
-    font-family: 'Arial', sans-serif;
-}
-
-/* Specialregler för storlekar */
-.book-title {
-    font-size: 36pt; /* Stor rubrik */
-    font-weight: bold;
-}
+/* ======================================== */
+/* FÖRSTA SIDAN                             */
+/* ======================================== */
 
 .language-name {
-    font-size: 14pt; /* Samma som brödtexten */
+    font-family: 'Georgia', serif;
+    font-size: clamp(11pt, 3vw, 12pt);
+    font-weight: normal;
+    margin: 0;
+}
+
+.book-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(24pt, 8vw, 48pt);
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.2;
+    white-space: nowrap;
 }
 
 .body-text {
-    font-size: 14pt;
+    font-family: 'Homemade Apple', cursive;
+    font-size: clamp(12pt, 4.5vw, 16pt);
+    font-weight: normal;
+    line-height: 2.0;
+    margin: 0;
 }
 
 .author {
-    font-size: 14pt;
+    font-family: 'Georgia', serif;
+    font-size: clamp(11pt, 3vw, 14pt);
     font-weight: bold;
+    margin: 0;
 }
 
-/* Flaggan – justera storlek om den blir för stor */
+/* ======================================== */
+/* FLAGGA                                   */
+/* ======================================== */
+
 .flag-icon {
-    width: 24px; /* Eller vad som passar */
+    display: inline-block;
+    width: clamp(16px, 4vw, 24px);
+    height: auto;
     vertical-align: middle;
+    margin-right: 0;
+}
+
+/* ======================================== */
+/* IPHONE-SPECIFIKA REGLER                   */
+/* ======================================== */
+
+@supports (-webkit-touch-callout: none) {
+    .book-title {
+        font-size: clamp(26pt, 9vw, 48pt) !important;
+        white-space: nowrap !important;
+    }
+}
+
+/* iPhone SE, 6, 7, 8 (små skärmar) */
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 4% !important;
+    }
+    
+    .book-title {
+        font-size: 26pt !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: 13pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 18px !important;
+    }
+}
+
+/* iPhone X, 11, 12, 13, 14 (medium) */
+@media only screen and (min-width: 376px) and (max-width: 430px) {
+    body {
+        padding: 5% !important;
+    }
+    
+    .book-title {
+        font-size: 32pt !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: 14pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 20px !important;
+    }
+}
+
+/* iPhone Plus / Pro Max (stora) */
+@media only screen and (min-width: 431px) and (max-width: 500px) {
+    body {
+        padding: 6% !important;
+    }
+    
+    .book-title {
+        font-size: 36pt !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: 15pt !important;
+    }
+    
+    .author {
+        font-size: 13pt !important;
+    }
+    
+    .flag-icon {
+        width: 22px !important;
+    }
+}
+
+/* ======================================== */
+/* ANDROID / ÖVRIGA MOBILER                 */
+/* ======================================== */
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 5% !important;
+    }
+    
+    .book-title {
+        font-size: clamp(24pt, 7.5vw, 38pt) !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: clamp(12pt, 4.5vw, 15pt) !important;
+    }
+    
+    .author {
+        font-size: clamp(11pt, 3vw, 13pt) !important;
+    }
+}
+
+/* ======================================== */
+/* DATOR / STORA SKÄRMAR                    */
+/* ======================================== */
+
+@media only screen and (min-width: 769px) {
+    body {
+        padding: 2.5cm !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    
+    .page-container {
+        display: block !important;
+        max-width: 100%;
+    }
+    
+    .book-title {
+        font-size: 36pt !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: 13pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 20px !important;
+    }
 }
