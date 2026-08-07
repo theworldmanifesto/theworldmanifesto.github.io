@@ -15,27 +15,25 @@
 
     <div class="page-container">
 
-        <!-- SPRÅKNAMN med SVG-flagga 20px (ÖVERST) -->
+        <!-- SPRÅKNAMN med SVG-flagga -->
         <p class="language-name">
             <img src="flags/es.svg" alt="Bandera de España" class="flag-icon" width="20" height="auto">&nbsp;&nbsp;Español
         </p>
 
-        <!-- Två tomma rader -->
         <br><br>
 
-        <!-- BOKTITELRUBRIK - Dancing Script 36pt -->
-        <h1 class="book-title">El Manifiesto Mundial</h1>
+        <!-- BOKTITEL (laddas från textfil) -->
+        <h1 class="book-title" id="book-title">El Manifiesto Mundial</h1>
 
-        <!-- En tom rad (mellan titel och brödtext) -->
         <br>
 
-        <!-- BRÖDTEXT - Homemade Apple 13pt -->
-        <p class="body-text">
+        <!-- BRÖDTEXT (laddas från textfil) -->
+        <p class="body-text" id="body-text">
             El Manifiesto por la<br>
             Abundancia Definitiva
         </p>
 
-        <!-- FÖRFATTARE – hämtas från author.js (inklusive tomrader) -->
+        <!-- FÖRFATTARE (laddas från author.js) -->
         <div id="author-container"></div>
 
     </div>
@@ -43,7 +41,27 @@
     <!-- JavaScript -->
     <script src="js/author.js"></script>
     <script>
-        // Sätt in författarsektionen från author.js
+        // Ladda text från språkfil
+        async function loadLanguageText() {
+            try {
+                const response = await fetch('lang_texts/es.txt');
+                if (!response.ok) throw new Error('Kunde inte ladda textfil');
+                const text = await response.text();
+                
+                // Parsa textfilen (förutsätter format: TITLE|BODY)
+                const lines = text.split('\n').filter(line => line.trim() !== '');
+                if (lines.length >= 2) {
+                    document.getElementById('book-title').textContent = lines[0].trim();
+                    document.getElementById('body-text').innerHTML = lines[1].trim().replace(/\n/g, '<br>');
+                }
+            } catch (error) {
+                console.error('Fel vid laddning av text:', error);
+                // Fallback till hårdkodad text
+            }
+        }
+
+        // Ladda text och författare
+        loadLanguageText();
         document.getElementById('author-container').innerHTML = getAuthorHTML();
     </script>
 
