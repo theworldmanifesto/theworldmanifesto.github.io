@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>The World Manifesto</title>
+    <link rel="stylesheet" href="css/lang.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- SPRÅKNAMN med flagga -->
+        <p class="language-name" id="language-name">
+            <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
+            <span id="language-label"></span>
+        </p>
+        <br><br>
 
+        <!-- BOKTITEL -->
+        <h1 class="book-title" id="book-title">The World Manifesto</h1>
+        <br>
+
+        <!-- BRÖDTEXT -->
+        <p class="body-text" id="body-text"></p>
+
+        <!-- FÖRFATTARE -->
+        <div id="author-container"></div>
+    </div>
+
+    <script src="js/author.js"></script>
+    <script>
+        // SPRÅKDATA – flaggor och språknamn
+        const languages = {
+            'en': { flag: 'flags/en.svg', name: 'English' },
+            'es': { flag: 'flags/es.svg', name: 'Español' },
+            'sv': { flag: 'flags/sv.svg', name: 'Svenska' },
+            'zh': { flag: 'flags/zh.svg', name: '中文' },
+            'fr': { flag: 'flags/fr.svg', name: 'Français' },
+            'de': { flag: 'flags/de.svg', name: 'Deutsch' },
+            'it': { flag: 'flags/it.svg', name: 'Italiano' },
+            'pt': { flag: 'flags/pt.svg', name: 'Português' },
+            'ru': { flag: 'flags/ru.svg', name: 'Русский' },
+            'ja': { flag: 'flags/ja.svg', name: '日本語' },
+            'ko': { flag: 'flags/ko.svg', name: '한국어' },
+            'ar': { flag: 'flags/ar.svg', name: 'العربية' },
+            'hi': { flag: 'flags/hi.svg', name: 'हिन्दी' },
+            'bn': { flag: 'flags/bn.svg', name: 'বাংলা' },
+            'ur': { flag: 'flags/ur.svg', name: 'اردو' },
+            'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia' },
+            'tl': { flag: 'flags/tl.svg', name: 'Filipino' },
+            'vi': { flag: 'flags/vi.svg', name: 'Tiếng Việt' },
+            'th': { flag: 'flags/th.svg', name: 'ไทย' },
+            'fa': { flag: 'flags/fa.svg', name: 'فارسی' },
+            'he': { flag: 'flags/he.svg', name: 'עברית' },
+            'sw': { flag: 'flags/sw.svg', name: 'Kiswahili' },
+            'zu': { flag: 'flags/zu.svg', name: 'isiZulu' },
+            'xh': { flag: 'flags/xh.svg', name: 'isiXhosa' },
+            'af': { flag: 'flags/af.svg', name: 'Afrikaans' },
+            'nl': { flag: 'flags/nl.svg', name: 'Nederlands' },
+            'pl': { flag: 'flags/pl.svg', name: 'Polski' },
+            'uk': { flag: 'flags/uk.svg', name: 'Українська' },
+            'ro': { flag: 'flags/ro.svg', name: 'Română' },
+            'el': { flag: 'flags/el.svg', name: 'Ελληνικά' },
+            'hu': { flag: 'flags/hu.svg', name: 'Magyar' },
+            'cs': { flag: 'flags/cs.svg', name: 'Čeština' },
+            'sk': { flag: 'flags/sk.svg', name: 'Slovenčina' },
+            'bg': { flag: 'flags/bg.svg', name: 'Български' },
+            'hr': { flag: 'flags/hr.svg', name: 'Hrvatski' },
+            'no': { flag: 'flags/no.svg', name: 'Norsk' },
+            'da': { flag: 'flags/da.svg', name: 'Dansk' },
+            'fi': { flag: 'flags/fi.svg', name: 'Suomi' },
+            'is': { flag: 'flags/is.svg', name: 'Íslenska' },
+            'fo': { flag: 'flags/fo.svg', name: 'Føroyskt' },
+            'se': { flag: 'flags/se.svg', name: 'Davvisámegiella' },
+            'fit': { flag: 'flags/fit.svg', name: 'Meänkieli' },
+            'crs': { flag: 'flags/crs.svg', name: 'Seselwa' }
+        };
+
+        // Hämta språk från URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang') || 'en';
+        const langData = languages[lang] || languages['en'];
+
+        // Sätt flagga och språknamn
+        document.getElementById('flag-icon').src = langData.flag;
+        document.getElementById('flag-icon').alt = langData.name;
+        document.getElementById('language-label').textContent = langData.name;
+
+        // Ladda text från lang_texts/
+        async function loadText() {
+            try {
+                const response = await fetch(`lang_texts/${lang}.txt`);
+                if (!response.ok) throw new Error('Textfil saknas');
+                const text = await response.text();
+                
+                // Parsa texten
+                const lines = text.split('\n').filter(line => line.trim() !== '');
+                if (lines.length >= 2) {
+                    document.getElementById('book-title').textContent = lines[0].trim();
+                    document.getElementById('body-text').innerHTML = lines.slice(1).join('<br>');
+                }
+            } catch (error) {
+                console.error('Fel vid laddning:', error);
+                // Fallback
+                document.getElementById('book-title').textContent = 'The World Manifesto';
+                document.getElementById('body-text').textContent = 'Text could not be loaded.';
+            }
+        }
+
+        // Ladda text och författare
+        loadText();
+        if (typeof getAuthorHTML === 'function') {
+            document.getElementById('author-container').innerHTML = getAuthorHTML();
+        }
+    </script>
+</body>
+</html>
