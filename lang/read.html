@@ -77,7 +77,7 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
-        /* ---------- TABELL (maxai.co styling) ---------- */
+        /* ---------- TABELL ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -107,9 +107,6 @@
             text-align: center;
             white-space: nowrap;
             width: 60px;
-        }
-        .manifesto-table td.empty-cell {
-            background-color: #fff8de;
         }
         /* ---------- Responsiv ---------- */
         @media only screen and (max-width: 768px) {
@@ -234,87 +231,52 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 3. MAXAI.CO PARSER – hanterar 7 och 12 tabbar automatiskt
+        // 3. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
         // ============================================================
-
-        // Inställningar för tabb-tolkning (kan justeras vid behov)
-        const ONE_EMPTY_TABS = 7;   // 7 tabbar = 1 tom cell
-        const TWO_EMPTY_TABS = 12;  // 12 tabbar = 2 tomma celler
-
-        function parseLine(line) {
-            if (line === "") {
-                return [""];
+        function splitRow(row) {
+            // Kolla om raden innehåller tabbar
+            if (row.includes('\t')) {
+                // Dela på en eller flera tabbar, ta bort tomma celler
+                return row.split(/\t+/).map(cell => cell.trim()).filter(cell => cell !== '');
             }
-
-            const parts = line.split(/(\t+)/);
-            const cells = [];
-
-            for (let index = 0; index < parts.length; index++) {
-                const part = parts[index];
-
-                if (part === "") {
-                    continue;
-                }
-
-                const isTabSequence = /^\t+$/.test(part);
-
-                if (!isTabSequence) {
-                    cells.push(part);
-                    continue;
-                }
-
-                const tabCount = part.length;
-                const hasContentBefore = index > 0 && parts.slice(0, index).some(p => p !== "" && !/^\t+$/.test(p));
-                const hasContentAfter = parts.slice(index + 1).some(p => p !== "" && !/^\t+$/.test(p));
-
-                let emptyCellsToAdd;
-
-                if (tabCount === ONE_EMPTY_TABS) {
-                    emptyCellsToAdd = 1;
-                } else if (tabCount === TWO_EMPTY_TABS) {
-                    emptyCellsToAdd = 2;
-                } else {
-                    // Standard TSV-logik
-                    const isAtLineBoundary = !hasContentBefore || !hasContentAfter;
-                    emptyCellsToAdd = Math.max(0, tabCount - 1 + (isAtLineBoundary ? 1 : 0));
-                }
-
-                for (let i = 0; i < emptyCellsToAdd; i++) {
-                    cells.push("");
-                }
-            }
-
-            return cells.length > 0 ? cells : [""];
+            // Annars, dela på pipe (med eventuella mellanslag runt)
+            return row.split(/\s*\|\s*/).map(cell => cell.trim()).filter(cell => cell !== '');
         }
 
-        function getMaximumColumns(rows) {
-            return rows.reduce((maximum, row) => Math.max(maximum, row.length), 0);
-        }
-
-        function buildTableFromRows(rows) {
+        // ============================================================
+        // 4. BYGG EN HTML-TABELL FRÅN TABELLRADER
+        // ============================================================
+        function buildTable(rows) {
             if (rows.length === 0) return '';
 
-            const columnCount = getMaximumColumns(rows);
+            // Dela alla rader med hjälp av splitRow
+            const splitRows = rows.map(row => splitRow(row));
+            
+            // Kontrollera att alla rader har samma antal kolumner
+            // Om inte, fyll på med tomma strängar (borde inte hända)
+            const maxCols = Math.max(...splitRows.map(r => r.length));
+            const normalizedRows = splitRows.map(r => {
+                while (r.length < maxCols) r.push('');
+                return r;
+            });
 
             let html = `<table class="manifesto-table">`;
 
-            // Rubrikrad (första raden)
-            const headers = rows[0] || [];
-            html += `<thead><tr><th>#</th>`;
+            // Första raden = rubrik
+            const headers = normalizedRows[0];
+            html += `<thead><tr>`;
             headers.forEach(h => {
-                html += `<th>${h || ''}</th>`;
+                html += `<th>${h}</th>`;
             });
             html += `</tr></thead><tbody>`;
 
-            // Datarader (från rad 2 och framåt)
-            for (let rowIndex = 1; rowIndex < rows.length; rowIndex++) {
-                const sourceRow = rows[rowIndex] || [];
-                html += `<tr><td>${rowIndex}</td>`;
-                for (let col = 0; col < columnCount; col++) {
-                    const value = sourceRow[col] ?? '';
-                    const emptyClass = value === '' ? ' class="empty-cell"' : '';
-                    html += `<td${emptyClass}>${value}</td>`;
-                }
+            // Resterande rader = data
+            for (let r = 1; r < normalizedRows.length; r++) {
+                const cells = normalizedRows[r];
+                html += `<tr>`;
+                cells.forEach(c => {
+                    html += `<td>${c}</td>`;
+                });
                 html += `</tr>`;
             }
 
@@ -323,7 +285,7 @@
         }
 
         // ============================================================
-        // 4. LADDA TEXT MED MAXAI.CO PARSER
+        // 5. LADDA TEXT MED AUTOMATISK TABELL-DETEKTERING
         // ============================================================
         async function loadText() {
             try {
@@ -334,65 +296,83 @@
                 const lines = text.split('\n');
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
+                
                 let tableRows = [];
                 let inTable = false;
 
                 for (let i = 0; i < lines.length; i++) {
-                    const line = lines[i].trim();
+                    let rawLine = lines[i];
+                    let line = rawLine.trim();
 
+                    // --- TOM RAD ---
                     if (line === '') {
                         if (inTable && tableRows.length > 0) {
-                            // Använd maxai parsern för tabellrader
-                            const parsedRows = tableRows.map(row => parseLine(row));
-                            currentHtml += buildTableFromRows(parsedRows);
+                            currentHtml += buildTable(tableRows);
                             tableRows = [];
                             inTable = false;
                         }
                         continue;
                     }
 
-                    // --- TABELL-START ---
-                    if (line === '--- START TABLE ---') {
-                        inTable = true;
-                        tableRows = [];
-                        continue;
-                    }
+                    // --- KONTROLLERA OM DETTA ÄR EN TABELLRAD ---
+                    // En tabellrad har minst 2 st separatorer (|\t)
+                    const pipeCount = (line.match(/\|/g) || []).length;
+                    const tabCount = (line.match(/\t/g) || []).length;
+                    const isTableRow = (pipeCount >= 2 || tabCount >= 2);
 
-                    // --- TABELL-SLUT ---
-                    if (line === '--- END TABLE ---') {
-                        inTable = false;
-                        if (tableRows.length > 0) {
-                            const parsedRows = tableRows.map(row => parseLine(row));
-                            currentHtml += buildTableFromRows(parsedRows);
+                    if (isTableRow) {
+                        if (!inTable) {
+                            inTable = true;
                             tableRows = [];
                         }
-                        continue;
-                    }
-
-                    if (inTable) {
                         tableRows.push(line);
                         continue;
                     }
 
-                    // --- Övrig formatering ---
+                    // --- OM VI VAR I EN TABELL OCH NU KOMMER EN ICKE-TABELLRAD ---
+                    if (inTable && tableRows.length > 0) {
+                        currentHtml += buildTable(tableRows);
+                        tableRows = [];
+                        inTable = false;
+                    }
+
+                    // --- SEPARATOR ---
                     if (line.match(/^=+$/)) {
                         currentHtml += `<hr class="separator-line">`;
-                    } else if (line.toLowerCase() === 'table of contents') {
-                        currentHtml += `<h2 class="toc-title">${line}</h2>`;
-                    } else if (line.startsWith('"') && line.endsWith('"')) {
-                        currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
-                    } else if (line.toLowerCase() === 'to be done') {
-                        currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
-                    } else if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
-                        currentHtml += `<p class="body-text">${line}</p>`;
-                    } else {
-                        currentHtml += `<p class="body-text">${line}</p>`;
+                        continue;
                     }
+
+                    // --- TABLE OF CONTENTS ---
+                    if (line.toLowerCase() === 'table of contents') {
+                        currentHtml += `<h2 class="toc-title">${line}</h2>`;
+                        continue;
+                    }
+
+                    // --- CITAT ---
+                    if (line.startsWith('"') && line.endsWith('"')) {
+                        currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
+                        continue;
+                    }
+
+                    // --- "TO BE DONE" ---
+                    if (line.toLowerCase() === 'to be done') {
+                        currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
+                        continue;
+                    }
+
+                    // --- VERSALER ---
+                    if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                        currentHtml += `<p class="body-text">${line}</p>`;
+                        continue;
+                    }
+
+                    // --- VANLIG BRÖDTEXT ---
+                    currentHtml += `<p class="body-text">${line}</p>`;
                 }
 
+                // Avsluta eventuell tabell i slutet av filen
                 if (inTable && tableRows.length > 0) {
-                    const parsedRows = tableRows.map(row => parseLine(row));
-                    currentHtml += buildTableFromRows(parsedRows);
+                    currentHtml += buildTable(tableRows);
                 }
 
                 bodyContent.innerHTML = currentHtml;
@@ -404,7 +384,7 @@
         }
 
         // ============================================================
-        // 5. KÖR
+        // 6. KÖR
         // ============================================================
         loadText();
 
