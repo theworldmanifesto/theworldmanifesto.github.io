@@ -1,48 +1,19 @@
 /* ======================================== */
-/* GRUNDLÄGGANDE STYLING                     */
+/* FÖRFATTARENS NAMN – STYLING              */
 /* ======================================== */
-
-* {
+.author {
+    font-family: 'Georgia', serif;
+    font-size: clamp(11pt, 3vw, 14pt);
+    font-weight: bold;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
-    background-color: #ffffff;
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    padding: 5%;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    line-height: 1.6;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-x: hidden;
-    -webkit-text-size-adjust: 100%;
-}
-
-.page-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 /* ======================================== */
-/* FONTER – BARA SPECIALFALL                  */
+/* TOMRADER – SÄKER LÖSNING                 */
+/* ======================================== */
+
+/* ======================================== */
+/* LOKALA FONTER (från /fonts/)             */
 /* ======================================== */
 
 @font-face {
@@ -66,8 +37,76 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('../../fonts/EBGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ======================================== */
-/* KLASSER FÖR READ.HTML                     */
+/* GRUNDLÄGGANDE STYLING                     */
+/* ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Georgia', serif;
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    line-height: 2.0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ======================================== */
+/* SIDANS INNEHÅLL (centrerad)              */
+/* ======================================== */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ======================================== */
+/* FÖRSTA SIDAN                             */
 /* ======================================== */
 
 .language-name {
@@ -77,41 +116,21 @@ body {
     margin: 0;
 }
 
-.flag-icon {
-    display: inline-block;
-    width: clamp(16px, 4vw, 24px);
-    height: auto;
-    vertical-align: middle;
-}
-
 .book-title {
     font-family: 'Dancing Script', cursive;
-    font-size: clamp(28pt, 8vw, 48pt);
+    font-size: clamp(24pt, 8vw, 48pt);
     font-weight: normal;
-    margin: 0 0 5px 0;
+    margin: 0;
     line-height: 1.2;
-    color: #1a1a1a;
-}
-
-.book-subtitle {
-    font-family: 'Dancing Script', cursive;
-    font-size: clamp(18pt, 5vw, 28pt);
-    font-weight: normal;
-    margin: 0 0 10px 0;
-    line-height: 1.2;
-    color: #1a1a1a;
+    white-space: nowrap;
 }
 
 .body-text {
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    font-size: clamp(12pt, 2.5vw, 14pt);
-    line-height: 1.6;
-    margin: 10px 0;
-    text-align: left;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #1a1a1a;
+    font-family: 'Homemade Apple', cursive;
+    font-size: clamp(12pt, 4.5vw, 16pt);
+    font-weight: normal;
+    line-height: 2.0;
+    margin: 0;
 }
 
 .author {
@@ -121,96 +140,155 @@ body {
     margin: 0;
 }
 
-.chapter-title-special {
-    font-family: 'Dancing Script', cursive;
-    font-size: clamp(20pt, 5vw, 32pt);
-    font-weight: normal;
-    margin: 40px 0 20px 0;
-    text-align: center;
-    color: #1a1a1a;
-}
+/* ======================================== */
+/* FLAGGA                                   */
+/* ======================================== */
 
-.chapter-title {
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    font-size: clamp(18pt, 4vw, 26pt);
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 40px 0 20px 0;
-    color: #1a1a1a;
-}
-
-.section-title {
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    font-size: clamp(16pt, 3.5vw, 22pt);
-    font-weight: bold;
-    text-align: center;
-    margin: 30px 0 15px 0;
-    color: #1a1a1a;
-}
-
-.subsection-title {
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    font-size: clamp(14pt, 3vw, 18pt);
-    font-weight: bold;
-    margin: 20px 0 10px 0;
-    text-align: left;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #1a1a1a;
-}
-
-.author-text {
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    font-size: clamp(12pt, 2.5vw, 14pt);
-    font-weight: bold;
-    text-align: center;
-    margin: 5px 0;
-    color: #1a1a1a;
-}
-
-.status-text {
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    font-size: clamp(11pt, 2.5vw, 13pt);
-    font-style: italic;
-    text-align: center;
-    margin: 10px 0;
-    color: #555;
-}
-
-.separator {
-    max-width: 200px;
-    margin: 30px auto;
-    border: 1px solid #ccc;
+.flag-icon {
+    display: inline-block;
+    width: clamp(16px, 4vw, 24px);
+    height: auto;
+    vertical-align: middle;
+    margin-right: 0;
 }
 
 /* ======================================== */
-/* RESPONSIV                               */
+/* IPHONE-SPECIFIKA REGLER                   */
+/* ======================================== */
+
+@supports (-webkit-touch-callout: none) {
+    .book-title {
+        font-size: clamp(26pt, 9vw, 48pt) !important;
+        white-space: nowrap !important;
+    }
+}
+
+/* iPhone SE, 6, 7, 8 (små skärmar) */
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 4% !important;
+    }
+    
+    .book-title {
+        font-size: 26pt !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: 13pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 18px !important;
+    }
+}
+
+/* iPhone X, 11, 12, 13, 14 (medium) */
+@media only screen and (min-width: 376px) and (max-width: 430px) {
+    body {
+        padding: 5% !important;
+    }
+    
+    .book-title {
+        font-size: 32pt !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: 14pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 20px !important;
+    }
+}
+
+/* iPhone Plus / Pro Max (stora) */
+@media only screen and (min-width: 431px) and (max-width: 500px) {
+    body {
+        padding: 6% !important;
+    }
+    
+    .book-title {
+        font-size: 36pt !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: 15pt !important;
+    }
+    
+    .author {
+        font-size: 13pt !important;
+    }
+    
+    .flag-icon {
+        width: 22px !important;
+    }
+}
+
+/* ======================================== */
+/* ANDROID / ÖVRIGA MOBILER                 */
 /* ======================================== */
 
 @media only screen and (max-width: 768px) {
     body {
-        padding: 4% !important;
+        padding: 5% !important;
     }
+    
+    .book-title {
+        font-size: clamp(24pt, 7.5vw, 38pt) !important;
+        white-space: nowrap !important;
+    }
+    
     .body-text {
-        padding: 0 10px;
+        font-size: clamp(12pt, 4.5vw, 15pt) !important;
     }
-    .subsection-title {
-        padding: 0 10px;
+    
+    .author {
+        font-size: clamp(11pt, 3vw, 13pt) !important;
     }
 }
 
+/* ======================================== */
+/* DATOR / STORA SKÄRMAR                    */
+/* ======================================== */
+
 @media only screen and (min-width: 769px) {
     body {
-        padding: 2cm !important;
+        padding: 2.5cm !important;
         max-width: 800px !important;
         margin: 0 auto !important;
         display: block !important;
     }
+    
     .page-container {
         display: block !important;
         max-width: 100%;
+    }
+    
+    .book-title {
+        font-size: 36pt !important;
+        white-space: nowrap !important;
+    }
+    
+    .body-text {
+        font-size: 13pt !important;
+    }
+    
+    .author {
+        font-size: 12pt !important;
+    }
+    
+    .flag-icon {
+        width: 20px !important;
     }
 }
