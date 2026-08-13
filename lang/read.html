@@ -77,17 +77,56 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
+        /* ---------- TABELL ---------- */
+        .manifesto-table {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: clamp(10pt, 2vw, 12pt);
+            text-align: left;
+        }
+        .manifesto-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        .manifesto-table td {
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+        .manifesto-table tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+        .manifesto-table td:first-child {
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            width: 60px;
+        }
         /* ---------- Responsiv ---------- */
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
             .language-name { font-size: 9pt !important; }
             .body-text { padding: 0 15px; }
+            .manifesto-table td, .manifesto-table th {
+                padding: 6px 8px;
+                font-size: 9pt;
+            }
         }
         @media only screen and (max-width: 430px) {
             .book-title { font-size: 22pt !important; }
             .book-subtitle { font-size: 11pt !important; }
             .language-name { font-size: 8pt !important; }
+            .manifesto-table td, .manifesto-table th {
+                padding: 4px 6px;
+                font-size: 8pt;
+            }
         }
     </style>
 </head>
@@ -192,7 +231,7 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 3. LADDA RESTEN AV TEXTEN (hoppa över de första 3 raderna)
+        // 3. LADDA RESTEN AV TEXTEN (med tabell-stöd för | och \t)
         // ============================================================
         async function loadText() {
             try {
@@ -200,20 +239,64 @@
                 if (!response.ok) throw new Error('Textfil saknas');
                 const text = await response.text();
 
-                const lines = text.split('\n').filter(line => line.trim() !== '');
+                const lines = text.split('\n');
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
+                let inTable = false;
+                let tableRows = [];
 
-                // ⭐ Börja från rad 3 (index 3) – hoppa över de 3 första raderna
-                // Rad 0: "The World Manifesto" (visas redan i HTML)
-                // Rad 1: "The Manifesto for Definitive Abundance" (visas redan i HTML)
-                // Rad 2: "Sven Yngerstedt" (visas redan från author.js)
-                // Rad 3+: All övrig text
-                for (let i = 3; i < lines.length; i++) {
-                    let line = lines[i].trim();
+                for (let i = 0; i < lines.length; i++) {
+                    let rawLine = lines[i];
+                    let line = rawLine.trim();
 
                     // --- TOM RAD: hoppa över ---
                     if (line === '') {
+                        continue;
+                    }
+
+                    // --- TABELL-START ---
+                    if (line === '--- START TABLE ---') {
+                        inTable = true;
+                        tableRows = [];
+                        continue;
+                    }
+
+                    // --- TABELL-SLUT ---
+                    if (line === '--- END TABLE ---') {
+                        inTable = false;
+                        // Bygg HTML-tabellen
+                        if (tableRows.length > 0) {
+                            // Kolla om raderna innehåller | eller \t
+                            let separator = '|';
+                            if (tableRows[0].includes('\t')) {
+                                separator = '\t';
+                            }
+
+                            currentHtml += `<table class="manifesto-table">`;
+                            // Första raden är rubrik
+                            const headers = tableRows[0].split(separator).map(h => h.trim());
+                            currentHtml += `<thead><tr>`;
+                            headers.forEach(h => {
+                                currentHtml += `<th>${h}</th>`;
+                            });
+                            currentHtml += `</tr></thead><tbody>`;
+                            // Resterande rader är data
+                            for (let r = 1; r < tableRows.length; r++) {
+                                const cells = tableRows[r].split(separator).map(c => c.trim());
+                                currentHtml += `<tr>`;
+                                cells.forEach(c => {
+                                    currentHtml += `<td>${c}</td>`;
+                                });
+                                currentHtml += `</tr>`;
+                            }
+                            currentHtml += `</tbody></table>`;
+                        }
+                        continue;
+                    }
+
+                    // --- OM VI ÄR I EN TABELL: spara raden ---
+                    if (inTable) {
+                        tableRows.push(line);
                         continue;
                     }
 
