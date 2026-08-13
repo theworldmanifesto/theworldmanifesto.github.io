@@ -434,27 +434,32 @@ Di bawah ini adalah cetak biru konstitusional tentang bagaimana utang diubah men
 
 3.  Tangga Kebebasan: Penghapusan Bertahap Konstitusional
 
-Sumber Daya Nasional Bruto	Penghapusan Utang		          	Bagian Kedaulatan
-(Tingkat Cakupan Gratis)		(Menurut Hukum Konstitusional)	(Pembayaran Negara)
 
-25%			              			25% dari semua utang swasta  	  Pembayaran pertama
-(Makanan Pokok, Energi  		dihapus segera.		      		    diaktifkan. Warga negara
-& Listrik)						                          			  		menerima daya bali untuk apa
-											                                    	yang belum gratis.
+--- START TABLE ---
+Sumber Daya Nasional Bruto	Penghapusan Utang		      	Bagian Kedaulatan
+(Tingkat Cakupan Gratis)	(Menurut Hukum Konstitusional)	(Pembayaran Negara)
 
-50%				              		50% dari semua utang yang	    	Bagian meningkat secara
-(Perumahan & Transportasi)	tersisa dihapus.			      	proporsional dengan kapasitas
-										                                    		produksi taman robot nasional.
+25%			              	25% dari semua utang swasta  	Pembayaran pertama
+(Makanan Pokok, Energi  	dihapus segera.		      		diaktifkan. Warga negara
+& Listrik)						                   	  		menerima daya bali untuk apa
+												          	yang belum gratis.
 
-75%			              			75% dari semua utang dihapus  	Bagian dioptimalkan.
-(Teknologi, Premium		    	dari buku bank.			        	  Kebutuhan akan uang turun
-& Pendidikan)					                          			  		secara dramatis seiring
-									    	                                		menyusutnya lingkup
-								    		                              	  	kemewahan.
+50%				            50% dari semua utang yang	    Bagian meningkat secara
+(Perumahan & Transportasi)	tersisa dihapus.			   	proporsional dengan kapasitas
+										        			produksi taman robot nasional.
 
-100%			              		Semua utang dan uang telah    	Sistem lengkap. Mata uang
-(Kelimpahan		          		tidak ada lagi.	          			menjadi usang; ekonomi bebas
-Definitif)										                            	total berlaku.
+75%			              	75% dari semua utang dihapus  	Bagian dioptimalkan.
+(Teknologi, Premium		    dari buku bank.			        Kebutuhan akan uang turun
+& Pendidikan)				                     			secara dramatis seiring
+									    	                menyusutnya lingkup
+								    		                kemewahan.
+
+100%			       		Semua utang dan uang telah    	Sistem lengkap. Mata uang
+(Kelimpahan		          	tidak ada lagi.	          		menjadi usang; ekonomi bebas
+Definitif)										           	total berlaku.
+--- END TABLE ---
+
+
 
 4.  Tinjauan Fase-Fase Tangga Kebebasan
 
