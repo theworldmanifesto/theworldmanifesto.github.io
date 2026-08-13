@@ -6,7 +6,6 @@
     <title>The World Manifesto</title>
     <link rel="stylesheet" href="css/lang.css">
     <style>
-        /* ---------- Första sidan – fast formatering ---------- */
         .language-name {
             font-family: 'Arimo', 'Arial', sans-serif;
             font-size: 10pt;
@@ -73,8 +72,6 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
-
-        /* ---------- TABELL – ren, ingen bakgrundsfärg ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -83,12 +80,14 @@
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(10pt, 2vw, 12pt);
             text-align: left;
+            table-layout: fixed;
         }
         .manifesto-table th {
             font-weight: bold;
             padding: 10px 12px;
             border: 1px solid #ccc;
             text-align: center;
+            width: 33.33%;
         }
         .manifesto-table td {
             padding: 10px 12px;
@@ -99,10 +98,8 @@
             font-weight: bold;
             text-align: center;
             white-space: nowrap;
-            width: 60px;
+            width: 33.33%;
         }
-
-        /* ---------- Responsiv ---------- */
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
@@ -207,47 +204,93 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 2. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
+        // 2. TABELLÖVERSÄTTNINGAR – lägg till språk här
         // ============================================================
-        function splitRow(row) {
-            if (row.includes('\t')) {
-                return row.split(/\t+/).map(cell => cell.trim()).filter(cell => cell !== '');
-            }
-            return row.split(/\s*\|\s*/).map(cell => cell.trim()).filter(cell => cell !== '');
+        const tableTranslations = {
+            'en': {
+                title: 'The Freedom Staircase: From Debt to Sovereignty',
+                col1: 'Gross National Resource (GNR)',
+                col2: 'Debt Write-Off<br>(According to Constitutional Law)',
+                col3: 'Sovereignty Share<br>(State Payout)',
+                rows: [
+                    { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
+                    { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
+                    { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
+                    { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+                ]
+            },
+            'sv': {
+                title: 'Frihetstrappan: Från skuld till suveränitet',
+                col1: 'Bruttonationalresurs (GNR)',
+                col2: 'Skuldavskrivning<br>(Enligt konstitutionell lag)',
+                col3: 'Suveränitetsandel<br>(Statlig utbetalning)',
+                rows: [
+                    { gnr: '25 %<br>(Basmat, Energi & El)', debt: '25 % av alla privata skulder skrivs av omedelbart.', share: 'Första utbetalningen aktiveras.<br>Medborgarna får köpkraft för det som ännu inte är gratis.' },
+                    { gnr: '50 %<br>(Bostäder & Transport)', debt: '50 % av alla återstående skulder skrivs av.', share: 'Andelen ökar i proportion till den nationella robotparkens produktionskapacitet.' },
+                    { gnr: '75 %<br>(Teknik, Premium & Utbildning)', debt: '75 % av alla skulder skrivs av från bankernas böcker.', share: 'Andelen optimeras. Behovet av pengar minskar dramatiskt när lyxsfären krymper.' },
+                    { gnr: '100 %<br>(Det Definitiva Överflödet)', debt: 'Alla skulder och pengar har upphört att existera.', share: 'Systemet är komplett. Valutor blir föråldrade; en total fri ekonomi råder.' }
+                ]
+            },
+            'es': {
+                title: 'La Escalera de la Libertad: De la Deuda a la Soberanía',
+                col1: 'Recurso Nacional Bruto (GNR)',
+                col2: 'Condonación de Deuda<br>(Según la Ley Constitucional)',
+                col3: 'Participación Soberana<br>(Pago del Estado)',
+                rows: [
+                    { gnr: '25 %<br>(Alimentos Básicos, Energía & Electricidad)', debt: 'El 25 % de todas las deudas privadas se cancela inmediatamente.', share: 'Se activa el primer pago.<br>Los ciudadanos reciben poder adquisitivo para lo que aún no es gratuito.' },
+                    { gnr: '50 %<br>(Vivienda & Transporte)', debt: 'El 50 % de todas las deudas restantes se cancela.', share: 'La participación aumenta en proporción a la capacidad de producción del parque robótico nacional.' },
+                    { gnr: '75 %<br>(Tecnología, Premium & Educación)', debt: 'El 75 % de todas las deudas se cancela de los libros de los bancos.', share: 'La participación se optimiza. La necesidad de dinero disminuye drásticamente a medida que se reduce la esfera del lujo.' },
+                    { gnr: '100 %<br>(La Abundancia Definitiva)', debt: 'Todas las deudas y el dinero han dejado de existir.', share: 'Sistema completo. Las monedas se vuelven obsoletas; prevalece una economía totalmente libre.' }
+                ]
+            },
+            'de': {
+                title: 'Die Freiheitstreppe: Von der Schulden zur Souveränität',
+                col1: 'Bruttonationalressource (GNR)',
+                col2: 'Schuldenerlass<br>(Nach Verfassungsrecht)',
+                col3: 'Souveränitätsanteil<br>(Staatliche Auszahlung)',
+                rows: [
+                    { gnr: '25 %<br>(Grundnahrung, Energie & Strom)', debt: '25 % aller privaten Schulden werden sofort erlassen.', share: 'Die erste Auszahlung wird aktiviert.<br>Die Bürger erhalten Kaufkraft für das, was noch nicht kostenlos ist.' },
+                    { gnr: '50 %<br>(Wohnen & Verkehr)', debt: '50 % aller verbleibenden Schulden werden erlassen.', share: 'Der Anteil steigt proportional zur Produktionskapazität des nationalen Roboterparks.' },
+                    { gnr: '75 %<br>(Technologie, Premium & Bildung)', debt: '75 % aller Schulden werden aus den Büchern der Banken gestrichen.', share: 'Der Anteil wird optimiert. Der Geldbedarf sinkt dramatisch, da die Luxussphäre schrumpft.' },
+                    { gnr: '100 %<br>(Der Definitive Überfluss)', debt: 'Alle Schulden und Geld haben aufgehört zu existieren.', share: 'System abgeschlossen. Währungen werden obsolet; eine völlig freie Wirtschaft herrscht.' }
+                ]
+            },
+            // 🆕 För övriga språk: använd 'en' som standard (fallback)
+            // Du kan lägga till fler språk här genom att kopiera strukturen ovan
+        };
+
+        // Fallback: om språket inte finns, använd engelska
+        function getTranslation(langCode) {
+            return tableTranslations[langCode] || tableTranslations['en'];
         }
 
         // ============================================================
-        // 3. BYGG EN HTML-TABELL FRÅN TABELLRADER
+        // 3. FUNKTION FÖR ATT BYGGA TABELLEN
         // ============================================================
-        function buildTable(rows) {
-            if (rows.length === 0) return '';
-
-            const splitRows = rows.map(row => splitRow(row));
-            const maxCols = Math.max(...splitRows.map(r => r.length));
-            const normalizedRows = splitRows.map(r => {
-                while (r.length < maxCols) r.push('');
-                return r;
-            });
-
-            let html = `<table class="manifesto-table">`;
-            const headers = normalizedRows[0];
-            html += `<thead><tr>`;
-            headers.forEach(h => html += `<th>${h}</th>`);
+        function buildTable(translation) {
+            if (!translation) return '<p class="body-text">Table translation not available.</p>';
+            
+            let html = `<h2 style="font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(16pt, 3vw, 20pt); font-weight: bold; text-align: center; margin: 30px 0 20px 0; color: #1a1a1a;">${translation.title}</h2>`;
+            html += `<table class="manifesto-table"><thead><tr>`;
+            html += `<th>${translation.col1}</th>`;
+            html += `<th>${translation.col2}</th>`;
+            html += `<th>${translation.col3}</th>`;
             html += `</tr></thead><tbody>`;
-
-            for (let r = 1; r < normalizedRows.length; r++) {
-                const cells = normalizedRows[r];
+            
+            translation.rows.forEach(row => {
                 html += `<tr>`;
-                cells.forEach(c => html += `<td>${c}</td>`);
+                html += `<td><strong>${row.gnr}</strong></td>`;
+                html += `<td>${row.debt}</td>`;
+                html += `<td>${row.share}</td>`;
                 html += `</tr>`;
-            }
-
+            });
+            
             html += `</tbody></table>`;
             return html;
         }
 
         // ============================================================
-        // 4. LADDA TEXT – HOPPAR ÖVER DE 3 FÖRSTA ICKE-TOMMA RADERNA
+        // 4. LADDA TEXT – HOPPAR ÖVER TABELLEN I TEXTFILEN
         // ============================================================
         async function loadText() {
             try {
@@ -260,72 +303,39 @@
 
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
-                
-                let tableRows = [];
-                let inTable = false;
 
-                // Hoppa över de 3 första icke-tomma raderna (titel, subtitel, författare)
+                // Hoppa över de 3 första icke-tomma raderna
                 for (let i = 3; i < nonEmptyLines.length; i++) {
-                    let line = nonEmptyLines[i].trim();
+                    const line = nonEmptyLines[i].trim();
 
-                    if (line === '') {
-                        if (inTable && tableRows.length > 0) {
-                            currentHtml += buildTable(tableRows);
-                            tableRows = [];
-                            inTable = false;
+                    if (line === '') continue;
+
+                    // --- TABELL: HOPPA ÖVER och ersätt med hårdkodad ---
+                    if (line === '--- START TABLE ---') {
+                        // Hoppa över alla rader fram till --- END TABLE ---
+                        while (i < nonEmptyLines.length && nonEmptyLines[i].trim() !== '--- END TABLE ---') {
+                            i++;
                         }
+                        // Lägg till den hårdkodade tabellen (översatt till rätt språk)
+                        const translation = getTranslation(lang);
+                        currentHtml += buildTable(translation);
                         continue;
                     }
 
-                    const pipeCount = (line.match(/\|/g) || []).length;
-                    const tabCount = (line.match(/\t/g) || []).length;
-                    const isTableRow = (pipeCount >= 2 || tabCount >= 2);
-
-                    if (isTableRow) {
-                        if (!inTable) {
-                            inTable = true;
-                            tableRows = [];
-                        }
-                        tableRows.push(line);
-                        continue;
-                    }
-
-                    if (inTable && tableRows.length > 0) {
-                        currentHtml += buildTable(tableRows);
-                        tableRows = [];
-                        inTable = false;
-                    }
-
+                    // --- Övrig formatering ---
                     if (line.match(/^=+$/)) {
                         currentHtml += `<hr class="separator-line">`;
-                        continue;
-                    }
-
-                    if (line.toLowerCase() === 'table of contents') {
+                    } else if (line.toLowerCase() === 'table of contents') {
                         currentHtml += `<h2 class="toc-title">${line}</h2>`;
-                        continue;
-                    }
-
-                    if (line.startsWith('"') && line.endsWith('"')) {
+                    } else if (line.startsWith('"') && line.endsWith('"')) {
                         currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
-                        continue;
-                    }
-
-                    if (line.toLowerCase() === 'to be done') {
+                    } else if (line.toLowerCase() === 'to be done') {
                         currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
-                        continue;
-                    }
-
-                    if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                    } else if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
                         currentHtml += `<p class="body-text">${line}</p>`;
-                        continue;
+                    } else {
+                        currentHtml += `<p class="body-text">${line}</p>`;
                     }
-
-                    currentHtml += `<p class="body-text">${line}</p>`;
-                }
-
-                if (inTable && tableRows.length > 0) {
-                    currentHtml += buildTable(tableRows);
                 }
 
                 bodyContent.innerHTML = currentHtml;
@@ -336,9 +346,6 @@
             }
         }
 
-        // ============================================================
-        // 5. KÖR
-        // ============================================================
         loadText();
 
         if (typeof getAuthorHTML === 'function') {
