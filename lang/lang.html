@@ -132,30 +132,17 @@
 </head>
 <body>
     <div class="page-container">
-        <!-- RAD 1: Flagga + språknamn (Arimo 10 pt) -->
         <p class="language-name" id="language-name">
             <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
             <span id="language-label"></span>
         </p>
-
         <br>
-
-        <!-- RAD 2: Huvudtitel (Dancing Script 36 pt) -->
         <h1 class="book-title" id="book-title">The World Manifesto</h1>
-
-        <!-- RAD 3: Subtitel (Homemade Apple 13 pt) -->
         <h2 class="book-subtitle" id="book-subtitle">The Manifesto for Definitive Abundance</h2>
-
         <br>
-
-        <!-- RAD 4: Författare från author.js -->
         <div id="author-container"></div>
-
         <br>
-
-        <!-- RESTEN: All övrig text (Gelasio) -->
         <div id="body-content"></div>
-
     </div>
 
     <script src="js/author.js"></script>
@@ -208,24 +195,18 @@
             'fo': { flag: 'flags/fo.svg', name: 'Føroyskt' }
         };
 
-        // ============================================================
-        // 2. HÄMTA SPRÅK
-        // ============================================================
         function getPreferredLanguage() {
             const urlParams = new URLSearchParams(window.location.search);
             const urlLang = urlParams.get('lang');
             if (urlLang && languages[urlLang]) return urlLang;
-
             const browserLang = navigator.language || navigator.languages?.[0] || 'en';
             const langCode = browserLang.split('-')[0].toLowerCase();
             if (languages[langCode]) return langCode;
-
             return 'en';
         }
 
         const lang = getPreferredLanguage();
         const langData = languages[lang];
-
         document.getElementById('flag-icon').src = langData.flag;
         document.getElementById('flag-icon').alt = langData.name;
         document.getElementById('language-label').textContent = langData.name;
@@ -271,7 +252,7 @@
         }
 
         // ============================================================
-        // 5. LADDA TEXT – HOPPAR ÖVER DE 3 FÖRSTA RADERNA
+        // 5. LADDA TEXT – HOPPAR ÖVER DE 3 FÖRSTA ICKE-TOMMA RADERNA
         // ============================================================
         async function loadText() {
             try {
@@ -280,19 +261,17 @@
                 const text = await response.text();
 
                 const lines = text.split('\n');
+                // Filtrera bort tomma rader för att hitta de tre första innehållsraderna
+                const nonEmptyLines = lines.filter(line => line.trim() !== '');
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
                 
                 let tableRows = [];
                 let inTable = false;
 
-                // ⭐ VIKTIGT: Börja från rad 3 (index 3) – hoppa över de 3 första raderna
-                // Rad 0: "The World Manifesto" (visas redan i HTML)
-                // Rad 1: "The Manifesto for Definitive Abundance" (visas redan i HTML)
-                // Rad 2: "Sven Yngerstedt" (visas redan från author.js)
-                // Rad 3+: All övrig text
-                for (let i = 3; i < lines.length; i++) {
-                    let rawLine = lines[i];
+                // ⭐ VIKTIGT: Börja från rad 3 (index 3) – hoppa över de 3 första icke-tomma raderna
+                for (let i = 3; i < nonEmptyLines.length; i++) {
+                    let rawLine = nonEmptyLines[i];
                     let line = rawLine.trim();
 
                     if (line === '') {
