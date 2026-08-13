@@ -72,6 +72,8 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
+
+        /* ---------- TABELL – alla kolumner lika breda ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -80,12 +82,14 @@
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(10pt, 2vw, 12pt);
             text-align: left;
+            table-layout: fixed;
         }
         .manifesto-table th {
             font-weight: bold;
             padding: 10px 12px;
             border: 1px solid #ccc;
             text-align: center;
+            width: 33.33%;
         }
         .manifesto-table td {
             padding: 10px 12px;
@@ -96,8 +100,9 @@
             font-weight: bold;
             text-align: center;
             white-space: nowrap;
-            width: 60px;
+            width: 33.33%;
         }
+
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
@@ -137,7 +142,7 @@
     <script src="js/author.js"></script>
     <script>
         // ============================================================
-        // 1. SPRÅKDATA – 42 språk
+        // SPRÅKDATA – 42 språk
         // ============================================================
         const languages = {
             'sv': { flag: 'flags/se.svg', name: 'Svenska' },
@@ -202,7 +207,7 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 2. LADDA TEXT – med färdig tabell
+        // LADDA TEXT – med färdig tabell
         // ============================================================
         async function loadText() {
             try {
@@ -220,8 +225,7 @@
 
                     if (line === '') continue;
 
-                    // --- TABELL: Hoppa över ---
-                    // Vi använder den färdiga HTML-tabellen istället
+                    // --- TABELL: Använd färdig HTML ---
                     if (line === '--- START TABLE ---') {
                         // Hoppa över alla rader fram till --- END TABLE ---
                         while (i < lines.length && lines[i].trim() !== '--- END TABLE ---') {
