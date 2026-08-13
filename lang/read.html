@@ -231,39 +231,47 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 3. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
+        // 3. HJÄLPFUNKTIONER FÖR TABELLHANTERING
         // ============================================================
+
+        // Dela en rad på separator (tab eller pipe) och behåll tomma celler
         function splitRow(row) {
-            // Kolla om raden innehåller tabbar
             if (row.includes('\t')) {
-                // Dela på en eller flera tabbar, ta bort tomma celler
-                return row.split(/\t+/).map(cell => cell.trim()).filter(cell => cell !== '');
+                // Dela på varje tab, behåll tomma strängar
+                return row.split('\t').map(cell => cell.trim());
+            } else {
+                // Dela på pipe, behåll tomma strängar (t.ex. "||" ger två tomma)
+                return row.split('|').map(cell => cell.trim());
             }
-            // Annars, dela på pipe (med eventuella mellanslag runt)
-            return row.split(/\s*\|\s*/).map(cell => cell.trim()).filter(cell => cell !== '');
         }
 
-        // ============================================================
-        // 4. BYGG EN HTML-TABELL FRÅN TABELLRADER
-        // ============================================================
+        // Bygg en HTML-tabell från en array med rader
         function buildTable(rows) {
             if (rows.length === 0) return '';
 
-            // Dela alla rader med hjälp av splitRow
+            // Dela alla rader till celler
             const splitRows = rows.map(row => splitRow(row));
-            
-            // Kontrollera att alla rader har samma antal kolumner
-            // Om inte, fyll på med tomma strängar (borde inte hända)
-            const maxCols = Math.max(...splitRows.map(r => r.length));
-            const normalizedRows = splitRows.map(r => {
-                while (r.length < maxCols) r.push('');
-                return r;
+
+            // Antag att första raden (rubrik) har rätt antal kolumner
+            const numCols = splitRows[0].length;
+
+            // Normalisera alla rader: om en rad har färre celler, fyll på med tomma i början
+            const normalized = splitRows.map(cells => {
+                if (cells.length < numCols) {
+                    const missing = numCols - cells.length;
+                    return Array(missing).fill('').concat(cells);
+                } else if (cells.length > numCols) {
+                    // Om en rad har fler celler, trunkera (bör inte hända)
+                    return cells.slice(0, numCols);
+                } else {
+                    return cells;
+                }
             });
 
             let html = `<table class="manifesto-table">`;
 
             // Första raden = rubrik
-            const headers = normalizedRows[0];
+            const headers = normalized[0];
             html += `<thead><tr>`;
             headers.forEach(h => {
                 html += `<th>${h}</th>`;
@@ -271,8 +279,8 @@
             html += `</tr></thead><tbody>`;
 
             // Resterande rader = data
-            for (let r = 1; r < normalizedRows.length; r++) {
-                const cells = normalizedRows[r];
+            for (let r = 1; r < normalized.length; r++) {
+                const cells = normalized[r];
                 html += `<tr>`;
                 cells.forEach(c => {
                     html += `<td>${c}</td>`;
@@ -285,7 +293,7 @@
         }
 
         // ============================================================
-        // 5. LADDA TEXT MED AUTOMATISK TABELL-DETEKTERING
+        // 4. LADDA TEXT MED AUTOMATISK TABELL-DETEKTERING
         // ============================================================
         async function loadText() {
             try {
@@ -384,7 +392,7 @@
         }
 
         // ============================================================
-        // 6. KÖR
+        // 5. KÖR
         // ============================================================
         loadText();
 
