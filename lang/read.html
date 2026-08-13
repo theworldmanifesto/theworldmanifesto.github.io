@@ -6,6 +6,7 @@
     <title>The World Manifesto</title>
     <link rel="stylesheet" href="css/lang.css">
     <style>
+        /* ---------- Första sidan – fast formatering ---------- */
         .language-name {
             font-family: 'Arimo', 'Arial', sans-serif;
             font-size: 10pt;
@@ -72,6 +73,8 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
+
+        /* ---------- TABELL – ren, ingen bakgrundsfärg ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -80,14 +83,12 @@
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(10pt, 2vw, 12pt);
             text-align: left;
-            table-layout: fixed;
         }
         .manifesto-table th {
             font-weight: bold;
             padding: 10px 12px;
             border: 1px solid #ccc;
             text-align: center;
-            width: 33.33%;
         }
         .manifesto-table td {
             padding: 10px 12px;
@@ -98,8 +99,10 @@
             font-weight: bold;
             text-align: center;
             white-space: nowrap;
-            width: 33.33%;
+            width: 60px;
         }
+
+        /* ---------- Responsiv ---------- */
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
@@ -138,6 +141,9 @@
 
     <script src="js/author.js"></script>
     <script>
+        // ============================================================
+        // 1. SPRÅKDATA – 42 språk
+        // ============================================================
         const languages = {
             'sv': { flag: 'flags/se.svg', name: 'Svenska' },
             'en': { flag: 'flags/gb.svg', name: 'English' },
@@ -200,6 +206,49 @@
         document.getElementById('flag-icon').alt = langData.name;
         document.getElementById('language-label').textContent = langData.name;
 
+        // ============================================================
+        // 2. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
+        // ============================================================
+        function splitRow(row) {
+            if (row.includes('\t')) {
+                return row.split(/\t+/).map(cell => cell.trim()).filter(cell => cell !== '');
+            }
+            return row.split(/\s*\|\s*/).map(cell => cell.trim()).filter(cell => cell !== '');
+        }
+
+        // ============================================================
+        // 3. BYGG EN HTML-TABELL FRÅN TABELLRADER
+        // ============================================================
+        function buildTable(rows) {
+            if (rows.length === 0) return '';
+
+            const splitRows = rows.map(row => splitRow(row));
+            const maxCols = Math.max(...splitRows.map(r => r.length));
+            const normalizedRows = splitRows.map(r => {
+                while (r.length < maxCols) r.push('');
+                return r;
+            });
+
+            let html = `<table class="manifesto-table">`;
+            const headers = normalizedRows[0];
+            html += `<thead><tr>`;
+            headers.forEach(h => html += `<th>${h}</th>`);
+            html += `</tr></thead><tbody>`;
+
+            for (let r = 1; r < normalizedRows.length; r++) {
+                const cells = normalizedRows[r];
+                html += `<tr>`;
+                cells.forEach(c => html += `<td>${c}</td>`);
+                html += `</tr>`;
+            }
+
+            html += `</tbody></table>`;
+            return html;
+        }
+
+        // ============================================================
+        // 4. LADDA TEXT – HOPPAR ÖVER DE 3 FÖRSTA ICKE-TOMMA RADERNA
+        // ============================================================
         async function loadText() {
             try {
                 const response = await fetch(`lang_texts/${lang}.txt`);
@@ -211,66 +260,72 @@
 
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
+                
+                let tableRows = [];
+                let inTable = false;
 
-                // Hoppa över de 3 första icke-tomma raderna
+                // Hoppa över de 3 första icke-tomma raderna (titel, subtitel, författare)
                 for (let i = 3; i < nonEmptyLines.length; i++) {
-                    const line = nonEmptyLines[i].trim();
+                    let line = nonEmptyLines[i].trim();
 
-                    if (line === '') continue;
-
-                    if (line === '--- START TABLE ---') {
-                        while (i < nonEmptyLines.length && nonEmptyLines[i].trim() !== '--- END TABLE ---') {
-                            i++;
+                    if (line === '') {
+                        if (inTable && tableRows.length > 0) {
+                            currentHtml += buildTable(tableRows);
+                            tableRows = [];
+                            inTable = false;
                         }
-                        currentHtml += `
-                        <table class="manifesto-table">
-                            <thead>
-                                <tr>
-                                    <th>Gross National Resource (GNR)</th>
-                                    <th>Debt Write-Off<br>(According to Constitutional Law)</th>
-                                    <th>Sovereignty Share<br>(State Payout)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><strong>25 %</strong><br>(Basic Food, Energy &amp; Electricity)</td>
-                                    <td>25 % of all private debts are written off immediately.</td>
-                                    <td>First payout is activated.<br>Citizens receive purchasing power for what is not yet free.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>50 %</strong><br>(Housing &amp; Transport)</td>
-                                    <td>50 % of all remaining debts are written off.</td>
-                                    <td>The share increases in proportion to the national robot park's production capacity.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>75 %</strong><br>(Technology, Premium &amp; Education)</td>
-                                    <td>75 % of all debts are written off from the banks' books.</td>
-                                    <td>The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>100 %</strong><br>(The Definitive Abundance)</td>
-                                    <td>All debts and money have ceased to exist.</td>
-                                    <td>System complete. Currencies become obsolete; a total free economy prevails.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        `;
                         continue;
+                    }
+
+                    const pipeCount = (line.match(/\|/g) || []).length;
+                    const tabCount = (line.match(/\t/g) || []).length;
+                    const isTableRow = (pipeCount >= 2 || tabCount >= 2);
+
+                    if (isTableRow) {
+                        if (!inTable) {
+                            inTable = true;
+                            tableRows = [];
+                        }
+                        tableRows.push(line);
+                        continue;
+                    }
+
+                    if (inTable && tableRows.length > 0) {
+                        currentHtml += buildTable(tableRows);
+                        tableRows = [];
+                        inTable = false;
                     }
 
                     if (line.match(/^=+$/)) {
                         currentHtml += `<hr class="separator-line">`;
-                    } else if (line.toLowerCase() === 'table of contents') {
-                        currentHtml += `<h2 class="toc-title">${line}</h2>`;
-                    } else if (line.startsWith('"') && line.endsWith('"')) {
-                        currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
-                    } else if (line.toLowerCase() === 'to be done') {
-                        currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
-                    } else if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
-                        currentHtml += `<p class="body-text">${line}</p>`;
-                    } else {
-                        currentHtml += `<p class="body-text">${line}</p>`;
+                        continue;
                     }
+
+                    if (line.toLowerCase() === 'table of contents') {
+                        currentHtml += `<h2 class="toc-title">${line}</h2>`;
+                        continue;
+                    }
+
+                    if (line.startsWith('"') && line.endsWith('"')) {
+                        currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
+                        continue;
+                    }
+
+                    if (line.toLowerCase() === 'to be done') {
+                        currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
+                        continue;
+                    }
+
+                    if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                        currentHtml += `<p class="body-text">${line}</p>`;
+                        continue;
+                    }
+
+                    currentHtml += `<p class="body-text">${line}</p>`;
+                }
+
+                if (inTable && tableRows.length > 0) {
+                    currentHtml += buildTable(tableRows);
                 }
 
                 bodyContent.innerHTML = currentHtml;
@@ -281,6 +336,9 @@
             }
         }
 
+        // ============================================================
+        // 5. KÖR
+        // ============================================================
         loadText();
 
         if (typeof getAuthorHTML === 'function') {
