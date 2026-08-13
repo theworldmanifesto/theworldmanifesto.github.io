@@ -6,7 +6,6 @@
     <title>The World Manifesto</title>
     <link rel="stylesheet" href="css/lang.css">
     <style>
-        /* ---------- Första sidan – fast formatering ---------- */
         .language-name {
             font-family: 'Arimo', 'Arial', sans-serif;
             font-size: 10pt;
@@ -74,7 +73,6 @@
             color: #1a1a1a;
         }
 
-        /* ---------- TABELL – ren ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -206,26 +204,62 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 2. RIKTIG PARSER – hanterar 7 och 12 tabbar
+        // 2. PARSER – exakt hantering av 7 och 12 tabbar
         // ============================================================
 
-        const ONE_EMPTY_TABS = 7;   // 7 tabbar = 1 tom cell
-        const TWO_EMPTY_TABS = 12;  // 12 tabbar = 2 tomma celler
+        const ONE_EMPTY_TABS = 7;
+        const TWO_EMPTY_TABS = 12;
 
         function parseLine(line) {
             if (line === "") return [""];
 
-            // Dela på varje tabb, behåll alla delar (även tomma)
+            // Dela på varje tabb – BEHÅLL alla delar (även tomma)
             const parts = line.split('\t');
-            const cells = [];
-
-            for (let i = 0; i < parts.length; i++) {
-                const part = parts[i];
-                // Trimma men behåll tomma strängar om cellen är tom
-                cells.push(part.trim());
+            
+            // Gå igenom och hantera specialfallen
+            const result = [];
+            let i = 0;
+            
+            while (i < parts.length) {
+                // Räkna hur många tomma delar i rad (från extra tabbar)
+                let emptyCount = 0;
+                let j = i;
+                while (j < parts.length && parts[j] === '') {
+                    emptyCount++;
+                    j++;
+                }
+                
+                // Om vi har tomma delar, kontrollera om de är 7 eller 12
+                if (emptyCount > 0) {
+                    // Kolla om detta är en sekvens av 7 eller 12 tabbar
+                    // (dvs. 6 eller 11 tomma delar + en del med innehåll efter)
+                    if (emptyCount === 6 && j < parts.length && parts[j] !== '') {
+                        // 7 tabbar = 1 tom cell
+                        result.push('');
+                        i = j; // hoppa över de tomma delarna
+                        continue;
+                    } else if (emptyCount === 11 && j < parts.length && parts[j] !== '') {
+                        // 12 tabbar = 2 tomma celler
+                        result.push('');
+                        result.push('');
+                        i = j; // hoppa över de tomma delarna
+                        continue;
+                    } else {
+                        // Annars: behåll tomma celler som de är
+                        for (let k = 0; k < emptyCount; k++) {
+                            result.push('');
+                        }
+                        i = j;
+                        continue;
+                    }
+                }
+                
+                // Vanlig cell med innehåll
+                result.push(parts[i].trim());
+                i++;
             }
-
-            return cells;
+            
+            return result;
         }
 
         function buildTableFromRows(rows) {
@@ -234,13 +268,13 @@
             // Första raden = rubrik
             const headers = rows[0] || [];
 
-            // Hitta max antal kolumner bland ALLA rader
+            // Hitta max antal kolumner
             let maxCols = 0;
             rows.forEach(row => {
                 if (row.length > maxCols) maxCols = row.length;
             });
 
-            // Se till att alla rader har samma antal kolumner
+            // Normalisera alla rader
             const normalizedRows = rows.map(row => {
                 while (row.length < maxCols) row.push('');
                 return row;
@@ -256,7 +290,7 @@
             });
             html += `</tr></thead><tbody>`;
 
-            // Datarader (från rad 2 och framåt)
+            // Datarader
             for (let r = 1; r < normalizedRows.length; r++) {
                 const cells = normalizedRows[r];
                 html += `<tr>`;
@@ -272,7 +306,7 @@
         }
 
         // ============================================================
-        // 3. LADDA TEXT – med hopp över 3 rader och korrekt tabell
+        // 3. LADDA TEXT
         // ============================================================
         async function loadText() {
             try {
@@ -286,13 +320,11 @@
                 let tableRows = [];
                 let inTable = false;
 
-                // ⭐ HOPPA ÖVER de 3 första raderna (titel, subtitel, författare)
                 for (let i = 3; i < lines.length; i++) {
                     const line = lines[i].trim();
 
                     if (line === '') {
                         if (inTable && tableRows.length > 0) {
-                            // Parsa alla tabellrader
                             const parsedRows = tableRows.map(row => parseLine(row));
                             currentHtml += buildTableFromRows(parsedRows);
                             tableRows = [];
@@ -301,14 +333,12 @@
                         continue;
                     }
 
-                    // --- TABELL-START ---
                     if (line === '--- START TABLE ---') {
                         inTable = true;
                         tableRows = [];
                         continue;
                     }
 
-                    // --- TABELL-SLUT ---
                     if (line === '--- END TABLE ---') {
                         inTable = false;
                         if (tableRows.length > 0) {
@@ -324,7 +354,6 @@
                         continue;
                     }
 
-                    // --- Övrig formatering ---
                     if (line.match(/^=+$/)) {
                         currentHtml += `<hr class="separator-line">`;
                     } else if (line.toLowerCase() === 'table of contents') {
@@ -353,9 +382,6 @@
             }
         }
 
-        // ============================================================
-        // 4. KÖR
-        // ============================================================
         loadText();
 
         if (typeof getAuthorHTML === 'function') {
