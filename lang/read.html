@@ -32,7 +32,6 @@
             text-align: center;
             color: #1a1a1a;
         }
-        /* ---------- Resten av texten ---------- */
         .body-text {
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(11pt, 2.5vw, 13pt);
@@ -50,7 +49,6 @@
             height: auto;
             vertical-align: middle;
         }
-        /* ---------- Författare (från author.js) ---------- */
         #author-container {
             text-align: center;
             margin-top: 30px;
@@ -61,14 +59,12 @@
             font-weight: bold;
             margin: 0;
         }
-        /* ---------- Separator ---------- */
         .separator-line {
             border: none;
             border-top: 2px solid #ccc;
             max-width: 300px;
             margin: 25px auto;
         }
-        /* ---------- Table of Contents rubrik ---------- */
         .toc-title {
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(16pt, 3vw, 20pt);
@@ -77,7 +73,8 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
-        /* ---------- TABELL ---------- */
+
+        /* ---------- TABELL (maxai.co styling) ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -111,7 +108,7 @@
         .manifesto-table td.empty-cell {
             background-color: #fff8de;
         }
-        /* ---------- Responsiv ---------- */
+
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
@@ -135,30 +132,17 @@
 </head>
 <body>
     <div class="page-container">
-        <!-- RAD 1: Flagga + språknamn (Arimo 10 pt) -->
         <p class="language-name" id="language-name">
             <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
             <span id="language-label"></span>
         </p>
-
         <br>
-
-        <!-- RAD 2: Huvudtitel (Dancing Script 36 pt) -->
         <h1 class="book-title" id="book-title">The World Manifesto</h1>
-
-        <!-- RAD 3: Subtitel (Homemade Apple 13 pt) -->
         <h2 class="book-subtitle" id="book-subtitle">The Manifesto for Definitive Abundance</h2>
-
         <br>
-
-        <!-- RAD 4: Författare från author.js -->
         <div id="author-container"></div>
-
         <br>
-
-        <!-- RESTEN: All övrig text (Gelasio) -->
         <div id="body-content"></div>
-
     </div>
 
     <script src="js/author.js"></script>
@@ -211,18 +195,13 @@
             'fo': { flag: 'flags/fo.svg', name: 'Føroyskt' }
         };
 
-        // ============================================================
-        // 2. HÄMTA SPRÅK
-        // ============================================================
         function getPreferredLanguage() {
             const urlParams = new URLSearchParams(window.location.search);
             const urlLang = urlParams.get('lang');
             if (urlLang && languages[urlLang]) return urlLang;
-
             const browserLang = navigator.language || navigator.languages?.[0] || 'en';
             const langCode = browserLang.split('-')[0].toLowerCase();
             if (languages[langCode]) return langCode;
-
             return 'en';
         }
 
@@ -234,104 +213,51 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 3. SMART TABELLPARSER (från maxai.co)
+        // MAXAI PARSER – 7 tabbar = 1 tom, 12 tabbar = 2 tomma
         // ============================================================
+        const ONE_EMPTY_TABS = 7;
+        const TWO_EMPTY_TABS = 12;
 
-        // Inställningar för tabb-tolkning
-        const ONE_EMPTY_TABS = 7;   // 7 tabbar = 1 tom cell
-        const TWO_EMPTY_TABS = 12;  // 12 tabbar = 2 tomma celler
-
-        /*
-          Tolkar en rad där särskilda tabbföljder betyder tomma celler.
-
-          Exempel:
-          Namn + 7 tabbar + Stad
-          => ["Namn", "", "Stad"]
-
-          12 inledande tabbar + Stockholm
-          => ["", "", "Stockholm"]
-        */
         function parseLine(line) {
-            if (line === "") {
-                return [""];
-            }
-
+            if (line === "") return [""];
             const parts = line.split(/(\t+)/);
             const cells = [];
-
             for (let index = 0; index < parts.length; index++) {
                 const part = parts[index];
-
-                if (part === "") {
-                    continue;
-                }
-
+                if (part === "") continue;
                 const isTabSequence = /^\t+$/.test(part);
-
                 if (!isTabSequence) {
                     cells.push(part);
                     continue;
                 }
-
                 const tabCount = part.length;
                 const hasContentBefore = index > 0 && parts.slice(0, index).some(p => p !== "" && !/^\t+$/.test(p));
                 const hasContentAfter = parts.slice(index + 1).some(p => p !== "" && !/^\t+$/.test(p));
-
                 let emptyCellsToAdd;
-
                 if (tabCount === ONE_EMPTY_TABS) {
                     emptyCellsToAdd = 1;
                 } else if (tabCount === TWO_EMPTY_TABS) {
                     emptyCellsToAdd = 2;
                 } else {
-                    /*
-                      Standard TSV:
-                      - Mellan A och B: 1 tabb = ingen tom cell.
-                      - Mellan A och B: 2 tabbar = 1 tom cell.
-                      - I början/slutet av en rad skapar tabbar även en tom cell.
-                    */
                     const isAtLineBoundary = !hasContentBefore || !hasContentAfter;
                     emptyCellsToAdd = Math.max(0, tabCount - 1 + (isAtLineBoundary ? 1 : 0));
                 }
-
-                for (let i = 0; i < emptyCellsToAdd; i++) {
-                    cells.push("");
-                }
+                for (let i = 0; i < emptyCellsToAdd; i++) cells.push("");
             }
-
             return cells.length > 0 ? cells : [""];
         }
 
-        function parseTextFile(text) {
-            const normalizedText = text
-                .replace(/^\uFEFF/, "")
-                .replace(/\r\n/g, "\n")
-                .replace(/\r/g, "\n");
-
-            const lines = normalizedText.split("\n");
-
-            // Ta bort sista tomma raden om filen avslutas med radbrytning
-            if (lines.length > 1 && lines[lines.length - 1] === "") {
-                lines.pop();
-            }
-
-            return lines.map(line => parseLine(line));
-        }
-
         function getMaximumColumns(rows) {
-            return rows.reduce((maximum, row) => Math.max(maximum, row.length), 0);
+            return rows.reduce((max, row) => Math.max(max, row.length), 0);
         }
 
         function buildTableFromRows(rows, useHeader) {
             if (rows.length === 0) return '';
-
             const columnCount = getMaximumColumns(rows);
             const firstDataRow = rows[0] || [];
             const startRow = useHeader ? 1 : 0;
 
             let html = `<table class="manifesto-table">`;
-
-            // Rubrikrad
             html += `<thead><tr><th>#</th>`;
             for (let col = 0; col < columnCount; col++) {
                 const headerText = useHeader ? (firstDataRow[col] ?? "") : `Kolumn ${col + 1}`;
@@ -339,7 +265,6 @@
             }
             html += `</tr></thead><tbody>`;
 
-            // Datarader
             for (let rowIndex = startRow; rowIndex < rows.length; rowIndex++) {
                 const sourceRow = rows[rowIndex];
                 html += `<tr><td>${rowIndex + 1}</td>`;
@@ -350,13 +275,12 @@
                 }
                 html += `</tr>`;
             }
-
             html += `</tbody></table>`;
             return html;
         }
 
         // ============================================================
-        // 4. LADDA TEXT MED SMART TABELLPARSER
+        // LADDA TEXT – med hopp över de 3 första raderna
         // ============================================================
         async function loadText() {
             try {
@@ -370,12 +294,12 @@
                 let tableRows = [];
                 let inTable = false;
 
-                for (let i = 0; i < lines.length; i++) {
+                // ⭐ HOPPA ÖVER de 3 första raderna (titel, subtitel, författare)
+                for (let i = 3; i < lines.length; i++) {
                     const line = lines[i].trim();
 
                     if (line === '') {
                         if (inTable && tableRows.length > 0) {
-                            // Använd den smarta parsern för tabellrader
                             const parsedRows = tableRows.map(row => parseLine(row));
                             currentHtml += buildTableFromRows(parsedRows, true);
                             tableRows = [];
@@ -437,7 +361,7 @@
         }
 
         // ============================================================
-        // 5. KÖR
+        // KÖR
         // ============================================================
         loadText();
 
