@@ -1,215 +1,449 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The World Manifesto</title>
-
-<!-- LÄNK TILL DEN SEPARERADE MENY-CSS:EN (ETT STEG UPP) -->
-<link rel="stylesheet" href="../menu.css">
-
-<style>
-    /* ============================================================
-       TYP-SNITT – The World Manifesto
-       ============================================================ */
-
-    /* ---------- Gelasio (brödtext – ersätter Georgia) ---------- */
-    @font-face {
-        font-family: 'Gelasio';
-        src: url('../../fonts/Gelasio-VariableFont_wght.ttf') format('truetype-variations');
-        font-weight: 100 900;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Gelasio';
-        src: url('../../fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype-variations');
-        font-weight: 100 900;
-        font-style: italic;
-    }
-
-    /* ---------- Arimo (gränssnitt – ersätter Arial) ---------- */
-    @font-face {
-        font-family: 'Arimo';
-        src: url('../../fonts/Arimo-VariableFont_wght.ttf') format('truetype-variations');
-        font-weight: 100 900;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Arimo';
-        src: url('../../fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype-variations');
-        font-weight: 100 900;
-        font-style: italic;
-    }
-
-    /* ---------- Dansande rubriker (reserv) ---------- */
-    @font-face {
-        font-family: 'Dancing Script';
-        src: url('../../fonts/DancingScript-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    /* ============================================================
-       GRUNDLÄGGANDE STYLING
-       ============================================================ */
-
-    body {
-        font-family: 'Arimo', 'Arial', sans-serif;
-        line-height: 1.5;
-        color: #1a1a1a;
-        background-color: #fcfcfc;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* --- SIDLAYOUT --- */
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 40px 20px;
-        display: flex;
-        flex-direction: column;
-        min-height: 85vh;
-        justify-content: space-between;
-    }
-
-    header {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    header h1 {
-        font-family: 'Dancing Script', cursive;
-        font-size: 36px;
-        font-weight: normal;
-        margin-bottom: 10px;
-    }
-    header h2 {
-        font-family: 'Arimo', 'Arial', sans-serif;
-        font-size: 20px;
-        font-weight: normal;
-        color: #555;
-        margin: 0;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-        gap: 16px;
-    }
-
-    .grid a {
-        text-decoration: none;
-        color: #000;
-        text-align: center;
-        border: 1px solid #eee;
-        padding: 10px;
-        border-radius: 8px;
-        background: #fff;
-        font-family: 'Arimo', 'Arial', sans-serif;
-        font-size: 14px;
-        transition: border-color 0.2s, background 0.2s;
-    }
-
-    .grid a:hover {
-        border-color: #999;
-        background: #f7f7f7;
-    }
-
-    .grid img {
-        border: 1px solid #ddd;
-        display: block;
-        margin: 0 auto 6px;
-        width: 40px;
-        height: 30px;
-        object-fit: cover;
-    }
-
-    .grid small {
-        display: block;
-        font-size: 11px;
-        color: #666;
-        margin-top: 2px;
-    }
-
-    /* --- FOOTER --- */
-    footer {
-        margin-top: 60px;
-        text-align: center;
-        font-family: 'Arimo', 'Arial', sans-serif;
-    }
-
-    .webmaster { font-size: 16px; margin-bottom: 15px; }
-    .webmaster a { color: #1a1a1a; text-decoration: none; }
-    .copyright { font-size: 14px; color: #666; }
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>The World Manifesto</title>
+    <link rel="stylesheet" href="css/lang.css">
+    <style>
+        /* ---------- Första sidan – fast formatering ---------- */
+        .language-name {
+            font-family: 'Arimo', 'Arial', sans-serif;
+            font-size: 10pt;
+            font-weight: normal;
+            margin: 0;
+            text-align: center;
+        }
+        .book-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36pt;
+            font-weight: normal;
+            margin: 0 0 5px 0;
+            line-height: 1.2;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        .book-subtitle {
+            font-family: 'Homemade Apple', cursive;
+            font-size: 13pt;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        /* ---------- Resten av texten ---------- */
+        .body-text {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: clamp(11pt, 2.5vw, 13pt);
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #1a1a1a;
+        }
+        .flag-icon {
+            display: inline-block;
+            width: clamp(16px, 4vw, 24px);
+            height: auto;
+            vertical-align: middle;
+        }
+        /* ---------- Författare (från author.js) ---------- */
+        #author-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        #author-container .author {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        /* ---------- Separator ---------- */
+        .separator-line {
+            border: none;
+            border-top: 2px solid #ccc;
+            max-width: 300px;
+            margin: 25px auto;
+        }
+        /* ---------- Table of Contents rubrik ---------- */
+        .toc-title {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: clamp(16pt, 3vw, 20pt);
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0 20px 0;
+            color: #1a1a1a;
+        }
+        /* ---------- TABELL ---------- */
+        .manifesto-table {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: clamp(10pt, 2vw, 12pt);
+            text-align: left;
+        }
+        .manifesto-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        .manifesto-table td {
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+        .manifesto-table tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+        .manifesto-table td:first-child {
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            width: 60px;
+        }
+        .manifesto-table td.empty-cell {
+            background-color: #fff8de;
+        }
+        /* ---------- Responsiv ---------- */
+        @media only screen and (max-width: 768px) {
+            .book-title { font-size: 28pt !important; }
+            .book-subtitle { font-size: 12pt !important; }
+            .language-name { font-size: 9pt !important; }
+            .body-text { padding: 0 15px; }
+            .manifesto-table td, .manifesto-table th {
+                padding: 6px 8px;
+                font-size: 9pt;
+            }
+        }
+        @media only screen and (max-width: 430px) {
+            .book-title { font-size: 22pt !important; }
+            .book-subtitle { font-size: 11pt !important; }
+            .language-name { font-size: 8pt !important; }
+            .manifesto-table td, .manifesto-table th {
+                padding: 4px 6px;
+                font-size: 8pt;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="page-container">
+        <!-- RAD 1: Flagga + språknamn (Arimo 10 pt) -->
+        <p class="language-name" id="language-name">
+            <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
+            <span id="language-label"></span>
+        </p>
 
-<!-- HÄR INJECTAS DEN SEPARERADE MENYN AUTOMATISKT -->
-<div id="main-menu"></div>
+        <br>
 
-<div class="container">
-    <main>
-        <header>
-            <h1>The World Manifesto</h1>
-            <h2>🌐 More Languages</h2>
-        </header>
+        <!-- RAD 2: Huvudtitel (Dancing Script 36 pt) -->
+        <h1 class="book-title" id="book-title">The World Manifesto</h1>
 
-        <div class="grid">
-            <a href="en.html"><img src="./flags/gb.svg" alt="EN" width="40" height="30">EN<br><small>English</small></a>
-            <a href="zh.html"><img src="./flags/cn.svg" alt="ZH" width="40" height="30">ZH<br><small>Chinese</small></a>
-            <a href="hi.html"><img src="./flags/in.svg" alt="HI" width="40" height="30">HI<br><small>Hindi</small></a>
-            <a href="es.html"><img src="./flags/es.svg" alt="ES" width="40" height="30">ES<br><small>Spanish</small></a>
-            <a href="fr.html"><img src="./flags/fr.svg" alt="FR" width="40" height="30">FR<br><small>French</small></a>
-            <a href="ar.html"><img src="./flags/sa.svg" alt="AR" width="40" height="30">AR<br><small>Arabic</small></a>
-            <a href="bn.html"><img src="./flags/bd.svg" alt="BN" width="40" height="30">BN<br><small>Bengali</small></a>
-            <a href="pt.html"><img src="./flags/pt.svg" alt="PT" width="40" height="30">PT<br><small>Portuguese</small></a>
-            <a href="ru.html"><img src="./flags/ru.svg" alt="RU" width="40" height="30">RU<br><small>Russian</small></a>
-            <a href="ur.html"><img src="./flags/pk.svg" alt="UR" width="40" height="30">UR<br><small>Urdu</small></a>
-            <a href="id.html"><img src="./flags/id.svg" alt="ID" width="40" height="30">ID<br><small>Indonesian</small></a>
-            <a href="de.html"><img src="./flags/de.svg" alt="DE" width="40" height="30">DE<br><small>German</small></a>
-            <a href="ja.html"><img src="./flags/jp.svg" alt="JA" width="40" height="30">JA<br><small>Japanese</small></a>
-            <a href="sw.html"><img src="./flags/tz.svg" alt="SW" width="40" height="30">SW<br><small>Swahili</small></a>
-            <a href="tl.html"><img src="./flags/ph.svg" alt="TL" width="40" height="30">TL<br><small>Tagalog/Filipino</small></a>
-            <a href="tr.html"><img src="./flags/tr.svg" alt="TR" width="40" height="30">TR<br><small>Turkish</small></a>
-            <a href="vi.html"><img src="./flags/vn.svg" alt="VI" width="40" height="30">VI<br><small>Vietnamese</small></a>
-            <a href="ko.html"><img src="./flags/kr.svg" alt="KO" width="40" height="30">KO<br><small>Korean</small></a>
-            <a href="fa.html"><img src="./flags/ir.svg" alt="FA" width="40" height="30">FA<br><small>Persian</small></a>
-            <a href="it.html"><img src="./flags/it.svg" alt="IT" width="40" height="30">IT<br><small>Italian</small></a>
-            <a href="th.html"><img src="./flags/th.svg" alt="TH" width="40" height="30">TH<br><small>Thai</small></a>
-            <a href="pl.html"><img src="./flags/pl.svg" alt="PL" width="40" height="30">PL<br><small>Polish</small></a>
-            <a href="uk.html"><img src="./flags/ua.svg" alt="UK" width="40" height="30">UK<br><small>Ukrainian</small></a>
-            <a href="zu.html"><img src="./flags/za.svg" alt="ZU" width="40" height="30">ZU<br><small>Zulu</small></a>
-            <a href="nl.html"><img src="./flags/nl.svg" alt="NL" width="40" height="30">NL<br><small>Dutch</small></a>
-            <a href="ro.html"><img src="./flags/ro.svg" alt="RO" width="40" height="30">RO<br><small>Romanian</small></a>
-            <a href="xh.html"><img src="./flags/za.svg" alt="XH" width="40" height="30">XH<br><small>Xhosa</small></a>
-            <a href="af.html"><img src="./flags/za.svg" alt="AF" width="40" height="30">AF<br><small>Afrikaans</small></a>
-            <a href="hu.html"><img src="./flags/hu.svg" alt="HU" width="40" height="30">HU<br><small>Hungarian</small></a>
-            <a href="el.html"><img src="./flags/gr.svg" alt="EL" width="40" height="30">EL<br><small>Greek</small></a>
-            <a href="sv.html"><img src="./flags/se.svg" alt="SV" width="40" height="30">SV<br><small>Swedish</small></a>
-            <a href="cs.html"><img src="./flags/cz.svg" alt="CS" width="40" height="30">CS<br><small>Czech</small></a>
-            <a href="he.html"><img src="./flags/il.svg" alt="HE" width="40" height="30">HE<br><small>Hebrew</small></a>
-            <a href="bg.html"><img src="./flags/bg.svg" alt="BG" width="40" height="30">BG<br><small>Bulgarian</small></a>
-            <a href="fi.html"><img src="./flags/fi.svg" alt="FI" width="40" height="30">FI<br><small>Finnish</small></a>
-            <a href="da.html"><img src="./flags/dk.svg" alt="DA" width="40" height="30">DA<br><small>Danish</small></a>
-            <a href="no.html"><img src="./flags/no.svg" alt="NO" width="40" height="30">NO<br><small>Norwegian</small></a>
-            <a href="is.html"><img src="./flags/is.svg" alt="IS" width="40" height="30">IS<br><small>Icelandic</small></a>
-            <a href="crs.html"><img src="./flags/sc.svg" alt="CRS" width="40" height="30">CRS<br><small>Seychellois Creole</small></a>
-            <a href="fo.html"><img src="./flags/fo.svg" alt="FO" width="40" height="30">FO<br><small>Faroese</small></a>
-            <a href="fit.html"><img src="./flags/fit.svg" alt="FIT" width="40" height="30">FIT<br><small>Meänkieli</small></a>
-            <a href="se.html"><img src="./flags/dsg.svg" alt="SE" width="40" height="30">SE<br><small>Northern Sami</small></a>
-        </div>
-    </main>
+        <!-- RAD 3: Subtitel (Homemade Apple 13 pt) -->
+        <h2 class="book-subtitle" id="book-subtitle">The Manifesto for Definitive Abundance</h2>
 
-</div>
+        <br>
 
-    <!-- Meny LÄNK TILL DEN SEPARERADE MENY-JS:EN (ETT STEG UPP) -->
-    <script src="../menu.js"></script>
+        <!-- RAD 4: Författare från author.js -->
+        <div id="author-container"></div>
 
-    <!-- Sidfot LÄNK TILL DEN SEPARERADE FOTNOT-JS:EN (ETTS STEG NER) -->
-    <script src="../footer.js"></script>
+        <br>
 
+        <!-- RESTEN: All övrig text (Gelasio) -->
+        <div id="body-content"></div>
+
+    </div>
+
+    <script src="js/author.js"></script>
+    <script>
+        // ============================================================
+        // 1. SPRÅKDATA – 42 språk
+        // ============================================================
+        const languages = {
+            'sv': { flag: 'flags/se.svg', name: 'Svenska' },
+            'en': { flag: 'flags/gb.svg', name: 'English' },
+            'zh': { flag: 'flags/cn.svg', name: '简体中文' },
+            'hi': { flag: 'flags/in.svg', name: 'हिन्दी' },
+            'es': { flag: 'flags/es.svg', name: 'Español' },
+            'fr': { flag: 'flags/fr.svg', name: 'Français' },
+            'ar': { flag: 'flags/sa.svg', name: 'العربية' },
+            'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia' },
+            'bn': { flag: 'flags/bd.svg', name: 'বাংলা' },
+            'pt': { flag: 'flags/pt.svg', name: 'Português' },
+            'ru': { flag: 'flags/ru.svg', name: 'Русский' },
+            'uk': { flag: 'flags/ua.svg', name: 'Українська' },
+            'bg': { flag: 'flags/bg.svg', name: 'Български' },
+            'ur': { flag: 'flags/pk.svg', name: 'اردو' },
+            'ja': { flag: 'flags/jp.svg', name: '日本語' },
+            'tl': { flag: 'flags/ph.svg', name: 'Filipino' },
+            'de': { flag: 'flags/de.svg', name: 'Deutsch' },
+            'ko': { flag: 'flags/kr.svg', name: '한국어' },
+            'th': { flag: 'flags/th.svg', name: 'ไทย' },
+            'vi': { flag: 'flags/vn.svg', name: 'Tiếng Việt' },
+            'tr': { flag: 'flags/tr.svg', name: 'Türkçe' },
+            'fa': { flag: 'flags/ir.svg', name: 'فارسی' },
+            'sw': { flag: 'flags/tz.svg', name: 'Kiswahili' },
+            'it': { flag: 'flags/it.svg', name: 'Italiano' },
+            'pl': { flag: 'flags/pl.svg', name: 'Polski' },
+            'nl': { flag: 'flags/nl.svg', name: 'Nederlands' },
+            'ro': { flag: 'flags/ro.svg', name: 'Română' },
+            'el': { flag: 'flags/gr.svg', name: 'Ελληνικά' },
+            'af': { flag: 'flags/za.svg', name: 'Afrikaans' },
+            'zu': { flag: 'flags/za.svg', name: 'isiZulu' },
+            'xh': { flag: 'flags/za.svg', name: 'isiXhosa' },
+            'cs': { flag: 'flags/cz.svg', name: 'Čeština' },
+            'hu': { flag: 'flags/hu.svg', name: 'Magyar' },
+            'he': { flag: 'flags/il.svg', name: 'עברית' },
+            'crs': { flag: 'flags/sc.svg', name: 'Seselwa' },
+            'se': { flag: 'flags/dsg.svg', name: 'Davvisámegiella' },
+            'fit': { flag: 'flags/fit.svg', name: 'Meänkieli' },
+            'no': { flag: 'flags/no.svg', name: 'Norsk' },
+            'fi': { flag: 'flags/fi.svg', name: 'Suomi' },
+            'da': { flag: 'flags/dk.svg', name: 'Dansk' },
+            'is': { flag: 'flags/is.svg', name: 'Íslenska' },
+            'fo': { flag: 'flags/fo.svg', name: 'Føroyskt' }
+        };
+
+        // ============================================================
+        // 2. HÄMTA SPRÅK
+        // ============================================================
+        function getPreferredLanguage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang && languages[urlLang]) return urlLang;
+
+            const browserLang = navigator.language || navigator.languages?.[0] || 'en';
+            const langCode = browserLang.split('-')[0].toLowerCase();
+            if (languages[langCode]) return langCode;
+
+            return 'en';
+        }
+
+        const lang = getPreferredLanguage();
+        const langData = languages[lang];
+
+        document.getElementById('flag-icon').src = langData.flag;
+        document.getElementById('flag-icon').alt = langData.name;
+        document.getElementById('language-label').textContent = langData.name;
+
+        // ============================================================
+        // 3. SMART TABELLPARSER (från maxai.co)
+        // ============================================================
+
+        // Inställningar för tabb-tolkning
+        const ONE_EMPTY_TABS = 7;   // 7 tabbar = 1 tom cell
+        const TWO_EMPTY_TABS = 12;  // 12 tabbar = 2 tomma celler
+
+        /*
+          Tolkar en rad där särskilda tabbföljder betyder tomma celler.
+
+          Exempel:
+          Namn + 7 tabbar + Stad
+          => ["Namn", "", "Stad"]
+
+          12 inledande tabbar + Stockholm
+          => ["", "", "Stockholm"]
+        */
+        function parseLine(line) {
+            if (line === "") {
+                return [""];
+            }
+
+            const parts = line.split(/(\t+)/);
+            const cells = [];
+
+            for (let index = 0; index < parts.length; index++) {
+                const part = parts[index];
+
+                if (part === "") {
+                    continue;
+                }
+
+                const isTabSequence = /^\t+$/.test(part);
+
+                if (!isTabSequence) {
+                    cells.push(part);
+                    continue;
+                }
+
+                const tabCount = part.length;
+                const hasContentBefore = index > 0 && parts.slice(0, index).some(p => p !== "" && !/^\t+$/.test(p));
+                const hasContentAfter = parts.slice(index + 1).some(p => p !== "" && !/^\t+$/.test(p));
+
+                let emptyCellsToAdd;
+
+                if (tabCount === ONE_EMPTY_TABS) {
+                    emptyCellsToAdd = 1;
+                } else if (tabCount === TWO_EMPTY_TABS) {
+                    emptyCellsToAdd = 2;
+                } else {
+                    /*
+                      Standard TSV:
+                      - Mellan A och B: 1 tabb = ingen tom cell.
+                      - Mellan A och B: 2 tabbar = 1 tom cell.
+                      - I början/slutet av en rad skapar tabbar även en tom cell.
+                    */
+                    const isAtLineBoundary = !hasContentBefore || !hasContentAfter;
+                    emptyCellsToAdd = Math.max(0, tabCount - 1 + (isAtLineBoundary ? 1 : 0));
+                }
+
+                for (let i = 0; i < emptyCellsToAdd; i++) {
+                    cells.push("");
+                }
+            }
+
+            return cells.length > 0 ? cells : [""];
+        }
+
+        function parseTextFile(text) {
+            const normalizedText = text
+                .replace(/^\uFEFF/, "")
+                .replace(/\r\n/g, "\n")
+                .replace(/\r/g, "\n");
+
+            const lines = normalizedText.split("\n");
+
+            // Ta bort sista tomma raden om filen avslutas med radbrytning
+            if (lines.length > 1 && lines[lines.length - 1] === "") {
+                lines.pop();
+            }
+
+            return lines.map(line => parseLine(line));
+        }
+
+        function getMaximumColumns(rows) {
+            return rows.reduce((maximum, row) => Math.max(maximum, row.length), 0);
+        }
+
+        function buildTableFromRows(rows, useHeader) {
+            if (rows.length === 0) return '';
+
+            const columnCount = getMaximumColumns(rows);
+            const firstDataRow = rows[0] || [];
+            const startRow = useHeader ? 1 : 0;
+
+            let html = `<table class="manifesto-table">`;
+
+            // Rubrikrad
+            html += `<thead><tr><th>#</th>`;
+            for (let col = 0; col < columnCount; col++) {
+                const headerText = useHeader ? (firstDataRow[col] ?? "") : `Kolumn ${col + 1}`;
+                html += `<th>${headerText || `Kolumn ${col + 1}`}</th>`;
+            }
+            html += `</tr></thead><tbody>`;
+
+            // Datarader
+            for (let rowIndex = startRow; rowIndex < rows.length; rowIndex++) {
+                const sourceRow = rows[rowIndex];
+                html += `<tr><td>${rowIndex + 1}</td>`;
+                for (let col = 0; col < columnCount; col++) {
+                    const value = sourceRow[col] ?? "";
+                    const emptyClass = value === "" ? ' class="empty-cell"' : '';
+                    html += `<td${emptyClass}>${value}</td>`;
+                }
+                html += `</tr>`;
+            }
+
+            html += `</tbody></table>`;
+            return html;
+        }
+
+        // ============================================================
+        // 4. LADDA TEXT MED SMART TABELLPARSER
+        // ============================================================
+        async function loadText() {
+            try {
+                const response = await fetch(`lang_texts/${lang}.txt`);
+                if (!response.ok) throw new Error('Textfil saknas');
+                const text = await response.text();
+
+                const lines = text.split('\n');
+                const bodyContent = document.getElementById('body-content');
+                let currentHtml = '';
+                let tableRows = [];
+                let inTable = false;
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i].trim();
+
+                    if (line === '') {
+                        if (inTable && tableRows.length > 0) {
+                            // Använd den smarta parsern för tabellrader
+                            const parsedRows = tableRows.map(row => parseLine(row));
+                            currentHtml += buildTableFromRows(parsedRows, true);
+                            tableRows = [];
+                            inTable = false;
+                        }
+                        continue;
+                    }
+
+                    // --- TABELL-START ---
+                    if (line === '--- START TABLE ---') {
+                        inTable = true;
+                        tableRows = [];
+                        continue;
+                    }
+
+                    // --- TABELL-SLUT ---
+                    if (line === '--- END TABLE ---') {
+                        inTable = false;
+                        if (tableRows.length > 0) {
+                            const parsedRows = tableRows.map(row => parseLine(row));
+                            currentHtml += buildTableFromRows(parsedRows, true);
+                            tableRows = [];
+                        }
+                        continue;
+                    }
+
+                    if (inTable) {
+                        tableRows.push(line);
+                        continue;
+                    }
+
+                    // --- Övrig formatering ---
+                    if (line.match(/^=+$/)) {
+                        currentHtml += `<hr class="separator-line">`;
+                    } else if (line.toLowerCase() === 'table of contents') {
+                        currentHtml += `<h2 class="toc-title">${line}</h2>`;
+                    } else if (line.startsWith('"') && line.endsWith('"')) {
+                        currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
+                    } else if (line.toLowerCase() === 'to be done') {
+                        currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
+                    } else if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                        currentHtml += `<p class="body-text">${line}</p>`;
+                    } else {
+                        currentHtml += `<p class="body-text">${line}</p>`;
+                    }
+                }
+
+                if (inTable && tableRows.length > 0) {
+                    const parsedRows = tableRows.map(row => parseLine(row));
+                    currentHtml += buildTableFromRows(parsedRows, true);
+                }
+
+                bodyContent.innerHTML = currentHtml;
+
+            } catch (error) {
+                console.error('Fel vid laddning:', error);
+                document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
+            }
+        }
+
+        // ============================================================
+        // 5. KÖR
+        // ============================================================
+        loadText();
+
+        if (typeof getAuthorHTML === 'function') {
+            document.getElementById('author-container').innerHTML = getAuthorHTML();
+        }
+    </script>
 </body>
 </html>
