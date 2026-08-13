@@ -613,7 +613,7 @@ Frihetstrappan: Den konstitutionella utfasningen
 
 Bruttonationalresurs			Skuldavskrivning			Suveränitetsandel
 (Gratis täckningsgrad)			(Enligt konstitutionell		(Statlig utbetalning)
-								lag)
+							lag)
 
 25 %						25 % av alla				Första utbetalningen
 (Baslivsmedel, Energi			privata skulder raderas		aktiveras. Medborgarna får
