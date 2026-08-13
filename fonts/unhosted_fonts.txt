@@ -1,3 +1,3 @@
-Arial (pre-installed system fonts in Windows/Mac/iOS/Android that may not be freely redistributed as files)
-Georgia (pre-installed system fonts in Windows/Mac/iOS/Android that may not be freely redistributed as files)
+Arial (pre-installed system fonts in Windows/Mac/iOS/Android that may not be freely redistributed as files, Arimo is a good alternative that is released under the Apache License 2.0.
+Georgia (pre-installed system fonts in Windows/Mac/iOS/Android that may not be freely redistributed as files), Gelasio is a good alternative that is released under the SIL Open Font License 1.1.
 Liberation Sans (system font in Linux, identical to Arial)
