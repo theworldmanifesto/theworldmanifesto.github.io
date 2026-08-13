@@ -5,82 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>The World Manifesto</title>
     <link rel="stylesheet" href="css/lang.css">
+    <style>
+        /* ---------- Första sidan – fast formatering ---------- */
+        .language-name {
+            font-family: 'Arimo', 'Arial', sans-serif;
+            font-size: 10pt;
+            font-weight: normal;
+            margin: 0;
+            text-align: center;
+        }
+        .book-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36pt;
+            font-weight: normal;
+            margin: 0 0 5px 0;
+            line-height: 1.2;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        .book-subtitle {
+            font-family: 'Homemade Apple', cursive;
+            font-size: 13pt;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        /* ---------- Resten av texten ---------- */
+        .body-text {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: clamp(11pt, 2.5vw, 13pt);
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #1a1a1a;
+        }
+        .flag-icon {
+            display: inline-block;
+            width: clamp(16px, 4vw, 24px);
+            height: auto;
+            vertical-align: middle;
+        }
+        /* ---------- Författare (från author.js) ---------- */
+        #author-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        #author-container .author {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        /* ---------- Separator ---------- */
+        .separator {
+            max-width: 200px;
+            margin: 30px auto;
+            border: 1px solid #ccc;
+        }
+        /* ---------- Responsiv ---------- */
+        @media only screen and (max-width: 768px) {
+            .book-title { font-size: 28pt !important; }
+            .book-subtitle { font-size: 12pt !important; }
+            .language-name { font-size: 9pt !important; }
+            .body-text { padding: 0 15px; }
+        }
+        @media only screen and (max-width: 430px) {
+            .book-title { font-size: 22pt !important; }
+            .book-subtitle { font-size: 11pt !important; }
+            .language-name { font-size: 8pt !important; }
+        }
+    </style>
 </head>
 <body>
     <div class="page-container">
+        <!-- RAD 1: Flagga + språknamn (Arimo 10 pt) -->
         <p class="language-name" id="language-name">
             <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
             <span id="language-label"></span>
         </p>
-        <br><br>
-        <h1 class="book-title" id="book-title">The World Manifesto</h1>
+
         <br>
-        <p class="body-text" id="body-text"></p>
+
+        <!-- RAD 2: Huvudtitel (Dancing Script 36 pt) -->
+        <h1 class="book-title" id="book-title">The World Manifesto</h1>
+
+        <!-- RAD 3: Subtitel (Homemade Apple 13 pt) -->
+        <h2 class="book-subtitle" id="book-subtitle">The Manifesto for Definitive Abundance</h2>
+
+        <br>
+
+        <!-- RAD 4: Författare LADDAS FRÅN author.js (INTE hårdkodad) -->
         <div id="author-container"></div>
+
+        <br>
+
+        <!-- RESTEN: All övrig text (Gelasio) -->
+        <div id="body-content"></div>
+
     </div>
 
     <script src="js/author.js"></script>
     <script>
-        // ALLA 42 SPRÅK med korrekta flaggor
+        // ============================================================
+        // 1. SPRÅKDATA – 42 språk
+        // ============================================================
         const languages = {
-'sv': { flag: 'flags/se.svg', name: 'Svenska (Swedish)' },
-'en': { flag: 'flags/gb.svg', name: 'English' },
-'zh': { flag: 'flags/cn.svg', name: '简体中文 (Chinese)' },
-'hi': { flag: 'flags/in.svg', name: 'हिंदी (Hindi)' },
-'es': { flag: 'flags/es.svg', name: 'Español (Spanish)' },
-'fr': { flag: 'flags/fr.svg', name: 'Français (French)' },
-'ar': { flag: 'flags/sa.svg', name: 'العربية (Arabic)' },
-'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia (Indonesian)' },
-'bn': { flag: 'flags/bd.svg', name: 'বাংলা (Bengali)' },
-'pt': { flag: 'flags/pt.svg', name: 'Português (Portuguese)' },
-'ru': { flag: 'flags/ru.svg', name: 'Русский (Russian)' },
-'uk': { flag: 'flags/ua.svg', name: 'Українська (Ukrainian)' },
-'bg': { flag: 'flags/bg.svg', name: 'Български (Bulgarian)' },
-'ur': { flag: 'flags/pk.svg', name: 'اردو (Urdu)' },
-'ja': { flag: 'flags/jp.svg', name: '日本語 (Japanese)' },
-'tl': { flag: 'flags/ph.svg', name: 'Filipino' },
-'de': { flag: 'flags/de.svg', name: 'Deutsch (German)' },
-'ko': { flag: 'flags/kr.svg', name: '한국어 (Korean)' },
-'th': { flag: 'flags/th.svg', name: 'ภาษาไทย (Thai)' },
-'vi': { flag: 'flags/vn.svg', name: 'Tiếng Việt (Vietnamese)' },
-'tr': { flag: 'flags/tr.svg', name: 'Türkçe (Turkish)' },
-'fa': { flag: 'flags/ir.svg', name: 'فارسی (Persian)' },
-'sw': { flag: 'flags/tz.svg', name: 'Swahili' },
-'it': { flag: 'flags/it.svg', name: 'Italiano (Italian)' },
-'pl': { flag: 'flags/pl.svg', name: 'Polski (Polish)' },
-'nl': { flag: 'flags/nl.svg', name: 'Nederlands (Dutch)' },
-'ro': { flag: 'flags/ro.svg', name: 'Română (Romanian)' },
-'el': { flag: 'flags/gr.svg', name: 'Ελληνικά (Greek)' },
-'af': { flag: 'flags/za.svg', name: 'Afrikaans' },
-'zu': { flag: 'flags/za.svg', name: 'isiZulu (Zulu)' },
-'xh': { flag: 'flags/za.svg', name: 'isiXhosa (Xhosa)' },
-'cs': { flag: 'flags/cz.svg', name: 'Čeština (Czech)' },
-'hu': { flag: 'flags/hu.svg', name: 'Magyar (Hungarian)' },
-'he': { flag: 'flags/il.svg', name: 'עברית (Hebrew)' },
-'crs': { flag: 'flags/sc.svg', name: 'Seselwa (Seychellois Creole)' },
-'se': { flag: 'flags/dsg.svg', name: 'Davvisámegiella (Northern Sami)' },
-'fit': { flag: 'flags/fit.svg', name: 'Tornedalian (Meänkieli)' },
-'no': { flag: 'flags/no.svg', name: 'Norsk (Norwegian)' },
-'fi': { flag: 'flags/fi.svg', name: 'Suomi (Finnish)' },
-'da': { flag: 'flags/dk.svg', name: 'Dansk (Danish)' },
-'is': { flag: 'flags/is.svg', name: 'Íslenska (Icelandic)' },
-'fo': { flag: 'flags/fo.svg', name: 'Føroyskt (Faroese)' }
+            'sv': { flag: 'flags/se.svg', name: 'Svenska' },
+            'en': { flag: 'flags/gb.svg', name: 'English' },
+            'zh': { flag: 'flags/cn.svg', name: '简体中文' },
+            'hi': { flag: 'flags/in.svg', name: 'हिन्दी' },
+            'es': { flag: 'flags/es.svg', name: 'Español' },
+            'fr': { flag: 'flags/fr.svg', name: 'Français' },
+            'ar': { flag: 'flags/sa.svg', name: 'العربية' },
+            'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia' },
+            'bn': { flag: 'flags/bd.svg', name: 'বাংলা' },
+            'pt': { flag: 'flags/pt.svg', name: 'Português' },
+            'ru': { flag: 'flags/ru.svg', name: 'Русский' },
+            'uk': { flag: 'flags/ua.svg', name: 'Українська' },
+            'bg': { flag: 'flags/bg.svg', name: 'Български' },
+            'ur': { flag: 'flags/pk.svg', name: 'اردو' },
+            'ja': { flag: 'flags/jp.svg', name: '日本語' },
+            'tl': { flag: 'flags/ph.svg', name: 'Filipino' },
+            'de': { flag: 'flags/de.svg', name: 'Deutsch' },
+            'ko': { flag: 'flags/kr.svg', name: '한국어' },
+            'th': { flag: 'flags/th.svg', name: 'ไทย' },
+            'vi': { flag: 'flags/vn.svg', name: 'Tiếng Việt' },
+            'tr': { flag: 'flags/tr.svg', name: 'Türkçe' },
+            'fa': { flag: 'flags/ir.svg', name: 'فارسی' },
+            'sw': { flag: 'flags/tz.svg', name: 'Kiswahili' },
+            'it': { flag: 'flags/it.svg', name: 'Italiano' },
+            'pl': { flag: 'flags/pl.svg', name: 'Polski' },
+            'nl': { flag: 'flags/nl.svg', name: 'Nederlands' },
+            'ro': { flag: 'flags/ro.svg', name: 'Română' },
+            'el': { flag: 'flags/gr.svg', name: 'Ελληνικά' },
+            'af': { flag: 'flags/za.svg', name: 'Afrikaans' },
+            'zu': { flag: 'flags/za.svg', name: 'isiZulu' },
+            'xh': { flag: 'flags/za.svg', name: 'isiXhosa' },
+            'cs': { flag: 'flags/cz.svg', name: 'Čeština' },
+            'hu': { flag: 'flags/hu.svg', name: 'Magyar' },
+            'he': { flag: 'flags/il.svg', name: 'עברית' },
+            'crs': { flag: 'flags/sc.svg', name: 'Seselwa' },
+            'se': { flag: 'flags/dsg.svg', name: 'Davvisámegiella' },
+            'fit': { flag: 'flags/fit.svg', name: 'Meänkieli' },
+            'no': { flag: 'flags/no.svg', name: 'Norsk' },
+            'fi': { flag: 'flags/fi.svg', name: 'Suomi' },
+            'da': { flag: 'flags/dk.svg', name: 'Dansk' },
+            'is': { flag: 'flags/is.svg', name: 'Íslenska' },
+            'fo': { flag: 'flags/fo.svg', name: 'Føroyskt' }
         };
 
-        // Automatisk språkdetektering
+        // ============================================================
+        // 2. HÄMTA SPRÅK
+        // ============================================================
         function getPreferredLanguage() {
             const urlParams = new URLSearchParams(window.location.search);
             const urlLang = urlParams.get('lang');
-            if (urlLang && languages[urlLang]) {
-                return urlLang;
-            }
+            if (urlLang && languages[urlLang]) return urlLang;
 
             const browserLang = navigator.language || navigator.languages?.[0] || 'en';
             const langCode = browserLang.split('-')[0].toLowerCase();
-
-            if (languages[langCode]) {
-                return langCode;
-            }
+            if (languages[langCode]) return langCode;
 
             return 'en';
         }
@@ -88,29 +177,68 @@
         const lang = getPreferredLanguage();
         const langData = languages[lang];
 
+        // Sätt flagga och språknamn
         document.getElementById('flag-icon').src = langData.flag;
         document.getElementById('flag-icon').alt = langData.name;
         document.getElementById('language-label').textContent = langData.name;
 
+        // ============================================================
+        // 3. LADDA RESTEN AV TEXTEN
+        // ============================================================
         async function loadText() {
             try {
                 const response = await fetch(`lang_texts/${lang}.txt`);
                 if (!response.ok) throw new Error('Textfil saknas');
                 const text = await response.text();
-                
+
+                // Dela upp texten i rader
                 const lines = text.split('\n').filter(line => line.trim() !== '');
-                if (lines.length >= 2) {
-                    document.getElementById('book-title').textContent = lines[0].trim();
-                    document.getElementById('body-text').innerHTML = lines.slice(1).join('<br>');
+
+                // All text efter rad 2 (subtitel) hamnar i body-content
+                if (lines.length > 2) {
+                    const bodyContent = document.getElementById('body-content');
+                    let currentHtml = '';
+
+                    for (let i = 2; i < lines.length; i++) {
+                        let line = lines[i].trim();
+
+                        // Enkel hantering av citat
+                        if (line.startsWith('"') && line.endsWith('"')) {
+                            currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
+                            continue;
+                        }
+
+                        // Enkel hantering av "To Be Done"
+                        if (line.toLowerCase() === 'to be done') {
+                            currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
+                            continue;
+                        }
+
+                        // Enkel hantering av kapitelrubriker (versaler)
+                        if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                            currentHtml += `<h2 style="font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(18pt, 4vw, 26pt); font-weight: bold; text-align: center; letter-spacing: 2px; text-transform: uppercase; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
+                            continue;
+                        }
+
+                        // Allt annat: brödtext med Gelasio
+                        currentHtml += `<p class="body-text">${line}</p>`;
+                    }
+
+                    bodyContent.innerHTML = currentHtml;
                 }
+
             } catch (error) {
                 console.error('Fel vid laddning:', error);
-                document.getElementById('book-title').textContent = 'The World Manifesto';
-                document.getElementById('body-text').textContent = 'Text could not be loaded.';
+                document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
             }
         }
 
+        // ============================================================
+        // 4. KÖR
+        // ============================================================
         loadText();
+
+        // Ladda författaren från author.js
         if (typeof getAuthorHTML === 'function') {
             document.getElementById('author-container').innerHTML = getAuthorHTML();
         }
