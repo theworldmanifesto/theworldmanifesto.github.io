@@ -77,7 +77,7 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
-        /* ---------- TABELL ---------- */
+        /* ---------- TABELL (maxai.co styling) ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -234,23 +234,13 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 3. SMART TABELLPARSER (från maxai.co)
+        // 3. MAXAI.CO PARSER – hanterar 7 och 12 tabbar automatiskt
         // ============================================================
 
-        // Inställningar för tabb-tolkning
+        // Inställningar för tabb-tolkning (kan justeras vid behov)
         const ONE_EMPTY_TABS = 7;   // 7 tabbar = 1 tom cell
         const TWO_EMPTY_TABS = 12;  // 12 tabbar = 2 tomma celler
 
-        /*
-          Tolkar en rad där särskilda tabbföljder betyder tomma celler.
-
-          Exempel:
-          Namn + 7 tabbar + Stad
-          => ["Namn", "", "Stad"]
-
-          12 inledande tabbar + Stockholm
-          => ["", "", "Stockholm"]
-        */
         function parseLine(line) {
             if (line === "") {
                 return [""];
@@ -284,12 +274,7 @@
                 } else if (tabCount === TWO_EMPTY_TABS) {
                     emptyCellsToAdd = 2;
                 } else {
-                    /*
-                      Standard TSV:
-                      - Mellan A och B: 1 tabb = ingen tom cell.
-                      - Mellan A och B: 2 tabbar = 1 tom cell.
-                      - I början/slutet av en rad skapar tabbar även en tom cell.
-                    */
+                    // Standard TSV-logik
                     const isAtLineBoundary = !hasContentBefore || !hasContentAfter;
                     emptyCellsToAdd = Math.max(0, tabCount - 1 + (isAtLineBoundary ? 1 : 0));
                 }
@@ -302,50 +287,32 @@
             return cells.length > 0 ? cells : [""];
         }
 
-        function parseTextFile(text) {
-            const normalizedText = text
-                .replace(/^\uFEFF/, "")
-                .replace(/\r\n/g, "\n")
-                .replace(/\r/g, "\n");
-
-            const lines = normalizedText.split("\n");
-
-            // Ta bort sista tomma raden om filen avslutas med radbrytning
-            if (lines.length > 1 && lines[lines.length - 1] === "") {
-                lines.pop();
-            }
-
-            return lines.map(line => parseLine(line));
-        }
-
         function getMaximumColumns(rows) {
             return rows.reduce((maximum, row) => Math.max(maximum, row.length), 0);
         }
 
-        function buildTableFromRows(rows, useHeader) {
+        function buildTableFromRows(rows) {
             if (rows.length === 0) return '';
 
             const columnCount = getMaximumColumns(rows);
-            const firstDataRow = rows[0] || [];
-            const startRow = useHeader ? 1 : 0;
 
             let html = `<table class="manifesto-table">`;
 
-            // Rubrikrad
+            // Rubrikrad (första raden)
+            const headers = rows[0] || [];
             html += `<thead><tr><th>#</th>`;
-            for (let col = 0; col < columnCount; col++) {
-                const headerText = useHeader ? (firstDataRow[col] ?? "") : `Kolumn ${col + 1}`;
-                html += `<th>${headerText || `Kolumn ${col + 1}`}</th>`;
-            }
+            headers.forEach(h => {
+                html += `<th>${h || ''}</th>`;
+            });
             html += `</tr></thead><tbody>`;
 
-            // Datarader
-            for (let rowIndex = startRow; rowIndex < rows.length; rowIndex++) {
-                const sourceRow = rows[rowIndex];
-                html += `<tr><td>${rowIndex + 1}</td>`;
+            // Datarader (från rad 2 och framåt)
+            for (let rowIndex = 1; rowIndex < rows.length; rowIndex++) {
+                const sourceRow = rows[rowIndex] || [];
+                html += `<tr><td>${rowIndex}</td>`;
                 for (let col = 0; col < columnCount; col++) {
-                    const value = sourceRow[col] ?? "";
-                    const emptyClass = value === "" ? ' class="empty-cell"' : '';
+                    const value = sourceRow[col] ?? '';
+                    const emptyClass = value === '' ? ' class="empty-cell"' : '';
                     html += `<td${emptyClass}>${value}</td>`;
                 }
                 html += `</tr>`;
@@ -356,7 +323,7 @@
         }
 
         // ============================================================
-        // 4. LADDA TEXT MED SMART TABELLPARSER
+        // 4. LADDA TEXT MED MAXAI.CO PARSER
         // ============================================================
         async function loadText() {
             try {
@@ -375,9 +342,9 @@
 
                     if (line === '') {
                         if (inTable && tableRows.length > 0) {
-                            // Använd den smarta parsern för tabellrader
+                            // Använd maxai parsern för tabellrader
                             const parsedRows = tableRows.map(row => parseLine(row));
-                            currentHtml += buildTableFromRows(parsedRows, true);
+                            currentHtml += buildTableFromRows(parsedRows);
                             tableRows = [];
                             inTable = false;
                         }
@@ -396,7 +363,7 @@
                         inTable = false;
                         if (tableRows.length > 0) {
                             const parsedRows = tableRows.map(row => parseLine(row));
-                            currentHtml += buildTableFromRows(parsedRows, true);
+                            currentHtml += buildTableFromRows(parsedRows);
                             tableRows = [];
                         }
                         continue;
@@ -425,7 +392,7 @@
 
                 if (inTable && tableRows.length > 0) {
                     const parsedRows = tableRows.map(row => parseLine(row));
-                    currentHtml += buildTableFromRows(parsedRows, true);
+                    currentHtml += buildTableFromRows(parsedRows);
                 }
 
                 bodyContent.innerHTML = currentHtml;
