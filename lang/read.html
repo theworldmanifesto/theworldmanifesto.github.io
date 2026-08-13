@@ -231,7 +231,61 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 3. LADDA TEXT MED AUTOMATISK TABELL-DETEKTERING
+        // 3. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
+        // ============================================================
+        function splitRow(row) {
+            // Kolla om raden innehåller tabbar
+            if (row.includes('\t')) {
+                // Dela på en eller flera tabbar, ta bort tomma celler
+                return row.split(/\t+/).map(cell => cell.trim()).filter(cell => cell !== '');
+            }
+            // Annars, dela på pipe (med eventuella mellanslag runt)
+            return row.split(/\s*\|\s*/).map(cell => cell.trim()).filter(cell => cell !== '');
+        }
+
+        // ============================================================
+        // 4. BYGG EN HTML-TABELL FRÅN TABELLRADER
+        // ============================================================
+        function buildTable(rows) {
+            if (rows.length === 0) return '';
+
+            // Dela alla rader med hjälp av splitRow
+            const splitRows = rows.map(row => splitRow(row));
+            
+            // Kontrollera att alla rader har samma antal kolumner
+            // Om inte, fyll på med tomma strängar (borde inte hända)
+            const maxCols = Math.max(...splitRows.map(r => r.length));
+            const normalizedRows = splitRows.map(r => {
+                while (r.length < maxCols) r.push('');
+                return r;
+            });
+
+            let html = `<table class="manifesto-table">`;
+
+            // Första raden = rubrik
+            const headers = normalizedRows[0];
+            html += `<thead><tr>`;
+            headers.forEach(h => {
+                html += `<th>${h}</th>`;
+            });
+            html += `</tr></thead><tbody>`;
+
+            // Resterande rader = data
+            for (let r = 1; r < normalizedRows.length; r++) {
+                const cells = normalizedRows[r];
+                html += `<tr>`;
+                cells.forEach(c => {
+                    html += `<td>${c}</td>`;
+                });
+                html += `</tr>`;
+            }
+
+            html += `</tbody></table>`;
+            return html;
+        }
+
+        // ============================================================
+        // 5. LADDA TEXT MED AUTOMATISK TABELL-DETEKTERING
         // ============================================================
         async function loadText() {
             try {
@@ -243,7 +297,6 @@
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
                 
-                // För tabellhantering
                 let tableRows = [];
                 let inTable = false;
 
@@ -253,7 +306,6 @@
 
                     // --- TOM RAD ---
                     if (line === '') {
-                        // Om vi var i en tabell, avsluta den
                         if (inTable && tableRows.length > 0) {
                             currentHtml += buildTable(tableRows);
                             tableRows = [];
@@ -263,13 +315,12 @@
                     }
 
                     // --- KONTROLLERA OM DETTA ÄR EN TABELLRAD ---
-                    // En tabellrad har minst 2 st | eller \t
+                    // En tabellrad har minst 2 st separatorer (|\t)
                     const pipeCount = (line.match(/\|/g) || []).length;
                     const tabCount = (line.match(/\t/g) || []).length;
                     const isTableRow = (pipeCount >= 2 || tabCount >= 2);
 
                     if (isTableRow) {
-                        // Om vi inte redan är i en tabell, starta en ny
                         if (!inTable) {
                             inTable = true;
                             tableRows = [];
@@ -333,43 +384,7 @@
         }
 
         // ============================================================
-        // 4. BYGG EN HTML-TABELL FRÅN TABELLRADER
-        // ============================================================
-        function buildTable(rows) {
-            if (rows.length === 0) return '';
-
-            // Ta reda på vilken separator som används
-            let separator = '|';
-            if (rows[0].includes('\t')) {
-                separator = '\t';
-            }
-
-            let html = `<table class="manifesto-table">`;
-
-            // Första raden = rubrik
-            const headers = rows[0].split(separator).map(h => h.trim());
-            html += `<thead><tr>`;
-            headers.forEach(h => {
-                html += `<th>${h}</th>`;
-            });
-            html += `</tr></thead><tbody>`;
-
-            // Resterande rader = data
-            for (let r = 1; r < rows.length; r++) {
-                const cells = rows[r].split(separator).map(c => c.trim());
-                html += `<tr>`;
-                cells.forEach(c => {
-                    html += `<td>${c}</td>`;
-                });
-                html += `</tr>`;
-            }
-
-            html += `</tbody></table>`;
-            return html;
-        }
-
-        // ============================================================
-        // 5. KÖR
+        // 6. KÖR
         // ============================================================
         loadText();
 
