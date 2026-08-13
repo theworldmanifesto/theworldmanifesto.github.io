@@ -231,69 +231,50 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 3. HJÄLPFUNKTIONER FÖR TABELLHANTERING
+        // 3. TABELLHANTERING – förväntar EN tab som separator
         // ============================================================
 
-        // Dela en rad på separator (tab eller pipe) och behåll tomma celler
         function splitRow(row) {
-            if (row.includes('\t')) {
-                // Dela på varje tab, behåll tomma strängar
-                return row.split('\t').map(cell => cell.trim());
-            } else {
-                // Dela på pipe, behåll tomma strängar (t.ex. "||" ger två tomma)
-                return row.split('|').map(cell => cell.trim());
-            }
+            // Dela på tab – behåll alla celler (även tomma)
+            return row.split('\t').map(cell => cell.trim());
         }
 
-        // Bygg en HTML-tabell från en array med rader
         function buildTable(rows) {
             if (rows.length === 0) return '';
 
-            // Dela alla rader till celler
             const splitRows = rows.map(row => splitRow(row));
-
-            // Antag att första raden (rubrik) har rätt antal kolumner
             const numCols = splitRows[0].length;
 
-            // Normalisera alla rader: om en rad har färre celler, fyll på med tomma i början
+            // Normalisera: om en rad har färre celler, fyll på med tomma i början
             const normalized = splitRows.map(cells => {
                 if (cells.length < numCols) {
                     const missing = numCols - cells.length;
                     return Array(missing).fill('').concat(cells);
                 } else if (cells.length > numCols) {
-                    // Om en rad har fler celler, trunkera (bör inte hända)
+                    // Om fler celler än rubriken, trunkera (bör inte hända)
                     return cells.slice(0, numCols);
-                } else {
-                    return cells;
                 }
+                return cells;
             });
 
             let html = `<table class="manifesto-table">`;
-
-            // Första raden = rubrik
             const headers = normalized[0];
             html += `<thead><tr>`;
-            headers.forEach(h => {
-                html += `<th>${h}</th>`;
-            });
+            headers.forEach(h => html += `<th>${h}</th>`);
             html += `</tr></thead><tbody>`;
 
-            // Resterande rader = data
             for (let r = 1; r < normalized.length; r++) {
                 const cells = normalized[r];
                 html += `<tr>`;
-                cells.forEach(c => {
-                    html += `<td>${c}</td>`;
-                });
+                cells.forEach(c => html += `<td>${c}</td>`);
                 html += `</tr>`;
             }
-
             html += `</tbody></table>`;
             return html;
         }
 
         // ============================================================
-        // 4. LADDA TEXT MED AUTOMATISK TABELL-DETEKTERING
+        // 4. LADDA TEXT
         // ============================================================
         async function loadText() {
             try {
@@ -304,15 +285,12 @@
                 const lines = text.split('\n');
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
-                
                 let tableRows = [];
                 let inTable = false;
 
                 for (let i = 0; i < lines.length; i++) {
-                    let rawLine = lines[i];
-                    let line = rawLine.trim();
+                    const line = lines[i].trim();
 
-                    // --- TOM RAD ---
                     if (line === '') {
                         if (inTable && tableRows.length > 0) {
                             currentHtml += buildTable(tableRows);
@@ -322,11 +300,9 @@
                         continue;
                     }
 
-                    // --- KONTROLLERA OM DETTA ÄR EN TABELLRAD ---
-                    // En tabellrad har minst 2 st separatorer (|\t)
-                    const pipeCount = (line.match(/\|/g) || []).length;
+                    // Kolla om raden är en tabellrad (minst 2 tabbar)
                     const tabCount = (line.match(/\t/g) || []).length;
-                    const isTableRow = (pipeCount >= 2 || tabCount >= 2);
+                    const isTableRow = tabCount >= 2;
 
                     if (isTableRow) {
                         if (!inTable) {
@@ -337,48 +313,28 @@
                         continue;
                     }
 
-                    // --- OM VI VAR I EN TABELL OCH NU KOMMER EN ICKE-TABELLRAD ---
                     if (inTable && tableRows.length > 0) {
                         currentHtml += buildTable(tableRows);
                         tableRows = [];
                         inTable = false;
                     }
 
-                    // --- SEPARATOR ---
+                    // --- Övrig formatering ---
                     if (line.match(/^=+$/)) {
                         currentHtml += `<hr class="separator-line">`;
-                        continue;
-                    }
-
-                    // --- TABLE OF CONTENTS ---
-                    if (line.toLowerCase() === 'table of contents') {
+                    } else if (line.toLowerCase() === 'table of contents') {
                         currentHtml += `<h2 class="toc-title">${line}</h2>`;
-                        continue;
-                    }
-
-                    // --- CITAT ---
-                    if (line.startsWith('"') && line.endsWith('"')) {
+                    } else if (line.startsWith('"') && line.endsWith('"')) {
                         currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
-                        continue;
-                    }
-
-                    // --- "TO BE DONE" ---
-                    if (line.toLowerCase() === 'to be done') {
+                    } else if (line.toLowerCase() === 'to be done') {
                         currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
-                        continue;
-                    }
-
-                    // --- VERSALER ---
-                    if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                    } else if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
                         currentHtml += `<p class="body-text">${line}</p>`;
-                        continue;
+                    } else {
+                        currentHtml += `<p class="body-text">${line}</p>`;
                     }
-
-                    // --- VANLIG BRÖDTEXT ---
-                    currentHtml += `<p class="body-text">${line}</p>`;
                 }
 
-                // Avsluta eventuell tabell i slutet av filen
                 if (inTable && tableRows.length > 0) {
                     currentHtml += buildTable(tableRows);
                 }
