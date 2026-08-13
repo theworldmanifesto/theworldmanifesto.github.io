@@ -231,7 +231,7 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 3. LADDA RESTEN AV TEXTEN (med tabell-stöd för | och \t)
+        // 3. LADDA TEXT MED AUTOMATISK TABELL-DETEKTERING
         // ============================================================
         async function loadText() {
             try {
@@ -242,65 +242,50 @@
                 const lines = text.split('\n');
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
-                let inTable = false;
+                
+                // För tabellhantering
                 let tableRows = [];
+                let inTable = false;
 
                 for (let i = 0; i < lines.length; i++) {
                     let rawLine = lines[i];
                     let line = rawLine.trim();
 
-                    // --- TOM RAD: hoppa över ---
+                    // --- TOM RAD ---
                     if (line === '') {
-                        continue;
-                    }
-
-                    // --- TABELL-START ---
-                    if (line === '--- START TABLE ---') {
-                        inTable = true;
-                        tableRows = [];
-                        continue;
-                    }
-
-                    // --- TABELL-SLUT ---
-                    if (line === '--- END TABLE ---') {
-                        inTable = false;
-                        // Bygg HTML-tabellen
-                        if (tableRows.length > 0) {
-                            // Kolla om raderna innehåller | eller \t
-                            let separator = '|';
-                            if (tableRows[0].includes('\t')) {
-                                separator = '\t';
-                            }
-
-                            currentHtml += `<table class="manifesto-table">`;
-                            // Första raden är rubrik
-                            const headers = tableRows[0].split(separator).map(h => h.trim());
-                            currentHtml += `<thead><tr>`;
-                            headers.forEach(h => {
-                                currentHtml += `<th>${h}</th>`;
-                            });
-                            currentHtml += `</tr></thead><tbody>`;
-                            // Resterande rader är data
-                            for (let r = 1; r < tableRows.length; r++) {
-                                const cells = tableRows[r].split(separator).map(c => c.trim());
-                                currentHtml += `<tr>`;
-                                cells.forEach(c => {
-                                    currentHtml += `<td>${c}</td>`;
-                                });
-                                currentHtml += `</tr>`;
-                            }
-                            currentHtml += `</tbody></table>`;
+                        // Om vi var i en tabell, avsluta den
+                        if (inTable && tableRows.length > 0) {
+                            currentHtml += buildTable(tableRows);
+                            tableRows = [];
+                            inTable = false;
                         }
                         continue;
                     }
 
-                    // --- OM VI ÄR I EN TABELL: spara raden ---
-                    if (inTable) {
+                    // --- KONTROLLERA OM DETTA ÄR EN TABELLRAD ---
+                    // En tabellrad har minst 2 st | eller \t
+                    const pipeCount = (line.match(/\|/g) || []).length;
+                    const tabCount = (line.match(/\t/g) || []).length;
+                    const isTableRow = (pipeCount >= 2 || tabCount >= 2);
+
+                    if (isTableRow) {
+                        // Om vi inte redan är i en tabell, starta en ny
+                        if (!inTable) {
+                            inTable = true;
+                            tableRows = [];
+                        }
                         tableRows.push(line);
                         continue;
                     }
 
-                    // --- SEPARATOR: ======================================= ---
+                    // --- OM VI VAR I EN TABELL OCH NU KOMMER EN ICKE-TABELLRAD ---
+                    if (inTable && tableRows.length > 0) {
+                        currentHtml += buildTable(tableRows);
+                        tableRows = [];
+                        inTable = false;
+                    }
+
+                    // --- SEPARATOR ---
                     if (line.match(/^=+$/)) {
                         currentHtml += `<hr class="separator-line">`;
                         continue;
@@ -324,14 +309,19 @@
                         continue;
                     }
 
-                    // --- ALLA VERSALER (PREFACE, ETC.) – VANLIG TEXT ---
+                    // --- VERSALER ---
                     if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
                         currentHtml += `<p class="body-text">${line}</p>`;
                         continue;
                     }
 
-                    // --- ALLT ANNAT: Brödtext med Gelasio ---
+                    // --- VANLIG BRÖDTEXT ---
                     currentHtml += `<p class="body-text">${line}</p>`;
+                }
+
+                // Avsluta eventuell tabell i slutet av filen
+                if (inTable && tableRows.length > 0) {
+                    currentHtml += buildTable(tableRows);
                 }
 
                 bodyContent.innerHTML = currentHtml;
@@ -343,7 +333,43 @@
         }
 
         // ============================================================
-        // 4. KÖR
+        // 4. BYGG EN HTML-TABELL FRÅN TABELLRADER
+        // ============================================================
+        function buildTable(rows) {
+            if (rows.length === 0) return '';
+
+            // Ta reda på vilken separator som används
+            let separator = '|';
+            if (rows[0].includes('\t')) {
+                separator = '\t';
+            }
+
+            let html = `<table class="manifesto-table">`;
+
+            // Första raden = rubrik
+            const headers = rows[0].split(separator).map(h => h.trim());
+            html += `<thead><tr>`;
+            headers.forEach(h => {
+                html += `<th>${h}</th>`;
+            });
+            html += `</tr></thead><tbody>`;
+
+            // Resterande rader = data
+            for (let r = 1; r < rows.length; r++) {
+                const cells = rows[r].split(separator).map(c => c.trim());
+                html += `<tr>`;
+                cells.forEach(c => {
+                    html += `<td>${c}</td>`;
+                });
+                html += `</tr>`;
+            }
+
+            html += `</tbody></table>`;
+            return html;
+        }
+
+        // ============================================================
+        // 5. KÖR
         // ============================================================
         loadText();
 
