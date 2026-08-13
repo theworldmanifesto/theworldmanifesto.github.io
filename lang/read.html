@@ -32,6 +32,13 @@
             text-align: center;
             color: #1a1a1a;
         }
+        .author-name {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: 12pt;
+            font-weight: bold;
+            text-align: center;
+            color: #1a1a1a;
+        }
         /* ---------- Resten av texten ---------- */
         .body-text {
             font-family: 'Gelasio', 'Georgia', serif;
@@ -72,6 +79,7 @@
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
             .language-name { font-size: 9pt !important; }
+            .author-name { font-size: 11pt !important; }
             .body-text { padding: 0 15px; }
         }
         @media only screen and (max-width: 430px) {
@@ -97,16 +105,16 @@
         <!-- RAD 3: Subtitel (Homemade Apple 13 pt) -->
         <h2 class="book-subtitle" id="book-subtitle">The Manifesto for Definitive Abundance</h2>
 
-        <br>
-
-        <!-- RAD 4: Författare LADDAS FRÅN author.js (INTE hårdkodad) -->
-        <div id="author-container"></div>
+        <!-- RAD 4: Författare (Gelasio fet 12 pt) -->
+        <p class="author-name" id="author-name"></p>
 
         <br>
 
         <!-- RESTEN: All övrig text (Gelasio) -->
         <div id="body-content"></div>
 
+        <!-- Författare från author.js (om du vill ha den också) -->
+        <div id="author-container"></div>
     </div>
 
     <script src="js/author.js"></script>
@@ -182,6 +190,9 @@
         document.getElementById('flag-icon').alt = langData.name;
         document.getElementById('language-label').textContent = langData.name;
 
+        // Sätt författarens namn (fast)
+        document.getElementById('author-name').textContent = 'Sven Yngerstedt';
+
         // ============================================================
         // 3. LADDA RESTEN AV TEXTEN
         // ============================================================
@@ -237,8 +248,6 @@
         // 4. KÖR
         // ============================================================
         loadText();
-
-        // Ladda författaren från author.js
         if (typeof getAuthorHTML === 'function') {
             document.getElementById('author-container').innerHTML = getAuthorHTML();
         }
