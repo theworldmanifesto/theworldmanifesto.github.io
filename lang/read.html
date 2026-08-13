@@ -72,8 +72,6 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
-
-        /* ---------- TABELL – alla kolumner lika breda ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -102,7 +100,6 @@
             white-space: nowrap;
             width: 33.33%;
         }
-
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
@@ -141,9 +138,6 @@
 
     <script src="js/author.js"></script>
     <script>
-        // ============================================================
-        // SPRÅKDATA – 42 språk
-        // ============================================================
         const languages = {
             'sv': { flag: 'flags/se.svg', name: 'Svenska' },
             'en': { flag: 'flags/gb.svg', name: 'English' },
@@ -206,32 +200,28 @@
         document.getElementById('flag-icon').alt = langData.name;
         document.getElementById('language-label').textContent = langData.name;
 
-        // ============================================================
-        // LADDA TEXT – med färdig tabell
-        // ============================================================
         async function loadText() {
             try {
                 const response = await fetch(`lang_texts/${lang}.txt`);
                 if (!response.ok) throw new Error('Textfil saknas');
                 const text = await response.text();
 
-                const lines = text.split('\n');
+                const allLines = text.split('\n');
+                const nonEmptyLines = allLines.filter(line => line.trim() !== '');
+
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
 
-                // Hoppa över de 3 första raderna (titel, subtitel, författare)
-                for (let i = 3; i < lines.length; i++) {
-                    const line = lines[i].trim();
+                // Hoppa över de 3 första icke-tomma raderna
+                for (let i = 3; i < nonEmptyLines.length; i++) {
+                    const line = nonEmptyLines[i].trim();
 
                     if (line === '') continue;
 
-                    // --- TABELL: Använd färdig HTML ---
                     if (line === '--- START TABLE ---') {
-                        // Hoppa över alla rader fram till --- END TABLE ---
-                        while (i < lines.length && lines[i].trim() !== '--- END TABLE ---') {
+                        while (i < nonEmptyLines.length && nonEmptyLines[i].trim() !== '--- END TABLE ---') {
                             i++;
                         }
-                        // Lägg till den färdiga tabellen
                         currentHtml += `
                         <table class="manifesto-table">
                             <thead>
@@ -268,7 +258,6 @@
                         continue;
                     }
 
-                    // --- Övrig formatering ---
                     if (line.match(/^=+$/)) {
                         currentHtml += `<hr class="separator-line">`;
                     } else if (line.toLowerCase() === 'table of contents') {
