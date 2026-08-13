@@ -1,28 +1,42 @@
-/* ======================================== */
-/* FÖRFATTARENS NAMN – STYLING              */
-/* ======================================== */
-.author {
-    font-family: 'Georgia', serif;
-    font-size: clamp(11pt, 3vw, 14pt);
-    font-weight: bold;
-    margin: 0;
+/* ============================================================
+   TYP-SNITT – The World Manifesto
+   ============================================================ */
+
+/* ---------- Gelasio (brödtext – ersätter Georgia) ---------- */
+@font-face {
+    font-family: 'Gelasio';
+    src: url('../../fonts/Gelasio-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gelasio';
+    src: url('../../fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: italic;
 }
 
-/* ======================================== */
-/* TOMRADER – SÄKER LÖSNING                 */
-/* ======================================== */
+/* ---------- Arimo (gränssnitt – ersätter Arial) ---------- */
+@font-face {
+    font-family: 'Arimo';
+    src: url('../../fonts/Arimo-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url('../../fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: italic;
+}
 
-/* ======================================== */
-/* LOKALA FONTER (från /fonts/)             */
-/* ======================================== */
-
+/* ---------- Dancing Script (titlar) ---------- */
 @font-face {
     font-family: 'Dancing Script';
     src: url('../../fonts/DancingScript-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Dancing Script';
     src: url('../../fonts/DancingScript-Bold.ttf') format('truetype');
@@ -30,6 +44,7 @@
     font-style: normal;
 }
 
+/* ---------- Homemade Apple (specialtexter) ---------- */
 @font-face {
     font-family: 'Homemade Apple';
     src: url('../../fonts/HomemadeApple-Regular.ttf') format('truetype');
@@ -37,13 +52,13 @@
     font-style: normal;
 }
 
+/* ---------- Reservfonter ---------- */
 @font-face {
     font-family: 'Roboto';
     src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Roboto';
     src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
@@ -58,9 +73,9 @@
     font-style: normal;
 }
 
-/* ======================================== */
-/* GRUNDLÄGGANDE STYLING                     */
-/* ======================================== */
+/* ============================================================
+   GRUNDLÄGGANDE STYLING
+   ============================================================ */
 
 * {
     margin: 0;
@@ -76,12 +91,12 @@ html {
 
 body {
     background-color: #ffffff;
-    font-family: 'Georgia', serif;
+    font-family: 'Gelasio', 'Georgia', serif;
     padding: 5%;
     width: 100%;
     max-width: 100%;
     margin: 0;
-    line-height: 2.0;
+    line-height: 1.6;
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -91,9 +106,9 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-/* ======================================== */
-/* SIDANS INNEHÅLL (centrerad)              */
-/* ======================================== */
+/* ============================================================
+   SIDANS INNEHÅLL
+   ============================================================ */
 
 .page-container {
     display: flex;
@@ -105,190 +120,172 @@ body {
     margin: 0 auto;
 }
 
-/* ======================================== */
-/* FÖRSTA SIDAN                             */
-/* ======================================== */
-
+/* ---------- Språknamn ---------- */
 .language-name {
-    font-family: 'Georgia', serif;
+    font-family: 'Arimo', 'Arial', sans-serif;
     font-size: clamp(11pt, 3vw, 12pt);
     font-weight: normal;
     margin: 0;
+    text-align: center;
 }
 
-.book-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: clamp(24pt, 8vw, 48pt);
-    font-weight: normal;
-    margin: 0;
-    line-height: 1.2;
-    white-space: nowrap;
-}
-
-.body-text {
-    font-family: 'Homemade Apple', cursive;
-    font-size: clamp(12pt, 4.5vw, 16pt);
-    font-weight: normal;
-    line-height: 2.0;
-    margin: 0;
-}
-
-.author {
-    font-family: 'Georgia', serif;
-    font-size: clamp(11pt, 3vw, 14pt);
-    font-weight: bold;
-    margin: 0;
-}
-
-/* ======================================== */
-/* FLAGGA                                   */
-/* ======================================== */
-
+/* ---------- Flagga ---------- */
 .flag-icon {
     display: inline-block;
     width: clamp(16px, 4vw, 24px);
     height: auto;
     vertical-align: middle;
-    margin-right: 0;
 }
 
-/* ======================================== */
-/* IPHONE-SPECIFIKA REGLER                   */
-/* ======================================== */
-
-@supports (-webkit-touch-callout: none) {
-    .book-title {
-        font-size: clamp(26pt, 9vw, 48pt) !important;
-        white-space: nowrap !important;
-    }
+/* ---------- Huvudtitel (Dancing Script) ---------- */
+.book-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(28pt, 8vw, 48pt);
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+    text-align: center;
+    color: #1a1a1a;
 }
 
-/* iPhone SE, 6, 7, 8 (små skärmar) */
-@media only screen and (max-width: 375px) {
-    body {
-        padding: 4% !important;
-    }
-    
-    .book-title {
-        font-size: 26pt !important;
-        white-space: nowrap !important;
-    }
-    
-    .body-text {
-        font-size: 13pt !important;
-    }
-    
-    .author {
-        font-size: 12pt !important;
-    }
-    
-    .flag-icon {
-        width: 18px !important;
-    }
+/* ---------- Subtitel (Dancing Script) ---------- */
+.book-subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(18pt, 5vw, 28pt);
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    text-align: center;
+    color: #1a1a1a;
 }
 
-/* iPhone X, 11, 12, 13, 14 (medium) */
-@media only screen and (min-width: 376px) and (max-width: 430px) {
-    body {
-        padding: 5% !important;
-    }
-    
-    .book-title {
-        font-size: 32pt !important;
-        white-space: nowrap !important;
-    }
-    
-    .body-text {
-        font-size: 14pt !important;
-    }
-    
-    .author {
-        font-size: 12pt !important;
-    }
-    
-    .flag-icon {
-        width: 20px !important;
-    }
+/* ---------- Författare ---------- */
+.author {
+    font-family: 'Arimo', 'Arial', sans-serif;
+    font-size: clamp(11pt, 3vw, 14pt);
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
 }
 
-/* iPhone Plus / Pro Max (stora) */
-@media only screen and (min-width: 431px) and (max-width: 500px) {
-    body {
-        padding: 6% !important;
-    }
-    
-    .book-title {
-        font-size: 36pt !important;
-        white-space: nowrap !important;
-    }
-    
-    .body-text {
-        font-size: 15pt !important;
-    }
-    
-    .author {
-        font-size: 13pt !important;
-    }
-    
-    .flag-icon {
-        width: 22px !important;
-    }
+/* ---------- Brödtext (Gelasio) ---------- */
+.body-text {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(12pt, 2.5vw, 14pt);
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1a1a1a;
 }
 
-/* ======================================== */
-/* ANDROID / ÖVRIGA MOBILER                 */
-/* ======================================== */
+.body-text.centered {
+    text-align: center;
+}
+.body-text strong { font-weight: bold; }
+.body-text em { font-style: italic; }
+
+/* ---------- Specialrubrik (Dancing Script) ---------- */
+.chapter-title-special {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(20pt, 5vw, 32pt);
+    font-weight: normal;
+    margin: 40px 0 20px 0;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* ---------- Kapitelrubrik (Gelasio – versaler) ---------- */
+.chapter-title {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(18pt, 4vw, 26pt);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 40px 0 20px 0;
+    color: #1a1a1a;
+}
+
+/* ---------- Sektionsrubrik (Gelasio) ---------- */
+.section-title {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(16pt, 3.5vw, 22pt);
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 15px 0;
+    color: #1a1a1a;
+}
+
+/* ---------- Underrubrik (Gelasio) ---------- */
+.subsection-title {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(14pt, 3vw, 18pt);
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1a1a1a;
+}
+
+/* ---------- Författartext (Arimo) ---------- */
+.author-text {
+    font-family: 'Arimo', 'Arial', sans-serif;
+    font-size: clamp(12pt, 2.5vw, 14pt);
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+    color: #1a1a1a;
+}
+
+/* ---------- Status-text (Gelasio, kursiv) ---------- */
+.status-text {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(11pt, 2.5vw, 13pt);
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* ---------- Separator ---------- */
+.separator {
+    max-width: 200px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+}
+
+/* ============================================================
+   GRÄNSSNITTSELEMENT (använder Arimo)
+   ============================================================ */
+
+.btns, .lang-select, .lang-flags, .lang-label {
+    font-family: 'Arimo', 'Arial', sans-serif;
+}
+
+/* ============================================================
+   RESPONSIV
+   ============================================================ */
 
 @media only screen and (max-width: 768px) {
-    body {
-        padding: 5% !important;
-    }
-    
-    .book-title {
-        font-size: clamp(24pt, 7.5vw, 38pt) !important;
-        white-space: nowrap !important;
-    }
-    
-    .body-text {
-        font-size: clamp(12pt, 4.5vw, 15pt) !important;
-    }
-    
-    .author {
-        font-size: clamp(11pt, 3vw, 13pt) !important;
-    }
+    body { padding: 4% !important; }
+    .body-text { padding: 0 10px; }
+    .subsection-title { padding: 0 10px; }
 }
-
-/* ======================================== */
-/* DATOR / STORA SKÄRMAR                    */
-/* ======================================== */
 
 @media only screen and (min-width: 769px) {
     body {
-        padding: 2.5cm !important;
+        padding: 2cm !important;
         max-width: 800px !important;
         margin: 0 auto !important;
         display: block !important;
     }
-    
     .page-container {
         display: block !important;
         max-width: 100%;
-    }
-    
-    .book-title {
-        font-size: 36pt !important;
-        white-space: nowrap !important;
-    }
-    
-    .body-text {
-        font-size: 13pt !important;
-    }
-    
-    .author {
-        font-size: 12pt !important;
-    }
-    
-    .flag-icon {
-        width: 20px !important;
     }
 }
