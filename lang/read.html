@@ -73,6 +73,8 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
+
+        /* ---------- TABELL – ren, ingen bakgrundsfärg ---------- */
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -83,7 +85,6 @@
             text-align: left;
         }
         .manifesto-table th {
-            background-color: #f0f0f0;
             font-weight: bold;
             padding: 10px 12px;
             border: 1px solid #ccc;
@@ -94,15 +95,14 @@
             border: 1px solid #ccc;
             vertical-align: top;
         }
-        .manifesto-table tr:nth-child(even) td {
-            background-color: #f9f9f9;
-        }
         .manifesto-table td:first-child {
             font-weight: bold;
             text-align: center;
             white-space: nowrap;
             width: 60px;
         }
+
+        /* ---------- Responsiv ---------- */
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
@@ -264,7 +264,7 @@
                 let tableRows = [];
                 let inTable = false;
 
-                // ⭐ HOPPA ÖVER de 3 första icke-tomma raderna (titel, subtitel, författare)
+                // Hoppa över de 3 första icke-tomma raderna (titel, subtitel, författare)
                 for (let i = 3; i < nonEmptyLines.length; i++) {
                     let line = nonEmptyLines[i].trim();
 
