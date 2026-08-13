@@ -72,7 +72,6 @@
             margin: 30px 0 20px 0;
             color: #1a1a1a;
         }
-
         .manifesto-table {
             width: 100%;
             max-width: 700px;
@@ -99,7 +98,6 @@
             white-space: nowrap;
             width: 60px;
         }
-
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
@@ -204,109 +202,7 @@
         document.getElementById('language-label').textContent = langData.name;
 
         // ============================================================
-        // 2. PARSER – exakt hantering av 7 och 12 tabbar
-        // ============================================================
-
-        const ONE_EMPTY_TABS = 7;
-        const TWO_EMPTY_TABS = 12;
-
-        function parseLine(line) {
-            if (line === "") return [""];
-
-            // Dela på varje tabb – BEHÅLL alla delar (även tomma)
-            const parts = line.split('\t');
-            
-            // Gå igenom och hantera specialfallen
-            const result = [];
-            let i = 0;
-            
-            while (i < parts.length) {
-                // Räkna hur många tomma delar i rad (från extra tabbar)
-                let emptyCount = 0;
-                let j = i;
-                while (j < parts.length && parts[j] === '') {
-                    emptyCount++;
-                    j++;
-                }
-                
-                // Om vi har tomma delar, kontrollera om de är 7 eller 12
-                if (emptyCount > 0) {
-                    // Kolla om detta är en sekvens av 7 eller 12 tabbar
-                    // (dvs. 6 eller 11 tomma delar + en del med innehåll efter)
-                    if (emptyCount === 6 && j < parts.length && parts[j] !== '') {
-                        // 7 tabbar = 1 tom cell
-                        result.push('');
-                        i = j; // hoppa över de tomma delarna
-                        continue;
-                    } else if (emptyCount === 11 && j < parts.length && parts[j] !== '') {
-                        // 12 tabbar = 2 tomma celler
-                        result.push('');
-                        result.push('');
-                        i = j; // hoppa över de tomma delarna
-                        continue;
-                    } else {
-                        // Annars: behåll tomma celler som de är
-                        for (let k = 0; k < emptyCount; k++) {
-                            result.push('');
-                        }
-                        i = j;
-                        continue;
-                    }
-                }
-                
-                // Vanlig cell med innehåll
-                result.push(parts[i].trim());
-                i++;
-            }
-            
-            return result;
-        }
-
-        function buildTableFromRows(rows) {
-            if (rows.length === 0) return '';
-
-            // Första raden = rubrik
-            const headers = rows[0] || [];
-
-            // Hitta max antal kolumner
-            let maxCols = 0;
-            rows.forEach(row => {
-                if (row.length > maxCols) maxCols = row.length;
-            });
-
-            // Normalisera alla rader
-            const normalizedRows = rows.map(row => {
-                while (row.length < maxCols) row.push('');
-                return row;
-            });
-
-            let html = `<table class="manifesto-table">`;
-
-            // Rubrikrad
-            html += `<thead><tr>`;
-            html += `<th>#</th>`;
-            headers.forEach(h => {
-                html += `<th>${h || ''}</th>`;
-            });
-            html += `</tr></thead><tbody>`;
-
-            // Datarader
-            for (let r = 1; r < normalizedRows.length; r++) {
-                const cells = normalizedRows[r];
-                html += `<tr>`;
-                html += `<td>${r}</td>`;
-                cells.forEach(c => {
-                    html += `<td>${c}</td>`;
-                });
-                html += `</tr>`;
-            }
-
-            html += `</tbody></table>`;
-            return html;
-        }
-
-        // ============================================================
-        // 3. LADDA TEXT
+        // 2. LADDA TEXT – med färdig tabell
         // ============================================================
         async function loadText() {
             try {
@@ -317,43 +213,58 @@
                 const lines = text.split('\n');
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
-                let tableRows = [];
-                let inTable = false;
 
+                // Hoppa över de 3 första raderna (titel, subtitel, författare)
                 for (let i = 3; i < lines.length; i++) {
                     const line = lines[i].trim();
 
-                    if (line === '') {
-                        if (inTable && tableRows.length > 0) {
-                            const parsedRows = tableRows.map(row => parseLine(row));
-                            currentHtml += buildTableFromRows(parsedRows);
-                            tableRows = [];
-                            inTable = false;
-                        }
-                        continue;
-                    }
+                    if (line === '') continue;
 
+                    // --- TABELL: Hoppa över ---
+                    // Vi använder den färdiga HTML-tabellen istället
                     if (line === '--- START TABLE ---') {
-                        inTable = true;
-                        tableRows = [];
-                        continue;
-                    }
-
-                    if (line === '--- END TABLE ---') {
-                        inTable = false;
-                        if (tableRows.length > 0) {
-                            const parsedRows = tableRows.map(row => parseLine(row));
-                            currentHtml += buildTableFromRows(parsedRows);
-                            tableRows = [];
+                        // Hoppa över alla rader fram till --- END TABLE ---
+                        while (i < lines.length && lines[i].trim() !== '--- END TABLE ---') {
+                            i++;
                         }
+                        // Lägg till den färdiga tabellen
+                        currentHtml += `
+                        <table class="manifesto-table">
+                            <thead>
+                                <tr>
+                                    <th>Gross National Resource (GNR)</th>
+                                    <th>Debt Write-Off<br>(According to Constitutional Law)</th>
+                                    <th>Sovereignty Share<br>(State Payout)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>25 %</strong><br>(Basic Food, Energy &amp; Electricity)</td>
+                                    <td>25 % of all private debts are written off immediately.</td>
+                                    <td>First payout is activated.<br>Citizens receive purchasing power for what is not yet free.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>50 %</strong><br>(Housing &amp; Transport)</td>
+                                    <td>50 % of all remaining debts are written off.</td>
+                                    <td>The share increases in proportion to the national robot park's production capacity.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>75 %</strong><br>(Technology, Premium &amp; Education)</td>
+                                    <td>75 % of all debts are written off from the banks' books.</td>
+                                    <td>The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>100 %</strong><br>(The Definitive Abundance)</td>
+                                    <td>All debts and money have ceased to exist.</td>
+                                    <td>System complete. Currencies become obsolete; a total free economy prevails.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        `;
                         continue;
                     }
 
-                    if (inTable) {
-                        tableRows.push(line);
-                        continue;
-                    }
-
+                    // --- Övrig formatering ---
                     if (line.match(/^=+$/)) {
                         currentHtml += `<hr class="separator-line">`;
                     } else if (line.toLowerCase() === 'table of contents') {
@@ -367,11 +278,6 @@
                     } else {
                         currentHtml += `<p class="body-text">${line}</p>`;
                     }
-                }
-
-                if (inTable && tableRows.length > 0) {
-                    const parsedRows = tableRows.map(row => parseLine(row));
-                    currentHtml += buildTableFromRows(parsedRows);
                 }
 
                 bodyContent.innerHTML = currentHtml;
