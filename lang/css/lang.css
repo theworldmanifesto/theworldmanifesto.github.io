@@ -128,16 +128,13 @@ body {
     margin: 0;
     text-align: center;
 }
-
 /* ---------- Flagga ---------- */
 .flag-icon {
     display: inline-block;
     width: clamp(16px, 4vw, 24px);
     height: auto;
     vertical-align: middle;
-
-    /* 🎨 Starkare färger – prova dessa värden: */
-    filter: saturate(140%) contrast(110%);
+    border: 1px solid #ccc;
 }
 
 /* ---------- Huvudtitel (Dancing Script) ---------- */
