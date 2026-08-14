@@ -135,6 +135,9 @@ body {
     width: clamp(16px, 4vw, 24px);
     height: auto;
     vertical-align: middle;
+
+    /* 🎨 Starkare färger – prova dessa värden: */
+    filter: saturate(140%) contrast(110%);
 }
 
 /* ---------- Huvudtitel (Dancing Script) ---------- */
