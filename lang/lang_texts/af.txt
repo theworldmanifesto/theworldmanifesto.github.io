@@ -601,8 +601,10 @@ Deur die Vryheidsleer word virtuele getalle (skuld) direk aan fisiese realiteit 
 
 
 2.  Dinamiese Intervalle en Aanpassing
+--- START TABLE ---
 
 Dit is noodsaaklik om te verstaan dat die vier hoofstadia van die Vryheidsleer (25%, 50%, 75%, en 100%) die oorkoepelende, grondwetlike mylpale van die transformasie uitmaak. In praktiese toepassing is die sisteem egter heeltemal buigsaam en dinamies.
+--- END TABLE ---
 
 Die GNR-kantoor se KI kan die indeks teen aansienlik meer gereelde intervalle as dit opdateer – byvoorbeeld, elke maand of by elke individuele persentasiepunt (soos 26%, 27% GNR). Dit bied 'n selfs gladder, meer geleidelike, en voorspelbare oorgang vir beide burgers en die finansiële sektor. Dit sal aan die regerende hervormingsalliansie wees om die intervalle te kies en toe te pas wat tegnies en prakties gepas is sodra hulle die mag oorgeneem het.
 
@@ -616,6 +618,7 @@ Hieronder is die grondwetlike bloudruk vir hoe skuld stap vir stap in soewereini
 Bruto Nasionale Hulpbron		Skuldafskrywing			Soewereiniteitsaandeel
 (Gratis Dekkingskoers)		(Volgens Grondwetlike Wet)		(Staatsuitbetaling)
 
+--- START TABLE ---
 
 25%						25% van alle private skuld		Eerste uitbetaling word
 (Basiese Kos, Energie			word onmiddellik afgeskryf.		geaktiveer. Burgers ontvang
@@ -635,11 +638,13 @@ Bruto Nasionale Hulpbron		Skuldafskrywing			Soewereiniteitsaandeel
 100%					Alle skuld en geld het			Sisteem voltooi. Geldeenhede
 (Die Definitiewe				opgehou om te bestaan.		word uitgedien; 'n totale vrye
 Oorvloed)											ekonomie heers.
+--- END TABLE ---
 
 
 
 4.  Oorsig van die Vryheidsleer se Fases
 
+--- START TABLE ---
 
 Fase 1: 25% GNR – Die Eerste Wegspringskoot
 
@@ -663,6 +668,7 @@ Op hierdie stadium het private ondernemings en banke prakties hul vermoë verloo
 
 
 Fase 4: 100% GNR – Die Dood van Geld en Finale Soewereiniteit
+--- END TABLE ---
 
 Wanneer die Bruto Nasionale Hulpbron 100% bereik, is die transformasie voltooi. Die robotte en hul onderling verbinde KI-stelsels produseer nou alles—van die kleinste koringkorrel tot die mees gesofistikeerde ewige goedere en artistieke afdrukke—in absolute oorvloed.
 

@@ -601,8 +601,10 @@ Poprzez Drabinę Wolności wirtualne liczby (długi) są powiązane bezpośredni
 
 
 2.  Dynamiczne Odstępy i Adaptacja
+--- START TABLE ---
 
 Kluczowe jest zrozumienie, że cztery główne etapy Drabiny Wolności (25%, 50%, 75% i 100%) stanowią nadrzędne, konstytucyjne kamienie milowe transformacji. Jednak w praktycznym zastosowaniu system jest całkowicie elastyczny i dynamiczny.
+--- END TABLE ---
 
 AI Biura GNR może aktualizować indeks w znacznie częstszych odstępach—na przykład co miesiąc lub przy każdym pojedynczym punkcie procentowym (takim jak 26%, 27% GNR). Zapewnia to jeszcze płynniejsze, bardziej stopniowe i przewidywalne przejście zarówno dla obywateli, jak i sektora finansowego. Do rządzącego sojuszu reformatorskiego będzie należeć wybór i zastosowanie odstępów, które są technicznie i praktycznie odpowiednie po przejęciu władzy.
 
@@ -617,6 +619,7 @@ Zasób Narodowy Brutto	Umorzenie Długu			Udział Suwerenności
 (Stopa Darmowego		(Zgodnie z Prawem			(Wypłata Państwowa)
 
 
+--- START TABLE ---
 Pokrycia)				Konstytucyjnym)
 25%					25% wszystkich prywatnych		Pierwsza wypłata jest aktywowana.
 (Podstawowa Żywność,	długów zostaje natychmiast		Obywatele otrzymują siłę
@@ -635,11 +638,13 @@ i Edukacja)									drastycznie, gdy sfera luksusu
 100%				Wszystkie długi i pieniądze		System kompletny. Waluty stają się
 (Ostateczna			przestały istnieć.				przestarzałe; panuje całkowicie
 Obfitość)										wolna gospodarka.
+--- END TABLE ---
 
 
 
 4.  Przegląd Faz Drabiny Wolności
 
+--- START TABLE ---
 
 Faza 1: 25% GNR – Pierwszy Strzał Startowy
 
@@ -663,6 +668,7 @@ Na tym etapie prywatne przedsiębiorstwa i banki praktycznie straciły zdolnoś�
 
 
 Faza 4: 100% GNR – Śmierć Pieniądza i Ostateczna Suwerenność
+--- END TABLE ---
 
 Gdy Zasób Narodowy Brutto osiąga 100%, transformacja jest zakończona. Roboty i ich połączone systemy AI produkują teraz wszystko—od najmniejszego ziarna pszenicy po najbardziej wyrafinowane wieczne dobra i artystyczne druki—w absolutnej obfitości.
 

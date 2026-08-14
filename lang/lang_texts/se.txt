@@ -564,8 +564,10 @@ Friddjavuođalohpahaga bokte čatnojuvvojit virtuála logut (skulddat) njuolggo 
 
 
 2. Dinamihkalaš gaskaáigodagat ja heiveheapmi
+--- START TABLE ---
 
 Lea mearrideaddji ipmirdit ahte Friddjavuođalohpahaga njeallje váldostuolu (25 %, 50 %, 75 % ja 100 %) leat ollislaš, konstitušuvnnalaš mihtustálut transformašuvnna várás. Geavatlaš ollašuhttimis lea vuogádat dattege ollislaččat njuolggu ja dinamihkalaš.
+--- END TABLE ---
 
 BNR-kantuvrra AI sáhttá ođastit indexa ollu dárkileappo gaskaáigodagaiguin – omd. juohke mánu dahje juohke ovttaskas proseantta (nugo 26 %, 27 % BNR). Dát addá vel njuolggo, eanet gáržžes ja einnostahtti sirdásanmuttu sihke ássiide ja finánsasurggiide. Lea reformalihtu várás válljet ja doaimmahit daid gaskaáigodagaid mat leat teknihkalaččat ja geavatlaččat heivvolaččat go dat leat váldán válddi.
 
@@ -579,6 +581,7 @@ Dás čuovvu konstitušuvnnalaš sárgosplána das movt skuldde rievdada suveren
 Bruttonationalresurs		Skulddasihkku				Suverenitehta-oassi
 (Nuvttá-gokčan)			(Konstitušuvnnalaš lága mielde)	(Stáhtalaš máksu)
 
+--- START TABLE ---
 
 25%					25% buot priváhta skulddain		Vuosttaš máksu aktiverejuvvo. Ássit
 (Vuođđobiepmu,			sihkkot dakkaviđe.			ožžot oastinnávcca dan várás maid
@@ -594,7 +597,9 @@ gálvvut & Oahpahus)								suorgi unnu.
 100%				Buot skulddat ja ruđat leat		Vuogádat ollašuhttojuvvon. Valuhtat
 (Ollislaš Abuidvuohta)		jávkan.					šaddet dárbbameahttumin; ollislaš
 											nuvttá-ekonomiija.
+--- END TABLE ---
 
+--- START TABLE ---
 4. Friddjavuođalohpahaga fazaid lohkadeapmi
     Fazat 1 (25 % BNR): Dát lea reformma deháleamos fazat, gos dološ vuogádaga psikologalaš ja ekonomalaš čielgi cuvko. Go lihtu robotat leat automatiiserejuvvon buvttadeami ja juohkima, de cealkojuvvo 25 % BNR. Dakkaviđe sihkkot 25 % ássiid skulddain.
     Fazat 2 (50 % BNR): Robotiseren viidána huksen- ja girdinsuorgái. Ássan ja girdin šaddet nuvttá. Bealli ássiid skulddain sihkkot.
@@ -605,6 +610,7 @@ gálvvut & Oahpahus)								suorgi unnu.
 
 
     Fazat 4 (100 % BNR): Transformation ollašuhttojuvvon. Robotat buvttadit buot. Ruđat ja skulddat leat jávkan. Olmmoš lea joksan ollislaš suverenitehta.
+--- END TABLE ---
 
 5. Seailluhusa lunddolašvuohta ja páŋkkuid loahpalaš giddejeapmi
 

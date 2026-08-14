@@ -599,8 +599,10 @@ Gjennom Frihetstrappen knyttes virtuelle tall (gjeld) direkte til fysisk virkeli
 
 
 2.  Dynamiske intervaller og tilpasning
+--- START TABLE ---
 
 Det er avgjørende å forstå at de fire hovedtrinnene i Frihetstrappen (25 %, 50 %, 75 % og 100 %) utgjør de overordnede, konstitusjonelle milepælene for transformasjonen. I den praktiske anvendelsen er systemet derimot helt fleksibelt og dynamisk.
+--- END TABLE ---
 
 BNR-kontorets AI kan oppdatere indeksen med betydelig tettere intervaller enn dette – for eksempel hver måned eller ved hver enkelt prosentenhet (slik som 26 %, 27 % BNR). Dette gir en enda mykere, mer glidende og forutsigbar overgang for både borgerne og finanssektoren. Det blir opp til den regjerende reformalliansen å selv velge og anvende de intervallene som er teknisk og praktisk hensiktsmessige når de vel har tatt makten.
 
@@ -614,6 +616,7 @@ Nedenfor følger den konstitusjonelle planen for hvordan gjeld forvandles til su
 Bruttonasjonalressurs	Gjeldsavskrivning			Suverenitetsandel
 (Gratis dekningsgrad)		(Ifølge konstitusjonell lov)		(Statlig utbetaling)
 
+--- START TABLE ---
 
 25 %					25 % av alle private			Første utbetaling aktiveres.
 (Grunnleggende mat,		gjeld slettes				Borgerne får kjøpekraft for det
@@ -629,8 +632,10 @@ varer & Utdanning)								dramatisk ettersom
 											luksussfæren krymper.
 100 %				All gjeld og alle penger		Systemet fullført. Valutaer
 (Det Definitive			har opphørt å				blir overflødige; total
+--- END TABLE ---
 
 Overflødet)			eksistere.					gratisøkonomi råder.
+--- START TABLE ---
 4.  Gjennomgang av Frihetstrappens faser
 Fase 1: 25 % BNR – Det første startskuddet
 
@@ -656,6 +661,7 @@ Når 75 % av samfunnets totale ressursbehov dekkes helt uten menneskelig arbeids
 Her har det private næringslivet og bankene i praksis mistet sin evne til å presse mennesker til arbeid. De fleste borgere velger å leve helt på alliansens gratisutbud og sin Suverenitetsandel, noe som tvinger de siste private bedriftene til enten å gå konkurs eller overlate sine produksjonslinjer til den selveiende infrastrukturen.
 
 Fase 4: 100 % BNR – Pengenes død og den endelige suvereniteten
+--- END TABLE ---
 
 Når Bruttonasjonalressursen når 100 %, er transformasjonen fullført. Roboten og deres sammenkoblede AI-systemer produserer nå alt – fra det minste hvete til de mest sofistikerte evighetsvarene og kunstneriske trykkene – i absolutt overflødighet.
 

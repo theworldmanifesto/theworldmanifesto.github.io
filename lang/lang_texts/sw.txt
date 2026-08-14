@@ -610,8 +610,10 @@ Kupitia Ngazi ya Uhuru, nambari za kidhahania (madeni) zinaunganishwa moja kwa m
 
 
 2. Vipindi Vinavyobadilika na Kubadilika
+--- START TABLE ---
 
 Ni muhimu kuelewa kwamba hatua nne kuu za Ngazi ya Uhuru (25%, 50%, 75%, na 100%) zinaunda hatua muhimu za kikatiba, za jumla za mageuzi. Katika matumizi ya vitendo, hata hivyo, mfumo unabadilika kabisa na wenye nguvu.
+--- END TABLE ---
 
 AI ya Ofisi ya GNR inaweza kusasisha faharisi katika vipindi vya mara nyingi zaidi kuliko hivyo—kwa mfano, kila mwezi au katika kila asilimia ya mtu mmoja mmoja (kama vile 26%, 27% GNR). Hii inatoa mpito laini zaidi, wa taratibu zaidi, na unaotabirika kwa wananchi na sekta ya kifedha. Itakuwa kwa muungano wa mageuzi unaotawala kuchagua na kutumia vipindi ambavyo vinafaa kiufundi na kivitendo mara tu watakapochukua mamlaka.
 
@@ -625,6 +627,7 @@ Chini ni ramani ya kikatiba ya jinsi deni linavyobadilishwa kuwa ukuu, hatua kwa
 Rasilimali ya Taifa ya		Ufutaji Deni				Sehemu ya Ukuu
 Jumla (Kiwango cha		(Kwa mujibu wa Sheria ya		(Malipo ya Serikali)
 Kufidia Bure)			Katiba)
+--- START TABLE ---
 
 25%					Asilimia 25 ya madeni yote		Malipo ya kwanza yanaamilishwa.
 (Chakula cha Msingi,		ya kibinafsi yanafutwa mara		Wananchi wanapokea uwezo
@@ -643,11 +646,13 @@ ya Juu na Elimu)			vya benki.					kikubwa kadri eneo la anasa
 100%				Madeni yote na fedha			Mfumo umekamilika. Sarafu
 (Ukamilifu				vimekoma kuwepo.			zinapitwa na wakati; uchumi
 wa Dhati)									huru kamili unatawala.
+--- END TABLE ---
 
 
 
 4. Mapitio ya Awamu za Ngazi ya Uhuru
 
+--- START TABLE ---
 
 Awamu ya 1: 25% GNR – Mwanzo wa Risasi ya Kwanza
 
@@ -671,6 +676,7 @@ Katika hatua hii, biashara za kibinafsi na benki kivitendo zimepoteza uwezo wao 
 
 
 Awamu ya 4: 100% GNR – Kifo cha Fedha na Ukuu wa Mwisho
+--- END TABLE ---
 
 Wakati Rasilimali ya Taifa ya Jumla inafikia 100%, mageuzi yamekamilika. Roboti na mifumo yao ya AI iliyounganishwa sasa inazalisha kila kitu—kutoka kwa chembe ndogo zaidi ya ngano hadi bidhaa za kudumu za kisasa zaidi na chapa za kisanii—katika wingi kamili.
 

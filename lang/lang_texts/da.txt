@@ -607,8 +607,10 @@ Gennem Frihedsstigen kobles virtuelle tal (gæld) direkte til fysisk virkelighed
 
 
 2. Dynamiske intervaller og tilpasning
+--- START TABLE ---
 
 Det er afgørende at forstå, at de fire hovedtrin i Frihedsstigen (25 %, 50 %, 75 % og 100 %) udgør de overordnede, konstitutionelle milepæle for transformationen. I den praktiske anvendelse er systemet derimod fuldstændig fleksibelt og dynamisk.
+--- END TABLE ---
 
 BNR-kontorets AI kan opdatere indekset med betydeligt tættere intervaller end dette – for eksempel hver måned eller ved hver enkelt procentenhed (såsom 26 %, 27 % BNR). Dette giver en endnu blødere, mere glidende og forudsigelig overgang for både borgerne og finanssektoren. Det bliver op til den regerende reformalliance selv at vælge og anvende de intervaller, der er teknisk og praktisk hensigtsmæssige, når de har taget magten.
 
@@ -621,6 +623,7 @@ Nedenfor følger den konstitutionelle tegning for, hvordan gæld forvandles til 
 
 Bruttonationalresurs			Gældsafskrivning			Suverænitetsandel
 (Gratis dækningsgrad)			(Ifølge konstitutionel lov)		(Statslig udbetaling)
+--- START TABLE ---
 
 25 %						25 % af al privat				Første udbetaling
 (Basislevnedsmidler,			gæld slettes				aktiveres. Borgerne får
@@ -639,11 +642,13 @@ varer & Uddannelse)							efterhånden som luksussfæren
 100 %					Al gæld og alle penge			Systemet fuldendt. Valutaer
 (Det Definitive				er ophørt med at				bliver overflødige; total
 Overflod)					eksistere.					gratisøkonomi hersker.
+--- END TABLE ---
 
 
 
 4. Gennemgang af Frihedsstigens faser
 
+--- START TABLE ---
 
 Fase 1: 25 % BNR – Det første startsignal
 
@@ -667,6 +672,7 @@ Her har det private erhvervsliv og bankerne i praksis mistet evnen til at presse
 
 
 Fase 4: 100 % BNR – Pengenes død og den endelige suverænitet
+--- END TABLE ---
 
 Når Bruttonationalresursen når 100 %, er transformationen fuldendt. Robotten og deres indbyrdes forbundne AI-systemer producerer nu alt – fra det mindste hvedekorn til de mest sofistikerede evighedsvarer og kunstneriske tryk – i absolut overflod.
 

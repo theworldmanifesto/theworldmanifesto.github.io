@@ -601,8 +601,10 @@ Através da Escada da Liberdade, números virtuais (dívidas) são ligados diret
 
 
 2. Intervalos Dinâmicos e Adaptação
+--- START TABLE ---
 
 É crucial entender que os quatro estágios principais da Escada da Liberdade (25%, 50%, 75% e 100%) constituem os marcos constitucionais abrangentes da transformação. Na aplicação prática, no entanto, o sistema é completamente flexível e dinâmico.
+--- END TABLE ---
 
 A IA do Escritório de GNR pode atualizar o índice em intervalos significativamente mais frequentes do que isso – por exemplo, a cada mês ou a cada ponto percentual individual (como 26%, 27% de GNR). Isso fornece uma transição ainda mais suave, gradual e previsível tanto para os cidadãos quanto para o setor financeiro. Caberá à aliança de reforma governante escolher e aplicar os intervalos que forem técnica e praticamente apropriados uma vez que tenham tomado o poder.
 
@@ -619,6 +621,7 @@ Recurso Nacional Bruto Baixa de Dívida Cota de Soberania
 (Taxa de Cobertura Gratuita) (De Acordo com a Lei (Pagamento do Estado)
 
 Constitucional)
+--- START TABLE ---
 
 25% 25% de todas as dívidas O primeiro pagamento é ativado.
 
@@ -648,6 +651,7 @@ do parque de robôs nacional.
 esfera de luxo encolhe.
 
 100% Todas as dívidas e dinheiro Sistema completo. As moedas
+--- END TABLE ---
 
 
 (A Abundância deixaram de existir. tornam-se obsoletas; uma
@@ -657,6 +661,7 @@ Definitiva) economia livre total prevalece.
 4. Revisão das Fases da Escada da Liberdade
 
 
+--- START TABLE ---
 
 Fase 1: 25% de GNR – O Primeiro Tiro de Partida
 
@@ -669,6 +674,7 @@ Fase 2: 50% de GNR – Quebrando o Monopólio da Habitação
 Na próxima fase, a robotização se expande para o setor de construção, manutenção e transporte público e de carga. Quando habitação e transporte tiverem sido integrados ao sistema gratuito da aliança, o país atinge 50% de GNR.
 
 Nesta fase, metade de todas as dívidas dos cidadãos e do Estado são baixadas dos livros dos bancos. O mercado imobiliário, que durante os anos de dívida funcionou como a ferramenta primária para manter a população aprisionada em empréstimos vitalícios, colapsa em sua velha forma e ressurge como um direito humano. Simultaneamente, a Cota de Soberania é ajustada para cima em relação ao aumento da produção de GNR (o sucessor nacionalizado do PIB) pelo parque de máquinas. Fase 3: 75% de GNR – Desmantelando a Armadilha do Luxo Quando 75% das necessidades totais de recursos da sociedade são cobertas inteiramente sem trabalho humano — incluindo tecnologia avançada, educação, saúde e os bens premium descritos no capítulo sobre O Princípio da Totalidade — 75% de todas as dívidas restantes desaparecem. Neste estágio, a empresa privada e os bancos praticamente perderam sua capacidade de forçar as pessoas a trabalhar. A maioria dos cidadãos escolhe viver inteiramente das ofertas gratuitas da aliança e de sua Cota de Soberania, forçando as últimas empresas privadas a falir ou entregar suas linhas de produção à infraestrutura autoproprietária. Fase 4: 100% de GNR – A Morte do Dinheiro e a Soberania Final Quando o Recurso Nacional Bruto atinge 100%, a transformação está completa. Os robôs e seus sistemas de IA interconectados agora produzem tudo — do menor grão de trigo aos mais sofisticados bens eternos e impressões artísticas — em abundância absoluta. Neste ponto final, todo dinheiro e dívidas deixam de existir de acordo com a lei constitucional. Os conceitos de "empréstimo", "juros", "preço" e "moeda" tornam-se termos históricos obsoletos, assim como o feudalismo e a servidão são hoje. A humanidade deu o passo final na escada: da escuridão do sistema econômico de dívida para a soberania total garantida por máquinas. 5. A Natureza da Poupança e o Fechamento Final dos Bancos Uma pergunta comum para qualquer um que estude este plano é: O que acontece com o dinheiro poupado pelos cidadãos durante a transição, e o Estado irá confiscá-lo? A resposta é não. O Estado soberano nunca toca nas poupanças privadas dos cidadãos. Durante as primeiras fases da Escada da Liberdade, os fundos poupados servem como um bônus extra para o indivíduo comprar bens de valor agregado que ainda não tiveram tempo de ser integrados à economia livre. Quando o Recurso Nacional Bruto (GNR) finalmente atinge 100%, nenhum confisco agressivo de dinheiro ocorre. Em vez disso, a morte natural e incruenta do dinheiro acontece. Porque os robôs da aliança agora entregam TUDO — incluindo o luxo mais sofisticado e bens eternos — em perfeição absoluta e completamente gratuito, as velhas moedas perdem sua função. Elas se tornam sem valor, não por decreto, mas porque não existe mais nada na sociedade que exija pagamento. Neste ponto final, os bancos privados são fechados para sempre. Nenhuma máquina será desperdiçada na manutenção de um sistema de transações obsoleto. Os bancos são completamente substituídos pelo Escritório de Recursos digital, onde a IA e os robôs logísticos administram a abundância física diretamente aos cidadãos. A tirania dos números acabou; o que resta são recursos reais e total liberdade humana.
+--- END TABLE ---
 
 
 

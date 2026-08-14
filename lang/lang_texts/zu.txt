@@ -601,8 +601,10 @@ NgeLadi Lenkululeko, izinombolo ezibonakalayo (izikweletu) zixhunywa ngqo neqini
 
 
 2.  Izikhawu Eziguqukayo kanye Nokuzivumelanisa Nezimo
+--- START TABLE ---
 
 Kubalulekile ukuqonda ukuthi izigaba ezine eziyinhloko zeLadi Lenkululeko (25%, 50%, 75%, no-100%) zakha izimpawu ezinkulu, ezingokomthethosisekelo zoguquko. Ekusebenzeni okungokoqobo, nokho, uhlelo luguquguquka ngokuphelele futhi lunamandla.
+--- END TABLE ---
 
 I-AI yeHhovisi le-GNR ingabuyekeza inkomba ngezikhawu eziningi kakhulu kunaleso—ngokwesibonelo, njalo ngenyanga noma kuwo wonke amaphesenti angawodwana (njengo-26%, 27% GNR). Lokhu kunikeza inguquko ebushelelezi nakakhulu, ehamba kancane, futhi engabikezelwa kuzo zombili izakhamuzi kanye nomkhakha wezezimali. Kuyoba kumfelandawonye wenguquko obusayo ukukhetha nokusebenzisa izikhawu ezifanele ngokobuchwepheshe nangokusebenza uma esethathe amandla.
 
@@ -617,6 +619,7 @@ Insiza Kazwelonke Ephelele	Ukucishwa Kwezikweletu	Isabelo Sobukhosi
 (Izinga Lokufakwa Mahhala)		(NgokoMthetho			(Inkokhelo Yombuso)
 
 
+--- START TABLE ---
 						Womthethosisekelo)
 25%						U-25% wazo zonke		Inkokhelo yokuqala iyenziwa
 (Ukudla Okuyisisekelo,		izikweletu ezizimele		isebenze. Izakhamuzi zithola amandla
@@ -635,6 +638,7 @@ NeMfundo)				ezincwadini zamabhange.	njengoba indawo yokunethezeka
 											isincipha.
 100%					Zonke izikweletu nemali	Uhlelo seluphelele. Izinhlobo zemali
 (Ukuchichima				seziyekile ukuba khona.	ziphelelwa yisikhathi; kunomnotho
+--- END TABLE ---
 
 
 
@@ -642,6 +646,7 @@ Okuphelele)									okhululekile ophelele.
 
 
 4.  Ukubuyekezwa Kwezigaba ZeLadi Lenkululeko
+--- START TABLE ---
 
 Isigaba 1: 25% GNR – Ukudutshulwa Kokuqalisa Kokuqala
 
@@ -665,6 +670,7 @@ Lapho u-75% wezidingo zezinsiza zomphakathi sekuhlanganiswe ngokuphelele ngaphan
 Kulesi sigaba, amabhizinisi azimele namabhange aselahlekelwe amandla okuphoqa abantu ukuba basebenze. Iningi lezakhamuzi likhetha ukuphila ngokuphelele ngeminikelo yamahhala yomfelandawonye kanye Nesabelo Sabo Sobukhosi, okuphoqa izinkampani ezizimele zokugcina ukuthi ziqothuke noma zinikele ngemigqa yazo yokukhiqiza kungqalasizinda ezibusayo.
 
 Isigaba 4: 100% GNR – Ukufa Kwemali kanye Nobukhosi Bokugcina
+--- END TABLE ---
 
 Lapho iNsiza Kazwelonke Ephelele ifinyelela ku-100%, uguquko seluphelele. Amarobhothi kanye nezinhlelo zawo ze-AI ezixhumene manje zikhiqiza konke—kusukela ohlamvwini oluncane lukakolweni kuya ezimpahleni eziphila phakade eziyinkimbinkimbi kakhulu kanye nokuphrinta kobuciko—ngokuchichima okuphelele.
 

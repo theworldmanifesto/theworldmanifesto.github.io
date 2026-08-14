@@ -601,8 +601,10 @@ Thông qua Nấc thang Tự do, những con số ảo (nợ) được liên kế
 
 
 2. Các Khoảng Động và Sự Thích Ứng
+--- START TABLE ---
 
 Điều quan trọng là phải hiểu rằng bốn giai đoạn chính của Nấc thang Tự do (25%, 50%, 75% và 100%) tạo thành các cột mốc hiến định bao trùm của sự chuyển đổi. Tuy nhiên, trong ứng dụng thực tế, hệ thống hoàn toàn linh hoạt và năng động.
+--- END TABLE ---
 
 AI của Văn phòng GNR có thể cập nhật chỉ số ở các khoảng thời gian thường xuyên hơn đáng kể so với điều đó — ví dụ: hàng tháng hoặc tại mỗi điểm phần trăm riêng lẻ (chẳng hạn như 26%, 27% GNR). Điều này cung cấp một sự chuyển đổi thậm chí còn suôn sẻ hơn, dần dần hơn và có thể dự đoán được cho cả công dân và khu vực tài chính. Sẽ tùy thuộc vào liên minh cải cách cầm quyền để lựa chọn và áp dụng các khoảng thời gian phù hợp về mặt kỹ thuật và thực tiễn một khi họ đã nắm quyền.
 
@@ -615,6 +617,7 @@ Dưới đây là bản thiết kế hiến định về cách nợ được chu
 
 Tổng Tài nguyên Quốc gia		Xóa Nợ				Phần Chia Chủ Quyền
 (Tỷ lệ Bao phủ Miễn phí)		(Theo Luật Hiến pháp)		(Chi trả của Nhà nước)
+--- START TABLE ---
 
 25%						25% của tất cả các khoản	Đợt chi trả đầu tiên được kích hoạt.
 (Thực phẩm Cơ bản,			nợ tư nhân được xóa		Công dân nhận được sức mua
@@ -632,9 +635,11 @@ Năng lượng & Điện)			ngay lập tức.			cho những gì chưa miễn ph�
 (Sự Phong phú				tiền đã không còn tồn tại.	trở nên lỗi thời; một nền
 Dứt khoát)										kinh tế tự do toàn bộ
 											chiếm ưu thế.
+--- END TABLE ---
 
 
 4. Xem xét Các Giai đoạn của Nấc thang Tự do
+--- START TABLE ---
 
 Giai đoạn 1: 25% GNR – Phát Súng Khai Cuộc Đầu Tiên
 
@@ -653,6 +658,7 @@ Trong giai đoạn này, một nửa số nợ của công dân và nhà nước
 Giai đoạn 3: 75% GNR – Tháo Dỡ Cái Bẫy Xa Xỉ
 
 Khi 75% tổng nhu cầu tài nguyên của xã hội được đáp ứng hoàn toàn mà không cần lao động của con người — bao gồm công nghệ tiên tiến, giáo dục, chăm sóc sức khỏe và các hàng hóa cao cấp được mô tả trong chương về Nguyên tắc Toàn thể — 75% của tất cả các khoản nợ còn lại biến mất. Ở giai đoạn này, doanh nghiệp tư nhân và các ngân hàng trên thực tế đã mất khả năng buộc mọi người phải làm việc. Hầu hết công dân chọn sống hoàn toàn bằng các dịch vụ miễn phí của liên minh và Phần Chia Chủ Quyền của họ, buộc các công ty tư nhân cuối cùng hoặc phá sản hoặc giao lại dây chuyền sản xuất của họ cho cơ sở hạ tầng tự sở hữu. Giai đoạn 4: 100% GNR – Cái Chết của Tiền và Chủ Quyền Cuối Cùng Khi Tổng Tài nguyên Quốc gia đạt đến 100%, sự chuyển đổi hoàn tất. Các robot và hệ thống AI liên kết của chúng giờ đây sản xuất mọi thứ — từ hạt lúa mì nhỏ nhất đến hàng hóa vĩnh cửu tinh vi nhất và các bản in nghệ thuật — trong sự phong phú tuyệt đối. Tại điểm cuối cùng này, tất cả tiền bạc và nợ nần không còn tồn tại theo luật hiến pháp. Các khái niệm "khoản vay", "lãi suất", "giá cả" và "tiền tệ" trở thành những thuật ngữ lịch sử lỗi thời, giống như chế độ phong kiến và nông nô ngày nay. Nhân loại đã bước bước cuối cùng trên nấc thang: từ bóng tối của hệ thống nợ kinh tế đến chủ quyền toàn bộ, được đảm bảo bằng máy móc. 5. Bản Chất của Tiết Kiệm và Sự Đóng Cửa Cuối Cùng của Các Ngân Hàng Một câu hỏi phổ biến cho bất kỳ ai nghiên cứu bản thiết kế này là: Điều gì xảy ra với tiền tiết kiệm của công dân trong quá trình chuyển đổi, và liệu nhà nước có tịch thu nó không? Câu trả lời là không. Nhà nước có chủ quyền không bao giờ đụng đến tiền tiết kiệm tư nhân của công dân. Trong các giai đoạn đầu tiên của Nấc thang Tự do, các khoản tiền tiết kiệm được dùng như một phần thưởng thêm cho cá nhân để mua hàng hóa giá trị gia tăng mà chưa có thời gian được tích hợp vào nền kinh tế tự do. Khi Tổng Tài nguyên Quốc gia (GNR) cuối cùng đạt đến 100%, không có sự tịch thu tiền bạc hung hăng nào xảy ra. Thay vào đó, cái chết tự nhiên và không đổ máu của tiền diễn ra. Bởi vì các robot của liên minh giờ đây cung cấp MỌI THỨ — bao gồm cả sự xa xỉ tinh vi nhất và hàng hóa vĩnh cửu — trong sự hoàn hảo tuyệt đối và hoàn toàn miễn phí, các loại tiền tệ cũ mất đi chức năng của chúng. Chúng trở nên vô giá trị, không phải do sắc lệnh, mà bởi vì không còn gì tồn tại trong xã hội đòi hỏi thanh toán nữa. Tại điểm cuối cùng này, các ngân hàng tư nhân bị đóng cửa vĩnh viễn. Sẽ không có máy móc nào bị lãng phí vào việc duy trì một hệ thống giao dịch lỗi thời. Các ngân hàng được thay thế hoàn toàn bởi Văn phòng Tài nguyên kỹ thuật số, nơi AI và robot hậu cần quản lý sự phong phú vật chất trực tiếp cho công dân. Sự chuyên chế của những con số đã kết thúc; những gì còn lại là tài nguyên thực sự và tự do hoàn toàn của con người.
+--- END TABLE ---
 
 
 

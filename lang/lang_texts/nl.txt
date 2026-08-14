@@ -601,8 +601,10 @@ Via de Vrijheidsladder worden virtuele getallen (schulden) direct gekoppeld aan 
 
 
 2.  Dynamische Intervallen en Aanpassing
+--- START TABLE ---
 
 Het is cruciaal om te begrijpen dat de vier hoofdfasen van de Vrijheidsladder (25%, 50%, 75% en 100%) de overkoepelende, constitutionele mijlpalen van de transformatie vormen. In praktische toepassing is het systeem echter volledig flexibel en dynamisch.
+--- END TABLE ---
 
 De AI van het GNR-Bureau kan de index met aanzienlijk frequentere intervallen bijwerken dan dat—bijvoorbeeld elke maand of op elk individueel procentpunt (zoals 26%, 27% GNR). Dit zorgt voor een nog soepelere, geleidelijkere en voorspelbaardere overgang voor zowel burgers als de financiële sector. Het zal aan de regerende hervormingsalliantie zijn om de intervallen te kiezen en toe te passen die technisch en praktisch geschikt zijn zodra zij de macht hebben overgenomen.
 
@@ -616,6 +618,7 @@ Hieronder staat de constitutionele blauwdruk voor hoe schuld stap voor stap word
 Bruto Nationaal Hulpbron	Schuldafschrijving				Soevereiniteitsaandeel
 (Gratis Dekkingsgraad)	(Volgens Grondwettelijk Recht)		(Staatsuitkering)
 
+--- START TABLE ---
 
 25%					25% van alle private schulden		De eerste uitkering wordt
 (Basisvoedsel, Energie	worden onmiddellijk afgeschreven.	geactiveerd. Burgers ontvangen
@@ -631,12 +634,14 @@ en Elektriciteit)										koopkracht voor wat nog niet
 en Onderwijs)			van de banken.					aan geld daalt drastisch
 												naarmate de luxesfeer slinkt.
 100%				Alle schulden en geld hebben		Systeem voltooid. Valuta's
+--- END TABLE ---
 
 (De Definitieve			opgehouden te bestaan.			worden overbodig; een totale
 Overvloed)										vrije economie overheerst.
 4.  Beoordeling van de Fasen van de Vrijheidsladder
 
 
+--- START TABLE ---
 
 Fase 1: 25% GNR – Het Eerste Startschot
 
@@ -660,6 +665,7 @@ Wanneer 75% van de totale hulpbronnenbehoeften van de samenleving volledig zonde
 In dit stadium hebben private ondernemingen en banken praktisch hun vermogen verloren om mensen tot werken te dwingen. De meeste burgers kiezen ervoor volledig te leven van het gratis aanbod van de alliantie en hun Soevereiniteitsaandeel, waardoor de laatste private bedrijven worden gedwongen ofwel failliet te gaan of hun productielijnen over te dragen aan de zelfbezittende infrastructuur.
 
 Fase 4: 100% GNR – De Dood van Geld en Finale Soevereiniteit
+--- END TABLE ---
 
 
 Wanneer de Bruto Nationaal Hulpbron 100% bereikt, is de transformatie voltooid. De robots en hun onderling verbonden AI-systemen produceren nu alles—van de kleinste graankorrel tot de meest gesofistikeerde eeuwigdurende goederen en artistieke drukken—in absolute overvloed.

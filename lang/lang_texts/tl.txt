@@ -577,13 +577,16 @@ N. Ang Hagdan ng Kalayaan : Mula sa Utang patungo sa Soberanya
 Ang Matematikal na Transpormasyon Upang gabayan ang isang reform alliance palabas sa pagkakahawak ng pribadong sistema ng utang, kinakailangan ang ganap na paghuhula. Ang transisyon ay hindi dapat itayo sa biglaan, magulong mga salpok o hindi mahuhulaang ekonomikong shockwave.
 
 Ang solusyon ay isang statutory, naka-synchronize na hagdan kung saan ang pinansyal na paglaya ng mga mamamayan ay nagaganap sa eksaktong parehong bilis ng pagpapalawak ng tunay na produksyon—ang Gross National Resource (GNR). Sa pamamagitan ng Hagdan ng Kalayaan, ang mga virtual na numero (utang) ay direktang iniuugnay sa pisikal na katotohanan (robotisadong produksyon).
+--- START TABLE ---
 
 Sa mismong segundo na kinukuha ng mga makina ang isang bahagi ng buhay at ginagawa itong libre para sa populasyon, ang mga bangko ng lumang sistema ay napipilitang umatras sa isang kaukulang antas. Dynamic na mga Interval at Adaptasyon Krusyal na maunawaan na ang apat na pangunahing yugto ng Hagdan ng Kalayaan (25%, 50%, 75%, at 100%) ang bumubuo sa pangkalahatan, konstitusyonal na mga milestone ng transpormasyon.
+--- END TABLE ---
 
 Gayunpaman, sa praktikal na aplikasyon, ang sistema ay ganap na flexible at dynamic. Ang AI ng GNR Office ay maaaring mag-update ng index sa mas madalas na mga interval kaysa doon – halimbawa, bawat buwan o sa bawat indibidwal na porsyento (tulad ng 26%, 27% GNR).
 
 
 Nagbibigay ito ng mas maayos, mas unti-unti, at mahuhulaang transisyon para sa kapwa mga mamamayan at sektor ng pananalapi. Nasa governing reform alliance ang pagpili at paglalapat ng mga interval na teknikal at praktikal na angkop kapag sila ay nakaupo na sa kapangyarihan.
+--- START TABLE ---
 
 Narito ang konstitusyonal na blueprint para sa kung paano ang utang ay binabago tungo sa soberanya, hakbang-hakbang. Ang Hagdan ng Kalayaan: Ang Konstitusyonal na Pag-phase Out Gross National Resource Debt Write-Off Sovereignty Share (Free Coverage Rate) (Ayon sa Konstitusyonal na Batas) (State Payout) 25 % (Pangunahing 25 % ng lahat ng pribadong utang Ang unang payout ay Pagkain, Enerhiya & ay agad na na-write off. na-activate.
 
@@ -594,7 +597,9 @@ Ang mga Elektrisidad) mamamayan ay tumatanggap ng purchasing power para sa kung 
 
 
 100 % (Ang Ganap na 100 % ng lahat ng utang at pera ay Kumpleto ang sistema. Ang mga Kasaganaan) tumitigil sa pag-iral. currency ay nagiging lipas na; isang kabuuang malayang ekonomiya ang umiiral.
+--- END TABLE ---
 
+--- START TABLE ---
 
 Pagsusuri ng mga Phase ng Hagdan ng Kalayaan Phase 1: 25% GNR – Ang Unang Panimulang Putok Ito ang pinaka-kritikal na phase ng reporma, kung saan ang sikolohikal at ekonomikong backbone ng lumang sistema ay nababali. Kapag ang mga self-owning na robot ng alyansa ay na-automate na ang produksyon at pamamahagi ng pangunahing pagkain pati na ang suplay ng enerhiya ng bansa (elektrisidad at pag-init), isang GNR na 25% ang idinedeklara.
 
@@ -615,6 +620,7 @@ Phase 3: 75% GNR – Pagbuwag sa Bitag ng Luho Kapag ang 75% ng kabuuang pangang
 Karamihan sa mga mamamayan ay pinipiling mamuhay nang ganap sa mga libreng alok ng alyansa at sa kanilang Bahagi ng Soberanya, na pinipilit ang huling mga pribadong kumpanya na alinman sa mag-bangkarota o ibigay ang kanilang mga linya ng produksyon sa self-owning na imprastraktura.
 
 Phase 4: 100% GNR – Ang Kamatayan ng Pera at Huling Soberanya Kapag ang Gross National Resource ay umabot sa 100%, ang transpormasyon ay kumpleto na.
+--- END TABLE ---
 
 Ang mga robot at ang kanilang interconnected na mga sistema ng AI ay gumagawa na ngayon ng lahat—mula sa pinakamaliit na butil ng trigo hanggang sa pinaka-sopistikadong walang hanggang mga produkto at artistikong print—sa ganap na kasaganaan.
 

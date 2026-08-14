@@ -537,8 +537,10 @@ Loynin er ein løgfrøðilig, samstillt stigi, har frelsi borgaranna í fíggjar
 Ígjøgnum Frælsisstigarnar verða sýndar tøl (skuldir) tengdar beinleiðis við likamligan veruleika (vélmenda framleiðslu). Á sama sekundi sum vélarnar taka yvir liviverissvøði og gera tað ókeypis fyri íbúgvar, verða bankar hinnar gomlu skipanar noyddir at bakka í sama mun.
 
 2.  Svígandi tíðarskeið og ástøði
+--- START TABLE ---
 
 Tað er umráðandi at skilja, at teir fýra hovuðsstigarnir í Frælsisstigunum (25 %, 50 %, 75 % og 100 %) mynda ta yvirskipaðu, grundlógarligu ásteinarnar fyri umbreytingina. Í verkligari nýtslu er skipanin tó heilt svígandi og virkin.
+--- END TABLE ---
 
 Gervigreind Auðlindaskrivstovunnar kann dagføra vísisberan við mun tættari millumbilum enn hetta – til dømis hvønn mánað ella við hvørja einstaka prosenteind (so sum 26 %, 27 % BNR). Hetta gevur enn mýkri, javnari og fremman av gerandis umskiftan fyri bæði borgarar og fíggjargeiran. Tað verður undir stjórnandi umbótasamgongu sjálvari at velja og brúka tey millumbil, sum eru tekniliga og verkligliga hóskandi, tá tey hava tikið valdið.
 
@@ -549,6 +551,7 @@ Niðanfyri er grundlógartekningin fyri, hvussu skuld umbreytist til fullveldi, 
 Bruttonationalressource	Skuldaavskriving			Fullveldislutur
 
 (Ókeypis døking)		(Eftir grundlógarligum lógum)	(Útgreiðsla ríkisins)
+--- START TABLE ---
 
 25 %					25 % av øllum einkaskuldum	Fyrsta greiðslan
 
@@ -573,12 +576,14 @@ eykur & Útbúgving)		bønkunum.				veruliga, eftir at
 luksussviðið minnkar.
 
 100 %				Allar skuldir og				Skipanin fullkomin.
+--- END TABLE ---
 
 (Hitt Endaliga			pengar eru hættir			Gjaldoyrur verða óneyðug;
 
 Nógvælið)				at vera til.					fullkomið fríur búskapur ríkir.
 
 4.  Gjøgnumgangur av áførum Frælsisstiganna
+--- START TABLE ---
 
 Áfangi 1: 25 % BNR – Tað fyrsta rásmark
 
@@ -599,6 +604,7 @@ Tá 75 % av heildar auðlindartørvi samfelagsins verður fullnøgd heilt uttan 
 Á hesum stigi hava einkafyritøkur og bankar í verki tapt megnið at noyða fólk til arbeiði. Flestu borgarar velja at liva heilt á ókeypis framboðnum samgongunnar og sínum Fullveldisluta, sum noyðir síðstu einkafyritøkurnar til annaðhvørt at fara í gjaldþrot ella avhenda framleiðslulínur sínar til sjálvseigandi innviðir.
 
 Áfangi 4: 100 % BNR – Andlát peninga og endaligt fullveldi
+--- END TABLE ---
 
 Tá BNR nær 100 %, er umbreytingin fullgjør. Vélarnar og samløgdu gervigreindarskipanir teirra framleiða nú alt – frá minsta hveitikorni til hátøkniligastu ævigtíðarvørur og listprent – í fullkomnum nógvæli.
 

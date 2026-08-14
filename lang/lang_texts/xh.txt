@@ -601,8 +601,10 @@ NgeLe yokuKhululeka, amanani abonakalayo (amatyala) adityaniswa ngqo kwinto yokw
 
 
 2.  Izithuba eziDynamic kunye noHlengahlengiso
+--- START TABLE ---
 
 Kubalulekile ukuqonda ukuba izigaba ezine eziphambili zeLe yokuKhululeka (i-25%, i-50%, i-75%, kunye ne-100%) zakha amatye ezikhumbuzo olungiso olubanzi, lomgaqo-siseko. Ekusetyenzisweni ngokwenene, nangona kunjalo, inkqubo ibhetyebhetye ngokupheleleyo kwaye inamandla.
+--- END TABLE ---
 
 I-AI yeOfisi ye-GNR inokuhlaziya isalathisi ngezithuba ezikwii-interval ezihamba phambili kakhulu kunoko—umzekelo, nyanga zonke okanye kwinqanaba ngalinye lepesenti (njenge-26%, i-27% ye-GNR). Oku kubonelela ngenguqu egudileyo ngakumbi, ethe chu ngakumbi, nenokuxelwa kwangaphambili kubemi nakwicandelo lezemali. Kuya kuba kumanyano lolawulo lolungiso ukukhetha nokusebenzisa izithuba ezifanelekileyo ngokobuchwepheshe nangokusebenza xa sele bethathe amandla.
 
@@ -617,6 +619,7 @@ IMveliso yeSizwe ePheleleyo	Ukucinywa kweTyala			ISabelo seLongamo
 (Izinga lokuGubungela			(NgokoMthetho				(Intlawulo kaRulumente)
 
 
+--- START TABLE ---
 simahla)					woMgaqo-siseko)
 25%						I-25% yawo onke amatyala		Intlawulo yokuqala iyavulwa.
 (Ukutya okuSisiseko,			abucala ayacinywa			Abemi bafumana amandla
@@ -635,6 +638,7 @@ neMfundo)											kakhulu njengoko ummandla
 												wobunewunewu uncipha.
 100%					Apho onke amatyala kunye		Inkqubo igqityiwe. Iimali
 (Ubuninzi					nemali ziye zaphela.			ziphelelwe lixesha; kuphumelele
+--- END TABLE ---
 
 
 
@@ -644,6 +648,7 @@ obuGqibeleleyo)										uqoqosho olukhululekileyo
 												olupheleleyo.
 
 4.  Uphononongo lweZigaba zeLe yokuKhululeka
+--- START TABLE ---
 
 IsiGaba 1: 25% GNR – Ukudutyulwa kokuQala kokuQala
 
@@ -667,6 +672,7 @@ Xa i-75% yeemfuno zizonke zezibonelelo zoluntu zigutyungelwe ngokupheleleyo ngap
 Kweli nqanaba, amashishini abucala kunye neebhanki ngokwenyani baphulukene namandla abo okunyanzela abantu ukuba basebenze. Uninzi lwabemi lukhetha ukuphila ngokupheleleyo ngonikezelo lwasimahla lomanyano kunye neSabelo sabo seLongamo, nto leyo enyanzela iinkampani zabucala zokugqibela ukuba zitshone okanye zinikezele ngemigca yazo yemveliso kwizakhiwo ezizimeleyo.
 
 IsiGaba 4: 100% GNR – Ukufa kweMali kunye noLongamo lokuGqibela
+--- END TABLE ---
 
 
 

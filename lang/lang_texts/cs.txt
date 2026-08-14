@@ -602,8 +602,10 @@ Prostřednictvím Schodů svobody jsou virtuální čísla (dluhy) propojena př
 
 2. Dynamické intervaly a přizpůsobení
 
+--- START TABLE ---
 
 Je zásadní pochopit, že čtyři hlavní fáze Schodů svobody (25 %, 50 %, 75 % a 100 %) představují zastřešující, ústavní milníky transformace. V praktickém použití je však systém zcela flexibilní a dynamický.
+--- END TABLE ---
 
 AI Úřadu pro GNR může aktualizovat index v mnohem častějších intervalech – například každý měsíc nebo na každém jednotlivém procentním bodu (např. 26 %, 27 % GNR). To poskytuje ještě hladší, postupnější a předvídatelnější přechod pro občany i finanční sektor. Bude na vládnoucí reformní alianci, aby po převzetí moci zvolila a použila intervaly, které jsou technicky a prakticky vhodné.
 
@@ -613,6 +615,7 @@ Níže je ústavní plán, jak se dluh transformuje na suverenitu, krok za kroke
 
 Hrubý národní zdroj (GNR)	Odpis dluhu			Podíl na suverenitě
 (Míra bezplatného pokrytí)		(Podle ústavního práva)	(Státní výplata)
+--- START TABLE ---
 
 25 %						25 % všech soukromých	První výplata je aktivována. Občané
 
@@ -631,12 +634,14 @@ a Elektřina)				odepsáno.				není zdarma.
 a Vzdělávání)				knih.					luxusu zmenšuje.
 
 100 %					Všechny dluhy a peníze	Systém je dokončen. Měny se stávají
+--- END TABLE ---
 
 (Definitivní hojnost)			přestaly existovat.		zastaralými; vládne totální svobodná
 
 											ekonomika.
 
 4. Přehled fází Schodů svobody
+--- START TABLE ---
 
 Fáze 1: 25 % GNR – První startovní výstřel
 
@@ -657,6 +662,7 @@ Když je 75 % celkových zdrojových potřeb společnosti pokryto zcela bez lids
 V této fázi soukromé podnikání a banky prakticky ztratily schopnost nutit lidi k práci. Většina občanů si volí žít zcela na bezplatných nabídkách aliance a svém Podílu na suverenitě, což nutí poslední soukromé společnosti buď zbankrotovat, nebo předat své výrobní linky samovlastnící infrastruktuře.
 
 Fáze 4: 100 % GNR – Smrt peněz a konečná suverenita
+--- END TABLE ---
 
 Když Hrubý národní zdroj dosáhne 100 %, transformace je dokončena. Roboti a jejich propojené AI systémy nyní produkují vše – od nejmenšího zrna pšenice až po ty nejsložitější věčné zboží a umělecké tisky – v absolutní hojnosti.
 

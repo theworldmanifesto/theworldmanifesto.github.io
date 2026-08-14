@@ -610,8 +610,10 @@ Attraverso la Scala della Libertà, i numeri virtuali (debiti) sono collegati di
 
 
 2. Intervalli Dinamici e Adattamento
+--- START TABLE ---
 
 È cruciale capire che le quattro fasi principali della Scala della Libertà (25%, 50%, 75% e 100%) costituiscono le pietre miliari costituzionali e generali della trasformazione. Nell'applicazione pratica, tuttavia, il sistema è completamente flessibile e dinamico.
+--- END TABLE ---
 
 L'IA dell'Ufficio GNR può aggiornare l'indice a intervalli significativamente più frequenti di quello—per esempio, ogni mese o a ogni singolo punto percentuale (come 26%, 27% GNR). Questo fornisce una transizione ancora più fluida, più graduale e prevedibile sia per i cittadini che per il settore finanziario. Spetterà all'alleanza di riforma governante scegliere e applicare gli intervalli che sono tecnicamente e praticamente appropriati una volta preso il potere.
 
@@ -625,6 +627,7 @@ Di seguito è riportato il progetto costituzionale per come il debito viene tras
 Risorsa Nazionale Lorda		Cancellazione del Debito			Quota di Sovranità
 (Tasso di Copertura Gratuita)	(Secondo la Legge				(Pagamento Statale)
 						Costituzionale)
+--- START TABLE ---
 
 25%						25% di tutti i debiti privati		Il primo pagamento viene
 (Cibo di Base, Energia			vengono cancellati				attivato. I cittadini ricevono
@@ -644,11 +647,13 @@ e Istruzione)										drasticamente man mano che
 100%					Tutti i debiti e il denaro			Sistema completo. Le valute
 (L'Abbondanza				hanno cessato di esistere.		diventano obsolete; prevale
 Definitiva)											un'economia totalmente libera.
+--- END TABLE ---
 
 
 
 4. Revisione delle Fasi della Scala della Libertà
 
+--- START TABLE ---
 
 Fase 1: 25% GNR – Il Primo Colpo di Partenza
 
@@ -672,6 +677,7 @@ In questa fase, l'impresa privata e le banche hanno praticamente perso la loro c
 
 
 Fase 4: 100% GNR – La Morte del Denaro e la Sovranità Finale
+--- END TABLE ---
 
 Quando la Risorsa Nazionale Lorda raggiunge il 100%, la trasformazione è completa. I robot e i loro sistemi di IA interconnessi ora producono tutto—dal più piccolo chicco di grano ai più sofisticati beni durevoli e stampe artistiche—in assoluta abbondanza.
 

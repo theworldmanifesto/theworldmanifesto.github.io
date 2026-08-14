@@ -599,8 +599,10 @@ Atraver Lezel Liberte, nimero virtual (dèt) i gagn konekte direk avek reyalite 
 
 
 2.  Interval Dinamik ek Adaptasyon
+--- START TABLE ---
 
 I enportan pour konpran ki kat gran etap Lezel Liberte (25%, 50%, 75% ek 100%) i konstiti bann repèr konstitisyonel jeneral transfomasyon. Dan aplikasyon pratik, sepandan, sistenm i totalman fleksib ek dinamik.
+--- END TABLE ---
 
 AI Biro RNB i kapab met a jour lendis a interval pli sere ki sa – par exanp, sak mwa ouswa a sak pwen pouran endividyel (parey 26%, 27% RNB). Sa i fournir en tranzisyon pli dous, pli progresif ek pli previzib pour sitwayen ek sektor finansye. Sera responsabilite alyans refòm ki gouverne pou swazir ek aplike bann interval ki apwopriye teknikman ek pratikman kan zot finn pran pouvwar.
 
@@ -614,6 +616,7 @@ Anba i plan konstitisyonel pour koman dèt i gagn transfome an sovrenete, etap p
 Resours Nasyonal Brit	Efazman Dèt				Pasyon Sovrenete
 (To Kouvèti Gratis)		(Selon Lalwa Konstitisyonel)		(Peyman Leta)
 
+--- START TABLE ---
 
 25 %					25% tu dèt prive				Premye peyman i gagn
 (Manze Baz, Enerzi		i gagn efase				aktive. Sitwayen i gagn
@@ -633,6 +636,7 @@ Premium & Ledikasyon)	bank.					dramatikman depi sfer
 100 %				Tu dèt ek larzan				Sistenm konplete.
 (Labondans Definitif)		fin sispann egziste.			Monn i vin obsolet;
 											en ekonomi total gratis
+--- END TABLE ---
 
 
 
@@ -640,6 +644,7 @@ Premium & Ledikasyon)	bank.					dramatikman depi sfer
 
 
 4.  Revizyon Faz Lezel Liberte
+--- START TABLE ---
 
 Faz 1: 25% RNB – Premye Kout Depars
 
@@ -663,6 +668,7 @@ Kan 75% bezwen resours total sosyete i gagn kouver totalman san travay imen – 
 Dan sa leta, antrepriz prive ek bank finn praktikman perdi kapasite pour fors dimoun travay. Plipar sitwayen i swazir viv totalman lo lofr gratis alyans ek zot Pasyon Sovrenete, e sa i fors dernyen konpanyi prive pour ouswa fer fayit ouswa remet zot liy prodiksyon a enfrastriktir ki propriyete lekor.
 
 Faz 4: 100% RNB – Lanmor Larzan ek Sovrenete Final
+--- END TABLE ---
 
 Kan RNB i ariv 100%, transfomasyon i konplet. Robo ek zot sistenm AI entkonekte i prodwir asterla tu – depi pli piti grenn ble ziska prodwi eternel ek lenprim artistik pli sofistike – dan labondans absoli.
 

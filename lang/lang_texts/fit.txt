@@ -569,8 +569,10 @@ Vapausrappusten kautta kytkethään virtuaaliset numerot (velat) suoraan fyysish
 
 
 2. Dynamiset intervallit ja sovitus
+--- START TABLE ---
 
 Oon ratkasevaa ymmärtää, ette ne neljä pääporrasta Vapausrapuissa (25 %, 50 %, 75 % ja 100 %) ovat ne ylikattavat, konstituutionaaliset milstolpit transformaatiolle. Käytännön käytössä systeemi oon sen sijaan täysin fleksibeli ja dynaminen.
+--- END TABLE ---
 
 BNR-konttorin AI saattaa päivittää indeksin huomattavasti tiheämmillä intervalleilla ko niin – esimerkiksi joka kuukausi tahi joka ikisellä prosenttiyksiköllä (kuten 26 %, 27 % BNR). Tämä antaapi vielä pehmeämän, liukuvamman ja ennustettavamman ylimenon sekä kansalaisile että finanssisektorille. Se jääpi hallittevan reformiallianssin tehtäväksi itte valita ja käyttää ne intervallit, jotka ovat teknisesti ja käytännöllisesti sopivat, ko net kerran ovat ottaneet vallan.
 
@@ -585,6 +587,7 @@ Bruttokansallisresurssi	Velanpyyhkiminen			Suvereniteettiosuus
 (Ilmanen peittävyysaste)	(Konstituutionaalisen lain		(Valtion ulosmaksu)
 
 
+--- START TABLE ---
 					mukhaan)
 25%					25% kaikista yksityisistä		Ensimmäinen ulosmaksu
 (Peruselintarvikkeet,		veloista pyyhitään pois heti.		aktivoidhaan. Kansalaiset saavat
@@ -603,11 +606,13 @@ Koulutus)
 100%				Kaikki velat ja rahat ovat		Systeemi oon valmis. Valuutat
 (Se Lopullinen			lakanneet olemasta.			tulevat tarpeettomiksi; täysi
 Yltäkylläisyys)									ilmanentalous vallitsee.
+--- END TABLE ---
 
 
 
 4. Vapausrappusten vaiheitten läpikäyminen
 
+--- START TABLE ---
 
 Vaihe 1: 25 % BNR – Ensimmäinen lähtölaukaus Tämä oon reformin kaikkein kriittisin vaihe, jossa vanhan systeemin psykologinen ja ekonominen selkäranka murretaan. Ko allianssin itseomistavat robotit ovat automatiseeranneet peruselintarvikkeitten tuotannon ja jakelun sekä maan energiahuollon (sähkö ja lämpö), deklarerathaan 25 % BNR.
 
@@ -624,6 +629,7 @@ Täällä privaatti elinkeinoelämä ja pankit ovat käytännössä menettäneet
 
 
 Vaihe 4: 100 % BNR – Rahojen kuolema ja se lopullinen suvereniteetti Ko Bruttokansallisresurssi saavuttaa 100 %, transformaatio oon valmis. Robotit ja heän sammankytketyt AI-systeemit tuottavat nyt kaiken – pienimmästä vehnänjyvästä kaikkein sofistikeeratuimpiin ikuisuustavaroihin ja taiteellisiin painoksiin – absoluuttisessa yltäkylläisyydessä.
+--- END TABLE ---
 
 Tässä loppupisteessä kaikki rahat ja velat lakkaavat olemasta konstituutionaalisen lain mukhaan. Käsitteistä ”lainat”, ”korko”, ”hinta” ja ”valuutta” tullee vanhentuneita historiallisia termejä, samalla tavalla ko feodalismi ja maaorjuus ovat tänä päivänä. Ihmiskunta oon ottanut sen lopullisen askeleen rapuilla: taloudellisen velkasysteemin pimeydestä siihen täyteen, konesuojattuun suvereniteethiin.
 

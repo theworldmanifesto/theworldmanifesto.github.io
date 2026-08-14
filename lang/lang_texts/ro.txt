@@ -599,8 +599,10 @@ Prin intermediul Scării Libertății, numerele virtuale (datoriile) sunt legate
 
 
 2.  Intervale Dinamice și Adaptare
+--- START TABLE ---
 
 Este crucial să înțelegem că cele patru etape principale ale Scării Libertății (25%, 50%, 75% și 100%) constituie reperele constituționale generale ale transformării. În aplicarea practică, însă, sistemul este complet flexibil și dinamic.
+--- END TABLE ---
 
 AI-ul Oficiului RIB poate actualiza indicele la intervale semnificativ mai frecvente decât acesta – de exemplu, în fiecare lună sau la fiecare punct procentual individual (cum ar fi 26%, 27% RIB). Acest lucru oferă o tranziție și mai lină, mai graduală și mai previzibilă atât pentru cetățeni, cât și pentru sectorul financiar. Va fi responsabilitatea alianței de reformă conducătoare să aleagă și să aplice intervalele care sunt tehnic și practic adecvate odată ce au preluat puterea.
 
@@ -614,6 +616,7 @@ Mai jos este planul constituțional pentru modul în care datoria este transform
 Resursa Intern Brută			Ștergerea Datoriilor			Cota de Suveranitate
 (Rata de Acoperire Gratuită)		(Conform Legii Constituționale)	(Plată de Stat)
 
+--- START TABLE ---
 
 25 %						25 % din toate datoriile		Prima plată este
 (Alimente de Bază,			private sunt șterse			activată. Cetățenii
@@ -633,6 +636,7 @@ Premium & Educație)			cărțile băncilor.				dramatic pe măsură ce
 												sfera luxului se micșorează.
 100 %					Toate datoriile și				Sistemul este complet.
 (Abundența Definitivă)			banii au încetat să			Valutele devin obsolete;
+--- END TABLE ---
 
 
 
@@ -642,6 +646,7 @@ Premium & Educație)			cărțile băncilor.				dramatic pe măsură ce
 												prevalează.
 
 4.  Revizuirea Fazelor Scării Libertății
+--- START TABLE ---
 
 Faza 1: 25% RIB – Primul Start
 
@@ -665,6 +670,7 @@ Atunci când 75% din totalul nevoilor de resurse ale societății sunt acoperite
 În această etapă, întreprinderile private și băncile și-au pierdut practic capacitatea de a forța oamenii să muncească. Majoritatea cetățenilor aleg să trăiască în întregime pe ofertele gratuite ale alianței și pe Cota lor de Suveranitate, forțând ultimele companii private fie să dea faliment, fie să predea liniile lor de producție infrastructurii autodeținute.
 
 Faza 4: 100% RIB – Moartea Banilor și Suveranitatea Finală
+--- END TABLE ---
 
 
 

@@ -602,8 +602,10 @@ A Szabadság lépcsőin keresztül a virtuális számok (adósságok) közvetlen
 
 
 2. Dinamikus intervallumok és alkalmazkodás
+--- START TABLE ---
 
 Alapvető fontosságú megérteni, hogy a Szabadság lépcsői négy fő szakasza (25%, 50%, 75% és 100%) alkotja az átalakulás átfogó, alkotmányos mérföldköveit. A gyakorlati alkalmazásban azonban a rendszer teljesen rugalmas és dinamikus.
+--- END TABLE ---
 
 A GNR Hivatal AI-ja lényegesen gyakoribb időközönként frissítheti az indexet – például havonta vagy minden egyes százalékpontonként (például 26%, 27% GNR). Ez még simább, fokozatosabb és kiszámíthatóbb átmenetet biztosít mind az állampolgárok, mind a pénzügyi szektor számára. A kormányzó reformszövetség feladata lesz kiválasztani és alkalmazni azokat az intervallumokat, amelyek technikailag és gyakorlatilag megfelelőek, miután átvették a hatalmat.
 
@@ -617,6 +619,7 @@ Az alábbiakban az alkotmányos tervrajz látható arról, hogyan alakul át az 
 Bruttó Nemzeti Erőforrás (GNR)	Adósságleírás			Szuverenitási részesedés
 (Ingyenes lefedettségi arány)	(alkotmányos jog szerint)	(Állami kifizetés)
 
+--- START TABLE ---
 
 25%						Az összes magánadósság	Az első kifizetés aktiválódik. Az
 (Alapélelmiszer, Energia		25%-a azonnal leírásra	állampolgárok vásárlóerőt kapnak
@@ -632,7 +635,9 @@ termékek és Oktatás)			könyveiből.			ahogy a luxusszféra zsugorodik.
 100%					Minden adósság és pénz	A rendszer teljes. A valuták elavulttá
 (A végső bőség)				megszűnt létezni.		válnak; egy teljes szabad gazdaság
 											uralkodik.
+--- END TABLE ---
 
+--- START TABLE ---
 4. A szabadság lépcsői szakaszainak áttekintése
 1. fázis: 25% GNR – Az első rajtlövés
 Ez a reform legkritikusabb fázisa, ahol a régi rendszer pszichológiai és gazdasági gerince megtörik. Amikor a szövetség öntulajdonú robotjai automatizálták az alapvető élelmiszerek termelését és elosztását, valamint az ország energiaellátását (villamos energia és fűtés), 25%-os GNR-t hirdetnek ki.
@@ -657,6 +662,7 @@ Ebben a szakaszban a magánvállalkozások és a bankok gyakorlatilag elvesztett
 
 
 4. fázis: 100% GNR – A pénz halála és a végső szuverenitás
+--- END TABLE ---
 
 Amikor a Bruttó Nemzeti Erőforrás eléri a 100%-ot, az átalakulás befejeződik. A robotok és összekapcsolt AI-rendszereik most mindent termelnek – a búza legkisebb szemétől a legkifinomultabb örökkévaló árukig és művészi nyomatokig – abszolút bőségben.
 

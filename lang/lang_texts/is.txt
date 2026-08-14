@@ -537,8 +537,10 @@ Lausnin er lögbundinn, samstilltur stigi þar sem frelsun borgaranna í fjárm�
 Í gegnum Frelsisstigann eru sýndar tölur (skuldir) tengdar beint við líkamlegan veruleika (vélvædda framleiðslu). Á sama sekúndu og vélarnar taka yfir lífsviðurværissvæði og gera það ókeypis fyrir íbúana, neyðast bankar hins gamla kerfis til að bakka að sama skapi.
 
 2.  Sveigjanleg tímabil og aðlögun
+--- START TABLE ---
 
 Það er mikilvægt að skilja að fjögur aðalskref Frelsisstigans (25 %, 50 %, 75 % og 100 %) mynda yfirgripsmiklu, stjórnarskrárlegu áfangana fyrir umbreytinguna. Í hagnýtri notkun er kerfið hins vegar algerlega sveigjanlegt og kraftmikið.
+--- END TABLE ---
 
 Gervigreind Auðlindaskrifstofunnar getur uppfært vísitöluna með mun þéttara millibili en þetta – til dæmis í hverjum mánuði eða við hverja einstaka prósentueiningu (svo sem 26 %, 27 % VÞA). Þetta gefur enn mýkri, hnökralausari og fyrirsjáanlegri umskipti fyrir bæði borgarana og fjármálageirann. Það verður undir stjórnandi umbótabandalagi að sjálft velja og beita þeim millibili sem eru tæknilega og hagnýtilega viðeigandi þegar þau hafa tekið við völdum.
 
@@ -549,6 +551,7 @@ Hér að neðan er stjórnarskrárteikningin fyrir hvernig skuld umbreytist í f
 Verg þjóðarauðlind		Skuldaafskrifun				Fullveldishlutur
 
 (Ókeypis þekjustig)		(Samkvæmt stjórnarskrárlögum)		(Útgreiðsla ríkisins)
+--- START TABLE ---
 
 25 %					25 % af öllum einkaskuldum			Fyrsta greiðslan
 
@@ -573,12 +576,14 @@ vörur & Menntun)		bönkunum.					verulega eftir því sem
 lúxussviðið minnkar.
 
 100 %				Allar skuldir og					Kerfið fullkomið. Gjaldmiðlar
+--- END TABLE ---
 
 (Hitt Endanlega			peningar hafa hætt				verða óþarfir; algert
 
 Gnægðið)				að vera til.						frjálst hagkerfi ríkir.
 
 4.  Yfirferð yfir áfanga Frelsisstigans
+--- START TABLE ---
 
 Áfangi 1: 25 % VÞA – Hið fyrsta rásmark
 
@@ -599,6 +604,7 @@ Gnægðið)				að vera til.						frjálst hagkerfi ríkir.
 Á þessu stigi hafa einkafyrirtæki og bankar í raun tapað getu sinni til að þvinga fólk til vinnu. Flestir borgarar kjósa að lifa algerlega á ókeypis framboði bandalagsins og sínum Fullveldishluta, sem þvingar síðustu einkafyrirtækin til annaðhvort að verða gjaldþrota eða afhenda framleiðslulínur sínar til sjálfseigandi innviða.
 
 Áfangi 4: 100 % VÞA – Dauði peninga og endanlegt fullveldi
+--- END TABLE ---
 
 Þegar verg þjóðarauðlind nær 100 %, er umbreytingin fullgerð. Vélarnar og samtengd gervigreindarkerfi þeirra framleiða nú allt – frá minnsta hveitikorni til hátæknilegustu eilífðarvara og listprenta – í algeru gnægði.
 
