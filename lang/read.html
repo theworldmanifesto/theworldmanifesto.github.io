@@ -92,7 +92,7 @@
     word-wrap: break-word;
     white-space: normal;
     overflow-wrap: break-word;
-    background-color: #f7f7f7;  /* ← NY: Väldigt ljusgrå */
+    background-color: #f7f7f7;
 }
 .manifesto-table td {
     padding: 10px 12px;
@@ -217,10 +217,10 @@ document.getElementById('book-title').textContent = langData.title;
 document.getElementById('book-subtitle').textContent = langData.subtitle;
 
         // ============================================================
-        // 2. TABELLÖVERSÄTTNINGAR – 42 specialspråk
+        // 2. TABELLÖVERSÄTTNINGAR – ALLA 42 SPRÅK (KORRIGERADE)
         // ============================================================
 const tableTranslations = {
-    // --- ENGELSKA (Standard för övriga) ---
+    // --- ENGELSKA ---
     'en': {
         title: 'The Freedom Staircase: From Debt to Sovereignty',
         col1: 'Gross National Resource (GNR)',
@@ -262,19 +262,19 @@ const tableTranslations = {
         ]
     },
 
-    // --- NORSKA (Bokmål) ---
+    // --- NORSKA ---
     'no': {
-    title: 'Frihetstrappen: Fra gjeld til suverenitet',
-    col1: 'Bruttonasjonalressurs<br>(Gratis dekningsgrad)',
-    col2: 'Gjeldsavskrivning<br>(Ifølge konstitusjonell lov)',
-    col3: 'Suverenitetsandel<br>(Statlig utbetaling)',
-    rows: [
-        { gnr: '25 %<br>(Grunnleggende mat, Energi & strøm)', debt: '25 % av alle private gjeld slettes umiddelbart.', share: 'Første utbetaling aktiveres. Borgerne får kjøpekraft for det som ennå ikke er gratis.' },
-        { gnr: '50 %<br>(Bolig & Transport)', debt: '50 % av all gjenværende gjeld slettes.', share: 'Andelen øker i takt med den nasjonale robotparkens produksjonskapasitet.' },
-        { gnr: '75 %<br>(Teknologi, Merverdivarer & Utdanning)', debt: '75 % av all gjeld slettes fra bankenes bøker.', share: 'Andelen optimaliseres. Behovet for penger synker dramatisk ettersom luksussfæren krymper.' },
-        { gnr: '100 %<br>(Det Definitive Overflødet)', debt: 'All gjeld og alle penger har opphørt å eksistere.', share: 'Systemet fullført. Valutaer blir overflødige; total gratisøkonomi råder.' }
-    ]
-},
+        title: 'Frihetstrappen: Fra gjeld til suverenitet',
+        col1: 'Bruttonasjonalressurs<br>(Gratis dekningsgrad)',
+        col2: 'Gjeldsavskrivning<br>(Ifølge konstitusjonell lov)',
+        col3: 'Suverenitetsandel<br>(Statlig utbetaling)',
+        rows: [
+            { gnr: '25 %<br>(Grunnleggende mat, Energi & strøm)', debt: '25 % av alle private gjeld slettes umiddelbart.', share: 'Første utbetaling aktiveres. Borgerne får kjøpekraft for det som ennå ikke er gratis.' },
+            { gnr: '50 %<br>(Bolig & Transport)', debt: '50 % av all gjenværende gjeld slettes.', share: 'Andelen øker i takt med den nasjonale robotparkens produksjonskapasitet.' },
+            { gnr: '75 %<br>(Teknologi, Merverdivarer & Utdanning)', debt: '75 % av all gjeld slettes fra bankenes bøker.', share: 'Andelen optimaliseres. Behovet for penger synker dramatisk ettersom luksussfæren krymper.' },
+            { gnr: '100 %<br>(Det Definitive Overflødet)', debt: 'All gjeld og alle penger har opphørt å eksistere.', share: 'Systemet fullført. Valutaer blir overflødige; total gratisøkonomi råder.' }
+        ]
+    },
 
     // --- DANSKA ---
     'da': {
@@ -300,7 +300,7 @@ const tableTranslations = {
             { gnr: '25 %<br>(Matvæli, Orka & Rafmagn)', debt: '25 % af öllum einkaskuldum er afskrifuð tafarlaust.', share: 'Fyrsta greiðslan virkjuð. Borgarar fá kaupmátt fyrir það sem er ekki enn ókeypis.' },
             { gnr: '50 %<br>(Húsnæði & Flutningar)', debt: '50 % af öllum eftirstandandi skuldum er afskrifuð.', share: 'Hluturinn eykst í takt við framleiðslugetu innlenda vélagarðsins.' },
             { gnr: '75 %<br>(Tækni, Viðbótarvörur & Menntun)', debt: '75 % af öllum skuldum er afskrifuð af bönkunum.', share: 'Hluturinn er hámarkaður. Þörfin fyrir peninga minnkar verulega eftir því sem lúxussviðið minnkar.' },
-            { gnr: '100 %<br>(Hitt Endanlega Gnægðið)', debt: 'Allar skuldir og peningar hafa hætt að vera til.', share: 'Kerfið fullkomið. Gjaldmiðlar verða óþarfir; algert frjálst hagkerfi ríkir.' }
+            { gnr: '100 %<br>(Endanleg Snægt)', debt: 'Allar skuldir og peningar hafa hætt að vera til.', share: 'Kerfið fullkomið. Gjaldmiðlar verða óþarfir; algert frjálst hagkerfi ríkir.' }
         ]
     },
 
@@ -325,7 +325,7 @@ const tableTranslations = {
         col2: 'Velanpyyhkiminen<br>(Konstituutionaalisen lain mukhaan)',
         col3: 'Suvereniteettiosuus<br>(Valtion ulosmaksu)',
         rows: [
-            { gnr: '25 %<br>(Peruselintarvikkeet, Energia & Sähkö)', debt: '25 % kaikista yksityisistä veloista pyyhitään pois heti.', share: 'Ensimmäinen ulosmaksu aktivoidhaan. Kansalaiset saavat ostovoimaa sille, mikä ei vielä ole lmanesta.' },
+            { gnr: '25 %<br>(Peruselintarvikkeet, Energia & Sähkö)', debt: '25 % kaikista yksityisistä veloista pyyhitään pois heti.', share: 'Ensimmäinen ulosmaksu aktivoidhaan. Kansalaiset saavat ostovoimaa sille, mikä ei vielä ole ilmanesta.' },
             { gnr: '50 %<br>(Asuminen & Kuljetus)', debt: '50 % kaikista jäljellä olevista veloista pyyhitään pois.', share: 'Osuus nousee samassa tahissa ko kansallisen robotiparkin tuotantokapasiteetti.' },
             { gnr: '75 %<br>(Tekniikka, Lisäarvotavarat & Koulutus)', debt: '75 % kaikista veloista pyyhitään pois pankkien kirjoista.', share: 'Osuus optimerathaan. Rahantarve uppoaa dramaattisesti, ko luksussfääri kutistuu.' },
             { gnr: '100 %<br>(Se Lopullinen Yltäkylläisyys)', debt: 'Kaikki velat ja rahat ovat lakanneet olemasta.', share: 'Systeemi oon valmis. Valuutat tulevat tarpeettomiksi; täysi ilmanentalous vallitsee.' }
@@ -349,463 +349,465 @@ const tableTranslations = {
     // --- HINDI ---
     'hi': {
         title: 'स्वतंत्रता की सीढ़ी: ऋण से संप्रभुता तक',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'सकल राष्ट्रीय संसाधन<br>(मुफ्त कवरेज दर)',
+        col2: 'ऋण माफी<br>(संवैधानिक कानून के अनुसार)',
+        col3: 'संप्रभुता हिस्सा<br>(राज्य भुगतान)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(मूल भोजन, ऊर्जा और बिजली)', debt: '25 % सभी निजी ऋण तुरंत लिखे जाते हैं।', share: 'पहला भुगतान सक्रिय होता है। नागरिकों को उस चीज़ के लिए क्रय शक्ति मिलती है जो अभी तक मुफ्त नहीं है।' },
+            { gnr: '50 %<br>(आवास और परिवहन)', debt: '50 % सभी शेष ऋण लिखे जाते हैं।', share: 'हिस्सा राष्ट्रीय रोबोट पार्क की उत्पादन क्षमता के अनुपात में बढ़ता है।' },
+            { gnr: '75 %<br>(प्रौद्योगिकी, प्रीमियम और शिक्षा)', debt: '75 % सभी ऋण बैंकों की किताबों से लिखे जाते हैं।', share: 'हिस्सा अनुकूलित किया जाता है। विलासिता क्षेत्र के सिकुड़ने पर धन की आवश्यकता नाटकीय रूप से गिरती है।' },
+            { gnr: '100 %<br>(अंतिम प्रचुरता)', debt: 'सभी ऋण और धन का अस्तित्व समाप्त हो गया है।', share: 'सिस्टम पूरा हुआ। मुद्राएं अप्रचलित हो जाती हैं; पूर्ण मुक्त अर्थव्यवस्था व्याप्त है।' }
         ]
     },
 
     // --- SPANSKA ---
     'es': {
         title: 'La Escalera de la Libertad: De la deuda a la soberanía',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Recurso Nacional Bruto<br>(Tasa de cobertura gratuita)',
+        col2: 'Cancelación de deuda<br>(Según la ley constitucional)',
+        col3: 'Participación soberana<br>(Pago del Estado)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Alimentos básicos, Energía y Electricidad)', debt: 'El 25 % de todas las deudas privadas se cancelan inmediatamente.', share: 'El primer pago se activa. Los ciudadanos reciben poder adquisitivo para lo que aún no es gratuito.' },
+            { gnr: '50 %<br>(Vivienda y Transporte)', debt: 'El 50 % de todas las deudas restantes se cancelan.', share: 'La participación aumenta en proporción a la capacidad de producción del parque robótico nacional.' },
+            { gnr: '75 %<br>(Tecnología, Premium y Educación)', debt: 'El 75 % de todas las deudas se cancelan de los libros de los bancos.', share: 'La participación se optimiza. La necesidad de dinero disminuye drásticamente a medida que se reduce la esfera del lujo.' },
+            { gnr: '100 %<br>(La Abundancia Definitiva)', debt: 'Todas las deudas y el dinero han dejado de existir.', share: 'Sistema completo. Las monedas se vuelven obsoletas; prevalece una economía totalmente libre.' }
         ]
     },
 
     // --- FRANSKA ---
-'fr': {
-    title: 'L\'Escalier de la Liberté : De la dette à la souveraineté',
-    col1: 'Ressource Nationale Brute<br>(Taux de couverture gratuite)',
-    col2: 'Annulation de la dette<br>(Selon la loi constitutionnelle)',
-    col3: 'Part de souveraineté<br>(Paiement de l\'État)',
-    rows: [
-        { gnr: '25 %<br>(Nourriture de base, énergie et électricité)', debt: '25 % de toutes les dettes privées sont annulées immédiatement.', share: 'Le premier paiement est activé. Les citoyens reçoivent un pouvoir d\'achat pour ce qui n\'est pas encore gratuit.' },
-        { gnr: '50 %<br>(Logement et transport)', debt: '50 % de toutes les dettes restantes sont annulées.', share: 'La part augmente proportionnellement à la capacité de production du parc robotique national.' },
-        { gnr: '75 %<br>(Technologie, premium et éducation)', debt: '75 % de toutes les dettes sont annulées des livres des banques.', share: 'La part est optimisée. Le besoin d\'argent diminue considérablement à mesure que la sphère du luxe se réduit.' },
-        { gnr: '100 %<br>(L\'Abondance définitive)', debt: '100 % de toutes les dettes et l\'argent cessent d\'exister.', share: 'Système complet. Les monnaies deviennent obsolètes ; une économie libre prévaut.' }
-    ]
-},
+    'fr': {
+        title: 'L\'Escalier de la Liberté : De la dette à la souveraineté',
+        col1: 'Ressource Nationale Brute<br>(Taux de couverture gratuite)',
+        col2: 'Annulation de la dette<br>(Selon la loi constitutionnelle)',
+        col3: 'Part de souveraineté<br>(Paiement de l\'État)',
+        rows: [
+            { gnr: '25 %<br>(Nourriture de base, énergie et électricité)', debt: '25 % de toutes les dettes privées sont annulées immédiatement.', share: 'Le premier paiement est activé. Les citoyens reçoivent un pouvoir d\'achat pour ce qui n\'est pas encore gratuit.' },
+            { gnr: '50 %<br>(Logement et transport)', debt: '50 % de toutes les dettes restantes sont annulées.', share: 'La part augmente proportionnellement à la capacité de production du parc robotique national.' },
+            { gnr: '75 %<br>(Technologie, premium et éducation)', debt: '75 % de toutes les dettes sont annulées des livres des banques.', share: 'La part est optimisée. Le besoin d\'argent diminue considérablement à mesure que la sphère du luxe se réduit.' },
+            { gnr: '100 %<br>(L\'Abondance définitive)', debt: '100 % de toutes les dettes et l\'argent cessent d\'exister.', share: 'Système complet. Les monnaies deviennent obsolètes ; une économie libre prévaut.' }
+        ]
+    },
 
     // --- ARABISKA ---
     'ar': {
         title: 'سلم الحرية: من الدين إلى السيادة',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'المورد القومي الإجمالي<br>(معدل التغطية المجانية)',
+        col2: 'شطب الديون<br>(وفقًا للقانون الدستوري)',
+        col3: 'حصة السيادة<br>(دفع الدولة)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(الغذاء الأساسي والطاقة والكهرباء)', debt: '25 % من جميع الديون الخاصة يتم شطبها على الفور.', share: 'يتم تفعيل الدفعة الأولى. يحصل المواطنون على قوة شرائية لما لم يكن مجانيًا بعد.' },
+            { gnr: '50 %<br>(الإسكان والنقل)', debt: '50 % من جميع الديون المتبقية يتم شطبها.', share: 'تزيد الحصة بما يتناسب مع القدرة الإنتاجية للحديقة الآلية الوطنية.' },
+            { gnr: '75 %<br>(التكنولوجيا والتميز والتعليم)', debt: '75 % من جميع الديون يتم شطبها من دفاتر البنوك.', share: 'يتم تحسين الحصة. تنخفض الحاجة إلى المال بشكل كبير مع تقلص مجال الرفاهية.' },
+            { gnr: '100 %<br>(الوفرة النهائية)', debt: 'جميع الديون والأموال قد توقفت عن الوجود.', share: 'اكتمل النظام. تصبح العملات قديمة؛ يسود اقتصاد حر بالكامل.' }
         ]
     },
 
     // --- INDONESISKA ---
     'id': {
         title: 'Tangga Kebebasan: Dari Utang Menuju Kedaulatan',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Sumber Daya Nasional Bruto<br>(Tingkat cakupan gratis)',
+        col2: 'Penghapusan Utang<br>(Menurut Hukum Konstitusi)',
+        col3: 'Bagian Kedaulatan<br>(Pembayaran Negara)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Makanan Dasar, Energi & Listrik)', debt: '25 % dari semua utang pribadi dihapuskan segera.', share: 'Pembayaran pertama diaktifkan. Warga negara menerima daya beli untuk apa yang belum gratis.' },
+            { gnr: '50 %<br>(Perumahan & Transportasi)', debt: '50 % dari semua utang yang tersisa dihapuskan.', share: 'Bagian meningkat sebanding dengan kapasitas produksi taman robot nasional.' },
+            { gnr: '75 %<br>(Teknologi, Premium & Pendidikan)', debt: '75 % dari semua utang dihapuskan dari buku-buku bank.', share: 'Bagian dioptimalkan. Kebutuhan akan uang turun drastis seiring dengan menyusutnya lingkup kemewahan.' },
+            { gnr: '100 %<br>(Kelimpahan Definitif)', debt: 'Semua utang dan uang telah berhenti ada.', share: 'Sistem selesai. Mata uang menjadi usang; ekonomi bebas total berlaku.' }
         ]
     },
 
     // --- BENGALI ---
     'bn': {
         title: 'মুক্তির সিঁড়ি: ঋণ থেকে সার্বভৌমত্ব',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'জাতীয় সম্পদ মোট<br>(বিনামূল্যে কভারেজ হার)',
+        col2: 'ঋণ বাতিল<br>(সাংবিধানিক আইন অনুযায়ী)',
+        col3: 'সার্বভৌম অংশ<br>(রাষ্ট্রীয় অর্থ প্রদান)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(মৌলিক খাদ্য, শক্তি ও বিদ্যুৎ)', debt: '25 % সমস্ত ব্যক্তিগত ঋণ অবিলম্বে বাতিল করা হয়।', share: 'প্রথম অর্থ প্রদান সক্রিয় হয়। নাগরিকরা এখনও বিনামূল্যে নয় এমন জিনিসের জন্য ক্রয় ক্ষমতা পায়।' },
+            { gnr: '50 %<br>(আবাসন ও পরিবহন)', debt: '50 % সমস্ত অবশিষ্ট ঋণ বাতিল করা হয়।', share: 'অংশ জাতীয় রোবট পার্কের উৎপাদন ক্ষমতার অনুপাতে বৃদ্ধি পায়।' },
+            { gnr: '75 %<br>(প্রযুক্তি, প্রিমিয়াম ও শিক্ষা)', debt: '75 % সমস্ত ঋণ ব্যাংকের বই থেকে বাতিল করা হয়।', share: 'অংশ অপ্টিমাইজ করা হয়। বিলাসিতা ক্ষেত্র সঙ্কুচিত হওয়ার সাথে সাথে অর্থের প্রয়োজনীয়তা নাটকীয়ভাবে হ্রাস পায়।' },
+            { gnr: '100 %<br>(চূড়ান্ত প্রাচুর্য)', debt: 'সমস্ত ঋণ ও অর্থের অস্তিত্ব বিলুপ্ত হয়েছে।', share: 'সিস্টেম সম্পূর্ণ। মুদ্রা অপ্রচলিত হয়ে যায়; সম্পূর্ণ মুক্ত অর্থনীতি বিরাজ করে।' }
         ]
     },
 
     // --- PORTUGISISKA ---
     'pt': {
         title: 'A Escadaria da Liberdade: Da dívida à soberania',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Recurso Nacional Bruto<br>(Taxa de cobertura gratuita)',
+        col2: 'Cancelamento de dívida<br>(De acordo com a lei constitucional)',
+        col3: 'Participação soberana<br>(Pagamento do Estado)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Alimentos básicos, Energia e Eletricidade)', debt: '25 % de todas as dívidas privadas são canceladas imediatamente.', share: 'O primeiro pagamento é ativado. Os cidadãos recebem poder de compra para o que ainda não é gratuito.' },
+            { gnr: '50 %<br>(Habitação e Transporte)', debt: '50 % de todas as dívidas restantes são canceladas.', share: 'A participação aumenta em proporção à capacidade de produção do parque robótico nacional.' },
+            { gnr: '75 %<br>(Tecnologia, Premium e Educação)', debt: '75 % de todas as dívidas são canceladas dos livros dos bancos.', share: 'A participação é otimizada. A necessidade de dinheiro diminui drasticamente à medida que a esfera do luxo se reduz.' },
+            { gnr: '100 %<br>(A Abundância Definitiva)', debt: 'Todas as dívidas e o dinheiro deixaram de existir.', share: 'Sistema completo. As moedas tornam-se obsoletas; prevalece uma economia totalmente livre.' }
         ]
     },
 
     // --- RYSKA ---
-'ru': {
-    title: 'Лестница свободы: От долга к суверенитету',
-    col1: 'Валовой Национальный Ресурс<br>(Бесплатный коэффициент покрытия)',
-    col2: 'Списание долга<br>(В соответствии с конституционным правом)',
-    col3: 'Суверенная доля<br>(Государственная выплата)',
-    rows: [
-        { gnr: '25 %<br>(Основное питание, Энергия и Электричество)', debt: '25 % всех частных долгов списываются немедленно.', share: 'Первая выплата активируется. Граждане получают покупательную способность для того, что еще не бесплатно.' },
-        { gnr: '50 %<br>(Жилье и Транспорт)', debt: '50 % всех оставшихся долгов списываются.', share: 'Доля увеличивается пропорционально производственным мощностям национального роботизированного парка.' },
-        { gnr: '75 %<br>(Технологии, Премиум и Образование)', debt: '75 % всех долгов списываются из книг банков.', share: 'Доля оптимизируется. Потребность в деньгах резко падает по мере сокращения сферы роскоши.' },
-        { gnr: '100 %<br>(Окончательное Изобилие)', debt: 'Все долги и деньги перестали существовать.', share: 'Система завершена. Валюты становятся устаревшими; преобладает полностью свободная экономика.' }
-    ]
-},
+    'ru': {
+        title: 'Лестница свободы: От долга к суверенитету',
+        col1: 'Валовой Национальный Ресурс<br>(Бесплатный коэффициент покрытия)',
+        col2: 'Списание долга<br>(В соответствии с конституционным правом)',
+        col3: 'Суверенная доля<br>(Государственная выплата)',
+        rows: [
+            { gnr: '25 %<br>(Основное питание, Энергия и Электричество)', debt: '25 % всех частных долгов списываются немедленно.', share: 'Первая выплата активируется. Граждане получают покупательную способность для того, что еще не бесплатно.' },
+            { gnr: '50 %<br>(Жилье и Транспорт)', debt: '50 % всех оставшихся долгов списываются.', share: 'Доля увеличивается пропорционально производственным мощностям национального роботизированного парка.' },
+            { gnr: '75 %<br>(Технологии, Премиум и Образование)', debt: '75 % всех долгов списываются из книг банков.', share: 'Доля оптимизируется. Потребность в деньгах резко падает по мере сокращения сферы роскоши.' },
+            { gnr: '100 %<br>(Окончательное Изобилие)', debt: 'Все долги и деньги перестали существовать.', share: 'Система завершена. Валюты становятся устаревшими; преобладает полностью свободная экономика.' }
+        ]
+    },
 
     // --- UKRAINSKA ---
-'uk': {
-    title: 'Сходи свободи: Від боргу до суверенітету',
-    col1: 'Валовий Національний Ресурс<br>(Безкоштовний коефіцієнт покриття)',
-    col2: 'Списання боргу<br>(Відповідно до конституційного права)',
-    col3: 'Суверенна частка<br>(Державна виплата)',
-    rows: [
-        { gnr: '25 %<br>(Основне харчування, Енергія та Електрика)', debt: '25 % усіх приватних боргів списуються негайно.', share: 'Перша виплата активується. Громадяни отримують купівельну спроможність для того, що ще не безкоштовно.' },
-        { gnr: '50 %<br>(Житло та Транспорт)', debt: '50 % усіх боргів, що залишилися, списуються.', share: 'Частка збільшується пропорційно до виробничих потужностей національного роботизованого парку.' },
-        { gnr: '75 %<br>(Технології, Преміум та Освіта)', debt: '75 % усіх боргів списуються з книг банків.', share: 'Частка оптимізується. Потреба в грошах різко падає в міру скорочення сфери розкоші.' },
-        { gnr: '100 %<br>(Остаточне Багатство)', debt: 'Усі борги та гроші перестали існувати.', share: 'Систему завершено. Валюти стають застарілими; переважає повністю вільна економіка.' }
-    ]
-},
+    'uk': {
+        title: 'Сходи свободи: Від боргу до суверенітету',
+        col1: 'Валовий Національний Ресурс<br>(Безкоштовний коефіцієнт покриття)',
+        col2: 'Списання боргу<br>(Відповідно до конституційного права)',
+        col3: 'Суверенна частка<br>(Державна виплата)',
+        rows: [
+            { gnr: '25 %<br>(Основне харчування, Енергія та Електрика)', debt: '25 % усіх приватних боргів списуються негайно.', share: 'Перша виплата активується. Громадяни отримують купівельну спроможність для того, що ще не безкоштовно.' },
+            { gnr: '50 %<br>(Житло та Транспорт)', debt: '50 % усіх боргів, що залишилися, списуються.', share: 'Частка збільшується пропорційно до виробничих потужностей національного роботизованого парку.' },
+            { gnr: '75 %<br>(Технології, Преміум та Освіта)', debt: '75 % усіх боргів списуються з книг банків.', share: 'Частка оптимізується. Потреба в грошах різко падає в міру скорочення сфери розкоші.' },
+            { gnr: '100 %<br>(Остаточне Багатство)', debt: 'Усі борги та гроші перестали існувати.', share: 'Систему завершено. Валюти стають застарілими; переважає повністю вільна економіка.' }
+        ]
+    },
 
     // --- BULGARISKA ---
-'bg': {
-    title: 'Стълбата на свободата: От дълг към суверенитет',
-    col1: 'Брутен Национален Ресурс<br>(Безплатен коефициент на покритие)',
-    col2: 'Отписване на дълг<br>(Съгласно конституционното право)',
-    col3: 'Суверенен дял<br>(Държавно плащане)',
-    rows: [
-        { gnr: '25 %<br>(Основна храна, Енергия и Електричество)', debt: '25 % от всички частни дългове се отписват незабавно.', share: 'Първото плащане се активира. Гражданите получават покупателна способност за това, което все още не е безплатно.' },
-        { gnr: '50 %<br>(Жилище и Транспорт)', debt: '50 % от всички останали дългове се отписват.', share: 'Делът нараства пропорционално на производствения капацитет на националния роботизиран парк.' },
-        { gnr: '75 %<br>(Технологии, Премиум и Образование)', debt: '75 % от всички дългове се отписват от книгите на банките.', share: 'Делът се оптимизира. Нуждата от пари намалява драстично с намаляването на сферата на лукс.' },
-        { gnr: '100 %<br>(Окончателното Изобилие)', debt: 'Всички дългове и пари са престанали да съществуват.', share: 'Системата е завършена. Валутите остаряват; преобладава напълно свободна икономика.' }
-    ]
-},
+    'bg': {
+        title: 'Стълбата на свободата: От дълг към суверенитет',
+        col1: 'Брутен Национален Ресурс<br>(Безплатен коефициент на покритие)',
+        col2: 'Отписване на дълг<br>(Съгласно конституционното право)',
+        col3: 'Суверенен дял<br>(Държавно плащане)',
+        rows: [
+            { gnr: '25 %<br>(Основна храна, Енергия и Електричество)', debt: '25 % от всички частни дългове се отписват незабавно.', share: 'Първото плащане се активира. Гражданите получават покупателна способност за това, което все още не е безплатно.' },
+            { gnr: '50 %<br>(Жилище и Транспорт)', debt: '50 % от всички останали дългове се отписват.', share: 'Делът нараства пропорционално на производствения капацитет на националния роботизиран парк.' },
+            { gnr: '75 %<br>(Технологии, Премиум и Образование)', debt: '75 % от всички дългове се отписват от книгите на банките.', share: 'Делът се оптимизира. Нуждата от пари намалява драстично с намаляването на сферата на лукс.' },
+            { gnr: '100 %<br>(Окончателното Изобилие)', debt: 'Всички дългове и пари са престанали да съществуват.', share: 'Системата е завършена. Валутите остаряват; преобладава напълно свободна икономика.' }
+        ]
+    },
 
     // --- URDU ---
     'ur': {
         title: 'آزادی کی سیڑھی: قرض سے خودمختاری تک',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'قومی وسائل مجموعی<br>(مفت کوریج کی شرح)',
+        col2: 'قرض معافی<br>(آئینی قانون کے مطابق)',
+        col3: 'خودمختاری حصہ<br>(ریاستی ادائیگی)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(بنیادی خوراک، توانائی اور بجلی)', debt: '25 % تمام نجی قرضے فوری طور پر معاف کر دیئے جاتے ہیں۔', share: 'پہلی ادائیگی فعال ہو جاتی ہے۔ شہریوں کو اس چیز کے لیے خریداری کی طاقت ملتی ہے جو ابھی تک مفت نہیں ہے۔' },
+            { gnr: '50 %<br>(رہائش اور نقل و حمل)', debt: '50 % تمام باقی ماندہ قرضے معاف کر دیئے جاتے ہیں۔', share: 'حصہ قومی روبوٹ پارک کی پیداواری صلاحیت کے تناسب میں بڑھتا ہے۔' },
+            { gnr: '75 %<br>(ٹیکنالوجی، پریمیم اور تعلیم)', debt: '75 % تمام قرضے بینکوں کی کتابوں سے معاف کر دیئے جاتے ہیں۔', share: 'حصہ بہتر بنایا جاتا ہے۔ عیش و عشرت کے شعبے کے سکڑنے کے ساتھ پیسے کی ضرورت ڈرامائی طور پر گر جاتی ہے۔' },
+            { gnr: '100 %<br>(حتمی فراوانی)', debt: 'تمام قرضے اور پیسے کا وجود ختم ہو گیا ہے۔', share: 'نظام مکمل۔ کرنسیاں متروک ہو جاتی ہیں؛ مکمل آزاد معیشت غالب ہے۔' }
         ]
     },
 
     // --- JAPANSKA ---
     'ja': {
         title: '自由の階段：債務から主権へ',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: '国民総資源<br>(無料カバレッジ率)',
+        col2: '債務帳消し<br>(憲法に基づく)',
+        col3: '主権配当<br>(国庫支払い)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(基本食料、エネルギー、電気)', debt: '25 % のすべての私的債務が直ちに帳消しされます。', share: '最初の支払いが有効化されます。市民はまだ無料ではないものに対する購買力を得ます。' },
+            { gnr: '50 %<br>(住宅と交通)', debt: '50 % のすべての残存債務が帳消しされます。', share: '配当は国のロボットパークの生産能力に比例して増加します。' },
+            { gnr: '75 %<br>(技術、プレミアム、教育)', debt: '75 % のすべての債務が銀行の帳簿から消去されます。', share: '配当は最適化されます。贅沢品分野が縮小するにつれて、お金の必要性は劇的に低下します。' },
+            { gnr: '100 %<br>(究極の豊かさ)', debt: 'すべての債務とお金が存在しなくなります。', share: 'システム完了。通貨は時代遅れになります。完全な自由経済が支配します。' }
         ]
     },
 
     // --- TAGALOG / FILIPINO ---
     'tl': {
         title: 'Hagdan ng Kalayaan: Mula sa Utang Tungo sa Kasarinlan',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Likas na Yaman ng Bansa<br>(Rate ng libreng saklaw)',
+        col2: 'Pagpapawalang-bisa ng Utang<br>(Ayon sa Batas Konstitusyonal)',
+        col3: 'Bahagi ng Kasarinlan<br>(Pagbabayad ng Estado)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Pangunahing Pagkain, Enerhiya at Kuryente)', debt: '25 % ng lahat ng pribadong utang ay agad na tinatanggal.', share: 'Ang unang pagbabayad ay naisaaktibo. Ang mga mamamayan ay tumatanggap ng kapangyarihan sa pagbili para sa kung ano ang hindi pa libre.' },
+            { gnr: '50 %<br>(Pabahay at Transportasyon)', debt: '50 % ng lahat ng natitirang utang ay tinatanggal.', share: 'Ang bahagi ay tumataas ayon sa kapasidad ng produksyon ng pambansang robot park.' },
+            { gnr: '75 %<br>(Teknolohiya, Premium at Edukasyon)', debt: '75 % ng lahat ng utang ay tinatanggal mula sa mga libro ng mga bangko.', share: 'Ang bahagi ay na-optimize. Ang pangangailangan para sa pera ay bumaba nang malaki habang ang saklaw ng karangyaan ay lumiliit.' },
+            { gnr: '100 %<br>(Ang Tunay na Kasaganaan)', debt: 'Ang lahat ng utang at pera ay tumigil na umiral.', share: 'Kumpleto ang sistema. Ang mga pera ay nagiging lipas na; isang ganap na malayang ekonomiya ang naghahari.' }
         ]
     },
 
     // --- TYSKA ---
     'de': {
-        title: 'Die Treppe der Freiheit: Von der Schuld zur Souveränität',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        title: 'Freiheitstreppe: Von der Schuld zur Souveränität',
+        col1: 'Bruttonationalressource<br>(Gratis Abdeckungsgrad)',
+        col2: 'Schuldenerlass<br>(Nach Verfassungsrecht)',
+        col3: 'Souveränitätsanteil<br>(Staatliche Auszahlung)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Grundnahrung, Energie & Strom)', debt: '25 % aller privaten Schulden werden sofort erlassen.', share: 'Die erste Auszahlung wird aktiviert. Die Bürger erhalten Kaufkraft für das, was noch nicht kostenlos ist.' },
+            { gnr: '50 %<br>(Wohnen & Verkehr)', debt: '50 % aller verbleibenden Schulden werden erlassen.', share: 'Der Anteil steigt proportional zur Produktionskapazität des nationalen Roboterparks.' },
+            { gnr: '75 %<br>(Technologie, Premium & Bildung)', debt: '75 % aller Schulden werden aus den Büchern der Banken gestrichen.', share: 'Der Anteil wird optimiert. Der Geldbedarf sinkt dramatisch, da die Luxussphäre schrumpft.' },
+            { gnr: '100 %<br>(Der Definitive Überfluss)', debt: 'Alle Schulden und Geld haben aufgehört zu existieren.', share: 'System abgeschlossen. Währungen werden obsolet; eine völlig freie Wirtschaft herrscht.' }
         ]
     },
 
     // --- KOREANSKA ---
     'ko': {
         title: '자유의 계단: 채무에서 주권으로',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: '국민총자원<br>(무료 적용률)',
+        col2: '부채 탕감<br>(헌법에 따른)',
+        col3: '주권 배당<br>(국가 지급)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(기본 식품, 에너지 및 전기)', debt: '25 %의 모든 사적 부채가 즉시 탕감됩니다.', share: '첫 번째 지급이 활성화됩니다. 시민들은 아직 무료가 아닌 것에 대한 구매력을 얻습니다.' },
+            { gnr: '50 %<br>(주택 및 교통)', debt: '50 %의 모든 잔여 부채가 탕감됩니다.', share: '배당은 국가 로봇 공원의 생산 능력에 비례하여 증가합니다.' },
+            { gnr: '75 %<br>(기술, 프리미엄 및 교육)', debt: '75 %의 모든 부채가 은행 장부에서 탕감됩니다.', share: '배당은 최적화됩니다. 사치 분야가 축소됨에 따라 화폐에 대한 필요성이 급격히 감소합니다.' },
+            { gnr: '100 %<br>(최종적 풍요)', debt: '모든 부채와 화폐가 더 이상 존재하지 않게 됩니다.', share: '시스템 완료. 통화는 구식이 됩니다. 완전한 자유 경제가 지배합니다.' }
         ]
     },
 
     // --- THAILÄNDSKA ---
     'th': {
         title: 'บันไดแห่งอิสรภาพ: จากหนี้สู่อธิปไตย',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'ทรัพยากรแห่งชาติรวม<br>(อัตราความคุ้มครองฟรี)',
+        col2: 'การตัดหนี้<br>(ตามกฎหมายรัฐธรรมนูญ)',
+        col3: 'ส่วนแบ่งอธิปไตย<br>(การจ่ายเงินของรัฐ)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(อาหารพื้นฐาน พลังงานและไฟฟ้า)', debt: '25 % ของหนี้ส่วนตัวทั้งหมดถูกตัดออกทันที', share: 'การจ่ายเงินครั้งแรกถูกเปิดใช้งาน ประชาชนได้รับอำนาจซื้อสำหรับสิ่งที่ยังไม่ฟรี' },
+            { gnr: '50 %<br>(ที่อยู่อาศัยและการขนส่ง)', debt: '50 % ของหนี้ที่เหลือทั้งหมดถูกตัดออก', share: 'ส่วนแบ่งเพิ่มขึ้นตามสัดส่วนกำลังการผลิตของสวนหุ่นยนต์แห่งชาติ' },
+            { gnr: '75 %<br>(เทคโนโลยี สินค้าพรีเมียม และการศึกษา)', debt: '75 % ของหนี้ทั้งหมดถูกตัดออกจากบัญชีธนาคาร', share: 'ส่วนแบ่งได้รับการปรับให้เหมาะสม ความต้องการเงินลดลงอย่างมากเมื่อขอบเขตของความหรูหราหดตัวลง' },
+            { gnr: '100 %<br>(ความอุดมสมบูรณ์ขั้นสุดท้าย)', debt: 'หนี้และเงินทั้งหมดสิ้นสุดลงแล้ว', share: 'ระบบเสร็จสมบูรณ์ สกุลเงินล้าสมัย; เศรษฐกิจเสรีอย่างสมบูรณ์ครอบงำ' }
         ]
     },
 
     // --- VIETNAMESISKA ---
     'vi': {
         title: 'Nấc thang Tự do: Từ Nợ nần đến Chủ quyền',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Tổng tài nguyên quốc gia<br>(Tỷ lệ bảo hiểm miễn phí)',
+        col2: 'Xóa nợ<br>(Theo luật hiến pháp)',
+        col3: 'Phần chủ quyền<br>(Thanh toán của Nhà nước)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Thực phẩm cơ bản, Năng lượng và Điện)', debt: '25 % tất cả các khoản nợ tư nhân được xóa ngay lập tức.', share: 'Khoản thanh toán đầu tiên được kích hoạt. Công dân nhận được sức mua cho những gì chưa được miễn phí.' },
+            { gnr: '50 %<br>(Nhà ở và Giao thông)', debt: '50 % tất cả các khoản nợ còn lại được xóa.', share: 'Phần này tăng tỷ lệ thuận với năng lực sản xuất của công viên robot quốc gia.' },
+            { gnr: '75 %<br>(Công nghệ, Cao cấp và Giáo dục)', debt: '75 % tất cả các khoản nợ được xóa khỏi sổ sách của ngân hàng.', share: 'Phần được tối ưu hóa. Nhu cầu về tiền giảm mạnh khi lĩnh vực xa xỉ thu hẹp.' },
+            { gnr: '100 %<br>(Sự phong phú cuối cùng)', debt: 'Tất cả các khoản nợ và tiền đã không còn tồn tại.', share: 'Hệ thống hoàn tất. Tiền tệ trở nên lỗi thời; một nền kinh tế hoàn toàn tự do chiếm ưu thế.' }
         ]
     },
 
     // --- TURKISKA ---
     'tr': {
         title: 'Özgürlük Merdiveni: Borçtan Egemenliğe',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Ulusal Brüt Kaynak<br>(Ücretsiz kapsama oranı)',
+        col2: 'Borç Silme<br>(Anayasal Hukuka Göre)',
+        col3: 'Egemenlik Payı<br>(Devlet Ödemesi)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Temel Gıda, Enerji ve Elektrik)', debt: 'Tüm özel borçların %25\'i derhal silinir.', share: 'İlk ödeme etkinleştirilir. Vatandaşlar henüz ücretsiz olmayan şeyler için satın alma gücü elde eder.' },
+            { gnr: '50 %<br>(Konut ve Ulaşım)', debt: 'Kalan tüm borçların %50\'si silinir.', share: 'Pay, ulusal robot parkının üretim kapasitesiyle orantılı olarak artar.' },
+            { gnr: '75 %<br>(Teknoloji, Premium ve Eğitim)', debt: 'Tüm borçların %75\'i bankaların defterlerinden silinir.', share: 'Pay optimize edilir. Lüks alanı küçüldükçe para ihtiyacı dramatik bir şekilde düşer.' },
+            { gnr: '100 %<br>(Nihai Bolluk)', debt: 'Tüm borçlar ve para artık mevcut değildir.', share: 'Sistem tamamlandı. Para birimleri modası geçer; tamamen serbest bir ekonomi hakimdir.' }
         ]
     },
 
     // --- PERSISKA ---
     'fa': {
         title: 'پلکان آزادی: از بدهی تا حاکمیت',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'منبع ناخالص ملی<br>(نرخ پوشش رایگان)',
+        col2: 'بخشودگی بدهی<br>(طبق قانون اساسی)',
+        col3: 'سهم حاکمیت<br>(پرداخت دولتی)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(غذای اساسی، انرژی و برق)', debt: '25 % از تمام بدهی‌های خصوصی بلافاصله بخشیده می‌شود.', share: 'اولین پرداخت فعال می‌شود. شهروندان برای آنچه هنوز رایگان نیست، قدرت خرید دریافت می‌کنند.' },
+            { gnr: '50 %<br>(مسکن و حمل و نقل)', debt: '50 % از تمام بدهی‌های باقی‌مانده بخشیده می‌شود.', share: 'سهم به نسبت ظرفیت تولید پارک رباتیک ملی افزایش می‌یابد.' },
+            { gnr: '75 %<br>(فناوری، برتر و آموزش)', debt: '75 % از تمام بدهی‌ها از دفاتر بانک‌ها بخشیده می‌شود.', share: 'سهم بهینه می‌شود. با کوچک شدن حوزه تجملات، نیاز به پول به طور چشمگیری کاهش می‌یابد.' },
+            { gnr: '100 %<br>(فراوانی نهایی)', debt: 'تمام بدهی‌ها و پول‌ها از بین رفته‌اند.', share: 'سیستم کامل شد. ارزها منسوخ می‌شوند؛ یک اقتصاد کاملاً آزاد حاکم است.' }
         ]
     },
 
     // --- SWAHILI ---
     'sw': {
         title: 'Ngazi ya Uhuru: Kutoka Kwenye Deni Hadi Kwenye Mamlaka Kamili',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Rasilimali ya Taifa<br>(Kiwango cha huduma za bure)',
+        col2: 'Kufutwa kwa Deni<br>(Kulingana na Sheria ya Katiba)',
+        col3: 'Sehemu ya Mamlaka<br>(Malipo ya Serikali)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Chakula cha Msingi, Nishati na Umeme)', debt: '25 % ya deni zote za kibinafsi zinafutwa mara moja.', share: 'Malipo ya kwanza yanaanzishwa. Wananchi wanapata uwezo wa kununua kwa kile ambacho bado si bure.' },
+            { gnr: '50 %<br>(Makazi na Usafiri)', debt: '50 % ya deni zote zilizobaki zinafutwa.', share: 'Sehemu inaongezeka kulingana na uwezo wa uzalishaji wa mbuga ya roboti ya kitaifa.' },
+            { gnr: '75 %<br>(Teknolojia, Premium na Elimu)', debt: '75 % ya deni zote zinafutwa kutoka kwa vitabu vya benki.', share: 'Sehemu inaboreshwa. Mahitaji ya pesa yanapungua sana kadiri nyanja ya anasa inavyopungua.' },
+            { gnr: '100 %<br>(Uwingi wa Mwisho)', debt: 'Deni zote na pesa zimekoma kuwepo.', share: 'Mfumo umekamilika. Sarafu zinakuwa za kizamani; uchumi huru kabisa unatawala.' }
         ]
     },
 
     // --- ITALIENSKA ---
     'it': {
         title: 'La Scala della Libertà: Dal debito alla sovranità',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Risorsa Nazionale Lorda<br>(Tasso di copertura gratuita)',
+        col2: 'Cancellazione del debito<br>(Secondo la legge costituzionale)',
+        col3: 'Quota sovrana<br>(Pagamento dello Stato)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Cibo base, Energia ed Elettricità)', debt: 'Il 25 % di tutti i debiti privati vengono cancellati immediatamente.', share: 'Il primo pagamento viene attivato. I cittadini ricevono potere d\'acquisto per ciò che non è ancora gratuito.' },
+            { gnr: '50 %<br>(Abitazione e Trasporti)', debt: 'Il 50 % di tutti i debiti rimanenti vengono cancellati.', share: 'La quota aumenta in proporzione alla capacità produttiva del parco robotico nazionale.' },
+            { gnr: '75 %<br>(Tecnologia, Premium e Istruzione)', debt: 'Il 75 % di tutti i debiti vengono cancellati dai libri delle banche.', share: 'La quota viene ottimizzata. Il bisogno di denaro diminuisce drasticamente man mano che la sfera del lusso si riduce.' },
+            { gnr: '100 %<br>(L\'Abbondanza Definitiva)', debt: 'Tutti i debiti e il denaro hanno cessato di esistere.', share: 'Sistema completo. Le valute diventano obsolete; prevale un\'economia totalmente libera.' }
         ]
     },
 
     // --- POLSKA ---
     'pl': {
         title: 'Schody Wolności: Od długu do suwerenności',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Krajowy Zasób Brutto<br>(Bezpłatny wskaźnik pokrycia)',
+        col2: 'Umorzenie długu<br>(Zgodnie z prawem konstytucyjnym)',
+        col3: 'Udział suwerenny<br>(Płatność państwowa)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Podstawowe pożywienie, Energia i Elektryczność)', debt: '25 % wszystkich prywatnych długów jest natychmiast umarzanych.', share: 'Pierwsza wypłata jest aktywowana. Obywatele otrzymują siłę nabywczą na to, co nie jest jeszcze bezpłatne.' },
+            { gnr: '50 %<br>(Mieszkania i Transport)', debt: '50 % wszystkich pozostałych długów jest umarzanych.', share: 'Udział wzrasta proporcjonalnie do zdolności produkcyjnej krajowego parku robotycznego.' },
+            { gnr: '75 %<br>(Technologia, Premium i Edukacja)', debt: '75 % wszystkich długów jest umarzanych z ksiąg banków.', share: 'Udział jest optymalizowany. Zapotrzebowanie na pieniądze gwałtownie spada wraz z kurczeniem się sfery luksusu.' },
+            { gnr: '100 %<br>(Ostateczna Obfitość)', debt: 'Wszystkie długi i pieniądze przestały istnieć.', share: 'System zakończony. Waluty stają się przestarzałe; panuje całkowicie wolna gospodarka.' }
         ]
     },
 
     // --- NEDERLÄNDSKA ---
     'nl': {
-        title: 'De Trap van Vrijheid: Van schuld naar souvereiniteit',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        title: 'De Trap van Vrijheid: Van schuld naar soevereiniteit',
+        col1: 'Bruto Nationale Resource<br>(Gratis Dekkingsgraad)',
+        col2: 'Schuldafschrijving<br>(Volgens Grondwettelijk Recht)',
+        col3: 'Soevereiniteitsaandeel<br>(Staatelijke Uitbetaling)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Basisvoedsel, Energie & Elektriciteit)', debt: '25 % van alle particuliere schulden worden onmiddellijk afgeschreven.', share: 'Eerste uitbetaling wordt geactiveerd. Burgers krijgen koopkracht voor wat nog niet gratis is.' },
+            { gnr: '50 %<br>(Huisvesting & Vervoer)', debt: '50 % van alle resterende schulden worden afgeschreven.', share: 'Het aandeel stijgt in verhouding tot de productiecapaciteit van het nationale robotpark.' },
+            { gnr: '75 %<br>(Technologie, Premium & Onderwijs)', debt: '75 % van alle schulden worden uit de bankboeken geschreven.', share: 'Het aandeel wordt geoptimaliseerd. De behoefte aan geld daalt dramatisch naarmate de luxesfeer krimpt.' },
+            { gnr: '100 %<br>(De Definitieve Overvloed)', debt: 'Alle schulden en geld zijn opgehouden te bestaan.', share: 'Systeem voltooid. Valuta worden overbodig; een totale vrije economie heerst.' }
         ]
     },
 
     // --- RUMÄNSKA ---
     'ro': {
         title: 'Scara Libertății: De la datorie la suveranitate',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Resursă Națională Brută<br>(Rata de acoperire gratuită)',
+        col2: 'Anularea datoriei<br>(Conform legii constituționale)',
+        col3: 'Cota suverană<br>(Plata statului)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Alimente de bază, Energie și Electricitate)', debt: '25 % din toate datoriile private sunt anulate imediat.', share: 'Prima plată este activată. Cetățenii primesc putere de cumpărare pentru ceea ce nu este încă gratuit.' },
+            { gnr: '50 %<br>(Locuințe și Transport)', debt: '50 % din toate datoriile rămase sunt anulate.', share: 'Cota crește proporțional cu capacitatea de producție a parcului robotic național.' },
+            { gnr: '75 %<br>(Tehnologie, Premium și Educație)', debt: '75 % din toate datoriile sunt anulate din cărțile băncilor.', share: 'Cota este optimizată. Nevoia de bani scade dramatic pe măsură ce sfera luxului se micșorează.' },
+            { gnr: '100 %<br>(Abundența Definitivă)', debt: 'Toate datoriile și banii au încetat să existe.', share: 'Sistem complet. Monedele devin învechite; prevalează o economie total liberă.' }
         ]
     },
 
     // --- GREKISKA ---
     'el': {
         title: 'Η Σκάλα της Ελευθερίας: Από το χρέος στην κυριαρχία',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Ακαθάριστος Εθνικός Πόρος<br>(Δωρεάν αναλογία κάλυψης)',
+        col2: 'Διαγραφή χρέους<br>(Σύμφωνα με το συνταγματικό δίκαιο)',
+        col3: 'Κυριαρχικό μερίδιο<br>(Κρατική πληρωμή)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Βασικά τρόφιμα, Ενέργεια και Ηλεκτρισμός)', debt: 'Το 25 % όλων των ιδιωτικών χρεών διαγράφονται άμεσα.', share: 'Η πρώτη πληρωμή ενεργοποιείται. Οι πολίτες λαμβάνουν αγοραστική δύναμη για όσα δεν είναι ακόμη δωρεάν.' },
+            { gnr: '50 %<br>(Στέγαση και Μεταφορές)', debt: 'Το 50 % όλων των εναπομεινάντων χρεών διαγράφονται.', share: 'Το μερίδιο αυξάνεται ανάλογα με την παραγωγική ικανότητα του εθνικού ρομποτικού πάρκου.' },
+            { gnr: '75 %<br>(Τεχνολογία, Premium και Εκπαίδευση)', debt: 'Το 75 % όλων των χρεών διαγράφονται από τα βιβλία των τραπεζών.', share: 'Το μερίδιο βελτιστοποιείται. Η ανάγκη για χρήμα μειώνεται δραματικά καθώς η σφαίρα της πολυτέλειας συρρικνώνεται.' },
+            { gnr: '100 %<br>(Η Οριστική Αφθονία)', debt: 'Όλα τα χρέη και τα χρήματα έχουν πάψει να υπάρχουν.', share: 'Το σύστημα ολοκληρώθηκε. Τα νομίσματα γίνονται ξεπερασμένα; επικρατεί μια εντελώς ελεύθερη οικονομία.' }
         ]
     },
 
     // --- AFRIKAANS ---
     'af': {
         title: 'Die Vryheidstrap: Van skuld tot soewereiniteit',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Bruto Nasionale Hulpbron<br>(Gratis Dekkingskoers)',
+        col2: 'Skuldafskrywing<br>(Volgens Grondwetlike Reg)',
+        col3: 'Soewereiniteitsaandeel<br>(Staatsuitbetaling)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Basiese Kos, Energie & Elektrisiteit)', debt: '25 % van alle private skuld word onmiddellik afgeskryf.', share: 'Eerste uitbetaling word geaktiveer. Burgers ontvang koopkrag vir wat nog nie gratis is nie.' },
+            { gnr: '50 %<br>(Behuising & Vervoer)', debt: '50 % van alle oorblywende skuld word afgeskryf.', share: 'Die aandeel neem toe in verhouding tot die nasionale robotpark se produksiekapasiteit.' },
+            { gnr: '75 %<br>(Tegnologie, Premium & Onderwys)', debt: '75 % van alle skuld word uit die banke se boeke geskryf.', share: 'Die aandeel word geoptimaliseer. Die behoefte aan geld daal dramaties namate die luuksesfeer krimp.' },
+            { gnr: '100 %<br>(Die Definitiewe Oorvloed)', debt: 'Alle skuld en geld het opgehou om te bestaan.', share: 'Stelsel voltooi. Geldeenhede word verouderd; \'n totale vrye ekonomie heers.' }
         ]
     },
 
     // --- ZULU ---
     'zu': {
         title: 'Izitebhisi Zomkululeko: Kusukela Esikweletini Muya Ekubuseni',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Izinsiza Zezwe Zomhlaba<br>(Izinga lokumboza kwamahhala)',
+        col2: 'Ukusulwa Kwesikweleti<br>(NgokoMthetho WomSisekelo)',
+        col3: 'Isabelo Sobukhosi<br>(Inkokhelo Yombuso)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Ukudla Okuyisisekelo, Amandla nogesi)', debt: '25 % yazo zonke izikweleti zangasese ziyasuswa ngokushesha.', share: 'Inkokhelo yokuqala iyasebenza. Izakhamuzi zithola amandla okuthenga kulokho okungakakhululeki.' },
+            { gnr: '50 %<br>(Izindlu Nezokuthutha)', debt: '50 % yazo zonke izikweleti ezisele ziyasuswa.', share: 'Isabelo sikhula ngokulingana namandla okukhiqiza epaki yamarobhothi kazwelonke.' },
+            { gnr: '75 %<br>(Ezobuchwepheshe, Okukhethekile Nezemfundo)', debt: '75 % yazo zonke izikweleti ziyasuswa ezincwadini zamabhange.', share: 'Isabelo siyalungiswa. Isidingo semali siyehla kakhulu njengoba indawo yokunethezeka incipha.' },
+            { gnr: '100 %<br>(Inala Yokugcina)', debt: 'Zonke izikweleti nemali seziyekile ukuba khona.', share: 'Uhlelo luphelile. Izimali ziyaphelelwa yisikhathi; umnotho okhululeke ngokuphelele uyabusa.' }
         ]
     },
 
     // --- XHOSA ---
     'xh': {
         title: 'Izitepisi Zenkululeko: Ukusuka Etyaleni Ukuya Kubukhosi',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Izibonelelo Zelizwe<br>(Izinga lokugquma simahla)',
+        col2: 'Ukucinywa Kwetyala<br>(NgokoMthetho woMgaqo-siseko)',
+        col3: 'Isabelo Sobukhosi<br>(Intlawulo Karhulumente)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Ukutla Okusisisekelo, Amandla nombane)', debt: '25 % yawo onke amatyala abucala acinywa ngoko nangoko.', share: 'Intlawulo yokuqala iyasebenza. Abemi bafumana amandla okuthenga into engekakhululeki.' },
+            { gnr: '50 %<br>(Izindlu Nezothutho)', debt: '50 % yawo onke amatyala aseleyo acinywa.', share: 'Isabelo sikhula ngokulingana namandla emveliso epaki yeerobhothi kazwelonke.' },
+            { gnr: '75 %<br>(Itekhnoloji, Iimveliso eziPhezulu neMfundo)', debt: '75 % yawo onke amatyala acinywa kwiincwadi zeebhanki.', share: 'Isabelo siyalungiselelwa. Imfuno yemali iyancipha kakhulu njengoko indawo yobunewunewu incipha.' },
+            { gnr: '100 %<br>(Ubuninzi Obugqibeleleyo)', debt: 'Onke amatyala nemali ayekile ukubakho.', share: 'Inkqubo igqityiwe. Iimali ziyaphelelwa lixesha; uqoqosho olukhululekile ngokupheleleyo luyalawula.' }
         ]
     },
 
     // --- TJECKISKA ---
     'cs': {
         title: 'Schody svobody: Od dluhu k suverenitě',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Hrubý Národní Zdroj<br>(Bezplatný poměr krytí)',
+        col2: 'Odpis dluhu<br>(Podle ústavního práva)',
+        col3: 'Suverénní podíl<br>(Státní platba)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Základní potraviny, Energie a Elektřina)', debt: '25 % všech soukromých dluhů je okamžitě odepsáno.', share: 'První platba je aktivována. Občané získávají kupní sílu na to, co ještě není zdarma.' },
+            { gnr: '50 %<br>(Bydlení a Doprava)', debt: '50 % všech zbývajících dluhů je odepsáno.', share: 'Podíl se zvyšuje úměrně k výrobní kapacitě národního robotického parku.' },
+            { gnr: '75 %<br>(Technologie, Prémiové a Vzdělávání)', debt: '75 % všech dluhů je odepsáno z bankovních knih.', share: 'Podíl je optimalizován. Potřeba peněz dramaticky klesá, jak se sféra luxusu zmenšuje.' },
+            { gnr: '100 %<br>(Definitivní Hojnost)', debt: 'Všechny dluhy a peníze přestaly existovat.', share: 'Systém dokončen. Měny se stávají zastaralými; převládá zcela svobodná ekonomika.' }
         ]
     },
 
-'hu': {
-    title: 'A Szabadság Lépcsője: Az adósságtól a szuverenitásig',
-    col1: 'Bruttó Nemzeti Forrás<br>(Ingyenes fedezeti arány)',
-    col2: 'Adósság leírása<br>(Az alkotmányos törvény szerint)',
-    col3: 'Szuverén részesedés<br>(Állami kifizetés)',
-    rows: [
-        { gnr: '25 %<br>(Alapélelmiszerek, Energia és Villamosság)', debt: 'Az összes magánadósság 25 %-a azonnal leírásra kerül.', share: 'Az első kifizetés aktiválódik. Az állampolgárok vásárlóerőt kapnak arra, ami még nem ingyenes.' },
-        { gnr: '50 %<br>(Lakhatás és Közlekedés)', debt: 'Az összes fennmaradó adósság 50 %-a leírásra kerül.', share: 'A részesedés a nemzeti robotpark termelési kapacitásával arányosan növekszik.' },
-        { gnr: '75 %<br>(Technológia, Prémium és Oktatás)', debt: 'Az összes adósság 75 %-a leírásra kerül a bankok könyveiből.', share: 'A részesedés optimalizálva van. A pénz iránti igény drámaian csökken, ahogy a luxusszféra zsugorodik.' },
-        { gnr: '100 %<br>(A Végső Bőség)', debt: 'Minden adósság és pénz megszűnt létezni.', share: 'A rendszer teljes. A valuták elavulttá válnak; teljesen szabad gazdaság uralkodik.' }
-    ]
-}
+    // --- UNGERSKA ---
+    'hu': {
+        title: 'A Szabadság Lépcsője: Az adósságtól a szuverenitásig',
+        col1: 'Bruttó Nemzeti Forrás<br>(Ingyenes fedezeti arány)',
+        col2: 'Adósság leírása<br>(Az alkotmányos törvény szerint)',
+        col3: 'Szuverén részesedés<br>(Állami kifizetés)',
+        rows: [
+            { gnr: '25 %<br>(Alapélelmiszerek, Energia és Villamosság)', debt: 'Az összes magánadósság 25 %-a azonnal leírásra kerül.', share: 'Az első kifizetés aktiválódik. Az állampolgárok vásárlóerőt kapnak arra, ami még nem ingyenes.' },
+            { gnr: '50 %<br>(Lakhatás és Közlekedés)', debt: 'Az összes fennmaradó adósság 50 %-a leírásra kerül.', share: 'A részesedés a nemzeti robotpark termelési kapacitásával arányosan növekszik.' },
+            { gnr: '75 %<br>(Technológia, Prémium és Oktatás)', debt: 'Az összes adósság 75 %-a leírásra kerül a bankok könyveiből.', share: 'A részesedés optimalizálva van. A pénz iránti igény drámaian csökken, ahogy a luxusszféra zsugorodik.' },
+            { gnr: '100 %<br>(A Végső Bőség)', debt: 'Minden adósság és pénz megszűnt létezni.', share: 'A rendszer teljes. A valuták elavulttá válnak; teljesen szabad gazdaság uralkodik.' }
+        ]
+    },
 
     // --- HEBREISKA ---
     'he': {
         title: 'מדרגות החירות: מחוב לריבונות',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'מש"ל - משאב לאומי<br>(יחס כיסוי חופשי)',
+        col2: 'מחיקת חוב<br>(על פי החוק החוקתי)',
+        col3: 'חלק ריבוני<br>(תשלום המדינה)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(מזון בסיסי, אנרגיה וחשמל)', debt: '25 % מכל החובות הפרטיים נמחקים מיד.', share: 'התשלום הראשון מופעל. האזרחים מקבלים כוח קנייה למה שעדיין אינו בחינם.' },
+            { gnr: '50 %<br>(דיור ותחבורה)', debt: '50 % מכל החובות הנותרים נמחקים.', share: 'החלק גדל ביחס לכושר הייצור של הפארק הרובוטי הלאומי.' },
+            { gnr: '75 %<br>(טכנולוגיה, פרימיום וחינוך)', debt: '75 % מכל החובות נמחקים מספרי הבנקים.', share: 'החלק מותאם. הצורך בכסף יורד באופן דרמטי ככל שספירת היוקרה מתכווצת.' },
+            { gnr: '100 %<br>(השפע הסופי)', debt: 'כל החובות והכסף חדלו להתקיים.', share: 'המערכת הושלמה. המטבעות הופכים למיושנים; כלכלה חופשית לחלוטין שולטת.' }
         ]
     },
 
     // --- SEYCHELLOIS KREOL ---
     'crs': {
         title: 'Eskalye Laliberte: Soti nan det pour arive lo souverennte',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
+        col1: 'Resours Nasyonel Brit<br>(To kouvri gratis)',
+        col2: 'Anilman det<br>(Dapre lwa konstitisyonel)',
+        col3: 'Part souverennte<br>(Peman Leta)',
         rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+            { gnr: '25 %<br>(Manze Debaz, Ennergi & Elektrisite)', debt: '25 % dan tou det prive i ganny anile touswit.', share: 'Premye peman i ganny aktive. Sitwayen i ganny pouvwar aste pour sa ki poko gratis.' },
+            { gnr: '50 %<br>(Lozman & Transport)', debt: '50 % dan tou det ki reste i ganny anile.', share: 'Part i ogmantasyon proporsyonelman avek kapasite pwodiksyon pak robotik nasyonal.' },
+            { gnr: '75 %<br>(Teknolozi, Premium & Ledikasyon)', debt: '75 % dan tou det i ganny anile dan liv bank.', share: 'Part i ganny optimize. Bezwen larzan i diminye drastikman pandan lesfer liriks i retresi.' },
+            { gnr: '100 %<br>(Labondans Definitif)', debt: 'Tou det ek larzan i\'n arete egziste.', share: 'Sistem konplet. Monnen i vin obsolet; en ekonomi totalman liber i dominen.' }
         ]
     },
 
     // --- FÄRÖISKA ---
-'fo': {
-    title: 'Frælsisstigin: Frá skuld til fullveldis',
-    col1: 'Bruttotjóðarressursa<br>(Gratis dekningsgrad)',
-    col2: 'Skuldaafskriving<br>(Samkvæmt stjórnarskrárlóg)',
-    col3: 'Fullveldislutur<br>(Statlig utbetaling)',
-    rows: [
-        { gnr: '25 %<br>(Grundlevnaður, Orka & El)', debt: '25 % av øllum privatum skuldum verður strikað undir samstundis.', share: 'Fyrsta útborgunin verður virkjað. Borgarar fáa keypsmakt fyri tað, sum ikki enn er ókeypis.' },
-        { gnr: '50 %<br>(Húsnæði & Flutningur)', debt: '50 % av øllum eftirstandandi skuldum verður strikað.', share: 'Luturin økist í takt við framleiðslugetu landsins robotgarðs.' },
-        { gnr: '75 %<br>(Tækni, Virðisvørur & Útbúgving)', debt: '75 % av øllum skuldum verður strikað úr bankabókum.', share: 'Luturin verður optimaliseraður. Tarvingin fyri pengum minkar avgerandi, sum luksussfæran minkar.' },
-        { gnr: '100 %<br>(Tíðarinnar Endaliga Nógv)', debt: 'Allar skuldir og pengar eru farnar at upphætta at vera til.', share: 'Skipanin fullførd. Gjaldoyru verða óneyðugar; fullkomin ókeypis búskapur ræður.' }
-    ]
-},
+    'fo': {
+        title: 'Frælsisstigin: Frá skuld til fullveldis',
+        col1: 'Bruttotjóðarressursa<br>(Gratis dekningsgrad)',
+        col2: 'Skuldaafskriving<br>(Samkvæmt stjórnarskrárlóg)',
+        col3: 'Fullveldislutur<br>(Statlig utbetaling)',
+        rows: [
+            { gnr: '25 %<br>(Grundlevnaður, Orka & El)', debt: '25 % av øllum privatum skuldum verður strikað undir samstundis.', share: 'Fyrsta útborgunin verður virkjað. Borgarar fáa keypsmakt fyri tað, sum ikki enn er ókeypis.' },
+            { gnr: '50 %<br>(Húsnæði & Flutningur)', debt: '50 % av øllum eftirstandandi skuldum verður strikað.', share: 'Luturin økist í takt við framleiðslugetu landsins robotgarðs.' },
+            { gnr: '75 %<br>(Tækni, Virðisvørur & Útbúgving)', debt: '75 % av øllum skuldum verður strikað úr bankabókum.', share: 'Luturin verður optimaliseraður. Tarvingin fyri pengum minkar avgerandi, sum luksussfæran minkar.' },
+            { gnr: '100 %<br>(Tíðarinnar Endaliga Nógv)', debt: 'Allar skuldir og pengar eru farnar at upphætta at vera til.', share: 'Skipanin fullførd. Gjaldoyru verða óneyðugar; fullkomin ókeypis búskapur ræður.' }
+        ]
+    }
+};
 
         function getTranslation(langCode) {
             return tableTranslations[langCode] || tableTranslations['en'];
@@ -814,7 +816,6 @@ const tableTranslations = {
 function buildTable(translation) {
     if (!translation) return '<p class="body-text">Table translation not available.</p>';
 
-    // ⭐ RUBRIKEN I BLÅTT
     let html = `<h2 style="font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(16pt, 3vw, 20pt); font-weight: bold; text-align: center; margin: 30px 0 20px 0; color: #0055cc;">${translation.title}</h2>`;
     html += `<table class="manifesto-table"><thead><tr>`;
     html += `<th>${translation.col1}</th>`;
@@ -835,13 +836,19 @@ function buildTable(translation) {
 }
 
         // ============================================================
-        // 3. LADDA TEXT – HOPPAR ÖVER TABELLEN I TEXTFILEN
+        // 3. LADDA TEXT – MED FELHANTERING
         // ============================================================
         async function loadText() {
             try {
                 const response = await fetch(`lang_texts/${lang}.txt`);
-                if (!response.ok) throw new Error('Textfil saknas');
+                if (!response.ok) {
+                    throw new Error(`Kunde inte hämta lang_texts/${lang}.txt (status: ${response.status})`);
+                }
                 const text = await response.text();
+
+                if (text.trim() === '') {
+                    throw new Error(`Filen lang_texts/${lang}.txt är tom!`);
+                }
 
                 const allLines = text.split('\n');
                 const nonEmptyLines = allLines.filter(line => line.trim() !== '');
@@ -882,7 +889,13 @@ function buildTable(translation) {
 
             } catch (error) {
                 console.error('Fel vid laddning:', error);
-                document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
+                document.getElementById('body-content').innerHTML = `
+                    <p class="body-text" style="color: #cc0000; text-align: center;">
+                        ❌ Kunde inte ladda texten.<br>
+                        <span style="font-size: 12px;">${error.message}</span><br>
+                        <span style="font-size: 12px;">Kontrollera att filen <strong>lang_texts/${lang}.txt</strong> finns på servern.</span>
+                    </p>
+                `;
             }
         }
 
