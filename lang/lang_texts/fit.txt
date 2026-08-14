@@ -228,9 +228,9 @@ Alhaala seuraa se konstituutionaalinen piirustus siitä, kuinka velka muuttuu su
 
 
 --- START TABLE ---
-Bruttokansallisresurssi	Velanpyyhkiminen			Suvereniteettiosuus
+Bruttokansallisresurssi		Velanpyyhkiminen				Suvereniteettiosuus
 (Ilmanen peittävyysaste)	(Konstituutionaalisen lain		(Valtion ulosmaksu)
-					mukhaan)
+							mukhaan)
 
 25%							25% kaikista yksityisistä			Ensimmäinen ulosmaksu
 (Peruselintarvikkeet,		veloista pyyhitään pois heti.		aktivoidhaan. Kansalaiset saavat
