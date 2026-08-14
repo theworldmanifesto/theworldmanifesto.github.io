@@ -605,26 +605,26 @@ Nedenfor følger den konstitutionelle tegning for, hvordan gæld forvandles til 
 
 
 --- START TABLE ---
-Bruttonationalresurs			Gældsafskrivning			Suverænitetsandel
+Bruttonationalresurs			Gældsafskrivning				Suverænitetsandel
 (Gratis dækningsgrad)			(Ifølge konstitutionel lov)		(Statslig udbetaling)
 
-25 %						25 % af al privat				Første udbetaling
-(Basislevnedsmidler,			gæld slettes				aktiveres. Borgerne får
-Energi & El)				omgående.				købekraft til det, der
-												endnu ikke er gratis.
+25 %							25 % af al privat				Første udbetaling
+(Basislevnedsmidler,			gæld slettes					aktiveres. Borgerne får
+Energi & El)					omgående.						købekraft til det, der
+																endnu ikke er gratis.
 
-50 %						50 % af al resterende			Andelen stiger i takt med
-(Bolig & Transport)			gæld slettes.				den nationale robotparks
-												produktionskapacitet.
+50 %							50 % af al resterende			Andelen stiger i takt med
+(Bolig & Transport)				gæld slettes.					den nationale robotparks
+																produktionskapacitet.
 
-75 %						75 % af al gæld slettes		Andelen optimeres. Behovet
+75 %							75 % af al gæld slettes			Andelen optimeres. Behovet
 (Teknologi, Merværdi-			fra bankernes bøger.			for penge falder dramatisk,
-varer & Uddannelse)									efterhånden som luksussfæren
-												krymper.
+varer & Uddannelse)												efterhånden som luksussfæren
+																krymper.
 
-100 %					Al gæld og alle penge			Systemet fuldendt. Valutaer
-(Det Definitive				er ophørt med at				bliver overflødige; total
-Overflod)					eksistere.					gratisøkonomi hersker.
+100 %							Al gæld og alle penge			Systemet fuldendt. Valutaer
+(Det Definitive					er ophørt med at				bliver overflødige; total
+Overflod)						eksistere.						gratisøkonomi hersker.
 --- END TABLE ---
 
 
