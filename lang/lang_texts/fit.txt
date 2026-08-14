@@ -232,23 +232,23 @@ Bruttokansallisresurssi	Velanpyyhkiminen			Suvereniteettiosuus
 (Ilmanen peittävyysaste)	(Konstituutionaalisen lain		(Valtion ulosmaksu)
 					mukhaan)
 
-25%					25% kaikista yksityisistä		Ensimmäinen ulosmaksu
+25%							25% kaikista yksityisistä			Ensimmäinen ulosmaksu
 (Peruselintarvikkeet,		veloista pyyhitään pois heti.		aktivoidhaan. Kansalaiset saavat
-Energia & Sähkö)								ostovoimaa sille, mikä ei vielä ole
-											lmanesta.
+Energia & Sähkö)												ostovoimaa sille, mikä ei vielä ole
+																lmanesta.
 
-50%					50% kaikista jäljellä olevista		Osuus nousee samassa tahissa ko
-(Asuminen & Kuljetus)		veloista pyyhitään pois.		kansallisen robotiparkin
-											tuotantokapasiteetti.
+50%							50% kaikista jäljellä olevista		Osuus nousee samassa tahissa ko
+(Asuminen & Kuljetus)		veloista pyyhitään pois.			kansallisen robotiparkin
+																tuotantokapasiteetti.
 
-75%					75% kaikista veloista			Osuus optimerathaan.
-(Tekniikka,				pyyhitään pois pankkien		Rahantarve uppoaa dramaattisesti,
-Lisäarvotavarat &		kirjoista.					ko luksussfääri kutistuu.
+75%							75% kaikista veloista				Osuus optimerathaan.
+(Tekniikka,					pyyhitään pois pankkien				Rahantarve uppoaa dramaattisesti,
+Lisäarvotavarat &			kirjoista.							ko luksussfääri kutistuu.
 Koulutus)
 
-100%				Kaikki velat ja rahat ovat		Systeemi oon valmis. Valuutat
-(Se Lopullinen			lakanneet olemasta.			tulevat tarpeettomiksi; täysi
-Yltäkylläisyys)									ilmanentalous vallitsee.
+100%						Kaikki velat ja rahat ovat			Systeemi oon valmis. Valuutat
+(Se Lopullinen				lakanneet olemasta.					tulevat tarpeettomiksi; täysi
+Yltäkylläisyys)													ilmanentalous vallitsee.
 --- END TABLE ---
 
 
