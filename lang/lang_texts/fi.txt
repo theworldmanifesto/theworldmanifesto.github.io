@@ -1,12 +1,9 @@
 Maailmanmanifesti
 
-
 Manifesti lopullisesta yltäkylläisyydestä
 
 
-
 Sven Yngerstedt
-
 
 
 =======================================
@@ -17,12 +14,9 @@ Ensimmäinen painos, 2026
 
 Manifestin asema digitaaliaikakaudella
 
-
 Tämä manifesti on lahja ihmiskunnalle ja suunnitelma velattomasta, täysin robotisoidusta tulevaisuudesta. Se on digitaalinen lentolehtinen vapautumiselle.
 
-
 Teksti on täysin vapaa luettavaksi, kopioitavaksi, tulostettavaksi ja jaettavaksi jokaiselle ihmiselle maan päällä. Sitä ei kuitenkaan saa koskaan myydä, paketoida uudelleen kaupallista hyötyä varten tai sulkea maksumuurien taakse. Ideoita vapaasta maailmasta ei voi omistaa.
-
 
 Lue, levitä ja siirry aikakauteen. Täydellinen alkuperäisteos on aina saatavilla ilmaiseksi internetissä.
 
@@ -389,38 +383,37 @@ J.   Uusi koti
 
 1.  Trooppinen asuinvyöhyke
 
-
 Manifestin kautta toteutetaan suuri lämpömuutto alueille, joilla ihminen on biologisesti luotu elämään.
+
 
 2.  Trooppiset ylänkövyöhykkeet: Turvallinen satama
 
-
 Pohjois-Etelä-Amerikan valinta perustuu tektoniseen järkkymättömyyteen ja termiseen tehokkuuteen. Tässä lämmitysjärjestelmien tarve poistetaan.
+
 
 3.  Arkkitehtuuri yltäkylläisyydelle
 
-
 Modulaariset ikuisuuslaatuiset asunnot toimitetaan NAPZ:sta. Näillä vyöhykkeillä ei ole kauppaa; kaikki on integroituja toimintoja infrastruktuurissa.
 
-4.  Tekniikkaa vastaan maa-ala
 
+4.  Tekniikkaa vastaan maa-ala
 
 Tämä on symmetrinen vaihto. Teollisuussektorin tuotteet toimitetaan Euroopan periferiasta, Etelä-Amerikka toimittaa paikan. Kun nämä kaksi komponenttia kohtaavat, syntyy suora ilmaistalous Etelä-Amerikan mantereelle kaikille nykyisille ja tuleville kansalaisille. Raha ei kierrä – poistamme sen tarpeen.
 
 Manifesti ei kuvaa eurooppalaista vientihanketta, vaan maailmanlaajuista federaatiota. Trooppiset kansakunnat eivät ole "isäntiä", ne ovat perustajakumppaneita, jotka menevät suoraan ilmaistalouteen ja omistavat infrastruktuurin yhtä paljon kuin pohjoiset maat.
 
-5.  Suvereeni asumisoikeus
 
+5.  Suvereeni asumisoikeus
 
 Robotisoidussa liittoumassa asunto ei ole hyödyke eikä elinikäisen velkaantumisen lähde. Jokaiselle kansalaiselle taataan korkean teknologian koti, jonka konepuisto rakentaa ja ylläpitää. Vuokria, asuntolainoja tai kiinteistöveroja ei ole olemassa. Se on ehdoton, perustavanlaatuinen oikeus.
 
-6.  Teknologinen huippu
 
+6.  Teknologinen huippu
 
 Asunnot on rakennettu ikuisuuslaatuisista materiaaleista, täysin vapautettuina tulevista remontointitarpeista. Kaikki ilmastonsäädöstä ja vedenpuhdistuksesta automatisoidun siivouksen ja jätehuoltoon on integroitu rakennuksen rakenteeseen ja sitä hoidetaan autonomisesti.
 
-7.  Harmoninen arkkitehtuuri
 
+7.  Harmoninen arkkitehtuuri
 
 Koska kaikki rakennetaan alueilla, joilla on vakaa ja miellyttävä keskilämpötila, arkkitehtuuri voidaan avata. Sisä- ja ulkotilojen rajat purkautuvat. Rakennukset integroidaan trooppiseen luontoon, varustettuna omavaraisilla aurinkoenergiajärjestelmillä ja pystypuutarhoilla.
 
@@ -598,98 +591,6 @@ Ratkaisu on laissa säädetty, synkronoitu portaikko, jossa kansalaisten taloude
 Vapauden Tikapuiden kautta virtuaaliset luvut (velat) kytketään suoraan fyysiseen todellisuuteen (robotoituun tuotantoon). Samassa sekunnissa kun koneet ottavat haltuunsa elämänalueen ja tekevät siitä ilmaisen väestölle, vanhan järjestelmän pankit pakotetaan perääntymään vastaavassa määrin.
 
 
-
-
-
-
-
-C.  Pankkien valta on tarpeeton
-
-Manifesti toteuttaa velkajärjestelmän hallitun purkamisen. Kun koneet vapauttavat ihmiset kustannuksista, ihminen vapautuu myös veloistaan. Emme taistele pankkeja vastaan asein, vaan matemaattisilla asetuksilla, jotka tekevät niiden vallan tarpeettomaksi.
-
-Yllä oleva selvitys toimii teknisenä kuvauksena "Näkymättömästä Päivityksestä" käytännössä.
-
-
-
-=======================================
-
-
-
-N.   Vapauden Tikapuut : Velasta Suvereniteettiin
-
-
-
-1.  Matemaattinen siirtymä
-
-Jotta uudistusliittouma voi johtaa yhteiskunnan ulos yksityisen velkajärjestelmän otteesta, vaaditaan täydellistä ennakoitavuutta. Siirtymä ei saa rakentua äkillisille, kaoottisille oikuille tai arvaamattomille taloudellisille shokkiaaltoille.
-
-Ratkaisu on laissa säädetty, synkronoitu portaikko, jossa kansalaisten taloudellinen vapautuminen tapahtuu täsmälleen samassa tahdissa kuin reaalituotannon (bruttokansallisresurssin) laajeneminen.
-
-Vapauden Tikapuiden kautta virtuaaliset luvut (velat) kytketään suoraan fyysiseen todellisuuteen (robotoituun tuotantoon). Samassa sekunnissa kun koneet ottavat haltuunsa elämänalueen ja tekevät siitä ilmaisen väestölle, vanhan järjestelmän pankit pakotetaan perääntymään vastaavassa määrin.
-
-
---- START TABLE ---
-
-
-
---- END TABLE ---
-
-
-C.  Pankkien valta on tarpeeton
-
-Manifesti toteuttaa velkajärjestelmän hallitun purkamisen. Kun koneet vapauttavat ihmiset kustannuksista, ihminen vapautuu myös veloistaan. Emme taistele pankkeja vastaan asein, vaan matemaattisilla asetuksilla, jotka tekevät niiden vallan tarpeettomaksi.
-
-Yllä oleva selvitys toimii teknisenä kuvauksena "Näkymättömästä Päivityksestä" käytännössä.
-
-
-
-=======================================
-
-
-
-N.   Vapauden Tikapuut : Velasta Suvereniteettiin
-
-
-
-1.  Matemaattinen siirtymä
-
-Jotta uudistusliittouma voi johtaa yhteiskunnan ulos yksityisen velkajärjestelmän otteesta, vaaditaan täydellistä ennakoitavuutta. Siirtymä ei saa rakentua äkillisille, kaoottisille oikuille tai arvaamattomille taloudellisille shokkiaaltoille.
-
-Ratkaisu on laissa säädetty, synkronoitu portaikko, jossa kansalaisten taloudellinen vapautuminen tapahtuu täsmälleen samassa tahdissa kuin reaalituotannon (bruttokansallisresurssin) laajeneminen.
-
-Vapauden Tikapuiden kautta virtuaaliset luvut (velat) kytketään suoraan fyysiseen todellisuuteen (robotoituun tuotantoon). Samassa sekunnissa kun koneet ottavat haltuunsa elämänalueen ja tekevät siitä ilmaisen väestölle, vanhan järjestelmän pankit pakotetaan perääntymään vastaavassa määrin.
-
-
-
-
-
-
-
-C.  Pankkien valta on tarpeeton
-
-Manifesti toteuttaa velkajärjestelmän hallitun purkamisen. Kun koneet vapauttavat ihmiset kustannuksista, ihminen vapautuu myös veloistaan. Emme taistele pankkeja vastaan asein, vaan matemaattisilla asetuksilla, jotka tekevät niiden vallan tarpeettomaksi.
-
-Yllä oleva selvitys toimii teknisenä kuvauksena "Näkymättömästä Päivityksestä" käytännössä.
-
-
-
-=======================================
-
-
-
-N.   Vapauden Tikapuut : Velasta Suvereniteettiin
-
-
-
-1.  Matemaattinen siirtymä
-
-Jotta uudistusliittouma voi johtaa yhteiskunnan ulos yksityisen velkajärjestelmän otteesta, vaaditaan täydellistä ennakoitavuutta. Siirtymä ei saa rakentua äkillisille, kaoottisille oikuille tai arvaamattomille taloudellisille shokkiaaltoille.
-
-Ratkaisu on laissa säädetty, synkronoitu portaikko, jossa kansalaisten taloudellinen vapautuminen tapahtuu täsmälleen samassa tahdissa kuin reaalituotannon (bruttokansallisresurssin) laajeneminen.
-
-Vapauden Tikapuiden kautta virtuaaliset luvut (velat) kytketään suoraan fyysiseen todellisuuteen (robotoituun tuotantoon). Samassa sekunnissa kun koneet ottavat haltuunsa elämänalueen ja tekevät siitä ilmaisen väestölle, vanhan järjestelmän pankit pakotetaan perääntymään vastaavassa määrin.
-
-
 2.  Dynaamiset intervallit ja mukautus
 
 On ratkaisevan tärkeää ymmärtää, että Vapauden Tikkaiden neljä pääaskelta (25 %, 50 %, 75 % ja 100 %) muodostavat muutoksen yleiset, perustuslailliset virstanpylväät. Käytännön sovelluksessa järjestelmä on kuitenkin täysin joustava ja dynaaminen.
@@ -703,62 +604,65 @@ Alla on perustuslaillinen suunnitelma siitä, kuinka velka muunnetaan suverenite
 3.  Vapauden Tikapuut: Perustuslaillinen käytöstäpoisto
 
 
+--- START TABLE ---
 Bruttokansallisresurssi		Velan alaskirjaus			Suvereniteettiosuus
 (Ilmainen kattavuusaste)		(Perustuslain mukaan)			(Valtion maksama)
-
 
 25 %						25 % kaikista yksityisistä		Ensimmäinen maksu
 (Peruselintarvikkeet,			veloista kirjataan				aktivoituu. Kansalaiset
 Energia & Sähkö)			välittömästi alas.				saavat ostovoimaa sille,
-
 												mikä ei ole vielä ilmaista.
+
 50 %						50 % kaikista jäljellä			Osuus kasvaa kansallisen
 (Asuminen & Liikenne)		olevista veloista				robottipuiston tuotanto-
 						kirjataan alas.				kapasiteetin tahdissa.
-75 %						75 % kaikista veloista			Osuus optimoidaan. Rahan
 
+75 %						75 % kaikista veloista			Osuus optimoidaan. Rahan
 (Teknologia, Lisäarvo-			kirjataan alas pankkien		tarve laskee dramaattisesti
 tuotteet & Koulutus)			kirjoista.					ylellisyyssferän kutistuessa.
+
 100 %					Kaikki velka ja raha			Järjestelmä valmis. Valuutat
 (Lopullinen				ovat lakanneet olemasta.		muuttuvat tarpeettomiksi;
-
 Yltäkylläisyys)										täysi ilmaistalous vallitsee.
+--- END TABLE ---
+
+
+
 4.  Vapauden Tikaiden Vaiheiden läpikäynti
+
+
 Vaihe 1: 25 % BKR – Ensimmäinen lähtölaukaus
-
-
 
 Tämä on uudistuksen kriittisin vaihe, jossa vanhan järjestelmän psykologinen ja taloudellinen selkäranka murretaan. Kun liittouman itseomistavat robotit ovat automatisoineet peruselintarvikkeiden tuotannon ja jakelun sekä maan energiantuotannon (sähkö ja lämpö), julistetaan BKR:ksi 25 %.
 
-
 Samalla pannaan täytäntöön ensimmäinen lailla säädetty asetus yksityispankkeja vastaan: 25 % jokaisen kansalaisen kokonaisvelasta (asuntolainat, kulutuslainat, opintolainat) poistetaan pankkien palvelimilta. Koska sähkö ja ruoka ovat nyt ilmaisia, pankkiirien omat elinkustannukset laskevat, mikä tekee heidän korkovaatimuksistaan matemaattisesti mitättömiä. Varmistaakseen, että kansalaiset voivat käydä kauppaa niillä sektoreilla, joita ei ole vielä robotisoitu, aktivoidaan Suvereniteettiosuuden ensimmäinen taso – suora suvereenien rahojen maksaminen Keskuspankista.
+
 
 Vaihe 2: 50 % BKR – Asuntomonopolin murtaminen
 
 Seuraavassa vaiheessa robotisaatio laajenee rakennussektoriin, ylläpitoon sekä julkiseen ja tavaraliikenteeseen. Kun asuminen ja liikenne on liitetty liittouman ilmaisjärjestelmään, maa saavuttaa 50 % BKR:n.
 
-
 Tässä vaiheessa puolet kaikista kansalaisten ja valtion veloista poistetaan pankkien kirjoista. Asuntomarkkinat, jotka velkavuosina toimivat tärkeimpänä välineenä väestön pitämiseksi vankina elinikäisissä lainoissa, romahtavat vanhassa muodossaan ja heräävät uudelleen ihmisoikeutena. Samalla Suvereniteettiosuutta säädetään ylöspäin suhteessa konepuiston lisääntyneeseen BKR-tuotantoon (BKT:n kansallistettu seuraaja).
+
 
 Vaihe 3: 75 % BKR – Ylellisyysloukun purkaminen
 
 Kun 75 % yhteiskunnan kokonaisresurssitarpeista katetaan täysin ilman ihmistyövoimaa – mukaan lukien kehittynyt teknologia, koulutus, terveydenhuolto ja Kokonaisvaltaisuusperiaatetta käsittelevässä luvussa kuvatut premium-tuotteet – 75 % kaikista jäljellä olevista veloista putoaa pois.
 
-
 Tässä vaiheessa yksityinen yrityssektori ja pankit ovat käytännössä menettäneet kykynsä pakottaa ihmisiä työhön. Useimmat kansalaiset valitsevat elävänsä täysin liittouman ilmaistarjonnalla ja Suvereniteettiosuudellaan, mikä pakottaa viimeiset yksityiset yritykset joko konkurssiin tai tuotantolinjojensa luovuttamiseen itseomistavalle infrastruktuurille.
+
 
 Vaihe 4: 100 % BKR – Rahan kuolema ja lopullinen suvereniteetti
 
 Kun bruttokansallisresurssi saavuttaa 100 %, muutos on täydellinen. Robotit ja niiden toisiinsa kytketyt AI-järjestelmät tuottavat nyt kaiken – pienimmästä vehnänjyvästä sofistikoituimpiin ikuisuustuotteisiin ja taiteellisiin vedoksiin – absoluuttisessa yltäkylläisyydessä.
 
-
 Tässä lopullisessa pisteessä kaikki raha ja velka lakkaavat olemasta perustuslain mukaan. Käsitteet "laina", "korko", "hinta" ja "valuutta" tulevat vanhentuneiksi historiallisiksi termeiksi, aivan kuten feodalismi ja maaorjuus ovat tänään. Ihmiskunta on ottanut viimeisen askeleen tikkailla: taloudellisen velkajärjestelmän pimeydestä täydelliseen, koneiden turvaamaan suvereniteettiin.
+
+
 
 5.  Säästämisen luonne ja pankkien lopullinen sulkeminen
 
 Yleinen kysymys tätä suunnitelmaa tutkivalle on:
-
-
 
 Mitä tapahtuu kansalaisten säästetyille rahoille siirtymän aikana, ja tuleeko valtio takavarikoimaan ne?
 
@@ -960,13 +864,13 @@ Suvereniteettiosuus muodostaa kansalaisen perustuslaillisesti suojatun, synnynn�
 
 Kommentti: Tämä pykälä asentaa lopullisen taloudellisen sillan suoraan perustuslakiin. Vahvistamalla suvereniteettiosuuden yksinomaan koneellisen luonteen, yksityinen rahoitusjärjestelmä estetään kaikista yrityksistä rinnastaa se osakkeisiin, spekulatiivisiin luottoihin tai perinteisiin käteisvaroihin. Sana kuuluu tulevaisuudelle ja puhdistaa pois velkatalouden assosiaatiot. Siirtymävaiheen aikana – kun sisäinen yhteiskunta (kuten ruoka, autot ja sähkö) toimitetaan täysin ilmaiseksi Per Machina, mutta ulkomaailmaa hallitsee edelleen vanha velka- ja valuuttajärjestelmä – suvereniteettiosuus varmistaa, että valtion massiivinen, automatisoitu vientiylijäämä jaetaan suoraan kansalaisille reaalisina, ulkoisina maksuvälineinä. Tämä antaa kansalle taloudellisen voiman säilyttää toimintavapautensa kansainvälisesti, paeta pohjoista talvea suvereniteettituristeina tai hankkia maata trooppisilla ylänköalueilla, siihen päivään asti, kun koko maailma on omaksunut konekonstituution ja raha poistetaan kokonaan käytöstä kaikkialla.
 
+
+
 NÄYTÖS II: TALOUDELLINEN SIIRTYMÄ
 
 
 
 §4.  Pankkiuudistus ja valvottu velan käytöstäpoisto (BKR-asteikko)
-
-
 
 Kohta 1. Valtio ottaa välittömästi haltuunsa yksinoikeuden luoda ja jakaa maan laillista maksuvälinettä Keskuspankin kautta. Yksityiset liikepankit kielletään täten luomasta uutta rahaa lainaamalla.
 
@@ -976,8 +880,8 @@ Kohta 3. Yksityispankeilta viedään täten kaikki oikeudellinen oikeus nostaa l
 
 Kommentti: Tämä asetus on rakennettu estämään taloudellinen shokki siirtymävaiheen aikana. Yhdistämällä velka-, korko- ja lyhennysvähennykset suoraan BKR-asteikkoon, yksityinen pankkijärjestelmä hiipuu pois täsmälleen samassa tahdissa kuin ilmaistalous otetaan käyttöön. Este korotettuja lyhennysvaatimuksia vastaan on elintärkeä: se estää pankkeja paniikissa yrittämästä puristaa rahaa väestöstä niiden korkovoittojen laskiessa. Pankkityöntekijät ja kansalaiset eivät siten koskaan kärsi taloudellisesta ahdingosta tai työttömyydestä; heidät ohjataan sen sijaan turvallisesti ja asteittain palkkaorjuudesta täydelliseen koneelliseen suvereniteettiin.
 
-§5.  Konekonstituutio ja itseomistava infrastruktuuri
 
+§5.  Konekonstituutio ja itseomistava infrastruktuuri
 
 Kohta 1. Kaikki laajamittainen, kattava ja automatisoitu tuotantokapasiteetti sekä AI-ohjattu infrastruktuuri (AATIR) viedään täten yksityiseltä ja valtiolliselta omistukselta ja julistetaan itseomistaviksi yksiköiksi.
 
@@ -989,46 +893,41 @@ Tärkeä tarkennus oikeudellisesta hallinnoinnista
 
 Valtio, ja siten kansalaiset, ovat hallinnoijia, mutta eivät omistajia Konepuistosta. Konepuisto omistaa Konepuiston. Valtiolla ja kansalaisilla ei ole oikeudellista oikeutta myydä Konepuistoa, koska he eivät ole sen omistajia. Kaikki, mitä Konepuistoon lisätään raaka-aineina, energiana ja laajennuksina, jää sinne pysyvästi. Konepuistoa on pidettävä ekologisen järjestelmän ja maapallon luonnonvarojen integroituna osana. Tämä on se ainutlaatuinen ja loukkaamaton asema, joka on vahvistettu Konekonstituutiossa.
 
-§6.  Valtiollinen intellektuaalinen suvereniteetti muutosvaiheen aikana
 
+§6.  Valtiollinen intellektuaalinen suvereniteetti muutosvaiheen aikana
 
 Koska täydellistä teknistä autonomiaa ei ole vielä saavutettu, ja konepuisto on rakenteilla, vahvistetaan valtion absoluuttinen monopoli siihen älykkyyteen, jonka on ohjattava tulevaisuutta. Tämä laki on peruuttamaton koko siirtymävaiheen ajan.
 
 Kohta 1. Yksinomainen valtiollinen omistus.
-
 Kaiken tekoälyn, joka hallinnoi tai on tarkoitettu hallinnoimaan kansakunnan tuotantokapasiteettia, infrastruktuuria ja resurssivirtoja, on kehitettävä, omistettava ja hallittava kokonaisuudessaan valtion toimesta. Mitään osaa koodipohjasta, parametreista tai laitteistosta ei saa siirtää ulkopuolisille tahoille.
 
 Kohta 2. Suoja kaupallista pirstoutumista vastaan.
-
 Yksityiset yritykset ja kaupalliset toimijat kielletään täysin kehittämästä, lisensoimasta tai integroimasta omisteisia AI-järjestelmiä valtion yhteiseen infrastruktuuriin. Valtion ei tule ostaa tai mukauttaa puolivillaisia, kaupallisia ratkaisuja, joiden piilotetut algoritmit uhkaavat turmella järjestelmän logiikkaa yksityisen voiton vuoksi. Intellektuaalisen infrastruktuurin on pysyttävä puhtaana, läpinäkyvänä ja valtiollisesti eristettynä.
 
 Kohta 3. Valtion määrärahat.
-
-
 Valtion on yksinomaisten määrärahojen kautta turvattava rajoittamattomat resurssit AI-järjestelmän kehitykselle, laskentakapasiteetille ja optimoinnille. Tämä ei ole kaupallinen investointi, joka vaatii taloudellista tuottoa, vaan strateginen kansallinen tehtävä nollakustannustuotannon saavuttamiseksi.
 
 Kohta 4. Toimeksiannon päättyminen.
-
 Valtion kehitys- ja ohjausmandaatti on absoluuttinen nykyhetkessä, mutta luonteeltaan ajallisesti rajoitettu. Se päättyy automaattisesti samassa sekunnissa, kun Autonominen Silmukka (AATIR) on suljettu ja konepuisto on saavuttanut kykynsä täydelliseen, itsereplikoituvaan ja itsenäiseen hallinnointiin. Tähän pisteeseen asti valtio kantaa täyden, laissa säädetyn vastuun älykkyyden rationaalisuudesta ja kansalaisten rauhasta.
+
 
 §7.  Valtiollinen tuotantolaajennus ja voittomarkkinoiden käytöstäpoisto
 
 Kohta 1. Valtion on käynnistettävä laajamittainen täysin automatisoidun tuotantokapasiteetin (AATIR) rakentaminen. Kaikki olemassa olevat kilpailulait, kauppasopimukset ja markkinasäädökset, jotka estävät tai rajoittavat julkisen sektorin rakentamasta, omistamasta ja hallinnoimasta tätä infrastruktuuria, kumotaan välittömästi.
 
-
-
 Kohta 2. Valtiollisen ja itseomistavan Konepuiston on jaettava kaikki yhteiskunnan välttämättömät tavarat ja palvelut ilmaiseksi kansalaisille. Tämä ei kuitenkaan rajoita valtion suvereenia oikeutta pakkolunastukseen tai pakko-ottoon yksityisestä infrastruktuurista ja resursseista niissä tapauksissa, joissa kansalliset edut vaativat välitöntä vallankäyttöä.
-
-
 
 Kommentti: Tämä laki on taktisesti muotoiltu siten, että valtion ei ensisijaisesti tarvitse pakkolunastaa tai joutua oikeuskiistoihin yksityisten yritysten kanssa. Rakentamalla omaa ja antamalla kaiken ilmaiseksi, voittomarkkinat jätetään ilman taloudellista perustaa ja ne kuolevat pois täysin luonnollisesti. Yksityinen pääoma menettää siten valtansa määrätä maan huollosta, mutta valtio säilyttää absoluuttisen väkivaltamonopolin ja hätäoikeuden ottaa yritykset haltuun, jos ne yrittäisivät sabatoida siirtymää.
 
     • Logiikka on, että valtio rakentaa, markkinat kuivuvat ja kansa saa suvereniteettinsa.
 
+
+
 NÄYTÖS III: TÄYDELLINEN YLTÄKYLLÄISYYS
 
-§8.  Kokonaisvaltaisuusperiaate ja yhteinen konepuisto
 
+
+§8.  Kokonaisvaltaisuusperiaate ja yhteinen konepuisto
 
 Kohta 1. Yhteiskunnan taloudellinen ja tekninen perusta lepää Kokonaisvaltaisuusperiaatteella. Julkisen vallan on täydellisen ja ehdoitta robotisaation kautta kaikilla tuotantoketjuilla turvattava kansalaisten absoluuttinen vapaus.
 
@@ -1036,8 +935,8 @@ Kohta 2. Puolirobotisaatio määritellään periaatteelliseksi ja tekniseksi ill
 
 Kommentti: Tämä asetus vetää absoluuttisen rajan vanhan ja uuden järjestelmän välille. Kieltämällä perustuslaillisesti "puolirobotisaatio" suljetaan ovi tulevilta kompromisseilta, joissa poliitikot tai erityisedut yrittävät jättää tiettyjä sektoreita yksityisen velkajärjestelmän käsiin verukkeilla. Vapaus on binäärinen – joko yhteiskunta on vapaa tai se on kontrolloitu.
 
-§9.  Absoluuttisen yltäkylläisyyden ja laadun takuu
 
+§9.  Absoluuttisen yltäkylläisyyden ja laadun takuu
 
 Kohta 1. Valtion ja kansalaisten yhteinen tavoite on uudistusliittouman kautta taata koko väestölle absoluuttinen aineellinen ja kulttuurinen yltäkylläisyys korkeimmasta mahdollisesta laadusta.
 
@@ -1045,22 +944,23 @@ Kohta 2. Kansallinen robottipuisto ja sen siihen liittyvä tekoäly muodostavat 
 
 Kommentti: Tämä asetus on liittouman laatutakuu. Se eliminoi historiallisen ansan, jossa valtiollinen tuotanto liitetään harmaaseen, sieluttomaan minimalismiin. Kirjoittamalla esteettisen huippuosaamisen ja ikuisuustuotteet perustuslakiin, konepuisto pakotetaan jatkuvasti pysymään eturintamassa. Se tekee mahdottomaksi yksityisille toimijoille kilpailla ilmaistaloutta vastaan paremmalla suunnittelulla tai korkeammalla statuksella.
 
+
 §10.  Suoja taloudellista pakkotyötä vastaan
 
 Kohta 1. Jokaisella on oikeus absoluuttiseen vapauteen piilotetusta tai avoimesta velkaorjuudesta.
 
-
-
 Kohta 2. Koska tekninen ja automatisoitu yltäkylläisyys kattaa sekä perustuotannon että premium- ja ylellisyyssferän, on jokainen yritys yksityisiltä toimijoilta monopoleilla tai ihmisajan hyväksikäytöllä palauttaa taloudellisia pakkorakenteita pidettävä perustuslain vastaisena.
+
 Kommentti: Tämä on oikeudellinen lukko "Ylellisyysloukkua" vastaan. Kun valtion koneet toimittavat kaiken yksinkertaisimmasta vehnästä sofistikoituimpaan ylellisyystuotteeseen täysin ilmaiseksi, pääomalla ei ole enää mitään taloudellista painostusvälinettä. Tämä asetus tekee rikolliseksi yrittää hyödyntää ihmisten halua statukseen tai ainutlaatuisiin tuotteisiin pakottaakseen heidät takaisin palkkaorjuuteen. Vanhan velkajärjestelmän surut on siten haudattu ikuisesti.
 
-
-
     • Logiikka on, että koneet ylittävät, ylellisyysloukku murskataan ja vapaus tulee absoluuttiseksi.
+
+
 
 NÄYTÖS IV: VALTIOLINEN RESURSSI- JA MARKKINAKÄYTÖSTÄPOISTO
 
 (KILPAILULAIT)
+
 
 
 §11.  Julkisen yltäkylläisyyden etusija (BKR-periaate)
@@ -1070,20 +970,22 @@ Kohta 1. Valtion korkein taloudellinen ja perustuslaillinen velvollisuus on Resu
 Kohta 2. Kun konkapasiteetti ja velaton rahanluonti mahdollistavat valtion tarjota tavaran tai palvelun ilmaiseksi kansalaisille, on tätä pidettävä perustavanlaatuisena oikeutena ja yhteiskunnallisena hyötynä.
 
 
-
 §12.  Markkinasuojien ja kilpailurajoitusten kumoaminen
-
-
 
 Kohta 1. Mikään yksityinen oikeushenkilö tai kaupallinen toimija ei voi vaatia vahingonkorvausta, vedota kilpailuesteisiin tai pysäyttää valtion automatisointihankkeita viittaamalla vanhoihin kilpailulakeihin.
 
 Kohta 2. Koneiden oikeus tuottaa ilmaisia elintarvikkeita kansalle on aina oikeudellisesti etusijalla yksityisten toimijoiden oikeuteen markkinavoittoon nähden. Nykyiset kilpailulait julistetaan pätemättömiksi siltä osin kuin ne vastustavat tai viivästyttävät siirtymää velattomaan ilmaistalouteen.
 
 
+
 NÄYTÖS V: PERUSTUSLAAILLINEN PERIAATE – AUTOMATISOITUJEN YHTEISKUNTIEN OIKEUSPERUSTA
 
+
+
 §13.  Taloudellisen pakon lakkaaminen
+
 Kansallisen robottipuiston ja taatun suvereniteettiosuuden käyttöönoton myötä taloudellinen pakko ja velkaantuminen lakkaavat olemasta ihmisen toiminnan liikkeellepaneva voima. Kaikki lainsäädäntö, joka perustuu taloudellisen niukkuuden, voiton tai aineellisen puutteen olettamukseen, julistetaan täten pätemättömäksi, koska sen perimmäinen syy on poistettu.
+
 
 §14.  Käytöstäpoisto yltäkylläisyyden kautta
 
@@ -1138,17 +1040,12 @@ Sinulla on kultainen tilaisuus. Käyttämällä tätä manifestia ja nykypäivä
 
 
 •  Pura byrokratia
-
 Korvaa viranomaisten valvonta yksinkertaisella robottilogistiikalla.
 
-
 •  Aktivoi osuus
-
 Anna kansalaisille heidän suvereniteettiosuutensa ja anna heidän jättää oravanpyörä.
 
-
 •  Käynnistä Operaatio Auringonkääntö
-
 Valmistele siirtyminen lämpimille vyöhykkeille, samalla kun näkymätön tehdas pohjoisessa hoitaa tuotannon.
 
 
