@@ -605,26 +605,26 @@ Hér að neðan er stjórnarskrárteikningin fyrir hvernig skuld umbreytist í f
 
 
 --- START TABLE ---
-Verg þjóðarauðlind		Skuldaafskrifun				Fullveldishlutur
-(Ókeypis þekjustig)		(Samkvæmt stjórnarskrárlögum)		(Útgreiðsla ríkisins)
+Verg þjóðarauðlind		Skuldaafskrifun					Fullveldishlutur
+(Ókeypis þekjustig)		(Samkvæmt stjórnarskrárlögum)	(Útgreiðsla ríkisins)
 
-25 %					25 % af öllum einkaskuldum			Fyrsta greiðslan
+25 %					25 % af öllum einkaskuldum		Fyrsta greiðslan
 (Matvæli, Orka			er afskrifuð					virkjuð. Borgarar fá
-& Rafmagn)			tafarlaust.						kaupmátt fyrir það sem
-												er ekki enn ókeypis.
+& Rafmagn)				tafarlaust.						kaupmátt fyrir það sem
+														er ekki enn ókeypis.
 
-50 %					50 % af öllum eftirstandandi			Hluturinn eykst í takt
-(Húsnæði & Flutningar)	skuldum er afskrifuð.				við framleiðslugetu
-												innlenda vélagarðsins.
+50 %					50 % af öllum eftirstandandi	Hluturinn eykst í takt
+(Húsnæði & Flutningar)	skuldum er afskrifuð.			við framleiðslugetu
+														innlenda vélagarðsins.
 
 75 %					75 % af öllum skuldum			Hluturinn er hámarkaður.
 (Tækni, Viðbótar-		er afskrifuð af					Þörfin fyrir peninga minnkar
-vörur & Menntun)		bönkunum.					verulega eftir því sem
-												lúxussviðið minnkar.
+vörur & Menntun)		bönkunum.						verulega eftir því sem
+														lúxussviðið minnkar.
 
-100 %				Allar skuldir og					Kerfið fullkomið. Gjaldmiðlar
+100 %					Allar skuldir og				Kerfið fullkomið. Gjaldmiðlar
 (Hitt Endanlega			peningar hafa hætt				verða óþarfir; algert
-Gnægðið)				að vera til.						frjálst hagkerfi ríkir.
+Gnægðið)				að vera til.					frjálst hagkerfi ríkir.
 --- END TABLE ---
 
 
