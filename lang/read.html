@@ -811,27 +811,28 @@ const tableTranslations = {
             return tableTranslations[langCode] || tableTranslations['en'];
         }
 
-        function buildTable(translation) {
-            if (!translation) return '<p class="body-text">Table translation not available.</p>';
+function buildTable(translation) {
+    if (!translation) return '<p class="body-text">Table translation not available.</p>';
 
-            let html = `<h2 style="font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(16pt, 3vw, 20pt); font-weight: bold; text-align: center; margin: 30px 0 20px 0; color: #1a1a1a;">${translation.title}</h2>`;
-            html += `<table class="manifesto-table"><thead><tr>`;
-            html += `<th>${translation.col1}</th>`;
-            html += `<th>${translation.col2}</th>`;
-            html += `<th>${translation.col3}</th>`;
-            html += `</tr></thead><tbody>`;
+    // ⭐ RUBRIKEN I BLÅTT
+    let html = `<h2 style="font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(16pt, 3vw, 20pt); font-weight: bold; text-align: center; margin: 30px 0 20px 0; color: #0055cc;">${translation.title}</h2>`;
+    html += `<table class="manifesto-table"><thead><tr>`;
+    html += `<th>${translation.col1}</th>`;
+    html += `<th>${translation.col2}</th>`;
+    html += `<th>${translation.col3}</th>`;
+    html += `</tr></thead><tbody>`;
 
-            translation.rows.forEach(row => {
-                html += `<tr>`;
-                html += `<td><strong>${row.gnr}</strong></td>`;
-                html += `<td>${row.debt}</td>`;
-                html += `<td>${row.share}</td>`;
-                html += `</tr>`;
-            });
+    translation.rows.forEach(row => {
+        html += `<tr>`;
+        html += `<td><strong>${row.gnr}</strong></td>`;
+        html += `<td>${row.debt}</td>`;
+        html += `<td>${row.share}</td>`;
+        html += `</tr>`;
+    });
 
-            html += `</tbody></table>`;
-            return html;
-        }
+    html += `</tbody></table>`;
+    return html;
+}
 
         // ============================================================
         // 3. LADDA TEXT – HOPPAR ÖVER TABELLEN I TEXTFILEN
