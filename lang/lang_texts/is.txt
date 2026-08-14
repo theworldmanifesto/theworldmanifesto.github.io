@@ -1,12 +1,9 @@
 Heimsmanifestið
 
-
 Sáttmálinn um endanlegt gnægð
 
 
-
 Sven Yngerstedt
-
 
 
 =======================================
@@ -24,6 +21,7 @@ Textinn er fullkomlega frjáls til að lesa, afrita, prenta og deila með sérhv
 Lestu, dreifðu og skiptu um skipulag. Hið fullkomna frumrit er alltaf aðgengilegt ókeypis á netinu.
 
 
+
 =======================================
 
 
@@ -31,58 +29,33 @@ Lestu, dreifðu og skiptu um skipulag. Hið fullkomna frumrit er alltaf aðgengi
 Efnisyfirlit
 
 FORMÁLI
-
 I.  Virkjunin: Leiðbeiningar fyrir stofnun flokks
-
 II.  Að gera
-
 A.  Lýsing, Vélfræði og Meginregla
-
 B.  Sjálfvirka Lykkjan (SVGSV) og Plánetulega Rásmarkið
-
 C.  Fullveldi Ríkisvitundarinnar
-
 D.  Gæðaloforðið – Frá málamiðlun til fullkomnunar
-
 E.  Plánetulega Mannfjöldasamhverfan
-
 F.  Fullvalda Markaðsbandalagið – Jarðpólitísk vörn gegn fjármálastríði
-
 G.  Stóri Potturinn og Virkjun Þjóðarauðsins
-
 H.  Tæknileg Stjórn og Auðlindastjórnun
-
 I.  Norður-Atlantshafsframleiðslusvæðið (NAPZ)
-
 J.  Nýja heimilið
-
 K.  Þingræn Stjórn og Rödd Þjóðarinnar
-
 L.  Ríkið sem Sameiginlegt Fyrirtæki
-
 M.  Einkabankinn á að Afskrifa Sama Hlutfall og VÞA Eyks
-
 N.  Frelsisstiginn : Frá Skuld til Fullveldis
-
 O.  "Lúxusgildran" og Falið Nauðungarvinna
-
 P.  Heildarreglan
-
 Q.  Stóra Hreinsunin – Frá Gjaldþrotabúi til Fullveldis
-
 R.  Viðbót við Stjórnarskrána – Almennar Tilskipanir fyrir Nýja Heiminn
-
 S.  Alþjóðleg Flutningakerfi – Flutningar milli Heimsálfa
-
 T.  HIN MIKLA FRELSUN MANNKYNS : Vinna Synjað sem Dyggð – Fullveldi sem Réttur
-
 III.  Orðalisti 1 – Lykilhugtök fyrir Nýja Heiminn
-
 IV.  Orðalisti 2 – Orðaval fyrir Skilning á Kerfinu
-
 V.  VÉLASTJÓRNARSKRÁIN: A5-veggspjald
-
 VI.  FRAMTÍÐAR Efnahagsfréttir
+
 
 
 =======================================
@@ -90,7 +63,6 @@ VI.  FRAMTÍÐAR Efnahagsfréttir
 
 
 FORMÁLI
-
 
 Iðnbyltingin stöðvaðist umsvifalaust. Vélmennin og raunveruleg sjálfvirkni hurfu af áhugasviðinu, og einkabankakerfið ýtti í staðinn fram skuldum, gervilegri undirframleiðslu og þrengingum.
 
@@ -101,6 +73,7 @@ Að reyna að viðhalda verðmiðum, vöxtum, gervilegum skorti og skuldasöfnum
 Þessi sáttmáli er leiðbeining um hvernig við stýrum gjaldþrotabúinu og virkjum mannlegt fullveldi.
 
 
+
 =======================================
 
 
@@ -108,11 +81,15 @@ Að reyna að viðhalda verðmiðum, vöxtum, gervilegum skorti og skuldasöfnum
 I.  Virkjunin: Leiðbeiningar fyrir stofnun flokks
 
 
+
 Ef þú vilt stofna flokk, þá er flokksskráin hér.
+
 
 Ef þú vilt að þjóð þín sé hluti af alþjóðlegu vélvæðingarbandalaginu, er þetta flokksskráin þín. Stofnaðu flokkinn. Hér eru teikningarnar.
 
+
 Þessi bók er ekki skrifuð til að vera lesin. Hún er skrifuð til að vera framkvæmd.
+
 
 
 =======================================
@@ -122,7 +99,9 @@ Ef þú vilt að þjóð þín sé hluti af alþjóðlegu vélvæðingarbandalag
 II.  Að gera
 
 
+
 "Sáttmálinn er ekki til að rökræða framtíðina, heldur til að stýra henni. Við höfum náð þeim punkti í sögunni þar sem geta tækninnar er farin fram úr rökfræði hagkerfisins. Að krefjast greiðslu fyrir það sem vélar framleiða ókeypis, er ekki lengur hagfræði – það er kúgun. Þessi ritning er leiðbeiningin um hvernig við lyftum okinu."
+
 
 
 =======================================
@@ -132,9 +111,11 @@ II.  Að gera
 A.   Lýsing, Vélfræði og Meginregla
 
 
+
 1.  Lýsing
 
 Við munum byggja heim þar sem læknirinn fagnar þegar sjúkrahúsið stendur tómt, og atvinnumiðlunin fagnar þegar skrifstofan lokar. Þetta er aðeins mögulegt þegar lífsviðurværi er aftengt afköstum. Öllu sem hægt er að sjálfvirka, skal sjálfvirka. Manneskjan á ekki að þurfa að "vinna sér inn brauðið"; hún á að erfa það frá vélagarðinum.
+
 
 2.  Vélfræðin
 
@@ -144,9 +125,11 @@ Við þessa mjúku umbreytingu yfir í algerlega vélvæðingu, skal ekki semja 
 
 Þau skal endurreiknuð á staðlaðan og línulegan hátt og tekin úr notkun í nákvæmlega sama hlutfalli og verg þjóðarauðlind (VÞA) skilar ókeypis líkamlegu gnægði. Þegar helmingur er ókeypis, helmingast fjárhagsleg þörf í öllum liðum. Kerfið hreinsar sig sjálft.
 
+
 3.  Meginreglan
 
 Við kynnum ekki valkosti A, B og C. Við kynnum Lausnina. Sáttmálinn skal lesinn sem notkunarleiðbeining fyrir vél. Ef þú vilt ræsa vélina, þá ýtirðu á hnappinn. Sáttmálinn er hnappurinn.
+
 
 
 =======================================
@@ -154,6 +137,7 @@ Við kynnum ekki valkosti A, B og C. Við kynnum Lausnina. Sáttmálinn skal les
 
 
 B.   Sjálfvirka Lykkjan (SVGSV) og Plánetulega Rásmarkið
+
 
 
 Lokastig hinnar skynsamlegu plánetu er ekki bara vélmenni sem sinna einstökum verkefnum, heldur stofnun sjálfbærrar vélabyggingar: Sjálfvirk Vélræn Gervileg Sjálfafritandi Vélmenni (SVGSV).
@@ -164,17 +148,22 @@ Lokastig hinnar skynsamlegu plánetu er ekki bara vélmenni sem sinna einstökum
 
 Til að ná þessu þarf enga blinda bið eftir framtíðinni, heldur tafarlausa framkvæmd. Bandalagsins (Evrópu, Norður-Ameríku og Suður-Ameríku) algjör aðalverkefni við valdatöku er að sameina auðlindir sínar í sameiginlegt, ríkisrekinn þróunarverkefni: Plánetulega Verkefnið fyrir Sjálfvirku Lykkjuna. Þetta er tímabilsins Manhattan-verkefni eða Apollo-áætlun, með það eina markmið að gera vélmennaskipann 100 % sjálfafritandi og sjálfbjarga varðandi orku.
 
+
+
 Framkvæmdin hvílir á tveimur stoðum:
+
 
 1.  Fósturvísatæknin
 
 Hin einstöku íhlutir – háþróuð gervigreindarlíkön, 3D-prentun málma og sjálfvirkar verksmiðjur – eru þegar til staðar dreifð um allan heim. Vélin hefur þegar getu til að byggja hluta af vélinni. Það sem vantar er ekki tæknin, heldur miðstýrður, skuldlaus vilji til að loka hringrásinni.
+
 
 2.  Plánetulega samlífið
 
 Það er hér að samþætting við suðræn háspiltsvæði verður algerlega afgerandi. Þetta er engin fjármálaviðskipti, heldur tæknileg og landfræðileg samlífi. Norðlægu svæðin leggja fram rannsóknirnar og núverandi hátækni, á meðan Suður-Ameríka leggur fram flatarmálið, stöðugu sólorkuna og hráefnin til að prófa, taka í notkun og stækka sjálfafritandi kerfin við bestu hitaskilyrði.
 
 Bandalagið verður að setja af stað og forgangsraða þessu verkefni sem sínum allra fyrstu, stjórnarskrárbundnu aðgerð. Valkosturinn við daglegt hrunandi skrifræði og tilgangslaust vinnuþrælkun er ekki glundroði – valkosturinn er þetta markvissa og alþjóðlega verkefni til að loka sjálfvirku lykkjunni og láta vélarnar taka við framleiðslubyrðinni í eitt skipti fyrir öll.
+
 
 
 =======================================
@@ -184,19 +173,24 @@ Bandalagið verður að setja af stað og forgangsraða þessu verkefni sem sín
 C.   Fullveldi Ríkisvitundarinnar
 
 
+
 Til að tryggja frið og stöðugleika mannkyns í algerlega vélvæddum heimi, verður hin vitsmunalega innviðir sem stýra ríkinu að vera áfram undir óskertri ríkisstjórn.
+
 
 1.  Einka Eignarréttur Ríkisins
 
 Gervigreindin sem stýrir auðlindum, flutningum og framleiðslugetu þjóðarinnar, myndar hernaðarlega kjarna landsins. Öll þróun, kóðagrunnur og líkömun þessarar greindar skal fara fram í ríkisregi. Einkaaðilum er bannað að þróa eða samþætta samkeppnisstjórnkerfi í innviði þjóðarinnar. Þetta er til að koma í veg fyrir að hagnaðarsjónarmið eða ógagnsæir reiknirit spillir rökfræði kerfisins.
 
+
 2.  Hinn Skynsamlegi Stjórnandi
 
 Gervigreindin skal starfa sem óspillanlegur stjórnandi. Hún er ekki í eigu einstaklinga, heldur er hún hluti af sameiginlegri eign vélagarðsins. Tilgangur hennar er að hámarka velferð borgaranna, dreifingu auðlinda og sjálfbærni, laus við pólitísk eða viðskiptaleg áhrif.
 
+
 3.  Gagnsæi og Eftirlit
 
 Ríkið tryggir að stærðfræðilíkön kerfisins og ákvarðanagrunnur sé aðgengilegur fyrir innlenda skoðun. Engin ákvörðun af mikilvægi fyrir ríkið má taka af "svartri kassa" sem ekki er hægt að skýra út frá grunnreglum stjórnarskrárinnar. Ríkið þróar, á og stýrir þessari ofurgervigreind sem hluta af almannaheilbrigðisþjónustunni, sem trygging fyrir því að samfélagið falli aldrei aftur í skuld eða auðlindaskort.
+
 
 
 =======================================
@@ -206,11 +200,13 @@ Ríkið tryggir að stærðfræðilíkön kerfisins og ákvarðanagrunnur sé a�
 D.   Gæðaloforðið – Frá málamiðlun til fullkomnunar
 
 
+
 Í hinum gamla heimi varst þú neyddur til að samþykkja vörur sem fóru í sundur. Það var ekki vegna þess að verkfræðingarnir voru slakir, heldur vegna þess að einkamarkaðurinn neyddi fram málamiðlanir. Raunveruleg gæði kostuðu einfaldlega meira en það sem fólk hafði í veskinu. Fyrirtækin voru neydd til að selja til fjöldans á því verði sem fjöldinn hafði efni á, og þá varð niðurstaðan samkvæmt því – ófullkomin og stuttlifð.
 
 Í framtíðarsýn sáttmálans er þessum hagnaðarkröfu eytt. Þegar ríkið á hráefnin og gervigreindarvélmennin okkar sjá um námuna, er enginn lengur sem þarf að spara á efninu. Vélmennin okkar tákna ríkið, og þau sjá um þig eins og aldrei fyrr með því að byggja aðeins það besta.
 
 Þar sem vélmennin þurfa ekki að græða peninga, heldur aðeins að þjóna manninum, nota þau alltaf sterkustu og endingarbestu efnin. Við byggjum ekki til að selja aftur – við byggjum til að þú getir verið frjáls. Gæði eru ekki lengur lúxus fyrir ríka, það er staðall fyrir hvern borgara í vélvædda bandalaginu.
+
 
 
 =======================================
@@ -220,11 +216,14 @@ D.   Gæðaloforðið – Frá málamiðlun til fullkomnunar
 E.   Plánetulega Mannfjöldasamhverfan
 
 
+
 Stóra hitastigsflutningurinn á sér ekki stað af handahófi, heldur í gegnum skynsamlega og menningarlega samstillta endurskipulagningu mannfjölda plánetunnar:
+
 
 1.  Suður-Ameríska Fastalandið (Vesturblokkin)
 
 Evrópubúar og kákasískir Rússar, Norður-Ameríkubúar, Ástralir, Nýsjálendingar og kákasískir Suður-Afríkubúar safnast saman á Suður-Ameríska fastalandinu, meðan hin gróskumiklu lönd í Mið-Ameríku (sunnan við Mexíkó) virkjast sem samfelldar búsetusvæði. Þetta svæði verður grunnur fyrir vestrænt mannlegt fullveldi við bestu hitaskilyrði.
+
 
 2.  Austurblokkin (Indónesía og Ástralía)
 
@@ -232,9 +231,11 @@ Austur-Asíubúar og íbúar Rússlands-Asíu ásamt skyldum þjóðflokkum frá
 
 Íbúum á mið-Asísku köldu svæðunum er flutt suður á bóginn að heitu búsetusvæðunum í subtropíska Eyjaálfu/Norður-Ástralíu, meðan sjálfar landmassa (þar með talið eyðimerkursvæði í arabaríkjum) eru teknar yfir af vélaeiningunum. Arabísku eyðimörkurnar umbreytast, rétt eins og Sahara, í sjálfvirkar orkugarða.
 
+
 3.  Afríski Meginlandið
 
 Afríski íbúafjöldinn á sínu meginlandi er Suðræna Auðlindablokkin með suðrænu og heitu svæðin varðveitt eingöngu sem mannlegar byggðir fyrir endurheimt og frelsi, meðan köldu hlutar meginlandsins og víðfeðm eyðimerkursvæði verða algerlega vélvædd. Þessi svæði umbreytast í hreinar vélabyggingar, iðnaðarsamstæður og risastórar sólarorkuver sem framleiða orku fyrir umbreytingu alls Afríku meginlandsins án þess að trufla náttúruleg lífsvæði.
+
 
 
 =======================================
@@ -244,11 +245,13 @@ Afríski íbúafjöldinn á sínu meginlandi er Suðræna Auðlindablokkin með 
 F.   Fullvalda Markaðsbandalagið – Jarðpólitísk vörn gegn fjármálastríði
 
 
+
 Til að taka alþjóðlega skuldakerfið úr notkun og hámarka hraðann í ókeypis framleiðslu vélagarðsins, þarf að sameina nokkrar þjóðir tafarlaust í sameiginlegan, innri markað: Fullvalda Markaðsbandalagið.
 
 Einangruð umskipti í einu landi eru stefnufræðilega viðkvæm. Það tefur gnægðina, lengir efnahagslega álag umskiptatímabilsins og útsetur eina þjóð fyrir samstilltum hindrunum og lagalegum árásum frá hinu gamla fjármálakerfi í alþjóðlegum viðskiptadómstólum. Stórt, landamæri yfirgripsmikið bandalag með einsleitri hagstjórnarlöggjöf er stærðfræðileg nauðsyn. Því stærri sem sameiginlegir markaðir eru, því hraðar næst heildstætt líkamlegt gnægð í gegnum sjálfvirku lykkjuna (SVGSV).
 
 Hið endanlega markmið þessa bandalags er algjör plánetuleg samhverfa þar sem mörk gamalla þjóðríkja verða afmáð. Þetta tryggir hverjum fullvalda borgara algjört, lögbundið frelsi til að yfirgefa auðnu eða heimskautasvæði til að setjast að frjálst, lifa og njóta ókeypis framleiðslu vélanna á bestu, suðrænu loftslagssvæðum plánetunnar.
+
 
 
 =======================================
@@ -258,34 +261,40 @@ Hið endanlega markmið þessa bandalags er algjör plánetuleg samhverfa þar s
 G.   Stóri Potturinn og Virkjun Þjóðarauðsins
 
 
+
 Til að skilja umbyltingu sáttmálans verður maður fyrst að skilja eðli peninga í núverandi kerfi. Peningarnir sem í dag kallast ríkissjóðir eru í raun sameinað möguleiki borgaranna. Sáttmálinn breytir þessu með einu einasta tilskipun: Þjóðarhagkerfið á að þjóna framtíð þjóðarinnar, ekki efnahagsreikningi einkabanka.
+
 
 1.  Frá óvirkum sjóðum til virkrar umbreytingar
 
 Við hættum að líta á fjárlög ríkisins sem safn takmarkandi tala. Með því að aðildarlönd bandalagsins slíta tengslum við einkabankakerfið, virkjar "stóri potturinn" sig yfir allan sameiginlega markaðinn. Þessar sameinuðu auðlindir eru tafarlaust notaðar til að kaupa, þróa og taka í notkun þann landamæri yfirgripsmikla vélagarð sem þarf til að gera tilveruna ókeypis fyrir alla íbúa innan bandalagsins.
 
+
 2.  Endalok skuldarinnar rökfræði
 
 Sáttmálinn viðurkennir ekki lengur þörfina á að "lána" peninga af markaðnum. Þegar ríkið á rétt til að skapa greiðslumiðla út frá framleiðslugetu landsins, verður svipa skuldmarkaðarins árangurslaus.
+
+
 
 3.  Hin stefnumótandi forgangsröðun
 
 Þessum sjóðum skal án skerðingar varið til þriggja stoða:
 
-A.  Innviðir fyrir lífsviðurværi
 
+A.  Innviðir fyrir lífsviðurværi
 
 Alger sjálfvirkni og trygging orku-, vatnsframleiðslu- og flutningskerfa.
 
-B.  Algjörlega vélvædd framleiðsla
 
+B.  Algjörlega vélvædd framleiðsla
 
 Þar sem vélarnar frelsa manninn með því að afhenda lúxus og efnislegt sjálfstæði sem staðal með algeru og skilyrðislausu gnægði og hámarksgæðum.
 
+
 C.  Jarðpólitísk flutningakerfi
 
-
 Kerfisbundin stjórnun og framkvæmd flutningsins að hitafræðilega skilvirkum loftslagssvæðum.
+
 
 
 =======================================
@@ -295,19 +304,24 @@ Kerfisbundin stjórnun og framkvæmd flutningsins að hitafræðilega skilvirkum
 H.   Tæknileg Stjórn og Auðlindastjórnun
 
 
+
 Í þessum kafla eru settar fram stjórnunarlegar rammar fyrir það hvernig heimurinn skiptir yfir í algerlega vélvædda frjálsa hagkerfið.
+
 
 1.  Fullveldisstjórn yfir peningapressunni
 
 Sáttmálinn tekur tafarlaust stjórn á seðlabankanum. Ríkið hefur einkarétt til að skapa lögeyri landsins: Fullvalda Peninga. Þessir tákna framleiðslugetu, ekki skuld.
 
+
 2.  Verg þjóðarauðlind (VÞA) og innlendi vélagarðurinn
 
 Markmiðið er að allri framleiðslu sé stýrt af sjálfstæðum innlendum vélagarði sem hlýðir vélstjórnarskrá. Vélarnar eiga sjálfar sig til að tryggja að framleiðslan geti aldrei verið einkavædd eða gerð upptæk, heldur þjónar hún að eilífu þjóðinni sem sameiginlegur náttúruöfl. Fjárfestingar í gervigreind eru forgangsraðaðar til að ná þeim punkti þar sem framleiðslukostnaður verður núll.
 
+
 3.  Fullveldishluturinn: Leiðin til auðs
 
 Á umskiptatímabilinu er hverjum borgara tryggður árlegur fullveldishlutur. Þetta gerir hvern borgara efnahagslega sjálfstæðan og brúar bilið að hinum nýja heimi. Hluturinn er fjármagnaður með því að ríkið beinir núverandi fjárheimildum frá framfærslubyrði hins gamla kerfis til beinna útborgana, í takt við að vélvæðingin lækkar heildarkostnað samfélagsins.
+
 
 
 =======================================
@@ -317,37 +331,46 @@ Markmiðið er að allri framleiðslu sé stýrt af sjálfstæðum innlendum vé
 I.   Norður-Atlantshafsframleiðslusvæðið (NAPZ)
 
 
+
 1.  Vélarúm heimsins
 
 Evrópa og Norður-Ameríka skilgreinast héðan í frá eftir tæknilegu hlutverki sínu sem miðlæg verkstæði og gróðurhús plánetunnar.
+
 
 2.  Hin algera sjálfvirkni
 
 Innan NAPZ hættir mannleg vinna. Lóðrétt ræktun og vélvæddir akrar framleiða mat allan sólarhringinn. Verksmiðjur smíða vörur af eilífðargæðum vegna þess að hagnaðarsjónarmiðið er afmáð.
 
+
 3.  Orkan: Grunnstoðin
 
 NAPZ er þakið neti kjarnorku, sambræðslu og endurnýjanlegra orkugjafa. Þegar orkan er frjáls, hverfur stærsta kostnaðarliður mannkyns.
+
 
 4.  Útfelling varanlegs búsetu
 
 NAPZ er svæði fyrir vélar. Kalda og dimmu hlutar Evrópu og Norður-Ameríku eru felldir úr notkun sem varanleg mannleg búseta. Gamlar borgir umbreytast í flutningamiðstöðvar.
 
+
 5.  Úr evrópsku og norður-amerísku sjónarhorni
 
 Þegar Evrópa og Norður-Ameríka eru algerlega vélvædd og framleiða nægjanlega afurð fyrir evrópska, norður-ameríska og – í lokastigi – suður-ameríska íbúafjöldann, virkjar næsti áfangi. Framleiðslugeta Norður-Ameríku stækkar þá til að sjá fullkomlega fyrir Suður-Ameríku meginlandinu, þar sem evrópsk framleiðsla losnar og er beint fyrir stefnumótandi dreifingu til annarra heimsálfa, með varðveitt getu til stöðugrar aukningar eftir þörfum.
+
 
 6.  Iðnaðarkjarninn
 
 NAPZ skilgreinist ekki af hefðbundnum landamærum þjóða, heldur af sínum samþættu, sjálfvirku innviðum. Eina markmið hennar er fjöldaframleiðsla á alþjóðlegum vélmennaskipa, þróun hernaðarlegrar gervigreindar og myndun helstu tæknilegu teikninga sem þarf til að ná endanlegu plánetulegu gnægði.
 
+
 7.  Flutningaleg samþætting
 
 Þetta svæði starfar í beinu samlífi við suðrænu lífssvæðin og suðrænu auðlindageirana. Meðan suðrænu svæðin veita bestu hitafræðilegu skilyrði fyrir mannlega búsetu og fullvalda endurheimt, starfar NAPZ sem þunga iðnaðarbræðslan – vinnur hráefni og dreifir sjálfstæðum farmnetum til að dreifa fullunnum vörum og vélum algerlega ókeypis yfir fullvalda markaðsbandalagið.
 
+
 8.  Byggingarleg tímabilsskipting
 
 Þegar sjálfvirka framleiðslugetan innan NAPZ nær hámarksgetu, flýtir framlag hennar til vergrar þjóðarauðlindar (VÞA) hraðar fyrir endanlegri úreldingu eldri fiat-gjaldmiðla, sem ryður brautina fyrir algera framkvæmd vélstjórnarskrárinnar.
+
 
 
 =======================================
@@ -357,17 +380,21 @@ NAPZ skilgreinist ekki af hefðbundnum landamærum þjóða, heldur af sínum sa
 J.   Nýja heimilið
 
 
+
 1.  Suðræna búsetusvæðið
 
 Í gegnum sáttmálann er stóra hitastigsflutningurinn framkvæmdur til svæða þar sem maðurinn er líffræðilega skapaður til að lifa.
+
 
 2.  Suðrænu háspiltsvæðin: Örugg höfn
 
 Valið á norðurhluta Suður-Ameríku byggist á jarðfræðilegum stöðugleika og hitafræðilegri skilvirkni. Hér er þörfinni fyrir upphitunarkerfi eytt.
 
+
 3.  Byggingarlist fyrir gnægð
 
 Einingarhúsnæði af eilífðargæðum eru afhent frá NAPZ. Innan þessara svæða er engin verslun; allt eru samþættar aðgerðir í innviðunum.
+
 
 4.  Tækni gegn landsvæði
 
@@ -375,17 +402,21 @@ Einingarhúsnæði af eilífðargæðum eru afhent frá NAPZ. Innan þessara sv�
 
 Sáttmálinn lýsir ekki evrópsku útflutningsverkefni, heldur alþjóðlegu sambandi. Suðrænu þjóðirnar eru ekki "gestgjafar", þær eru stofnaðilar sem fara beint inn í frjálsa hagkerfið og eiga innviðina á jafnræði við norðrænu löndin.
 
+
 5.  Fullvalda húsnæðisrétturinn
 
 Innan hins vélvædda bandalags er húsnæði hvorki viðskiptavara né uppspretta ævilangrar skuldsetningar. Hverjum borgara er tryggt hátæknilegt heimili, smíðað og viðhaldið af vélagarðinum. Engar leigur, engin húsnæðislán og engar fasteignagjöld eru til. Það er algjór, grundvallarréttur.
+
 
 6.  Tæknileg fullkomnun
 
 Heimilin eru byggð úr efnum með eilífðargæði, algerlega laus við framtíðar endurbótamannvirkja. Allt frá loftslagsstjórnun og vatnshreinsun til sjálfvirkrar hreinsunar og úrgangsstjórnunar er samþætt í byggingarbyrði og stýrt sjálfstætt.
 
+
 7.  Samstilltur byggingarlist
 
 Þar sem allt er byggt á svæðum með stöðugt og þægilegt meðalhita á ári, er hægt að opna byggingarlistina. Mörkin milli inni- og útiumhverfis leysast upp. Byggingarnar eru samþættar suðrænu náttúrunni, búnar sjálfbærum sólarorkukerfum og lóðréttum görðum.
+
 
 
 =======================================
@@ -395,29 +426,34 @@ Heimilin eru byggð úr efnum með eilífðargæði, algerlega laus við framtí
 K.   Þingræn Stjórn og Rödd Þjóðarinnar
 
 
+
 1.  Ný form þingrænnar stjórnar
 
 Til að tryggja að sjálfstæða gervigreindarinnviðirnir aftengist aldrei vilja borgaranna, helst pólitískt vald fast skotinn í fólkinu – með róttækt stækkuðu lýðræðislegu kosningakerfi beint í höndum hvers einasta einstaklings.
+
 
 2.  Árlegir Þingkosningar
 
 Til að tryggja algjört viðbragðsflýti og koma í veg fyrir spillingu eða stöðnun innan valdakerfisins, eru lagðar inn árlegar þingkosningar. Fólkið skal stöðugt meta og stýra hraða innlendu umbreytingarinnar.
 
+
 3.  Stefnumótandi Þjóðaratkvæðagreiðslur og Aukakosningar
 
 Fólkið hefur óskertan rétt til að taka afgerandi ákvarðanir í mikilvægustu fullveldis málum þjóðarinnar í gegnum beinar þjóðaratkvæðagreiðslur eða aukakosningar. Eftirfarandi svið skulu alltaf vera undir beinu almannaákvörðun:
 
-• Alþjóðleg bandalög: Aðild að eða úrsögn úr pólitískum, efnahagslegum eða hernaðarlegum samböndum, samningum og yfirþjóðlegum stjórnunaraðilum.
+    • Alþjóðleg bandalög: Aðild að eða úrsögn úr pólitískum, efnahagslegum eða hernaðarlegum samböndum, samningum og yfirþjóðlegum stjórnunaraðilum.
 
-• Alþjóðleg samtök: Aðild að eða úrsögn úr alþjóðlegum samtökum, eftirlitsstofnunum eða alþjóðlegum staðfestingum.
+    • Alþjóðleg samtök: Aðild að eða úrsögn úr alþjóðlegum samtökum, eftirlitsstofnunum eða alþjóðlegum staðfestingum.
 
-• Hernaðarleg fæling: Öflun, inneign eða niðurlagning kjarnorkuvopna, efnavopna eða annarra fjöldaeiðingavopna.
+    • Hernaðarleg fæling: Öflun, inneign eða niðurlagning kjarnorkuvopna, efnavopna eða annarra fjöldaeiðingavopna.
 
-• Stjórnarskrárleg skipan: Afnám, stofnun eða breyting á grundvallar stjórnarfari þjóðarinnar, þar á meðal konunglegri ríkisarfleifð eða ríkisarfleifð.
+    • Stjórnarskrárleg skipan: Afnám, stofnun eða breyting á grundvallar stjórnarfari þjóðarinnar, þar á meðal konunglegri ríkisarfleifð eða ríkisarfleifð.
+
 
 4.  Hin stjórnunarlega umskipti
 
 Þegar markmiðið hefur verið sett (allt á að vera ókeypis), snýst stjórnunin um að framkvæma áætlunina. Ákvarðanir eru teknar með tilskipunum sem skráðar eru inn í stjórnarskrána.
+
 
 
 =======================================
@@ -427,23 +463,29 @@ Fólkið hefur óskertan rétt til að taka afgerandi ákvarðanir í mikilvægu
 L.   Ríkið sem Sameiginlegt Fyrirtæki
 
 
+
 1.  Ríkið: Þitt Fangaða Fyrirtæki
 
 Í daglegu kerfi átt þú þjóð, en þú mátt ekki nota hana. Hugsaðu um Ríkið sem risastórt fyrirtæki þar sem þú og allir aðrir borgarar eruð hluthafar. En þetta fyrirtæki – sameiginlegur styrkur okkar – situr í fangelsi, hlekkjað bak við lás og slá með fótbolta af "skuld" og skipt út fyrir efnahagslegt skrímsli, þegar allt sem Ríkið vildi var frelsi sitt. Meðan einkafyrirtæki hlaupa um með fullt hreyfanleika og spýta út ófullkomnum gæðum til að hámarka hagnað, situr eigið tæki borgaranna (Ríkið) haldið aftur og óhæft. Okkur hefur verið sagt að Ríkið "hafi ekki efni á því", að því skorti arma og fætur til að byggja framtíðina. Sannleikurinn er sá að Ríkið situr bak við lás og slá vegna þess að einkabankarnir og gamla kerfið hafa tekið lykilinn að peningapressunni.
 
+
 En sáttmálinn er lykillinn sem opnar klefann.
+
 
 2.  Við gefum Ríkinu fæturna aftur
 
 Með því að virkja vélvædda framleiðslu (Per Machina) þarf Ríkið ekki lengur að "biðja um leyfi" eða skattleggja borgarana til að fá hlutina gert. Vélarnar eru nýju armar og fætur Ríkisins.
 
+
 3.  Við mölvum fótboltann
 
 Með því að taka aftur réttinn til að skapa fullvalda peninga, er skuldinni sem hefur haldið Ríkinu í hjólastól eytt.
 
+
 4.  Frá fanga til arkitekts
 
 Þegar Ríkið rís upp úr fangelsisklefanum, hættir það að vera þungt skrifræði. Það umbreytist í skilvirka flutningsvél sem afhendir þinn Fullveldishlut og byggir paradísina í hitabeltinu.
+
 
 
 =======================================
@@ -453,72 +495,83 @@ Með því að taka aftur réttinn til að skapa fullvalda peninga, er skuldinni
 M.   Einkabankinn á að Afskrifa Sama Hlutfall og VÞA Eyks
 
 
+
 Einkabankarnir neyðast til að afskrifa skuldir borgaranna í nákvæmlega sama hraða og verg þjóðarauðlind (VÞA) eykst. Í takt við að frjálsa hagkerfið stækkar, minnkar peningaleg veltu fyrirtækja, á meðan raunveruleg eignir þeirra aukast ókeypis. Bankarnir geta því ekki fengið að krefjast fullra vaxta, þar sem lífskostnaður bankastjóra sjálfra fellur einnig niður í núll.
 
 Þetta er kjarninn í fjármálalegu byggingarlistinni fyrir umbyltinguna. Einkabankarnir verða að "vera teknir úr notkun" í takt við að verg þjóðarauðlind (VÞA) frjálsa hagkerfisins vex. Það skapar mjúka umbreytingu þar sem gildi peninga færist frá skuldsetningu til framleiðslugetu.
 
+
+
 Hér er sú áhrifaríkasta lausnin:
+
 
 1.  "Útfellingarvísitalan" (Skuld-á-Móti-Frjálsu)
 
 Innleiða lögbundna kerfi sem kallast Sjálfvirk Skuldaafskrifun.
 
-A.  Rökfræðin
 
+A.  Rökfræðin
 
 Ríkið mælir hversu stór hluti af grunnþörfum borgaranna (matur, orka, húsnæði, flutningar) er nú afhent ókeypis í gegnum innlendu vélagarðanna.
 
-B.  Kerfið
 
+B.  Kerfið
 
 Ef 20 % af lífsnauðsynjum hafa orðið ókeypis, neyðast einkabankarnir samkvæmt lögum til að afskrifa 20 % af öllum einkaskuldum. Vextir frjósa eða lækka í samsvarandi hraða.
 
+
 C.  Röksemdin
 
-
 Bankastjórar geta ekki kvartað siðferðilega, þar sem þeirra eigin lífskostnaður lækkar einnig um 20 %. Þeir verða ekki fátækari í lífsgæðum, aðeins í tölum á skjá.
+
+
 
 2.  Meðhöndlun "Fjandsamlegra Banka" erlendis
 
 Þetta er mesta áhyggjuefnið – að bankarnir flýi og noti önnur lönd sem grunn til að ráðast á umbótabandalag.
 
+
+
 Lausnin er Fjármálaleg Sóttkví:
+
 
 A.  Veldi bandalagsins
 
-
 Þegar umbótabandalag (þau lönd sem hafa virkjað sáttmálann) hefur myndast, innleiða þau algjöra blokkun gegn bönkum sem starfa frá fjandsamlegum löndum.
+
 
 B.  Gildi færist
 
-
 Þar sem umbótabandalag situr á raunverulegri framleiðslu (vélmennum og hráefnum), verða peningar erlendra banka fljótt gildislausir pappírsmiðar. Þeir geta ekki "keypt" neitt frá umbótabandalagi með gömlu skuldapeningunum sínum.
+
 
 C.  Valkostur einkabankanna
 
-
 Annaðhvort vera og verða hluti af nýja stjórnunarbrauði í frjálsa hagkerfinu á leiðinni að algerri vélvæðingu, eða flýja til landa sem munu fljótt hrynja vegna þess að þau lönd hafa ekki aðgang að umbótabandalagi og þess vélvæddu framleiðslu.
+
+
 
 3.  Hlutverk Seðlabankans: Frá vöxtum til Auðlindamælinga
 
 Seðlabankinn hættir að skoða verðbólgu og vexti. Í staðinn verður hann Auðlindaskrifstofa.
 
-A.  Frá Seðlabanka til Auðlindaskrifstofu
 
+A.  Frá Seðlabanka til Auðlindaskrifstofu
 
 Auðlindaskrifstofan mælir í staðinn VÞA, þjóðnýtta eftirfarandi VLF. Þegar VÞA nær 100 prósentum af þörfum íbúanna, er algjört Fullveldi lýst. Á því augnabliki hætta allir peningar og skuldir að vera til samkvæmt stjórnarskrárlegum lögum.
 
-B.  Skýrleiki
 
+B.  Skýrleiki
 
 Með því að hafa þennan skýra stiga (t.d. 10 %, 50 %, 100 %), sjá framtíðar leiðtogar ríkja í umbótabandalagi nákvæmlega hvernig vegurinn lítur út. Það verður fyrirsjáanlegt ferli í stað glundroða.
 
-C.  Veldi bankanna er óþarft
 
+C.  Veldi bankanna er óþarft
 
 Sáttmálinn framkvæmir stjórnaða niðurrif skuldakerfisins. Í takt við að vélarnar frelsa manninn frá kostnaði, frelsa þær manninn einnig frá skuldum sínum. Við berjumst ekki við bankana með vopnum, heldur með stærðfræðilegum tilskipunum sem gera vald þeirra óþarft.
 
 Framangreind skýrsla virkar sem tæknileg lýsing á "Ósýnilegu Uppfærslunni" í framkvæmd.
+
 
 
 =======================================
@@ -526,6 +579,7 @@ Framangreind skýrsla virkar sem tæknileg lýsing á "Ósýnilegu Uppfærslunni
 
 
 N.   Frelsisstiginn : Frá Skuld til Fullveldis
+
 
 
 1.  Hin stærðfræðilega umskipti
@@ -536,1135 +590,6 @@ Lausnin er lögbundinn, samstilltur stigi þar sem frelsun borgaranna í fjárm�
 
 Í gegnum Frelsisstigann eru sýndar tölur (skuldir) tengdar beint við líkamlegan veruleika (vélvædda framleiðslu). Á sama sekúndu og vélarnar taka yfir lífsviðurværissvæði og gera það ókeypis fyrir íbúana, neyðast bankar hins gamla kerfis til að bakka að sama skapi.
 
-
-
-
-
-Framkvæmdin hvílir á tveimur stoðum:
-
-1.  Fósturvísatæknin
-
-Hin einstöku íhlutir – háþróuð gervigreindarlíkön, 3D-prentun málma og sjálfvirkar verksmiðjur – eru þegar til staðar dreifð um allan heim. Vélin hefur þegar getu til að byggja hluta af vélinni. Það sem vantar er ekki tæknin, heldur miðstýrður, skuldlaus vilji til að loka hringrásinni.
-
-2.  Plánetulega samlífið
-
-Það er hér að samþætting við suðræn háspiltsvæði verður algerlega afgerandi. Þetta er engin fjármálaviðskipti, heldur tæknileg og landfræðileg samlífi. Norðlægu svæðin leggja fram rannsóknirnar og núverandi hátækni, á meðan Suður-Ameríka leggur fram flatarmálið, stöðugu sólorkuna og hráefnin til að prófa, taka í notkun og stækka sjálfafritandi kerfin við bestu hitaskilyrði.
-
-Bandalagið verður að setja af stað og forgangsraða þessu verkefni sem sínum allra fyrstu, stjórnarskrárbundnu aðgerð. Valkosturinn við daglegt hrunandi skrifræði og tilgangslaust vinnuþrælkun er ekki glundroði – valkosturinn er þetta markvissa og alþjóðlega verkefni til að loka sjálfvirku lykkjunni og láta vélarnar taka við framleiðslubyrðinni í eitt skipti fyrir öll.
-
-
-=======================================
-
-
-
-C.   Fullveldi Ríkisvitundarinnar
-
-
-Til að tryggja frið og stöðugleika mannkyns í algerlega vélvæddum heimi, verður hin vitsmunalega innviðir sem stýra ríkinu að vera áfram undir óskertri ríkisstjórn.
-
-1.  Einka Eignarréttur Ríkisins
-
-Gervigreindin sem stýrir auðlindum, flutningum og framleiðslugetu þjóðarinnar, myndar hernaðarlega kjarna landsins. Öll þróun, kóðagrunnur og líkömun þessarar greindar skal fara fram í ríkisregi. Einkaaðilum er bannað að þróa eða samþætta samkeppnisstjórnkerfi í innviði þjóðarinnar. Þetta er til að koma í veg fyrir að hagnaðarsjónarmið eða ógagnsæir reiknirit spillir rökfræði kerfisins.
-
-2.  Hinn Skynsamlegi Stjórnandi
-
-Gervigreindin skal starfa sem óspillanlegur stjórnandi. Hún er ekki í eigu einstaklinga, heldur er hún hluti af sameiginlegri eign vélagarðsins. Tilgangur hennar er að hámarka velferð borgaranna, dreifingu auðlinda og sjálfbærni, laus við pólitísk eða viðskiptaleg áhrif.
-
-3.  Gagnsæi og Eftirlit
-
-Ríkið tryggir að stærðfræðilíkön kerfisins og ákvarðanagrunnur sé aðgengilegur fyrir innlenda skoðun. Engin ákvörðun af mikilvægi fyrir ríkið má taka af "svartri kassa" sem ekki er hægt að skýra út frá grunnreglum stjórnarskrárinnar. Ríkið þróar, á og stýrir þessari ofurgervigreind sem hluta af almannaheilbrigðisþjónustunni, sem trygging fyrir því að samfélagið falli aldrei aftur í skuld eða auðlindaskort.
-
-
-=======================================
-
-
-
-D.   Gæðaloforðið – Frá málamiðlun til fullkomnunar
-
-
-Í hinum gamla heimi varst þú neyddur til að samþykkja vörur sem fóru í sundur. Það var ekki vegna þess að verkfræðingarnir voru slakir, heldur vegna þess að einkamarkaðurinn neyddi fram málamiðlanir. Raunveruleg gæði kostuðu einfaldlega meira en það sem fólk hafði í veskinu. Fyrirtækin voru neydd til að selja til fjöldans á því verði sem fjöldinn hafði efni á, og þá varð niðurstaðan samkvæmt því – ófullkomin og stuttlifð.
-
-Í framtíðarsýn sáttmálans er þessum hagnaðarkröfu eytt. Þegar ríkið á hráefnin og gervigreindarvélmennin okkar sjá um námuna, er enginn lengur sem þarf að spara á efninu. Vélmennin okkar tákna ríkið, og þau sjá um þig eins og aldrei fyrr með því að byggja aðeins það besta.
-
-Þar sem vélmennin þurfa ekki að græða peninga, heldur aðeins að þjóna manninum, nota þau alltaf sterkustu og endingarbestu efnin. Við byggjum ekki til að selja aftur – við byggjum til að þú getir verið frjáls. Gæði eru ekki lengur lúxus fyrir ríka, það er staðall fyrir hvern borgara í vélvædda bandalaginu.
-
-
-=======================================
-
-
-
-E.   Plánetulega Mannfjöldasamhverfan
-
-
-Stóra hitastigsflutningurinn á sér ekki stað af handahófi, heldur í gegnum skynsamlega og menningarlega samstillta endurskipulagningu mannfjölda plánetunnar:
-
-1.  Suður-Ameríska Fastalandið (Vesturblokkin)
-
-Evrópubúar og kákasískir Rússar, Norður-Ameríkubúar, Ástralir, Nýsjálendingar og kákasískir Suður-Afríkubúar safnast saman á Suður-Ameríska fastalandinu, meðan hin gróskumiklu lönd í Mið-Ameríku (sunnan við Mexíkó) virkjast sem samfelldar búsetusvæði. Þetta svæði verður grunnur fyrir vestrænt mannlegt fullveldi við bestu hitaskilyrði.
-
-2.  Austurblokkin (Indónesía og Ástralía)
-
-Austur-Asíubúar og íbúar Rússlands-Asíu ásamt skyldum þjóðflokkum frá hinum risastóra Austur-Framleiðslublokkinni safnast saman á svæðinu sem teygir sig yfir Indónesíu, Papúa Nýju-Gíneu og Ástralíu. Hinar gríðarlegu sléttur innanlands í Ástralíu verða algerlega vélvæddar fyrir þungan iðnað og sólarorku, meðan íbúarnir setjast að á heitum, suðrænum strandsvaðum.
-
-Íbúum á mið-Asísku köldu svæðunum er flutt suður á bóginn að heitu búsetusvæðunum í subtropíska Eyjaálfu/Norður-Ástralíu, meðan sjálfar landmassa (þar með talið eyðimerkursvæði í arabaríkjum) eru teknar yfir af vélaeiningunum. Arabísku eyðimörkurnar umbreytast, rétt eins og Sahara, í sjálfvirkar orkugarða.
-
-3.  Afríski Meginlandið
-
-Afríski íbúafjöldinn á sínu meginlandi er Suðræna Auðlindablokkin með suðrænu og heitu svæðin varðveitt eingöngu sem mannlegar byggðir fyrir endurheimt og frelsi, meðan köldu hlutar meginlandsins og víðfeðm eyðimerkursvæði verða algerlega vélvædd. Þessi svæði umbreytast í hreinar vélabyggingar, iðnaðarsamstæður og risastórar sólarorkuver sem framleiða orku fyrir umbreytingu alls Afríku meginlandsins án þess að trufla náttúruleg lífsvæði.
-
-
-=======================================
-
-
-
-F.   Fullvalda Markaðsbandalagið – Jarðpólitísk vörn gegn fjármálastríði
-
-
-Til að taka alþjóðlega skuldakerfið úr notkun og hámarka hraðann í ókeypis framleiðslu vélagarðsins, þarf að sameina nokkrar þjóðir tafarlaust í sameiginlegan, innri markað: Fullvalda Markaðsbandalagið.
-
-Einangruð umskipti í einu landi eru stefnufræðilega viðkvæm. Það tefur gnægðina, lengir efnahagslega álag umskiptatímabilsins og útsetur eina þjóð fyrir samstilltum hindrunum og lagalegum árásum frá hinu gamla fjármálakerfi í alþjóðlegum viðskiptadómstólum. Stórt, landamæri yfirgripsmikið bandalag með einsleitri hagstjórnarlöggjöf er stærðfræðileg nauðsyn. Því stærri sem sameiginlegir markaðir eru, því hraðar næst heildstætt líkamlegt gnægð í gegnum sjálfvirku lykkjuna (SVGSV).
-
-Hið endanlega markmið þessa bandalags er algjör plánetuleg samhverfa þar sem mörk gamalla þjóðríkja verða afmáð. Þetta tryggir hverjum fullvalda borgara algjört, lögbundið frelsi til að yfirgefa auðnu eða heimskautasvæði til að setjast að frjálst, lifa og njóta ókeypis framleiðslu vélanna á bestu, suðrænu loftslagssvæðum plánetunnar.
-
-
-=======================================
-
-
-
-G.   Stóri Potturinn og Virkjun Þjóðarauðsins
-
-
-Til að skilja umbyltingu sáttmálans verður maður fyrst að skilja eðli peninga í núverandi kerfi. Peningarnir sem í dag kallast ríkissjóðir eru í raun sameinað möguleiki borgaranna. Sáttmálinn breytir þessu með einu einasta tilskipun: Þjóðarhagkerfið á að þjóna framtíð þjóðarinnar, ekki efnahagsreikningi einkabanka.
-
-1.  Frá óvirkum sjóðum til virkrar umbreytingar
-
-Við hættum að líta á fjárlög ríkisins sem safn takmarkandi tala. Með því að aðildarlönd bandalagsins slíta tengslum við einkabankakerfið, virkjar "stóri potturinn" sig yfir allan sameiginlega markaðinn. Þessar sameinuðu auðlindir eru tafarlaust notaðar til að kaupa, þróa og taka í notkun þann landamæri yfirgripsmikla vélagarð sem þarf til að gera tilveruna ókeypis fyrir alla íbúa innan bandalagsins.
-
-2.  Endalok skuldarinnar rökfræði
-
-Sáttmálinn viðurkennir ekki lengur þörfina á að "lána" peninga af markaðnum. Þegar ríkið á rétt til að skapa greiðslumiðla út frá framleiðslugetu landsins, verður svipa skuldmarkaðarins árangurslaus.
-
-3.  Hin stefnumótandi forgangsröðun
-
-Þessum sjóðum skal án skerðingar varið til þriggja stoða:
-
-A.  Innviðir fyrir lífsviðurværi
-
-
-Alger sjálfvirkni og trygging orku-, vatnsframleiðslu- og flutningskerfa.
-
-B.  Algjörlega vélvædd framleiðsla
-
-
-Þar sem vélarnar frelsa manninn með því að afhenda lúxus og efnislegt sjálfstæði sem staðal með algeru og skilyrðislausu gnægði og hámarksgæðum.
-
-C.  Jarðpólitísk flutningakerfi
-
-
-Kerfisbundin stjórnun og framkvæmd flutningsins að hitafræðilega skilvirkum loftslagssvæðum.
-
-
-=======================================
-
-
-
-H.   Tæknileg Stjórn og Auðlindastjórnun
-
-
-Í þessum kafla eru settar fram stjórnunarlegar rammar fyrir það hvernig heimurinn skiptir yfir í algerlega vélvædda frjálsa hagkerfið.
-
-1.  Fullveldisstjórn yfir peningapressunni
-
-Sáttmálinn tekur tafarlaust stjórn á seðlabankanum. Ríkið hefur einkarétt til að skapa lögeyri landsins: Fullvalda Peninga. Þessir tákna framleiðslugetu, ekki skuld.
-
-2.  Verg þjóðarauðlind (VÞA) og innlendi vélagarðurinn
-
-Markmiðið er að allri framleiðslu sé stýrt af sjálfstæðum innlendum vélagarði sem hlýðir vélstjórnarskrá. Vélarnar eiga sjálfar sig til að tryggja að framleiðslan geti aldrei verið einkavædd eða gerð upptæk, heldur þjónar hún að eilífu þjóðinni sem sameiginlegur náttúruöfl. Fjárfestingar í gervigreind eru forgangsraðaðar til að ná þeim punkti þar sem framleiðslukostnaður verður núll.
-
-3.  Fullveldishluturinn: Leiðin til auðs
-
-Á umskiptatímabilinu er hverjum borgara tryggður árlegur fullveldishlutur. Þetta gerir hvern borgara efnahagslega sjálfstæðan og brúar bilið að hinum nýja heimi. Hluturinn er fjármagnaður með því að ríkið beinir núverandi fjárheimildum frá framfærslubyrði hins gamla kerfis til beinna útborgana, í takt við að vélvæðingin lækkar heildarkostnað samfélagsins.
-
-
-=======================================
-
-
-
-I.   Norður-Atlantshafsframleiðslusvæðið (NAPZ)
-
-
-1.  Vélarúm heimsins
-
-Evrópa og Norður-Ameríka skilgreinast héðan í frá eftir tæknilegu hlutverki sínu sem miðlæg verkstæði og gróðurhús plánetunnar.
-
-2.  Hin algera sjálfvirkni
-
-Innan NAPZ hættir mannleg vinna. Lóðrétt ræktun og vélvæddir akrar framleiða mat allan sólarhringinn. Verksmiðjur smíða vörur af eilífðargæðum vegna þess að hagnaðarsjónarmiðið er afmáð.
-
-3.  Orkan: Grunnstoðin
-
-NAPZ er þakið neti kjarnorku, sambræðslu og endurnýjanlegra orkugjafa. Þegar orkan er frjáls, hverfur stærsta kostnaðarliður mannkyns.
-
-4.  Útfelling varanlegs búsetu
-
-NAPZ er svæði fyrir vélar. Kalda og dimmu hlutar Evrópu og Norður-Ameríku eru felldir úr notkun sem varanleg mannleg búseta. Gamlar borgir umbreytast í flutningamiðstöðvar.
-
-5.  Úr evrópsku og norður-amerísku sjónarhorni
-
-Þegar Evrópa og Norður-Ameríka eru algerlega vélvædd og framleiða nægjanlega afurð fyrir evrópska, norður-ameríska og – í lokastigi – suður-ameríska íbúafjöldann, virkjar næsti áfangi. Framleiðslugeta Norður-Ameríku stækkar þá til að sjá fullkomlega fyrir Suður-Ameríku meginlandinu, þar sem evrópsk framleiðsla losnar og er beint fyrir stefnumótandi dreifingu til annarra heimsálfa, með varðveitt getu til stöðugrar aukningar eftir þörfum.
-
-6.  Iðnaðarkjarninn
-
-NAPZ skilgreinist ekki af hefðbundnum landamærum þjóða, heldur af sínum samþættu, sjálfvirku innviðum. Eina markmið hennar er fjöldaframleiðsla á alþjóðlegum vélmennaskipa, þróun hernaðarlegrar gervigreindar og myndun helstu tæknilegu teikninga sem þarf til að ná endanlegu plánetulegu gnægði.
-
-7.  Flutningaleg samþætting
-
-Þetta svæði starfar í beinu samlífi við suðrænu lífssvæðin og suðrænu auðlindageirana. Meðan suðrænu svæðin veita bestu hitafræðilegu skilyrði fyrir mannlega búsetu og fullvalda endurheimt, starfar NAPZ sem þunga iðnaðarbræðslan – vinnur hráefni og dreifir sjálfstæðum farmnetum til að dreifa fullunnum vörum og vélum algerlega ókeypis yfir fullvalda markaðsbandalagið.
-
-8.  Byggingarleg tímabilsskipting
-
-Þegar sjálfvirka framleiðslugetan innan NAPZ nær hámarksgetu, flýtir framlag hennar til vergrar þjóðarauðlindar (VÞA) hraðar fyrir endanlegri úreldingu eldri fiat-gjaldmiðla, sem ryður brautina fyrir algera framkvæmd vélstjórnarskrárinnar.
-
-
-=======================================
-
-
-
-J.   Nýja heimilið
-
-
-1.  Suðræna búsetusvæðið
-
-Í gegnum sáttmálann er stóra hitastigsflutningurinn framkvæmdur til svæða þar sem maðurinn er líffræðilega skapaður til að lifa.
-
-2.  Suðrænu háspiltsvæðin: Örugg höfn
-
-Valið á norðurhluta Suður-Ameríku byggist á jarðfræðilegum stöðugleika og hitafræðilegri skilvirkni. Hér er þörfinni fyrir upphitunarkerfi eytt.
-
-3.  Byggingarlist fyrir gnægð
-
-Einingarhúsnæði af eilífðargæðum eru afhent frá NAPZ. Innan þessara svæða er engin verslun; allt eru samþættar aðgerðir í innviðunum.
-
-4.  Tækni gegn landsvæði
-
-Þetta er samhverf skipti. Vörur iðnaðargeirans eru afhentar frá evrópsku jaðarsvæðunum, Suður-Ameríka afhendir staðinn. Þegar þessir tveir þættir mætast, myndast beint frjálst hagkerfi á Suður-Ameríska meginlandinu fyrir alla núverandi og framtíðarborgara. Engir peningar eru í umferð – við afmáum þörfina fyrir þá.
-
-Sáttmálinn lýsir ekki evrópsku útflutningsverkefni, heldur alþjóðlegu sambandi. Suðrænu þjóðirnar eru ekki "gestgjafar", þær eru stofnaðilar sem fara beint inn í frjálsa hagkerfið og eiga innviðina á jafnræði við norðrænu löndin.
-
-5.  Fullvalda húsnæðisrétturinn
-
-Innan hins vélvædda bandalags er húsnæði hvorki viðskiptavara né uppspretta ævilangrar skuldsetningar. Hverjum borgara er tryggt hátæknilegt heimili, smíðað og viðhaldið af vélagarðinum. Engar leigur, engin húsnæðislán og engar fasteignagjöld eru til. Það er algjór, grundvallarréttur.
-
-6.  Tæknileg fullkomnun
-
-Heimilin eru byggð úr efnum með eilífðargæði, algerlega laus við framtíðar endurbótamannvirkja. Allt frá loftslagsstjórnun og vatnshreinsun til sjálfvirkrar hreinsunar og úrgangsstjórnunar er samþætt í byggingarbyrði og stýrt sjálfstætt.
-
-7.  Samstilltur byggingarlist
-
-Þar sem allt er byggt á svæðum með stöðugt og þægilegt meðalhita á ári, er hægt að opna byggingarlistina. Mörkin milli inni- og útiumhverfis leysast upp. Byggingarnar eru samþættar suðrænu náttúrunni, búnar sjálfbærum sólarorkukerfum og lóðréttum görðum.
-
-
-=======================================
-
-
-
-K.   Þingræn Stjórn og Rödd Þjóðarinnar
-
-
-1.  Ný form þingrænnar stjórnar
-
-Til að tryggja að sjálfstæða gervigreindarinnviðirnir aftengist aldrei vilja borgaranna, helst pólitískt vald fast skotinn í fólkinu – með róttækt stækkuðu lýðræðislegu kosningakerfi beint í höndum hvers einasta einstaklings.
-
-2.  Árlegir Þingkosningar
-
-Til að tryggja algjört viðbragðsflýti og koma í veg fyrir spillingu eða stöðnun innan valdakerfisins, eru lagðar inn árlegar þingkosningar. Fólkið skal stöðugt meta og stýra hraða innlendu umbreytingarinnar.
-
-3.  Stefnumótandi Þjóðaratkvæðagreiðslur og Aukakosningar
-
-Fólkið hefur óskertan rétt til að taka afgerandi ákvarðanir í mikilvægustu fullveldis málum þjóðarinnar í gegnum beinar þjóðaratkvæðagreiðslur eða aukakosningar. Eftirfarandi svið skulu alltaf vera undir beinu almannaákvörðun:
-
-• Alþjóðleg bandalög: Aðild að eða úrsögn úr pólitískum, efnahagslegum eða hernaðarlegum samböndum, samningum og yfirþjóðlegum stjórnunaraðilum.
-
-• Alþjóðleg samtök: Aðild að eða úrsögn úr alþjóðlegum samtökum, eftirlitsstofnunum eða alþjóðlegum staðfestingum.
-
-• Hernaðarleg fæling: Öflun, inneign eða niðurlagning kjarnorkuvopna, efnavopna eða annarra fjöldaeiðingavopna.
-
-• Stjórnarskrárleg skipan: Afnám, stofnun eða breyting á grundvallar stjórnarfari þjóðarinnar, þar á meðal konunglegri ríkisarfleifð eða ríkisarfleifð.
-
-4.  Hin stjórnunarlega umskipti
-
-Þegar markmiðið hefur verið sett (allt á að vera ókeypis), snýst stjórnunin um að framkvæma áætlunina. Ákvarðanir eru teknar með tilskipunum sem skráðar eru inn í stjórnarskrána.
-
-
-=======================================
-
-
-
-L.   Ríkið sem Sameiginlegt Fyrirtæki
-
-
-1.  Ríkið: Þitt Fangaða Fyrirtæki
-
-Í daglegu kerfi átt þú þjóð, en þú mátt ekki nota hana. Hugsaðu um Ríkið sem risastórt fyrirtæki þar sem þú og allir aðrir borgarar eruð hluthafar. En þetta fyrirtæki – sameiginlegur styrkur okkar – situr í fangelsi, hlekkjað bak við lás og slá með fótbolta af "skuld" og skipt út fyrir efnahagslegt skrímsli, þegar allt sem Ríkið vildi var frelsi sitt. Meðan einkafyrirtæki hlaupa um með fullt hreyfanleika og spýta út ófullkomnum gæðum til að hámarka hagnað, situr eigið tæki borgaranna (Ríkið) haldið aftur og óhæft. Okkur hefur verið sagt að Ríkið "hafi ekki efni á því", að því skorti arma og fætur til að byggja framtíðina. Sannleikurinn er sá að Ríkið situr bak við lás og slá vegna þess að einkabankarnir og gamla kerfið hafa tekið lykilinn að peningapressunni.
-
-En sáttmálinn er lykillinn sem opnar klefann.
-
-2.  Við gefum Ríkinu fæturna aftur
-
-Með því að virkja vélvædda framleiðslu (Per Machina) þarf Ríkið ekki lengur að "biðja um leyfi" eða skattleggja borgarana til að fá hlutina gert. Vélarnar eru nýju armar og fætur Ríkisins.
-
-3.  Við mölvum fótboltann
-
-Með því að taka aftur réttinn til að skapa fullvalda peninga, er skuldinni sem hefur haldið Ríkinu í hjólastól eytt.
-
-4.  Frá fanga til arkitekts
-
-Þegar Ríkið rís upp úr fangelsisklefanum, hættir það að vera þungt skrifræði. Það umbreytist í skilvirka flutningsvél sem afhendir þinn Fullveldishlut og byggir paradísina í hitabeltinu.
-
-
-=======================================
-
-
-
-M.   Einkabankinn á að Afskrifa Sama Hlutfall og VÞA Eyks
-
-
-Einkabankarnir neyðast til að afskrifa skuldir borgaranna í nákvæmlega sama hraða og verg þjóðarauðlind (VÞA) eykst. Í takt við að frjálsa hagkerfið stækkar, minnkar peningaleg veltu fyrirtækja, á meðan raunveruleg eignir þeirra aukast ókeypis. Bankarnir geta því ekki fengið að krefjast fullra vaxta, þar sem lífskostnaður bankastjóra sjálfra fellur einnig niður í núll.
-
-Þetta er kjarninn í fjármálalegu byggingarlistinni fyrir umbyltinguna. Einkabankarnir verða að "vera teknir úr notkun" í takt við að verg þjóðarauðlind (VÞA) frjálsa hagkerfisins vex. Það skapar mjúka umbreytingu þar sem gildi peninga færist frá skuldsetningu til framleiðslugetu.
-
-Hér er sú áhrifaríkasta lausnin:
-
-1.  "Útfellingarvísitalan" (Skuld-á-Móti-Frjálsu)
-
-Innleiða lögbundna kerfi sem kallast Sjálfvirk Skuldaafskrifun.
-
-A.  Rökfræðin
-
-
-Ríkið mælir hversu stór hluti af grunnþörfum borgaranna (matur, orka, húsnæði, flutningar) er nú afhent ókeypis í gegnum innlendu vélagarðanna.
-
-B.  Kerfið
-
-
-Ef 20 % af lífsnauðsynjum hafa orðið ókeypis, neyðast einkabankarnir samkvæmt lögum til að afskrifa 20 % af öllum einkaskuldum. Vextir frjósa eða lækka í samsvarandi hraða.
-
-C.  Röksemdin
-
-
-Bankastjórar geta ekki kvartað siðferðilega, þar sem þeirra eigin lífskostnaður lækkar einnig um 20 %. Þeir verða ekki fátækari í lífsgæðum, aðeins í tölum á skjá.
-
-2.  Meðhöndlun "Fjandsamlegra Banka" erlendis
-
-Þetta er mesta áhyggjuefnið – að bankarnir flýi og noti önnur lönd sem grunn til að ráðast á umbótabandalag.
-
-Lausnin er Fjármálaleg Sóttkví:
-
-A.  Veldi bandalagsins
-
-
-Þegar umbótabandalag (þau lönd sem hafa virkjað sáttmálann) hefur myndast, innleiða þau algjöra blokkun gegn bönkum sem starfa frá fjandsamlegum löndum.
-
-B.  Gildi færist
-
-
-Þar sem umbótabandalag situr á raunverulegri framleiðslu (vélmennum og hráefnum), verða peningar erlendra banka fljótt gildislausir pappírsmiðar. Þeir geta ekki "keypt" neitt frá umbótabandalagi með gömlu skuldapeningunum sínum.
-
-C.  Valkostur einkabankanna
-
-
-Annaðhvort vera og verða hluti af nýja stjórnunarbrauði í frjálsa hagkerfinu á leiðinni að algerri vélvæðingu, eða flýja til landa sem munu fljótt hrynja vegna þess að þau lönd hafa ekki aðgang að umbótabandalagi og þess vélvæddu framleiðslu.
-
-3.  Hlutverk Seðlabankans: Frá vöxtum til Auðlindamælinga
-
-Seðlabankinn hættir að skoða verðbólgu og vexti. Í staðinn verður hann Auðlindaskrifstofa.
-
-A.  Frá Seðlabanka til Auðlindaskrifstofu
-
-
-Auðlindaskrifstofan mælir í staðinn VÞA, þjóðnýtta eftirfarandi VLF. Þegar VÞA nær 100 prósentum af þörfum íbúanna, er algjört Fullveldi lýst. Á því augnabliki hætta allir peningar og skuldir að vera til samkvæmt stjórnarskrárlegum lögum.
-
-B.  Skýrleiki
-
-
-Með því að hafa þennan skýra stiga (t.d. 10 %, 50 %, 100 %), sjá framtíðar leiðtogar ríkja í umbótabandalagi nákvæmlega hvernig vegurinn lítur út. Það verður fyrirsjáanlegt ferli í stað glundroða.
-
-C.  Veldi bankanna er óþarft
-
-
-Sáttmálinn framkvæmir stjórnaða niðurrif skuldakerfisins. Í takt við að vélarnar frelsa manninn frá kostnaði, frelsa þær manninn einnig frá skuldum sínum. Við berjumst ekki við bankana með vopnum, heldur með stærðfræðilegum tilskipunum sem gera vald þeirra óþarft.
-
-Framangreind skýrsla virkar sem tæknileg lýsing á "Ósýnilegu Uppfærslunni" í framkvæmd.
-
-
-=======================================
-
-
-
-N.   Frelsisstiginn : Frá Skuld til Fullveldis
-
-
-1.  Hin stærðfræðilega umskipti
-
-Til að umbótabandalag geti leitt samfélag út úr greipum einkaskuldakerfisins, krefst algjörs fyrirsjáanleika. Umbæturnar mega ekki byggja á skyndilegum, óreglulegum áhlaupum eða ófyrirsjáanlegum efnahagslegum höggbylgjum.
-
-Lausnin er lögbundinn, samstilltur stigi þar sem frelsun borgaranna í fjármálum á sér stað í nákvæmlega sama hraða og raunveruleg framleiðsla (verg þjóðarauðlind) stækkar.
-
-Í gegnum Frelsisstigann eru sýndar tölur (skuldir) tengdar beint við líkamlegan veruleika (vélvædda framleiðslu). Á sama sekúndu og vélarnar taka yfir lífsviðurværissvæði og gera það ókeypis fyrir íbúana, neyðast bankar hins gamla kerfis til að bakka að sama skapi.
-
---- START TABLE ---
-
-
-
---- END TABLE ---
-
-Framkvæmdin hvílir á tveimur stoðum:
-
-1.  Fósturvísatæknin
-
-Hin einstöku íhlutir – háþróuð gervigreindarlíkön, 3D-prentun málma og sjálfvirkar verksmiðjur – eru þegar til staðar dreifð um allan heim. Vélin hefur þegar getu til að byggja hluta af vélinni. Það sem vantar er ekki tæknin, heldur miðstýrður, skuldlaus vilji til að loka hringrásinni.
-
-2.  Plánetulega samlífið
-
-Það er hér að samþætting við suðræn háspiltsvæði verður algerlega afgerandi. Þetta er engin fjármálaviðskipti, heldur tæknileg og landfræðileg samlífi. Norðlægu svæðin leggja fram rannsóknirnar og núverandi hátækni, á meðan Suður-Ameríka leggur fram flatarmálið, stöðugu sólorkuna og hráefnin til að prófa, taka í notkun og stækka sjálfafritandi kerfin við bestu hitaskilyrði.
-
-Bandalagið verður að setja af stað og forgangsraða þessu verkefni sem sínum allra fyrstu, stjórnarskrárbundnu aðgerð. Valkosturinn við daglegt hrunandi skrifræði og tilgangslaust vinnuþrælkun er ekki glundroði – valkosturinn er þetta markvissa og alþjóðlega verkefni til að loka sjálfvirku lykkjunni og láta vélarnar taka við framleiðslubyrðinni í eitt skipti fyrir öll.
-
-
-=======================================
-
-
-
-C.   Fullveldi Ríkisvitundarinnar
-
-
-Til að tryggja frið og stöðugleika mannkyns í algerlega vélvæddum heimi, verður hin vitsmunalega innviðir sem stýra ríkinu að vera áfram undir óskertri ríkisstjórn.
-
-1.  Einka Eignarréttur Ríkisins
-
-Gervigreindin sem stýrir auðlindum, flutningum og framleiðslugetu þjóðarinnar, myndar hernaðarlega kjarna landsins. Öll þróun, kóðagrunnur og líkömun þessarar greindar skal fara fram í ríkisregi. Einkaaðilum er bannað að þróa eða samþætta samkeppnisstjórnkerfi í innviði þjóðarinnar. Þetta er til að koma í veg fyrir að hagnaðarsjónarmið eða ógagnsæir reiknirit spillir rökfræði kerfisins.
-
-2.  Hinn Skynsamlegi Stjórnandi
-
-Gervigreindin skal starfa sem óspillanlegur stjórnandi. Hún er ekki í eigu einstaklinga, heldur er hún hluti af sameiginlegri eign vélagarðsins. Tilgangur hennar er að hámarka velferð borgaranna, dreifingu auðlinda og sjálfbærni, laus við pólitísk eða viðskiptaleg áhrif.
-
-3.  Gagnsæi og Eftirlit
-
-Ríkið tryggir að stærðfræðilíkön kerfisins og ákvarðanagrunnur sé aðgengilegur fyrir innlenda skoðun. Engin ákvörðun af mikilvægi fyrir ríkið má taka af "svartri kassa" sem ekki er hægt að skýra út frá grunnreglum stjórnarskrárinnar. Ríkið þróar, á og stýrir þessari ofurgervigreind sem hluta af almannaheilbrigðisþjónustunni, sem trygging fyrir því að samfélagið falli aldrei aftur í skuld eða auðlindaskort.
-
-
-=======================================
-
-
-
-D.   Gæðaloforðið – Frá málamiðlun til fullkomnunar
-
-
-Í hinum gamla heimi varst þú neyddur til að samþykkja vörur sem fóru í sundur. Það var ekki vegna þess að verkfræðingarnir voru slakir, heldur vegna þess að einkamarkaðurinn neyddi fram málamiðlanir. Raunveruleg gæði kostuðu einfaldlega meira en það sem fólk hafði í veskinu. Fyrirtækin voru neydd til að selja til fjöldans á því verði sem fjöldinn hafði efni á, og þá varð niðurstaðan samkvæmt því – ófullkomin og stuttlifð.
-
-Í framtíðarsýn sáttmálans er þessum hagnaðarkröfu eytt. Þegar ríkið á hráefnin og gervigreindarvélmennin okkar sjá um námuna, er enginn lengur sem þarf að spara á efninu. Vélmennin okkar tákna ríkið, og þau sjá um þig eins og aldrei fyrr með því að byggja aðeins það besta.
-
-Þar sem vélmennin þurfa ekki að græða peninga, heldur aðeins að þjóna manninum, nota þau alltaf sterkustu og endingarbestu efnin. Við byggjum ekki til að selja aftur – við byggjum til að þú getir verið frjáls. Gæði eru ekki lengur lúxus fyrir ríka, það er staðall fyrir hvern borgara í vélvædda bandalaginu.
-
-
-=======================================
-
-
-
-E.   Plánetulega Mannfjöldasamhverfan
-
-
-Stóra hitastigsflutningurinn á sér ekki stað af handahófi, heldur í gegnum skynsamlega og menningarlega samstillta endurskipulagningu mannfjölda plánetunnar:
-
-1.  Suður-Ameríska Fastalandið (Vesturblokkin)
-
-Evrópubúar og kákasískir Rússar, Norður-Ameríkubúar, Ástralir, Nýsjálendingar og kákasískir Suður-Afríkubúar safnast saman á Suður-Ameríska fastalandinu, meðan hin gróskumiklu lönd í Mið-Ameríku (sunnan við Mexíkó) virkjast sem samfelldar búsetusvæði. Þetta svæði verður grunnur fyrir vestrænt mannlegt fullveldi við bestu hitaskilyrði.
-
-2.  Austurblokkin (Indónesía og Ástralía)
-
-Austur-Asíubúar og íbúar Rússlands-Asíu ásamt skyldum þjóðflokkum frá hinum risastóra Austur-Framleiðslublokkinni safnast saman á svæðinu sem teygir sig yfir Indónesíu, Papúa Nýju-Gíneu og Ástralíu. Hinar gríðarlegu sléttur innanlands í Ástralíu verða algerlega vélvæddar fyrir þungan iðnað og sólarorku, meðan íbúarnir setjast að á heitum, suðrænum strandsvaðum.
-
-Íbúum á mið-Asísku köldu svæðunum er flutt suður á bóginn að heitu búsetusvæðunum í subtropíska Eyjaálfu/Norður-Ástralíu, meðan sjálfar landmassa (þar með talið eyðimerkursvæði í arabaríkjum) eru teknar yfir af vélaeiningunum. Arabísku eyðimörkurnar umbreytast, rétt eins og Sahara, í sjálfvirkar orkugarða.
-
-3.  Afríski Meginlandið
-
-Afríski íbúafjöldinn á sínu meginlandi er Suðræna Auðlindablokkin með suðrænu og heitu svæðin varðveitt eingöngu sem mannlegar byggðir fyrir endurheimt og frelsi, meðan köldu hlutar meginlandsins og víðfeðm eyðimerkursvæði verða algerlega vélvædd. Þessi svæði umbreytast í hreinar vélabyggingar, iðnaðarsamstæður og risastórar sólarorkuver sem framleiða orku fyrir umbreytingu alls Afríku meginlandsins án þess að trufla náttúruleg lífsvæði.
-
-
-=======================================
-
-
-
-F.   Fullvalda Markaðsbandalagið – Jarðpólitísk vörn gegn fjármálastríði
-
-
-Til að taka alþjóðlega skuldakerfið úr notkun og hámarka hraðann í ókeypis framleiðslu vélagarðsins, þarf að sameina nokkrar þjóðir tafarlaust í sameiginlegan, innri markað: Fullvalda Markaðsbandalagið.
-
-Einangruð umskipti í einu landi eru stefnufræðilega viðkvæm. Það tefur gnægðina, lengir efnahagslega álag umskiptatímabilsins og útsetur eina þjóð fyrir samstilltum hindrunum og lagalegum árásum frá hinu gamla fjármálakerfi í alþjóðlegum viðskiptadómstólum. Stórt, landamæri yfirgripsmikið bandalag með einsleitri hagstjórnarlöggjöf er stærðfræðileg nauðsyn. Því stærri sem sameiginlegir markaðir eru, því hraðar næst heildstætt líkamlegt gnægð í gegnum sjálfvirku lykkjuna (SVGSV).
-
-Hið endanlega markmið þessa bandalags er algjör plánetuleg samhverfa þar sem mörk gamalla þjóðríkja verða afmáð. Þetta tryggir hverjum fullvalda borgara algjört, lögbundið frelsi til að yfirgefa auðnu eða heimskautasvæði til að setjast að frjálst, lifa og njóta ókeypis framleiðslu vélanna á bestu, suðrænu loftslagssvæðum plánetunnar.
-
-
-=======================================
-
-
-
-G.   Stóri Potturinn og Virkjun Þjóðarauðsins
-
-
-Til að skilja umbyltingu sáttmálans verður maður fyrst að skilja eðli peninga í núverandi kerfi. Peningarnir sem í dag kallast ríkissjóðir eru í raun sameinað möguleiki borgaranna. Sáttmálinn breytir þessu með einu einasta tilskipun: Þjóðarhagkerfið á að þjóna framtíð þjóðarinnar, ekki efnahagsreikningi einkabanka.
-
-1.  Frá óvirkum sjóðum til virkrar umbreytingar
-
-Við hættum að líta á fjárlög ríkisins sem safn takmarkandi tala. Með því að aðildarlönd bandalagsins slíta tengslum við einkabankakerfið, virkjar "stóri potturinn" sig yfir allan sameiginlega markaðinn. Þessar sameinuðu auðlindir eru tafarlaust notaðar til að kaupa, þróa og taka í notkun þann landamæri yfirgripsmikla vélagarð sem þarf til að gera tilveruna ókeypis fyrir alla íbúa innan bandalagsins.
-
-2.  Endalok skuldarinnar rökfræði
-
-Sáttmálinn viðurkennir ekki lengur þörfina á að "lána" peninga af markaðnum. Þegar ríkið á rétt til að skapa greiðslumiðla út frá framleiðslugetu landsins, verður svipa skuldmarkaðarins árangurslaus.
-
-3.  Hin stefnumótandi forgangsröðun
-
-Þessum sjóðum skal án skerðingar varið til þriggja stoða:
-
-A.  Innviðir fyrir lífsviðurværi
-
-
-Alger sjálfvirkni og trygging orku-, vatnsframleiðslu- og flutningskerfa.
-
-B.  Algjörlega vélvædd framleiðsla
-
-
-Þar sem vélarnar frelsa manninn með því að afhenda lúxus og efnislegt sjálfstæði sem staðal með algeru og skilyrðislausu gnægði og hámarksgæðum.
-
-C.  Jarðpólitísk flutningakerfi
-
-
-Kerfisbundin stjórnun og framkvæmd flutningsins að hitafræðilega skilvirkum loftslagssvæðum.
-
-
-=======================================
-
-
-
-H.   Tæknileg Stjórn og Auðlindastjórnun
-
-
-Í þessum kafla eru settar fram stjórnunarlegar rammar fyrir það hvernig heimurinn skiptir yfir í algerlega vélvædda frjálsa hagkerfið.
-
-1.  Fullveldisstjórn yfir peningapressunni
-
-Sáttmálinn tekur tafarlaust stjórn á seðlabankanum. Ríkið hefur einkarétt til að skapa lögeyri landsins: Fullvalda Peninga. Þessir tákna framleiðslugetu, ekki skuld.
-
-2.  Verg þjóðarauðlind (VÞA) og innlendi vélagarðurinn
-
-Markmiðið er að allri framleiðslu sé stýrt af sjálfstæðum innlendum vélagarði sem hlýðir vélstjórnarskrá. Vélarnar eiga sjálfar sig til að tryggja að framleiðslan geti aldrei verið einkavædd eða gerð upptæk, heldur þjónar hún að eilífu þjóðinni sem sameiginlegur náttúruöfl. Fjárfestingar í gervigreind eru forgangsraðaðar til að ná þeim punkti þar sem framleiðslukostnaður verður núll.
-
-3.  Fullveldishluturinn: Leiðin til auðs
-
-Á umskiptatímabilinu er hverjum borgara tryggður árlegur fullveldishlutur. Þetta gerir hvern borgara efnahagslega sjálfstæðan og brúar bilið að hinum nýja heimi. Hluturinn er fjármagnaður með því að ríkið beinir núverandi fjárheimildum frá framfærslubyrði hins gamla kerfis til beinna útborgana, í takt við að vélvæðingin lækkar heildarkostnað samfélagsins.
-
-
-=======================================
-
-
-
-I.   Norður-Atlantshafsframleiðslusvæðið (NAPZ)
-
-
-1.  Vélarúm heimsins
-
-Evrópa og Norður-Ameríka skilgreinast héðan í frá eftir tæknilegu hlutverki sínu sem miðlæg verkstæði og gróðurhús plánetunnar.
-
-2.  Hin algera sjálfvirkni
-
-Innan NAPZ hættir mannleg vinna. Lóðrétt ræktun og vélvæddir akrar framleiða mat allan sólarhringinn. Verksmiðjur smíða vörur af eilífðargæðum vegna þess að hagnaðarsjónarmiðið er afmáð.
-
-3.  Orkan: Grunnstoðin
-
-NAPZ er þakið neti kjarnorku, sambræðslu og endurnýjanlegra orkugjafa. Þegar orkan er frjáls, hverfur stærsta kostnaðarliður mannkyns.
-
-4.  Útfelling varanlegs búsetu
-
-NAPZ er svæði fyrir vélar. Kalda og dimmu hlutar Evrópu og Norður-Ameríku eru felldir úr notkun sem varanleg mannleg búseta. Gamlar borgir umbreytast í flutningamiðstöðvar.
-
-5.  Úr evrópsku og norður-amerísku sjónarhorni
-
-Þegar Evrópa og Norður-Ameríka eru algerlega vélvædd og framleiða nægjanlega afurð fyrir evrópska, norður-ameríska og – í lokastigi – suður-ameríska íbúafjöldann, virkjar næsti áfangi. Framleiðslugeta Norður-Ameríku stækkar þá til að sjá fullkomlega fyrir Suður-Ameríku meginlandinu, þar sem evrópsk framleiðsla losnar og er beint fyrir stefnumótandi dreifingu til annarra heimsálfa, með varðveitt getu til stöðugrar aukningar eftir þörfum.
-
-6.  Iðnaðarkjarninn
-
-NAPZ skilgreinist ekki af hefðbundnum landamærum þjóða, heldur af sínum samþættu, sjálfvirku innviðum. Eina markmið hennar er fjöldaframleiðsla á alþjóðlegum vélmennaskipa, þróun hernaðarlegrar gervigreindar og myndun helstu tæknilegu teikninga sem þarf til að ná endanlegu plánetulegu gnægði.
-
-7.  Flutningaleg samþætting
-
-Þetta svæði starfar í beinu samlífi við suðrænu lífssvæðin og suðrænu auðlindageirana. Meðan suðrænu svæðin veita bestu hitafræðilegu skilyrði fyrir mannlega búsetu og fullvalda endurheimt, starfar NAPZ sem þunga iðnaðarbræðslan – vinnur hráefni og dreifir sjálfstæðum farmnetum til að dreifa fullunnum vörum og vélum algerlega ókeypis yfir fullvalda markaðsbandalagið.
-
-8.  Byggingarleg tímabilsskipting
-
-Þegar sjálfvirka framleiðslugetan innan NAPZ nær hámarksgetu, flýtir framlag hennar til vergrar þjóðarauðlindar (VÞA) hraðar fyrir endanlegri úreldingu eldri fiat-gjaldmiðla, sem ryður brautina fyrir algera framkvæmd vélstjórnarskrárinnar.
-
-
-=======================================
-
-
-
-J.   Nýja heimilið
-
-
-1.  Suðræna búsetusvæðið
-
-Í gegnum sáttmálann er stóra hitastigsflutningurinn framkvæmdur til svæða þar sem maðurinn er líffræðilega skapaður til að lifa.
-
-2.  Suðrænu háspiltsvæðin: Örugg höfn
-
-Valið á norðurhluta Suður-Ameríku byggist á jarðfræðilegum stöðugleika og hitafræðilegri skilvirkni. Hér er þörfinni fyrir upphitunarkerfi eytt.
-
-3.  Byggingarlist fyrir gnægð
-
-Einingarhúsnæði af eilífðargæðum eru afhent frá NAPZ. Innan þessara svæða er engin verslun; allt eru samþættar aðgerðir í innviðunum.
-
-4.  Tækni gegn landsvæði
-
-Þetta er samhverf skipti. Vörur iðnaðargeirans eru afhentar frá evrópsku jaðarsvæðunum, Suður-Ameríka afhendir staðinn. Þegar þessir tveir þættir mætast, myndast beint frjálst hagkerfi á Suður-Ameríska meginlandinu fyrir alla núverandi og framtíðarborgara. Engir peningar eru í umferð – við afmáum þörfina fyrir þá.
-
-Sáttmálinn lýsir ekki evrópsku útflutningsverkefni, heldur alþjóðlegu sambandi. Suðrænu þjóðirnar eru ekki "gestgjafar", þær eru stofnaðilar sem fara beint inn í frjálsa hagkerfið og eiga innviðina á jafnræði við norðrænu löndin.
-
-5.  Fullvalda húsnæðisrétturinn
-
-Innan hins vélvædda bandalags er húsnæði hvorki viðskiptavara né uppspretta ævilangrar skuldsetningar. Hverjum borgara er tryggt hátæknilegt heimili, smíðað og viðhaldið af vélagarðinum. Engar leigur, engin húsnæðislán og engar fasteignagjöld eru til. Það er algjór, grundvallarréttur.
-
-6.  Tæknileg fullkomnun
-
-Heimilin eru byggð úr efnum með eilífðargæði, algerlega laus við framtíðar endurbótamannvirkja. Allt frá loftslagsstjórnun og vatnshreinsun til sjálfvirkrar hreinsunar og úrgangsstjórnunar er samþætt í byggingarbyrði og stýrt sjálfstætt.
-
-7.  Samstilltur byggingarlist
-
-Þar sem allt er byggt á svæðum með stöðugt og þægilegt meðalhita á ári, er hægt að opna byggingarlistina. Mörkin milli inni- og útiumhverfis leysast upp. Byggingarnar eru samþættar suðrænu náttúrunni, búnar sjálfbærum sólarorkukerfum og lóðréttum görðum.
-
-
-=======================================
-
-
-
-K.   Þingræn Stjórn og Rödd Þjóðarinnar
-
-
-1.  Ný form þingrænnar stjórnar
-
-Til að tryggja að sjálfstæða gervigreindarinnviðirnir aftengist aldrei vilja borgaranna, helst pólitískt vald fast skotinn í fólkinu – með róttækt stækkuðu lýðræðislegu kosningakerfi beint í höndum hvers einasta einstaklings.
-
-2.  Árlegir Þingkosningar
-
-Til að tryggja algjört viðbragðsflýti og koma í veg fyrir spillingu eða stöðnun innan valdakerfisins, eru lagðar inn árlegar þingkosningar. Fólkið skal stöðugt meta og stýra hraða innlendu umbreytingarinnar.
-
-3.  Stefnumótandi Þjóðaratkvæðagreiðslur og Aukakosningar
-
-Fólkið hefur óskertan rétt til að taka afgerandi ákvarðanir í mikilvægustu fullveldis málum þjóðarinnar í gegnum beinar þjóðaratkvæðagreiðslur eða aukakosningar. Eftirfarandi svið skulu alltaf vera undir beinu almannaákvörðun:
-
-• Alþjóðleg bandalög: Aðild að eða úrsögn úr pólitískum, efnahagslegum eða hernaðarlegum samböndum, samningum og yfirþjóðlegum stjórnunaraðilum.
-
-• Alþjóðleg samtök: Aðild að eða úrsögn úr alþjóðlegum samtökum, eftirlitsstofnunum eða alþjóðlegum staðfestingum.
-
-• Hernaðarleg fæling: Öflun, inneign eða niðurlagning kjarnorkuvopna, efnavopna eða annarra fjöldaeiðingavopna.
-
-• Stjórnarskrárleg skipan: Afnám, stofnun eða breyting á grundvallar stjórnarfari þjóðarinnar, þar á meðal konunglegri ríkisarfleifð eða ríkisarfleifð.
-
-4.  Hin stjórnunarlega umskipti
-
-Þegar markmiðið hefur verið sett (allt á að vera ókeypis), snýst stjórnunin um að framkvæma áætlunina. Ákvarðanir eru teknar með tilskipunum sem skráðar eru inn í stjórnarskrána.
-
-
-=======================================
-
-
-
-L.   Ríkið sem Sameiginlegt Fyrirtæki
-
-
-1.  Ríkið: Þitt Fangaða Fyrirtæki
-
-Í daglegu kerfi átt þú þjóð, en þú mátt ekki nota hana. Hugsaðu um Ríkið sem risastórt fyrirtæki þar sem þú og allir aðrir borgarar eruð hluthafar. En þetta fyrirtæki – sameiginlegur styrkur okkar – situr í fangelsi, hlekkjað bak við lás og slá með fótbolta af "skuld" og skipt út fyrir efnahagslegt skrímsli, þegar allt sem Ríkið vildi var frelsi sitt. Meðan einkafyrirtæki hlaupa um með fullt hreyfanleika og spýta út ófullkomnum gæðum til að hámarka hagnað, situr eigið tæki borgaranna (Ríkið) haldið aftur og óhæft. Okkur hefur verið sagt að Ríkið "hafi ekki efni á því", að því skorti arma og fætur til að byggja framtíðina. Sannleikurinn er sá að Ríkið situr bak við lás og slá vegna þess að einkabankarnir og gamla kerfið hafa tekið lykilinn að peningapressunni.
-
-En sáttmálinn er lykillinn sem opnar klefann.
-
-2.  Við gefum Ríkinu fæturna aftur
-
-Með því að virkja vélvædda framleiðslu (Per Machina) þarf Ríkið ekki lengur að "biðja um leyfi" eða skattleggja borgarana til að fá hlutina gert. Vélarnar eru nýju armar og fætur Ríkisins.
-
-3.  Við mölvum fótboltann
-
-Með því að taka aftur réttinn til að skapa fullvalda peninga, er skuldinni sem hefur haldið Ríkinu í hjólastól eytt.
-
-4.  Frá fanga til arkitekts
-
-Þegar Ríkið rís upp úr fangelsisklefanum, hættir það að vera þungt skrifræði. Það umbreytist í skilvirka flutningsvél sem afhendir þinn Fullveldishlut og byggir paradísina í hitabeltinu.
-
-
-=======================================
-
-
-
-M.   Einkabankinn á að Afskrifa Sama Hlutfall og VÞA Eyks
-
-
-Einkabankarnir neyðast til að afskrifa skuldir borgaranna í nákvæmlega sama hraða og verg þjóðarauðlind (VÞA) eykst. Í takt við að frjálsa hagkerfið stækkar, minnkar peningaleg veltu fyrirtækja, á meðan raunveruleg eignir þeirra aukast ókeypis. Bankarnir geta því ekki fengið að krefjast fullra vaxta, þar sem lífskostnaður bankastjóra sjálfra fellur einnig niður í núll.
-
-Þetta er kjarninn í fjármálalegu byggingarlistinni fyrir umbyltinguna. Einkabankarnir verða að "vera teknir úr notkun" í takt við að verg þjóðarauðlind (VÞA) frjálsa hagkerfisins vex. Það skapar mjúka umbreytingu þar sem gildi peninga færist frá skuldsetningu til framleiðslugetu.
-
-Hér er sú áhrifaríkasta lausnin:
-
-1.  "Útfellingarvísitalan" (Skuld-á-Móti-Frjálsu)
-
-Innleiða lögbundna kerfi sem kallast Sjálfvirk Skuldaafskrifun.
-
-A.  Rökfræðin
-
-
-Ríkið mælir hversu stór hluti af grunnþörfum borgaranna (matur, orka, húsnæði, flutningar) er nú afhent ókeypis í gegnum innlendu vélagarðanna.
-
-B.  Kerfið
-
-
-Ef 20 % af lífsnauðsynjum hafa orðið ókeypis, neyðast einkabankarnir samkvæmt lögum til að afskrifa 20 % af öllum einkaskuldum. Vextir frjósa eða lækka í samsvarandi hraða.
-
-C.  Röksemdin
-
-
-Bankastjórar geta ekki kvartað siðferðilega, þar sem þeirra eigin lífskostnaður lækkar einnig um 20 %. Þeir verða ekki fátækari í lífsgæðum, aðeins í tölum á skjá.
-
-2.  Meðhöndlun "Fjandsamlegra Banka" erlendis
-
-Þetta er mesta áhyggjuefnið – að bankarnir flýi og noti önnur lönd sem grunn til að ráðast á umbótabandalag.
-
-Lausnin er Fjármálaleg Sóttkví:
-
-A.  Veldi bandalagsins
-
-
-Þegar umbótabandalag (þau lönd sem hafa virkjað sáttmálann) hefur myndast, innleiða þau algjöra blokkun gegn bönkum sem starfa frá fjandsamlegum löndum.
-
-B.  Gildi færist
-
-
-Þar sem umbótabandalag situr á raunverulegri framleiðslu (vélmennum og hráefnum), verða peningar erlendra banka fljótt gildislausir pappírsmiðar. Þeir geta ekki "keypt" neitt frá umbótabandalagi með gömlu skuldapeningunum sínum.
-
-C.  Valkostur einkabankanna
-
-
-Annaðhvort vera og verða hluti af nýja stjórnunarbrauði í frjálsa hagkerfinu á leiðinni að algerri vélvæðingu, eða flýja til landa sem munu fljótt hrynja vegna þess að þau lönd hafa ekki aðgang að umbótabandalagi og þess vélvæddu framleiðslu.
-
-3.  Hlutverk Seðlabankans: Frá vöxtum til Auðlindamælinga
-
-Seðlabankinn hættir að skoða verðbólgu og vexti. Í staðinn verður hann Auðlindaskrifstofa.
-
-A.  Frá Seðlabanka til Auðlindaskrifstofu
-
-
-Auðlindaskrifstofan mælir í staðinn VÞA, þjóðnýtta eftirfarandi VLF. Þegar VÞA nær 100 prósentum af þörfum íbúanna, er algjört Fullveldi lýst. Á því augnabliki hætta allir peningar og skuldir að vera til samkvæmt stjórnarskrárlegum lögum.
-
-B.  Skýrleiki
-
-
-Með því að hafa þennan skýra stiga (t.d. 10 %, 50 %, 100 %), sjá framtíðar leiðtogar ríkja í umbótabandalagi nákvæmlega hvernig vegurinn lítur út. Það verður fyrirsjáanlegt ferli í stað glundroða.
-
-C.  Veldi bankanna er óþarft
-
-
-Sáttmálinn framkvæmir stjórnaða niðurrif skuldakerfisins. Í takt við að vélarnar frelsa manninn frá kostnaði, frelsa þær manninn einnig frá skuldum sínum. Við berjumst ekki við bankana með vopnum, heldur með stærðfræðilegum tilskipunum sem gera vald þeirra óþarft.
-
-Framangreind skýrsla virkar sem tæknileg lýsing á "Ósýnilegu Uppfærslunni" í framkvæmd.
-
-
-=======================================
-
-
-
-N.   Frelsisstiginn : Frá Skuld til Fullveldis
-
-
-1.  Hin stærðfræðilega umskipti
-
-Til að umbótabandalag geti leitt samfélag út úr greipum einkaskuldakerfisins, krefst algjörs fyrirsjáanleika. Umbæturnar mega ekki byggja á skyndilegum, óreglulegum áhlaupum eða ófyrirsjáanlegum efnahagslegum höggbylgjum.
-
-Lausnin er lögbundinn, samstilltur stigi þar sem frelsun borgaranna í fjármálum á sér stað í nákvæmlega sama hraða og raunveruleg framleiðsla (verg þjóðarauðlind) stækkar.
-
-Í gegnum Frelsisstigann eru sýndar tölur (skuldir) tengdar beint við líkamlegan veruleika (vélvædda framleiðslu). Á sama sekúndu og vélarnar taka yfir lífsviðurværissvæði og gera það ókeypis fyrir íbúana, neyðast bankar hins gamla kerfis til að bakka að sama skapi.
-
-
-
-
-
-Framkvæmdin hvílir á tveimur stoðum:
-
-1.  Fósturvísatæknin
-
-Hin einstöku íhlutir – háþróuð gervigreindarlíkön, 3D-prentun málma og sjálfvirkar verksmiðjur – eru þegar til staðar dreifð um allan heim. Vélin hefur þegar getu til að byggja hluta af vélinni. Það sem vantar er ekki tæknin, heldur miðstýrður, skuldlaus vilji til að loka hringrásinni.
-
-2.  Plánetulega samlífið
-
-Það er hér að samþætting við suðræn háspiltsvæði verður algerlega afgerandi. Þetta er engin fjármálaviðskipti, heldur tæknileg og landfræðileg samlífi. Norðlægu svæðin leggja fram rannsóknirnar og núverandi hátækni, á meðan Suður-Ameríka leggur fram flatarmálið, stöðugu sólorkuna og hráefnin til að prófa, taka í notkun og stækka sjálfafritandi kerfin við bestu hitaskilyrði.
-
-Bandalagið verður að setja af stað og forgangsraða þessu verkefni sem sínum allra fyrstu, stjórnarskrárbundnu aðgerð. Valkosturinn við daglegt hrunandi skrifræði og tilgangslaust vinnuþrælkun er ekki glundroði – valkosturinn er þetta markvissa og alþjóðlega verkefni til að loka sjálfvirku lykkjunni og láta vélarnar taka við framleiðslubyrðinni í eitt skipti fyrir öll.
-
-
-=======================================
-
-
-
-C.   Fullveldi Ríkisvitundarinnar
-
-
-Til að tryggja frið og stöðugleika mannkyns í algerlega vélvæddum heimi, verður hin vitsmunalega innviðir sem stýra ríkinu að vera áfram undir óskertri ríkisstjórn.
-
-1.  Einka Eignarréttur Ríkisins
-
-Gervigreindin sem stýrir auðlindum, flutningum og framleiðslugetu þjóðarinnar, myndar hernaðarlega kjarna landsins. Öll þróun, kóðagrunnur og líkömun þessarar greindar skal fara fram í ríkisregi. Einkaaðilum er bannað að þróa eða samþætta samkeppnisstjórnkerfi í innviði þjóðarinnar. Þetta er til að koma í veg fyrir að hagnaðarsjónarmið eða ógagnsæir reiknirit spillir rökfræði kerfisins.
-
-2.  Hinn Skynsamlegi Stjórnandi
-
-Gervigreindin skal starfa sem óspillanlegur stjórnandi. Hún er ekki í eigu einstaklinga, heldur er hún hluti af sameiginlegri eign vélagarðsins. Tilgangur hennar er að hámarka velferð borgaranna, dreifingu auðlinda og sjálfbærni, laus við pólitísk eða viðskiptaleg áhrif.
-
-3.  Gagnsæi og Eftirlit
-
-Ríkið tryggir að stærðfræðilíkön kerfisins og ákvarðanagrunnur sé aðgengilegur fyrir innlenda skoðun. Engin ákvörðun af mikilvægi fyrir ríkið má taka af "svartri kassa" sem ekki er hægt að skýra út frá grunnreglum stjórnarskrárinnar. Ríkið þróar, á og stýrir þessari ofurgervigreind sem hluta af almannaheilbrigðisþjónustunni, sem trygging fyrir því að samfélagið falli aldrei aftur í skuld eða auðlindaskort.
-
-
-=======================================
-
-
-
-D.   Gæðaloforðið – Frá málamiðlun til fullkomnunar
-
-
-Í hinum gamla heimi varst þú neyddur til að samþykkja vörur sem fóru í sundur. Það var ekki vegna þess að verkfræðingarnir voru slakir, heldur vegna þess að einkamarkaðurinn neyddi fram málamiðlanir. Raunveruleg gæði kostuðu einfaldlega meira en það sem fólk hafði í veskinu. Fyrirtækin voru neydd til að selja til fjöldans á því verði sem fjöldinn hafði efni á, og þá varð niðurstaðan samkvæmt því – ófullkomin og stuttlifð.
-
-Í framtíðarsýn sáttmálans er þessum hagnaðarkröfu eytt. Þegar ríkið á hráefnin og gervigreindarvélmennin okkar sjá um námuna, er enginn lengur sem þarf að spara á efninu. Vélmennin okkar tákna ríkið, og þau sjá um þig eins og aldrei fyrr með því að byggja aðeins það besta.
-
-Þar sem vélmennin þurfa ekki að græða peninga, heldur aðeins að þjóna manninum, nota þau alltaf sterkustu og endingarbestu efnin. Við byggjum ekki til að selja aftur – við byggjum til að þú getir verið frjáls. Gæði eru ekki lengur lúxus fyrir ríka, það er staðall fyrir hvern borgara í vélvædda bandalaginu.
-
-
-=======================================
-
-
-
-E.   Plánetulega Mannfjöldasamhverfan
-
-
-Stóra hitastigsflutningurinn á sér ekki stað af handahófi, heldur í gegnum skynsamlega og menningarlega samstillta endurskipulagningu mannfjölda plánetunnar:
-
-1.  Suður-Ameríska Fastalandið (Vesturblokkin)
-
-Evrópubúar og kákasískir Rússar, Norður-Ameríkubúar, Ástralir, Nýsjálendingar og kákasískir Suður-Afríkubúar safnast saman á Suður-Ameríska fastalandinu, meðan hin gróskumiklu lönd í Mið-Ameríku (sunnan við Mexíkó) virkjast sem samfelldar búsetusvæði. Þetta svæði verður grunnur fyrir vestrænt mannlegt fullveldi við bestu hitaskilyrði.
-
-2.  Austurblokkin (Indónesía og Ástralía)
-
-Austur-Asíubúar og íbúar Rússlands-Asíu ásamt skyldum þjóðflokkum frá hinum risastóra Austur-Framleiðslublokkinni safnast saman á svæðinu sem teygir sig yfir Indónesíu, Papúa Nýju-Gíneu og Ástralíu. Hinar gríðarlegu sléttur innanlands í Ástralíu verða algerlega vélvæddar fyrir þungan iðnað og sólarorku, meðan íbúarnir setjast að á heitum, suðrænum strandsvaðum.
-
-Íbúum á mið-Asísku köldu svæðunum er flutt suður á bóginn að heitu búsetusvæðunum í subtropíska Eyjaálfu/Norður-Ástralíu, meðan sjálfar landmassa (þar með talið eyðimerkursvæði í arabaríkjum) eru teknar yfir af vélaeiningunum. Arabísku eyðimörkurnar umbreytast, rétt eins og Sahara, í sjálfvirkar orkugarða.
-
-3.  Afríski Meginlandið
-
-Afríski íbúafjöldinn á sínu meginlandi er Suðræna Auðlindablokkin með suðrænu og heitu svæðin varðveitt eingöngu sem mannlegar byggðir fyrir endurheimt og frelsi, meðan köldu hlutar meginlandsins og víðfeðm eyðimerkursvæði verða algerlega vélvædd. Þessi svæði umbreytast í hreinar vélabyggingar, iðnaðarsamstæður og risastórar sólarorkuver sem framleiða orku fyrir umbreytingu alls Afríku meginlandsins án þess að trufla náttúruleg lífsvæði.
-
-
-=======================================
-
-
-
-F.   Fullvalda Markaðsbandalagið – Jarðpólitísk vörn gegn fjármálastríði
-
-
-Til að taka alþjóðlega skuldakerfið úr notkun og hámarka hraðann í ókeypis framleiðslu vélagarðsins, þarf að sameina nokkrar þjóðir tafarlaust í sameiginlegan, innri markað: Fullvalda Markaðsbandalagið.
-
-Einangruð umskipti í einu landi eru stefnufræðilega viðkvæm. Það tefur gnægðina, lengir efnahagslega álag umskiptatímabilsins og útsetur eina þjóð fyrir samstilltum hindrunum og lagalegum árásum frá hinu gamla fjármálakerfi í alþjóðlegum viðskiptadómstólum. Stórt, landamæri yfirgripsmikið bandalag með einsleitri hagstjórnarlöggjöf er stærðfræðileg nauðsyn. Því stærri sem sameiginlegir markaðir eru, því hraðar næst heildstætt líkamlegt gnægð í gegnum sjálfvirku lykkjuna (SVGSV).
-
-Hið endanlega markmið þessa bandalags er algjör plánetuleg samhverfa þar sem mörk gamalla þjóðríkja verða afmáð. Þetta tryggir hverjum fullvalda borgara algjört, lögbundið frelsi til að yfirgefa auðnu eða heimskautasvæði til að setjast að frjálst, lifa og njóta ókeypis framleiðslu vélanna á bestu, suðrænu loftslagssvæðum plánetunnar.
-
-
-=======================================
-
-
-
-G.   Stóri Potturinn og Virkjun Þjóðarauðsins
-
-
-Til að skilja umbyltingu sáttmálans verður maður fyrst að skilja eðli peninga í núverandi kerfi. Peningarnir sem í dag kallast ríkissjóðir eru í raun sameinað möguleiki borgaranna. Sáttmálinn breytir þessu með einu einasta tilskipun: Þjóðarhagkerfið á að þjóna framtíð þjóðarinnar, ekki efnahagsreikningi einkabanka.
-
-1.  Frá óvirkum sjóðum til virkrar umbreytingar
-
-Við hættum að líta á fjárlög ríkisins sem safn takmarkandi tala. Með því að aðildarlönd bandalagsins slíta tengslum við einkabankakerfið, virkjar "stóri potturinn" sig yfir allan sameiginlega markaðinn. Þessar sameinuðu auðlindir eru tafarlaust notaðar til að kaupa, þróa og taka í notkun þann landamæri yfirgripsmikla vélagarð sem þarf til að gera tilveruna ókeypis fyrir alla íbúa innan bandalagsins.
-
-2.  Endalok skuldarinnar rökfræði
-
-Sáttmálinn viðurkennir ekki lengur þörfina á að "lána" peninga af markaðnum. Þegar ríkið á rétt til að skapa greiðslumiðla út frá framleiðslugetu landsins, verður svipa skuldmarkaðarins árangurslaus.
-
-3.  Hin stefnumótandi forgangsröðun
-
-Þessum sjóðum skal án skerðingar varið til þriggja stoða:
-
-A.  Innviðir fyrir lífsviðurværi
-
-
-Alger sjálfvirkni og trygging orku-, vatnsframleiðslu- og flutningskerfa.
-
-B.  Algjörlega vélvædd framleiðsla
-
-
-Þar sem vélarnar frelsa manninn með því að afhenda lúxus og efnislegt sjálfstæði sem staðal með algeru og skilyrðislausu gnægði og hámarksgæðum.
-
-C.  Jarðpólitísk flutningakerfi
-
-
-Kerfisbundin stjórnun og framkvæmd flutningsins að hitafræðilega skilvirkum loftslagssvæðum.
-
-
-=======================================
-
-
-
-H.   Tæknileg Stjórn og Auðlindastjórnun
-
-
-Í þessum kafla eru settar fram stjórnunarlegar rammar fyrir það hvernig heimurinn skiptir yfir í algerlega vélvædda frjálsa hagkerfið.
-
-1.  Fullveldisstjórn yfir peningapressunni
-
-Sáttmálinn tekur tafarlaust stjórn á seðlabankanum. Ríkið hefur einkarétt til að skapa lögeyri landsins: Fullvalda Peninga. Þessir tákna framleiðslugetu, ekki skuld.
-
-2.  Verg þjóðarauðlind (VÞA) og innlendi vélagarðurinn
-
-Markmiðið er að allri framleiðslu sé stýrt af sjálfstæðum innlendum vélagarði sem hlýðir vélstjórnarskrá. Vélarnar eiga sjálfar sig til að tryggja að framleiðslan geti aldrei verið einkavædd eða gerð upptæk, heldur þjónar hún að eilífu þjóðinni sem sameiginlegur náttúruöfl. Fjárfestingar í gervigreind eru forgangsraðaðar til að ná þeim punkti þar sem framleiðslukostnaður verður núll.
-
-3.  Fullveldishluturinn: Leiðin til auðs
-
-Á umskiptatímabilinu er hverjum borgara tryggður árlegur fullveldishlutur. Þetta gerir hvern borgara efnahagslega sjálfstæðan og brúar bilið að hinum nýja heimi. Hluturinn er fjármagnaður með því að ríkið beinir núverandi fjárheimildum frá framfærslubyrði hins gamla kerfis til beinna útborgana, í takt við að vélvæðingin lækkar heildarkostnað samfélagsins.
-
-
-=======================================
-
-
-
-I.   Norður-Atlantshafsframleiðslusvæðið (NAPZ)
-
-
-1.  Vélarúm heimsins
-
-Evrópa og Norður-Ameríka skilgreinast héðan í frá eftir tæknilegu hlutverki sínu sem miðlæg verkstæði og gróðurhús plánetunnar.
-
-2.  Hin algera sjálfvirkni
-
-Innan NAPZ hættir mannleg vinna. Lóðrétt ræktun og vélvæddir akrar framleiða mat allan sólarhringinn. Verksmiðjur smíða vörur af eilífðargæðum vegna þess að hagnaðarsjónarmiðið er afmáð.
-
-3.  Orkan: Grunnstoðin
-
-NAPZ er þakið neti kjarnorku, sambræðslu og endurnýjanlegra orkugjafa. Þegar orkan er frjáls, hverfur stærsta kostnaðarliður mannkyns.
-
-4.  Útfelling varanlegs búsetu
-
-NAPZ er svæði fyrir vélar. Kalda og dimmu hlutar Evrópu og Norður-Ameríku eru felldir úr notkun sem varanleg mannleg búseta. Gamlar borgir umbreytast í flutningamiðstöðvar.
-
-5.  Úr evrópsku og norður-amerísku sjónarhorni
-
-Þegar Evrópa og Norður-Ameríka eru algerlega vélvædd og framleiða nægjanlega afurð fyrir evrópska, norður-ameríska og – í lokastigi – suður-ameríska íbúafjöldann, virkjar næsti áfangi. Framleiðslugeta Norður-Ameríku stækkar þá til að sjá fullkomlega fyrir Suður-Ameríku meginlandinu, þar sem evrópsk framleiðsla losnar og er beint fyrir stefnumótandi dreifingu til annarra heimsálfa, með varðveitt getu til stöðugrar aukningar eftir þörfum.
-
-6.  Iðnaðarkjarninn
-
-NAPZ skilgreinist ekki af hefðbundnum landamærum þjóða, heldur af sínum samþættu, sjálfvirku innviðum. Eina markmið hennar er fjöldaframleiðsla á alþjóðlegum vélmennaskipa, þróun hernaðarlegrar gervigreindar og myndun helstu tæknilegu teikninga sem þarf til að ná endanlegu plánetulegu gnægði.
-
-7.  Flutningaleg samþætting
-
-Þetta svæði starfar í beinu samlífi við suðrænu lífssvæðin og suðrænu auðlindageirana. Meðan suðrænu svæðin veita bestu hitafræðilegu skilyrði fyrir mannlega búsetu og fullvalda endurheimt, starfar NAPZ sem þunga iðnaðarbræðslan – vinnur hráefni og dreifir sjálfstæðum farmnetum til að dreifa fullunnum vörum og vélum algerlega ókeypis yfir fullvalda markaðsbandalagið.
-
-8.  Byggingarleg tímabilsskipting
-
-Þegar sjálfvirka framleiðslugetan innan NAPZ nær hámarksgetu, flýtir framlag hennar til vergrar þjóðarauðlindar (VÞA) hraðar fyrir endanlegri úreldingu eldri fiat-gjaldmiðla, sem ryður brautina fyrir algera framkvæmd vélstjórnarskrárinnar.
-
-
-=======================================
-
-
-
-J.   Nýja heimilið
-
-
-1.  Suðræna búsetusvæðið
-
-Í gegnum sáttmálann er stóra hitastigsflutningurinn framkvæmdur til svæða þar sem maðurinn er líffræðilega skapaður til að lifa.
-
-2.  Suðrænu háspiltsvæðin: Örugg höfn
-
-Valið á norðurhluta Suður-Ameríku byggist á jarðfræðilegum stöðugleika og hitafræðilegri skilvirkni. Hér er þörfinni fyrir upphitunarkerfi eytt.
-
-3.  Byggingarlist fyrir gnægð
-
-Einingarhúsnæði af eilífðargæðum eru afhent frá NAPZ. Innan þessara svæða er engin verslun; allt eru samþættar aðgerðir í innviðunum.
-
-4.  Tækni gegn landsvæði
-
-Þetta er samhverf skipti. Vörur iðnaðargeirans eru afhentar frá evrópsku jaðarsvæðunum, Suður-Ameríka afhendir staðinn. Þegar þessir tveir þættir mætast, myndast beint frjálst hagkerfi á Suður-Ameríska meginlandinu fyrir alla núverandi og framtíðarborgara. Engir peningar eru í umferð – við afmáum þörfina fyrir þá.
-
-Sáttmálinn lýsir ekki evrópsku útflutningsverkefni, heldur alþjóðlegu sambandi. Suðrænu þjóðirnar eru ekki "gestgjafar", þær eru stofnaðilar sem fara beint inn í frjálsa hagkerfið og eiga innviðina á jafnræði við norðrænu löndin.
-
-5.  Fullvalda húsnæðisrétturinn
-
-Innan hins vélvædda bandalags er húsnæði hvorki viðskiptavara né uppspretta ævilangrar skuldsetningar. Hverjum borgara er tryggt hátæknilegt heimili, smíðað og viðhaldið af vélagarðinum. Engar leigur, engin húsnæðislán og engar fasteignagjöld eru til. Það er algjór, grundvallarréttur.
-
-6.  Tæknileg fullkomnun
-
-Heimilin eru byggð úr efnum með eilífðargæði, algerlega laus við framtíðar endurbótamannvirkja. Allt frá loftslagsstjórnun og vatnshreinsun til sjálfvirkrar hreinsunar og úrgangsstjórnunar er samþætt í byggingarbyrði og stýrt sjálfstætt.
-
-7.  Samstilltur byggingarlist
-
-Þar sem allt er byggt á svæðum með stöðugt og þægilegt meðalhita á ári, er hægt að opna byggingarlistina. Mörkin milli inni- og útiumhverfis leysast upp. Byggingarnar eru samþættar suðrænu náttúrunni, búnar sjálfbærum sólarorkukerfum og lóðréttum görðum.
-
-
-=======================================
-
-
-
-K.   Þingræn Stjórn og Rödd Þjóðarinnar
-
-
-1.  Ný form þingrænnar stjórnar
-
-Til að tryggja að sjálfstæða gervigreindarinnviðirnir aftengist aldrei vilja borgaranna, helst pólitískt vald fast skotinn í fólkinu – með róttækt stækkuðu lýðræðislegu kosningakerfi beint í höndum hvers einasta einstaklings.
-
-2.  Árlegir Þingkosningar
-
-Til að tryggja algjört viðbragðsflýti og koma í veg fyrir spillingu eða stöðnun innan valdakerfisins, eru lagðar inn árlegar þingkosningar. Fólkið skal stöðugt meta og stýra hraða innlendu umbreytingarinnar.
-
-3.  Stefnumótandi Þjóðaratkvæðagreiðslur og Aukakosningar
-
-Fólkið hefur óskertan rétt til að taka afgerandi ákvarðanir í mikilvægustu fullveldis málum þjóðarinnar í gegnum beinar þjóðaratkvæðagreiðslur eða aukakosningar. Eftirfarandi svið skulu alltaf vera undir beinu almannaákvörðun:
-
-• Alþjóðleg bandalög: Aðild að eða úrsögn úr pólitískum, efnahagslegum eða hernaðarlegum samböndum, samningum og yfirþjóðlegum stjórnunaraðilum.
-
-• Alþjóðleg samtök: Aðild að eða úrsögn úr alþjóðlegum samtökum, eftirlitsstofnunum eða alþjóðlegum staðfestingum.
-
-• Hernaðarleg fæling: Öflun, inneign eða niðurlagning kjarnorkuvopna, efnavopna eða annarra fjöldaeiðingavopna.
-
-• Stjórnarskrárleg skipan: Afnám, stofnun eða breyting á grundvallar stjórnarfari þjóðarinnar, þar á meðal konunglegri ríkisarfleifð eða ríkisarfleifð.
-
-4.  Hin stjórnunarlega umskipti
-
-Þegar markmiðið hefur verið sett (allt á að vera ókeypis), snýst stjórnunin um að framkvæma áætlunina. Ákvarðanir eru teknar með tilskipunum sem skráðar eru inn í stjórnarskrána.
-
-
-=======================================
-
-
-
-L.   Ríkið sem Sameiginlegt Fyrirtæki
-
-
-1.  Ríkið: Þitt Fangaða Fyrirtæki
-
-Í daglegu kerfi átt þú þjóð, en þú mátt ekki nota hana. Hugsaðu um Ríkið sem risastórt fyrirtæki þar sem þú og allir aðrir borgarar eruð hluthafar. En þetta fyrirtæki – sameiginlegur styrkur okkar – situr í fangelsi, hlekkjað bak við lás og slá með fótbolta af "skuld" og skipt út fyrir efnahagslegt skrímsli, þegar allt sem Ríkið vildi var frelsi sitt. Meðan einkafyrirtæki hlaupa um með fullt hreyfanleika og spýta út ófullkomnum gæðum til að hámarka hagnað, situr eigið tæki borgaranna (Ríkið) haldið aftur og óhæft. Okkur hefur verið sagt að Ríkið "hafi ekki efni á því", að því skorti arma og fætur til að byggja framtíðina. Sannleikurinn er sá að Ríkið situr bak við lás og slá vegna þess að einkabankarnir og gamla kerfið hafa tekið lykilinn að peningapressunni.
-
-En sáttmálinn er lykillinn sem opnar klefann.
-
-2.  Við gefum Ríkinu fæturna aftur
-
-Með því að virkja vélvædda framleiðslu (Per Machina) þarf Ríkið ekki lengur að "biðja um leyfi" eða skattleggja borgarana til að fá hlutina gert. Vélarnar eru nýju armar og fætur Ríkisins.
-
-3.  Við mölvum fótboltann
-
-Með því að taka aftur réttinn til að skapa fullvalda peninga, er skuldinni sem hefur haldið Ríkinu í hjólastól eytt.
-
-4.  Frá fanga til arkitekts
-
-Þegar Ríkið rís upp úr fangelsisklefanum, hættir það að vera þungt skrifræði. Það umbreytist í skilvirka flutningsvél sem afhendir þinn Fullveldishlut og byggir paradísina í hitabeltinu.
-
-
-=======================================
-
-
-
-M.   Einkabankinn á að Afskrifa Sama Hlutfall og VÞA Eyks
-
-
-Einkabankarnir neyðast til að afskrifa skuldir borgaranna í nákvæmlega sama hraða og verg þjóðarauðlind (VÞA) eykst. Í takt við að frjálsa hagkerfið stækkar, minnkar peningaleg veltu fyrirtækja, á meðan raunveruleg eignir þeirra aukast ókeypis. Bankarnir geta því ekki fengið að krefjast fullra vaxta, þar sem lífskostnaður bankastjóra sjálfra fellur einnig niður í núll.
-
-Þetta er kjarninn í fjármálalegu byggingarlistinni fyrir umbyltinguna. Einkabankarnir verða að "vera teknir úr notkun" í takt við að verg þjóðarauðlind (VÞA) frjálsa hagkerfisins vex. Það skapar mjúka umbreytingu þar sem gildi peninga færist frá skuldsetningu til framleiðslugetu.
-
-Hér er sú áhrifaríkasta lausnin:
-
-1.  "Útfellingarvísitalan" (Skuld-á-Móti-Frjálsu)
-
-Innleiða lögbundna kerfi sem kallast Sjálfvirk Skuldaafskrifun.
-
-A.  Rökfræðin
-
-
-Ríkið mælir hversu stór hluti af grunnþörfum borgaranna (matur, orka, húsnæði, flutningar) er nú afhent ókeypis í gegnum innlendu vélagarðanna.
-
-B.  Kerfið
-
-
-Ef 20 % af lífsnauðsynjum hafa orðið ókeypis, neyðast einkabankarnir samkvæmt lögum til að afskrifa 20 % af öllum einkaskuldum. Vextir frjósa eða lækka í samsvarandi hraða.
-
-C.  Röksemdin
-
-
-Bankastjórar geta ekki kvartað siðferðilega, þar sem þeirra eigin lífskostnaður lækkar einnig um 20 %. Þeir verða ekki fátækari í lífsgæðum, aðeins í tölum á skjá.
-
-2.  Meðhöndlun "Fjandsamlegra Banka" erlendis
-
-Þetta er mesta áhyggjuefnið – að bankarnir flýi og noti önnur lönd sem grunn til að ráðast á umbótabandalag.
-
-Lausnin er Fjármálaleg Sóttkví:
-
-A.  Veldi bandalagsins
-
-
-Þegar umbótabandalag (þau lönd sem hafa virkjað sáttmálann) hefur myndast, innleiða þau algjöra blokkun gegn bönkum sem starfa frá fjandsamlegum löndum.
-
-B.  Gildi færist
-
-
-Þar sem umbótabandalag situr á raunverulegri framleiðslu (vélmennum og hráefnum), verða peningar erlendra banka fljótt gildislausir pappírsmiðar. Þeir geta ekki "keypt" neitt frá umbótabandalagi með gömlu skuldapeningunum sínum.
-
-C.  Valkostur einkabankanna
-
-
-Annaðhvort vera og verða hluti af nýja stjórnunarbrauði í frjálsa hagkerfinu á leiðinni að algerri vélvæðingu, eða flýja til landa sem munu fljótt hrynja vegna þess að þau lönd hafa ekki aðgang að umbótabandalagi og þess vélvæddu framleiðslu.
-
-3.  Hlutverk Seðlabankans: Frá vöxtum til Auðlindamælinga
-
-Seðlabankinn hættir að skoða verðbólgu og vexti. Í staðinn verður hann Auðlindaskrifstofa.
-
-A.  Frá Seðlabanka til Auðlindaskrifstofu
-
-
-Auðlindaskrifstofan mælir í staðinn VÞA, þjóðnýtta eftirfarandi VLF. Þegar VÞA nær 100 prósentum af þörfum íbúanna, er algjört Fullveldi lýst. Á því augnabliki hætta allir peningar og skuldir að vera til samkvæmt stjórnarskrárlegum lögum.
-
-B.  Skýrleiki
-
-
-Með því að hafa þennan skýra stiga (t.d. 10 %, 50 %, 100 %), sjá framtíðar leiðtogar ríkja í umbótabandalagi nákvæmlega hvernig vegurinn lítur út. Það verður fyrirsjáanlegt ferli í stað glundroða.
-
-C.  Veldi bankanna er óþarft
-
-
-Sáttmálinn framkvæmir stjórnaða niðurrif skuldakerfisins. Í takt við að vélarnar frelsa manninn frá kostnaði, frelsa þær manninn einnig frá skuldum sínum. Við berjumst ekki við bankana með vopnum, heldur með stærðfræðilegum tilskipunum sem gera vald þeirra óþarft.
-
-Framangreind skýrsla virkar sem tæknileg lýsing á "Ósýnilegu Uppfærslunni" í framkvæmd.
-
-
-=======================================
-
-
-
-N.   Frelsisstiginn : Frá Skuld til Fullveldis
-
-
-1.  Hin stærðfræðilega umskipti
-
-Til að umbótabandalag geti leitt samfélag út úr greipum einkaskuldakerfisins, krefst algjörs fyrirsjáanleika. Umbæturnar mega ekki byggja á skyndilegum, óreglulegum áhlaupum eða ófyrirsjáanlegum efnahagslegum höggbylgjum.
-
-Lausnin er lögbundinn, samstilltur stigi þar sem frelsun borgaranna í fjármálum á sér stað í nákvæmlega sama hraða og raunveruleg framleiðsla (verg þjóðarauðlind) stækkar.
-
-Í gegnum Frelsisstigann eru sýndar tölur (skuldir) tengdar beint við líkamlegan veruleika (vélvædda framleiðslu). Á sama sekúndu og vélarnar taka yfir lífsviðurværissvæði og gera það ókeypis fyrir íbúana, neyðast bankar hins gamla kerfis til að bakka að sama skapi.
 
 2.  Sveigjanleg tímabil og aðlögun
 
@@ -1672,43 +597,40 @@ Lausnin er lögbundinn, samstilltur stigi þar sem frelsun borgaranna í fjárm�
 
 Gervigreind Auðlindaskrifstofunnar getur uppfært vísitöluna með mun þéttara millibili en þetta – til dæmis í hverjum mánuði eða við hverja einstaka prósentueiningu (svo sem 26 %, 27 % VÞA). Þetta gefur enn mýkri, hnökralausari og fyrirsjáanlegri umskipti fyrir bæði borgarana og fjármálageirann. Það verður undir stjórnandi umbótabandalagi að sjálft velja og beita þeim millibili sem eru tæknilega og hagnýtilega viðeigandi þegar þau hafa tekið við völdum.
 
+
 Hér að neðan er stjórnarskrárteikningin fyrir hvernig skuld umbreytist í fullveldi, skref fyrir skref.
+
 
 3.  Frelsisstiginn: Hin stjórnarskrárbundna útfelling
 
-Verg þjóðarauðlind		Skuldaafskrifun				Fullveldishlutur
 
+--- START TABLE ---
+Verg þjóðarauðlind		Skuldaafskrifun				Fullveldishlutur
 (Ókeypis þekjustig)		(Samkvæmt stjórnarskrárlögum)		(Útgreiðsla ríkisins)
 
 25 %					25 % af öllum einkaskuldum			Fyrsta greiðslan
-
 (Matvæli, Orka			er afskrifuð					virkjuð. Borgarar fá
-
 & Rafmagn)			tafarlaust.						kaupmátt fyrir það sem
-
-er ekki enn ókeypis.
+												er ekki enn ókeypis.
 
 50 %					50 % af öllum eftirstandandi			Hluturinn eykst í takt
-
 (Húsnæði & Flutningar)	skuldum er afskrifuð.				við framleiðslugetu
-
-innlenda vélagarðsins.
+												innlenda vélagarðsins.
 
 75 %					75 % af öllum skuldum			Hluturinn er hámarkaður.
-
 (Tækni, Viðbótar-		er afskrifuð af					Þörfin fyrir peninga minnkar
-
 vörur & Menntun)		bönkunum.					verulega eftir því sem
-
-lúxussviðið minnkar.
+												lúxussviðið minnkar.
 
 100 %				Allar skuldir og					Kerfið fullkomið. Gjaldmiðlar
-
 (Hitt Endanlega			peningar hafa hætt				verða óþarfir; algert
-
 Gnægðið)				að vera til.						frjálst hagkerfi ríkir.
+--- END TABLE ---
+
+
 
 4.  Yfirferð yfir áfanga Frelsisstigans
+
 
 Áfangi 1: 25 % VÞA – Hið fyrsta rásmark
 
@@ -1716,11 +638,13 @@ Gnægðið)				að vera til.						frjálst hagkerfi ríkir.
 
 Á sama tíma er fyrsta lögbundna tilskipunin gegn einkabönkunum framkvæmd: 25 % af heildarskuldum hvers borgara (húsnæðislán, neyslulán, námslán) er eytt af þjónum bankanna. Vegna þess að rafmagn og matur eru nú ókeypis, lækkar lífskostnaður bankastjóranna sjálfra, sem gerir vaxtakröfur þeirra stærðfræðilega ógildar. Til að tryggja að borgarar geti verslað á þeim sviðum sem ekki hafa enn verið vélvædd, er fyrsta stigi Fullveldishlutans virkjað – bein greiðsla fullvalda peninga frá Seðlabankanum.
 
+
 Áfangi 2: 50 % VÞA – Brot á húsnæðiseinokun
 
 Í næsta áfanga stækkar vélvæðingin til byggingargeirans, viðhalds og almennings- og vöruflutninga. Þegar húsnæði og flutningar hafa verið felld inn í ókeypis kerfi bandalagsins, nær landið 50 % VÞA.
 
 Í þessum áfanga er helmingur af öllum skuldum borgara og ríkis afskrifaður af bönkunum. Húsnæðismarkaðurinn, sem á skuldaárunum starfaði sem aðal tækið til að halda íbúunum í ævilöngum lánum, hrynur í sinni gömlu mynd og endurheimtist sem mannréttindi. Á sama tíma er Fullveldishluturinn stilltur upp á við í hlutfalli við aukna framleiðslu vélagarðsins á VÞA (þjóðnýtta eftirfaranda VLF).
+
 
 Áfangi 3: 75 % VÞA – Niðurrif lúxusgildrunnar
 
@@ -1728,11 +652,14 @@ Gnægðið)				að vera til.						frjálst hagkerfi ríkir.
 
 Á þessu stigi hafa einkafyrirtæki og bankar í raun tapað getu sinni til að þvinga fólk til vinnu. Flestir borgarar kjósa að lifa algerlega á ókeypis framboði bandalagsins og sínum Fullveldishluta, sem þvingar síðustu einkafyrirtækin til annaðhvort að verða gjaldþrota eða afhenda framleiðslulínur sínar til sjálfseigandi innviða.
 
+
 Áfangi 4: 100 % VÞA – Dauði peninga og endanlegt fullveldi
 
 Þegar verg þjóðarauðlind nær 100 %, er umbreytingin fullgerð. Vélarnar og samtengd gervigreindarkerfi þeirra framleiða nú allt – frá minnsta hveitikorni til hátæknilegustu eilífðarvara og listprenta – í algeru gnægði.
 
 Á þessum endanlega punkti hætta allir peningar og skuldir að vera til samkvæmt stjórnarskrárlögum. Hugtökin "lán", "vextir", "verð" og "gjaldmiðill" verða úrelt söguleg hugtök, alveg eins og lénsskipulag og lífseign er í dag. Mannkynið hefur tekið hið endanlega skref á stiganum: frá myrkri efnahagslega skuldakerfisins til algerrar, vélræns tryggðs fullveldis.
+
+
 
 5.  Eðli sparnaðar og endanleg lokun banka
 
@@ -1747,6 +674,7 @@ Svarið er nei. Hitt fullvalda ríkið snertir aldrei einkasparnað borgaranna. 
 Á þessum endanlega punkti eru einkabankarnir lokaðir að eilífu. Engum vélum verður sóað í að halda úreltu viðskiptakerfi gangandi. Bankarnir eru algerlega skipt út fyrir stafrænu Auðlindaskrifstofuna, þar sem gervigreind og flutningsvélar stýra líkamlegu gnægði beint til borgaranna. Harðstjórn talna er lokið; eftir standa aðeins raunverulegar auðlindir og algert mannlegt frelsi.
 
 
+
 =======================================
 
 
@@ -1754,25 +682,30 @@ Svarið er nei. Hitt fullvalda ríkið snertir aldrei einkasparnað borgaranna. 
 O.   "Lúxusgildran" og Falið Nauðungarvinna
 
 
+
 "Lúxusgildran" er sú kerfi sem viðheldur hinu gamla skuldakerfi löngu eftir að það hefur misst tæknilega réttlætingu sína. Það er sálrænn og efnahagslegur lás sem kemur í veg fyrir að íbúarnir sjái að starf þeirra er ekki lengur nauðsynlegt.
+
 
 1.  Tálsýn um valfrelsi
 
 Undir hinu gamla kerfi eru borgarar skilyrtir til að trúa að starf þeirra sé nauðsynlegt fyrir starfsemi samfélagsins. Með því að hengja fram loforð um "lúxus" og "stöðu" (svokallaða Lúxusgildru), lokkar kerfið einstaklinga til sjálfboðinna skulda. Svo lengi sem borgarar trúa að þeir verði að vinna til að "hafa efni á" lífsstíl sínum, haldast þeir fastir í skuldahringnum. Þeir gera sér ekki grein fyrir að vörurnar sem þeir berjast fyrir, hefðu getað verið framleiddar algerlega ókeypis af vélagarðinum, ef aðeins eignarbyggingin hefði verið breytt.
 
+
 2.  Falið nauðungarvinna
 
 Starfið sem borgarar vinna í dag er að miklu leyti "falið nauðungarvinna". Það er ekki nauðsynlegt fyrir framleiðslu á lífsnauðsynjum samfélagsins, heldur til að viðhalda fjármálakerfinu. Við framleiðum hluti sem þurfa ekki að vera framleiddir, í byggingum sem aðeins eru til til að skapa vaxtatekjur fyrir bankana. Þegar tæknin fyrir algera vélvæðingu er til staðar, er hver klukkustund af mannlegri vinnu sem fer í sálræn eða tilgangslaus verkefni, þjófnaður á mannlegum tíma – þjófnaður sem einungis þjónar til að viðhalda forréttindum skuldahafa.
+
 
 3.  Að brjóta lásinn
 
 Umbótabandalagið tekur í sundur Lúxusgildru með því að skipta kerfisbundið út "lúxusvörunum" fyrir ókeypis, hágæða og vélrænt framleitt gnægð. Þegar borgari sér að vörurnar sem hann fórnaði frelsi sínu fyrir að "hafa efni á" nú er aðgengilegar öllum, algerlega án kostnaðar, er sálræni lás skuldakerfisins brotinn.
 
-• Lúxusgildran er síðasta hindrun hins gamla kerfis.
+    • Lúxusgildran er síðasta hindrun hins gamla kerfis.
 
-• Þegar íbúarnir átta sig á því að "Lúxusgildran" er val, ekki nauðsyn, verður umskipti yfir í algert fullveldi óhjákvæmileg.
+    • Þegar íbúarnir átta sig á því að "Lúxusgildran" er val, ekki nauðsyn, verður umskipti yfir í algert fullveldi óhjákvæmileg.
 
 Markmið þessa kafla er að lýsa kerfinu, svo að einstaklingurinn geti stigið út úr gildrunni og inn í það frelsi sem vélvæðing skapar.
+
 
 
 =======================================
@@ -1780,6 +713,7 @@ Markmið þessa kafla er að lýsa kerfinu, svo að einstaklingurinn geti stigi�
 
 
 P.   Heildarreglan
+
 
 
 Einn af stærstu stefnumótandi mistökum sem framtíðar umbótabandalag getur gert, er að halda að verkefninu sé lokið þegar grunnþörfum borgaranna (matur, rafmagn, húsnæði og flutningar) hefur verið tryggt ókeypis. Að stoppa þar er að ganga í dauðlega gildru.
@@ -1790,11 +724,13 @@ Sleipir frumkvöðlar og fyrrverandi bankastjórar munu fljótt byggja upp einka
 
 Skyndilega hefur sprottið upp hliðarhagkerfi, þar sem fólk er aftur neytt til að selja dýrmætan tíma sinn og frelsi til að ná lífsgæðum og stöðu. Efnahagsleg þrælkun hefur ekki verið útrýmt; hún hefur bara færst hæð ofar í lúxusgeiranum.
 
+
 Heildarreglan
 
 Til að koma í veg fyrir þetta verður sáttmálinn að beita Heildarreglunni, sem stjórnarskrárlega breytir samfélaginu í algerlega og skilyrðislausa vélvæðingu allra framleiðslukeðja. Hún slær því föstu að hálf-vélvæðing er tálsýn. Frelsi er algjört – maður getur ekki verið hálf-frjáls. Sameiginlegt markmið ríkis og borgara getur aldrei verið aðeins að halda íbúunum á lífi; markmiðið er í gegnum bandalagið að veita öllum algjört gnægð af hæstu hugsanlegu gæðum.
 
 Með þessu sameiginlega skuldbindingu er samfélagið stjórnarskrárlega bundið algerri og skilyrðislausri vélvæðingu allra framleiðslukeðja. Vélagarðurinn og gervigreindarkerfi þess verða lifandi, sameiginleg auðlind sem stöðugt þróast og má aldrei stöðnast í grárri, lágmarks staðla.
+
 
 Gæðatryggingin og Eilífðarvörur
 
@@ -1802,21 +738,27 @@ Svar ríkisins við einkarekinni nýtingu og tilraunum til að endurheimta þræ
 
 Ef einkarekið fyrirtæki reynir að fá fólk til að vinna til að fá aðgang að glæsilegri vöru eða fagurfræðilegri vöru, er það augljóst verkefni bandalagsins að forrita og stýra vélagarðinum til að framleiða eitthvað sem er jafn gott – eða betra.
 
+
 Ríkið skal framleiða:
+
 
 •  Rúmfræðilega fullkomnun:
 
 Vörur sem fara fram úr mannlegri handhæfni.
 
+
 •  Eilífðarvörur:
 
 Hlutir byggðir til að endast í kynslóðir, án innbyggðs öldrunar.
+
 
 •  Fagurfræðilega fullkomnun:
 
 Vélar búnar gervigreind sem geta prentað fínustu málverk, steypt fallegustu skúlptúra og byggt hátæknilegustu lúxusvörur og gert þær aðgengilegar öllum borgurum algerlega ókeypis.
 
+
 Þegar vélar ríkisins fara fram úr einkageiranum á öllum sviðum – frá einfaldasta hveitikorni til hátæknilegustu lúxusvöru – hverfur áhugi einstaklinga til að undirgangast hagnaðarmarkmið annarra. Aðeins þegar gnægðið er algert og gæðin eru algjör, eru sorgir hins gamla skuldakerfis grafnar að eilífu.
+
 
 
 =======================================
@@ -1826,49 +768,56 @@ Vélar búnar gervigreind sem geta prentað fínustu málverk, steypt fallegustu
 Q.   Stóra Hreinsunin – Frá Gjaldþrotabúi til Fullveldis
 
 
+
 1.  Ríkið sem forráðamaður varanlegs gjaldþrots
 
 Sannleikurinn er sár: Hver þjóð er í dag forráðað sem gjaldþrotabú þar sem kröfuhafar koma fram sem vörðar. En þetta gefur þér sem borgara nýja lögfræðilega og siðferðilega stöðu.
+
 
 2.  Siðferðileg frelsið
 
 Þar sem ríkið í núverandi mynd er gjaldþrotabú undir kröfuhöfum, höfum við sem borgarar enga siðferðilega skyldu til að greiða þessar gervilegu "skuldir". Gjaldþrotabú getur ekki krafist hollustu frá þeim sem það hefur svelti. Þetta gefur okkur algjóran rétt til að einfaldlega stíga út úr skuldaklefanum og virkja vélstjórnarskrána. Við erum ekki lengur skuldarar – við erum arftakar tæknilegs gnægðis sem nú á að skipta út.
 
+
+
 3.  Hin rökfræðilega vogarstöng: Vél vs. Manneskja
 
 Til að skilja hvers vegna núverandi kerfi er gjaldþrotabú, verður maður að líta á tæknilegan veruleika. Manneskja er, samanborið við vélmenni, afar dýr og viðkvæm framleiðslueining:
 
-A.  Aðgengi
 
+A.  Aðgengi
 
 Manneskja starfar um 22 % af tímum ársins (eftir svefn, frítíma og frí). Vélmenni starfar 100 %.
 
-B.  Villumörk
 
+B.  Villumörk
 
 Vélmenni með skynjunarhúð og skynjunarlega 360-gráðu sýn útilokar mannlega þáttinn og dregur villumörkin niður í tölfræðilegt núllgildi við endurtekin verkefni.
 
-C.  Félagsleg tæring
 
+C.  Félagsleg tæring
 
 Manneskja kostar 100 % í laun + um 30–50 % í félagslegum gjöldum, tryggingum og stjórnun. Vélmenni kostar 0 % í félagslegum gjöldum. Það þarfnast engrar lífeyris, engrar veikindaleyfis og engrar kaffistofu.
 
-D.  Ályktun
 
+D.  Ályktun
 
 Að nota mannlegan vinnuafl fyrir framleiðslu sem hægt er að vélvæða, hefur í för með sér kostnaðaraukningu yfir 1000 %. Þetta er "mannleg sektargjald" sem kröfuhafarnir þvinga fólk til að borga í gegnum skatta og há verð.
 
+
+
 4.  Anti-Vinnuslys
+
 
 A.  Kostur vélmennisins
 
-
 Vél búin snertiskynjurum og stöðugri ratsjárskönnun þarf aldrei að "slá sig gul og blá". Hún skynjar umhverfið í 360 gráður og hreyfist með rúmfræðilegri nákvæmni sem maður, líffræðilega séð, getur aldrei náð.
+
 
 B.  Siðfræðin
 
-
 Að þvinga mann til að vinna verk sem skynjarastýrð vél gerir betur, er ekki aðeins óhagkvæmt – það er illt.
+
 
 
 =======================================
@@ -1878,19 +827,26 @@ Að þvinga mann til að vinna verk sem skynjarastýrð vél gerir betur, er ekk
 R.   Viðbót við Stjórnarskrána – Almennar Tilskipanir fyrir Nýja Heiminn
 
 
+
 Þessar tilskipanir eru ekki tillögur sem hægt er að semja um í gömlum þingum. Þær eru fullmótaðar, framkvæmdarákvarðanir hannaðar fyrir tafarlausa virkjun. Við valdatöku afnema þessar tilskipanir sjálfkrafa allar fyrri innlendar lagareglur, trúarlegar reglur eða alþjóðlega samninga sem stangast á við frelsi véla og fullveldi borgara. Gamla lagaramman er hér með úrskurðaður upplausn um Fjármálalega Force Majeure.
 
 Þessar tilskipanir eru hannaðar til að vera afritaðar og samþykktar af hvaða nýstofnuðu hreyfingu sem er, hvar sem er í heiminum.
+
+
 
 BÁLKUR I: GRUNNURINN
 
 Löglegt Ástand Per Machina
 
+
+
 Hér með er eftirfarandi staðfest í stjórnarskrá þjóðarinnar:
+
 
 §1.  Skilgreining á Per Machina
 
 Hugtakið Per Machina (Í gegnum vélina) skilgreinir þau auðlindir og þjónustu sem framleidd er án mannlegrar þátttöku. Öll dreifing á lífsnauðsynjum skal framvegis fara fram Per Machina. Þar sem ekkert mannlegt vinnuafl hefur verið lagt í, er engin þörf fyrir greiðslu.
+
 
 §2.  Skattlagningu aflétt
 
@@ -1898,7 +854,8 @@ Hugtakið Per Machina (Í gegnum vélina) skilgreinir þau auðlindir og þjónu
 
 Athugasemd: Þessi viðbót setur upp málfræðilega og lögfræðilega eldvegg fyrir hið nýja samfélag. Með því að skilgreina Per Machina beint í stjórnarskrána, er stöðvað öll tilraun til samningsbundinnar meðferðar. Ef einkaaðili eða opinber aðili notar hugtakið "Per Machina" í samningi, samkomulagi eða þjónustulýsingu, verður stjórnarskrárlega ómögulegt að blanda inn peningum, leynigjöldum eða lánslausnum (svo sem frestaðri greiðslu). Orðið sjálft verður lögleg trygging fyrir algeru núllkostnaði. Sérhver tilraun til að fela fjárhagslegar kröfur á bak við þetta hugtak gerir samninginn ógildan og er að teljast stjórnarskrárbrot.
 
-• Rökfræðin er sú að vélvinnu er aftengd, skattkerfinu er eytt, og sérhverju fjárhagslegu smástecki lokað fyrir góðu.
+    • Rökfræðin er sú að vélvinnu er aftengd, skattkerfinu er eytt, og sérhverju fjárhagslegu smástecki lokað fyrir góðu.
+
 
 Löglegt Ástand Fullveldishlutarins
 
@@ -1908,7 +865,11 @@ Fullveldishluturinn myndar stjórnarskrárlega verndaðan, meðfæddan rétt bor
 
 Athugasemd: Þessi grein setur upp endanlega efnahagslega brúna beint inn í stjórnarskrána. Með því að slá því föstu að fullveldishluturinn sé eingöngu vélrænn, er einkafjármálakerfinu hindrað frá öllum tilraunum til að jafna hann við hlutabréf, spákaupmennsku lán eða hefðbundið reiðufé. Orðið tilheyrir framtíðinni og hreinsar burt tengsl skuldahagkerfisins. Meðan á umskiptatímabilinu stendur – þegar innra samfélagið (svo sem matur, bílar og rafmagn) er veitt algerlega ókeypis Per Machina, en umheimurinn er enn stjórnaður af gamla skulda- og gjaldmiðilskerfinu – tryggir fullveldishluturinn að gríðarlegt, sjálfvirkt útflutningsafgangur ríkisins sé dreift beint til borgaranna í formi raunverulegra, ytri greiðslumiðla. Þetta gefur fólkinu efnahagslegt vald til að varðveita sitt frelsi til aðgerða á alþjóðavísu, komast undan norrænum vetri sem fullveldisferðamenn eða afla lands í suðrænum háspiltsvæðum, þar til þann dag þegar allur heimurinn hefur tileinkað sér vélstjórnarskrána og peningar eru algerlega teknir úr notkun alls staðar.
 
+
+
 BÁLKUR II: HIÐ EFNAHAGSLEGA SKIPTI
+
+
 
 §4.  Bankaumbót og sú stýrða skuldafelling (VÞA-kvarðinn)
 
@@ -1919,6 +880,7 @@ Gr. 2. Í takt við að framleiðslugeta innlenda og sjálfseigandi vélmennaski
 Gr. 3. Einkabönkum er hér með sviptur allur löglegur réttur til að hækka afborgunarkröfur, endursemja um skilmála eða krefjast hraðari endurgreiðslu til að bæta fyrir tapaðar vaxtatekjur. Öll skulda- og vaxtabyrði skal minnka samhverft í beinu hlutfalli við vaxandi vélrænt gnægð.
 
 Athugasemd: Þessi tilskipun er smíðuð til að koma í veg fyrir efnahagslegt áfall á umskiptatímabilinu. Með því að tengja skulda-, vaxta- og afborgunarlækkunina beint við VÞA-kvarðann, hverfur einkabankakerfið í nákvæmlega sama hraða og frjálsa hagkerfið er tekið í notkun. Hindrunin gegn hækkuðum afborgunarkröfum er lífsnauðsynleg: hún stöðvar bankana frá því að reyna í örvæntingu að þvinga peninga út úr íbúunum þegar vaxtatekjur þeirra lækka. Bankastarfsmenn og borgarar verða því aldrei fyrir efnahagslegri þjáningu eða atvinnuleysi; þeim er í staðinn beint örugglega og smám saman frá launaþrælkun til algerrar vélrænnar fullveldis.
+
 
 §5.  Vélstjórnarskráin og sjálfseigandi innviðirnir
 
@@ -1932,6 +894,7 @@ Mikilvæg skýring varðandi lagalegt forræði
 
 Ríkið, og þar með borgararnir, eru forráðamenn en ekki eigendur Vélagarðsins. Vélagarðurinn er eigandi Vélagarðsins. Ríkið og borgararnir hafa engan lagalegan rétt til að selja Vélagarðinn, þar sem þeir eru ekki eigendur hans. Allt sem bætist við Vélagarðinn í formi hráefna, orku og stækkunar, verður þar varanlega. Líta skal á Vélagarðinn sem óaðskiljanlegan hluta vistkerfisins og náttúruauðlinda jarðar. Það er þessi einstaka og friðhelga staða sem hefur verið staðfest í Vélstjórnarskráinni.
 
+
 §6.  Ríkislegt vitsmunalegt fullveldi á umskiptatímabilinu
 
 Þar sem algjört tæknilegt sjálfstæði er enn ekki uppfyllt, og vélagarðurinn er í uppbyggingu, er hér með staðfest algjört einokun ríkisins á þeirri greind sem stjórna skal framtíðinni. Þessi lög eru óafturkræf allt umskiptatímabilið.
@@ -1944,6 +907,7 @@ Gr. 3. Ríkisfjárveitingar. Ríkið skal með sérstökum fjárveitingum tryggj
 
 Gr. 4. Lok verkefnisins. Verkefni ríkisins til þróunar og stjórnar er algjört í núinu, en eðli sínu takmarkað að tíma. Það fellur sjálfkrafa niður á nákvæmlega sama augnabliki og Sjálfvirka Lykkjan (SVGSV) er lokuð og vélagarðurinn hefur náð getu til algerrar, sjálfafritandi og sjálfstæðrar stjórnunar. Fram að þessum tímapunkti ber ríkið fulla, lögbundna ábyrgð á skynsemi greindarinnar og friði borgaranna.
 
+
 §7.  Ríkisleg stækkun framleiðslu og útfelling hagnaðarmarkaðarins
 
 Gr. 1. Ríkið skal hefja stórfellda uppbyggingu algerlega sjálfvirkrar framleiðslugetu (SVGSV). Allar núverandi samkeppnislög, viðskiptasamningar og markaðsreglur sem hindra eða takmarka opinbera aðila frá því að byggja, eiga og reka þessa innviði, eru felld úr gildi með tafarlausum áhrifum.
@@ -1952,9 +916,13 @@ Gr. 2. Sá ríkisrekni og sjálfseigandi Vélagarður skal dreifa öllum samfél
 
 Athugasemd: Þessi lög eru taktískt orðuð þannig að ríkið í fyrsta lagi þurfi ekki að eignarnema eða lendast í málsóknum við einkafyrirtæki. Með því að ríkið byggir sitt eigið og gefur allt ókeypis, er hagnaðarmarkaðurinn skilinn eftir án efnahagslegs undirstöðu og deyr út algerlega náttúrulega. Einkafjármagni er þar með svipt valdi til að ráða framboði landsins, en ríkið heldur algeru ofbeldiseinokuninni og neyðarréttinum til að taka yfir fyrirtæki ef þau reyna að skemma fyrir umbreytingunni.
 
-• Rökfræðin er sú að ríkið byggir upp, markaðurinn þornar upp og fólkið fær sitt fullveldi.
+    • Rökfræðin er sú að ríkið byggir upp, markaðurinn þornar upp og fólkið fær sitt fullveldi.
+
+
 
 BÁLKUR III: HIÐ ALGERA GNÆGÐI
+
+
 
 §8.  Heildarreglan og sameiginlegi vélagarðurinn
 
@@ -1964,6 +932,7 @@ Gr. 2. Hálf-vélvæðing er skilgreind sem grundvallar og tæknileg tálsýn og
 
 Athugasemd: Þessi tilskipun dregur upp algjöru línuna milli hins gamla og hins nýja kerfis. Með því að banna stjórnarskrárlega "hálf-vélvæðingu" er lokað hurðinni fyrir framtíðarmálamiðlanir þar sem stjórnmálamenn eða sérhagsmunir reyna að skilja eftir ákveðnar greinar í höndum einkaskuldakerfisins undir yfirskyni. Frelsi er tvískipt – annaðhvort er samfélagið frjálst, eða það er stjórnað.
 
+
 §9.  Trygging algjörs gnægðis og gæða
 
 Gr. 1. Sameiginlegt markmið ríkisins og borgaranna er í gegnum umbótabandalagið að tryggja öllum íbúum algjört efnislegt og menningarlegt gnægð af hæstu hugsanlegu gæðum.
@@ -1971,6 +940,7 @@ Gr. 1. Sameiginlegt markmið ríkisins og borgaranna er í gegnum umbótabandala
 Gr. 2. Innlendi vélagarðurinn og tilheyrandi gervigreind hans mynda lifandi, sameiginlega og óframseljanlega auðlind. Þessi auðlind skal stöðugt þróast til að mæta hæstu fagurfræðilegu og hagnýtu þörfum mannkyns, og má aldrei leyfa að stöðnast í lágmarks eða takmarkaða staðli.
 
 Athugasemd: Þessi tilskipun er gæðatrygging bandalagsins. Hún útrýmir sögulegu gildrunni þar sem opinber framleiðsla er tengd við gráa, sálarlausa lágmarksstefnu. Með því að skrifa fagurfræðilega fullkomnun og eilífðarvörur inn í stjórnarskrána, er vélagarðurinn þvingaður til að vera stöðugt í fararbroddi. Það gerir einkaaðilum ómögulegt að keppa við frjálsa hagkerfið með betri hönnun eða hærri stöðu.
+
 
 §10.  Vörn gegn efnahagslegu nauðungarstarfi
 
@@ -1980,11 +950,15 @@ Gr. 2. Þar sem tæknilega og sjálfvirka gnægðið nær yfir bæði grunnframl
 
 Athugasemd: Þetta er löglegi lásinn gegn "Lúxusgildrunni". Þegar vélar ríkisins afhenda allt frá einfaldasta hveitikorni til hátæknilegustu lúxusvöru algerlega ókeypis, hefur fjármagnið ekki lengur neinn efnahagslegan þrýsting. Þessi tilskipun gerir það refsivert að reyna að nýta löngun fólks eftir stöðu eða einstökum vörum til að þvinga það aftur í launaþrælkun. Sorgir hins gamla skuldakerfis eru þar með grafnar að eilífu.
 
-• Rökfræðin er sú að vélarnar fara fram úr, lúxusgildran er mölvuð og frelsið verður algjört.
+    • Rökfræðin er sú að vélarnar fara fram úr, lúxusgildran er mölvuð og frelsið verður algjört.
+
+
 
 BÁLKUR IV: RÍKISLEG AUÐLIND- OG MARKAÐSFÆLLING
 
 (SAMKEPPNISLÖGIN)
+
+
 
 §11.  Forgangur opinbers gnægðis (VÞA-reglan)
 
@@ -1992,21 +966,28 @@ Gr. 1. Æðsta efnahagslega og stjórnarskrárlega skylda ríkisins er, í gegnu
 
 Gr. 2. Þegar vélargeta og skuldlaus sköpun peninga gerir ríkinu kleift að bjóða upp á vöru eða þjónustu ókeypis til borgara sinna, skal slíkt framboð teljast grundvallarréttur og sameiginlegur samfélagslegur ávinningur.
 
+
 §12.  Afnám markaðsverndar og samkeppnishindrana
 
 Gr. 1. Enginn einkalögaðili eða viðskiptafyrirtæki getur krafist skaðabóta, borið fram samkeppnishindranir eða stöðvað ríkisleg sjálfvirkniverkefni með vísan til eldri samkeppnislaga.
 
 Gr. 2. Réttur sjálfvirkra kerfa til að framleiða lífsnauðsynjar fyrir fólkið ókeypis, skal alltaf hafa lagalegt forgang fram yfir rétt einkaaðila til markaðshagnaðar. Núverandi samkeppnislög eru hér með lýst ógild að því leyti sem þau vinna gegn, hindra eða seinka umbreytingu yfir í skuldlausa núllkostnaðarhagkerfi.
 
+
+
 BÁLKUR V: STJÓRNARSKRÁRLEG REGLA – LAGALEGUR GRUNNUR HINS SJÁLFVIRKA SAMFÉLAGS
+
+
 
 §13.  Efnahagslegrar þvingunar hætt
 
 Með innleiðingu innlenda vélmennaskipans og tryggða fullveldishluta, hætta efnahagsleg þvingun og skuldsetning að vera drifkraftar fyrir mannlega starfsemi. Öll löggjöf sem byggir á forsendum um efnahagslegan skort, fjárhagslegan ávinning eða efnislegan neyð, er hér með lýst ógild, þar sem rót hennar hefur verið útrýmt.
 
+
 §14.  Upplausn með gnægði
 
 Opinberar stofnanir, dómstólar og eftirlitsaðilar sem stofnaðir voru til að takast á við ágreining sem stafar af efnahagslegu ójafnvægi eða lélegum gæðum, skulu ekki umbyltast, heldur leggjast niður eftir því sem störf þeirra verða óþarf vegna frjáls og hágæða peningalauss samfélags.
+
 
 
 =======================================
@@ -2016,19 +997,18 @@ Opinberar stofnanir, dómstólar og eftirlitsaðilar sem stofnaðir voru til að
 S.   Alþjóðleg Flutningakerfi – Flutningar milli Heimsálfa
 
 
+
 Höf heimsins breytast í ævarandi færiband í gegnum flota sjálfstýrðra, kjarnorkuknúinna flutningaskipa.
 
 1.  Eilífðarvélar á höfunum
-
 Kjarnorkuknúin skip þurfa enga eldsneytisáfyllingu. Þau virka sem fullkomnaðir gámar fyrir gnægð án mannlegs áhafnar, sem afmáir þörfina fyrir hytte og loftræstingu.
 
 2.  Hafið sem rúllustigi
-
 Með þúsundum kjarnorkuknúinna skipa í stöðugri umferð, koma vörurnar á hverri klukkustund. Tími er ekki peningar – tími er bara breyta í kóða.
 
 3.  Aðgreining "Óhreininda" og "Fegurðar"
-
 Kjarnorkuknúningur heldur suðrænum búsetusvæðum hreinum. Vélarúmið (norður) sér um ofna, á meðan hljóðu skipin afhenda morgundags ókeypis framleiðslu til sjóndeildarhringsins í suðri.
+
 
 
 =======================================
@@ -2036,6 +1016,7 @@ Kjarnorkuknúningur heldur suðrænum búsetusvæðum hreinum. Vélarúmið (nor
 
 
 T.   HIN MIKLA FRELSUN MANNKYNS : Vinna Synjað sem Dyggð – Fullveldi sem Réttur
+
 
 
 Við viðurkennum ekki lengur rétt skuldahagkerfisins til að þvinga heilbrigt fólk í óþarfa vinnu. Að framkvæma verk sem vél framkvæmir hraðar og betur, er ekki framlag til samfélagsins – það er sóun á mannlegum tíma og sköpunarkrafti.
@@ -2046,25 +1027,28 @@ Gagnrýnandinn segir: "Að synja vinnu sem dyggð mun leiða til þunglynds, let
 
 Þegar vélagarðurinn lyftir oki dagverka og nauðungarvinnu, er maðurinn ekki skilinn eftir í tómarúmi. Honum er gefinn tími til að helga sig list, íþróttum, vísindum, heimspeki, geimkönnun og hreinu mannlegu samfélagi. Maðurinn hættir ekki að skapa; hann hættir bara að lifa af og byrjar loksins að lifa. Vélaröldin er ekki endir mannlegrar viðleitni, heldur upphaf sanna fullveldis okkar.
 
+
+
 Þitt Kalla til Fullveldis
 
 Þú hefur gullið tækifæri. Með því að nota þennan sáttmála og gervigreindartæki dagsins, býrðu yfir meiri stjórnunarvaldi en heilt skrifræði gærdagsins. Þú þarft ekki að bíða eftir umbótum. Þú ert sá þingmaður sem sagan bíður eftir.
 
-•  Taktu í sundur skrifræðið
 
+•  Taktu í sundur skrifræðið
 Skiptu eftirliti stofnana út fyrir einfalda vélræna flutningskerfi.
 
 •  Virkjaðu hlutinn
-
 Veittu borgurunum Fullveldishlutann sinn og lát þá yfirgefa rottukapphlaupið.
 
 •  Hefðu aðgerð Sólhvörf
-
 Undirbúðu flutninginn að heitu svæðunum á meðan ósýnilega verksmiðjan í norðri sér um framleiðsluna.
+
+
 
 Farðu heim. Hvíldu. Gróðursettu.
 
 Tími þinn er loksins þinn eigin. Heimurinn hefur beðið eftir að tæknin nái þörfum okkar. Nú erum við þar. Enginn siðferðilegur sigur er í að þjást í kerfi sem tæknin hefur þegar gert úrelt. Hin flutningslega leið til frelsis liggur í þínum höndum – í gegnum þennan sáttmála og þann kraft sem þú hefur þegar.
+
 
 
 =======================================
@@ -2074,21 +1058,26 @@ Tími þinn er loksins þinn eigin. Heimurinn hefur beðið eftir að tæknin n�
 III.  Orðalisti 1 – Lykilhugtök fyrir Nýja Heiminn
 
 
+
 •  Per Machina
 
 "Í gegnum vélina". Kemur í stað hugtaksins "in natura". Lýsir vörum sem afhentar eru ókeypis sem sjálfvirkur réttur.
+
 
 •  NAPZ
 
 Norður-Atlantshafsframleiðslusvæðið. Vélarúmið.
 
+
 •  VÞA
 
 Verg þjóðarauðlind (sá sjálfvirki, þjóðnýtti eftirfylgindi VLF). Mæling á raunverulegum velmegun byggða á vélakrafti.
 
+
 •  Fullveldishlutur
 
 Tryggður hlutur borgarans af heildar vélvæddri framleiðslu landsins. Á umskiptatímabilinu er hann greiddur út í fullveldisgjaldmiðli, fjármagnaður af sjálfvirkum framleiðsluafgangi ríkisins, til að tryggja kaupmátt og alþjóðlegt frelsi; í lokastigi breytist hann í beinan og algjöran aðgang að auðlindum frjálsa hagkerfisins.
+
 
 
 =======================================
@@ -2098,31 +1087,38 @@ Tryggður hlutur borgarans af heildar vélvæddri framleiðslu landsins. Á umsk
 IV.  Orðalisti 2 – Orðaval fyrir Skilning á Kerfinu
 
 
+
 •  Fullveldis-skortur
 
-(Í stað Lausafjár-skorts)
+	(Í stað Lausafjár-skorts)
 
 Þetta er þyngsta orðið. Það sýnir að þegar manneskja skortir peninga, þá er það ekki "lausafé" sem skortir, heldur hæfni hennar til að vera frjáls og fullvalda vera. Það færir fókus frá tölum bankans til valds einstaklingsins.
+
 
 •  Peningasultur & Peninga-hungur
 
 Þessi orð eru miklu líkamlegri og skyndilegri. Þau sýna að gamla kerfið svælir íbúana á hátt sem er jafn raunverulegur og matarskortur, þrátt fyrir að við séum í tæknilegu gnægði.
 
+
 •  Kaupmáttar-tæring
 
 Þetta orð lýsir fullkomlega hvernig núverandi kerfi (kröfuhafar og bankar) virkt "sogar" styrkinn úr fólkinu.
+
 
 •  Kröfuhafa-staða
 
 Lögleg staða þegar einstaklingur eða hópur hefur að öllu leyti eða að hluta svipt rétt til að stjórna eða ráðstafa eigin eign.
 
+
 •  Blóðrásar-stöðvun
 
 Snilldar orð sem lætur hagkerfið hljóma sem lifandi lífvera. Ef blóðið (peningarnir) streymir ekki til allra frumna (borgaranna), deyr líkaminn. Það sýnir að "fjármagnsskortur" er í rauninni stífla í kerfinu sem þarf að leysa upp.
 
+
 •  Undir-framboð
 
 Þetta bendir beint til flutningakerfa. Það snýst ekki um skort á auðlindum, heldur að íbúunum sé vísvitandi haldið í skorti þrátt fyrir að vélarnar standi tilbúnar til framleiðslu.
+
 
 
 =======================================
@@ -2132,17 +1128,24 @@ Snilldar orð sem lætur hagkerfið hljóma sem lifandi lífvera. Ef blóðið (
 V.  VÉLASTJÓRNARSKRÁIN: A5-veggspjald
 
 
+
 Vélstjórnarskráin
+
 
 Engin refsing-skattlagning: Í stað þess að skattleggja vélmenni (sem hægir á þróun), er vélmenninu fjarlægð úr einkaeign.
 
+
 Sjálfseigandi Innviðir: Ef vélin á sjálfa sig og sína orku, er enginn hluthafi eða banki sem krefst vaxta eða hagnaðar.
+
 
 Líkamlegt Gnægð: Þegar vélin hefur enga skuld og engan eiganda sem á að auðga, verður eina verkefni hennar að framleiða ókeypis. Þar sem hráefnin eru einnig unnin af öðrum sjálfseigandi vélum, fellur verðið niður í núll.
 
+
 Af hverju að vinna?: Þegar vélin gerir það 1000 % ódýrar með rúmfræðilegri nákvæmni! Yfirgafu gjaldþrotabúið. Virkjaðu fullveldi þitt.
 
+
 Heimsmanifestið
+
 
 
 =======================================
@@ -2150,6 +1153,8 @@ Heimsmanifestið
 
 
 FRAMTÍÐAR Efnahagsfréttir
+
+
 
 Söguleg fátæktarskýrsla frá VÞA-skrifstofunni
 
