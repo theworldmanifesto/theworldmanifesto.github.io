@@ -793,19 +793,18 @@ const tableTranslations = {
     },
 
     // --- FÄRÖISKA ---
-    'fo': {
-        title: 'Fríðarstigin: Frá skuld til fullveldis',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
-        rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
-        ]
-    }
-};
+'fo': {
+    title: 'Frælsisstigin: Frá skuld til fullveldis',
+    col1: 'Bruttotjóðarressursa<br>(Gratis dekningsgrad)',
+    col2: 'Skuldaafskriving<br>(Samkvæmt stjórnarskrárlóg)',
+    col3: 'Fullveldislutur<br>(Statlig utbetaling)',
+    rows: [
+        { gnr: '25 %<br>(Grundlevnaður, Orka & El)', debt: '25 % av øllum privatum skuldum verður strikað undir samstundis.', share: 'Fyrsta útborgunin verður virkjað. Borgarar fáa keypsmakt fyri tað, sum ikki enn er ókeypis.' },
+        { gnr: '50 %<br>(Húsnæði & Flutningur)', debt: '50 % av øllum eftirstandandi skuldum verður strikað.', share: 'Luturin økist í takt við framleiðslugetu landsins robotgarðs.' },
+        { gnr: '75 %<br>(Tækni, Virðisvørur & Útbúgving)', debt: '75 % av øllum skuldum verður strikað úr bankabókum.', share: 'Luturin verður optimaliseraður. Tarvingin fyri pengum minkar avgerandi, sum luksussfæran minkar.' },
+        { gnr: '100 %<br>(Tíðarinnar Endaliga Nógv)', debt: 'Allar skuldir og pengar eru farnar at upphætta at vera til.', share: 'Skipanin fullførd. Gjaldoyru verða óneyðugar; fullkomin ókeypis búskapur ræður.' }
+    ]
+},
 
         function getTranslation(langCode) {
             return tableTranslations[langCode] || tableTranslations['en'];
