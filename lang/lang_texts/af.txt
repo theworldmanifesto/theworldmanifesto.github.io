@@ -599,9 +599,9 @@ Die oplossing is 'n statutêre, gesinchroniseerde leer waar die finansiële bevr
 
 Deur die Vryheidsleer word virtuele getalle (skuld) direk aan fisiese realiteit (gerobotiseerde produksie) gekoppel. Die oomblik wat masjiene 'n area van die lewe oorneem en dit gratis maak vir die bevolking, word die banke van die ou sisteem gedwing om tot 'n ooreenstemmende mate terug te trek.
 
+--- START TABLE ---
 
 2.  Dinamiese Intervalle en Aanpassing
---- START TABLE ---
 
 Dit is noodsaaklik om te verstaan dat die vier hoofstadia van die Vryheidsleer (25%, 50%, 75%, en 100%) die oorkoepelende, grondwetlike mylpale van die transformasie uitmaak. In praktiese toepassing is die sisteem egter heeltemal buigsaam en dinamies.
 --- END TABLE ---
@@ -616,9 +616,9 @@ Hieronder is die grondwetlike bloudruk vir hoe skuld stap vir stap in soewereini
 
 
 Bruto Nasionale Hulpbron		Skuldafskrywing			Soewereiniteitsaandeel
+--- START TABLE ---
 (Gratis Dekkingskoers)		(Volgens Grondwetlike Wet)		(Staatsuitbetaling)
 
---- START TABLE ---
 
 25%						25% van alle private skuld		Eerste uitbetaling word
 (Basiese Kos, Energie			word onmiddellik afgeskryf.		geaktiveer. Burgers ontvang
@@ -642,9 +642,9 @@ Oorvloed)											ekonomie heers.
 
 
 
+--- START TABLE ---
 4.  Oorsig van die Vryheidsleer se Fases
 
---- START TABLE ---
 
 Fase 1: 25% GNR – Die Eerste Wegspringskoot
 

@@ -600,9 +600,9 @@ K vyvedení reformní aliance ze spárů soukromého dluhového systému je vyž
 
 Prostřednictvím Schodů svobody jsou virtuální čísla (dluhy) propojena přímo s fyzickou realitou (robotizovanou výrobou). Ve vteřině, kdy stroje převezmou oblast života a učiní ji pro obyvatelstvo bezplatnou, jsou banky starého systému nuceny ustoupit v odpovídající míře.
 
+--- START TABLE ---
 2. Dynamické intervaly a přizpůsobení
 
---- START TABLE ---
 
 Je zásadní pochopit, že čtyři hlavní fáze Schodů svobody (25 %, 50 %, 75 % a 100 %) představují zastřešující, ústavní milníky transformace. V praktickém použití je však systém zcela flexibilní a dynamický.
 --- END TABLE ---
@@ -613,9 +613,9 @@ Níže je ústavní plán, jak se dluh transformuje na suverenitu, krok za kroke
 
 3. Schody svobody: Ústavní vyřazování
 
+--- START TABLE ---
 Hrubý národní zdroj (GNR)	Odpis dluhu			Podíl na suverenitě
 (Míra bezplatného pokrytí)		(Podle ústavního práva)	(Státní výplata)
---- START TABLE ---
 
 25 %						25 % všech soukromých	První výplata je aktivována. Občané
 
@@ -639,9 +639,9 @@ a Vzdělávání)				knih.					luxusu zmenšuje.
 (Definitivní hojnost)			přestaly existovat.		zastaralými; vládne totální svobodná
 
 											ekonomika.
+--- START TABLE ---
 
 4. Přehled fází Schodů svobody
---- START TABLE ---
 
 Fáze 1: 25 % GNR – První startovní výstřel
 

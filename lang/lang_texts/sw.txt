@@ -608,9 +608,9 @@ Suluhisho ni ngazi ya kisheria, iliyosawazishwa ambapo ukombozi wa kifedha wa wa
 
 Kupitia Ngazi ya Uhuru, nambari za kidhahania (madeni) zinaunganishwa moja kwa moja na ukweli wa kimwili (uzalishaji wa roboti). Sekunde ileile mashine zinapochukua eneo la maisha na kulifanya bure kwa idadi ya watu, benki za mfumo wa zamani zinalazimishwa kurudi nyuma kwa kiwango sambamba.
 
+--- START TABLE ---
 
 2. Vipindi Vinavyobadilika na Kubadilika
---- START TABLE ---
 
 Ni muhimu kuelewa kwamba hatua nne kuu za Ngazi ya Uhuru (25%, 50%, 75%, na 100%) zinaunda hatua muhimu za kikatiba, za jumla za mageuzi. Katika matumizi ya vitendo, hata hivyo, mfumo unabadilika kabisa na wenye nguvu.
 --- END TABLE ---
@@ -625,9 +625,9 @@ Chini ni ramani ya kikatiba ya jinsi deni linavyobadilishwa kuwa ukuu, hatua kwa
 
 
 Rasilimali ya Taifa ya		Ufutaji Deni				Sehemu ya Ukuu
+--- START TABLE ---
 Jumla (Kiwango cha		(Kwa mujibu wa Sheria ya		(Malipo ya Serikali)
 Kufidia Bure)			Katiba)
---- START TABLE ---
 
 25%					Asilimia 25 ya madeni yote		Malipo ya kwanza yanaamilishwa.
 (Chakula cha Msingi,		ya kibinafsi yanafutwa mara		Wananchi wanapokea uwezo
@@ -650,9 +650,9 @@ wa Dhati)									huru kamili unatawala.
 
 
 
+--- START TABLE ---
 4. Mapitio ya Awamu za Ngazi ya Uhuru
 
---- START TABLE ---
 
 Awamu ya 1: 25% GNR – Mwanzo wa Risasi ya Kwanza
 

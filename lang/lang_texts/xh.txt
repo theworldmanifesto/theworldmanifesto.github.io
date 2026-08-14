@@ -599,9 +599,9 @@ Isisombululo kukuba kube nomthetho, il e ehambelanayo apho ukukhululwa ngezemali
 
 NgeLe yokuKhululeka, amanani abonakalayo (amatyala) adityaniswa ngqo kwinto yokwenene ebonakalayo (imveliso eyirobhothi). Kanye kanye ngomzuzu oomatshini bethatha indawo yobomi kwaye bayenze ibe simahla kubemi, iibhanki zenkqubo endala ziyanyanzelwa ukuba zihlehlele kwinqanaba elihambelanayo.
 
+--- START TABLE ---
 
 2.  Izithuba eziDynamic kunye noHlengahlengiso
---- START TABLE ---
 
 Kubalulekile ukuqonda ukuba izigaba ezine eziphambili zeLe yokuKhululeka (i-25%, i-50%, i-75%, kunye ne-100%) zakha amatye ezikhumbuzo olungiso olubanzi, lomgaqo-siseko. Ekusetyenzisweni ngokwenene, nangona kunjalo, inkqubo ibhetyebhetye ngokupheleleyo kwaye inamandla.
 --- END TABLE ---
@@ -617,9 +617,9 @@ Ngezantsi kukho iplani yomgaqo-siseko yendlela ityala eliguqulwa ngayo libe long
 
 IMveliso yeSizwe ePheleleyo	Ukucinywa kweTyala			ISabelo seLongamo
 (Izinga lokuGubungela			(NgokoMthetho				(Intlawulo kaRulumente)
-
-
 --- START TABLE ---
+
+
 simahla)					woMgaqo-siseko)
 25%						I-25% yawo onke amatyala		Intlawulo yokuqala iyavulwa.
 (Ukutya okuSisiseko,			abucala ayacinywa			Abemi bafumana amandla
@@ -646,9 +646,9 @@ obuGqibeleleyo)										uqoqosho olukhululekileyo
 
 
 												olupheleleyo.
+--- START TABLE ---
 
 4.  Uphononongo lweZigaba zeLe yokuKhululeka
---- START TABLE ---
 
 IsiGaba 1: 25% GNR – Ukudutyulwa kokuQala kokuQala
 

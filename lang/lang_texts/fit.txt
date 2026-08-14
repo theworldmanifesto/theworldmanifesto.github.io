@@ -567,9 +567,9 @@ Ratkaisu oon lakisääteiset, synkroniseeratut rappuset, missä kansalaisten fin
 
 Vapausrappusten kautta kytkethään virtuaaliset numerot (velat) suoraan fyysishään todellisuutheen (robotiseerattuun tuotanthoon). Samassa sekunnissa ko koneet ottavat haltuun jonku elämänsektorin ja tekkevät sen ilmaneksi asukhaile, pakotethaan vanhan systeemin pankit perääntymhään vastaavassa määrässä.
 
+--- START TABLE ---
 
 2. Dynamiset intervallit ja sovitus
---- START TABLE ---
 
 Oon ratkasevaa ymmärtää, ette ne neljä pääporrasta Vapausrapuissa (25 %, 50 %, 75 % ja 100 %) ovat ne ylikattavat, konstituutionaaliset milstolpit transformaatiolle. Käytännön käytössä systeemi oon sen sijaan täysin fleksibeli ja dynaminen.
 --- END TABLE ---
@@ -585,9 +585,9 @@ Alhaala seuraa se konstituutionaalinen piirustus siitä, kuinka velka muuttuu su
 
 Bruttokansallisresurssi	Velanpyyhkiminen			Suvereniteettiosuus
 (Ilmanen peittävyysaste)	(Konstituutionaalisen lain		(Valtion ulosmaksu)
-
-
 --- START TABLE ---
+
+
 					mukhaan)
 25%					25% kaikista yksityisistä		Ensimmäinen ulosmaksu
 (Peruselintarvikkeet,		veloista pyyhitään pois heti.		aktivoidhaan. Kansalaiset saavat
@@ -610,9 +610,9 @@ Yltäkylläisyys)									ilmanentalous vallitsee.
 
 
 
+--- START TABLE ---
 4. Vapausrappusten vaiheitten läpikäyminen
 
---- START TABLE ---
 
 Vaihe 1: 25 % BNR – Ensimmäinen lähtölaukaus Tämä oon reformin kaikkein kriittisin vaihe, jossa vanhan systeemin psykologinen ja ekonominen selkäranka murretaan. Ko allianssin itseomistavat robotit ovat automatiseeranneet peruselintarvikkeitten tuotannon ja jakelun sekä maan energiahuollon (sähkö ja lämpö), deklarerathaan 25 % BNR.
 

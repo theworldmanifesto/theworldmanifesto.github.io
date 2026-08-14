@@ -599,9 +599,9 @@ Rozwiązaniem jest ustawowa, zsynchronizowana drabina, w której finansowe wyzwo
 
 Poprzez Drabinę Wolności wirtualne liczby (długi) są powiązane bezpośrednio z fizyczną rzeczywistością (zrobotyzowaną produkcją). W tej samej sekundzie, gdy maszyny przejmują obszar życia i czynią go darmowym dla populacji, banki starego systemu są zmuszone do wycofania się w odpowiednim stopniu.
 
+--- START TABLE ---
 
 2.  Dynamiczne Odstępy i Adaptacja
---- START TABLE ---
 
 Kluczowe jest zrozumienie, że cztery główne etapy Drabiny Wolności (25%, 50%, 75% i 100%) stanowią nadrzędne, konstytucyjne kamienie milowe transformacji. Jednak w praktycznym zastosowaniu system jest całkowicie elastyczny i dynamiczny.
 --- END TABLE ---
@@ -617,9 +617,9 @@ Poniżej znajduje się konstytucyjny plan tego, jak dług jest przekształcany w
 
 Zasób Narodowy Brutto	Umorzenie Długu			Udział Suwerenności
 (Stopa Darmowego		(Zgodnie z Prawem			(Wypłata Państwowa)
-
-
 --- START TABLE ---
+
+
 Pokrycia)				Konstytucyjnym)
 25%					25% wszystkich prywatnych		Pierwsza wypłata jest aktywowana.
 (Podstawowa Żywność,	długów zostaje natychmiast		Obywatele otrzymują siłę
@@ -642,9 +642,9 @@ Obfitość)										wolna gospodarka.
 
 
 
+--- START TABLE ---
 4.  Przegląd Faz Drabiny Wolności
 
---- START TABLE ---
 
 Faza 1: 25% GNR – Pierwszy Strzał Startowy
 

@@ -597,9 +597,9 @@ Løsningen er en lovfestet, synkronisert trapp der borgernes finansielle frigjø
 
 Gjennom Frihetstrappen knyttes virtuelle tall (gjeld) direkte til fysisk virkelighet (robotisert produksjon). I samme sekund som maskinene tar over et livsområde og gjør det gratis for befolkningen, tvinges det gamle systemets banker til å trekke seg tilbake i tilsvarende grad.
 
+--- START TABLE ---
 
 2.  Dynamiske intervaller og tilpasning
---- START TABLE ---
 
 Det er avgjørende å forstå at de fire hovedtrinnene i Frihetstrappen (25 %, 50 %, 75 % og 100 %) utgjør de overordnede, konstitusjonelle milepælene for transformasjonen. I den praktiske anvendelsen er systemet derimot helt fleksibelt og dynamisk.
 --- END TABLE ---
@@ -614,9 +614,9 @@ Nedenfor følger den konstitusjonelle planen for hvordan gjeld forvandles til su
 
 
 Bruttonasjonalressurs	Gjeldsavskrivning			Suverenitetsandel
+--- START TABLE ---
 (Gratis dekningsgrad)		(Ifølge konstitusjonell lov)		(Statlig utbetaling)
 
---- START TABLE ---
 
 25 %					25 % av alle private			Første utbetaling aktiveres.
 (Grunnleggende mat,		gjeld slettes				Borgerne får kjøpekraft for det
@@ -633,9 +633,9 @@ varer & Utdanning)								dramatisk ettersom
 100 %				All gjeld og alle penger		Systemet fullført. Valutaer
 (Det Definitive			har opphørt å				blir overflødige; total
 --- END TABLE ---
+--- START TABLE ---
 
 Overflødet)			eksistere.					gratisøkonomi råder.
---- START TABLE ---
 4.  Gjennomgang av Frihetstrappens faser
 Fase 1: 25 % BNR – Det første startskuddet
 

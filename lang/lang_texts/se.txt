@@ -562,9 +562,9 @@ Coavddus lea láhkamearrádusalaš, sinkronerejuvvon lohpahat gos ássiid finán
 
 Friddjavuođalohpahaga bokte čatnojuvvojit virtuála logut (skulddat) njuolggo fysalaš duohtavuhtii (robotiserejuvvon buvttadeapmi). Dan sekunda go maskiinnat váldet badjelasas eallinguovllu ja dahket dan nuvttá álbmoga várás, de bággejuvvojit dološ vuogádaga páŋkkut ruovttoluotta seamma muddui.
 
+--- START TABLE ---
 
 2. Dinamihkalaš gaskaáigodagat ja heiveheapmi
---- START TABLE ---
 
 Lea mearrideaddji ipmirdit ahte Friddjavuođalohpahaga njeallje váldostuolu (25 %, 50 %, 75 % ja 100 %) leat ollislaš, konstitušuvnnalaš mihtustálut transformašuvnna várás. Geavatlaš ollašuhttimis lea vuogádat dattege ollislaččat njuolggu ja dinamihkalaš.
 --- END TABLE ---
@@ -579,9 +579,9 @@ Dás čuovvu konstitušuvnnalaš sárgosplána das movt skuldde rievdada suveren
 
 
 Bruttonationalresurs		Skulddasihkku				Suverenitehta-oassi
+--- START TABLE ---
 (Nuvttá-gokčan)			(Konstitušuvnnalaš lága mielde)	(Stáhtalaš máksu)
 
---- START TABLE ---
 
 25%					25% buot priváhta skulddain		Vuosttaš máksu aktiverejuvvo. Ássit
 (Vuođđobiepmu,			sihkkot dakkaviđe.			ožžot oastinnávcca dan várás maid
@@ -598,8 +598,8 @@ gálvvut & Oahpahus)								suorgi unnu.
 (Ollislaš Abuidvuohta)		jávkan.					šaddet dárbbameahttumin; ollislaš
 											nuvttá-ekonomiija.
 --- END TABLE ---
-
 --- START TABLE ---
+
 4. Friddjavuođalohpahaga fazaid lohkadeapmi
     Fazat 1 (25 % BNR): Dát lea reformma deháleamos fazat, gos dološ vuogádaga psikologalaš ja ekonomalaš čielgi cuvko. Go lihtu robotat leat automatiiserejuvvon buvttadeami ja juohkima, de cealkojuvvo 25 % BNR. Dakkaviđe sihkkot 25 % ássiid skulddain.
     Fazat 2 (50 % BNR): Robotiseren viidána huksen- ja girdinsuorgái. Ássan ja girdin šaddet nuvttá. Bealli ássiid skulddain sihkkot.

@@ -597,9 +597,9 @@ Solisyon i en lezel legal, sinkronize, kot liberasyon finansye sitwayen i arive 
 
 Atraver Lezel Liberte, nimero virtual (dèt) i gagn konekte direk avek reyalite fizik (prodiksyon robotize). Dan segonn kot masin i pran en domenn lavi ek fer li gratis pour popilasyon, bann bank ansyen sistenm i gagn fors recule dan proporsyon korespondan.
 
+--- START TABLE ---
 
 2.  Interval Dinamik ek Adaptasyon
---- START TABLE ---
 
 I enportan pour konpran ki kat gran etap Lezel Liberte (25%, 50%, 75% ek 100%) i konstiti bann repèr konstitisyonel jeneral transfomasyon. Dan aplikasyon pratik, sepandan, sistenm i totalman fleksib ek dinamik.
 --- END TABLE ---
@@ -614,9 +614,9 @@ Anba i plan konstitisyonel pour koman dèt i gagn transfome an sovrenete, etap p
 
 
 Resours Nasyonal Brit	Efazman Dèt				Pasyon Sovrenete
+--- START TABLE ---
 (To Kouvèti Gratis)		(Selon Lalwa Konstitisyonel)		(Peyman Leta)
 
---- START TABLE ---
 
 25 %					25% tu dèt prive				Premye peyman i gagn
 (Manze Baz, Enerzi		i gagn efase				aktive. Sitwayen i gagn
@@ -642,9 +642,9 @@ Premium & Ledikasyon)	bank.					dramatikman depi sfer
 
 											i domine.
 
+--- START TABLE ---
 
 4.  Revizyon Faz Lezel Liberte
---- START TABLE ---
 
 Faz 1: 25% RNB – Premye Kout Depars
 

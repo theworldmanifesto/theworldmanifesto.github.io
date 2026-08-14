@@ -597,9 +597,9 @@ Soluția este o scară statutară, sincronizată, în care eliberarea financiar�
 
 Prin intermediul Scării Libertății, numerele virtuale (datoriile) sunt legate direct de realitatea fizică (producția robotizată). În secunda în care mașinile preiau un domeniu al vieții și îl fac gratuit pentru populație, băncile vechiului sistem sunt forțate să se retragă într-o măsură corespunzătoare.
 
+--- START TABLE ---
 
 2.  Intervale Dinamice și Adaptare
---- START TABLE ---
 
 Este crucial să înțelegem că cele patru etape principale ale Scării Libertății (25%, 50%, 75% și 100%) constituie reperele constituționale generale ale transformării. În aplicarea practică, însă, sistemul este complet flexibil și dinamic.
 --- END TABLE ---
@@ -614,9 +614,9 @@ Mai jos este planul constituțional pentru modul în care datoria este transform
 
 
 Resursa Intern Brută			Ștergerea Datoriilor			Cota de Suveranitate
+--- START TABLE ---
 (Rata de Acoperire Gratuită)		(Conform Legii Constituționale)	(Plată de Stat)
 
---- START TABLE ---
 
 25 %						25 % din toate datoriile		Prima plată este
 (Alimente de Bază,			private sunt șterse			activată. Cetățenii
@@ -644,9 +644,9 @@ Premium & Educație)			cărțile băncilor.				dramatic pe măsură ce
 
 
 												prevalează.
+--- START TABLE ---
 
 4.  Revizuirea Fazelor Scării Libertății
---- START TABLE ---
 
 Faza 1: 25% RIB – Primul Start
 

@@ -535,9 +535,9 @@ Til að umbótabandalag geti leitt samfélag út úr greipum einkaskuldakerfisin
 Lausnin er lögbundinn, samstilltur stigi þar sem frelsun borgaranna í fjármálum á sér stað í nákvæmlega sama hraða og raunveruleg framleiðsla (verg þjóðarauðlind) stækkar.
 
 Í gegnum Frelsisstigann eru sýndar tölur (skuldir) tengdar beint við líkamlegan veruleika (vélvædda framleiðslu). Á sama sekúndu og vélarnar taka yfir lífsviðurværissvæði og gera það ókeypis fyrir íbúana, neyðast bankar hins gamla kerfis til að bakka að sama skapi.
+--- START TABLE ---
 
 2.  Sveigjanleg tímabil og aðlögun
---- START TABLE ---
 
 Það er mikilvægt að skilja að fjögur aðalskref Frelsisstigans (25 %, 50 %, 75 % og 100 %) mynda yfirgripsmiklu, stjórnarskrárlegu áfangana fyrir umbreytinguna. Í hagnýtri notkun er kerfið hins vegar algerlega sveigjanlegt og kraftmikið.
 --- END TABLE ---
@@ -549,9 +549,9 @@ Hér að neðan er stjórnarskrárteikningin fyrir hvernig skuld umbreytist í f
 3.  Frelsisstiginn: Hin stjórnarskrárbundna útfelling
 
 Verg þjóðarauðlind		Skuldaafskrifun				Fullveldishlutur
+--- START TABLE ---
 
 (Ókeypis þekjustig)		(Samkvæmt stjórnarskrárlögum)		(Útgreiðsla ríkisins)
---- START TABLE ---
 
 25 %					25 % af öllum einkaskuldum			Fyrsta greiðslan
 
@@ -581,9 +581,9 @@ lúxussviðið minnkar.
 (Hitt Endanlega			peningar hafa hætt				verða óþarfir; algert
 
 Gnægðið)				að vera til.						frjálst hagkerfi ríkir.
+--- START TABLE ---
 
 4.  Yfirferð yfir áfanga Frelsisstigans
---- START TABLE ---
 
 Áfangi 1: 25 % VÞA – Hið fyrsta rásmark
 

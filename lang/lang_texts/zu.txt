@@ -599,9 +599,9 @@ Isixazululo iladi elisemthethweni, elivumelanayo lapho ukukhululwa ngokwezimali 
 
 NgeLadi Lenkululeko, izinombolo ezibonakalayo (izikweletu) zixhunywa ngqo neqiniso elibonakalayo (ukukhiqizwa ngamarobhothi). Ngomzuzwana nje imishini ethatha indawo yokuphila futhi iyenze yamahhala kubantu, amabhange ohlelo oludala ayaphoqeleka ukuba ahlehlele ezingeni elihambisanayo.
 
+--- START TABLE ---
 
 2.  Izikhawu Eziguqukayo kanye Nokuzivumelanisa Nezimo
---- START TABLE ---
 
 Kubalulekile ukuqonda ukuthi izigaba ezine eziyinhloko zeLadi Lenkululeko (25%, 50%, 75%, no-100%) zakha izimpawu ezinkulu, ezingokomthethosisekelo zoguquko. Ekusebenzeni okungokoqobo, nokho, uhlelo luguquguquka ngokuphelele futhi lunamandla.
 --- END TABLE ---
@@ -617,9 +617,9 @@ Ngezansi ipulani yomthethosisekelo yokuthi isikweletu siguqulwa kanjani sibe wub
 
 Insiza Kazwelonke Ephelele	Ukucishwa Kwezikweletu	Isabelo Sobukhosi
 (Izinga Lokufakwa Mahhala)		(NgokoMthetho			(Inkokhelo Yombuso)
-
-
 --- START TABLE ---
+
+
 						Womthethosisekelo)
 25%						U-25% wazo zonke		Inkokhelo yokuqala iyenziwa
 (Ukudla Okuyisisekelo,		izikweletu ezizimele		isebenze. Izakhamuzi zithola amandla
@@ -644,9 +644,9 @@ NeMfundo)				ezincwadini zamabhange.	njengoba indawo yokunethezeka
 
 Okuphelele)									okhululekile ophelele.
 
+--- START TABLE ---
 
 4.  Ukubuyekezwa Kwezigaba ZeLadi Lenkululeko
---- START TABLE ---
 
 Isigaba 1: 25% GNR – Ukudutshulwa Kokuqalisa Kokuqala
 

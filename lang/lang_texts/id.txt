@@ -423,10 +423,12 @@ Untuk membimbing aliansi reformasi keluar dari cengkeraman sistem utang swasta, 
 Solusinya adalah tangga hukum yang tersinkronisasi di mana pembebasan finansial warga negara terjadi pada kecepatan yang persis sama dengan ekspansi produksi riil—Sumber Daya Nasional Bruto (GNR).
 
 Melalui Tangga Kebebasan, angka virtual (utang) dihubungkan langsung ke realitas fisik (produksi terobotisasi). Tepat saat mesin mengambil alih suatu area kehidupan dan membuatnya gratis bagi penduduk, bank dari sistem lama dipaksa untuk mundur ke tingkat yang sesuai.
+--- START TABLE ---
 
 2.  Interval Dinamis dan Adaptasi
 
 Sangat penting untuk memahami bahwa empat tahap utama Tangga Kebebasan (25%, 50%, 75%, dan 100%) merupakan tonggak konstitusional menyeluruh dari transformasi. Namun, dalam aplikasi praktis, sistem ini sepenuhnya fleksibel dan dinamis.
+--- END TABLE ---
 
 AI Kantor GNR dapat memperbarui indeks pada interval yang jauh lebih sering dari itu—misalnya, setiap bulan atau pada setiap titik persentase individual (seperti 26%, 27% GNR). Ini memberikan transisi yang lebih mulus, lebih bertahap, dan dapat diprediksi baik bagi warga negara maupun sektor keuangan. Terserah aliansi reformasi yang berkuasa untuk memilih dan menerapkan interval yang secara teknis dan praktis tepat setelah mereka mengambil alih kekuasaan.
 
@@ -460,6 +462,7 @@ Definitif)					 					           	total berlaku.
 --- END TABLE ---
 
 
+--- START TABLE ---
 
 4.  Tinjauan Fase-Fase Tangga Kebebasan
 
@@ -482,6 +485,7 @@ Ketika 75% dari total kebutuhan sumber daya masyarakat tercakup sepenuhnya tanpa
 Pada tahap ini, perusahaan swasta dan bank secara praktis telah kehilangan kemampuan mereka untuk memaksa orang bekerja. Sebagian besar warga memilih untuk hidup sepenuhnya dari penawaran gratis aliansi dan Bagian Kedaulatan mereka, memaksa perusahaan swasta terakhir untuk bangkrut atau menyerahkan lini produksi mereka kepada infrastruktur milik sendiri.
 
 Fase 4: 100% GNR – Kematian Uang dan Kedaulatan Akhir
+--- END TABLE ---
 
 Ketika Sumber Daya Nasional Bruto mencapai 100%, transformasi selesai. Robot-robot dan sistem AI yang saling terhubung sekarang memproduksi segalanya—dari biji gandum terkecil hingga barang abadi paling canggih dan cetakan artistik—dalam kelimpahan absolut.
 

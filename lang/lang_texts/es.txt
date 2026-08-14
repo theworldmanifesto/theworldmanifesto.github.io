@@ -605,10 +605,12 @@ La solución es una escalera estatutaria y sincronizada donde la liberación fin
 
 A través de la Escalera de la Libertad, los números virtuales (deudas) se vinculan directamente a la realidad física (producción robotizada). En el mismo segundo en que las máquinas se hacen cargo de un área de la vida y la hacen gratuita para la población, los bancos del viejo sistema se ven obligados a retirarse en un grado correspondiente.
 
+--- START TABLE ---
 
 2. Intervalos Dinámicos y Adaptación
 
 Es crucial entender que las cuatro etapas principales de la Escalera de la Libertad (25%, 50%, 75% y 100%) constituyen los hitos constitucionales generales de la transformación. En la aplicación práctica, sin embargo, el sistema es completamente flexible y dinámico.
+--- END TABLE ---
 
 La IA de la Oficina del RNR puede actualizar el índice en intervalos significativamente más frecuentes que eso —por ejemplo, cada mes o en cada punto porcentual individual (como 26%, 27% del RNR). Esto proporciona una transición aún más suave, gradual y predecible tanto para los ciudadanos como para el sector financiero. Corresponderá a la alianza de reforma gobernante elegir y aplicar los intervalos que sean técnica y prácticamente apropiados una vez que hayan tomado el poder.
 
@@ -641,6 +643,7 @@ Definitiva)												prevalece una economía libre.
 
 
 
+--- START TABLE ---
 4. Revisión de las Fases de la Escalera de la Libertad
 
 
@@ -666,6 +669,7 @@ En esta etapa, la empresa privada y los bancos prácticamente han perdido su cap
 
 
 Fase 4: 100% del RNR – La muerte del dinero y la soberanía final
+--- END TABLE ---
 
 Cuando el Recurso Nacional Bruto alcanza el 100%, la transformación es completa. Los robots y sus sistemas de IA interconectados ahora producen todo —desde el grano de trigo más pequeño hasta los bienes imperecederos más sofisticados y las impresiones artísticas— en absoluta abundancia.
 

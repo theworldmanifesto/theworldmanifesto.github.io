@@ -605,9 +605,9 @@ Løsningen er en lovfæstet, synkroniseret stige, hvor borgernes finansielle bef
 
 Gennem Frihedsstigen kobles virtuelle tal (gæld) direkte til fysisk virkelighed (robotiseret produktion). I samme sekund som maskinerne overtager et leveområde og gør det gratis for befolkningen, tvinges det gamle systems banker til at bakke i tilsvarende grad.
 
+--- START TABLE ---
 
 2. Dynamiske intervaller og tilpasning
---- START TABLE ---
 
 Det er afgørende at forstå, at de fire hovedtrin i Frihedsstigen (25 %, 50 %, 75 % og 100 %) udgør de overordnede, konstitutionelle milepæle for transformationen. I den praktiske anvendelse er systemet derimod fuldstændig fleksibelt og dynamisk.
 --- END TABLE ---
@@ -621,9 +621,9 @@ Nedenfor følger den konstitutionelle tegning for, hvordan gæld forvandles til 
 3. Frihedsstigen: Den konstitutionelle udfasning
 
 
+--- START TABLE ---
 Bruttonationalresurs			Gældsafskrivning			Suverænitetsandel
 (Gratis dækningsgrad)			(Ifølge konstitutionel lov)		(Statslig udbetaling)
---- START TABLE ---
 
 25 %						25 % af al privat				Første udbetaling
 (Basislevnedsmidler,			gæld slettes				aktiveres. Borgerne får
@@ -646,9 +646,9 @@ Overflod)					eksistere.					gratisøkonomi hersker.
 
 
 
+--- START TABLE ---
 4. Gennemgang af Frihedsstigens faser
 
---- START TABLE ---
 
 Fase 1: 25 % BNR – Det første startsignal
 

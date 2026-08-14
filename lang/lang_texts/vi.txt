@@ -599,9 +599,9 @@ Giải pháp là một nấc thang đồng bộ, theo luật định, nơi sự 
 
 Thông qua Nấc thang Tự do, những con số ảo (nợ) được liên kết trực tiếp với thực tại vật chất (sản xuất robot hóa). Ngay giây phút máy móc tiếp quản một lĩnh vực của cuộc sống và làm cho nó miễn phí cho người dân, các ngân hàng của hệ thống cũ buộc phải rút lui ở một mức độ tương ứng.
 
+--- START TABLE ---
 
 2. Các Khoảng Động và Sự Thích Ứng
---- START TABLE ---
 
 Điều quan trọng là phải hiểu rằng bốn giai đoạn chính của Nấc thang Tự do (25%, 50%, 75% và 100%) tạo thành các cột mốc hiến định bao trùm của sự chuyển đổi. Tuy nhiên, trong ứng dụng thực tế, hệ thống hoàn toàn linh hoạt và năng động.
 --- END TABLE ---
@@ -615,9 +615,9 @@ Dưới đây là bản thiết kế hiến định về cách nợ được chu
 3. Nấc Thang Tự Do: Sự Loại Bỏ Dần Theo Hiến Định
 
 
+--- START TABLE ---
 Tổng Tài nguyên Quốc gia		Xóa Nợ				Phần Chia Chủ Quyền
 (Tỷ lệ Bao phủ Miễn phí)		(Theo Luật Hiến pháp)		(Chi trả của Nhà nước)
---- START TABLE ---
 
 25%						25% của tất cả các khoản	Đợt chi trả đầu tiên được kích hoạt.
 (Thực phẩm Cơ bản,			nợ tư nhân được xóa		Công dân nhận được sức mua
@@ -637,9 +637,9 @@ Dứt khoát)										kinh tế tự do toàn bộ
 											chiếm ưu thế.
 --- END TABLE ---
 
+--- START TABLE ---
 
 4. Xem xét Các Giai đoạn của Nấc thang Tự do
---- START TABLE ---
 
 Giai đoạn 1: 25% GNR – Phát Súng Khai Cuộc Đầu Tiên
 

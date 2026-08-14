@@ -608,9 +608,9 @@ La soluzione è una scala legale e sincronizzata in cui la liberazione finanziar
 
 Attraverso la Scala della Libertà, i numeri virtuali (debiti) sono collegati direttamente alla realtà fisica (produzione robotizzata). Nel preciso secondo in cui le macchine prendono il controllo di un'area della vita e la rendono gratuita per la popolazione, le banche del vecchio sistema sono costrette a ritirarsi in misura corrispondente.
 
+--- START TABLE ---
 
 2. Intervalli Dinamici e Adattamento
---- START TABLE ---
 
 È cruciale capire che le quattro fasi principali della Scala della Libertà (25%, 50%, 75% e 100%) costituiscono le pietre miliari costituzionali e generali della trasformazione. Nell'applicazione pratica, tuttavia, il sistema è completamente flessibile e dinamico.
 --- END TABLE ---
@@ -625,9 +625,9 @@ Di seguito è riportato il progetto costituzionale per come il debito viene tras
 
 
 Risorsa Nazionale Lorda		Cancellazione del Debito			Quota di Sovranità
+--- START TABLE ---
 (Tasso di Copertura Gratuita)	(Secondo la Legge				(Pagamento Statale)
 						Costituzionale)
---- START TABLE ---
 
 25%						25% di tutti i debiti privati		Il primo pagamento viene
 (Cibo di Base, Energia			vengono cancellati				attivato. I cittadini ricevono
@@ -651,9 +651,9 @@ Definitiva)											un'economia totalmente libera.
 
 
 
+--- START TABLE ---
 4. Revisione delle Fasi della Scala della Libertà
 
---- START TABLE ---
 
 Fase 1: 25% GNR – Il Primo Colpo di Partenza
 

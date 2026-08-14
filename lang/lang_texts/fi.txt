@@ -597,9 +597,9 @@ Ratkaisu on laissa säädetty, synkronoitu portaikko, jossa kansalaisten taloude
 
 Vapauden Tikapuiden kautta virtuaaliset luvut (velat) kytketään suoraan fyysiseen todellisuuteen (robotoituun tuotantoon). Samassa sekunnissa kun koneet ottavat haltuunsa elämänalueen ja tekevät siitä ilmaisen väestölle, vanhan järjestelmän pankit pakotetaan perääntymään vastaavassa määrin.
 
+--- START TABLE ---
 
 2.  Dynaamiset intervallit ja mukautus
---- START TABLE ---
 
 On ratkaisevan tärkeää ymmärtää, että Vapauden Tikkaiden neljä pääaskelta (25 %, 50 %, 75 % ja 100 %) muodostavat muutoksen yleiset, perustuslailliset virstanpylväät. Käytännön sovelluksessa järjestelmä on kuitenkin täysin joustava ja dynaaminen.
 --- END TABLE ---
@@ -614,9 +614,9 @@ Alla on perustuslaillinen suunnitelma siitä, kuinka velka muunnetaan suverenite
 
 
 Bruttokansallisresurssi		Velan alaskirjaus			Suvereniteettiosuus
+--- START TABLE ---
 (Ilmainen kattavuusaste)		(Perustuslain mukaan)			(Valtion maksama)
 
---- START TABLE ---
 
 25 %						25 % kaikista yksityisistä		Ensimmäinen maksu
 (Peruselintarvikkeet,			veloista kirjataan				aktivoituu. Kansalaiset
@@ -633,9 +633,9 @@ tuotteet & Koulutus)			kirjoista.					ylellisyyssferän kutistuessa.
 100 %					Kaikki velka ja raha			Järjestelmä valmis. Valuutat
 (Lopullinen				ovat lakanneet olemasta.		muuttuvat tarpeettomiksi;
 --- END TABLE ---
+--- START TABLE ---
 
 Yltäkylläisyys)										täysi ilmaistalous vallitsee.
---- START TABLE ---
 4.  Vapauden Tikaiden Vaiheiden läpikäynti
 Vaihe 1: 25 % BKR – Ensimmäinen lähtölaukaus
 

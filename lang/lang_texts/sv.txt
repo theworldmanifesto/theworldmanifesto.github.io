@@ -597,10 +597,12 @@ Lösningen är en lagstadgad, synkroniserad trappa där medborgarnas finansiella
 
 Genom Frihetstrappan kopplas virtuella siffror (skulder) direkt till fysisk verklighet (robotiserad produktion). I samma sekund som maskinerna tar över ett levnadsområde och gör det gratis för befolkningen, tvingas det gamla systemets banker att backa i motsvarande grad.
 
+--- START TABLE ---
 
 2. Dynamiska intervaller och anpassning
 
 Det är avgörande att förstå att de fyra huvudstegen i Frihetstrappan (25 %, 50 %, 75 % och 100 %) utgör de övergripande, konstitutionella milstolparna för transformationen. I den praktiska tillämpningen är systemet däremot helt flexibelt och dynamiskt.
+--- END TABLE ---
 
 BNR-kontorets AI kan uppdatera indexet med betydligt tätare intervaller än så – till exempel varje månad eller vid varje enskild procentenhet (såsom 26 %, 27 % BNR). Detta ger en ännu mjukare, mer glidande och förutsägbar övergång för både medborgarna och finanssektorn. Det blir upp till den regerande reformalliansen att själva välja och applicera de intervaller som är tekniskt och praktiskt lämpliga när de väl har tagit makten.
 
@@ -611,8 +613,8 @@ Nedan följer den konstitutionella ritningen för hur skuld förvandlas till suv
 Frihetstrappan: Den konstitutionella utfasningen
 
 
---- START TABLE ---
 Bruttonationalresurs		Skuldavskrivning				Suveränitetsandel
+--- START TABLE ---
 (Gratis täckningsgrad)		(Enligt konstitutionell			(Statlig utbetalning)
  							lag)
 
@@ -637,6 +639,7 @@ varor & Utbildning)			bankernas böcker.				dramatiskt då lyxsfären
 
 
 
+--- START TABLE ---
 4. Genomgång av Frihetstrappans faser
 
 
@@ -662,6 +665,7 @@ Här har det privata näringslivet och bankerna i praktiken förlorat sin förm�
 
 
 Fas 4: 100 % BNR – Pengarnas död och den slutgiltiga suveräniteten
+--- END TABLE ---
 
 När Bruttonationalresursen når 100 % är transformationen fullbordad. Robotarna och deras sammankopplade AI-system producerar nu allt – från det minsta vetekorn till de mest sofistikerade evighetsvarorna och konstnärliga trycken – i absolut överflöd.
 

@@ -535,9 +535,9 @@ Fyri at eitt umbótasamgonga kann leiða samfelag út úr greipum einkaskuldaski
 Loynin er ein løgfrøðilig, samstillt stigi, har frelsi borgaranna í fíggjarmálum gerst í nágreiniliga sama ferða, sum verulig framleiðsla (BNR) stækkar.
 
 Ígjøgnum Frælsisstigarnar verða sýndar tøl (skuldir) tengdar beinleiðis við likamligan veruleika (vélmenda framleiðslu). Á sama sekundi sum vélarnar taka yvir liviverissvøði og gera tað ókeypis fyri íbúgvar, verða bankar hinnar gomlu skipanar noyddir at bakka í sama mun.
+--- START TABLE ---
 
 2.  Svígandi tíðarskeið og ástøði
---- START TABLE ---
 
 Tað er umráðandi at skilja, at teir fýra hovuðsstigarnir í Frælsisstigunum (25 %, 50 %, 75 % og 100 %) mynda ta yvirskipaðu, grundlógarligu ásteinarnar fyri umbreytingina. Í verkligari nýtslu er skipanin tó heilt svígandi og virkin.
 --- END TABLE ---
@@ -549,9 +549,9 @@ Niðanfyri er grundlógartekningin fyri, hvussu skuld umbreytist til fullveldi, 
 3.  Frælsisstigarnir: Hin grundlógarliga útfaring
 
 Bruttonationalressource	Skuldaavskriving			Fullveldislutur
+--- START TABLE ---
 
 (Ókeypis døking)		(Eftir grundlógarligum lógum)	(Útgreiðsla ríkisins)
---- START TABLE ---
 
 25 %					25 % av øllum einkaskuldum	Fyrsta greiðslan
 
@@ -581,9 +581,9 @@ luksussviðið minnkar.
 (Hitt Endaliga			pengar eru hættir			Gjaldoyrur verða óneyðug;
 
 Nógvælið)				at vera til.					fullkomið fríur búskapur ríkir.
+--- START TABLE ---
 
 4.  Gjøgnumgangur av áførum Frælsisstiganna
---- START TABLE ---
 
 Áfangi 1: 25 % BNR – Tað fyrsta rásmark
 
