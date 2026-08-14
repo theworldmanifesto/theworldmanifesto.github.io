@@ -605,25 +605,25 @@ Nedenfor følger den konstitusjonelle planen for hvordan gjeld forvandles til su
 
 
 --- START TABLE ---
-Bruttonasjonalressurs	Gjeldsavskrivning			Suverenitetsandel
-(Gratis dekningsgrad)		(Ifølge konstitusjonell lov)		(Statlig utbetaling)
+Bruttonasjonalressurs		Gjeldsavskrivning				Suverenitetsandel
+(Gratis dekningsgrad)		(Ifølge konstitusjonell lov)	(Statlig utbetaling)
 
-25 %					25 % av alle private			Første utbetaling aktiveres.
-(Grunnleggende mat,		gjeld slettes				Borgerne får kjøpekraft for det
-Energi & strøm)			umiddelbart.				som ennå ikke er gratis.
+25 %						25 % av alle private			Første utbetaling aktiveres.
+(Grunnleggende mat,			gjeld slettes					Borgerne får kjøpekraft for det
+Energi & strøm)				umiddelbart.					som ennå ikke er gratis.
 
-50 %					50 % av alle gjenværende		Andelen øker i takt med
-(Bolig & Transport)		skuldre slettes.				den nasjonale robotparkens
-											produksjonskapasitet.
+50 %						50 % av alle gjenværende		Andelen øker i takt med
+(Bolig & Transport)			skuldre slettes.				den nasjonale robotparkens
+															produksjonskapasitet.
 
-75 %					75 % av all gjeld slettes		Andelen optimaliseres.
-(Teknologi, Merverdi-		fra bankenes bøker.			Behovet for penger synker
-varer & Utdanning)								dramatisk ettersom
-											luksussfæren krymper.
+75 %						75 % av all gjeld slettes		Andelen optimaliseres.
+(Teknologi, Merverdi-		fra bankenes bøker.				Behovet for penger synker
+varer & Utdanning)											dramatisk ettersom
+															luksussfæren krymper.
 
-100 %				All gjeld og alle penger		Systemet fullført. Valutaer
-(Det Definitive			har opphørt å				blir overflødige; total
-Overflødet)			eksistere.					gratisøkonomi råder.
+100 %						All gjeld og alle penger		Systemet fullført. Valutaer
+(Det Definitive				har opphørt å					blir overflødige; total
+Overflødet)					eksistere.						gratisøkonomi råder.
 --- END TABLE ---
 
 
