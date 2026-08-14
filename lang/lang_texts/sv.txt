@@ -605,25 +605,25 @@ Alla on perustuslaillinen suunnitelma siitä, kuinka velka muunnetaan suverenite
 
 
 --- START TABLE ---
-Bruttokansallisresurssi		Velan alaskirjaus			Suvereniteettiosuus
+Bruttokansallisresurssi			Velan alaskirjaus			Suvereniteettiosuus
 (Ilmainen kattavuusaste)		(Perustuslain mukaan)			(Valtion maksama)
 
-25 %						25 % kaikista yksityisistä		Ensimmäinen maksu
+25 %							25 % kaikista yksityisistä		Ensimmäinen maksu
 (Peruselintarvikkeet,			veloista kirjataan				aktivoituu. Kansalaiset
-Energia & Sähkö)			välittömästi alas.				saavat ostovoimaa sille,
-												mikä ei ole vielä ilmaista.
+Energia & Sähkö)				välittömästi alas.				saavat ostovoimaa sille,
+																mikä ei ole vielä ilmaista.
 
-50 %						50 % kaikista jäljellä			Osuus kasvaa kansallisen
-(Asuminen & Liikenne)		olevista veloista				robottipuiston tuotanto-
-						kirjataan alas.				kapasiteetin tahdissa.
+50 %							50 % kaikista jäljellä			Osuus kasvaa kansallisen
+(Asuminen & Liikenne)			olevista veloista				robottipuiston tuotanto-
+								kirjataan alas.					kapasiteetin tahdissa.
 
-75 %						75 % kaikista veloista			Osuus optimoidaan. Rahan
-(Teknologia, Lisäarvo-			kirjataan alas pankkien		tarve laskee dramaattisesti
-tuotteet & Koulutus)			kirjoista.					ylellisyyssferän kutistuessa.
+75 %							75 % kaikista veloista			Osuus optimoidaan. Rahan
+(Teknologia, Lisäarvo-			kirjataan alas pankkien			tarve laskee dramaattisesti
+tuotteet & Koulutus)			kirjoista.						ylellisyyssferän kutistuessa.
 
-100 %					Kaikki velka ja raha			Järjestelmä valmis. Valuutat
-(Lopullinen				ovat lakanneet olemasta.		muuttuvat tarpeettomiksi;
-Yltäkylläisyys)										täysi ilmaistalous vallitsee.
+100 %							Kaikki velka ja raha			Järjestelmä valmis. Valuutat
+(Lopullinen						ovat lakanneet olemasta.		muuttuvat tarpeettomiksi;
+Yltäkylläisyys)													täysi ilmaistalous vallitsee.
 --- END TABLE ---
 
 
