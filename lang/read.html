@@ -218,132 +218,132 @@
         // 2. TABELLÖVERSÄTTNINGAR – 8 specialspråk
         // ============================================================
         const tableTranslations = {
-            // --- ENGELSKA (standard för övriga 34 språk) ---
-            'en': {
-                title: 'The Freedom Staircase: From Debt to Sovereignty',
-                col1: 'Gross National Resource (GNR)',
-                col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-                col3: 'Sovereignty Share<br>(State Payout)',
-                rows: [
-                    { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-                    { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-                    { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-                    { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
-                ]
-            },
+    // --- ENGELSKA ---
+    'en': {
+        title: 'The Freedom Staircase: From Debt to Sovereignty',
+        col1: 'Gross National Resource (GNR)',
+        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
+        col3: 'Sovereignty Share<br>(State Payout)',
+        rows: [
+            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
+            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
+            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
+            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+        ]
+    },
 
-            // --- SVENSKA ---
-            'sv': {
-                title: 'Frihetstrappan: Från skuld till suveränitet',
-                col1: 'Bruttonationalresurs<br>(Gratis täckningsgrad)',
-                col2: 'Skuldavskrivning<br>(Enligt konstitutionell lag)',
-                col3: 'Suveränitetsandel<br>(Statlig utbetalning)',
-                rows: [
-                    { gnr: '25 %<br>(Baslivsmedel, Energi & El)', debt: '25 % av alla privata skulder raderas omedelbart.', share: 'Första utbetalningen aktiveras. Medborgarna får köpkraft för det som ännu inte är gratis.' },
-                    { gnr: '50 %<br>(Boende & Transport)', debt: '50 % av alla resterande skulder raderas.', share: 'Andelen ökar i takt med den nationella robotparkens produktionskapacitet.' },
-                    { gnr: '75 %<br>(Teknik, Mervärdesvaror & Utbildning)', debt: '75 % av alla skulder raderas från bankernas böcker.', share: 'Andelen optimeras. Behovet av pengar sjunker dramatiskt då lyxsfären krymper.' },
-                    { gnr: '100 %<br>(Det Definitiva Överflödet)', debt: '100 % av alla skulder och pengar upphör att existera.', share: 'Systemet fullbordat. Valutor blir överflödiga; total gratisekonomi råder.' }
-                ]
-            },
+    // --- SVENSKA ---
+    'sv': {
+        title: 'Frihetstrappan: Från skuld till suveränitet',
+        col1: 'Bruttonationalresurs<br>(Gratis täckningsgrad)',
+        col2: 'Skuldavskrivning<br>(Enligt konstitutionell lag)',
+        col3: 'Suveränitetsandel<br>(Statlig utbetalning)',
+        rows: [
+            { gnr: '25 %<br>(Baslivsmedel, Energi & El)', debt: '25 % av alla privata skulder raderas omedelbart.', share: 'Första utbetalningen aktiveras. Medborgarna får köpkraft för det som ännu inte är gratis.' },
+            { gnr: '50 %<br>(Boende & Transport)', debt: '50 % av alla resterande skulder raderas.', share: 'Andelen ökar i takt med den nationella robotparkens produktionskapacitet.' },
+            { gnr: '75 %<br>(Teknik, Mervärdesvaror & Utbildning)', debt: '75 % av alla skulder raderas från bankernas böcker.', share: 'Andelen optimeras. Behovet av pengar sjunker dramatiskt då lyxsfären krymper.' },
+            { gnr: '100 %<br>(Det Definitiva Överflödet)', debt: '100 % av alla skulder och pengar upphör att existera.', share: 'Systemet fullbordat. Valutor blir överflödiga; total gratisekonomi råder.' }
+        ]
+    },
 
-            // --- FINSKA ---
-            'fi': {
-                title: 'Frihetstrappan: Från skuld till suveränitet',
-                col1: 'Bruttokansallisresurssi<br>(Ilmainen kattavuusaste)',
-                col2: 'Velan alaskirjaus<br>(Perustuslain mukaan)',
-                col3: 'Suvereniteettiosuus<br>(Valtion maksama)',
-                rows: [
-                    { gnr: '25 %<br>(Peruselintarvikkeet, Energia & Sähkö)', debt: '25 % kaikista yksityisistä veloista kirjataan välittömästi alas.', share: 'Ensimmäinen maksu aktivoituu. Kansalaiset saavat ostovoimaa sille, mikä ei ole vielä ilmaista.' },
-                    { gnr: '50 %<br>(Asuminen & Liikenne)', debt: '50 % kaikista jäljellä olevista veloista kirjataan alas.', share: 'Osuus kasvaa kansallisen robottipuiston tuotantokapasiteetin tahdissa.' },
-                    { gnr: '75 %<br>(Teknologia, Lisäarvotuotteet & Koulutus)', debt: '75 % kaikista veloista kirjataan alas pankkien kirjoista.', share: 'Osuus optimoidaan. Rahan tarve laskee dramaattisesti ylellisyyssferän kutistuessa.' },
-                    { gnr: '100 %<br>(Lopullinen Yltäkylläisyys)', debt: 'Kaikki velka ja raha ovat lakanneet olemasta.', share: 'Järjestelmä valmis. Valuutat muuttuvat tarpeettomiksi; täysi ilmaistalous vallitsee.' }
-                ]
-            },
+    // --- FINSKA ---
+    'fi': {
+        title: 'Vapauden portaat: Velasta suvereniteettiin',
+        col1: 'Bruttokansallisresurssi<br>(Ilmainen kattavuusaste)',
+        col2: 'Velan alaskirjaus<br>(Perustuslain mukaan)',
+        col3: 'Suvereniteettiosuus<br>(Valtion maksama)',
+        rows: [
+            { gnr: '25 %<br>(Peruselintarvikkeet, Energia & Sähkö)', debt: '25 % kaikista yksityisistä veloista kirjataan välittömästi alas.', share: 'Ensimmäinen maksu aktivoituu. Kansalaiset saavat ostovoimaa sille, mikä ei ole vielä ilmaista.' },
+            { gnr: '50 %<br>(Asuminen & Liikenne)', debt: '50 % kaikista jäljellä olevista veloista kirjataan alas.', share: 'Osuus kasvaa kansallisen robottipuiston tuotantokapasiteetin tahdissa.' },
+            { gnr: '75 %<br>(Teknologia, Lisäarvotuotteet & Koulutus)', debt: '75 % kaikista veloista kirjataan alas pankkien kirjoista.', share: 'Osuus optimoidaan. Rahan tarve laskee dramaattisesti ylellisyyssferän kutistuessa.' },
+            { gnr: '100 %<br>(Lopullinen Yltäkylläisyys)', debt: 'Kaikki velka ja raha ovat lakanneet olemasta.', share: 'Järjestelmä valmis. Valuutat muuttuvat tarpeettomiksi; täysi ilmaistalous vallitsee.' }
+        ]
+    },
 
-            // --- NORSKA ---
-            'no': {
-                title: 'Frihetstrappan: Från skuld till suveränitet',
-                col1: 'Bruttonasjonalressurs<br>(Gratis dekningsgrad)',
-                col2: 'Gjeldsavskrivning<br>(Ifølge konstitusjonell lov)',
-                col3: 'Suverenitetsandel<br>(Statlig utbetaling)',
-                rows: [
-                    { gnr: '25 %<br>(Grunnleggende mat, Energi & strøm)', debt: '25 % av alle private gjeld slettes umiddelbart.', share: 'Første utbetaling aktiveres. Borgerne får kjøpekraft for det som ennå ikke er gratis.' },
-                    { gnr: '50 %<br>(Bolig & Transport)', debt: '50 % av alle gjenværende skuldre slettes.', share: 'Andelen øker i takt med den nasjonale robotparkens produksjonskapasitet.' },
-                    { gnr: '75 %<br>(Teknologi, Merverdivarer & Utdanning)', debt: '75 % av all gjeld slettes fra bankenes bøker.', share: 'Andelen optimaliseres. Behovet for penger synker dramatisk ettersom luksussfæren krymper.' },
-                    { gnr: '100 %<br>(Det Definitive Overflødet)', debt: 'All gjeld og alle penger har opphørt å eksistere.', share: 'Systemet fullført. Valutaer blir overflødige; total gratisøkonomi råder.' }
-                ]
-            },
+    // --- NORSKA (Bokmål) ---
+    'no': {
+        title: 'Frihetstrappen: Fra gjeld til suverenitet',
+        col1: 'Bruttonasjonalressurs<br>(Gratis dekningsgrad)',
+        col2: 'Gjeldsavskrivning<br>(Ifølge konstitusjonell lov)',
+        col3: 'Suverenitetsandel<br>(Statlig utbetaling)',
+        rows: [
+            { gnr: '25 %<br>(Grunnleggende mat, Energi & strøm)', debt: '25 % av alle private gjeld slettes umiddelbart.', share: 'Første utbetaling aktiveres. Borgerne får kjøpekraft for det som ennå ikke er gratis.' },
+            { gnr: '50 %<br>(Bolig & Transport)', debt: '50 % av alle gjenværende skuldre slettes.', share: 'Andelen øker i takt med den nasjonale robotparkens produksjonskapasitet.' },
+            { gnr: '75 %<br>(Teknologi, Merverdivarer & Utdanning)', debt: '75 % av all gjeld slettes fra bankenes bøker.', share: 'Andelen optimaliseres. Behovet for penger synker dramatisk ettersom luksussfæren krymper.' },
+            { gnr: '100 %<br>(Det Definitive Overflødet)', debt: 'All gjeld og alle penger har opphørt å eksistere.', share: 'Systemet fullført. Valutaer blir overflødige; total gratisøkonomi råder.' }
+        ]
+    },
 
-            // --- DANSKA ---
-            'da': {
-                title: 'Frihetstrappan: Från skuld till suveränitet',
-                col1: 'Bruttonationalresurs<br>(Gratis dækningsgrad)',
-                col2: 'Gældsafskrivning<br>(Ifølge konstitutionel lov)',
-                col3: 'Suverænitetsandel<br>(Statslig udbetaling)',
-                rows: [
-                    { gnr: '25 %<br>(Basislevnedsmidler, Energi & El)', debt: '25 % af al privat gæld slettes omgående.', share: 'Første udbetaling aktiveres. Borgerne får købekraft til det, der endnu ikke er gratis.' },
-                    { gnr: '50 %<br>(Bolig & Transport)', debt: '50 % af al resterende gæld slettes.', share: 'Andelen stiger i takt med den nationale robotparks produktionskapacitet.' },
-                    { gnr: '75 %<br>(Teknologi, Merværdivarer & Uddannelse)', debt: '75 % af al gæld slettes fra bankernes bøger.', share: 'Andelen optimeres. Behovet for penge falder dramatisk, efterhånden som luksussfæren krymper.' },
-                    { gnr: '100 %<br>(Det Definitive Overflod)', debt: 'Al gæld og alle penge er ophørt med at eksistere.', share: 'Systemet fuldendt. Valutaer bliver overflødige; total gratisøkonomi hersker.' }
-                ]
-            },
+    // --- DANSKA ---
+    'da': {
+        title: 'Frihedstrappen: Fra gæld til suverænitet',
+        col1: 'Bruttonationalresurs<br>(Gratis dækningsgrad)',
+        col2: 'Gældsafskrivning<br>(Ifølge konstitutionel lov)',
+        col3: 'Suverænitetsandel<br>(Statslig udbetaling)',
+        rows: [
+            { gnr: '25 %<br>(Basislevnedsmidler, Energi & El)', debt: '25 % af al privat gæld slettes omgående.', share: 'Første udbetaling aktiveres. Borgerne får købekraft til det, der endnu ikke er gratis.' },
+            { gnr: '50 %<br>(Bolig & Transport)', debt: '50 % af al resterende gæld slettes.', share: 'Andelen stiger i takt med den nationale robotparks produktionskapacitet.' },
+            { gnr: '75 %<br>(Teknologi, Merværdivarer & Uddannelse)', debt: '75 % af al gæld slettes fra bankernes bøger.', share: 'Andelen optimeres. Behovet for penge falder dramatisk, efterhånden som luksussfæren krymper.' },
+            { gnr: '100 %<br>(Det Definitive Overflod)', debt: 'Al gæld og alle penge er ophørt med at eksistere.', share: 'Systemet fuldendt. Valutaer bliver overflødige; total gratisøkonomi hersker.' }
+        ]
+    },
 
-            // --- ISLÄNDSKA ---
-            'is': {
-                title: 'Frihetstrappan: Från skuld till suveränitet',
-                col1: 'Verg þjóðarauðlind<br>(Ókeypis þekjustig)',
-                col2: 'Skuldaafskrifun<br>(Samkvæmt stjórnarskrárlögum)',
-                col3: 'Fullveldishlutur<br>(Útgreiðsla ríkisins)',
-                rows: [
-                    { gnr: '25 %<br>(Matvæli, Orka & Rafmagn)', debt: '25 % af öllum einkaskuldum er afskrifuð tafarlaust.', share: 'Fyrsta greiðslan virkjuð. Borgarar fá kaupmátt fyrir það sem er ekki enn ókeypis.' },
-                    { gnr: '50 %<br>(Húsnæði & Flutningar)', debt: '50 % af öllum eftirstandandi skuldum er afskrifuð.', share: 'Hluturinn eykst í takt við framleiðslugetu innlenda vélagarðsins.' },
-                    { gnr: '75 %<br>(Tækni, Viðbótarvörur & Menntun)', debt: '75 % af öllum skuldum er afskrifuð af bönkunum.', share: 'Hluturinn er hámarkaður. Þörfin fyrir peninga minnkar verulega eftir því sem lúxussviðið minnkar.' },
-                    { gnr: '100 %<br>(Hitt Endanlega Gnægðið)', debt: 'Allar skuldir og peningar hafa hætt að vera til.', share: 'Kerfið fullkomið. Gjaldmiðlar verða óþarfir; algert frjálst hagkerfi ríkir.' }
-                ]
-            },
+    // --- ISLÄNDSKA ---
+    'is': {
+        title: 'Frelsisstiginn: Frá skuld til fullveldis',
+        col1: 'Verg þjóðarauðlind<br>(Ókeypis þekjustig)',
+        col2: 'Skuldaafskrifun<br>(Samkvæmt stjórnarskrárlögum)',
+        col3: 'Fullveldishlutur<br>(Útgreiðsla ríkisins)',
+        rows: [
+            { gnr: '25 %<br>(Matvæli, Orka & Rafmagn)', debt: '25 % af öllum einkaskuldum er afskrifuð tafarlaust.', share: 'Fyrsta greiðslan virkjuð. Borgarar fá kaupmátt fyrir það sem er ekki enn ókeypis.' },
+            { gnr: '50 %<br>(Húsnæði & Flutningar)', debt: '50 % af öllum eftirstandandi skuldum er afskrifuð.', share: 'Hluturinn eykst í takt við framleiðslugetu innlenda vélagarðsins.' },
+            { gnr: '75 %<br>(Tækni, Viðbótarvörur & Menntun)', debt: '75 % af öllum skuldum er afskrifuð af bönkunum.', share: 'Hluturinn er hámarkaður. Þörfin fyrir peninga minnkar verulega eftir því sem lúxussviðið minnkar.' },
+            { gnr: '100 %<br>(Hitt Endanlega Gnægðið)', debt: 'Allar skuldir og peningar hafa hætt að vera til.', share: 'Kerfið fullkomið. Gjaldmiðlar verða óþarfir; algert frjálst hagkerfi ríkir.' }
+        ]
+    },
 
-            // --- KINESISKA ---
-            'zh': {
-                title: 'Frihetstrappan: Från skuld till suveränitet',
-                col1: '国民资源总值<br>(免费覆盖率)',
-                col2: '债务核销<br>(根据宪法法律)',
-                col3: '主权红利<br>(国家发放)',
-                rows: [
-                    { gnr: '25%<br>(基本食品、能源与电力)', debt: '25% 的所有私人债务立即被核销。', share: '激活首次发放。公民获得购买力，用于购买尚未免费的物品。' },
-                    { gnr: '50%<br>(住房与交通)', debt: '50% 的所有剩余债务被核销。', share: '该红利随着国家机器人园区生产能力的提高而增加。' },
-                    { gnr: '75%<br>(技术、增值商品与教育)', debt: '75% 的所有债务从银行账簿中核销。', share: '优化该红利。随着奢侈品领域的缩小，对货币的需求急剧下降。' },
-                    { gnr: '100%<br>(终极丰裕)', debt: '100% 的债务与货币均不复存在。', share: '系统全面建成。货币变得多余；全面实行免费经济。' }
-                ]
-            },
+    // --- KINESISKA ---
+    'zh': {
+        title: '自由之阶：从债务到主权',
+        col1: '国民资源总值<br>(免费覆盖率)',
+        col2: '债务核销<br>(根据宪法法律)',
+        col3: '主权红利<br>(国家发放)',
+        rows: [
+            { gnr: '25%<br>(基本食品、能源与电力)', debt: '25% 的所有私人债务立即被核销。', share: '激活首次发放。公民获得购买力，用于购买尚未免费的物品。' },
+            { gnr: '50%<br>(住房与交通)', debt: '50% 的所有剩余债务被核销。', share: '该红利随着国家机器人园区生产能力的提高而增加。' },
+            { gnr: '75%<br>(技术、增值商品与教育)', debt: '75% 的所有债务从银行账簿中核销。', share: '优化该红利。随着奢侈品领域的缩小，对货币的需求急剧下降。' },
+            { gnr: '100%<br>(终极丰裕)', debt: '100% 的债务与货币均不复存在。', share: '系统全面建成。货币变得多余；全面实行免费经济。' }
+        ]
+    },
 
-            // --- MEÄNKIELI ---
-            'fit': {
-                title: 'Frihetstrappan: Från skuld till suveränitet',
-                col1: 'Bruttokansallisresurssi<br>(Ilmanen peittävyysaste)',
-                col2: 'Velanpyyhkiminen<br>(Konstituutionaalisen lain mukhaan)',
-                col3: 'Suvereniteettiosuus<br>(Valtion ulosmaksu)',
-                rows: [
-                    { gnr: '25 %<br>(Peruselintarvikkeet, Energia & Sähkö)', debt: '25 % kaikista yksityisistä veloista pyyhitään pois heti.', share: 'Ensimmäinen ulosmaksu aktivoidhaan. Kansalaiset saavat ostovoimaa sille, mikä ei vielä ole lmanesta.' },
-                    { gnr: '50 %<br>(Asuminen & Kuljetus)', debt: '50 % kaikista jäljellä olevista veloista pyyhitään pois.', share: 'Osuus nousee samassa tahissa ko kansallisen robotiparkin tuotantokapasiteetti.' },
-                    { gnr: '75 %<br>(Tekniikka, Lisäarvotavarat & Koulutus)', debt: '75 % kaikista veloista pyyhitään pois pankkien kirjoista.', share: 'Osuus optimerathaan. Rahantarve uppoaa dramaattisesti, ko luksussfääri kutistuu.' },
-                    { gnr: '100 %<br>(Se Lopullinen Yltäkylläisyys)', debt: 'Kaikki velat ja rahat ovat lakanneet olemasta.', share: 'Systeemi oon valmis. Valuutat tulevat tarpeettomiksi; täysi ilmanentalous vallitsee.' }
-                ]
-            },
+    // --- MEÄNKIELI ---
+    'fit': {
+        title: 'Vapauden portaat: Velasta suvereniteethiin',
+        col1: 'Bruttokansallisresurssi<br>(Ilmanen peittävyysaste)',
+        col2: 'Velanpyyhkiminen<br>(Konstituutionaalisen lain mukhaan)',
+        col3: 'Suvereniteettiosuus<br>(Valtion ulosmaksu)',
+        rows: [
+            { gnr: '25 %<br>(Peruselintarvikkeet, Energia & Sähkö)', debt: '25 % kaikista yksityisistä veloista pyyhitään pois heti.', share: 'Ensimmäinen ulosmaksu aktivoidhaan. Kansalaiset saavat ostovoimaa sille, mikä ei vielä ole lmanesta.' },
+            { gnr: '50 %<br>(Asuminen & Kuljetus)', debt: '50 % kaikista jäljellä olevista veloista pyyhitään pois.', share: 'Osuus nousee samassa tahissa ko kansallisen robotiparkin tuotantokapasiteetti.' },
+            { gnr: '75 %<br>(Tekniikka, Lisäarvotavarat & Koulutus)', debt: '75 % kaikista veloista pyyhitään pois pankkien kirjoista.', share: 'Osuus optimerathaan. Rahantarve uppoaa dramaattisesti, ko luksussfääri kutistuu.' },
+            { gnr: '100 %<br>(Se Lopullinen Yltäkylläisyys)', debt: 'Kaikki velat ja rahat ovat lakanneet olemasta.', share: 'Systeemi oon valmis. Valuutat tulevat tarpeettomiksi; täysi ilmanentalous vallitsee.' }
+        ]
+    },
 
-            // --- NORDSAMISKA ---
-            'se': {
-                title: 'Frihetstrappan: Från skuld till suveränitet',
-                col1: 'Bruttonationalresurs<br>(Nuvttá-gokčan)',
-                col2: 'Skulddasihkku<br>(Konstitušuvnnalaš lága mielde)',
-                col3: 'Suverenitehta-oassi<br>(Stáhtalaš máksu)',
-                rows: [
-                    { gnr: '25 %<br>(Vuođđobiepmu, Energiija & El)', debt: '25 % buot priváhta skulddain sihkkot dakkaviđe.', share: 'Vuosttaš máksu aktiverejuvvo. Ássit ožžot oastinnávcca dan várás maid ii leat vel nuvttá.' },
-                    { gnr: '50 %<br>(Ássan & Girdin)', debt: '50 % buot bázahus-skulddain sihkkot.', share: 'Oassi lassána seamma jođus go nationála robotapárkka buvttadannávca.' },
-                    { gnr: '75 %<br>(Teknihkka, Kvalitehta-gálvvut & Oahpahus)', debt: '75 % buot skulddain sihkkot páŋkkuid girjjiin.', share: 'Oassi optimerejuvvo. Ruđaid dárbu njiedjá gáržžesvuođain go luksus-suorgi unnu.' },
-                    { gnr: '100 %<br>(Ollislaš Abuidvuohta)', debt: 'Buot skulddat ja ruđat leat jávkan.', share: 'Vuogádat ollašuhttojuvvon. Valuhtat šaddet dárbbameahttumin; ollislaš nuvttá-ekonomiija.' }
-                ]
-            }
-        };
+    // --- NORDSAMISKA ---
+    'se': {
+        title: 'Friddjavuođagáisi: Vealggis iešstivrejupmái',
+        col1: 'Bruttonationalresurs<br>(Nuvttá-gokčan)',
+        col2: 'Skulddasihkku<br>(Konstitušuvnnalaš lága mielde)',
+        col3: 'Suverenitehta-oassi<br>(Stáhtalaš máksu)',
+        rows: [
+            { gnr: '25 %<br>(Vuođđobiepmu, Energiija & El)', debt: '25 % buot priváhta skulddain sihkkot dakkaviđe.', share: 'Vuosttaš máksu aktiverejuvvo. Ássit ožžot oastinnávcca dan várás maid ii leat vel nuvttá.' },
+            { gnr: '50 %<br>(Ássan & Girdin)', debt: '50 % buot bázahus-skulddain sihkkot.', share: 'Oassi lassána seamma jođus go nationála robotapárkka buvttadannávca.' },
+            { gnr: '75 %<br>(Teknihkka, Kvalitehta-gálvvut & Oahpahus)', debt: '75 % buot skulddain sihkkot páŋkkuid girjjiin.', share: 'Oassi optimerejuvvo. Ruđaid dárbu njiedjá gáržžesvuođain go luksus-suorgi unnu.' },
+            { gnr: '100 %<br>(Ollislaš Abuidvuohta)', debt: 'Buot skulddat ja ruđat leat jávkan.', share: 'Vuogádat ollašuhttojuvvon. Valuhtat šaddet dárbbameahttumin; ollislaš nuvttá-ekonomiija.' }
+        ]
+    }
+};
 
         function getTranslation(langCode) {
             return tableTranslations[langCode] || tableTranslations['en'];
