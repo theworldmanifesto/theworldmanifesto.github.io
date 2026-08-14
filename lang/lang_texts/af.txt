@@ -617,6 +617,7 @@ Hieronder is die grondwetlike bloudruk vir hoe skuld in soewereiniteit omskep wo
 3. Die Vryheidstrap: Die Grondwetlike Uitfasering
 
 
+--- START TABLE ---
 Bruto Nasionale Hulpbron		Skuldafskrywing					Soewereiniteitsaandeel
 (Gratis Dekkingskoers)		(Volgens Grondwetlike Reg)			(Staatsuitbetaling)
 
@@ -640,6 +641,7 @@ Onderwys)					banke se boeke geskryf.			geoptimaliseer. Die
  						te bestaan.					Geldeenhede word
  						 							verouderd; 'n totale vrye
  						 							ekonomie heers.
+--- END TABLE ---
 
 
 4. Oorsig van die Vryheidstrap se Fases
