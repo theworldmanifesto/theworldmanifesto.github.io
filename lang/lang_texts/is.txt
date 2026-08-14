@@ -611,16 +611,16 @@ Verg þjóðarauðlind		Skuldaafskrifun					Fullveldishlutur
 25 %					25 % af öllum einkaskuldum		Fyrsta greiðslan
 (Matvæli, Orka			er afskrifuð					virkjuð. Borgarar fá
 & Rafmagn)				tafarlaust.						kaupmátt fyrir það sem
-														er ekki enn ókeypis.
+ 						 								er ekki enn ókeypis.
 
 50 %					50 % af öllum eftirstandandi	Hluturinn eykst í takt
 (Húsnæði & Flutningar)	skuldum er afskrifuð.			við framleiðslugetu
-														innlenda vélagarðsins.
+ 						 								innlenda vélagarðsins.
 
 75 %					75 % af öllum skuldum			Hluturinn er hámarkaður.
 (Tækni, Viðbótar-		er afskrifuð af					Þörfin fyrir peninga minnkar
 vörur & Menntun)		bönkunum.						verulega eftir því sem
-														lúxussviðið minnkar.
+ 						 								lúxussviðið minnkar.
 
 100 %					Allar skuldir og				Kerfið fullkomið. Gjaldmiðlar
 (Hitt Endanlega			peningar hafa hætt				verða óþarfir; algert
