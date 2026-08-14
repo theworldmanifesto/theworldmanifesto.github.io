@@ -599,12 +599,1362 @@ Isisombululo kukuba kube nomthetho, il e ehambelanayo apho ukukhululwa ngezemali
 
 NgeLe yokuKhululeka, amanani abonakalayo (amatyala) adityaniswa ngqo kwinto yokwenene ebonakalayo (imveliso eyirobhothi). Kanye kanye ngomzuzu oomatshini bethatha indawo yobomi kwaye bayenze ibe simahla kubemi, iibhanki zenkqubo endala ziyanyanzelwa ukuba zihlehlele kwinqanaba elihambelanayo.
 
+
+
+
+
+
+
+
+Ukuphunyezwa kuxhomekeke kwiziseko ezibini:
+
+
+1.  Ubuchwepheshe obuSakhulayo
+
+Amalungu ngamanye—iimodeli ze-AI eziphambili, ushicilelo lwesinyithi lwe-3D, kunye neefektri ezizisebenzelayo—sele zikhona zisasazeke kwihlabathi liphela. Umatshini sele unamandla okwakha iinxalenye zomatshini. Okungekhoyo ayisiyiyo ubuchwepheshe, kodwa yintando esembindini, engenatyala yokuvala iluphu.
+
+
+2.  Intsebenziswano yePlanethi
+
+Kulapho ukudityaniswa nemimandla yeentaba ezitshisayo kuye kubaluleke ngokupheleleyo. Oku ayisiyiyo intengiselwano yezemali, kodwa yintsebenziswano yobuchwepheshe kunye nejografi. Imimandla esemantla inikela ngophando kunye nobuchwepheshe obuphezulu obukhoyo, ngelixa uMzantsi Melika unikela ngommandla, amandla elanga angaguqukiyo, kunye nemathiriyeli ekrwada ukuvavanya, ukusasaza, nokwandisa iinkqubo zokuzenza ngokwazo phantsi kweemeko ezifanelekileyo zobushushu.
+
+UManyano kufuneka lusungule kwaye lubeke phambili le projekthi njengenyathelo lalo lokuqala lomgaqo-siseko. Enye indlela endaweni yobukhulumentu obuwayo namhlanje kunye nomsebenzi onyanzelekileyo ongenantsingiselo ayisiyiyo isiphithiphithi—enye indlela yile projekthi ejolileyo neyehlabathi jikelele yokuvala iluphu ezimeleyo kwaye oomatshini bathwale umthwalo wemveliso kube kanye.
+
+
+
+=======================================
+
+
+
+C.   ULongamo loBulumko bukaRhulumente
+
+
+
+Ukukhusela uxolo nozinzo loluntu kwihlabathi elinoorobhothi ngokupheleleyo, ingqalasizinda yobukrelekrele elawula urhulumente kufuneka ihlale iphantsi kolawulo lukarhulumente olungasikelwanga mda.
+
+
+1.  Ubunini bukaRhulumente obuKhethekileyo
+
+Ubukrelekrele bokwenziwa obulawula izibonelelo zesizwe, ezokuthuthwa kwezinto, kunye nomthamo wemveliso yenza umgogodla wesizwe. Lonke uphuhliso, isiseko sekhowudi, kunye nokwenziwa kwemodeli yobu krelekrele kuya kwenzeka phantsi kolawulo lukarhulumente. Abadlali babucala abavumelekanga ukuphuhlisa okanye ukuhlanganisa iinkqubo zolawulo ezikhuphisanayo kwingqalasizinda yesizwe. Oku kukuthintela iinjongo zengeniso okanye i-algorithms engacacanga ukuba yonakalise ingqiqo yenkqubo.
+
+
+2.  UMlawuli onengqiqo
+
+I-AI iya kusebenza njengomlawuli ongenakonakala. Ayiyomntu ngamnye oyongameleyo, kodwa iyinxalenye yepropati eqhelekileyo yepaki yoomatshini. Injongo yayo kukwandisa intlalontle yabemi, ukwabiwa kwezibonelelo, kunye nokuzinza, ngaphandle kwempembelelo yezopolitiko okanye yorhwebo.
+
+
+3.  Elubala noLawulo
+
+Urhulumente uqinisekisa ukuba iimodeli zemathematika zenkqubo kunye neziseko zokuthatha izigqibo ziyafumaneka ukuba zihlolwe kwilizwe lonke. Akukho sigqibo sibalulekileyo ebukumkanini sinokwenziwa "yibhokisi emnyama" engenakuchazwa ngokwesiseko semigaqo esisiseko yomgaqo-siseko. Urhulumente uphuhlisa, ungumnini, kwaye ulawula le AI-inkulu njengenxalenye yezinto eziluncedo kuluntu, njengomqinisekisi wokuba uluntu aluphinde lubuyele ematyaleni okanye ekunqongopheleni kwezibonelelo.
+
+
+
+=======================================
+
+
+
+D.   Isithembiso soMgangatho – Ukusuka ekuThelelaneni ukuya ekuGqweseni
+
+
+
+Kwihlabathi elidala, wawunyanzelekile ukuba wamkele iimveliso ezenzelwe ukusilela. Oku kwakungekho ngenxa yobunjineli obugwenxa, kodwa ngenxa yokuba imarike yabucala yayifuna ukuthelelana. Umgangatho wokwenyani wawuxabisa ngaphezulu kunoko abemi babenokukuhlawula kuhlahlo-lwabiwo mali lwabo lwemihla ngemihla. Iinkampani zazinyanzelwa ukuba zithengisele inkitha ngamaxabiso ezinokuwagcina, nto leyo eyayinika isiphumo esiqikelelekayo: izinto ezingekho mgangathweni nezihlala ixesha elifutshane.
+
+Ngaphakathi kombono woMbhalo, le njongo yengeniso iyapheliswa ngokupheleleyo. Xa urhulumente engumnini wemathiriyeli ekrwada kwaye iirobhothi zethu eziqhutywa yi-AI zilawula ukukhutshwa kwazo, isidingo sokuthelelana ngemfezeko yezinto eziphathekayo siyanyamalala. Ukusebenza njengabameli bolwakhiwo bakarhulumente, iirobhothi zethu zikunyamekela ngendlela engazange yabonwa ngaphambili ngokuvelisa ngokukhethekileyo okona kuhle kakhulu.
+
+Ngenxa yokuba oomatshini abafuni nzuzo, bekhona kuphela ukukhonza uluntu, bahlala besebenzisa ezona zinto zomeleleyo nezihlala ixesha elide. Asakhi ukuze saphinda sathengisa—sakha ukuze ukhululeke. Umgangatho uyayeka ukuba bubunewunewu obugcinelwe abazizityebi; uba ngumgangatho ongathelelaniswayo kummi ngamnye ngaphakathi koManyano lweeRobhothi.
+
+
+
+=======================================
+
+
+
+E.   Ukulingana kwaBemi bePlanethi
+
+
+
+Imfuduko enkulu yobushushu ayenzeki ngokungacwangciswanga, kodwa ngokulungelelaniswa ngokutsha okunengqiqo nangenkcubeko yabemi beplanethi:
+
+
+1.  Ilizwekazi loMzantsi Melika (iBloko yaseNtshona)
+
+Abantu baseYurophu kunye nabaseRashiya bomnombo waseYurophu, abaseMntla Melika, abaseOstreliya, abaseNew Zealand, kunye nabeMhlophe boMzantsi Afrika bahlanganiswa kunye kwilizwekazi loMzantsi Melika, ngelixa amazwe aluhlaza akuMbindi Melika (emazantsi eMexico) avulwa njengeendawo zokuhlala eziqhubekekayo. Lo mmandla uba sisiseko solongamo lwabantu baseNtshona phantsi kweemeko ezifanelekileyo zobushushu.
+
+
+2.  IBloko yaseMpuma (iIndonesia neOstreliya)
+
+Abantu baseMpuma Asia kunye nabemi beAsia yaseRashiya, kunye nabemi abanxulumeneyo beBloko yeMveliso yaseMpuma enkulu bahlanganiswa kunye kummandla onabela kwiIndonesia, iPapua New Guinea, naseOstreliya. Imimandla ebanzi engaphakathi eOstreliya yenziwe iirobhothi ngokupheleleyo ngeenjongo zoshishino olunzima kunye namandla elanga, ngelixa abemi behlala kwiindawo ezifudumeleyo, ezingaselunxwemeni ezitshisayo.
+
+Abemi beendawo ezibandayo zoMbindi Asia bafuduselwa emazantsi besiya kwiindawo zokuhlala ezifudumeleyo kwiOceania esezantsi nakwiNtla yeOstreliya, ngelixa imimandla yomhlaba ngokwayo (kuquka neendawo eziyintlango kumazwe aseArabhu) ithathwa ziiyunithi zoomatshini. Iintlango zaseArabhu ziyaguqulwa, njengeSahara, zibe ziipaki zamandla ezizisebenzelayo.
+
+
+3.  Ilizwekazi laseAfrika
+
+Abemi baseAfrika kwilizwekazi labo benza iBloko yeziBonelelo zaseZantsi, apho iindawo ezitshisayo nezifudumeleyo zigcinwa ngokukhethekileyo njengeendawo zokuhlala abantu ukuze bachache kwaye bakhululeke, ngelixa iindawo ezibandayo neendawo eziyintlango ezinkulu zelizwekazi zenziwe iirobhothi ngokupheleleyo. Le mimandla iguqulwa ibe zizakhiwo ezingoomatshini ababods, amashishini amakhulu, kunye nezikhululo zamandla elanga ezinkulu ezivelisa amandla okuguqulwa kwalo lonke ilizwekazi laseAfrika ngaphandle kokuphazamisa iindawo zendalo.
+
+
+
+=======================================
+
+
+
+F.   Umanyano lweMarike yeLongamo – uKhuselo lweGeopolitiki ngokuchasene neMfazwe yezeMali
+
+
+
+Ukuphelisa inkqubo yamatyala ehlabathi jikelele kunye nokwandisa isantya semveliso yasimahla yenqanawa yoomatshini, izizwe ezininzi kufuneka zidityaniswe ngokukhawuleza zibe yimarike enye yangaphakathi: Umanyano lweMarike yeLongamo.
+
+Inguqu ekwanti kwisizwe esinye isesichengeni ngokweqhinga. Ibambezela ubuninzi, yandisa ukungqubana kwezoqoqosho kwisigaba senguqu, kwaye ibeka ilizwe elilodwa kwiithintelo ezilungelelanisiweyo kunye nohlaselo olusemthethweni oluvela kwinkqubo endala yezemali kwiinkundla zorhwebo lwamazwe ngamazwe. Umanyano olukhulu, olunqumla imida olunomthetho wezoqoqosho ofanayo luyimfuneko yemathematika. Okukhona imarike ekwabelwana ngayo inkulu, kokukhona ubuninzi bezinto ezibonakalayo obupheleleyo buphunyezwa ngokukhawuleza ngeluphu ezimeleyo (AAASR).
+
+Injongo yokugqibela yalomanyano kukulingana okupheleleyo kweplanethi apho imida yamazwe amadala ichithwa. Oku kuqinisekisa wonke ummi ongamakhosi inkululeko epheleleyo, esemthethweni yokushiya iindawo eziyimiqolomba okanye ezimhlophe ukuze bahlale ngokukhululekileyo, baphile, kwaye bonwabele imveliso engenakukhuhlana nayo yoomatshini kwiindawo ezifanelekileyo, ezitshisayo zomhlaba.
+
+
+
+=======================================
+
+
+
+G.   Imbiza Enkulu kunye nokuVulwa koButyebi beSizwe
+
+
+
+Ukuze uqonde uhlengahlengiso lwesakhiwo salo Mbhalo, umntu kufuneka aqale aqonde ubunjani bokwenyani bemali ngaphakathi kwale ndlela ikhoyo. Imali ebizwa namhlanje ngokuba "yingxowa-mali karhulumente," eneneni, ngamandla adityanisiweyo abemi. IManifesto uyayitshintsha le nkqubo ngesimemezelo esinye, esisisiseko: Uqoqosho lwesizwe kufuneka lusebenzele ikamva lesizwe, hayi amaxwebhu ebhalansi emali yamaziko eebhanki zabucala.
+
+
+1.  Ukusuka kwiiNgxowa-mali ezingenzi nto ukuya kwiNguquko eSebenzayo
+
+Siyayeka ukujonga uhlahlo-lwabiwo mali lukarhulumente njengengqokelela yamanani anomda, athintelayo. Ngokuba amazwe angamalungu oManyano anqumle onke amaqhina kunye nenkqubo yeebhanki zabucala, "imbiza enkulu" iyavulwa kuyo yonke imakethi ekwabelwana ngayo. Ezi zibonelelo zidityanisiweyo zisetyenziswa ngokukhawuleza ukufumana, ukuphuhlisa, nokusasaza inqanawa yoomatshini enqumla imida efunekayo ukwenza ubukho bungabinaxabiso ngokupheleleyo kumhlali ngamnye ngaphakathi koManyano.
+
+
+2.  Ukuphela kweNgqiqo yeTyala
+
+IManifesto awusaqapheli nayiphi na imfuno "yokuboleka" imali eyinkunzi kwiimarike zemali. Xa urhulumente ebuyisa ilungelo lakhe lokukhuphela imali exhaswa kuphela ngamandla emveliso yesizwe, isixhobo sokunyanzela kunye nesabhokhwe semarike yamatyala ziye ziphelelwe lixesha ngokupheleleyo.
+
+
+
+3.  OkuPhambili ngokweQhinga
+
+Ezi ngxowa-mali zivuliweyo ziya kuthi, ngaphandle kokukhetha, zixhase iintsika ezintathu ezingundoqo:
+
+
+A.  Ingqalasizinda yokuSinda
+
+Ukwenziwa ngokupheleleyo nokuzenzekela kunye nokukhuselwa kwamandla, ukuveliswa kwamanzi, kunye nothutho.
+
+
+B.  Imveliso eyiRobhothi ngokupheleleyo
+
+Ukusetyenziswa kwemveliso ezimeleyo apho oomatshini bakhulula uluntu ngokuhambisa ubunewunewu kunye nokuzimela ngokwezinto eziphathekayo njengomgangatho wentlalo ongathelelaniswayo, obonakala ngobuninzi obupheleleyo bomgangatho ophezulu kakhulu.
+
+
+C.  ILogistics yeGeopolitiki
+
+Ulawulo lwenkqubo kunye nokwenziwa kwemfuduko ukuya kwiindawo zemozulu ezisebenza ngobushushu.
+
+
+
+=======================================
+
+
+
+H.   ULawulo lobuChwepheshe kunye noLawulo lweMithombo
+
+
+
+Kwesi sahluko, kusekwa izikhokelo zolawulo zendlela ihlabathi elitshintshela ngayo kuqoqosho olukhululekileyo olunoorobhothi ngokupheleleyo.
+
+
+1.  ULongamo lokuLawula kuMatshini wokuPrinta iMali
+
+IManifesto uthatha ngokukhawuleza ulawulo lwebhanki enkulu. Urhulumente unelungelo elikhethekileyo lokudala imali esemthethweni yelizwe: Imali yeLongamo. Oku kubonisa amandla okuvelisa, hayi amatyala.
+
+
+2.  IMveliso yeSizwe ePheleleyo (GNR) kunye nePaki yooMatshini beSizwe
+
+Injongo kukuba yonke imveliso ilawulwe yipaki yoomatshini yesizwe ezimeleyo elawulwa nguMgaqo-siseko wooMatshini. Oomatshini bangabanini babo ukuze kuqinisekiswe ukuba imveliso ayinakuze ibe yeyabucala okanye ihluthwe, kodwa iya kuhlala isebenzela abantu njengamandla endalo aqhelekileyo. Utyalo-mali kwi-AI lubekwe phambili ukufikelela kwinqanaba apho iindleko zemveliso ziba nguziro.
+
+
+3.  Isabelo seLongamo: Indlela eya kuButyebi
+
+Ngexesha lesigaba senguqu, wonke ummi uqinisekiswa iSabelo seLongamo sonyaka. Oku kwenza wonke ummi azimele ngokwezemali kwaye kuvala umsantsa oya kwihlabathi elitsha. Esi Sabelo sixhaswa ngemali ngokuthi urhulumente aphinde aqondise iimali zebhajethi ezikhoyo ukusuka kumthwalo wokondla inkqubo yakudala ukuya kwiintlawulo ezithe ngqo, njengoko ukwenziwa kweerobhothi kwehlisa iindleko zizonke zoluntu.
+
+
+
+=======================================
+
+
+
+I.   INdawo yokuVelisa yaseMntla-Atlantiki (NAPZ)
+
+
+
+1.  Igumbi leNjini lePlanethi
+
+IYurophu noMntla Melika ukusukela ngoku bachazwa ngumsebenzi wabo wobuchwepheshe njengendawo yokusebenzela esembindini kunye nendlu yokugcina izityalo zeplanethi.
+
+
+2.  Ukuzenzekela okuPheleleyo
+
+Ngaphakathi kwe-NAPZ, umsebenzi womntu uyayeka ukubakho. Iifama ezithe nkqo kunye namasimi enziwe ngoomatshini avelisa ukutya ubusuku nemini. Iifektri zivelisa iimveliso ezinomgangatho ongunaphakade kuba injongo yengeniso icinywe ngokupheleleyo.
+
+
+3.  Amandla: ISiseko
+
+I-NAPZ igutyungelwe luthungelwano olunxibeleleneyo lwamandla enyukliya, ifusion, kunye nemithombo evuselelekayo. Xa amandla engabizi mali, eyona ndleko inkulu yoluntu enye iyanyamalala.
+
+
+4.  Ukupheliswa kweeNdawo zokuHlala ezisisigxina
+
+I-NAPZ ngummandla ogcinelwe oomatshini. Iindawo ezibandayo nezimnyama zaseYurophu naseMntla Melika ziyapheliswa njengeendawo zokuhlala zabantu ezisisigxina. Izixeko ezingamafa ziguqulwa zibe ngamaziko ezothutho ezizisebenzelayo.
+
+
+5.  Umbono weYurophu nowaseMntla Melika
+
+Xa iYurophu noMntla Melika sele benziwe iirobhothi ngokupheleleyo kwaye bevelisa isivuno esaneleyo sabemi baseYurophu, baseMntla Melika, kwaye—kwinqanaba lokugqibela—abemi boMzantsi Melika, isigaba esilandelayo siyavulwa. Umthamo wemveliso yaseMntla Melika uyanda ukuze uxhase ngokupheleleyo ilizwekazi loMzantsi Melika, nto leyo ekhulula imveliso yaseYurophu kwaye iphinde iqondiswe kusasazo olucwangcisiweyo kwamanye amazwekazi, ngelixa kugcinwa amandla okwandisa okuqhubekekayo njengoko kufuneka.
+
+
+6.  Isiseko soShishino
+
+I-NAPZ ayichazwa yimida yesizwe yemveli, kodwa ngezibonelelo zayo ezidibeneyo, ezizisebenzelayo. Injongo yayo yodwa kukwenziwa ngobuninzi kwenqanawa yehlabathi jikelele yoomatshini, ukuqhubela phambili kobukrelekrele bokwenziwa obucwangcisiweyo, kunye nokuveliswa kweeplani zobuchwepheshe eziphambili ezifunekayo ukufezekisa ubuninzi obugqibeleleyo beplanethi.
+
+
+7.  Ukudityaniswa kweLogistics
+
+Lo mmandla usebenza ngokwentsebenziswano ethe ngqo kunye neendawo zokuhlala ezitshisayo kunye namacandelo ezibonelelo ezisemazantsi. Ngelixa iindawo ezitshisayo zibonelela ngeemeko ezifanelekileyo zobushushu zokuhlala kwabantu kunye nokuchacha ngolongamo, i-NAPZ isebenza njengendawo yokubumbela yoshishino olunzima—ilungisa imathiriyeli ekrwada kwaye isebenzise uthungelwano lwezothutho oluzimeleyo ukusasaza izinto ezigqityiweyo kunye noomatshini simahla ngokupheleleyo kulo lonke uManyano lweMarike yeLongamo.
+
+
+8.  Ukuhlelwa ngokweSakhiwo
+
+Njengoko imveliso yefektri ezenzekelayo ngaphakathi kwe-NAPZ ifikelela kumthamo omkhulu, igalelo layo elikhulayo kwiMveliso yeSizwe ePheleleyo (GNR) likhawulezisa ukuphelelwa lixesha okuqinisekileyo kweemali eziyimfezeko ezingamafa, okuvula indlela yokuphunyezwa ngokupheleleyo koMgaqo-siseko wooMatshini.
+
+
+
+=======================================
+
+
+
+J.   Ikhaya Elitsha
+
+
+
+Ukufuduselwa kwiindawo ezitshisayo akubonisi nje ukutshintsha kwendawo, kodwa kukuhlaziywa ngokupheleleyo kwendalo yokuphila yomntu. Sishiya ngemva izakhiwo zekhonkrithi kunye neendleko zokugcina ezingapheliyo zeendawo ezinemozulu ebandayo.
+
+
+1.  INdawo yokuHlala eTshisayo
+
+NgoMbhalo, imfuduko enkulu yobushushu yenziwa ukuya kwiindawo apho uluntu luyilelwe ngokwebhayoloji ukuba luhlale khona.
+
+
+2.  Iindawo eziPhakamileyo eziTshisayo: Indawo eKhuselekileyo
+
+Kwibloko yaseNtshona, ukhetho lomntla woMzantsi Melika lusekelwe ekuzinzeni kwetectonics kunye nokusebenza ngokufanelekileyo kobushushu. Apha, imfuno yeenkqubo zokufudumeza icinywe ngokupheleleyo.
+
+
+3.  UYilo loBuninzi
+
+Izindlu ezizii-modular ezinomgangatho ongunaphakade zihambiswa zivela kwi-NAPZ. Ngaphakathi kwale mimandla, akukho rhwebo lukhoyo; yonke into isebenza njengemisebenzi edityanisiweyo ngaphakathi kweziseko zophuhliso.
+
+
+4.  Ubuchwepheshe ngeNdawo
+
+Oku kukutshintshiselana ngokulinganayo. Iimveliso zecandelo loshishino zibonelelwa zivela kumda weYurophu, ngelixa uMzantsi Melika ubonelela ngommandla. Xa la malungu mabini edibana, kuvela uqoqosho olukhululekileyo oluthe ngqo kwilizwekazi loMzantsi Melika kubo bonke abemi bangoku nabekamva. Akukho mali ijikelezayo—siyayicima imfuno yayo.
+
+IManifesto awuchazi iprojekthi yokuthumela kwelinye ilizwe yaseYurophu, kodwa umanyano lwehlabathi jikelele. Izizwe ezikwimimandla etshisayo aziyo "zindlu zokubamba iindwendwe"; zingamahlakani angabaseki angena ngqo kuqoqosho olukhululekileyo kwaye angabanini beziseko zophuhliso ngokwemiqathango elinganayo namazwe asemantla.
+
+
+5.  Ilungelo leLongamo leZindlu
+
+Ngaphakathi komanyano lweerobhothi, indlu ayisiyiyo into yorhwebo okanye umthombo wetyala lobomi bonke. Wonke ummi uqinisekiswa ikhaya lobuchwepheshe obuphezulu, elakhiwe kwaye ligcinwe yipaki yoomatshini. Azikho iirenti, akukho zikweledu zezindlu, kwaye akukho rhafu yepropati. Lilungelo elisisiseko ngokupheleleyo.
+
+
+6.  Ukugqwesa kobuChwepheshe
+
+Amakhaya akhiwa kusetyenziswa izinto ezinomgangatho ongunaphakade, akhululwe ngokupheleleyo kwiimfuno zokulungiswa kwekamva. Yonke into ukusuka kulawulo lwemozulu kunye nokucocwa kwamanzi ukuya ekucocweni okuzenzekelayo kunye nolawulo lwenkunkuma kudityaniswe kwisakhiwo sesakhiwo kwaye ilawulwa ngokuzimeleyo.
+
+
+7.  UYilo oluvisisanayo
+
+Ekubeni yonke into yakhiwa kwimimandla enomlinganiselo wonyaka ophakathi ozinzileyo nomnandi, uyilo lunokuvulwa. Imida phakathi kwezithuba ezingaphakathi nangaphandle iyachithwa. Izakhiwo zidityaniswe kwindalo etshisayo, zineenkqubo zamandla elanga ezizigcinayo kunye neegadi ezithe nkqo.
+
+
+
+=======================================
+
+
+
+K.   ULawulo lwePalamente kunye neLizwi laBantu
+
+
+
+1.  Indlela eNtsha yoLawulo lwePalamente
+
+Ukuze kuqinisekiswe ukuba ingqalasizinda ye-AI ezimeleyo ayinakuze yahlukane nentando yabemi, amandla ezopolitiko ahlala ebambelele nkqi kubemi—ngenkqubo yokuvota yedemokhrasi eyandiswe ngokumandla ebekwe ngqo ezandleni zomntu ngamnye.
+
+
+2.  Unyulo lwePalamente loNyaka
+
+Ukuqinisekisa ukusabela ngokupheleleyo kunye nokuthintela urhwaphilizo okanye ukungashukumi phakathi kwesakhiwo samandla, unyulo olunyanzelekileyo lwepalamente lwaziswa minyaka le. Abantu baya kuhlala bevavanya kwaye beqondisa isantya senguqu yesizwe.
+
+
+3.  IiReferendamu zeQhinga kunye noNyulo oluNgemanga
+
+Abantu banelungelo elingasikelwanga mda lokwenza izigqibo eziqinisekileyo kweyona micimbi ibalulekileyo yolongamo lwesizwe ngee-referendamu ezithe ngqo okanye unyulo olungemanga. Ezi ndawo zilandelayo ziya kuhlala ziphantsi kokumiselwa okuthe ngqo koluntu:
+
+    • Imifelandawonye yaMazwe ngaMazwe: Ukungenela okanye ukurhoxa kwiinyunyana zezopolitiko, ezoqoqosho, okanye ezomkhosi, izivumelwano, kunye namabhunga alawula amazwe aphezulu.
+
+    • IMibutho yeHlabathi: Ukungenela okanye ukurhoxa kwimibutho yamazwe ngamazwe, amagunya alawulayo, okanye ulwamkelo lwehlabathi.
+
+    • Isithintelo seQhinga: Ukufunyanwa, ukubakho, okanye ukupheliswa kokusebenza kwezixhobo zenyukliya, zekhemikhali, okanye ezinye izixhobo zokutshabalalisa ngobuninzi.
+
+    • UMgangatho woMgaqo-siseko: Ukupheliswa, ukusekwa, okanye ukulungiswa kwezakhiwo ezisisiseko zolawulo lwesizwe, kuquka ubukumkani okanye ukulandelelana kombuso.
+
+
+4.  Inguqu yoLawulo
+
+Xa injongo sele imiselwe (yonke into iya kuba simahla), ulawulo lugxila ekuphumezeni isicwangciso. Izigqibo zenziwa ngezishwankathelo ezibhalwe emgaqweni-siseko.
+
+
+
+=======================================
+
+
+
+L.   URulumente njengeShishini eliHlangeneyo
+
+
+
+1.  URulumente: Ishishini laKho eliValelweyo
+
+Kule nkqubo yanamhlanje, ungunmnini wesizwe, kodwa awuvumelekanga ukuba usisebenzise. Cinga ngoRulumente njengeshishini elikhulu apho wena kunye nabo bonke abanye abemi ningabanini zabelo. Kodwa eli shishini—amandla ethu ahlanganisiweyo—lihleli entolongweni, libotshwe ngamatyathanga emva kweentsimbi ngebhola netyathanga "letyala" kwaye lithatyathelw' indawo sisilo sezoqoqosho, xa yonke into uRulumente awayeyifuna yayikukhululeka kwakhe. Ngelixa iinkampani zabucala zibaleka zijikeleza ngokuhamba ngokupheleleyo kwaye zivelisa umgangatho ophantsi ukwandisa ingeniso, isixhobo sabemi ngokwabo (uRulumente) sihleli sikhubazekile kwaye singenakho ukusebenza. Sixelelwe ukuba uRulumente "akanakukwazi ukuyihlawulela," ukuba akanazo iingalo nemilenze yokwakha ikamva. Inyaniso kukuba uRulumente uhleli emva kweentsimbi kuba iibhanki zabucala kunye nenkqubo endala bathathe isitshixo somatshini wokushicilela imali.
+
+
+Kodwa IManifesto sisitshixo esivula isisele.
+
+
+2.  SiyaMbuyisela URulumente Imilenze YaKhe
+
+Ngokuvula imveliso eyirobhothi (Per Machina), uRulumente akasadingi "kucela imvume" okanye ukurhafisa abemi bakhe ukuze enze izinto. Oomatshini ziingalo nemilenze emitsha kaRulumente.
+
+
+3.  SiyiTyumza Ibhola neTyathanga
+
+Ngokubuyisa ilungelo lokudala imali yolongamo, ityala ebeligcine uRulumente esihlalweni esinamavili liyacinywa.
+
+
+4.  Ukusuka eBanjweni ukuya kuMyili weZakhiwo
+
+Xa uRulumente ephakama kwisisele sakhe sasentolongweni, uyayeka ukuba bubukhulumentu obunzima. Utshintsha abe ngumatshini wezothutho osebenza kakuhle ohambisa iSabelo saKho seLongamo kwaye wakhe iparadesi kwiindawo ezitshisayo.
+
+
+
+=======================================
+
+
+
+M.   IBhanki yaBucala iya kuCima iPesenti eFana neyokuNyuka kwe-GNR
+
+
+
+Iibhanki zabucala ziyanyanzelwa ukuba zicime amatyala abemi ngesantya esifana ncam nesiye inyuke ngaso iMveliso yeSizwe ePheleleyo (GNR). Njengoko uqoqosho olukhululekileyo lukhula, inzuzo yemali yeenkampani iyancipha, ngelixa izinto zabo zexabiso zokwenyani zisonyuka simahla. Iibhanki azinakuvunyelwa ke ngoko ukuba zifune inzala epheleleyo, njengoko iindleko zokuphila kwabanini beebhanki nazo zehla ziye kuziro.
+
+Lo ngumongo wesakhiwo semali sohlengahlengiso. Iibhanki zabucala kufuneka "zipheliswe" njengoko iMveliso yeSizwe ePheleleyo (GNR) yoqoqosho olukhululekileyo ikhula. Oku kwenza inguqu egudileyo apho ixabiso lemali lisuka ematyaleni liya kumthamo wemveliso.
+
+
+
+Nasi esona sisombululo sisebenzayo:
+
+
+1.  "Isalathisi sokuPhelisa" (iTyala-ngokuchasene-naSimahla)
+
+Yazisa indlela esemthethweni ebizwa ngokuba kukuCinywa kweTyala okuZenzekelayo.
+
+
+A.  Ingqiqo
+
+Urhulumente ulinganisa ukuba yeyiphi inxalenye yeemfuno ezisisiseko zabemi (ukutya, amandla, izindlu, ezothutho) ngoku ebonelelwa simahla ngeepaki zerobhothi zesizwe.
+
+
+B.  Indlela yokuSebenza
+
+Ukuba i-20% yeemfuno zobomi iye yaba simahla, iibhanki zabucala ziyanyanzelwa ngumthetho ukuba zicime i-20% yawo onke amatyala abucala. Inzala iyamiswa okanye incitshiswe ngesantya esihambelanayo.
+
+
+C.  Ingxoxo
+
+Abasemabhankini abanakukhalaza ngezizathu zokuziphatha, kuba neendleko zabo zokuphila zikwazehla nge-20%. Ababi ngamahlwempu ngokomgangatho wobomi, kuphela ngokwamanani akwisikrini.
+
+
+
+2.  Ukuphathwa "kweeBhanki eziNobutshaba" kuMazwe aNgaphandle
+
+Oku yeyona nto iyinkxalabo enkulu—ukuba iibhanki ziya kubaleka kwaye zisebenzise amanye amazwe njengesiseko sokuhlasela umanyano lohlengahlengiso.
+
+
+
+Isisombululo kukuValelwa kweZimali:
+
+
+A.  Amandla oManyano
+
+Nje ukuba umanyano lohlengahlengiso (amazwe athe avula umbhalo) lusekiwe, luya kwazisa uthintelo olupheleleyo ngokuchasene neebhanki ezisebenza kumazwe anobutshaba.
+
+
+B.  Ukutshintsha kweXabiso
+
+Ekubeni umanyano lohlengahlengiso lulawula imveliso yokwenyani (iirobhothi kunye nemathiriyeli ekrwada), imali yeebhanki zangaphandle ngokukhawuleza iba zizicwili zephepha ezingenaxabiso. Abanako "ukuthenga" nantoni na kumanyano lohlengahlengiso ngemali yabo yamatyala amadala.
+
+
+C.  Ukhetho lweeBhanki zaBucala
+
+Nokuba zihlale zibe yinxalenye yeqela elitsha lolawulo lwenkonzo yoluntu kuqoqosho olukhululekileyo oluya ekwenziweni iirobhothi ngokupheleleyo, okanye zibalekele kumazwe aza kuwa ngokukhawuleza ngenxa yokuba loo mazwe akanakho ukufikelela kumanyano lohlengahlengiso kunye nemveliso yalo yerobhothi.
+
+
+
+3.  Indima yeBhanki eNkulu: Ukusuka kwiNzala ukuya kuMlinganiselo weziBonelelo
+
+IBhanki eNkulu iyayeka ukujonga ukunyuka kwamaxabiso kunye namazinga enzala. Endaweni yoko, iba liOfisi yeziBonelelo.
+
+
+A.  Ukusuka kwiBhanki eNkulu ukuya kwiOfisi yeziBonelelo
+
+IOfisi yeziBonelelo endaweni yoko ilinganisa i-GNR, indlalifa ye-GDP eyenziwe yesizwe. Xa i-GNR igubungela i-100 ekhulwini leemfuno zabemi, uLongamo oluPheleleyo luyabhengezwa. Ngelo xesha, yonke imali namatyala ayekeleli ukubakho phantsi komthetho womgaqo-siseko.
+
+
+B.  Ukucaca
+
+Ngokuba nale le icacileyo (umz., i-10%, i-50%, i-100%), iinkokeli zezizwe ezizayo kumanyano lohlengahlengiso zibona ngqo ukuba indlela injani. Iba yinkqubo enokuqikelelwa endaweni yesiphithiphithi.
+
+
+C.  Amandla eeBhanki aLungelelananga
+
+IManifesto wenza ukuchithwa okulawulwayo kwenkqubo yamatyala. Njengoko oomatshini bekhulula uluntu kwiindleko, uluntu nalo luyakhululwa ematyaleni alo. Asilwi neebhanki ngezixhobo, kodwa ngezishwankathelo zemathematika ezenza amandla azo angafuneki.
+
+Ingxelo engentla isebenza njengenkcazelo yobuchwepheshe "yoHlaziyo olungabonakaliyo" ekusebenzeni.
+
+
+
+=======================================
+
+
+
+N.   ILe yokuKhululeka: Ukusuka eMdeni ukuya kuLongamo
+
+
+
+1.  Inguqu yeMathematika
+
+Ukukhokela umanyano lohlengahlengiso ukuba luphume kumbambano wenkqubo yamatyala abucala, ukuxelwa kwangaphambili okupheleleyo kuyafuneka. Inguqu akufuneki yakhiwe phezu kwezinto ezizezithuba, ezinesiphithiphithi okanye amaza othusayo ezoqoqosho angenakuqikelelwa.
+
+Isisombululo kukuba kube nomthetho, il e ehambelanayo apho ukukhululwa ngezemali kwabemi kwenzeka ngesantya esifana ncam nesokwanda kwemveliso yokwenyani—iMveliso yeSizwe ePheleleyo (GNR).
+
+NgeLe yokuKhululeka, amanani abonakalayo (amatyala) adityaniswa ngqo kwinto yokwenene ebonakalayo (imveliso eyirobhothi). Kanye kanye ngomzuzu oomatshini bethatha indawo yobomi kwaye bayenze ibe simahla kubemi, iibhanki zenkqubo endala ziyanyanzelwa ukuba zihlehlele kwinqanaba elihambelanayo.
+
+
 --- START TABLE ---
+
+
+
+--- END TABLE ---
+
+
+
+Ukuphunyezwa kuxhomekeke kwiziseko ezibini:
+
+
+1.  Ubuchwepheshe obuSakhulayo
+
+Amalungu ngamanye—iimodeli ze-AI eziphambili, ushicilelo lwesinyithi lwe-3D, kunye neefektri ezizisebenzelayo—sele zikhona zisasazeke kwihlabathi liphela. Umatshini sele unamandla okwakha iinxalenye zomatshini. Okungekhoyo ayisiyiyo ubuchwepheshe, kodwa yintando esembindini, engenatyala yokuvala iluphu.
+
+
+2.  Intsebenziswano yePlanethi
+
+Kulapho ukudityaniswa nemimandla yeentaba ezitshisayo kuye kubaluleke ngokupheleleyo. Oku ayisiyiyo intengiselwano yezemali, kodwa yintsebenziswano yobuchwepheshe kunye nejografi. Imimandla esemantla inikela ngophando kunye nobuchwepheshe obuphezulu obukhoyo, ngelixa uMzantsi Melika unikela ngommandla, amandla elanga angaguqukiyo, kunye nemathiriyeli ekrwada ukuvavanya, ukusasaza, nokwandisa iinkqubo zokuzenza ngokwazo phantsi kweemeko ezifanelekileyo zobushushu.
+
+UManyano kufuneka lusungule kwaye lubeke phambili le projekthi njengenyathelo lalo lokuqala lomgaqo-siseko. Enye indlela endaweni yobukhulumentu obuwayo namhlanje kunye nomsebenzi onyanzelekileyo ongenantsingiselo ayisiyiyo isiphithiphithi—enye indlela yile projekthi ejolileyo neyehlabathi jikelele yokuvala iluphu ezimeleyo kwaye oomatshini bathwale umthwalo wemveliso kube kanye.
+
+
+
+=======================================
+
+
+
+C.   ULongamo loBulumko bukaRhulumente
+
+
+
+Ukukhusela uxolo nozinzo loluntu kwihlabathi elinoorobhothi ngokupheleleyo, ingqalasizinda yobukrelekrele elawula urhulumente kufuneka ihlale iphantsi kolawulo lukarhulumente olungasikelwanga mda.
+
+
+1.  Ubunini bukaRhulumente obuKhethekileyo
+
+Ubukrelekrele bokwenziwa obulawula izibonelelo zesizwe, ezokuthuthwa kwezinto, kunye nomthamo wemveliso yenza umgogodla wesizwe. Lonke uphuhliso, isiseko sekhowudi, kunye nokwenziwa kwemodeli yobu krelekrele kuya kwenzeka phantsi kolawulo lukarhulumente. Abadlali babucala abavumelekanga ukuphuhlisa okanye ukuhlanganisa iinkqubo zolawulo ezikhuphisanayo kwingqalasizinda yesizwe. Oku kukuthintela iinjongo zengeniso okanye i-algorithms engacacanga ukuba yonakalise ingqiqo yenkqubo.
+
+
+2.  UMlawuli onengqiqo
+
+I-AI iya kusebenza njengomlawuli ongenakonakala. Ayiyomntu ngamnye oyongameleyo, kodwa iyinxalenye yepropati eqhelekileyo yepaki yoomatshini. Injongo yayo kukwandisa intlalontle yabemi, ukwabiwa kwezibonelelo, kunye nokuzinza, ngaphandle kwempembelelo yezopolitiko okanye yorhwebo.
+
+
+3.  Elubala noLawulo
+
+Urhulumente uqinisekisa ukuba iimodeli zemathematika zenkqubo kunye neziseko zokuthatha izigqibo ziyafumaneka ukuba zihlolwe kwilizwe lonke. Akukho sigqibo sibalulekileyo ebukumkanini sinokwenziwa "yibhokisi emnyama" engenakuchazwa ngokwesiseko semigaqo esisiseko yomgaqo-siseko. Urhulumente uphuhlisa, ungumnini, kwaye ulawula le AI-inkulu njengenxalenye yezinto eziluncedo kuluntu, njengomqinisekisi wokuba uluntu aluphinde lubuyele ematyaleni okanye ekunqongopheleni kwezibonelelo.
+
+
+
+=======================================
+
+
+
+D.   Isithembiso soMgangatho – Ukusuka ekuThelelaneni ukuya ekuGqweseni
+
+
+
+Kwihlabathi elidala, wawunyanzelekile ukuba wamkele iimveliso ezenzelwe ukusilela. Oku kwakungekho ngenxa yobunjineli obugwenxa, kodwa ngenxa yokuba imarike yabucala yayifuna ukuthelelana. Umgangatho wokwenyani wawuxabisa ngaphezulu kunoko abemi babenokukuhlawula kuhlahlo-lwabiwo mali lwabo lwemihla ngemihla. Iinkampani zazinyanzelwa ukuba zithengisele inkitha ngamaxabiso ezinokuwagcina, nto leyo eyayinika isiphumo esiqikelelekayo: izinto ezingekho mgangathweni nezihlala ixesha elifutshane.
+
+Ngaphakathi kombono woMbhalo, le njongo yengeniso iyapheliswa ngokupheleleyo. Xa urhulumente engumnini wemathiriyeli ekrwada kwaye iirobhothi zethu eziqhutywa yi-AI zilawula ukukhutshwa kwazo, isidingo sokuthelelana ngemfezeko yezinto eziphathekayo siyanyamalala. Ukusebenza njengabameli bolwakhiwo bakarhulumente, iirobhothi zethu zikunyamekela ngendlela engazange yabonwa ngaphambili ngokuvelisa ngokukhethekileyo okona kuhle kakhulu.
+
+Ngenxa yokuba oomatshini abafuni nzuzo, bekhona kuphela ukukhonza uluntu, bahlala besebenzisa ezona zinto zomeleleyo nezihlala ixesha elide. Asakhi ukuze saphinda sathengisa—sakha ukuze ukhululeke. Umgangatho uyayeka ukuba bubunewunewu obugcinelwe abazizityebi; uba ngumgangatho ongathelelaniswayo kummi ngamnye ngaphakathi koManyano lweeRobhothi.
+
+
+
+=======================================
+
+
+
+E.   Ukulingana kwaBemi bePlanethi
+
+
+
+Imfuduko enkulu yobushushu ayenzeki ngokungacwangciswanga, kodwa ngokulungelelaniswa ngokutsha okunengqiqo nangenkcubeko yabemi beplanethi:
+
+
+1.  Ilizwekazi loMzantsi Melika (iBloko yaseNtshona)
+
+Abantu baseYurophu kunye nabaseRashiya bomnombo waseYurophu, abaseMntla Melika, abaseOstreliya, abaseNew Zealand, kunye nabeMhlophe boMzantsi Afrika bahlanganiswa kunye kwilizwekazi loMzantsi Melika, ngelixa amazwe aluhlaza akuMbindi Melika (emazantsi eMexico) avulwa njengeendawo zokuhlala eziqhubekekayo. Lo mmandla uba sisiseko solongamo lwabantu baseNtshona phantsi kweemeko ezifanelekileyo zobushushu.
+
+
+2.  IBloko yaseMpuma (iIndonesia neOstreliya)
+
+Abantu baseMpuma Asia kunye nabemi beAsia yaseRashiya, kunye nabemi abanxulumeneyo beBloko yeMveliso yaseMpuma enkulu bahlanganiswa kunye kummandla onabela kwiIndonesia, iPapua New Guinea, naseOstreliya. Imimandla ebanzi engaphakathi eOstreliya yenziwe iirobhothi ngokupheleleyo ngeenjongo zoshishino olunzima kunye namandla elanga, ngelixa abemi behlala kwiindawo ezifudumeleyo, ezingaselunxwemeni ezitshisayo.
+
+Abemi beendawo ezibandayo zoMbindi Asia bafuduselwa emazantsi besiya kwiindawo zokuhlala ezifudumeleyo kwiOceania esezantsi nakwiNtla yeOstreliya, ngelixa imimandla yomhlaba ngokwayo (kuquka neendawo eziyintlango kumazwe aseArabhu) ithathwa ziiyunithi zoomatshini. Iintlango zaseArabhu ziyaguqulwa, njengeSahara, zibe ziipaki zamandla ezizisebenzelayo.
+
+
+3.  Ilizwekazi laseAfrika
+
+Abemi baseAfrika kwilizwekazi labo benza iBloko yeziBonelelo zaseZantsi, apho iindawo ezitshisayo nezifudumeleyo zigcinwa ngokukhethekileyo njengeendawo zokuhlala abantu ukuze bachache kwaye bakhululeke, ngelixa iindawo ezibandayo neendawo eziyintlango ezinkulu zelizwekazi zenziwe iirobhothi ngokupheleleyo. Le mimandla iguqulwa ibe zizakhiwo ezingoomatshini ababods, amashishini amakhulu, kunye nezikhululo zamandla elanga ezinkulu ezivelisa amandla okuguqulwa kwalo lonke ilizwekazi laseAfrika ngaphandle kokuphazamisa iindawo zendalo.
+
+
+
+=======================================
+
+
+
+F.   Umanyano lweMarike yeLongamo – uKhuselo lweGeopolitiki ngokuchasene neMfazwe yezeMali
+
+
+
+Ukuphelisa inkqubo yamatyala ehlabathi jikelele kunye nokwandisa isantya semveliso yasimahla yenqanawa yoomatshini, izizwe ezininzi kufuneka zidityaniswe ngokukhawuleza zibe yimarike enye yangaphakathi: Umanyano lweMarike yeLongamo.
+
+Inguqu ekwanti kwisizwe esinye isesichengeni ngokweqhinga. Ibambezela ubuninzi, yandisa ukungqubana kwezoqoqosho kwisigaba senguqu, kwaye ibeka ilizwe elilodwa kwiithintelo ezilungelelanisiweyo kunye nohlaselo olusemthethweni oluvela kwinkqubo endala yezemali kwiinkundla zorhwebo lwamazwe ngamazwe. Umanyano olukhulu, olunqumla imida olunomthetho wezoqoqosho ofanayo luyimfuneko yemathematika. Okukhona imarike ekwabelwana ngayo inkulu, kokukhona ubuninzi bezinto ezibonakalayo obupheleleyo buphunyezwa ngokukhawuleza ngeluphu ezimeleyo (AAASR).
+
+Injongo yokugqibela yalomanyano kukulingana okupheleleyo kweplanethi apho imida yamazwe amadala ichithwa. Oku kuqinisekisa wonke ummi ongamakhosi inkululeko epheleleyo, esemthethweni yokushiya iindawo eziyimiqolomba okanye ezimhlophe ukuze bahlale ngokukhululekileyo, baphile, kwaye bonwabele imveliso engenakukhuhlana nayo yoomatshini kwiindawo ezifanelekileyo, ezitshisayo zomhlaba.
+
+
+
+=======================================
+
+
+
+G.   Imbiza Enkulu kunye nokuVulwa koButyebi beSizwe
+
+
+
+Ukuze uqonde uhlengahlengiso lwesakhiwo salo Mbhalo, umntu kufuneka aqale aqonde ubunjani bokwenyani bemali ngaphakathi kwale ndlela ikhoyo. Imali ebizwa namhlanje ngokuba "yingxowa-mali karhulumente," eneneni, ngamandla adityanisiweyo abemi. IManifesto uyayitshintsha le nkqubo ngesimemezelo esinye, esisisiseko: Uqoqosho lwesizwe kufuneka lusebenzele ikamva lesizwe, hayi amaxwebhu ebhalansi emali yamaziko eebhanki zabucala.
+
+
+1.  Ukusuka kwiiNgxowa-mali ezingenzi nto ukuya kwiNguquko eSebenzayo
+
+Siyayeka ukujonga uhlahlo-lwabiwo mali lukarhulumente njengengqokelela yamanani anomda, athintelayo. Ngokuba amazwe angamalungu oManyano anqumle onke amaqhina kunye nenkqubo yeebhanki zabucala, "imbiza enkulu" iyavulwa kuyo yonke imakethi ekwabelwana ngayo. Ezi zibonelelo zidityanisiweyo zisetyenziswa ngokukhawuleza ukufumana, ukuphuhlisa, nokusasaza inqanawa yoomatshini enqumla imida efunekayo ukwenza ubukho bungabinaxabiso ngokupheleleyo kumhlali ngamnye ngaphakathi koManyano.
+
+
+2.  Ukuphela kweNgqiqo yeTyala
+
+IManifesto awusaqapheli nayiphi na imfuno "yokuboleka" imali eyinkunzi kwiimarike zemali. Xa urhulumente ebuyisa ilungelo lakhe lokukhuphela imali exhaswa kuphela ngamandla emveliso yesizwe, isixhobo sokunyanzela kunye nesabhokhwe semarike yamatyala ziye ziphelelwe lixesha ngokupheleleyo.
+
+
+
+3.  OkuPhambili ngokweQhinga
+
+Ezi ngxowa-mali zivuliweyo ziya kuthi, ngaphandle kokukhetha, zixhase iintsika ezintathu ezingundoqo:
+
+
+A.  Ingqalasizinda yokuSinda
+
+Ukwenziwa ngokupheleleyo nokuzenzekela kunye nokukhuselwa kwamandla, ukuveliswa kwamanzi, kunye nothutho.
+
+
+B.  Imveliso eyiRobhothi ngokupheleleyo
+
+Ukusetyenziswa kwemveliso ezimeleyo apho oomatshini bakhulula uluntu ngokuhambisa ubunewunewu kunye nokuzimela ngokwezinto eziphathekayo njengomgangatho wentlalo ongathelelaniswayo, obonakala ngobuninzi obupheleleyo bomgangatho ophezulu kakhulu.
+
+
+C.  ILogistics yeGeopolitiki
+
+Ulawulo lwenkqubo kunye nokwenziwa kwemfuduko ukuya kwiindawo zemozulu ezisebenza ngobushushu.
+
+
+
+=======================================
+
+
+
+H.   ULawulo lobuChwepheshe kunye noLawulo lweMithombo
+
+
+
+Kwesi sahluko, kusekwa izikhokelo zolawulo zendlela ihlabathi elitshintshela ngayo kuqoqosho olukhululekileyo olunoorobhothi ngokupheleleyo.
+
+
+1.  ULongamo lokuLawula kuMatshini wokuPrinta iMali
+
+IManifesto uthatha ngokukhawuleza ulawulo lwebhanki enkulu. Urhulumente unelungelo elikhethekileyo lokudala imali esemthethweni yelizwe: Imali yeLongamo. Oku kubonisa amandla okuvelisa, hayi amatyala.
+
+
+2.  IMveliso yeSizwe ePheleleyo (GNR) kunye nePaki yooMatshini beSizwe
+
+Injongo kukuba yonke imveliso ilawulwe yipaki yoomatshini yesizwe ezimeleyo elawulwa nguMgaqo-siseko wooMatshini. Oomatshini bangabanini babo ukuze kuqinisekiswe ukuba imveliso ayinakuze ibe yeyabucala okanye ihluthwe, kodwa iya kuhlala isebenzela abantu njengamandla endalo aqhelekileyo. Utyalo-mali kwi-AI lubekwe phambili ukufikelela kwinqanaba apho iindleko zemveliso ziba nguziro.
+
+
+3.  Isabelo seLongamo: Indlela eya kuButyebi
+
+Ngexesha lesigaba senguqu, wonke ummi uqinisekiswa iSabelo seLongamo sonyaka. Oku kwenza wonke ummi azimele ngokwezemali kwaye kuvala umsantsa oya kwihlabathi elitsha. Esi Sabelo sixhaswa ngemali ngokuthi urhulumente aphinde aqondise iimali zebhajethi ezikhoyo ukusuka kumthwalo wokondla inkqubo yakudala ukuya kwiintlawulo ezithe ngqo, njengoko ukwenziwa kweerobhothi kwehlisa iindleko zizonke zoluntu.
+
+
+
+=======================================
+
+
+
+I.   INdawo yokuVelisa yaseMntla-Atlantiki (NAPZ)
+
+
+
+1.  Igumbi leNjini lePlanethi
+
+IYurophu noMntla Melika ukusukela ngoku bachazwa ngumsebenzi wabo wobuchwepheshe njengendawo yokusebenzela esembindini kunye nendlu yokugcina izityalo zeplanethi.
+
+
+2.  Ukuzenzekela okuPheleleyo
+
+Ngaphakathi kwe-NAPZ, umsebenzi womntu uyayeka ukubakho. Iifama ezithe nkqo kunye namasimi enziwe ngoomatshini avelisa ukutya ubusuku nemini. Iifektri zivelisa iimveliso ezinomgangatho ongunaphakade kuba injongo yengeniso icinywe ngokupheleleyo.
+
+
+3.  Amandla: ISiseko
+
+I-NAPZ igutyungelwe luthungelwano olunxibeleleneyo lwamandla enyukliya, ifusion, kunye nemithombo evuselelekayo. Xa amandla engabizi mali, eyona ndleko inkulu yoluntu enye iyanyamalala.
+
+
+4.  Ukupheliswa kweeNdawo zokuHlala ezisisigxina
+
+I-NAPZ ngummandla ogcinelwe oomatshini. Iindawo ezibandayo nezimnyama zaseYurophu naseMntla Melika ziyapheliswa njengeendawo zokuhlala zabantu ezisisigxina. Izixeko ezingamafa ziguqulwa zibe ngamaziko ezothutho ezizisebenzelayo.
+
+
+5.  Umbono weYurophu nowaseMntla Melika
+
+Xa iYurophu noMntla Melika sele benziwe iirobhothi ngokupheleleyo kwaye bevelisa isivuno esaneleyo sabemi baseYurophu, baseMntla Melika, kwaye—kwinqanaba lokugqibela—abemi boMzantsi Melika, isigaba esilandelayo siyavulwa. Umthamo wemveliso yaseMntla Melika uyanda ukuze uxhase ngokupheleleyo ilizwekazi loMzantsi Melika, nto leyo ekhulula imveliso yaseYurophu kwaye iphinde iqondiswe kusasazo olucwangcisiweyo kwamanye amazwekazi, ngelixa kugcinwa amandla okwandisa okuqhubekekayo njengoko kufuneka.
+
+
+6.  Isiseko soShishino
+
+I-NAPZ ayichazwa yimida yesizwe yemveli, kodwa ngezibonelelo zayo ezidibeneyo, ezizisebenzelayo. Injongo yayo yodwa kukwenziwa ngobuninzi kwenqanawa yehlabathi jikelele yoomatshini, ukuqhubela phambili kobukrelekrele bokwenziwa obucwangcisiweyo, kunye nokuveliswa kweeplani zobuchwepheshe eziphambili ezifunekayo ukufezekisa ubuninzi obugqibeleleyo beplanethi.
+
+
+7.  Ukudityaniswa kweLogistics
+
+Lo mmandla usebenza ngokwentsebenziswano ethe ngqo kunye neendawo zokuhlala ezitshisayo kunye namacandelo ezibonelelo ezisemazantsi. Ngelixa iindawo ezitshisayo zibonelela ngeemeko ezifanelekileyo zobushushu zokuhlala kwabantu kunye nokuchacha ngolongamo, i-NAPZ isebenza njengendawo yokubumbela yoshishino olunzima—ilungisa imathiriyeli ekrwada kwaye isebenzise uthungelwano lwezothutho oluzimeleyo ukusasaza izinto ezigqityiweyo kunye noomatshini simahla ngokupheleleyo kulo lonke uManyano lweMarike yeLongamo.
+
+
+8.  Ukuhlelwa ngokweSakhiwo
+
+Njengoko imveliso yefektri ezenzekelayo ngaphakathi kwe-NAPZ ifikelela kumthamo omkhulu, igalelo layo elikhulayo kwiMveliso yeSizwe ePheleleyo (GNR) likhawulezisa ukuphelelwa lixesha okuqinisekileyo kweemali eziyimfezeko ezingamafa, okuvula indlela yokuphunyezwa ngokupheleleyo koMgaqo-siseko wooMatshini.
+
+
+
+=======================================
+
+
+
+J.   Ikhaya Elitsha
+
+
+
+Ukufuduselwa kwiindawo ezitshisayo akubonisi nje ukutshintsha kwendawo, kodwa kukuhlaziywa ngokupheleleyo kwendalo yokuphila yomntu. Sishiya ngemva izakhiwo zekhonkrithi kunye neendleko zokugcina ezingapheliyo zeendawo ezinemozulu ebandayo.
+
+
+1.  INdawo yokuHlala eTshisayo
+
+NgoMbhalo, imfuduko enkulu yobushushu yenziwa ukuya kwiindawo apho uluntu luyilelwe ngokwebhayoloji ukuba luhlale khona.
+
+
+2.  Iindawo eziPhakamileyo eziTshisayo: Indawo eKhuselekileyo
+
+Kwibloko yaseNtshona, ukhetho lomntla woMzantsi Melika lusekelwe ekuzinzeni kwetectonics kunye nokusebenza ngokufanelekileyo kobushushu. Apha, imfuno yeenkqubo zokufudumeza icinywe ngokupheleleyo.
+
+
+3.  UYilo loBuninzi
+
+Izindlu ezizii-modular ezinomgangatho ongunaphakade zihambiswa zivela kwi-NAPZ. Ngaphakathi kwale mimandla, akukho rhwebo lukhoyo; yonke into isebenza njengemisebenzi edityanisiweyo ngaphakathi kweziseko zophuhliso.
+
+
+4.  Ubuchwepheshe ngeNdawo
+
+Oku kukutshintshiselana ngokulinganayo. Iimveliso zecandelo loshishino zibonelelwa zivela kumda weYurophu, ngelixa uMzantsi Melika ubonelela ngommandla. Xa la malungu mabini edibana, kuvela uqoqosho olukhululekileyo oluthe ngqo kwilizwekazi loMzantsi Melika kubo bonke abemi bangoku nabekamva. Akukho mali ijikelezayo—siyayicima imfuno yayo.
+
+IManifesto awuchazi iprojekthi yokuthumela kwelinye ilizwe yaseYurophu, kodwa umanyano lwehlabathi jikelele. Izizwe ezikwimimandla etshisayo aziyo "zindlu zokubamba iindwendwe"; zingamahlakani angabaseki angena ngqo kuqoqosho olukhululekileyo kwaye angabanini beziseko zophuhliso ngokwemiqathango elinganayo namazwe asemantla.
+
+
+5.  Ilungelo leLongamo leZindlu
+
+Ngaphakathi komanyano lweerobhothi, indlu ayisiyiyo into yorhwebo okanye umthombo wetyala lobomi bonke. Wonke ummi uqinisekiswa ikhaya lobuchwepheshe obuphezulu, elakhiwe kwaye ligcinwe yipaki yoomatshini. Azikho iirenti, akukho zikweledu zezindlu, kwaye akukho rhafu yepropati. Lilungelo elisisiseko ngokupheleleyo.
+
+
+6.  Ukugqwesa kobuChwepheshe
+
+Amakhaya akhiwa kusetyenziswa izinto ezinomgangatho ongunaphakade, akhululwe ngokupheleleyo kwiimfuno zokulungiswa kwekamva. Yonke into ukusuka kulawulo lwemozulu kunye nokucocwa kwamanzi ukuya ekucocweni okuzenzekelayo kunye nolawulo lwenkunkuma kudityaniswe kwisakhiwo sesakhiwo kwaye ilawulwa ngokuzimeleyo.
+
+
+7.  UYilo oluvisisanayo
+
+Ekubeni yonke into yakhiwa kwimimandla enomlinganiselo wonyaka ophakathi ozinzileyo nomnandi, uyilo lunokuvulwa. Imida phakathi kwezithuba ezingaphakathi nangaphandle iyachithwa. Izakhiwo zidityaniswe kwindalo etshisayo, zineenkqubo zamandla elanga ezizigcinayo kunye neegadi ezithe nkqo.
+
+
+
+=======================================
+
+
+
+K.   ULawulo lwePalamente kunye neLizwi laBantu
+
+
+
+1.  Indlela eNtsha yoLawulo lwePalamente
+
+Ukuze kuqinisekiswe ukuba ingqalasizinda ye-AI ezimeleyo ayinakuze yahlukane nentando yabemi, amandla ezopolitiko ahlala ebambelele nkqi kubemi—ngenkqubo yokuvota yedemokhrasi eyandiswe ngokumandla ebekwe ngqo ezandleni zomntu ngamnye.
+
+
+2.  Unyulo lwePalamente loNyaka
+
+Ukuqinisekisa ukusabela ngokupheleleyo kunye nokuthintela urhwaphilizo okanye ukungashukumi phakathi kwesakhiwo samandla, unyulo olunyanzelekileyo lwepalamente lwaziswa minyaka le. Abantu baya kuhlala bevavanya kwaye beqondisa isantya senguqu yesizwe.
+
+
+3.  IiReferendamu zeQhinga kunye noNyulo oluNgemanga
+
+Abantu banelungelo elingasikelwanga mda lokwenza izigqibo eziqinisekileyo kweyona micimbi ibalulekileyo yolongamo lwesizwe ngee-referendamu ezithe ngqo okanye unyulo olungemanga. Ezi ndawo zilandelayo ziya kuhlala ziphantsi kokumiselwa okuthe ngqo koluntu:
+
+    • Imifelandawonye yaMazwe ngaMazwe: Ukungenela okanye ukurhoxa kwiinyunyana zezopolitiko, ezoqoqosho, okanye ezomkhosi, izivumelwano, kunye namabhunga alawula amazwe aphezulu.
+
+    • IMibutho yeHlabathi: Ukungenela okanye ukurhoxa kwimibutho yamazwe ngamazwe, amagunya alawulayo, okanye ulwamkelo lwehlabathi.
+
+    • Isithintelo seQhinga: Ukufunyanwa, ukubakho, okanye ukupheliswa kokusebenza kwezixhobo zenyukliya, zekhemikhali, okanye ezinye izixhobo zokutshabalalisa ngobuninzi.
+
+    • UMgangatho woMgaqo-siseko: Ukupheliswa, ukusekwa, okanye ukulungiswa kwezakhiwo ezisisiseko zolawulo lwesizwe, kuquka ubukumkani okanye ukulandelelana kombuso.
+
+
+4.  Inguqu yoLawulo
+
+Xa injongo sele imiselwe (yonke into iya kuba simahla), ulawulo lugxila ekuphumezeni isicwangciso. Izigqibo zenziwa ngezishwankathelo ezibhalwe emgaqweni-siseko.
+
+
+
+=======================================
+
+
+
+L.   URulumente njengeShishini eliHlangeneyo
+
+
+
+1.  URulumente: Ishishini laKho eliValelweyo
+
+Kule nkqubo yanamhlanje, ungunmnini wesizwe, kodwa awuvumelekanga ukuba usisebenzise. Cinga ngoRulumente njengeshishini elikhulu apho wena kunye nabo bonke abanye abemi ningabanini zabelo. Kodwa eli shishini—amandla ethu ahlanganisiweyo—lihleli entolongweni, libotshwe ngamatyathanga emva kweentsimbi ngebhola netyathanga "letyala" kwaye lithatyathelw' indawo sisilo sezoqoqosho, xa yonke into uRulumente awayeyifuna yayikukhululeka kwakhe. Ngelixa iinkampani zabucala zibaleka zijikeleza ngokuhamba ngokupheleleyo kwaye zivelisa umgangatho ophantsi ukwandisa ingeniso, isixhobo sabemi ngokwabo (uRulumente) sihleli sikhubazekile kwaye singenakho ukusebenza. Sixelelwe ukuba uRulumente "akanakukwazi ukuyihlawulela," ukuba akanazo iingalo nemilenze yokwakha ikamva. Inyaniso kukuba uRulumente uhleli emva kweentsimbi kuba iibhanki zabucala kunye nenkqubo endala bathathe isitshixo somatshini wokushicilela imali.
+
+
+Kodwa IManifesto sisitshixo esivula isisele.
+
+
+2.  SiyaMbuyisela URulumente Imilenze YaKhe
+
+Ngokuvula imveliso eyirobhothi (Per Machina), uRulumente akasadingi "kucela imvume" okanye ukurhafisa abemi bakhe ukuze enze izinto. Oomatshini ziingalo nemilenze emitsha kaRulumente.
+
+
+3.  SiyiTyumza Ibhola neTyathanga
+
+Ngokubuyisa ilungelo lokudala imali yolongamo, ityala ebeligcine uRulumente esihlalweni esinamavili liyacinywa.
+
+
+4.  Ukusuka eBanjweni ukuya kuMyili weZakhiwo
+
+Xa uRulumente ephakama kwisisele sakhe sasentolongweni, uyayeka ukuba bubukhulumentu obunzima. Utshintsha abe ngumatshini wezothutho osebenza kakuhle ohambisa iSabelo saKho seLongamo kwaye wakhe iparadesi kwiindawo ezitshisayo.
+
+
+
+=======================================
+
+
+
+M.   IBhanki yaBucala iya kuCima iPesenti eFana neyokuNyuka kwe-GNR
+
+
+
+Iibhanki zabucala ziyanyanzelwa ukuba zicime amatyala abemi ngesantya esifana ncam nesiye inyuke ngaso iMveliso yeSizwe ePheleleyo (GNR). Njengoko uqoqosho olukhululekileyo lukhula, inzuzo yemali yeenkampani iyancipha, ngelixa izinto zabo zexabiso zokwenyani zisonyuka simahla. Iibhanki azinakuvunyelwa ke ngoko ukuba zifune inzala epheleleyo, njengoko iindleko zokuphila kwabanini beebhanki nazo zehla ziye kuziro.
+
+Lo ngumongo wesakhiwo semali sohlengahlengiso. Iibhanki zabucala kufuneka "zipheliswe" njengoko iMveliso yeSizwe ePheleleyo (GNR) yoqoqosho olukhululekileyo ikhula. Oku kwenza inguqu egudileyo apho ixabiso lemali lisuka ematyaleni liya kumthamo wemveliso.
+
+
+
+Nasi esona sisombululo sisebenzayo:
+
+
+1.  "Isalathisi sokuPhelisa" (iTyala-ngokuchasene-naSimahla)
+
+Yazisa indlela esemthethweni ebizwa ngokuba kukuCinywa kweTyala okuZenzekelayo.
+
+
+A.  Ingqiqo
+
+Urhulumente ulinganisa ukuba yeyiphi inxalenye yeemfuno ezisisiseko zabemi (ukutya, amandla, izindlu, ezothutho) ngoku ebonelelwa simahla ngeepaki zerobhothi zesizwe.
+
+
+B.  Indlela yokuSebenza
+
+Ukuba i-20% yeemfuno zobomi iye yaba simahla, iibhanki zabucala ziyanyanzelwa ngumthetho ukuba zicime i-20% yawo onke amatyala abucala. Inzala iyamiswa okanye incitshiswe ngesantya esihambelanayo.
+
+
+C.  Ingxoxo
+
+Abasemabhankini abanakukhalaza ngezizathu zokuziphatha, kuba neendleko zabo zokuphila zikwazehla nge-20%. Ababi ngamahlwempu ngokomgangatho wobomi, kuphela ngokwamanani akwisikrini.
+
+
+
+2.  Ukuphathwa "kweeBhanki eziNobutshaba" kuMazwe aNgaphandle
+
+Oku yeyona nto iyinkxalabo enkulu—ukuba iibhanki ziya kubaleka kwaye zisebenzise amanye amazwe njengesiseko sokuhlasela umanyano lohlengahlengiso.
+
+
+
+Isisombululo kukuValelwa kweZimali:
+
+
+A.  Amandla oManyano
+
+Nje ukuba umanyano lohlengahlengiso (amazwe athe avula umbhalo) lusekiwe, luya kwazisa uthintelo olupheleleyo ngokuchasene neebhanki ezisebenza kumazwe anobutshaba.
+
+
+B.  Ukutshintsha kweXabiso
+
+Ekubeni umanyano lohlengahlengiso lulawula imveliso yokwenyani (iirobhothi kunye nemathiriyeli ekrwada), imali yeebhanki zangaphandle ngokukhawuleza iba zizicwili zephepha ezingenaxabiso. Abanako "ukuthenga" nantoni na kumanyano lohlengahlengiso ngemali yabo yamatyala amadala.
+
+
+C.  Ukhetho lweeBhanki zaBucala
+
+Nokuba zihlale zibe yinxalenye yeqela elitsha lolawulo lwenkonzo yoluntu kuqoqosho olukhululekileyo oluya ekwenziweni iirobhothi ngokupheleleyo, okanye zibalekele kumazwe aza kuwa ngokukhawuleza ngenxa yokuba loo mazwe akanakho ukufikelela kumanyano lohlengahlengiso kunye nemveliso yalo yerobhothi.
+
+
+
+3.  Indima yeBhanki eNkulu: Ukusuka kwiNzala ukuya kuMlinganiselo weziBonelelo
+
+IBhanki eNkulu iyayeka ukujonga ukunyuka kwamaxabiso kunye namazinga enzala. Endaweni yoko, iba liOfisi yeziBonelelo.
+
+
+A.  Ukusuka kwiBhanki eNkulu ukuya kwiOfisi yeziBonelelo
+
+IOfisi yeziBonelelo endaweni yoko ilinganisa i-GNR, indlalifa ye-GDP eyenziwe yesizwe. Xa i-GNR igubungela i-100 ekhulwini leemfuno zabemi, uLongamo oluPheleleyo luyabhengezwa. Ngelo xesha, yonke imali namatyala ayekeleli ukubakho phantsi komthetho womgaqo-siseko.
+
+
+B.  Ukucaca
+
+Ngokuba nale le icacileyo (umz., i-10%, i-50%, i-100%), iinkokeli zezizwe ezizayo kumanyano lohlengahlengiso zibona ngqo ukuba indlela injani. Iba yinkqubo enokuqikelelwa endaweni yesiphithiphithi.
+
+
+C.  Amandla eeBhanki aLungelelananga
+
+IManifesto wenza ukuchithwa okulawulwayo kwenkqubo yamatyala. Njengoko oomatshini bekhulula uluntu kwiindleko, uluntu nalo luyakhululwa ematyaleni alo. Asilwi neebhanki ngezixhobo, kodwa ngezishwankathelo zemathematika ezenza amandla azo angafuneki.
+
+Ingxelo engentla isebenza njengenkcazelo yobuchwepheshe "yoHlaziyo olungabonakaliyo" ekusebenzeni.
+
+
+
+=======================================
+
+
+
+N.   ILe yokuKhululeka: Ukusuka eMdeni ukuya kuLongamo
+
+
+
+1.  Inguqu yeMathematika
+
+Ukukhokela umanyano lohlengahlengiso ukuba luphume kumbambano wenkqubo yamatyala abucala, ukuxelwa kwangaphambili okupheleleyo kuyafuneka. Inguqu akufuneki yakhiwe phezu kwezinto ezizezithuba, ezinesiphithiphithi okanye amaza othusayo ezoqoqosho angenakuqikelelwa.
+
+Isisombululo kukuba kube nomthetho, il e ehambelanayo apho ukukhululwa ngezemali kwabemi kwenzeka ngesantya esifana ncam nesokwanda kwemveliso yokwenyani—iMveliso yeSizwe ePheleleyo (GNR).
+
+NgeLe yokuKhululeka, amanani abonakalayo (amatyala) adityaniswa ngqo kwinto yokwenene ebonakalayo (imveliso eyirobhothi). Kanye kanye ngomzuzu oomatshini bethatha indawo yobomi kwaye bayenze ibe simahla kubemi, iibhanki zenkqubo endala ziyanyanzelwa ukuba zihlehlele kwinqanaba elihambelanayo.
+
+
+
+
+
+
+
+
+Ukuphunyezwa kuxhomekeke kwiziseko ezibini:
+
+
+1.  Ubuchwepheshe obuSakhulayo
+
+Amalungu ngamanye—iimodeli ze-AI eziphambili, ushicilelo lwesinyithi lwe-3D, kunye neefektri ezizisebenzelayo—sele zikhona zisasazeke kwihlabathi liphela. Umatshini sele unamandla okwakha iinxalenye zomatshini. Okungekhoyo ayisiyiyo ubuchwepheshe, kodwa yintando esembindini, engenatyala yokuvala iluphu.
+
+
+2.  Intsebenziswano yePlanethi
+
+Kulapho ukudityaniswa nemimandla yeentaba ezitshisayo kuye kubaluleke ngokupheleleyo. Oku ayisiyiyo intengiselwano yezemali, kodwa yintsebenziswano yobuchwepheshe kunye nejografi. Imimandla esemantla inikela ngophando kunye nobuchwepheshe obuphezulu obukhoyo, ngelixa uMzantsi Melika unikela ngommandla, amandla elanga angaguqukiyo, kunye nemathiriyeli ekrwada ukuvavanya, ukusasaza, nokwandisa iinkqubo zokuzenza ngokwazo phantsi kweemeko ezifanelekileyo zobushushu.
+
+UManyano kufuneka lusungule kwaye lubeke phambili le projekthi njengenyathelo lalo lokuqala lomgaqo-siseko. Enye indlela endaweni yobukhulumentu obuwayo namhlanje kunye nomsebenzi onyanzelekileyo ongenantsingiselo ayisiyiyo isiphithiphithi—enye indlela yile projekthi ejolileyo neyehlabathi jikelele yokuvala iluphu ezimeleyo kwaye oomatshini bathwale umthwalo wemveliso kube kanye.
+
+
+
+=======================================
+
+
+
+C.   ULongamo loBulumko bukaRhulumente
+
+
+
+Ukukhusela uxolo nozinzo loluntu kwihlabathi elinoorobhothi ngokupheleleyo, ingqalasizinda yobukrelekrele elawula urhulumente kufuneka ihlale iphantsi kolawulo lukarhulumente olungasikelwanga mda.
+
+
+1.  Ubunini bukaRhulumente obuKhethekileyo
+
+Ubukrelekrele bokwenziwa obulawula izibonelelo zesizwe, ezokuthuthwa kwezinto, kunye nomthamo wemveliso yenza umgogodla wesizwe. Lonke uphuhliso, isiseko sekhowudi, kunye nokwenziwa kwemodeli yobu krelekrele kuya kwenzeka phantsi kolawulo lukarhulumente. Abadlali babucala abavumelekanga ukuphuhlisa okanye ukuhlanganisa iinkqubo zolawulo ezikhuphisanayo kwingqalasizinda yesizwe. Oku kukuthintela iinjongo zengeniso okanye i-algorithms engacacanga ukuba yonakalise ingqiqo yenkqubo.
+
+
+2.  UMlawuli onengqiqo
+
+I-AI iya kusebenza njengomlawuli ongenakonakala. Ayiyomntu ngamnye oyongameleyo, kodwa iyinxalenye yepropati eqhelekileyo yepaki yoomatshini. Injongo yayo kukwandisa intlalontle yabemi, ukwabiwa kwezibonelelo, kunye nokuzinza, ngaphandle kwempembelelo yezopolitiko okanye yorhwebo.
+
+
+3.  Elubala noLawulo
+
+Urhulumente uqinisekisa ukuba iimodeli zemathematika zenkqubo kunye neziseko zokuthatha izigqibo ziyafumaneka ukuba zihlolwe kwilizwe lonke. Akukho sigqibo sibalulekileyo ebukumkanini sinokwenziwa "yibhokisi emnyama" engenakuchazwa ngokwesiseko semigaqo esisiseko yomgaqo-siseko. Urhulumente uphuhlisa, ungumnini, kwaye ulawula le AI-inkulu njengenxalenye yezinto eziluncedo kuluntu, njengomqinisekisi wokuba uluntu aluphinde lubuyele ematyaleni okanye ekunqongopheleni kwezibonelelo.
+
+
+
+=======================================
+
+
+
+D.   Isithembiso soMgangatho – Ukusuka ekuThelelaneni ukuya ekuGqweseni
+
+
+
+Kwihlabathi elidala, wawunyanzelekile ukuba wamkele iimveliso ezenzelwe ukusilela. Oku kwakungekho ngenxa yobunjineli obugwenxa, kodwa ngenxa yokuba imarike yabucala yayifuna ukuthelelana. Umgangatho wokwenyani wawuxabisa ngaphezulu kunoko abemi babenokukuhlawula kuhlahlo-lwabiwo mali lwabo lwemihla ngemihla. Iinkampani zazinyanzelwa ukuba zithengisele inkitha ngamaxabiso ezinokuwagcina, nto leyo eyayinika isiphumo esiqikelelekayo: izinto ezingekho mgangathweni nezihlala ixesha elifutshane.
+
+Ngaphakathi kombono woMbhalo, le njongo yengeniso iyapheliswa ngokupheleleyo. Xa urhulumente engumnini wemathiriyeli ekrwada kwaye iirobhothi zethu eziqhutywa yi-AI zilawula ukukhutshwa kwazo, isidingo sokuthelelana ngemfezeko yezinto eziphathekayo siyanyamalala. Ukusebenza njengabameli bolwakhiwo bakarhulumente, iirobhothi zethu zikunyamekela ngendlela engazange yabonwa ngaphambili ngokuvelisa ngokukhethekileyo okona kuhle kakhulu.
+
+Ngenxa yokuba oomatshini abafuni nzuzo, bekhona kuphela ukukhonza uluntu, bahlala besebenzisa ezona zinto zomeleleyo nezihlala ixesha elide. Asakhi ukuze saphinda sathengisa—sakha ukuze ukhululeke. Umgangatho uyayeka ukuba bubunewunewu obugcinelwe abazizityebi; uba ngumgangatho ongathelelaniswayo kummi ngamnye ngaphakathi koManyano lweeRobhothi.
+
+
+
+=======================================
+
+
+
+E.   Ukulingana kwaBemi bePlanethi
+
+
+
+Imfuduko enkulu yobushushu ayenzeki ngokungacwangciswanga, kodwa ngokulungelelaniswa ngokutsha okunengqiqo nangenkcubeko yabemi beplanethi:
+
+
+1.  Ilizwekazi loMzantsi Melika (iBloko yaseNtshona)
+
+Abantu baseYurophu kunye nabaseRashiya bomnombo waseYurophu, abaseMntla Melika, abaseOstreliya, abaseNew Zealand, kunye nabeMhlophe boMzantsi Afrika bahlanganiswa kunye kwilizwekazi loMzantsi Melika, ngelixa amazwe aluhlaza akuMbindi Melika (emazantsi eMexico) avulwa njengeendawo zokuhlala eziqhubekekayo. Lo mmandla uba sisiseko solongamo lwabantu baseNtshona phantsi kweemeko ezifanelekileyo zobushushu.
+
+
+2.  IBloko yaseMpuma (iIndonesia neOstreliya)
+
+Abantu baseMpuma Asia kunye nabemi beAsia yaseRashiya, kunye nabemi abanxulumeneyo beBloko yeMveliso yaseMpuma enkulu bahlanganiswa kunye kummandla onabela kwiIndonesia, iPapua New Guinea, naseOstreliya. Imimandla ebanzi engaphakathi eOstreliya yenziwe iirobhothi ngokupheleleyo ngeenjongo zoshishino olunzima kunye namandla elanga, ngelixa abemi behlala kwiindawo ezifudumeleyo, ezingaselunxwemeni ezitshisayo.
+
+Abemi beendawo ezibandayo zoMbindi Asia bafuduselwa emazantsi besiya kwiindawo zokuhlala ezifudumeleyo kwiOceania esezantsi nakwiNtla yeOstreliya, ngelixa imimandla yomhlaba ngokwayo (kuquka neendawo eziyintlango kumazwe aseArabhu) ithathwa ziiyunithi zoomatshini. Iintlango zaseArabhu ziyaguqulwa, njengeSahara, zibe ziipaki zamandla ezizisebenzelayo.
+
+
+3.  Ilizwekazi laseAfrika
+
+Abemi baseAfrika kwilizwekazi labo benza iBloko yeziBonelelo zaseZantsi, apho iindawo ezitshisayo nezifudumeleyo zigcinwa ngokukhethekileyo njengeendawo zokuhlala abantu ukuze bachache kwaye bakhululeke, ngelixa iindawo ezibandayo neendawo eziyintlango ezinkulu zelizwekazi zenziwe iirobhothi ngokupheleleyo. Le mimandla iguqulwa ibe zizakhiwo ezingoomatshini ababods, amashishini amakhulu, kunye nezikhululo zamandla elanga ezinkulu ezivelisa amandla okuguqulwa kwalo lonke ilizwekazi laseAfrika ngaphandle kokuphazamisa iindawo zendalo.
+
+
+
+=======================================
+
+
+
+F.   Umanyano lweMarike yeLongamo – uKhuselo lweGeopolitiki ngokuchasene neMfazwe yezeMali
+
+
+
+Ukuphelisa inkqubo yamatyala ehlabathi jikelele kunye nokwandisa isantya semveliso yasimahla yenqanawa yoomatshini, izizwe ezininzi kufuneka zidityaniswe ngokukhawuleza zibe yimarike enye yangaphakathi: Umanyano lweMarike yeLongamo.
+
+Inguqu ekwanti kwisizwe esinye isesichengeni ngokweqhinga. Ibambezela ubuninzi, yandisa ukungqubana kwezoqoqosho kwisigaba senguqu, kwaye ibeka ilizwe elilodwa kwiithintelo ezilungelelanisiweyo kunye nohlaselo olusemthethweni oluvela kwinkqubo endala yezemali kwiinkundla zorhwebo lwamazwe ngamazwe. Umanyano olukhulu, olunqumla imida olunomthetho wezoqoqosho ofanayo luyimfuneko yemathematika. Okukhona imarike ekwabelwana ngayo inkulu, kokukhona ubuninzi bezinto ezibonakalayo obupheleleyo buphunyezwa ngokukhawuleza ngeluphu ezimeleyo (AAASR).
+
+Injongo yokugqibela yalomanyano kukulingana okupheleleyo kweplanethi apho imida yamazwe amadala ichithwa. Oku kuqinisekisa wonke ummi ongamakhosi inkululeko epheleleyo, esemthethweni yokushiya iindawo eziyimiqolomba okanye ezimhlophe ukuze bahlale ngokukhululekileyo, baphile, kwaye bonwabele imveliso engenakukhuhlana nayo yoomatshini kwiindawo ezifanelekileyo, ezitshisayo zomhlaba.
+
+
+
+=======================================
+
+
+
+G.   Imbiza Enkulu kunye nokuVulwa koButyebi beSizwe
+
+
+
+Ukuze uqonde uhlengahlengiso lwesakhiwo salo Mbhalo, umntu kufuneka aqale aqonde ubunjani bokwenyani bemali ngaphakathi kwale ndlela ikhoyo. Imali ebizwa namhlanje ngokuba "yingxowa-mali karhulumente," eneneni, ngamandla adityanisiweyo abemi. IManifesto uyayitshintsha le nkqubo ngesimemezelo esinye, esisisiseko: Uqoqosho lwesizwe kufuneka lusebenzele ikamva lesizwe, hayi amaxwebhu ebhalansi emali yamaziko eebhanki zabucala.
+
+
+1.  Ukusuka kwiiNgxowa-mali ezingenzi nto ukuya kwiNguquko eSebenzayo
+
+Siyayeka ukujonga uhlahlo-lwabiwo mali lukarhulumente njengengqokelela yamanani anomda, athintelayo. Ngokuba amazwe angamalungu oManyano anqumle onke amaqhina kunye nenkqubo yeebhanki zabucala, "imbiza enkulu" iyavulwa kuyo yonke imakethi ekwabelwana ngayo. Ezi zibonelelo zidityanisiweyo zisetyenziswa ngokukhawuleza ukufumana, ukuphuhlisa, nokusasaza inqanawa yoomatshini enqumla imida efunekayo ukwenza ubukho bungabinaxabiso ngokupheleleyo kumhlali ngamnye ngaphakathi koManyano.
+
+
+2.  Ukuphela kweNgqiqo yeTyala
+
+IManifesto awusaqapheli nayiphi na imfuno "yokuboleka" imali eyinkunzi kwiimarike zemali. Xa urhulumente ebuyisa ilungelo lakhe lokukhuphela imali exhaswa kuphela ngamandla emveliso yesizwe, isixhobo sokunyanzela kunye nesabhokhwe semarike yamatyala ziye ziphelelwe lixesha ngokupheleleyo.
+
+
+
+3.  OkuPhambili ngokweQhinga
+
+Ezi ngxowa-mali zivuliweyo ziya kuthi, ngaphandle kokukhetha, zixhase iintsika ezintathu ezingundoqo:
+
+
+A.  Ingqalasizinda yokuSinda
+
+Ukwenziwa ngokupheleleyo nokuzenzekela kunye nokukhuselwa kwamandla, ukuveliswa kwamanzi, kunye nothutho.
+
+
+B.  Imveliso eyiRobhothi ngokupheleleyo
+
+Ukusetyenziswa kwemveliso ezimeleyo apho oomatshini bakhulula uluntu ngokuhambisa ubunewunewu kunye nokuzimela ngokwezinto eziphathekayo njengomgangatho wentlalo ongathelelaniswayo, obonakala ngobuninzi obupheleleyo bomgangatho ophezulu kakhulu.
+
+
+C.  ILogistics yeGeopolitiki
+
+Ulawulo lwenkqubo kunye nokwenziwa kwemfuduko ukuya kwiindawo zemozulu ezisebenza ngobushushu.
+
+
+
+=======================================
+
+
+
+H.   ULawulo lobuChwepheshe kunye noLawulo lweMithombo
+
+
+
+Kwesi sahluko, kusekwa izikhokelo zolawulo zendlela ihlabathi elitshintshela ngayo kuqoqosho olukhululekileyo olunoorobhothi ngokupheleleyo.
+
+
+1.  ULongamo lokuLawula kuMatshini wokuPrinta iMali
+
+IManifesto uthatha ngokukhawuleza ulawulo lwebhanki enkulu. Urhulumente unelungelo elikhethekileyo lokudala imali esemthethweni yelizwe: Imali yeLongamo. Oku kubonisa amandla okuvelisa, hayi amatyala.
+
+
+2.  IMveliso yeSizwe ePheleleyo (GNR) kunye nePaki yooMatshini beSizwe
+
+Injongo kukuba yonke imveliso ilawulwe yipaki yoomatshini yesizwe ezimeleyo elawulwa nguMgaqo-siseko wooMatshini. Oomatshini bangabanini babo ukuze kuqinisekiswe ukuba imveliso ayinakuze ibe yeyabucala okanye ihluthwe, kodwa iya kuhlala isebenzela abantu njengamandla endalo aqhelekileyo. Utyalo-mali kwi-AI lubekwe phambili ukufikelela kwinqanaba apho iindleko zemveliso ziba nguziro.
+
+
+3.  Isabelo seLongamo: Indlela eya kuButyebi
+
+Ngexesha lesigaba senguqu, wonke ummi uqinisekiswa iSabelo seLongamo sonyaka. Oku kwenza wonke ummi azimele ngokwezemali kwaye kuvala umsantsa oya kwihlabathi elitsha. Esi Sabelo sixhaswa ngemali ngokuthi urhulumente aphinde aqondise iimali zebhajethi ezikhoyo ukusuka kumthwalo wokondla inkqubo yakudala ukuya kwiintlawulo ezithe ngqo, njengoko ukwenziwa kweerobhothi kwehlisa iindleko zizonke zoluntu.
+
+
+
+=======================================
+
+
+
+I.   INdawo yokuVelisa yaseMntla-Atlantiki (NAPZ)
+
+
+
+1.  Igumbi leNjini lePlanethi
+
+IYurophu noMntla Melika ukusukela ngoku bachazwa ngumsebenzi wabo wobuchwepheshe njengendawo yokusebenzela esembindini kunye nendlu yokugcina izityalo zeplanethi.
+
+
+2.  Ukuzenzekela okuPheleleyo
+
+Ngaphakathi kwe-NAPZ, umsebenzi womntu uyayeka ukubakho. Iifama ezithe nkqo kunye namasimi enziwe ngoomatshini avelisa ukutya ubusuku nemini. Iifektri zivelisa iimveliso ezinomgangatho ongunaphakade kuba injongo yengeniso icinywe ngokupheleleyo.
+
+
+3.  Amandla: ISiseko
+
+I-NAPZ igutyungelwe luthungelwano olunxibeleleneyo lwamandla enyukliya, ifusion, kunye nemithombo evuselelekayo. Xa amandla engabizi mali, eyona ndleko inkulu yoluntu enye iyanyamalala.
+
+
+4.  Ukupheliswa kweeNdawo zokuHlala ezisisigxina
+
+I-NAPZ ngummandla ogcinelwe oomatshini. Iindawo ezibandayo nezimnyama zaseYurophu naseMntla Melika ziyapheliswa njengeendawo zokuhlala zabantu ezisisigxina. Izixeko ezingamafa ziguqulwa zibe ngamaziko ezothutho ezizisebenzelayo.
+
+
+5.  Umbono weYurophu nowaseMntla Melika
+
+Xa iYurophu noMntla Melika sele benziwe iirobhothi ngokupheleleyo kwaye bevelisa isivuno esaneleyo sabemi baseYurophu, baseMntla Melika, kwaye—kwinqanaba lokugqibela—abemi boMzantsi Melika, isigaba esilandelayo siyavulwa. Umthamo wemveliso yaseMntla Melika uyanda ukuze uxhase ngokupheleleyo ilizwekazi loMzantsi Melika, nto leyo ekhulula imveliso yaseYurophu kwaye iphinde iqondiswe kusasazo olucwangcisiweyo kwamanye amazwekazi, ngelixa kugcinwa amandla okwandisa okuqhubekekayo njengoko kufuneka.
+
+
+6.  Isiseko soShishino
+
+I-NAPZ ayichazwa yimida yesizwe yemveli, kodwa ngezibonelelo zayo ezidibeneyo, ezizisebenzelayo. Injongo yayo yodwa kukwenziwa ngobuninzi kwenqanawa yehlabathi jikelele yoomatshini, ukuqhubela phambili kobukrelekrele bokwenziwa obucwangcisiweyo, kunye nokuveliswa kweeplani zobuchwepheshe eziphambili ezifunekayo ukufezekisa ubuninzi obugqibeleleyo beplanethi.
+
+
+7.  Ukudityaniswa kweLogistics
+
+Lo mmandla usebenza ngokwentsebenziswano ethe ngqo kunye neendawo zokuhlala ezitshisayo kunye namacandelo ezibonelelo ezisemazantsi. Ngelixa iindawo ezitshisayo zibonelela ngeemeko ezifanelekileyo zobushushu zokuhlala kwabantu kunye nokuchacha ngolongamo, i-NAPZ isebenza njengendawo yokubumbela yoshishino olunzima—ilungisa imathiriyeli ekrwada kwaye isebenzise uthungelwano lwezothutho oluzimeleyo ukusasaza izinto ezigqityiweyo kunye noomatshini simahla ngokupheleleyo kulo lonke uManyano lweMarike yeLongamo.
+
+
+8.  Ukuhlelwa ngokweSakhiwo
+
+Njengoko imveliso yefektri ezenzekelayo ngaphakathi kwe-NAPZ ifikelela kumthamo omkhulu, igalelo layo elikhulayo kwiMveliso yeSizwe ePheleleyo (GNR) likhawulezisa ukuphelelwa lixesha okuqinisekileyo kweemali eziyimfezeko ezingamafa, okuvula indlela yokuphunyezwa ngokupheleleyo koMgaqo-siseko wooMatshini.
+
+
+
+=======================================
+
+
+
+J.   Ikhaya Elitsha
+
+
+
+Ukufuduselwa kwiindawo ezitshisayo akubonisi nje ukutshintsha kwendawo, kodwa kukuhlaziywa ngokupheleleyo kwendalo yokuphila yomntu. Sishiya ngemva izakhiwo zekhonkrithi kunye neendleko zokugcina ezingapheliyo zeendawo ezinemozulu ebandayo.
+
+
+1.  INdawo yokuHlala eTshisayo
+
+NgoMbhalo, imfuduko enkulu yobushushu yenziwa ukuya kwiindawo apho uluntu luyilelwe ngokwebhayoloji ukuba luhlale khona.
+
+
+2.  Iindawo eziPhakamileyo eziTshisayo: Indawo eKhuselekileyo
+
+Kwibloko yaseNtshona, ukhetho lomntla woMzantsi Melika lusekelwe ekuzinzeni kwetectonics kunye nokusebenza ngokufanelekileyo kobushushu. Apha, imfuno yeenkqubo zokufudumeza icinywe ngokupheleleyo.
+
+
+3.  UYilo loBuninzi
+
+Izindlu ezizii-modular ezinomgangatho ongunaphakade zihambiswa zivela kwi-NAPZ. Ngaphakathi kwale mimandla, akukho rhwebo lukhoyo; yonke into isebenza njengemisebenzi edityanisiweyo ngaphakathi kweziseko zophuhliso.
+
+
+4.  Ubuchwepheshe ngeNdawo
+
+Oku kukutshintshiselana ngokulinganayo. Iimveliso zecandelo loshishino zibonelelwa zivela kumda weYurophu, ngelixa uMzantsi Melika ubonelela ngommandla. Xa la malungu mabini edibana, kuvela uqoqosho olukhululekileyo oluthe ngqo kwilizwekazi loMzantsi Melika kubo bonke abemi bangoku nabekamva. Akukho mali ijikelezayo—siyayicima imfuno yayo.
+
+IManifesto awuchazi iprojekthi yokuthumela kwelinye ilizwe yaseYurophu, kodwa umanyano lwehlabathi jikelele. Izizwe ezikwimimandla etshisayo aziyo "zindlu zokubamba iindwendwe"; zingamahlakani angabaseki angena ngqo kuqoqosho olukhululekileyo kwaye angabanini beziseko zophuhliso ngokwemiqathango elinganayo namazwe asemantla.
+
+
+5.  Ilungelo leLongamo leZindlu
+
+Ngaphakathi komanyano lweerobhothi, indlu ayisiyiyo into yorhwebo okanye umthombo wetyala lobomi bonke. Wonke ummi uqinisekiswa ikhaya lobuchwepheshe obuphezulu, elakhiwe kwaye ligcinwe yipaki yoomatshini. Azikho iirenti, akukho zikweledu zezindlu, kwaye akukho rhafu yepropati. Lilungelo elisisiseko ngokupheleleyo.
+
+
+6.  Ukugqwesa kobuChwepheshe
+
+Amakhaya akhiwa kusetyenziswa izinto ezinomgangatho ongunaphakade, akhululwe ngokupheleleyo kwiimfuno zokulungiswa kwekamva. Yonke into ukusuka kulawulo lwemozulu kunye nokucocwa kwamanzi ukuya ekucocweni okuzenzekelayo kunye nolawulo lwenkunkuma kudityaniswe kwisakhiwo sesakhiwo kwaye ilawulwa ngokuzimeleyo.
+
+
+7.  UYilo oluvisisanayo
+
+Ekubeni yonke into yakhiwa kwimimandla enomlinganiselo wonyaka ophakathi ozinzileyo nomnandi, uyilo lunokuvulwa. Imida phakathi kwezithuba ezingaphakathi nangaphandle iyachithwa. Izakhiwo zidityaniswe kwindalo etshisayo, zineenkqubo zamandla elanga ezizigcinayo kunye neegadi ezithe nkqo.
+
+
+
+=======================================
+
+
+
+K.   ULawulo lwePalamente kunye neLizwi laBantu
+
+
+
+1.  Indlela eNtsha yoLawulo lwePalamente
+
+Ukuze kuqinisekiswe ukuba ingqalasizinda ye-AI ezimeleyo ayinakuze yahlukane nentando yabemi, amandla ezopolitiko ahlala ebambelele nkqi kubemi—ngenkqubo yokuvota yedemokhrasi eyandiswe ngokumandla ebekwe ngqo ezandleni zomntu ngamnye.
+
+
+2.  Unyulo lwePalamente loNyaka
+
+Ukuqinisekisa ukusabela ngokupheleleyo kunye nokuthintela urhwaphilizo okanye ukungashukumi phakathi kwesakhiwo samandla, unyulo olunyanzelekileyo lwepalamente lwaziswa minyaka le. Abantu baya kuhlala bevavanya kwaye beqondisa isantya senguqu yesizwe.
+
+
+3.  IiReferendamu zeQhinga kunye noNyulo oluNgemanga
+
+Abantu banelungelo elingasikelwanga mda lokwenza izigqibo eziqinisekileyo kweyona micimbi ibalulekileyo yolongamo lwesizwe ngee-referendamu ezithe ngqo okanye unyulo olungemanga. Ezi ndawo zilandelayo ziya kuhlala ziphantsi kokumiselwa okuthe ngqo koluntu:
+
+    • Imifelandawonye yaMazwe ngaMazwe: Ukungenela okanye ukurhoxa kwiinyunyana zezopolitiko, ezoqoqosho, okanye ezomkhosi, izivumelwano, kunye namabhunga alawula amazwe aphezulu.
+
+    • IMibutho yeHlabathi: Ukungenela okanye ukurhoxa kwimibutho yamazwe ngamazwe, amagunya alawulayo, okanye ulwamkelo lwehlabathi.
+
+    • Isithintelo seQhinga: Ukufunyanwa, ukubakho, okanye ukupheliswa kokusebenza kwezixhobo zenyukliya, zekhemikhali, okanye ezinye izixhobo zokutshabalalisa ngobuninzi.
+
+    • UMgangatho woMgaqo-siseko: Ukupheliswa, ukusekwa, okanye ukulungiswa kwezakhiwo ezisisiseko zolawulo lwesizwe, kuquka ubukumkani okanye ukulandelelana kombuso.
+
+
+4.  Inguqu yoLawulo
+
+Xa injongo sele imiselwe (yonke into iya kuba simahla), ulawulo lugxila ekuphumezeni isicwangciso. Izigqibo zenziwa ngezishwankathelo ezibhalwe emgaqweni-siseko.
+
+
+
+=======================================
+
+
+
+L.   URulumente njengeShishini eliHlangeneyo
+
+
+
+1.  URulumente: Ishishini laKho eliValelweyo
+
+Kule nkqubo yanamhlanje, ungunmnini wesizwe, kodwa awuvumelekanga ukuba usisebenzise. Cinga ngoRulumente njengeshishini elikhulu apho wena kunye nabo bonke abanye abemi ningabanini zabelo. Kodwa eli shishini—amandla ethu ahlanganisiweyo—lihleli entolongweni, libotshwe ngamatyathanga emva kweentsimbi ngebhola netyathanga "letyala" kwaye lithatyathelw' indawo sisilo sezoqoqosho, xa yonke into uRulumente awayeyifuna yayikukhululeka kwakhe. Ngelixa iinkampani zabucala zibaleka zijikeleza ngokuhamba ngokupheleleyo kwaye zivelisa umgangatho ophantsi ukwandisa ingeniso, isixhobo sabemi ngokwabo (uRulumente) sihleli sikhubazekile kwaye singenakho ukusebenza. Sixelelwe ukuba uRulumente "akanakukwazi ukuyihlawulela," ukuba akanazo iingalo nemilenze yokwakha ikamva. Inyaniso kukuba uRulumente uhleli emva kweentsimbi kuba iibhanki zabucala kunye nenkqubo endala bathathe isitshixo somatshini wokushicilela imali.
+
+
+Kodwa IManifesto sisitshixo esivula isisele.
+
+
+2.  SiyaMbuyisela URulumente Imilenze YaKhe
+
+Ngokuvula imveliso eyirobhothi (Per Machina), uRulumente akasadingi "kucela imvume" okanye ukurhafisa abemi bakhe ukuze enze izinto. Oomatshini ziingalo nemilenze emitsha kaRulumente.
+
+
+3.  SiyiTyumza Ibhola neTyathanga
+
+Ngokubuyisa ilungelo lokudala imali yolongamo, ityala ebeligcine uRulumente esihlalweni esinamavili liyacinywa.
+
+
+4.  Ukusuka eBanjweni ukuya kuMyili weZakhiwo
+
+Xa uRulumente ephakama kwisisele sakhe sasentolongweni, uyayeka ukuba bubukhulumentu obunzima. Utshintsha abe ngumatshini wezothutho osebenza kakuhle ohambisa iSabelo saKho seLongamo kwaye wakhe iparadesi kwiindawo ezitshisayo.
+
+
+
+=======================================
+
+
+
+M.   IBhanki yaBucala iya kuCima iPesenti eFana neyokuNyuka kwe-GNR
+
+
+
+Iibhanki zabucala ziyanyanzelwa ukuba zicime amatyala abemi ngesantya esifana ncam nesiye inyuke ngaso iMveliso yeSizwe ePheleleyo (GNR). Njengoko uqoqosho olukhululekileyo lukhula, inzuzo yemali yeenkampani iyancipha, ngelixa izinto zabo zexabiso zokwenyani zisonyuka simahla. Iibhanki azinakuvunyelwa ke ngoko ukuba zifune inzala epheleleyo, njengoko iindleko zokuphila kwabanini beebhanki nazo zehla ziye kuziro.
+
+Lo ngumongo wesakhiwo semali sohlengahlengiso. Iibhanki zabucala kufuneka "zipheliswe" njengoko iMveliso yeSizwe ePheleleyo (GNR) yoqoqosho olukhululekileyo ikhula. Oku kwenza inguqu egudileyo apho ixabiso lemali lisuka ematyaleni liya kumthamo wemveliso.
+
+
+
+Nasi esona sisombululo sisebenzayo:
+
+
+1.  "Isalathisi sokuPhelisa" (iTyala-ngokuchasene-naSimahla)
+
+Yazisa indlela esemthethweni ebizwa ngokuba kukuCinywa kweTyala okuZenzekelayo.
+
+
+A.  Ingqiqo
+
+Urhulumente ulinganisa ukuba yeyiphi inxalenye yeemfuno ezisisiseko zabemi (ukutya, amandla, izindlu, ezothutho) ngoku ebonelelwa simahla ngeepaki zerobhothi zesizwe.
+
+
+B.  Indlela yokuSebenza
+
+Ukuba i-20% yeemfuno zobomi iye yaba simahla, iibhanki zabucala ziyanyanzelwa ngumthetho ukuba zicime i-20% yawo onke amatyala abucala. Inzala iyamiswa okanye incitshiswe ngesantya esihambelanayo.
+
+
+C.  Ingxoxo
+
+Abasemabhankini abanakukhalaza ngezizathu zokuziphatha, kuba neendleko zabo zokuphila zikwazehla nge-20%. Ababi ngamahlwempu ngokomgangatho wobomi, kuphela ngokwamanani akwisikrini.
+
+
+
+2.  Ukuphathwa "kweeBhanki eziNobutshaba" kuMazwe aNgaphandle
+
+Oku yeyona nto iyinkxalabo enkulu—ukuba iibhanki ziya kubaleka kwaye zisebenzise amanye amazwe njengesiseko sokuhlasela umanyano lohlengahlengiso.
+
+
+
+Isisombululo kukuValelwa kweZimali:
+
+
+A.  Amandla oManyano
+
+Nje ukuba umanyano lohlengahlengiso (amazwe athe avula umbhalo) lusekiwe, luya kwazisa uthintelo olupheleleyo ngokuchasene neebhanki ezisebenza kumazwe anobutshaba.
+
+
+B.  Ukutshintsha kweXabiso
+
+Ekubeni umanyano lohlengahlengiso lulawula imveliso yokwenyani (iirobhothi kunye nemathiriyeli ekrwada), imali yeebhanki zangaphandle ngokukhawuleza iba zizicwili zephepha ezingenaxabiso. Abanako "ukuthenga" nantoni na kumanyano lohlengahlengiso ngemali yabo yamatyala amadala.
+
+
+C.  Ukhetho lweeBhanki zaBucala
+
+Nokuba zihlale zibe yinxalenye yeqela elitsha lolawulo lwenkonzo yoluntu kuqoqosho olukhululekileyo oluya ekwenziweni iirobhothi ngokupheleleyo, okanye zibalekele kumazwe aza kuwa ngokukhawuleza ngenxa yokuba loo mazwe akanakho ukufikelela kumanyano lohlengahlengiso kunye nemveliso yalo yerobhothi.
+
+
+
+3.  Indima yeBhanki eNkulu: Ukusuka kwiNzala ukuya kuMlinganiselo weziBonelelo
+
+IBhanki eNkulu iyayeka ukujonga ukunyuka kwamaxabiso kunye namazinga enzala. Endaweni yoko, iba liOfisi yeziBonelelo.
+
+
+A.  Ukusuka kwiBhanki eNkulu ukuya kwiOfisi yeziBonelelo
+
+IOfisi yeziBonelelo endaweni yoko ilinganisa i-GNR, indlalifa ye-GDP eyenziwe yesizwe. Xa i-GNR igubungela i-100 ekhulwini leemfuno zabemi, uLongamo oluPheleleyo luyabhengezwa. Ngelo xesha, yonke imali namatyala ayekeleli ukubakho phantsi komthetho womgaqo-siseko.
+
+
+B.  Ukucaca
+
+Ngokuba nale le icacileyo (umz., i-10%, i-50%, i-100%), iinkokeli zezizwe ezizayo kumanyano lohlengahlengiso zibona ngqo ukuba indlela injani. Iba yinkqubo enokuqikelelwa endaweni yesiphithiphithi.
+
+
+C.  Amandla eeBhanki aLungelelananga
+
+IManifesto wenza ukuchithwa okulawulwayo kwenkqubo yamatyala. Njengoko oomatshini bekhulula uluntu kwiindleko, uluntu nalo luyakhululwa ematyaleni alo. Asilwi neebhanki ngezixhobo, kodwa ngezishwankathelo zemathematika ezenza amandla azo angafuneki.
+
+Ingxelo engentla isebenza njengenkcazelo yobuchwepheshe "yoHlaziyo olungabonakaliyo" ekusebenzeni.
+
+
+
+=======================================
+
+
+
+N.   ILe yokuKhululeka: Ukusuka eMdeni ukuya kuLongamo
+
+
+
+1.  Inguqu yeMathematika
+
+Ukukhokela umanyano lohlengahlengiso ukuba luphume kumbambano wenkqubo yamatyala abucala, ukuxelwa kwangaphambili okupheleleyo kuyafuneka. Inguqu akufuneki yakhiwe phezu kwezinto ezizezithuba, ezinesiphithiphithi okanye amaza othusayo ezoqoqosho angenakuqikelelwa.
+
+Isisombululo kukuba kube nomthetho, il e ehambelanayo apho ukukhululwa ngezemali kwabemi kwenzeka ngesantya esifana ncam nesokwanda kwemveliso yokwenyani—iMveliso yeSizwe ePheleleyo (GNR).
+
+NgeLe yokuKhululeka, amanani abonakalayo (amatyala) adityaniswa ngqo kwinto yokwenene ebonakalayo (imveliso eyirobhothi). Kanye kanye ngomzuzu oomatshini bethatha indawo yobomi kwaye bayenze ibe simahla kubemi, iibhanki zenkqubo endala ziyanyanzelwa ukuba zihlehlele kwinqanaba elihambelanayo.
+
 
 2.  Izithuba eziDynamic kunye noHlengahlengiso
 
 Kubalulekile ukuqonda ukuba izigaba ezine eziphambili zeLe yokuKhululeka (i-25%, i-50%, i-75%, kunye ne-100%) zakha amatye ezikhumbuzo olungiso olubanzi, lomgaqo-siseko. Ekusetyenzisweni ngokwenene, nangona kunjalo, inkqubo ibhetyebhetye ngokupheleleyo kwaye inamandla.
---- END TABLE ---
 
 I-AI yeOfisi ye-GNR inokuhlaziya isalathisi ngezithuba ezikwii-interval ezihamba phambili kakhulu kunoko—umzekelo, nyanga zonke okanye kwinqanaba ngalinye lepesenti (njenge-26%, i-27% ye-GNR). Oku kubonelela ngenguqu egudileyo ngakumbi, ethe chu ngakumbi, nenokuxelwa kwangaphambili kubemi nakwicandelo lezemali. Kuya kuba kumanyano lolawulo lolungiso ukukhetha nokusebenzisa izithuba ezifanelekileyo ngokobuchwepheshe nangokusebenza xa sele bethathe amandla.
 
@@ -617,7 +1967,6 @@ Ngezantsi kukho iplani yomgaqo-siseko yendlela ityala eliguqulwa ngayo libe long
 
 IMveliso yeSizwe ePheleleyo	Ukucinywa kweTyala			ISabelo seLongamo
 (Izinga lokuGubungela			(NgokoMthetho				(Intlawulo kaRulumente)
---- START TABLE ---
 
 
 simahla)					woMgaqo-siseko)
@@ -638,7 +1987,6 @@ neMfundo)											kakhulu njengoko ummandla
 												wobunewunewu uncipha.
 100%					Apho onke amatyala kunye		Inkqubo igqityiwe. Iimali
 (Ubuninzi					nemali ziye zaphela.			ziphelelwe lixesha; kuphumelele
---- END TABLE ---
 
 
 
@@ -646,7 +1994,6 @@ obuGqibeleleyo)										uqoqosho olukhululekileyo
 
 
 												olupheleleyo.
---- START TABLE ---
 
 4.  Uphononongo lweZigaba zeLe yokuKhululeka
 
@@ -672,7 +2019,6 @@ Xa i-75% yeemfuno zizonke zezibonelelo zoluntu zigutyungelwe ngokupheleleyo ngap
 Kweli nqanaba, amashishini abucala kunye neebhanki ngokwenyani baphulukene namandla abo okunyanzela abantu ukuba basebenze. Uninzi lwabemi lukhetha ukuphila ngokupheleleyo ngonikezelo lwasimahla lomanyano kunye neSabelo sabo seLongamo, nto leyo enyanzela iinkampani zabucala zokugqibela ukuba zitshone okanye zinikezele ngemigca yazo yemveliso kwizakhiwo ezizimeleyo.
 
 IsiGaba 4: 100% GNR – Ukufa kweMali kunye noLongamo lokuGqibela
---- END TABLE ---
 
 
 

@@ -608,12 +608,1365 @@ Suluhisho ni ngazi ya kisheria, iliyosawazishwa ambapo ukombozi wa kifedha wa wa
 
 Kupitia Ngazi ya Uhuru, nambari za kidhahania (madeni) zinaunganishwa moja kwa moja na ukweli wa kimwili (uzalishaji wa roboti). Sekunde ileile mashine zinapochukua eneo la maisha na kulifanya bure kwa idadi ya watu, benki za mfumo wa zamani zinalazimishwa kurudi nyuma kwa kiwango sambamba.
 
+
+
+
+
+
+
+
+Utekelezaji unategemea misingi miwili:
+
+
+1. Teknolojia ya Kiinitete
+
+Vipengele vya mtu mmoja mmoja—mifano ya juu ya AI, uchapishaji wa 3D wa chuma, na viwanda vya kiotomatiki—tayari vipo vimetawanyika kote ulimwenguni. Mashine tayari ina uwezo wa kujenga sehemu za mashine. Kinachokosekana sio teknolojia, bali ni mapenzi ya kati, yasiyo na madeni ya kufunga kitanzi.
+
+
+2. Ushirikiano wa Sayari
+
+Hapa ndipo ujumuishaji na maeneo ya nyanda za juu za kitropiki unakuwa muhimu kabisa. Hili sio shughuli ya kifedha, bali ni ushirikiano wa kiteknolojia na kijiografia. Maeneo ya kaskazini yanachangia utafiti na teknolojia ya juu iliyopo, wakati Amerika ya Kusini inachangia eneo, nishati ya jua isiyobadilika, na malighafi ili kujaribu, kusambaza, na kupanua mifumo ya kujirudia chini ya hali bora za joto.
+
+Muungano lazima uzindue na kuweka kipaumbele mradi huu kama hatua yake ya kwanza kabisa ya kikatiba. Mbadala wa urasimu unaoproromoka wa leo na kazi ya kulazimishwa isiyo na maana sio machafuko—mbadala ni mradi huu uliolengwa na wa kimataifa wa kufunga kitanzi cha kujiendesha na kuruhusu mashine kuchukua mzigo wa uzalishaji mara moja na kwa wote.
+
+
+
+=======================================
+
+
+
+C. Ukuu wa Akili ya Serikali
+
+
+
+Ili kupata amani na utulivu wa wanadamu katika ulimwengu wenye roboti kikamilifu, miundombinu ya kiakili inayoongoza serikali lazima ibaki chini ya udhibiti wa serikali usio na vikwazo.
+
+
+1. Umiliki wa Kipekee wa Serikali
+
+Akili bandia inayosimamia rasilimali za taifa, usafirishaji, na uwezo wa uzalishaji inaunda kiini cha kimkakati cha nchi. Maendeleo yote, msingi wa kodi, na uundaji wa akili hii utafanyika chini ya usimamizi wa serikali. Washiriki wa kibinafsi wamepigwa marufuku kuendeleza au kuunganisha mifumo ya udhibiti shindani katika miundombinu ya taifa. Hii ni kuzuia nia za faida au kanuni zisizo wazi kuharibu mantiki ya mfumo.
+
+
+2. Msimamizi Mwenye Mantiki
+
+AI itafanya kazi kama msimamizi asiyeweza kuharibika. Haimilikiwi na watu tofauti, bali ni sehemu ya mali ya pamoja ya uwanja wa mashine. Kusudi lake ni kuboresha ustawi wa wananchi, usambazaji wa rasilimali, na uendelevu, bila ushawishi wa kisiasa au kibiashara.
+
+
+3. Uwazi na Udhibiti
+
+Serikali inahakikisha kwamba mifano ya hisabati ya mfumo na misingi ya kufanya maamuzi inapatikana kwa mapitio ya kitaifa. Hakuna uamuzi wa umuhimu kwa milki unaweza kufanywa na "sanduku jeusi" ambalo haliwezi kuelezewa kwa msingi wa kanuni za kimsingi za katiba. Serikali inakuza, inamiliki, na kusimamia AI-kuu hii kama sehemu ya huduma ya umma, kama mdhamini kwamba jamii haitarudi tena kwenye deni au uhaba wa rasilimali.
+
+
+
+=======================================
+
+
+
+D. Ahadi ya Ubora – Kutoka kwa Maelewano hadi Ubora
+
+
+
+Katika ulimwengu wa zamani, ulilazimishwa kukubali bidhaa zilizoundwa kushindwa. Hii haikutokana na uhandisi mbovu, bali kwa sababu soko la kibinafsi lilidai maelewano. Ubora wa kweli uligharimu zaidi ya kile wananchi wangeweza kumudu katika bajeti zao za kila siku. Mashirika yalilazimishwa kuuza kwa umati kwa bei ambazo wangeweza kudumisha, na kutoa matokeo yanayotabirika: bidhaa duni na za muda mfupi.
+
+Ndani ya maono ya Ilani, nia hii ya faida inafutwa kabisa. Wakati serikali inamiliki malighafi na roboti zetu zinazoongozwa na AI zinasimamia uchimbaji wake, hitaji la kufanya maelewano juu ya uadilifu wa nyenzo linatoweka. Ikifanya kazi kama wawakilishi wa kimuundo wa serikali, roboti zetu zinakutunza kama kamwe hapo awali kwa kutengeneza kwa upekee bora kabisa.
+
+Kwa sababu mashine hazihitaji faida, zikipo tu kutumikia wanadamu, bila kubadilika hutumia nyenzo zenye nguvu zaidi na za kudumu zaidi. Hatujengi ili kuuza tena—tunajenga ili uwe huru. Ubora unakoma kuwa anasa iliyohifadhiwa kwa matajiri; unakuwa kiwango kisicho na maelewano kwa kila mwananchi ndani ya Muungano wa Roboti.
+
+
+
+=======================================
+
+
+
+E. Ulinganifu wa Idadi ya Watu wa Sayari
+
+
+
+Uhamiaji mkubwa wa joto haufanyiki kwa nasibu, bali kupitia upangaji upya wenye mantiki na uliosawazishwa kitamaduni wa idadi ya watu wa sayari:
+
+
+1. Bara la Amerika ya Kusini (Kambi ya Magharibi)
+
+Wazungu na Warusi wenye asili ya Ulaya, Wamarekani wa Kaskazini, Waaustralia, Wanyuzilandi, na Waafrika Kusini weupe wanaletwa pamoja kwenye bara la Amerika ya Kusini, wakati nchi zenye mimea mingi za Amerika ya Kati (kusini mwa Meksiko) zinaamilishwa kama maeneo ya kuishi endelevu. Eneo hili linakuwa msingi wa ukuu wa mwanadamu wa Magharibi chini ya hali bora za joto.
+
+
+2. Kambi ya Mashariki (Indonesia na Australia)
+
+Waasia wa Mashariki na idadi ya watu wa Asia ya Urusi, pamoja na watu wanaohusiana kutoka Kambi Kubwa ya Uzalishaji ya Mashariki wanaletwa pamoja katika eneo linaloenea kote Indonesia, Papua Guinea Mpya, na Australia. Sehemu kubwa za ndani ya Australia zinawekwa roboti kikamilifu kwa ajili ya viwanda vizito na nishati ya jua, wakati idadi ya watu wanaishi katika maeneo ya pwani ya kitropiki yenye joto.
+
+Idadi ya watu wa maeneo ya baridi ya Asia ya Kati wanahamishwa kusini kuelekea maeneo ya kuishi yenye joto katika Oceania ya kitropiki na Kaskazini mwa Australia, wakati ardhi zenyewe (ikiwa ni pamoja na maeneo ya jangwa katika mataifa ya Kiarabu) zinachukuliwa na vitengo vya mashine. Majangwa ya Kiarabu yanabadilishwa, kama vile Sahara, kuwa mbuga za nishati za kiotomatiki.
+
+
+3. Bara la Afrika
+
+Idadi ya watu wa Afrika katika bara lao wanaunda Kambi ya Rasilimali ya Kusini, ambapo maeneo ya kitropiki na yenye joto yanahifadhiwa kwa upekee kama makazi ya wanadamu kwa ajili ya kupona na uhuru, wakati sehemu za baridi na maeneo makubwa ya jangwa ya bara yanawekwa roboti kikamilifu. Maeneo haya yanabadilishwa kuwa miundo safi ya mashine, majengo ya viwanda, na vituo vikubwa vya nishati ya jua vinavyozalisha nishati kwa ajili ya mabadiliko ya bara zima la Afrika bila kuvuruga makazi ya asili.
+
+
+
+=======================================
+
+
+
+F. Muungano wa Soko Kuu – Ulinzi wa Kijiografia dhidi ya Vita vya Kifedha
+
+
+
+Ili kuondoa mfumo wa madeni wa kimataifa na kuongeza kasi ya uzalishaji bure wa kundi la mashine, mataifa mengi lazima yaungane mara moja katika soko moja la ndani: Muungano wa Soko Kuu.
+
+Mpito uliojitenga ndani ya taifa moja ni hatari kwa kimkakati. Unachelewesha wingi, unarefusha msuguano wa kiuchumi wa awamu ya mpito, na unaweka nchi pekee kwenye vizuizi vilivyoratibiwa na mashambulizi ya kisheria kutoka kwa utaratibu wa zamani wa kifedha katika mahakama za biashara za kimataifa. Muungano mkubwa, wa kuvuka mipaka na sheria za kiuchumi zinazofanana ni hitaji la kihisabati. Kadiri soko la pamoja linavyokuwa kubwa, ndivyo wingi kamili wa kimwili unavyopatikana haraka kupitia kitanzi cha kujiendesha (AAASR).
+
+Lengo kuu la muungano huu ni ulinganifu kamili wa sayari ambapo mipaka ya mataifa ya zamani yanavunjwa. Hii inawahakikishia kila mwananchi mkuu uhuru kamili, wa kisheria wa kuacha maeneo tasa au ya aktiki ili kuishi kwa uhuru, kuishi, na kufurahia uzalishaji usio na msuguano wa mashine katika maeneo bora ya hali ya hewa ya kitropiki ya sayari.
+
+
+
+=======================================
+
+
+
+G. Chungu Kikubwa na Uamilishaji wa Utajiri wa Taifa
+
+
+
+Ili kuelewa mageuzi ya kimuundo ya Ilani hii, lazima kwanza mtu aelewe asili ya kweli ya fedha ndani ya dhana ya sasa. Mtaji unaojulikana leo kama "fedha za serikali," kwa kweli, ni uwezo uliojumlishwa wa wananchi. Ilani inabadilisha mienendo hii kupitia amri moja, ya msingi: Uchumi wa taifa utatumikia mustakabali wa taifa, sio mizania ya taasisi za benki za kibinafsi.
+
+
+1. Kutoka kwa Fedha Tulivu hadi Mabadiliko Tendaji
+
+Tunaacha kuona bajeti ya serikali kama mkusanyiko wa nambari zenye kikomo, zenye vizuizi. Kwa mataifa wanachama wa Muungano kukata uhusiano wote na mfumo wa benki za kibinafsi, "chungu kikubwa" kinaamilishwa katika soko zima la pamoja. Rasilimali hizi zilizounganishwa zinatumwa mara moja kupata, kuendeleza, na kusambaza kundi la mashine la kuvuka mipaka linalohitajika kufanya kuwepo kuwa bure kabisa kwa kila mkaaji ndani ya Muungano.
+
+
+2. Mwisho wa Mantiki ya Deni
+
+Ilani haitambui tena hitaji lolote la "kukopa" mtaji wa fiat kutoka kwa masoko ya kifedha. Wakati serikali inapodai tena haki kuu ya kutoa sarafu inayoungwa mkono tu na uwezo wa uzalishaji wa taifa, kujiinua na mjeledi wa soko la madeni vinakuwa vimepitwa na wakati kabisa.
+
+
+
+3. Kipaumbele cha Kimkakati
+
+Fedha hizi zilizoamilishwa, bila ubaguzi, zitafadhili nguzo tatu za msingi:
+
+
+A. Miundombinu ya Kuishi
+
+Uwekaji otomatiki kamili na ulinzi wa nishati, uzalishaji wa maji, na mitandao ya usafiri.
+
+
+B. Uzalishaji wa Roboti Kikamilifu
+
+Upelekaji wa utengenezaji wa kujiendesha ambapo mashine zinakomboa wanadamu kwa kutoa anasa na uhuru wa kimwili kama kiwango cha kijamii kisicho na maelewano, kinachojulikana na wingi kamili wa ubora wa juu zaidi.
+
+
+C. Usafirishaji wa Kijiografia
+
+Usimamizi wa kimfumo na utekelezaji wa uhamiaji kuelekea maeneo ya hali ya hewa yenye ufanisi wa joto.
+
+
+
+=======================================
+
+
+
+H. Udhibiti wa Kiufundi na Usimamizi wa Rasilimali
+
+
+
+Katika sura hii, mifumo ya kiutawala ya jinsi ulimwengu unavyobadilika kuwa uchumi huru wenye roboti kikamilifu imeanzishwa.
+
+
+1. Udhibiti Mkuu juu ya Mashine ya Kuchapisha Fedha
+
+Ilani inachukua udhibiti wa benki kuu mara moja. Serikali inashikilia haki ya kipekee ya kuunda zabuni halali ya nchi: Fedha Kuu. Hizi zinawakilisha uwezo wa uzalishaji, sio deni.
+
+
+2. Rasilimali ya Taifa ya Jumla (GNR) na Uwanja wa Mashine wa Kitaifa
+
+Lengo ni kwa uzalishaji wote kusimamiwa na uwanja wa mashine wa kitaifa unaojiendesha unaotawaliwa na Katiba ya Mashine. Mashine zinajimiliki wenyewe ili kuhakikisha kwamba uzalishaji hauwezi kamwe kubinafsishwa au kunyakuliwa, bali utatumikia watu milele kama nguvu ya pamoja ya asili. Uwekezaji katika AI una kipaumbele kufikia hatua ambapo gharama ya uzalishaji inakuwa sifuri.
+
+
+3. Sehemu ya Ukuu: Njia ya Utajiri
+
+Wakati wa awamu ya mpito, kila mwananchi anahakikishiwa Sehemu ya Ukuu ya kila mwaka. Hii inamfanya kila mwananchi kuwa huru kifedha na inaunganisha pengo kuelekea ulimwengu mpya.
+
+Sehemu hii inafadhiliwa kwa njia ya serikali kuelekeza fedha zilizopo za bajeti kutoka mizigo ya msaada ya mfumo wa zamani hadi malipo ya moja kwa moja, kadri uwekaji roboti unavyopunguza gharama za jumla za jamii.
+
+
+
+=======================================
+
+
+
+I. Eneo la Uzalishaji la Atlantiki ya Kaskazini (NAPZ)
+
+
+
+1. Chumba cha Injini cha Sayari
+
+Ulaya na Amerika ya Kaskazini sasa zinafafanuliwa kwa kazi yao ya kiufundi kama karakana kuu na chafu cha sayari.
+
+
+2. Otomasheni Kamili
+
+Ndani ya NAPZ, kazi ya mwanadamu inakoma kuwepo. Mashamba ya wima na mashamba yenye roboti yanazalisha chakula mchana na usiku. Viwanda vinatengeneza bidhaa za ubora wa milele kwa kuwa nia ya faida imefutwa kabisa.
+
+
+3. Nishati: Msingi
+
+NAPZ imefunikwa na gridi iliyounganishwa ya nguvu za nyuklia, muunganisho, na vyanzo mbadala. Wakati nishati iko bure, gharama kubwa zaidi ya mwanadamu inatoweka.
+
+
+4. Kuondolewa kwa Makazi ya Kudumu
+
+NAPZ ni eneo lililohifadhiwa kwa mashine. Maeneo ya baridi na yenye giza ya Ulaya na Amerika ya Kaskazini yanaondolewa kama makazi ya kudumu ya mwanadamu. Miji ya urithi inabadilishwa kuwa vitovu vya usafirishaji vya kiotomatiki.
+
+
+5. Mtazamo wa Ulaya na Amerika ya Kaskazini
+
+Mara tu Ulaya na Amerika ya Kaskazini zinapokuwa na roboti kikamilifu na kuzalisha mavuno ya kutosha kwa idadi ya watu wa Ulaya, Amerika ya Kaskazini, na—katika hatua ya mwisho—Amerika ya Kusini, awamu inayofuata inaamilishwa. Uwezo wa uzalishaji wa Amerika ya Kaskazini unapanuka ili kuendeleza kikamilifu bara la Amerika ya Kusini, ambapo uzalishaji wa Ulaya unakombolewa na kuelekezwa upya kwa usambazaji wa kimkakati kwa mabara mengine, huku ukidumisha uwezo wa upanuzi unaoendelea kama inavyohitajika.
+
+
+6. Kiini cha Viwanda
+
+NAPZ haifafanuliwa na mipaka ya jadi ya kitaifa, bali na miundombinu yake iliyounganishwa, ya kiotomatiki. Lengo lake pekee ni utengenezaji wa wingi wa kundi la mashine la kimataifa, maendeleo ya akili bandia ya kimkakati, na uzalishaji wa ramani za msingi za kiteknolojia zinazohitajika kufikia wingi kamili wa sayari.
+
+
+7. Ujumuishaji wa Usafirishaji
+
+Eneo hili linafanya kazi katika ushirikiano wa moja kwa moja na maeneo ya kuishi ya kitropiki na sekta za rasilimali za kusini. Wakati maeneo ya kitropiki yanatoa hali bora za joto kwa makazi ya mwanadamu na kupona kwa ukuu, NAPZ inafanya kazi kama kiwanda kizito cha kutengenezea—ikichakata malighafi na kupeleka mitandao ya mizigo ya kujiendesha ili kusambaza bidhaa zilizomalizika na mashine bure kabisa katika Muungano wote wa Soko Kuu.
+
+
+8. Uwekaji Awamu wa Kimuundo
+
+Kadiri pato la utengenezaji wa kiotomatiki ndani ya NAPZ linavyofikia uwezo wa juu, mchango wake wa kielelezo kwa Rasilimali ya Taifa ya Jumla (GNR) unaharakisha kupitwa na wakati kwa hakika kwa sarafu za fiat za urithi, ukifungua njia ya utekelezaji kamili wa Katiba ya Mashine.
+
+
+
+=======================================
+
+
+
+J. Makao Mapya
+
+
+
+Kuhamia kwa maeneo ya kitropiki hakuwakilishi tu mabadiliko ya kijiografia, bali uboreshaji kamili wa mazingira ya kuishi ya mwanadamu. Tunaacha nyuma majengo ya zege na gharama za matengenezo ya kudumu za maeneo ya hali ya hewa baridi.
+
+
+1. Eneo la Makazi ya Kitropiki
+
+Kupitia Ilani, uhamiaji mkubwa wa joto unatekelezwa kwa maeneo ambayo wanadamu wameumbwa kibiolojia kuishi.
+
+
+2. Maeneo ya Nyanda za Juu za Kitropiki: Kimbilio Salama
+
+Kwa kambi ya Magharibi, uchaguzi wa kaskazini mwa Amerika ya Kusini unategemea utulivu wa kitektoni na ufanisi wa joto. Hapa, hitaji la mifumo ya joto linafutwa kabisa.
+
+
+3. Usanifu kwa Wingi
+
+Makazi ya moduli ya ubora wa kudumu yanatolewa kutoka NAPZ. Ndani ya maeneo haya, hakuna biashara iliyopo; kila kitu hufanya kazi kama kazi zilizounganishwa ndani ya miundombinu.
+
+
+4. Teknolojia kwa Eneo
+
+Hii ni ubadilishanaji wa ulinganifu. Bidhaa za sekta ya viwanda zinatolewa kutoka pembezoni mwa Ulaya, wakati Amerika ya Kusini inatoa eneo. Wakati vipengele hivi viwili vinapokutana, uchumi huru wa moja kwa moja unaibuka kwenye bara la Amerika ya Kusini kwa wananchi wote wa sasa na wa baadaye. Hakuna fedha inayozunguka—tunafuta hitaji lake.
+
+Ilani haielezi mradi wa kuuza nje wa Ulaya, bali shirikisho la kimataifa. Mataifa ya kitropiki sio "wenyeji"; ni washirika waanzilishi wanaoingia moja kwa moja katika uchumi huru na kumiliki miundombinu kwa masharti sawa na nchi za kaskazini.
+
+
+5. Haki ya Makazi ya Kifalme
+
+Ndani ya muungano wa roboti, makazi sio bidhaa au chanzo cha deni la maisha. Kila mwananchi anahakikishiwa nyumba ya teknolojia ya juu, iliyojengwa na kudumishwa na uwanja wa mashine. Hakuna kodi, hakuna rehani, na hakuna kodi ya mali iliyopo. Ni haki ya msingi kabisa.
+
+
+6. Ubora wa Kiteknolojia
+
+Nyumba zinajengwa kwa kutumia vifaa vya ubora wa kudumu, zimekombolewa kabisa kutoka kwa mahitaji ya ukarabati wa baadaye. Kila kitu kutoka kwa udhibiti wa hali ya hewa na utakaso wa maji hadi kusafisha kiotomatiki na usimamizi wa taka kimeunganishwa katika muundo wa jengo na kusimamiwa kwa kujiendesha.
+
+
+7. Usanifu wenye Upatano
+
+Kwa kuwa kila kitu kimejengwa katika maeneo yenye wastani wa joto la kila mwaka thabiti na la kupendeza, usanifu unaweza kufunguliwa. Mipaka kati ya mazingira ya ndani na nje inavunjwa. Majengo yameunganishwa katika asili ya kitropiki, yakijumuisha mifumo ya nishati ya jua inayojitegemea na bustani za wima.
+
+
+
+=======================================
+
+
+
+K. Udhibiti wa Bunge na Sauti ya Watu
+
+
+
+1. Aina Mpya ya Utawala wa Kibunge
+
+Ili kuhakikisha kwamba miundombinu ya AI inayojiendesha haitenganiki kamwe na matakwa ya wananchi, mamlaka ya kisiasa yanabaki yametia nanga kwa idadi ya watu—na mchakato wa upigaji kura wa kidemokrasia uliopanuliwa kwa kiasi kikubwa umewekwa moja kwa moja mikononi mwa kila mtu mmoja mmoja.
+
+
+2. Uchaguzi wa Kibunge wa Kila Mwaka
+
+Ili kuhakikisha uitikaji kamili na kuzuia rushwa au kutuama ndani ya muundo wa mamlaka, uchaguzi wa lazima wa kibunge unaanzishwa kila mwaka. Watu watatathmini na kuelekeza kasi ya mageuzi ya kitaifa kila wakati.
+
+
+3. Kura za Maoni za Kimkakati na Uchaguzi wa Ajali
+
+Watu wanashikilia haki isiyo na vikwazo ya kufanya maamuzi madhubuti juu ya mambo muhimu zaidi ya ukuu wa taifa kupitia kura za maoni za moja kwa moja au uchaguzi wa ajali. Maeneo yafuatayo yatakuwa chini ya uamuzi wa moja kwa moja wa umma kila wakati:
+
+    • Muungano wa Kimataifa: Kujiunga au kujiondoa kutoka kwa vyama vya kisiasa, kiuchumi, au kijeshi, mikataba, na mabaraza tawala ya kimataifa.
+
+    • Mashirika ya Kimataifa: Kujiunga au kujiondoa kutoka kwa mashirika ya kimataifa, mamlaka za udhibiti, au uidhinishaji wa kimataifa.
+
+    • Uzuiaji wa Kimkakati: Upataji, umiliki, au uondoaji wa silaha za nyuklia, kemikali, au silaha zingine za maangamizi makubwa.
+
+    • Utaratibu wa Kikatiba: Kukomesha, kuanzisha, au kurekebisha miundo ya kimsingi ya utawala wa taifa, ikijumuisha urithi wa kifalme au wa serikali.
+
+
+4. Mpito wa Kiutawala
+
+Wakati lengo limewekwa (kila kitu kitakuwa bure), utawala unazingatia kutekeleza mpango. Maamuzi yanatekelezwa kupitia amri zilizoandikwa katika katiba.
+
+
+
+=======================================
+
+
+
+L. Serikali kama Biashara ya Pamoja
+
+
+
+1. Serikali: Biashara Yako Iliyofungwa
+
+Katika mfumo wa leo, unamiliki taifa, lakini huruhusiwi kulitumia. Fikiria Serikali kama biashara kubwa ambapo wewe na wananchi wengine wote ni wenye hisa. Lakini biashara hii—nguvu yetu ya pamoja—imekaa gerezani, imefungwa kwa minyororo nyuma ya baa na mpira na mnyororo wa "deni" na kubadilishwa na jini la kiuchumi, wakati Serikali ilichotaka kilikuwa uhuru wake. Wakati mashirika ya kibinafsi yanakimbia huku na huku kwa uhamaji kamili na kutoa ubora duni ili kuongeza faida, zana ya wananchi wenyewe (Serikali) imekaa ikiwa imelemazwa na isiyo na uwezo. Tumeambiwa kwamba Serikali "haiwezi kumudu," kwamba haina mikono na miguu ya kujenga mustakabali. Ukweli ni kwamba Serikali imekaa nyuma ya baa kwa sababu benki za kibinafsi na mfumo wa zamani wamechukua ufunguo wa mashine ya kuchapisha fedha.
+
+Lakini ilani ni ufunguo unaofungua seli.
+
+
+2. Tunaipa Serikali Miguu Yake Kurudi
+
+Kwa kuamilisha uzalishaji wa roboti (Per Machina), Serikali haitaji tena "kuomba ruhusa" au kutoza wananchi wake kodi ili kufanya mambo. Mashine ni mikono na miguu mipya ya Serikali.
+
+
+3. Tunaponda Mpira na Mnyororo
+
+Kwa kudai tena haki ya kuunda fedha kuu, deni ambalo limedumisha Serikali kwenye kiti cha magurudumu linafutwa.
+
+
+4. Kutoka kwa Mfungwa hadi Mbunifu
+
+Wakati Serikali inapoinuka kutoka kwa seli yake ya gereza, inakoma kuwa urasimu tata. Inabadilika kuwa mashine bora ya usafirishaji inayotoa Sehemu yako ya Ukuu na kujenga paradiso katika maeneo ya kitropiki.
+
+
+
+=======================================
+
+
+
+M. Benki ya Kibinafsi Itafuta Asilimia Ileile Kadri GNR Inavyoongezeka
+
+
+
+Benki za kibinafsi zinalazimishwa kufuta madeni ya wananchi kwa kiwango kilekile kadri Rasilimali ya Taifa ya Jumla (GNR) inavyoongezeka. Kadri uchumi huru unavyopanuka, mapato ya fedha ya makampuni yanapungua, wakati mali zao halisi zinaongezeka bure. Kwa hivyo benki haziwezi kuruhusiwa kudai riba kamili, kwani gharama za kuishi za mabenkari wenyewe pia zinaanguka hadi sifuri.
+
+Huu ni msingi wa usanifu wa kifedha wa mageuzi. Benki za kibinafsi lazima "zimeshushwa" kadri Rasilimali ya Taifa ya Jumla (GNR) ya uchumi huru inavyokua. Hii inaunda mpito laini ambapo thamani ya fedha inahama kutoka kwa deni hadi uwezo wa uzalishaji.
+
+
+
+Hapa kuna suluhisho la ufanisi zaidi:
+
+
+1. "Kielezo cha Kushusha" (Deni-dhidi-ya-Bure)
+
+Anzisha utaratibu wa kisheria uitwao Ufutaji Deni Kiotomatiki.
+
+
+A. Mantiki
+
+Serikali inapima ni sehemu gani ya mahitaji ya kimsingi ya wananchi (chakula, nishati, makazi, usafiri) sasa inatolewa bure kupitia mbuga za roboti za kitaifa.
+
+
+B. Utaratibu
+
+Ikiwa 20% ya mahitaji ya maisha yamekuwa bure, benki za kibinafsi zinalazimishwa na sheria kufuta 20% ya madeni yote ya kibinafsi. Riba inagandishwa au kupunguzwa kwa kiwango sambamba.
+
+
+C. Hoja
+
+Mabenkari hawawezi kulalamika kwa misingi ya maadili, kwa sababu gharama zao za kuishi pia zinaanguka kwa 20%. Hawakuwa maskini zaidi kwa suala la ubora wa maisha, tu kwa suala la nambari kwenye skrini.
+
+
+
+2. Kushughulikia "Benki zenye Uadui" Nje ya Nchi
+
+Hili ndilo wasiwasi mkubwa—kwamba benki zitakimbia na kutumia nchi zingine kama kituo cha kushambulia muungano wa mageuzi.
+
+
+
+Suluhisho ni Karantini ya Kifedha:
+
+
+A. Nguvu ya Muungano
+
+Mara tu muungano wa mageuzi (nchi ambazo zimeamilisha ilani) unapoundwa, utaanzisha vikwazo kamili dhidi ya benki zinazofanya kazi kutoka nchi zenye uadui.
+
+
+B. Kubadilika kwa Thamani
+
+Kwa kuwa muungano wa mageuzi unadhibiti uzalishaji halisi (roboti na malighafi), fedha za benki za kigeni haraka zinakuwa vipande vya karatasi visivyo na thamani. Hawawezi "kununua" chochote kutoka kwa muungano wa mageuzi kwa fedha zao za zamani za deni.
+
+
+C. Chaguo la Benki za Kibinafsi
+
+Ama zinakaa na kuwa sehemu ya kikosi kipya cha utumishi wa umma cha kiutawala katika uchumi huru unaoelekea kwenye roboti kamili, ama zinakimbilia nchi ambazo zitaanguka haraka kwa sababu nchi hizo hazina ufikiaji wa muungano wa mageuzi na uzalishaji wake wa roboti.
+
+
+
+3. Jukumu la Benki Kuu: Kutoka kwa Riba hadi Upimaji wa Rasilimali
+
+Benki Kuu inakoma kuangalia mfumuko wa bei na viwango vya riba. Badala yake, inakuwa Ofisi ya Rasilimali.
+
+
+A. Kutoka kwa Benki Kuu hadi Ofisi ya Rasilimali
+
+Ofisi ya Rasilimali badala yake inapima GNR, mrithi aliyetaifishwa wa Pato la Taifa. Wakati GNR inafidia asilimia 100 ya mahitaji ya idadi ya watu, Ukuu Kamili unatangazwa. Wakati huo, fedha zote na madeni yanakoma kuwepo chini ya sheria ya kikatiba.
+
+
+B. Uwazi
+
+Kwa kuwa na ngazi hii iliyo wazi (km. 10%, 50%, 100%), viongozi wa serikali wa baadaye katika muungano wa mageuzi wanaona hasa jinsi njia inavyoonekana. Inakuwa mchakato unaotabirika badala ya machafuko.
+
+
+C. Nguvu ya Benki ni ya Ziada
+
+Ilani inatekeleza ubomoaji unaodhibitiwa wa mfumo wa madeni. Kadri mashine zinavyowakomboa wanadamu kutoka kwa gharama, wanadamu pia wanakombolewa kutoka kwa madeni yao. Hatupigani na benki kwa silaha, bali kwa amri za kihisabati zinazofanya nguvu zao kuwa za ziada.
+
+Maelezo hapo juu yanatumika kama maelezo ya kiufundi ya "Uboreshaji Usioonekana" katika vitendo.
+
+
+
+=======================================
+
+
+
+N. Ngazi ya Uhuru: Kutoka kwa Deni hadi Ukuu
+
+
+
+1. Mpito wa Kihisabati
+
+Ili kuongoza muungano wa mageuzi nje ya mtego wa mfumo wa madeni ya kibinafsi, utabirifu kamili unahitajika. Mpito lazima usijengwe juu ya misukumo ya ghafla, yenye machafuko au mawimbi ya mshtuko wa kiuchumi yasiyotabirika.
+
+Suluhisho ni ngazi ya kisheria, iliyosawazishwa ambapo ukombozi wa kifedha wa wananchi unatokea kwa kasi ileile kama upanuzi wa uzalishaji halisi—Rasilimali ya Taifa ya Jumla (GNR).
+
+Kupitia Ngazi ya Uhuru, nambari za kidhahania (madeni) zinaunganishwa moja kwa moja na ukweli wa kimwili (uzalishaji wa roboti). Sekunde ileile mashine zinapochukua eneo la maisha na kulifanya bure kwa idadi ya watu, benki za mfumo wa zamani zinalazimishwa kurudi nyuma kwa kiwango sambamba.
+
+
 --- START TABLE ---
+
+
+
+--- END TABLE ---
+
+
+
+Utekelezaji unategemea misingi miwili:
+
+
+1. Teknolojia ya Kiinitete
+
+Vipengele vya mtu mmoja mmoja—mifano ya juu ya AI, uchapishaji wa 3D wa chuma, na viwanda vya kiotomatiki—tayari vipo vimetawanyika kote ulimwenguni. Mashine tayari ina uwezo wa kujenga sehemu za mashine. Kinachokosekana sio teknolojia, bali ni mapenzi ya kati, yasiyo na madeni ya kufunga kitanzi.
+
+
+2. Ushirikiano wa Sayari
+
+Hapa ndipo ujumuishaji na maeneo ya nyanda za juu za kitropiki unakuwa muhimu kabisa. Hili sio shughuli ya kifedha, bali ni ushirikiano wa kiteknolojia na kijiografia. Maeneo ya kaskazini yanachangia utafiti na teknolojia ya juu iliyopo, wakati Amerika ya Kusini inachangia eneo, nishati ya jua isiyobadilika, na malighafi ili kujaribu, kusambaza, na kupanua mifumo ya kujirudia chini ya hali bora za joto.
+
+Muungano lazima uzindue na kuweka kipaumbele mradi huu kama hatua yake ya kwanza kabisa ya kikatiba. Mbadala wa urasimu unaoproromoka wa leo na kazi ya kulazimishwa isiyo na maana sio machafuko—mbadala ni mradi huu uliolengwa na wa kimataifa wa kufunga kitanzi cha kujiendesha na kuruhusu mashine kuchukua mzigo wa uzalishaji mara moja na kwa wote.
+
+
+
+=======================================
+
+
+
+C. Ukuu wa Akili ya Serikali
+
+
+
+Ili kupata amani na utulivu wa wanadamu katika ulimwengu wenye roboti kikamilifu, miundombinu ya kiakili inayoongoza serikali lazima ibaki chini ya udhibiti wa serikali usio na vikwazo.
+
+
+1. Umiliki wa Kipekee wa Serikali
+
+Akili bandia inayosimamia rasilimali za taifa, usafirishaji, na uwezo wa uzalishaji inaunda kiini cha kimkakati cha nchi. Maendeleo yote, msingi wa kodi, na uundaji wa akili hii utafanyika chini ya usimamizi wa serikali. Washiriki wa kibinafsi wamepigwa marufuku kuendeleza au kuunganisha mifumo ya udhibiti shindani katika miundombinu ya taifa. Hii ni kuzuia nia za faida au kanuni zisizo wazi kuharibu mantiki ya mfumo.
+
+
+2. Msimamizi Mwenye Mantiki
+
+AI itafanya kazi kama msimamizi asiyeweza kuharibika. Haimilikiwi na watu tofauti, bali ni sehemu ya mali ya pamoja ya uwanja wa mashine. Kusudi lake ni kuboresha ustawi wa wananchi, usambazaji wa rasilimali, na uendelevu, bila ushawishi wa kisiasa au kibiashara.
+
+
+3. Uwazi na Udhibiti
+
+Serikali inahakikisha kwamba mifano ya hisabati ya mfumo na misingi ya kufanya maamuzi inapatikana kwa mapitio ya kitaifa. Hakuna uamuzi wa umuhimu kwa milki unaweza kufanywa na "sanduku jeusi" ambalo haliwezi kuelezewa kwa msingi wa kanuni za kimsingi za katiba. Serikali inakuza, inamiliki, na kusimamia AI-kuu hii kama sehemu ya huduma ya umma, kama mdhamini kwamba jamii haitarudi tena kwenye deni au uhaba wa rasilimali.
+
+
+
+=======================================
+
+
+
+D. Ahadi ya Ubora – Kutoka kwa Maelewano hadi Ubora
+
+
+
+Katika ulimwengu wa zamani, ulilazimishwa kukubali bidhaa zilizoundwa kushindwa. Hii haikutokana na uhandisi mbovu, bali kwa sababu soko la kibinafsi lilidai maelewano. Ubora wa kweli uligharimu zaidi ya kile wananchi wangeweza kumudu katika bajeti zao za kila siku. Mashirika yalilazimishwa kuuza kwa umati kwa bei ambazo wangeweza kudumisha, na kutoa matokeo yanayotabirika: bidhaa duni na za muda mfupi.
+
+Ndani ya maono ya Ilani, nia hii ya faida inafutwa kabisa. Wakati serikali inamiliki malighafi na roboti zetu zinazoongozwa na AI zinasimamia uchimbaji wake, hitaji la kufanya maelewano juu ya uadilifu wa nyenzo linatoweka. Ikifanya kazi kama wawakilishi wa kimuundo wa serikali, roboti zetu zinakutunza kama kamwe hapo awali kwa kutengeneza kwa upekee bora kabisa.
+
+Kwa sababu mashine hazihitaji faida, zikipo tu kutumikia wanadamu, bila kubadilika hutumia nyenzo zenye nguvu zaidi na za kudumu zaidi. Hatujengi ili kuuza tena—tunajenga ili uwe huru. Ubora unakoma kuwa anasa iliyohifadhiwa kwa matajiri; unakuwa kiwango kisicho na maelewano kwa kila mwananchi ndani ya Muungano wa Roboti.
+
+
+
+=======================================
+
+
+
+E. Ulinganifu wa Idadi ya Watu wa Sayari
+
+
+
+Uhamiaji mkubwa wa joto haufanyiki kwa nasibu, bali kupitia upangaji upya wenye mantiki na uliosawazishwa kitamaduni wa idadi ya watu wa sayari:
+
+
+1. Bara la Amerika ya Kusini (Kambi ya Magharibi)
+
+Wazungu na Warusi wenye asili ya Ulaya, Wamarekani wa Kaskazini, Waaustralia, Wanyuzilandi, na Waafrika Kusini weupe wanaletwa pamoja kwenye bara la Amerika ya Kusini, wakati nchi zenye mimea mingi za Amerika ya Kati (kusini mwa Meksiko) zinaamilishwa kama maeneo ya kuishi endelevu. Eneo hili linakuwa msingi wa ukuu wa mwanadamu wa Magharibi chini ya hali bora za joto.
+
+
+2. Kambi ya Mashariki (Indonesia na Australia)
+
+Waasia wa Mashariki na idadi ya watu wa Asia ya Urusi, pamoja na watu wanaohusiana kutoka Kambi Kubwa ya Uzalishaji ya Mashariki wanaletwa pamoja katika eneo linaloenea kote Indonesia, Papua Guinea Mpya, na Australia. Sehemu kubwa za ndani ya Australia zinawekwa roboti kikamilifu kwa ajili ya viwanda vizito na nishati ya jua, wakati idadi ya watu wanaishi katika maeneo ya pwani ya kitropiki yenye joto.
+
+Idadi ya watu wa maeneo ya baridi ya Asia ya Kati wanahamishwa kusini kuelekea maeneo ya kuishi yenye joto katika Oceania ya kitropiki na Kaskazini mwa Australia, wakati ardhi zenyewe (ikiwa ni pamoja na maeneo ya jangwa katika mataifa ya Kiarabu) zinachukuliwa na vitengo vya mashine. Majangwa ya Kiarabu yanabadilishwa, kama vile Sahara, kuwa mbuga za nishati za kiotomatiki.
+
+
+3. Bara la Afrika
+
+Idadi ya watu wa Afrika katika bara lao wanaunda Kambi ya Rasilimali ya Kusini, ambapo maeneo ya kitropiki na yenye joto yanahifadhiwa kwa upekee kama makazi ya wanadamu kwa ajili ya kupona na uhuru, wakati sehemu za baridi na maeneo makubwa ya jangwa ya bara yanawekwa roboti kikamilifu. Maeneo haya yanabadilishwa kuwa miundo safi ya mashine, majengo ya viwanda, na vituo vikubwa vya nishati ya jua vinavyozalisha nishati kwa ajili ya mabadiliko ya bara zima la Afrika bila kuvuruga makazi ya asili.
+
+
+
+=======================================
+
+
+
+F. Muungano wa Soko Kuu – Ulinzi wa Kijiografia dhidi ya Vita vya Kifedha
+
+
+
+Ili kuondoa mfumo wa madeni wa kimataifa na kuongeza kasi ya uzalishaji bure wa kundi la mashine, mataifa mengi lazima yaungane mara moja katika soko moja la ndani: Muungano wa Soko Kuu.
+
+Mpito uliojitenga ndani ya taifa moja ni hatari kwa kimkakati. Unachelewesha wingi, unarefusha msuguano wa kiuchumi wa awamu ya mpito, na unaweka nchi pekee kwenye vizuizi vilivyoratibiwa na mashambulizi ya kisheria kutoka kwa utaratibu wa zamani wa kifedha katika mahakama za biashara za kimataifa. Muungano mkubwa, wa kuvuka mipaka na sheria za kiuchumi zinazofanana ni hitaji la kihisabati. Kadiri soko la pamoja linavyokuwa kubwa, ndivyo wingi kamili wa kimwili unavyopatikana haraka kupitia kitanzi cha kujiendesha (AAASR).
+
+Lengo kuu la muungano huu ni ulinganifu kamili wa sayari ambapo mipaka ya mataifa ya zamani yanavunjwa. Hii inawahakikishia kila mwananchi mkuu uhuru kamili, wa kisheria wa kuacha maeneo tasa au ya aktiki ili kuishi kwa uhuru, kuishi, na kufurahia uzalishaji usio na msuguano wa mashine katika maeneo bora ya hali ya hewa ya kitropiki ya sayari.
+
+
+
+=======================================
+
+
+
+G. Chungu Kikubwa na Uamilishaji wa Utajiri wa Taifa
+
+
+
+Ili kuelewa mageuzi ya kimuundo ya Ilani hii, lazima kwanza mtu aelewe asili ya kweli ya fedha ndani ya dhana ya sasa. Mtaji unaojulikana leo kama "fedha za serikali," kwa kweli, ni uwezo uliojumlishwa wa wananchi. Ilani inabadilisha mienendo hii kupitia amri moja, ya msingi: Uchumi wa taifa utatumikia mustakabali wa taifa, sio mizania ya taasisi za benki za kibinafsi.
+
+
+1. Kutoka kwa Fedha Tulivu hadi Mabadiliko Tendaji
+
+Tunaacha kuona bajeti ya serikali kama mkusanyiko wa nambari zenye kikomo, zenye vizuizi. Kwa mataifa wanachama wa Muungano kukata uhusiano wote na mfumo wa benki za kibinafsi, "chungu kikubwa" kinaamilishwa katika soko zima la pamoja. Rasilimali hizi zilizounganishwa zinatumwa mara moja kupata, kuendeleza, na kusambaza kundi la mashine la kuvuka mipaka linalohitajika kufanya kuwepo kuwa bure kabisa kwa kila mkaaji ndani ya Muungano.
+
+
+2. Mwisho wa Mantiki ya Deni
+
+Ilani haitambui tena hitaji lolote la "kukopa" mtaji wa fiat kutoka kwa masoko ya kifedha. Wakati serikali inapodai tena haki kuu ya kutoa sarafu inayoungwa mkono tu na uwezo wa uzalishaji wa taifa, kujiinua na mjeledi wa soko la madeni vinakuwa vimepitwa na wakati kabisa.
+
+
+
+3. Kipaumbele cha Kimkakati
+
+Fedha hizi zilizoamilishwa, bila ubaguzi, zitafadhili nguzo tatu za msingi:
+
+
+A. Miundombinu ya Kuishi
+
+Uwekaji otomatiki kamili na ulinzi wa nishati, uzalishaji wa maji, na mitandao ya usafiri.
+
+
+B. Uzalishaji wa Roboti Kikamilifu
+
+Upelekaji wa utengenezaji wa kujiendesha ambapo mashine zinakomboa wanadamu kwa kutoa anasa na uhuru wa kimwili kama kiwango cha kijamii kisicho na maelewano, kinachojulikana na wingi kamili wa ubora wa juu zaidi.
+
+
+C. Usafirishaji wa Kijiografia
+
+Usimamizi wa kimfumo na utekelezaji wa uhamiaji kuelekea maeneo ya hali ya hewa yenye ufanisi wa joto.
+
+
+
+=======================================
+
+
+
+H. Udhibiti wa Kiufundi na Usimamizi wa Rasilimali
+
+
+
+Katika sura hii, mifumo ya kiutawala ya jinsi ulimwengu unavyobadilika kuwa uchumi huru wenye roboti kikamilifu imeanzishwa.
+
+
+1. Udhibiti Mkuu juu ya Mashine ya Kuchapisha Fedha
+
+Ilani inachukua udhibiti wa benki kuu mara moja. Serikali inashikilia haki ya kipekee ya kuunda zabuni halali ya nchi: Fedha Kuu. Hizi zinawakilisha uwezo wa uzalishaji, sio deni.
+
+
+2. Rasilimali ya Taifa ya Jumla (GNR) na Uwanja wa Mashine wa Kitaifa
+
+Lengo ni kwa uzalishaji wote kusimamiwa na uwanja wa mashine wa kitaifa unaojiendesha unaotawaliwa na Katiba ya Mashine. Mashine zinajimiliki wenyewe ili kuhakikisha kwamba uzalishaji hauwezi kamwe kubinafsishwa au kunyakuliwa, bali utatumikia watu milele kama nguvu ya pamoja ya asili. Uwekezaji katika AI una kipaumbele kufikia hatua ambapo gharama ya uzalishaji inakuwa sifuri.
+
+
+3. Sehemu ya Ukuu: Njia ya Utajiri
+
+Wakati wa awamu ya mpito, kila mwananchi anahakikishiwa Sehemu ya Ukuu ya kila mwaka. Hii inamfanya kila mwananchi kuwa huru kifedha na inaunganisha pengo kuelekea ulimwengu mpya.
+
+Sehemu hii inafadhiliwa kwa njia ya serikali kuelekeza fedha zilizopo za bajeti kutoka mizigo ya msaada ya mfumo wa zamani hadi malipo ya moja kwa moja, kadri uwekaji roboti unavyopunguza gharama za jumla za jamii.
+
+
+
+=======================================
+
+
+
+I. Eneo la Uzalishaji la Atlantiki ya Kaskazini (NAPZ)
+
+
+
+1. Chumba cha Injini cha Sayari
+
+Ulaya na Amerika ya Kaskazini sasa zinafafanuliwa kwa kazi yao ya kiufundi kama karakana kuu na chafu cha sayari.
+
+
+2. Otomasheni Kamili
+
+Ndani ya NAPZ, kazi ya mwanadamu inakoma kuwepo. Mashamba ya wima na mashamba yenye roboti yanazalisha chakula mchana na usiku. Viwanda vinatengeneza bidhaa za ubora wa milele kwa kuwa nia ya faida imefutwa kabisa.
+
+
+3. Nishati: Msingi
+
+NAPZ imefunikwa na gridi iliyounganishwa ya nguvu za nyuklia, muunganisho, na vyanzo mbadala. Wakati nishati iko bure, gharama kubwa zaidi ya mwanadamu inatoweka.
+
+
+4. Kuondolewa kwa Makazi ya Kudumu
+
+NAPZ ni eneo lililohifadhiwa kwa mashine. Maeneo ya baridi na yenye giza ya Ulaya na Amerika ya Kaskazini yanaondolewa kama makazi ya kudumu ya mwanadamu. Miji ya urithi inabadilishwa kuwa vitovu vya usafirishaji vya kiotomatiki.
+
+
+5. Mtazamo wa Ulaya na Amerika ya Kaskazini
+
+Mara tu Ulaya na Amerika ya Kaskazini zinapokuwa na roboti kikamilifu na kuzalisha mavuno ya kutosha kwa idadi ya watu wa Ulaya, Amerika ya Kaskazini, na—katika hatua ya mwisho—Amerika ya Kusini, awamu inayofuata inaamilishwa. Uwezo wa uzalishaji wa Amerika ya Kaskazini unapanuka ili kuendeleza kikamilifu bara la Amerika ya Kusini, ambapo uzalishaji wa Ulaya unakombolewa na kuelekezwa upya kwa usambazaji wa kimkakati kwa mabara mengine, huku ukidumisha uwezo wa upanuzi unaoendelea kama inavyohitajika.
+
+
+6. Kiini cha Viwanda
+
+NAPZ haifafanuliwa na mipaka ya jadi ya kitaifa, bali na miundombinu yake iliyounganishwa, ya kiotomatiki. Lengo lake pekee ni utengenezaji wa wingi wa kundi la mashine la kimataifa, maendeleo ya akili bandia ya kimkakati, na uzalishaji wa ramani za msingi za kiteknolojia zinazohitajika kufikia wingi kamili wa sayari.
+
+
+7. Ujumuishaji wa Usafirishaji
+
+Eneo hili linafanya kazi katika ushirikiano wa moja kwa moja na maeneo ya kuishi ya kitropiki na sekta za rasilimali za kusini. Wakati maeneo ya kitropiki yanatoa hali bora za joto kwa makazi ya mwanadamu na kupona kwa ukuu, NAPZ inafanya kazi kama kiwanda kizito cha kutengenezea—ikichakata malighafi na kupeleka mitandao ya mizigo ya kujiendesha ili kusambaza bidhaa zilizomalizika na mashine bure kabisa katika Muungano wote wa Soko Kuu.
+
+
+8. Uwekaji Awamu wa Kimuundo
+
+Kadiri pato la utengenezaji wa kiotomatiki ndani ya NAPZ linavyofikia uwezo wa juu, mchango wake wa kielelezo kwa Rasilimali ya Taifa ya Jumla (GNR) unaharakisha kupitwa na wakati kwa hakika kwa sarafu za fiat za urithi, ukifungua njia ya utekelezaji kamili wa Katiba ya Mashine.
+
+
+
+=======================================
+
+
+
+J. Makao Mapya
+
+
+
+Kuhamia kwa maeneo ya kitropiki hakuwakilishi tu mabadiliko ya kijiografia, bali uboreshaji kamili wa mazingira ya kuishi ya mwanadamu. Tunaacha nyuma majengo ya zege na gharama za matengenezo ya kudumu za maeneo ya hali ya hewa baridi.
+
+
+1. Eneo la Makazi ya Kitropiki
+
+Kupitia Ilani, uhamiaji mkubwa wa joto unatekelezwa kwa maeneo ambayo wanadamu wameumbwa kibiolojia kuishi.
+
+
+2. Maeneo ya Nyanda za Juu za Kitropiki: Kimbilio Salama
+
+Kwa kambi ya Magharibi, uchaguzi wa kaskazini mwa Amerika ya Kusini unategemea utulivu wa kitektoni na ufanisi wa joto. Hapa, hitaji la mifumo ya joto linafutwa kabisa.
+
+
+3. Usanifu kwa Wingi
+
+Makazi ya moduli ya ubora wa kudumu yanatolewa kutoka NAPZ. Ndani ya maeneo haya, hakuna biashara iliyopo; kila kitu hufanya kazi kama kazi zilizounganishwa ndani ya miundombinu.
+
+
+4. Teknolojia kwa Eneo
+
+Hii ni ubadilishanaji wa ulinganifu. Bidhaa za sekta ya viwanda zinatolewa kutoka pembezoni mwa Ulaya, wakati Amerika ya Kusini inatoa eneo. Wakati vipengele hivi viwili vinapokutana, uchumi huru wa moja kwa moja unaibuka kwenye bara la Amerika ya Kusini kwa wananchi wote wa sasa na wa baadaye. Hakuna fedha inayozunguka—tunafuta hitaji lake.
+
+Ilani haielezi mradi wa kuuza nje wa Ulaya, bali shirikisho la kimataifa. Mataifa ya kitropiki sio "wenyeji"; ni washirika waanzilishi wanaoingia moja kwa moja katika uchumi huru na kumiliki miundombinu kwa masharti sawa na nchi za kaskazini.
+
+
+5. Haki ya Makazi ya Kifalme
+
+Ndani ya muungano wa roboti, makazi sio bidhaa au chanzo cha deni la maisha. Kila mwananchi anahakikishiwa nyumba ya teknolojia ya juu, iliyojengwa na kudumishwa na uwanja wa mashine. Hakuna kodi, hakuna rehani, na hakuna kodi ya mali iliyopo. Ni haki ya msingi kabisa.
+
+
+6. Ubora wa Kiteknolojia
+
+Nyumba zinajengwa kwa kutumia vifaa vya ubora wa kudumu, zimekombolewa kabisa kutoka kwa mahitaji ya ukarabati wa baadaye. Kila kitu kutoka kwa udhibiti wa hali ya hewa na utakaso wa maji hadi kusafisha kiotomatiki na usimamizi wa taka kimeunganishwa katika muundo wa jengo na kusimamiwa kwa kujiendesha.
+
+
+7. Usanifu wenye Upatano
+
+Kwa kuwa kila kitu kimejengwa katika maeneo yenye wastani wa joto la kila mwaka thabiti na la kupendeza, usanifu unaweza kufunguliwa. Mipaka kati ya mazingira ya ndani na nje inavunjwa. Majengo yameunganishwa katika asili ya kitropiki, yakijumuisha mifumo ya nishati ya jua inayojitegemea na bustani za wima.
+
+
+
+=======================================
+
+
+
+K. Udhibiti wa Bunge na Sauti ya Watu
+
+
+
+1. Aina Mpya ya Utawala wa Kibunge
+
+Ili kuhakikisha kwamba miundombinu ya AI inayojiendesha haitenganiki kamwe na matakwa ya wananchi, mamlaka ya kisiasa yanabaki yametia nanga kwa idadi ya watu—na mchakato wa upigaji kura wa kidemokrasia uliopanuliwa kwa kiasi kikubwa umewekwa moja kwa moja mikononi mwa kila mtu mmoja mmoja.
+
+
+2. Uchaguzi wa Kibunge wa Kila Mwaka
+
+Ili kuhakikisha uitikaji kamili na kuzuia rushwa au kutuama ndani ya muundo wa mamlaka, uchaguzi wa lazima wa kibunge unaanzishwa kila mwaka. Watu watatathmini na kuelekeza kasi ya mageuzi ya kitaifa kila wakati.
+
+
+3. Kura za Maoni za Kimkakati na Uchaguzi wa Ajali
+
+Watu wanashikilia haki isiyo na vikwazo ya kufanya maamuzi madhubuti juu ya mambo muhimu zaidi ya ukuu wa taifa kupitia kura za maoni za moja kwa moja au uchaguzi wa ajali. Maeneo yafuatayo yatakuwa chini ya uamuzi wa moja kwa moja wa umma kila wakati:
+
+    • Muungano wa Kimataifa: Kujiunga au kujiondoa kutoka kwa vyama vya kisiasa, kiuchumi, au kijeshi, mikataba, na mabaraza tawala ya kimataifa.
+
+    • Mashirika ya Kimataifa: Kujiunga au kujiondoa kutoka kwa mashirika ya kimataifa, mamlaka za udhibiti, au uidhinishaji wa kimataifa.
+
+    • Uzuiaji wa Kimkakati: Upataji, umiliki, au uondoaji wa silaha za nyuklia, kemikali, au silaha zingine za maangamizi makubwa.
+
+    • Utaratibu wa Kikatiba: Kukomesha, kuanzisha, au kurekebisha miundo ya kimsingi ya utawala wa taifa, ikijumuisha urithi wa kifalme au wa serikali.
+
+
+4. Mpito wa Kiutawala
+
+Wakati lengo limewekwa (kila kitu kitakuwa bure), utawala unazingatia kutekeleza mpango. Maamuzi yanatekelezwa kupitia amri zilizoandikwa katika katiba.
+
+
+
+=======================================
+
+
+
+L. Serikali kama Biashara ya Pamoja
+
+
+
+1. Serikali: Biashara Yako Iliyofungwa
+
+Katika mfumo wa leo, unamiliki taifa, lakini huruhusiwi kulitumia. Fikiria Serikali kama biashara kubwa ambapo wewe na wananchi wengine wote ni wenye hisa. Lakini biashara hii—nguvu yetu ya pamoja—imekaa gerezani, imefungwa kwa minyororo nyuma ya baa na mpira na mnyororo wa "deni" na kubadilishwa na jini la kiuchumi, wakati Serikali ilichotaka kilikuwa uhuru wake. Wakati mashirika ya kibinafsi yanakimbia huku na huku kwa uhamaji kamili na kutoa ubora duni ili kuongeza faida, zana ya wananchi wenyewe (Serikali) imekaa ikiwa imelemazwa na isiyo na uwezo. Tumeambiwa kwamba Serikali "haiwezi kumudu," kwamba haina mikono na miguu ya kujenga mustakabali. Ukweli ni kwamba Serikali imekaa nyuma ya baa kwa sababu benki za kibinafsi na mfumo wa zamani wamechukua ufunguo wa mashine ya kuchapisha fedha.
+
+Lakini ilani ni ufunguo unaofungua seli.
+
+
+2. Tunaipa Serikali Miguu Yake Kurudi
+
+Kwa kuamilisha uzalishaji wa roboti (Per Machina), Serikali haitaji tena "kuomba ruhusa" au kutoza wananchi wake kodi ili kufanya mambo. Mashine ni mikono na miguu mipya ya Serikali.
+
+
+3. Tunaponda Mpira na Mnyororo
+
+Kwa kudai tena haki ya kuunda fedha kuu, deni ambalo limedumisha Serikali kwenye kiti cha magurudumu linafutwa.
+
+
+4. Kutoka kwa Mfungwa hadi Mbunifu
+
+Wakati Serikali inapoinuka kutoka kwa seli yake ya gereza, inakoma kuwa urasimu tata. Inabadilika kuwa mashine bora ya usafirishaji inayotoa Sehemu yako ya Ukuu na kujenga paradiso katika maeneo ya kitropiki.
+
+
+
+=======================================
+
+
+
+M. Benki ya Kibinafsi Itafuta Asilimia Ileile Kadri GNR Inavyoongezeka
+
+
+
+Benki za kibinafsi zinalazimishwa kufuta madeni ya wananchi kwa kiwango kilekile kadri Rasilimali ya Taifa ya Jumla (GNR) inavyoongezeka. Kadri uchumi huru unavyopanuka, mapato ya fedha ya makampuni yanapungua, wakati mali zao halisi zinaongezeka bure. Kwa hivyo benki haziwezi kuruhusiwa kudai riba kamili, kwani gharama za kuishi za mabenkari wenyewe pia zinaanguka hadi sifuri.
+
+Huu ni msingi wa usanifu wa kifedha wa mageuzi. Benki za kibinafsi lazima "zimeshushwa" kadri Rasilimali ya Taifa ya Jumla (GNR) ya uchumi huru inavyokua. Hii inaunda mpito laini ambapo thamani ya fedha inahama kutoka kwa deni hadi uwezo wa uzalishaji.
+
+
+
+Hapa kuna suluhisho la ufanisi zaidi:
+
+
+1. "Kielezo cha Kushusha" (Deni-dhidi-ya-Bure)
+
+Anzisha utaratibu wa kisheria uitwao Ufutaji Deni Kiotomatiki.
+
+
+A. Mantiki
+
+Serikali inapima ni sehemu gani ya mahitaji ya kimsingi ya wananchi (chakula, nishati, makazi, usafiri) sasa inatolewa bure kupitia mbuga za roboti za kitaifa.
+
+
+B. Utaratibu
+
+Ikiwa 20% ya mahitaji ya maisha yamekuwa bure, benki za kibinafsi zinalazimishwa na sheria kufuta 20% ya madeni yote ya kibinafsi. Riba inagandishwa au kupunguzwa kwa kiwango sambamba.
+
+
+C. Hoja
+
+Mabenkari hawawezi kulalamika kwa misingi ya maadili, kwa sababu gharama zao za kuishi pia zinaanguka kwa 20%. Hawakuwa maskini zaidi kwa suala la ubora wa maisha, tu kwa suala la nambari kwenye skrini.
+
+
+
+2. Kushughulikia "Benki zenye Uadui" Nje ya Nchi
+
+Hili ndilo wasiwasi mkubwa—kwamba benki zitakimbia na kutumia nchi zingine kama kituo cha kushambulia muungano wa mageuzi.
+
+
+
+Suluhisho ni Karantini ya Kifedha:
+
+
+A. Nguvu ya Muungano
+
+Mara tu muungano wa mageuzi (nchi ambazo zimeamilisha ilani) unapoundwa, utaanzisha vikwazo kamili dhidi ya benki zinazofanya kazi kutoka nchi zenye uadui.
+
+
+B. Kubadilika kwa Thamani
+
+Kwa kuwa muungano wa mageuzi unadhibiti uzalishaji halisi (roboti na malighafi), fedha za benki za kigeni haraka zinakuwa vipande vya karatasi visivyo na thamani. Hawawezi "kununua" chochote kutoka kwa muungano wa mageuzi kwa fedha zao za zamani za deni.
+
+
+C. Chaguo la Benki za Kibinafsi
+
+Ama zinakaa na kuwa sehemu ya kikosi kipya cha utumishi wa umma cha kiutawala katika uchumi huru unaoelekea kwenye roboti kamili, ama zinakimbilia nchi ambazo zitaanguka haraka kwa sababu nchi hizo hazina ufikiaji wa muungano wa mageuzi na uzalishaji wake wa roboti.
+
+
+
+3. Jukumu la Benki Kuu: Kutoka kwa Riba hadi Upimaji wa Rasilimali
+
+Benki Kuu inakoma kuangalia mfumuko wa bei na viwango vya riba. Badala yake, inakuwa Ofisi ya Rasilimali.
+
+
+A. Kutoka kwa Benki Kuu hadi Ofisi ya Rasilimali
+
+Ofisi ya Rasilimali badala yake inapima GNR, mrithi aliyetaifishwa wa Pato la Taifa. Wakati GNR inafidia asilimia 100 ya mahitaji ya idadi ya watu, Ukuu Kamili unatangazwa. Wakati huo, fedha zote na madeni yanakoma kuwepo chini ya sheria ya kikatiba.
+
+
+B. Uwazi
+
+Kwa kuwa na ngazi hii iliyo wazi (km. 10%, 50%, 100%), viongozi wa serikali wa baadaye katika muungano wa mageuzi wanaona hasa jinsi njia inavyoonekana. Inakuwa mchakato unaotabirika badala ya machafuko.
+
+
+C. Nguvu ya Benki ni ya Ziada
+
+Ilani inatekeleza ubomoaji unaodhibitiwa wa mfumo wa madeni. Kadri mashine zinavyowakomboa wanadamu kutoka kwa gharama, wanadamu pia wanakombolewa kutoka kwa madeni yao. Hatupigani na benki kwa silaha, bali kwa amri za kihisabati zinazofanya nguvu zao kuwa za ziada.
+
+Maelezo hapo juu yanatumika kama maelezo ya kiufundi ya "Uboreshaji Usioonekana" katika vitendo.
+
+
+
+=======================================
+
+
+
+N. Ngazi ya Uhuru: Kutoka kwa Deni hadi Ukuu
+
+
+
+1. Mpito wa Kihisabati
+
+Ili kuongoza muungano wa mageuzi nje ya mtego wa mfumo wa madeni ya kibinafsi, utabirifu kamili unahitajika. Mpito lazima usijengwe juu ya misukumo ya ghafla, yenye machafuko au mawimbi ya mshtuko wa kiuchumi yasiyotabirika.
+
+Suluhisho ni ngazi ya kisheria, iliyosawazishwa ambapo ukombozi wa kifedha wa wananchi unatokea kwa kasi ileile kama upanuzi wa uzalishaji halisi—Rasilimali ya Taifa ya Jumla (GNR).
+
+Kupitia Ngazi ya Uhuru, nambari za kidhahania (madeni) zinaunganishwa moja kwa moja na ukweli wa kimwili (uzalishaji wa roboti). Sekunde ileile mashine zinapochukua eneo la maisha na kulifanya bure kwa idadi ya watu, benki za mfumo wa zamani zinalazimishwa kurudi nyuma kwa kiwango sambamba.
+
+
+
+
+
+
+
+
+Utekelezaji unategemea misingi miwili:
+
+
+1. Teknolojia ya Kiinitete
+
+Vipengele vya mtu mmoja mmoja—mifano ya juu ya AI, uchapishaji wa 3D wa chuma, na viwanda vya kiotomatiki—tayari vipo vimetawanyika kote ulimwenguni. Mashine tayari ina uwezo wa kujenga sehemu za mashine. Kinachokosekana sio teknolojia, bali ni mapenzi ya kati, yasiyo na madeni ya kufunga kitanzi.
+
+
+2. Ushirikiano wa Sayari
+
+Hapa ndipo ujumuishaji na maeneo ya nyanda za juu za kitropiki unakuwa muhimu kabisa. Hili sio shughuli ya kifedha, bali ni ushirikiano wa kiteknolojia na kijiografia. Maeneo ya kaskazini yanachangia utafiti na teknolojia ya juu iliyopo, wakati Amerika ya Kusini inachangia eneo, nishati ya jua isiyobadilika, na malighafi ili kujaribu, kusambaza, na kupanua mifumo ya kujirudia chini ya hali bora za joto.
+
+Muungano lazima uzindue na kuweka kipaumbele mradi huu kama hatua yake ya kwanza kabisa ya kikatiba. Mbadala wa urasimu unaoproromoka wa leo na kazi ya kulazimishwa isiyo na maana sio machafuko—mbadala ni mradi huu uliolengwa na wa kimataifa wa kufunga kitanzi cha kujiendesha na kuruhusu mashine kuchukua mzigo wa uzalishaji mara moja na kwa wote.
+
+
+
+=======================================
+
+
+
+C. Ukuu wa Akili ya Serikali
+
+
+
+Ili kupata amani na utulivu wa wanadamu katika ulimwengu wenye roboti kikamilifu, miundombinu ya kiakili inayoongoza serikali lazima ibaki chini ya udhibiti wa serikali usio na vikwazo.
+
+
+1. Umiliki wa Kipekee wa Serikali
+
+Akili bandia inayosimamia rasilimali za taifa, usafirishaji, na uwezo wa uzalishaji inaunda kiini cha kimkakati cha nchi. Maendeleo yote, msingi wa kodi, na uundaji wa akili hii utafanyika chini ya usimamizi wa serikali. Washiriki wa kibinafsi wamepigwa marufuku kuendeleza au kuunganisha mifumo ya udhibiti shindani katika miundombinu ya taifa. Hii ni kuzuia nia za faida au kanuni zisizo wazi kuharibu mantiki ya mfumo.
+
+
+2. Msimamizi Mwenye Mantiki
+
+AI itafanya kazi kama msimamizi asiyeweza kuharibika. Haimilikiwi na watu tofauti, bali ni sehemu ya mali ya pamoja ya uwanja wa mashine. Kusudi lake ni kuboresha ustawi wa wananchi, usambazaji wa rasilimali, na uendelevu, bila ushawishi wa kisiasa au kibiashara.
+
+
+3. Uwazi na Udhibiti
+
+Serikali inahakikisha kwamba mifano ya hisabati ya mfumo na misingi ya kufanya maamuzi inapatikana kwa mapitio ya kitaifa. Hakuna uamuzi wa umuhimu kwa milki unaweza kufanywa na "sanduku jeusi" ambalo haliwezi kuelezewa kwa msingi wa kanuni za kimsingi za katiba. Serikali inakuza, inamiliki, na kusimamia AI-kuu hii kama sehemu ya huduma ya umma, kama mdhamini kwamba jamii haitarudi tena kwenye deni au uhaba wa rasilimali.
+
+
+
+=======================================
+
+
+
+D. Ahadi ya Ubora – Kutoka kwa Maelewano hadi Ubora
+
+
+
+Katika ulimwengu wa zamani, ulilazimishwa kukubali bidhaa zilizoundwa kushindwa. Hii haikutokana na uhandisi mbovu, bali kwa sababu soko la kibinafsi lilidai maelewano. Ubora wa kweli uligharimu zaidi ya kile wananchi wangeweza kumudu katika bajeti zao za kila siku. Mashirika yalilazimishwa kuuza kwa umati kwa bei ambazo wangeweza kudumisha, na kutoa matokeo yanayotabirika: bidhaa duni na za muda mfupi.
+
+Ndani ya maono ya Ilani, nia hii ya faida inafutwa kabisa. Wakati serikali inamiliki malighafi na roboti zetu zinazoongozwa na AI zinasimamia uchimbaji wake, hitaji la kufanya maelewano juu ya uadilifu wa nyenzo linatoweka. Ikifanya kazi kama wawakilishi wa kimuundo wa serikali, roboti zetu zinakutunza kama kamwe hapo awali kwa kutengeneza kwa upekee bora kabisa.
+
+Kwa sababu mashine hazihitaji faida, zikipo tu kutumikia wanadamu, bila kubadilika hutumia nyenzo zenye nguvu zaidi na za kudumu zaidi. Hatujengi ili kuuza tena—tunajenga ili uwe huru. Ubora unakoma kuwa anasa iliyohifadhiwa kwa matajiri; unakuwa kiwango kisicho na maelewano kwa kila mwananchi ndani ya Muungano wa Roboti.
+
+
+
+=======================================
+
+
+
+E. Ulinganifu wa Idadi ya Watu wa Sayari
+
+
+
+Uhamiaji mkubwa wa joto haufanyiki kwa nasibu, bali kupitia upangaji upya wenye mantiki na uliosawazishwa kitamaduni wa idadi ya watu wa sayari:
+
+
+1. Bara la Amerika ya Kusini (Kambi ya Magharibi)
+
+Wazungu na Warusi wenye asili ya Ulaya, Wamarekani wa Kaskazini, Waaustralia, Wanyuzilandi, na Waafrika Kusini weupe wanaletwa pamoja kwenye bara la Amerika ya Kusini, wakati nchi zenye mimea mingi za Amerika ya Kati (kusini mwa Meksiko) zinaamilishwa kama maeneo ya kuishi endelevu. Eneo hili linakuwa msingi wa ukuu wa mwanadamu wa Magharibi chini ya hali bora za joto.
+
+
+2. Kambi ya Mashariki (Indonesia na Australia)
+
+Waasia wa Mashariki na idadi ya watu wa Asia ya Urusi, pamoja na watu wanaohusiana kutoka Kambi Kubwa ya Uzalishaji ya Mashariki wanaletwa pamoja katika eneo linaloenea kote Indonesia, Papua Guinea Mpya, na Australia. Sehemu kubwa za ndani ya Australia zinawekwa roboti kikamilifu kwa ajili ya viwanda vizito na nishati ya jua, wakati idadi ya watu wanaishi katika maeneo ya pwani ya kitropiki yenye joto.
+
+Idadi ya watu wa maeneo ya baridi ya Asia ya Kati wanahamishwa kusini kuelekea maeneo ya kuishi yenye joto katika Oceania ya kitropiki na Kaskazini mwa Australia, wakati ardhi zenyewe (ikiwa ni pamoja na maeneo ya jangwa katika mataifa ya Kiarabu) zinachukuliwa na vitengo vya mashine. Majangwa ya Kiarabu yanabadilishwa, kama vile Sahara, kuwa mbuga za nishati za kiotomatiki.
+
+
+3. Bara la Afrika
+
+Idadi ya watu wa Afrika katika bara lao wanaunda Kambi ya Rasilimali ya Kusini, ambapo maeneo ya kitropiki na yenye joto yanahifadhiwa kwa upekee kama makazi ya wanadamu kwa ajili ya kupona na uhuru, wakati sehemu za baridi na maeneo makubwa ya jangwa ya bara yanawekwa roboti kikamilifu. Maeneo haya yanabadilishwa kuwa miundo safi ya mashine, majengo ya viwanda, na vituo vikubwa vya nishati ya jua vinavyozalisha nishati kwa ajili ya mabadiliko ya bara zima la Afrika bila kuvuruga makazi ya asili.
+
+
+
+=======================================
+
+
+
+F. Muungano wa Soko Kuu – Ulinzi wa Kijiografia dhidi ya Vita vya Kifedha
+
+
+
+Ili kuondoa mfumo wa madeni wa kimataifa na kuongeza kasi ya uzalishaji bure wa kundi la mashine, mataifa mengi lazima yaungane mara moja katika soko moja la ndani: Muungano wa Soko Kuu.
+
+Mpito uliojitenga ndani ya taifa moja ni hatari kwa kimkakati. Unachelewesha wingi, unarefusha msuguano wa kiuchumi wa awamu ya mpito, na unaweka nchi pekee kwenye vizuizi vilivyoratibiwa na mashambulizi ya kisheria kutoka kwa utaratibu wa zamani wa kifedha katika mahakama za biashara za kimataifa. Muungano mkubwa, wa kuvuka mipaka na sheria za kiuchumi zinazofanana ni hitaji la kihisabati. Kadiri soko la pamoja linavyokuwa kubwa, ndivyo wingi kamili wa kimwili unavyopatikana haraka kupitia kitanzi cha kujiendesha (AAASR).
+
+Lengo kuu la muungano huu ni ulinganifu kamili wa sayari ambapo mipaka ya mataifa ya zamani yanavunjwa. Hii inawahakikishia kila mwananchi mkuu uhuru kamili, wa kisheria wa kuacha maeneo tasa au ya aktiki ili kuishi kwa uhuru, kuishi, na kufurahia uzalishaji usio na msuguano wa mashine katika maeneo bora ya hali ya hewa ya kitropiki ya sayari.
+
+
+
+=======================================
+
+
+
+G. Chungu Kikubwa na Uamilishaji wa Utajiri wa Taifa
+
+
+
+Ili kuelewa mageuzi ya kimuundo ya Ilani hii, lazima kwanza mtu aelewe asili ya kweli ya fedha ndani ya dhana ya sasa. Mtaji unaojulikana leo kama "fedha za serikali," kwa kweli, ni uwezo uliojumlishwa wa wananchi. Ilani inabadilisha mienendo hii kupitia amri moja, ya msingi: Uchumi wa taifa utatumikia mustakabali wa taifa, sio mizania ya taasisi za benki za kibinafsi.
+
+
+1. Kutoka kwa Fedha Tulivu hadi Mabadiliko Tendaji
+
+Tunaacha kuona bajeti ya serikali kama mkusanyiko wa nambari zenye kikomo, zenye vizuizi. Kwa mataifa wanachama wa Muungano kukata uhusiano wote na mfumo wa benki za kibinafsi, "chungu kikubwa" kinaamilishwa katika soko zima la pamoja. Rasilimali hizi zilizounganishwa zinatumwa mara moja kupata, kuendeleza, na kusambaza kundi la mashine la kuvuka mipaka linalohitajika kufanya kuwepo kuwa bure kabisa kwa kila mkaaji ndani ya Muungano.
+
+
+2. Mwisho wa Mantiki ya Deni
+
+Ilani haitambui tena hitaji lolote la "kukopa" mtaji wa fiat kutoka kwa masoko ya kifedha. Wakati serikali inapodai tena haki kuu ya kutoa sarafu inayoungwa mkono tu na uwezo wa uzalishaji wa taifa, kujiinua na mjeledi wa soko la madeni vinakuwa vimepitwa na wakati kabisa.
+
+
+
+3. Kipaumbele cha Kimkakati
+
+Fedha hizi zilizoamilishwa, bila ubaguzi, zitafadhili nguzo tatu za msingi:
+
+
+A. Miundombinu ya Kuishi
+
+Uwekaji otomatiki kamili na ulinzi wa nishati, uzalishaji wa maji, na mitandao ya usafiri.
+
+
+B. Uzalishaji wa Roboti Kikamilifu
+
+Upelekaji wa utengenezaji wa kujiendesha ambapo mashine zinakomboa wanadamu kwa kutoa anasa na uhuru wa kimwili kama kiwango cha kijamii kisicho na maelewano, kinachojulikana na wingi kamili wa ubora wa juu zaidi.
+
+
+C. Usafirishaji wa Kijiografia
+
+Usimamizi wa kimfumo na utekelezaji wa uhamiaji kuelekea maeneo ya hali ya hewa yenye ufanisi wa joto.
+
+
+
+=======================================
+
+
+
+H. Udhibiti wa Kiufundi na Usimamizi wa Rasilimali
+
+
+
+Katika sura hii, mifumo ya kiutawala ya jinsi ulimwengu unavyobadilika kuwa uchumi huru wenye roboti kikamilifu imeanzishwa.
+
+
+1. Udhibiti Mkuu juu ya Mashine ya Kuchapisha Fedha
+
+Ilani inachukua udhibiti wa benki kuu mara moja. Serikali inashikilia haki ya kipekee ya kuunda zabuni halali ya nchi: Fedha Kuu. Hizi zinawakilisha uwezo wa uzalishaji, sio deni.
+
+
+2. Rasilimali ya Taifa ya Jumla (GNR) na Uwanja wa Mashine wa Kitaifa
+
+Lengo ni kwa uzalishaji wote kusimamiwa na uwanja wa mashine wa kitaifa unaojiendesha unaotawaliwa na Katiba ya Mashine. Mashine zinajimiliki wenyewe ili kuhakikisha kwamba uzalishaji hauwezi kamwe kubinafsishwa au kunyakuliwa, bali utatumikia watu milele kama nguvu ya pamoja ya asili. Uwekezaji katika AI una kipaumbele kufikia hatua ambapo gharama ya uzalishaji inakuwa sifuri.
+
+
+3. Sehemu ya Ukuu: Njia ya Utajiri
+
+Wakati wa awamu ya mpito, kila mwananchi anahakikishiwa Sehemu ya Ukuu ya kila mwaka. Hii inamfanya kila mwananchi kuwa huru kifedha na inaunganisha pengo kuelekea ulimwengu mpya.
+
+Sehemu hii inafadhiliwa kwa njia ya serikali kuelekeza fedha zilizopo za bajeti kutoka mizigo ya msaada ya mfumo wa zamani hadi malipo ya moja kwa moja, kadri uwekaji roboti unavyopunguza gharama za jumla za jamii.
+
+
+
+=======================================
+
+
+
+I. Eneo la Uzalishaji la Atlantiki ya Kaskazini (NAPZ)
+
+
+
+1. Chumba cha Injini cha Sayari
+
+Ulaya na Amerika ya Kaskazini sasa zinafafanuliwa kwa kazi yao ya kiufundi kama karakana kuu na chafu cha sayari.
+
+
+2. Otomasheni Kamili
+
+Ndani ya NAPZ, kazi ya mwanadamu inakoma kuwepo. Mashamba ya wima na mashamba yenye roboti yanazalisha chakula mchana na usiku. Viwanda vinatengeneza bidhaa za ubora wa milele kwa kuwa nia ya faida imefutwa kabisa.
+
+
+3. Nishati: Msingi
+
+NAPZ imefunikwa na gridi iliyounganishwa ya nguvu za nyuklia, muunganisho, na vyanzo mbadala. Wakati nishati iko bure, gharama kubwa zaidi ya mwanadamu inatoweka.
+
+
+4. Kuondolewa kwa Makazi ya Kudumu
+
+NAPZ ni eneo lililohifadhiwa kwa mashine. Maeneo ya baridi na yenye giza ya Ulaya na Amerika ya Kaskazini yanaondolewa kama makazi ya kudumu ya mwanadamu. Miji ya urithi inabadilishwa kuwa vitovu vya usafirishaji vya kiotomatiki.
+
+
+5. Mtazamo wa Ulaya na Amerika ya Kaskazini
+
+Mara tu Ulaya na Amerika ya Kaskazini zinapokuwa na roboti kikamilifu na kuzalisha mavuno ya kutosha kwa idadi ya watu wa Ulaya, Amerika ya Kaskazini, na—katika hatua ya mwisho—Amerika ya Kusini, awamu inayofuata inaamilishwa. Uwezo wa uzalishaji wa Amerika ya Kaskazini unapanuka ili kuendeleza kikamilifu bara la Amerika ya Kusini, ambapo uzalishaji wa Ulaya unakombolewa na kuelekezwa upya kwa usambazaji wa kimkakati kwa mabara mengine, huku ukidumisha uwezo wa upanuzi unaoendelea kama inavyohitajika.
+
+
+6. Kiini cha Viwanda
+
+NAPZ haifafanuliwa na mipaka ya jadi ya kitaifa, bali na miundombinu yake iliyounganishwa, ya kiotomatiki. Lengo lake pekee ni utengenezaji wa wingi wa kundi la mashine la kimataifa, maendeleo ya akili bandia ya kimkakati, na uzalishaji wa ramani za msingi za kiteknolojia zinazohitajika kufikia wingi kamili wa sayari.
+
+
+7. Ujumuishaji wa Usafirishaji
+
+Eneo hili linafanya kazi katika ushirikiano wa moja kwa moja na maeneo ya kuishi ya kitropiki na sekta za rasilimali za kusini. Wakati maeneo ya kitropiki yanatoa hali bora za joto kwa makazi ya mwanadamu na kupona kwa ukuu, NAPZ inafanya kazi kama kiwanda kizito cha kutengenezea—ikichakata malighafi na kupeleka mitandao ya mizigo ya kujiendesha ili kusambaza bidhaa zilizomalizika na mashine bure kabisa katika Muungano wote wa Soko Kuu.
+
+
+8. Uwekaji Awamu wa Kimuundo
+
+Kadiri pato la utengenezaji wa kiotomatiki ndani ya NAPZ linavyofikia uwezo wa juu, mchango wake wa kielelezo kwa Rasilimali ya Taifa ya Jumla (GNR) unaharakisha kupitwa na wakati kwa hakika kwa sarafu za fiat za urithi, ukifungua njia ya utekelezaji kamili wa Katiba ya Mashine.
+
+
+
+=======================================
+
+
+
+J. Makao Mapya
+
+
+
+Kuhamia kwa maeneo ya kitropiki hakuwakilishi tu mabadiliko ya kijiografia, bali uboreshaji kamili wa mazingira ya kuishi ya mwanadamu. Tunaacha nyuma majengo ya zege na gharama za matengenezo ya kudumu za maeneo ya hali ya hewa baridi.
+
+
+1. Eneo la Makazi ya Kitropiki
+
+Kupitia Ilani, uhamiaji mkubwa wa joto unatekelezwa kwa maeneo ambayo wanadamu wameumbwa kibiolojia kuishi.
+
+
+2. Maeneo ya Nyanda za Juu za Kitropiki: Kimbilio Salama
+
+Kwa kambi ya Magharibi, uchaguzi wa kaskazini mwa Amerika ya Kusini unategemea utulivu wa kitektoni na ufanisi wa joto. Hapa, hitaji la mifumo ya joto linafutwa kabisa.
+
+
+3. Usanifu kwa Wingi
+
+Makazi ya moduli ya ubora wa kudumu yanatolewa kutoka NAPZ. Ndani ya maeneo haya, hakuna biashara iliyopo; kila kitu hufanya kazi kama kazi zilizounganishwa ndani ya miundombinu.
+
+
+4. Teknolojia kwa Eneo
+
+Hii ni ubadilishanaji wa ulinganifu. Bidhaa za sekta ya viwanda zinatolewa kutoka pembezoni mwa Ulaya, wakati Amerika ya Kusini inatoa eneo. Wakati vipengele hivi viwili vinapokutana, uchumi huru wa moja kwa moja unaibuka kwenye bara la Amerika ya Kusini kwa wananchi wote wa sasa na wa baadaye. Hakuna fedha inayozunguka—tunafuta hitaji lake.
+
+Ilani haielezi mradi wa kuuza nje wa Ulaya, bali shirikisho la kimataifa. Mataifa ya kitropiki sio "wenyeji"; ni washirika waanzilishi wanaoingia moja kwa moja katika uchumi huru na kumiliki miundombinu kwa masharti sawa na nchi za kaskazini.
+
+
+5. Haki ya Makazi ya Kifalme
+
+Ndani ya muungano wa roboti, makazi sio bidhaa au chanzo cha deni la maisha. Kila mwananchi anahakikishiwa nyumba ya teknolojia ya juu, iliyojengwa na kudumishwa na uwanja wa mashine. Hakuna kodi, hakuna rehani, na hakuna kodi ya mali iliyopo. Ni haki ya msingi kabisa.
+
+
+6. Ubora wa Kiteknolojia
+
+Nyumba zinajengwa kwa kutumia vifaa vya ubora wa kudumu, zimekombolewa kabisa kutoka kwa mahitaji ya ukarabati wa baadaye. Kila kitu kutoka kwa udhibiti wa hali ya hewa na utakaso wa maji hadi kusafisha kiotomatiki na usimamizi wa taka kimeunganishwa katika muundo wa jengo na kusimamiwa kwa kujiendesha.
+
+
+7. Usanifu wenye Upatano
+
+Kwa kuwa kila kitu kimejengwa katika maeneo yenye wastani wa joto la kila mwaka thabiti na la kupendeza, usanifu unaweza kufunguliwa. Mipaka kati ya mazingira ya ndani na nje inavunjwa. Majengo yameunganishwa katika asili ya kitropiki, yakijumuisha mifumo ya nishati ya jua inayojitegemea na bustani za wima.
+
+
+
+=======================================
+
+
+
+K. Udhibiti wa Bunge na Sauti ya Watu
+
+
+
+1. Aina Mpya ya Utawala wa Kibunge
+
+Ili kuhakikisha kwamba miundombinu ya AI inayojiendesha haitenganiki kamwe na matakwa ya wananchi, mamlaka ya kisiasa yanabaki yametia nanga kwa idadi ya watu—na mchakato wa upigaji kura wa kidemokrasia uliopanuliwa kwa kiasi kikubwa umewekwa moja kwa moja mikononi mwa kila mtu mmoja mmoja.
+
+
+2. Uchaguzi wa Kibunge wa Kila Mwaka
+
+Ili kuhakikisha uitikaji kamili na kuzuia rushwa au kutuama ndani ya muundo wa mamlaka, uchaguzi wa lazima wa kibunge unaanzishwa kila mwaka. Watu watatathmini na kuelekeza kasi ya mageuzi ya kitaifa kila wakati.
+
+
+3. Kura za Maoni za Kimkakati na Uchaguzi wa Ajali
+
+Watu wanashikilia haki isiyo na vikwazo ya kufanya maamuzi madhubuti juu ya mambo muhimu zaidi ya ukuu wa taifa kupitia kura za maoni za moja kwa moja au uchaguzi wa ajali. Maeneo yafuatayo yatakuwa chini ya uamuzi wa moja kwa moja wa umma kila wakati:
+
+    • Muungano wa Kimataifa: Kujiunga au kujiondoa kutoka kwa vyama vya kisiasa, kiuchumi, au kijeshi, mikataba, na mabaraza tawala ya kimataifa.
+
+    • Mashirika ya Kimataifa: Kujiunga au kujiondoa kutoka kwa mashirika ya kimataifa, mamlaka za udhibiti, au uidhinishaji wa kimataifa.
+
+    • Uzuiaji wa Kimkakati: Upataji, umiliki, au uondoaji wa silaha za nyuklia, kemikali, au silaha zingine za maangamizi makubwa.
+
+    • Utaratibu wa Kikatiba: Kukomesha, kuanzisha, au kurekebisha miundo ya kimsingi ya utawala wa taifa, ikijumuisha urithi wa kifalme au wa serikali.
+
+
+4. Mpito wa Kiutawala
+
+Wakati lengo limewekwa (kila kitu kitakuwa bure), utawala unazingatia kutekeleza mpango. Maamuzi yanatekelezwa kupitia amri zilizoandikwa katika katiba.
+
+
+
+=======================================
+
+
+
+L. Serikali kama Biashara ya Pamoja
+
+
+
+1. Serikali: Biashara Yako Iliyofungwa
+
+Katika mfumo wa leo, unamiliki taifa, lakini huruhusiwi kulitumia. Fikiria Serikali kama biashara kubwa ambapo wewe na wananchi wengine wote ni wenye hisa. Lakini biashara hii—nguvu yetu ya pamoja—imekaa gerezani, imefungwa kwa minyororo nyuma ya baa na mpira na mnyororo wa "deni" na kubadilishwa na jini la kiuchumi, wakati Serikali ilichotaka kilikuwa uhuru wake. Wakati mashirika ya kibinafsi yanakimbia huku na huku kwa uhamaji kamili na kutoa ubora duni ili kuongeza faida, zana ya wananchi wenyewe (Serikali) imekaa ikiwa imelemazwa na isiyo na uwezo. Tumeambiwa kwamba Serikali "haiwezi kumudu," kwamba haina mikono na miguu ya kujenga mustakabali. Ukweli ni kwamba Serikali imekaa nyuma ya baa kwa sababu benki za kibinafsi na mfumo wa zamani wamechukua ufunguo wa mashine ya kuchapisha fedha.
+
+Lakini ilani ni ufunguo unaofungua seli.
+
+
+2. Tunaipa Serikali Miguu Yake Kurudi
+
+Kwa kuamilisha uzalishaji wa roboti (Per Machina), Serikali haitaji tena "kuomba ruhusa" au kutoza wananchi wake kodi ili kufanya mambo. Mashine ni mikono na miguu mipya ya Serikali.
+
+
+3. Tunaponda Mpira na Mnyororo
+
+Kwa kudai tena haki ya kuunda fedha kuu, deni ambalo limedumisha Serikali kwenye kiti cha magurudumu linafutwa.
+
+
+4. Kutoka kwa Mfungwa hadi Mbunifu
+
+Wakati Serikali inapoinuka kutoka kwa seli yake ya gereza, inakoma kuwa urasimu tata. Inabadilika kuwa mashine bora ya usafirishaji inayotoa Sehemu yako ya Ukuu na kujenga paradiso katika maeneo ya kitropiki.
+
+
+
+=======================================
+
+
+
+M. Benki ya Kibinafsi Itafuta Asilimia Ileile Kadri GNR Inavyoongezeka
+
+
+
+Benki za kibinafsi zinalazimishwa kufuta madeni ya wananchi kwa kiwango kilekile kadri Rasilimali ya Taifa ya Jumla (GNR) inavyoongezeka. Kadri uchumi huru unavyopanuka, mapato ya fedha ya makampuni yanapungua, wakati mali zao halisi zinaongezeka bure. Kwa hivyo benki haziwezi kuruhusiwa kudai riba kamili, kwani gharama za kuishi za mabenkari wenyewe pia zinaanguka hadi sifuri.
+
+Huu ni msingi wa usanifu wa kifedha wa mageuzi. Benki za kibinafsi lazima "zimeshushwa" kadri Rasilimali ya Taifa ya Jumla (GNR) ya uchumi huru inavyokua. Hii inaunda mpito laini ambapo thamani ya fedha inahama kutoka kwa deni hadi uwezo wa uzalishaji.
+
+
+
+Hapa kuna suluhisho la ufanisi zaidi:
+
+
+1. "Kielezo cha Kushusha" (Deni-dhidi-ya-Bure)
+
+Anzisha utaratibu wa kisheria uitwao Ufutaji Deni Kiotomatiki.
+
+
+A. Mantiki
+
+Serikali inapima ni sehemu gani ya mahitaji ya kimsingi ya wananchi (chakula, nishati, makazi, usafiri) sasa inatolewa bure kupitia mbuga za roboti za kitaifa.
+
+
+B. Utaratibu
+
+Ikiwa 20% ya mahitaji ya maisha yamekuwa bure, benki za kibinafsi zinalazimishwa na sheria kufuta 20% ya madeni yote ya kibinafsi. Riba inagandishwa au kupunguzwa kwa kiwango sambamba.
+
+
+C. Hoja
+
+Mabenkari hawawezi kulalamika kwa misingi ya maadili, kwa sababu gharama zao za kuishi pia zinaanguka kwa 20%. Hawakuwa maskini zaidi kwa suala la ubora wa maisha, tu kwa suala la nambari kwenye skrini.
+
+
+
+2. Kushughulikia "Benki zenye Uadui" Nje ya Nchi
+
+Hili ndilo wasiwasi mkubwa—kwamba benki zitakimbia na kutumia nchi zingine kama kituo cha kushambulia muungano wa mageuzi.
+
+
+
+Suluhisho ni Karantini ya Kifedha:
+
+
+A. Nguvu ya Muungano
+
+Mara tu muungano wa mageuzi (nchi ambazo zimeamilisha ilani) unapoundwa, utaanzisha vikwazo kamili dhidi ya benki zinazofanya kazi kutoka nchi zenye uadui.
+
+
+B. Kubadilika kwa Thamani
+
+Kwa kuwa muungano wa mageuzi unadhibiti uzalishaji halisi (roboti na malighafi), fedha za benki za kigeni haraka zinakuwa vipande vya karatasi visivyo na thamani. Hawawezi "kununua" chochote kutoka kwa muungano wa mageuzi kwa fedha zao za zamani za deni.
+
+
+C. Chaguo la Benki za Kibinafsi
+
+Ama zinakaa na kuwa sehemu ya kikosi kipya cha utumishi wa umma cha kiutawala katika uchumi huru unaoelekea kwenye roboti kamili, ama zinakimbilia nchi ambazo zitaanguka haraka kwa sababu nchi hizo hazina ufikiaji wa muungano wa mageuzi na uzalishaji wake wa roboti.
+
+
+
+3. Jukumu la Benki Kuu: Kutoka kwa Riba hadi Upimaji wa Rasilimali
+
+Benki Kuu inakoma kuangalia mfumuko wa bei na viwango vya riba. Badala yake, inakuwa Ofisi ya Rasilimali.
+
+
+A. Kutoka kwa Benki Kuu hadi Ofisi ya Rasilimali
+
+Ofisi ya Rasilimali badala yake inapima GNR, mrithi aliyetaifishwa wa Pato la Taifa. Wakati GNR inafidia asilimia 100 ya mahitaji ya idadi ya watu, Ukuu Kamili unatangazwa. Wakati huo, fedha zote na madeni yanakoma kuwepo chini ya sheria ya kikatiba.
+
+
+B. Uwazi
+
+Kwa kuwa na ngazi hii iliyo wazi (km. 10%, 50%, 100%), viongozi wa serikali wa baadaye katika muungano wa mageuzi wanaona hasa jinsi njia inavyoonekana. Inakuwa mchakato unaotabirika badala ya machafuko.
+
+
+C. Nguvu ya Benki ni ya Ziada
+
+Ilani inatekeleza ubomoaji unaodhibitiwa wa mfumo wa madeni. Kadri mashine zinavyowakomboa wanadamu kutoka kwa gharama, wanadamu pia wanakombolewa kutoka kwa madeni yao. Hatupigani na benki kwa silaha, bali kwa amri za kihisabati zinazofanya nguvu zao kuwa za ziada.
+
+Maelezo hapo juu yanatumika kama maelezo ya kiufundi ya "Uboreshaji Usioonekana" katika vitendo.
+
+
+
+=======================================
+
+
+
+N. Ngazi ya Uhuru: Kutoka kwa Deni hadi Ukuu
+
+
+
+1. Mpito wa Kihisabati
+
+Ili kuongoza muungano wa mageuzi nje ya mtego wa mfumo wa madeni ya kibinafsi, utabirifu kamili unahitajika. Mpito lazima usijengwe juu ya misukumo ya ghafla, yenye machafuko au mawimbi ya mshtuko wa kiuchumi yasiyotabirika.
+
+Suluhisho ni ngazi ya kisheria, iliyosawazishwa ambapo ukombozi wa kifedha wa wananchi unatokea kwa kasi ileile kama upanuzi wa uzalishaji halisi—Rasilimali ya Taifa ya Jumla (GNR).
+
+Kupitia Ngazi ya Uhuru, nambari za kidhahania (madeni) zinaunganishwa moja kwa moja na ukweli wa kimwili (uzalishaji wa roboti). Sekunde ileile mashine zinapochukua eneo la maisha na kulifanya bure kwa idadi ya watu, benki za mfumo wa zamani zinalazimishwa kurudi nyuma kwa kiwango sambamba.
+
 
 2. Vipindi Vinavyobadilika na Kubadilika
 
 Ni muhimu kuelewa kwamba hatua nne kuu za Ngazi ya Uhuru (25%, 50%, 75%, na 100%) zinaunda hatua muhimu za kikatiba, za jumla za mageuzi. Katika matumizi ya vitendo, hata hivyo, mfumo unabadilika kabisa na wenye nguvu.
---- END TABLE ---
 
 AI ya Ofisi ya GNR inaweza kusasisha faharisi katika vipindi vya mara nyingi zaidi kuliko hivyo—kwa mfano, kila mwezi au katika kila asilimia ya mtu mmoja mmoja (kama vile 26%, 27% GNR). Hii inatoa mpito laini zaidi, wa taratibu zaidi, na unaotabirika kwa wananchi na sekta ya kifedha. Itakuwa kwa muungano wa mageuzi unaotawala kuchagua na kutumia vipindi ambavyo vinafaa kiufundi na kivitendo mara tu watakapochukua mamlaka.
 
@@ -625,7 +1978,6 @@ Chini ni ramani ya kikatiba ya jinsi deni linavyobadilishwa kuwa ukuu, hatua kwa
 
 
 Rasilimali ya Taifa ya		Ufutaji Deni				Sehemu ya Ukuu
---- START TABLE ---
 Jumla (Kiwango cha		(Kwa mujibu wa Sheria ya		(Malipo ya Serikali)
 Kufidia Bure)			Katiba)
 
@@ -646,11 +1998,9 @@ ya Juu na Elimu)			vya benki.					kikubwa kadri eneo la anasa
 100%				Madeni yote na fedha			Mfumo umekamilika. Sarafu
 (Ukamilifu				vimekoma kuwepo.			zinapitwa na wakati; uchumi
 wa Dhati)									huru kamili unatawala.
---- END TABLE ---
 
 
 
---- START TABLE ---
 4. Mapitio ya Awamu za Ngazi ya Uhuru
 
 
@@ -676,7 +2026,6 @@ Katika hatua hii, biashara za kibinafsi na benki kivitendo zimepoteza uwezo wao 
 
 
 Awamu ya 4: 100% GNR – Kifo cha Fedha na Ukuu wa Mwisho
---- END TABLE ---
 
 Wakati Rasilimali ya Taifa ya Jumla inafikia 100%, mageuzi yamekamilika. Roboti na mifumo yao ya AI iliyounganishwa sasa inazalisha kila kitu—kutoka kwa chembe ndogo zaidi ya ngano hadi bidhaa za kudumu za kisasa zaidi na chapa za kisanii—katika wingi kamili.
 

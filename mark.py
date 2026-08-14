@@ -9,37 +9,47 @@ for filename in os.listdir(folder_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
             
-        # Ta bort gamla markörer om de finns kvar sedan förra körningen
+        # Rensa bort alla gamla/felaktiga markörer först
         lines = [line for line in lines if line.strip() not in ['--- START TABLE ---', '--- END TABLE ---']]
 
-        new_lines = []
-        in_table = False
-        i = 0
+        # Hitta radindex för "25%" / "25 %" och "100%" / "100 %"
+        idx_25 = -1
+        idx_100 = -1
         
-        while i < len(lines):
-            line = lines[i]
-            
-            # Identifiera starten: Hitta raden ovanför 25% (vilket är rubrikraderna)
-            # Vi kollar om någon av de kommande 4 raderna innehåller "25 %" eller "25%"
-            lookahead = ''.join(lines[i:i+4])
-            if ('25 %' in lookahead or '25%' in lookahead) and not in_table:
-                new_lines.append('--- START TABLE ---\n')
-                in_table = True
-            
-            new_lines.append(line)
-            
-            # Identifiera slutet: När vi passerat "100 %", läs med stycket och stäng tabellen
-            if in_table and ('100 %' in line or '100%' in line):
-                while i + 1 < len(lines) and lines[i+1].strip() != '':
-                    i += 1
-                    new_lines.append(lines[i])
-                
-                new_lines.append('--- END TABLE ---\n')
-                in_table = False
-                
-            i += 1
+        for idx, line in enumerate(lines):
+            if ('25 %' in line or '25%' in line) and idx_25 == -1:
+                idx_25 = idx
+            if ('100 %' in line or '100%' in line) and idx_100 == -1:
+                idx_100 = idx
 
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.writelines(new_lines)
+        if idx_25 != -1 and idx_100 != -1:
+            # Flytta START bakåt för att få med hela rubrikblocket (upp till 5 rader bakåt om det finns text)
+            start_idx = idx_25
+            for check_idx in range(idx_25 - 1, max(-1, idx_25 - 6), -1):
+                if lines[check_idx].strip() != '':
+                    start_idx = check_idx
+                elif start_idx != idx_25: 
+                    # Om vi redan hittat text och stöter på en tomrad ovanför rubriken, stanna där
+                    break
 
-print("Uppdaterat! Markörerna har flyttats så att rubrikerna hamnar i tabellen.")
+            # Flytta END framåt för att få med hela 100%-stycket
+            end_idx = idx_100
+            for check_idx in range(idx_100 + 1, min(len(lines), idx_100 + 6)):
+                if lines[check_idx].strip() != '':
+                    end_idx = check_idx
+                else:
+                    break
+
+            # Bygg ihop filen igen med exakt EN start- och EN slutmarkör
+            new_lines = (
+                lines[:start_idx] +
+                ['--- START TABLE ---\n\n'] +
+                lines[start_idx:end_idx + 1] +
+                ['\n\n--- END TABLE ---\n'] +
+                lines[end_idx + 1:]
+            )
+
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.writelines(new_lines)
+
+print("Städning klar! Alla filer har nu exakt en korrekt placerad tabell utan dubbelmarkörer.")
