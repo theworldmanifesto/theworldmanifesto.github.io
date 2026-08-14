@@ -210,9 +210,11 @@ const languages = {
         const lang = getPreferredLanguage();
         const langData = languages[lang];
 
-        document.getElementById('flag-icon').src = langData.flag;
-        document.getElementById('flag-icon').alt = langData.name;
-        document.getElementById('language-label').textContent = langData.name;
+document.getElementById('flag-icon').src = langData.flag;
+document.getElementById('flag-icon').alt = langData.name;
+document.getElementById('language-label').textContent = langData.name;
+document.getElementById('book-title').textContent = langData.title;
+document.getElementById('book-subtitle').textContent = langData.subtitle;
 
         // ============================================================
         // 2. TABELLÖVERSÄTTNINGAR – 8 specialspråk
