@@ -605,7 +605,7 @@ Alla on perustuslaillinen suunnitelma siitä, kuinka velka muunnetaan suverenite
 
 
 --- START TABLE ---
-Bruttokansallisresurssi			Velan alaskirjaus			Suvereniteettiosuus
+Bruttokansallisresurssi			Velan alaskirjaus				Suvereniteettiosuus
 (Ilmainen kattavuusaste)		(Perustuslain mukaan)			(Valtion maksama)
 
 25 %							25 % kaikista yksityisistä		Ensimmäinen maksu
