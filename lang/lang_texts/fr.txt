@@ -425,19 +425,19 @@ gratuite)
 
 25 % (Nourriture de base,	25 % de toutes les dettes privées		Le premier paiement est activé.
 énergie et électricité)		sont annulées immédiatement.			Les citoyens reçoivent un
-																	pouvoir d'achat.
+ 							 										pouvoir d'achat.
 
 50 % (Logement et			50 % de toutes les dettes restantes		La part augmente
 transport)					sont annulées.							proportionnellement à la
-																	capacité de production.
+ 							 										capacité de production.
 
 75 % (Technologie,			75 % de toutes les dettes sont			La part est optimisée. Le besoin
 premium et éducation)		annulées des livres des banques.		d'argent diminue
-																	considérablement.
+ 							 										considérablement.
 
 100 % (L'Abondance			100 % de toutes les dettes et			Système complet. Les monnaies
 définitive)					l'argent cessent d'exister.				deviennent obsolètes ; une
-																	économie libre prévaut.
+ 							 										économie libre prévaut.
 --- END TABLE ---
 
 
