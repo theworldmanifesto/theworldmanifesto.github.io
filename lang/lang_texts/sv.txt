@@ -1,60 +1,38 @@
-Maailmanmanifesti
+Världsmanifestet
 
-Manifesti lopullisesta yltäkylläisyydestä
+
+Manifestet för det definitiva överflödet
+
 
 
 Sven Yngerstedt
 
 
-=======================================
-
-
-
-Ensimmäinen painos, 2026
-
-Manifestin asema digitaaliaikakaudella
-
-Tämä manifesti on lahja ihmiskunnalle ja suunnitelma velattomasta, täysin robotisoidusta tulevaisuudesta. Se on digitaalinen lentolehtinen vapautumiselle.
-
-Teksti on täysin vapaa luettavaksi, kopioitavaksi, tulostettavaksi ja jaettavaksi jokaiselle ihmiselle maan päällä. Sitä ei kuitenkaan saa koskaan myydä, paketoida uudelleen kaupallista hyötyä varten tai sulkea maksumuurien taakse. Ideoita vapaasta maailmasta ei voi omistaa.
-
-Lue, levitä ja siirry aikakauteen. Täydellinen alkuperäisteos on aina saatavilla ilmaiseksi internetissä.
-
-
 
 =======================================
 
 
 
-Sisällysluettelo
+Första utgåvan, 2026
 
-ESIPUHE
-I.  Aktivointi: Ohjeet puolueen perustamiseksi
-II.  Tehtävät
-A.  Kuvaus, Mekaniikka ja Periaate
-B.  Automaattinen Silmukka (AATIR) ja Planeetallinen Lähtölaukaus
-C.  Valtiollisen Älykkyyden Suvereniteetti
-D.  Laatulupaus – Kompromissista huippuunsa
-E.  Planeetallinen Väestösymmetria
-F.  Suvereeni Markkina-allianssi – Geopoliittinen suoja finanssisotaa vastaan
-G.  Suuri Potti ja Kansallisen Varallisuuden Aktivointi
-H.  Tekninen Valvonta ja Resurssi-hallinto
-I.  Pohjois-Atlanttinen Tuotantovyöhyke (NAPZ)
-J.  Uusi koti
-K.  Parlamentaarinen Valvonta ja Kansan Ääni
-L.  Valtio Kollektiivisena Yrityksenä
-M.  Yksityisen Pankin on Alaskirjattava Sama Prosentti kuin BKR Kasvaa
-N.  Vapauden Tikapuut : Velasta Suvereniteettiin
-O.  "Ylellisyysloukku" ja Piilotettu Pakkotyö
-P.  Kokonaisvaltaisuusperiaate
-Q.  Suuri Puhdistus – Konkurssipesästä Suvereniteettiin
-R.  Perustuslain Lisäys – Yleismaailmalliset Asetukset Uudelle Maailmalle
-S.  Globaali Logistiikka – Mantereiden Välinen Liikenne
-T.  IHMISKUNNAN SUURI VAPAUTUS : Työn Kieltäytyminen Hyveenä – Suvereniteetti Oikeutena
-III.  Sanasto 1 – Avainkäsitteet Uudelle Maailmalle
-IV.  Sanasto 2 – Termistö Järjestelmän Ymmärtämiseksi
-V.  KONEKONSTITUUTIO: A5-juliste
-VI.  TULEVAISUUDEN TALOUSUUTISET
+Manifestets status i den digitala tidsåldern
+
+
+Detta manifest är en gåva till mänskligheten och en ritning för en skuldfri, totalrobotiserad framtid. Det är ett digitalt flygblad för befrielse.
+
+
+Texten är helt gratis att läsa, kopiera, skriva ut och dela med varje människa på jorden. Det får däremot aldrig säljas, paketeras om för kommersiell vinning eller låsas in bakom betalväggar. Idéer för en gratis värld kan inte ägas.
+
+
+Läs, sprid och ställ om. Det fullständiga originalet finns alltid tillgängligt gratis på internet.
+
+
+
+Undantagna från förbudet mot kommersiell försäljning är följande:
+
+1. Tidningar och tidskrifter: Får fritt publicera manifestet (helt eller delvis) som en artikelserie i sina ordinarie publikationer som säljs via lösnummer eller prenumeration.
+
+2. Bokpaket och samlingar (bundles): Manifestet får ingå som en del i samlingsvolymer, antologier eller bokpaket tillsammans med andra verk.
 
 
 
@@ -62,45 +40,35 @@ VI.  TULEVAISUUDEN TALOUSUUTISET
 
 
 
-ESIPUHE
+Innehållsförteckning
 
-Teollinen vallankumous pysähtyi heti alkuunsa. Robotit ja todellinen automaatio katosivat kiinnostuksen kohteista, ja yksityinen pankkijärjestelmä työnsikin esiin velkoja, keinotekoista alituotantoa ja ahdinkoa.
-
-Järjestelmämuutos ei koske ideologiaa, vaan teknologista kypsyyttä. Jokainen tuotantojärjestelmä kantaa siementä omaan tuhoonsa, kun teknologia karkaa sen edelle.
-
-Yrittää ylläpitää hintalappuja, korkoja, keinotekoista niukkuutta ja velkamarkkinoita, kun konepuisto voi toimittaa kaiken ilmaiseksi, on kuin yrittäisi säilyttää maaorjuus tehtaiden rakentamisen jälkeen. Se on kuollut järjestelmä, jota pidetään hengissä keinotekoisin keinoin.
-
-Tämä manifesti on ohje siitä, kuinka hallinnoimme kuolleen järjestelmän pesää ja aktivoimme ihmisen suvereniteetin.
-
-
-
-=======================================
-
-
-
-I.  Aktivointi: Ohjeet puolueen perustamiseksi
-
-
-
-Jos haluat perustaa puolueen, puolueohjelma on tässä.
-
-
-Jos haluat kansasi kuuluvan globaaliin robotisaatioliittoumaan, tämä on puolueohjelmasi. Perusta puolue. Tässä ovat suunnitelmat.
-
-
-Tämä kirja ei ole kirjoitettu luettavaksi. Se on kirjoitettu pantavaksi täytäntöön.
-
-
-
-=======================================
-
-
-
-II.  Tehtävät
-
-
-
-"Manifesti ei ole olemassa väitelläkseen tulevaisuudesta, vaan hallinnoidakseen sitä. Olemme saavuttaneet historian pisteen, jossa teknologian kyky on karannut talouden logiikan edelle. Vaatia maksua siitä, mitä koneet tuottavat ilmaiseksi, ei ole enää taloutta – se on sortoa. Tämä kirjoitus on ohje siitä, kuinka nostamme ikeen pois."
+FÖRORD
+I.  Aktiveringen: Instruktion för partibildande
+II.  Att göras
+A.  Beskrivning, Mekanik och Princip
+B.  Den Autonoma Loopen (AAASR) och Det Planetära Startskottet
+C.  Den Statliga Intelligensens Suveränitet
+D.  Kvalitetslöftet – Från kompromiss till excellens
+E.  Den Planetära Befolkningssymmetrin
+F.  Den Suveräna Marknadsalliansen – Geopolitiskt skydd mot finansiell krigsföring
+G.  Den stora potten och Aktiveringen av nationalförmögenheten
+H.  Den tekniska kontrollen och Resursadministrationen
+I.  Nordatlantiska Produktionszonen (NAPZ)
+J.  Det nya hemmet
+K.  Den parlamentariska kontrollen och Folkets röst
+L.  Staten som det kollektiva företaget
+M.  Den privata Banken ska avskriva samma procent som BNR ökar
+N.  Frihetstrappan: Från Skuld till Suveränitet
+O.  "Lyxfällan" och Det Dolda Tvångsarbetet
+P.  Totalitetsprincipen
+Q.  Den stora saneringen – Från Konkursbo till Suveränitet
+R.  Tillägg till Konstitutionen – Universella dekret för den nya världen
+S.  Den globala logistiken – Transporter mellan världsdelarna
+T.  MÄNNISKANS STORA FRIGÖRELSE: Arbetsvägran som dygd – Suveränitet som rättighet
+III.  Ordlista 1 – Nyckelbegrepp för den nya världen
+IV.  Ordlista 2 – Ordval för systemförståelse
+V.  MASKINKONSTITUTIONEN: A5-affisch
+VI.  FRAMTIDENS EKONOMINYHETER
 
 
 
@@ -108,27 +76,15 @@ II.  Tehtävät
 
 
 
-A.   Kuvaus, Mekaniikka ja Periaate
+FÖRORD
 
+Den industriella revolutionen kom av sig direkt. Det verkliga intresset för robotarna och automatiseringen försvann tidigt, och det privata banksystemet tvingade istället fram skulder, konstgjord underproduktion och trångmål.
 
+Systemskiftet handlar inte om ideologi, utan om teknologisk mognad. Varje produktionsordning bär på fröet till sin egen undergång när tekniken springer ifrån den.
 
-1.  Kuvaus
+Att försöka upprätthålla prislappar, räntor, artificiell brist och skuldmarknader när maskinparken kan leverera allt gratis är som att försöka behålla livegenskapen efter att fabrikerna har byggts. Det är ett dött system som hålls vid liv på konstgjord väg.
 
-Rakennamme maailman, jossa lääkäri riemuitsee, kun sairaala on tyhjillään, ja työnvälittäjä juhlii, kun toimisto sulkeutuu. Tämä on mahdollista vain, kun toimeentulo on irrotettu suorituksesta. Kaikki, mikä voidaan automatisoida, on automatisoitava. Ihmisen ei tarvitse "ansaita leipäänsä"; hän perii sen konepuistolta.
-
-
-2.  Mekaniikka
-
-Valtio ottaa haltuunsa rahan liikkeeseenlaskun. Emme luo velkaa, vaan luomme saatavuutta. Kun robotisaatio saavuttaa tietyn kriittisen massan (mitattuna bruttokansallisresurssina), raha menettää asemansa valtavälineenä ja muuttuu vain tekniseksi laskentayksiköksi, ennen kuin se lopulta poistetaan kokonaan käytöstä.
-
-Tässä asteittaisessa siirtymässä kohti täysrobotisaatiota kaikkia olemassa olevia yhteiskunnallisia toimintoja, julkisia menoja, turvajärjestelmiä ja taloudellisia korvauksia (kuten eläkkeet, työttömyysvakuutukset ja maksut) ei neuvotella erikseen.
-
-Ne lasketaan uudelleen kaavamaisesti ja lineaarisesti ja poistetaan käytöstä täsmälleen samassa suhteessa kuin bruttokansallisresurssi (BKR) tuo ilmaista fyysistä yltäkylläisyyttä. Kun puolet on ilmaista, taloudellinen tarve puolittuu kaikilla osa-alueilla. Järjestelmä puhdistaa itsensä.
-
-
-3.  Periaate
-
-Emme esitä vaihtoehtoja A, B ja C. Esitämme Ratkaisun. Manifestia on luettava koneen käyttöohjeena. Jos haluat käynnistää koneen, painat nappia. Manifesti on nappi.
+Detta manifest är en instruktion för hur vi administrerar dödsboet och aktiverar den mänskliga suveräniteten.
 
 
 
@@ -136,33 +92,20 @@ Emme esitä vaihtoehtoja A, B ja C. Esitämme Ratkaisun. Manifestia on luettava 
 
 
 
-B.   Automaattinen Silmukka (AATIR) ja Planeetallinen Lähtölaukaus
+I.  Aktiveringen: Instruktion för partibildande
 
 
 
-Järkevän planeetan loppuvaihe ei ole vain robotteja, jotka suorittavat yksittäisiä tehtäviä, vaan itsensä ylläpitävän konerakenteen perustaminen: Autonomiset Androidiset Tekoiset Itsereplikoituvat Robotit (AATIR).
-
-Tämä järjestelmä toimii itsenäisenä infrastruktuurina yksiköistä, jotka toimivat täysin ilman ihmisen väliintuloa. Ne kartoittavat itsenäisesti maastoa, etsivät raaka-aineita ja rakentavat seuraavan sukupolven itsestään.
-
-Kun tuo silmukka on suljettu, ihmiskunnan yltäkylläisyydestä ei tule vain poliittista uudistusta – siitä tulee luonnonlaki. Koneista tulee planeetan uusi, hiljainen ja itsenäinen ekosysteemi, joka tuottaa kaiken vaatimatta mitään takaisin.
-
-Tämän saavuttaminen ei vaadi sokeaa odottamista tulevaisuutta kohti, vaan välitöntä täytäntöönpanoa. Liittouman (Eurooppa, Pohjois-Amerikka ja Etelä-Amerikka) ehdoton päätehtävä vallanotossa on yhdistää resurssinsa yhteiseksi, valtiolliseksi kehityshankkeeksi: Planeetallinen Projekti Autonomiselle Silmukalle. Tämä on aikamme Manhattan-projekti tai Apollo-ohjelma, jonka ainoana tavoitteena on tehdä robottilaivastosta 100-prosenttisesti itsereplikoituva ja energiaomavarainen.
+Vill du starta ett parti så finns partiprogrammet här.
 
 
 
-Toteutus lepää kahdella perustuksella:
+
+Om du vill att din nation ska ingå i den globala robotiseringsalliansen, är detta ditt partiprogram. Starta partiet. Här är ritningarna.
 
 
-1.  Alkionainen teknologia
 
-Yksittäiset komponentit – kehittyneet AI-mallit, metallien 3D-tulostus ja automatisoidut tehtaat – ovat jo hajallaan ympäri maailmaa. Koneella on jo valmius rakentaa osia koneesta. Puuttuva tekijä ei ole teknologia, vaan keskitetty, velaton tahto sulkea kiertokulku.
-
-
-2.  Planeetallinen symbioosi
-
-Tässä integraatio trooppisten ylänköalueiden kanssa tulee täysin ratkaisevaksi. Kyse ei ole rahoitustransaktiosta, vaan teknologisesta ja maantieteellisestä symbioosista. Pohjoiset vyöhykkeet tuovat tutkimuksen ja olemassa olevan korkean teknologian, kun taas Etelä-Amerikka tuo pinta-alan, jatkuvan aurinkoenergian ja raaka-aineet itsereplikoituvien järjestelmien testaamiseen, käyttöönottoon ja laajentamiseen optimaalisissa lämpöolosuhteissa.
-
-Liittouman on käynnistettävä ja asetettava etusijalle tämä projekti ensimmäisenä, perustuslaillisena toimenpiteenään. Vaihtoehto nykyiselle romahtavalle byrokratialle ja merkityksettömälle työpakotukselle ei ole kaaos – vaihtoehto on tämä kohdennettu ja maailmanlaajuinen projekti autonomisen silmukan sulkemiseksi ja koneiden ottamiseksi tuotantotaakka lopullisesti haltuunsa.
+Denna bok är inte skriven för att läsas. Den är skriven för att verkställas.
 
 
 
@@ -170,26 +113,11 @@ Liittouman on käynnistettävä ja asetettava etusijalle tämä projekti ensimm�
 
 
 
-C.   Valtiollisen Älykkyyden Suvereniteetti
+II.  Att göras
 
 
 
-Ihmiskunnan rauhan ja vakauden turvaamiseksi täysin robotisoidussa maailmassa valtiota ohjaavan älyllisen infrastruktuurin on pysyttävä rajoittamattoman valtiollisen valvonnan alaisena.
-
-
-1.  Yksinomainen Valtion Omistus
-
-Kansakunnan resurssien, logistiikan ja tuotantokapasiteetin hallinnoiva tekoäly muodostaa maan strategisen ytimen. Kaikki tämän älykkyyden kehitys, koodipohja ja mallinnus on tehtävä valtion johdolla. Yksityiset toimijat kielletään kehittämästä tai integroimasta kilpailevia ohjausjärjestelmiä kansalliseen infrastruktuuriin. Tämä estää voittotavoitteita tai läpinäkymättömiä algoritmeja turmelemasta järjestelmän logiikkaa.
-
-
-2.  Järkevä Hallinnoija
-
-AI:n tulee toimia lahjonnattomana hallinnoijana. Se ei ole yksittäisten ihmisten omistuksessa, vaan se on osa konepuiston yhteistä omaisuutta. Sen tarkoitus on optimoida kansalaisten hyvinvointia, resurssien jakautumista ja kestävyyttä vapaana poliittisesta tai kaupallisesta vaikutuksesta.
-
-
-3.  Läpinäkyvyys ja Valvonta
-
-Valtio takaa, että järjestelmän matemaattiset mallit ja päätöksenteon perusteet ovat kansallisen tarkastelun saatavilla. Yhtään valtakunnalle tärkeää päätöstä ei saa tehdä "musta laatikko", jota ei voida selittää perustuslain perusperiaatteiden pohjalta. Valtio kehittää, omistaa ja hallinnoi tätä super-AI:ta osana yleishyödyllistä palvelua, takeena siitä, että yhteiskunta ei koskaan sorru velkaan tai resurssipulaan.
+"Manifestet existerar inte för att debattera framtiden, utan för att administrera den. Vi har nått den punkt i historien där teknikens förmåga har sprungit ifrån ekonomins logik. Att kräva betalning för det som maskiner producerar gratis är inte längre ekonomi – det är förtryck. Denna skrift är instruktionen för hur vi lyfter av  oss det oket."
 
 
 
@@ -197,44 +125,27 @@ Valtio takaa, että järjestelmän matemaattiset mallit ja päätöksenteon peru
 
 
 
-D.   Laatulupaus – Kompromissista huippuunsa
+A.  Beskrivning, Mekanik och Princip
 
 
 
-Vanhassa maailmassa sinun oli hyväksyttävä tuotteita, jotka menivät rikki. Se ei johtunut insinöörien huonoudesta, vaan siitä, että yksityiset markkinat pakottivat kompromisseihin. Todellinen laatu maksoi yksinkertaisesti enemmän kuin mitä kansalaisilla oli lompakossaan. Yritykset pakotettiin myymään massoille siihen hintaan, johon massoilla oli varaa, ja siitä seurasi odotettu tulos – huonolaatuista ja lyhytikäistä.
+Beskrivning
 
-Manifestin visiossa tämä voittovaatimus pyyhitään pois. Kun valtio omistaa raaka-aineet ja AI-robotit hoitavat louhinnan, ei ole enää ketään, jonka tarvitsisi säästää materiaalissa. Robottimme edustavat valtiota, ja ne pitävät sinusta huolta kuin koskaan ennen rakentamalla vain parasta.
-
-Koska robotit eivät tarvitse ansaita rahaa, vaan palvella vain ihmistä, ne käyttävät aina vahvimpia ja kestäviä materiaaleja. Emme rakenna myydäksemme uudelleen – rakennamme, jotta voisit olla vapaa. Laatu ei ole enää rikkaiden ylellisyyttä, se on standardi jokaiselle robotisoidun liittouman kansalaiselle.
+Vi ska bygga en värld där läkaren jublar när sjukhuset står tomt och arbetsförmedlaren firar när kontoret stängs. Detta är endast möjligt när livsuppehälle är frikopplat från prestation. Allt som kan automatiseras ska automatiseras. Människan ska inte behöva "tjäna sitt bröd", hon ska ärva det från maskinparken.
 
 
+Mekaniken
 
-=======================================
+Staten tar kontrollen över penningutgivningen. Vi skapar inte skuld, vi skapar tillgång. När robotiseringen når en viss kritisk massa (mätt som Bruttonationalresurs), förlorar pengar sin funktion som maktmedel och blir bara en teknisk räkneenhet, innan de slutligen fasas ut helt.
 
+Vid denna glidande övergång till totalrobotisering ska alla existerande samhällsfunktioner, offentliga utgifter, trygghetssystem och ekonomiska ersättningar (såsom pensioner, arbetslöshetsförsäkringar och avgifter) inte omförhandlas separat.
 
-
-E.   Planeetallinen Väestösymmetria
-
-
-
-Suuri lämpömuutto ei tapahdu satunnaisesti, vaan planeetan väestön järkiperäisen ja kulttuurisesti synkronoidun uudelleenorkestroinnin kautta:
+De ska schablonmässigt och linjärt omräknas och fasas ut i exakt samma proportion som Bruttonationalresursen (BNR) tillför gratis fysiskt överflöd. När hälften är gratis, halveras det finansiella behovet i alla led. Systemet rensar sig självt.
 
 
-1.  Etelä-Amerikan Manneralue (Läntinen Lohko)
+Principen
 
-Eurooppalaiset ja kaukasialaiset venäläiset, pohjoisamerikkalaiset, australialaiset, uusiseelantilaiset ja kaukasialaiset eteläafrikkalaiset kootaan Etelä-Amerikan mantereelle, kun taas Keski-Amerikan rehevät maat (Meksikosta etelään) aktivoidaan yhtenäisiksi asuinalueiksi. Tästä vyöhykkeestä tulee läntisen ihmisen suvereniteetin perusta optimaalisissa lämpöolosuhteissa.
-
-
-2.  Itäinen Lohko (Indonesia ja Australia)
-
-Itäaasialaiset ja Venäjän Aasian väestö sekä sukulaissävyt jättimäisestä Itäisestä Tuotantolohkosta kootaan vyöhykkeelle, joka ulottuu Indonesian, Papua-Uuden-Guinean ja Australian yli. Australian sisämaan valtavat alueet robotisoidaan täysin raskaalle teollisuudelle ja aurinkoenergialle, kun taas väestö asettuu lämpimille, trooppisille rannikkoalueille.
-
-Keski-Aasian kylmien vyöhykkeiden väestö siirretään etelään kohti subtrooppisen Oseanian/Pohjois-Australian lämpimiä asuinalueita, kun taas itse maa-alueet (mukaan lukien arabivaltioiden aavikkoalueet) otetaan konepisteiden haltuun. Arabi-aavikot muutetaan, aivan kuten Sahara, automatisoiduiksi energiaparkeiksi.
-
-
-3.  Afrikan Manneralue
-
-Afrikan väestö omalla mantereellaan on Eteläinen Resurssilohko, jossa trooppiset ja lämpimät alueet säilytetään yksinomaan ihmisasutuksina palautumista ja vapautta varten, kun taas mantereen kylmät osat ja laajat aavikkoalueet robotisoidaan täysin. Nämä vyöhykkeet muutetaan puhtaiksi konerakenteiksi, teollisuuskomplekseiksi ja jättimäisiksi aurinkovoimaloiksi, jotka tuottavat energiaa koko Afrikan mantereen muutokselle häiritsemättä luonnollisia elinympäristöjä.
+Vi presenterar inte alternativ A, B och C. Vi presenterar Lösningen. Manifestet ska läsas som en instruktionsmanual för en maskin. Om du vill att maskinen ska starta, trycker du på knappen. Manifestet är knappen.
 
 
 
@@ -242,58 +153,27 @@ Afrikan väestö omalla mantereellaan on Eteläinen Resurssilohko, jossa trooppi
 
 
 
-F.   Suvereeni Markkina-allianssi – Geopoliittinen suoja finanssisotaa vastaan
+B.  Den Autonoma Loopen (AAASR) och Det Planetära Startskottet
 
 
 
-Kansainvälisen velkajärjestelmän poistamiseksi käytöstä ja konepuiston ilmaistuotannon nopeuden maksimoimiseksi useiden kansakuntien on välittömästi yhdistyttävä yhteisiksi sisämarkkinoiksi: Suvereeni Markkina-allianssi.
+Slutstadiet av den rationella planeten är inte bara robotar som utför enskilda sysslor, utan etablerandet av en självförsörjande maskinstruktur: Autonoma Androida Artificiella Självreplikerande Robotar (AAASR).
 
-Eristetty siirtymä yksittäisessä maassa on strategisesti haavoittuva. Se viivästyttää yltäkylläisyyttä, pidentää siirtymävaiheen taloudellisia rasituksia ja altistaa yksinäisen kansakunnan vanhan finanssimaailman koordinoiduille saartoille sekä oikeudellisille hyökkäyksille kansainvälisissä kauppatuomioistuimissa. Laajamittainen, rajat ylittävä allianssi yhdenmukaisella talouslainsäädännöllä on matemaattinen välttämättömyys. Mitä suuremmat yhteiset markkinat ovat, sitä nopeammin fyysinen kokonaisyltäkylläisyys saavutetaan autonomisen silmukan (AATIR) kautta.
+Detta system opererar som en självgående infrastruktur av enheter som fungerar helt utan mänsklig intervention. De sonderar på egen hand terräng, prospekterar råvaror och bygger nästa generation av sig själva.
 
-Tämän allianssin lopullinen tavoite on täydellinen planeetallinen symmetria, jossa vanhojen kansallisvaltioiden rajat pyyhitään pois. Tämä takaa jokaiselle suvereenille kansalaiselle absoluuttisen, laissa säädetyn vapauden jättää karut tai arktiset alueet asettuakseen vapaasti, elääkseen ja nauttiakseen koneiden ilmaistuotannosta planeetan optimaalisilla, trooppisilla ilmastovyöhykkeillä.
+När den loopen är sluten blir mänsklighetens överflöd inte bara en politisk reform – det blir en naturlag. Maskinerna blir planetens nya, tysta och självgående ekosystem som levererar allt utan att kräva något tillbaka.
 
+För att nå hit krävs ingen blind väntan på framtiden, utan ett omedelbart verkställande. Alliansens (Europa, Nordamerika och Sydamerika) absoluta huvuduppgift vid maktövertagandet är att slå samman sina resurser i ett gemensamt, statligt utvecklingsprojekt: Det Planetära Projektet för den Autonoma Loopen. Detta är vår tids Manhattanprojekt eller Apollo-program, med det enda målet att göra robotparken 100 % självreplikerande och självförsörjande på energi.
 
+Genomförandet vilar på två fundament:
+Den embryonala tekniken
 
-=======================================
+De enskilda komponenterna – avancerade AI-modeller, 3D-printing av metaller och automatiserade fabriker – existerar redan spridda över världen. Maskinen har redan kapacitet att bygga delar av maskinen. Det som saknas är inte tekniken, utan den centraliserade, skuldfriska viljan att stänga kretsloppet.
+Den planetära symbiosen
 
+Det är här integrationen med de tropiska höglandszonerna blir helt avgörande. Detta är ingen finansiell transaktion, utan en teknologisk och geografisk symbios. De nordliga zonerna bidrar med forskningen och den existerande högteknologin, medan Sydamerika bidrar med ytan, den konstanta solenergin och råvarorna för att testa, rulla ut och expandera de självreplikerande systemen under optimala termiska förhållanden.
 
-
-G.   Suuri Potti ja Kansallisen Varallisuuden Aktivointi
-
-
-
-Manifestin uudistuksen ymmärtämiseksi on ensin ymmärrettävä rahan luonne nykyisessä järjestelmässä. Rahat, joita nykyään kutsutaan valtion varoiksi, ovat todellisuudessa kansalaisten koottu potentiaali. Manifesti muuttaa tätä yhdellä ainoalla asetuksella: Kansallistalouden tulee palvella kansakunnan tulevaisuutta, ei yksityispankkien taseita.
-
-
-1.  Passiivisista varoista aktiiviseen muutokseen
-
-Lakkaamme pitämästä valtion budjettia rajoittavien lukujen kokoelmana. Kun allianssin jäsenmaat katkaisevat siteet yksityiseen pankkijärjestelmään, "suuri potti" aktivoituu koko yhteisillä markkinoilla. Nämä yhdistetyt resurssit käytetään välittömästi sellaisen rajat ylittävän konepuiston hankintaan, kehittämiseen ja käyttöönottoon, joka tarvitaan olemassaolon tekemiseen ilmaiseksi kaikille allianssin asukkaille.
-
-
-2.  Velan logiikan loppu
-
-Manifesti ei enää tunnusta tarvetta "lainata" rahaa markkinoilta. Kun valtio omistaa oikeuden luoda maksuvälineitä maan tuotantokyvyn perusteella, velkamarkkinoiden piiska muuttuu tehottomaksi.
-
-
-
-3.  Strateginen priorisointi
-
-Nämä varat on käytettävä täysimääräisesti kolmen pilarin rahoittamiseen:
-
-
-A.  Infrastruktuuri selviytymiselle
-
-Energia-, vesituotanto- ja liikenneverkkojen täysautomatisointi ja turvaaminen.
-
-
-B.  Täysin robotisoitu tuotanto
-
-Jossa koneet vapauttavat ihmisen toimittamalla ylellisyyden ja aineellisen riippumattomuuden standardina absoluuttisella ja ehdoitta yltäkylläisyydellä ja maksimilaadulla.
-
-
-C.  Geopoliittinen logistiikka
-
-Muuton systematisoitu hallinta ja toteuttaminen kohti termisesti tehokkaita ilmastovyöhykkeitä.
+Alliansen måste sätta igång och prioritera detta projekt som sin allra första, konstitutionella åtgärd. Alternativet till dagens kollapsande byråkrati och meningslösa arbetstvång är inte kaos – alternativet är detta riktade och globala projekt för att avsluta den autonoma loopen och så låta maskinerna ta över produktionsbördan en gång för alla.
 
 
 
@@ -301,26 +181,20 @@ Muuton systematisoitu hallinta ja toteuttaminen kohti termisesti tehokkaita ilma
 
 
 
-H.   Tekninen Valvonta ja Resurssi-hallinto
+C.  Den Statliga Intelligensens Suveränitet
 
 
 
-Tässä luvussa vahvistetaan hallinnolliset puitteet sille, miten maailma siirtyy täysin robotisoituun ilmaistalouteen.
+För att säkra mänsklighetens fred och stabilitet i en totalrobotiserad värld, måste den intellektuella infrastruktur som styr staten förbli under oinskränkt statlig kontroll.
+Exklusivt Statligt Ägande
 
+Den artificiella intelligens som administrerar nationens resurser, logistik och produktionskapacitet utgör landets strategiska kärna. All utveckling, kodbas och modellering av denna intelligens skall ske i statlig regi. Privata aktörer förbjuds att utveckla eller integrera konkurrerande styrsystem i den nationella infrastrukturen. Detta för att förhindra att vinstintressen eller ogenomskinliga algoritmer korrumperar systemets logik.
+Den Rationella Administratören
 
-1.  Suvereeni valvonta rahapuristimen yli
+AI:n skall fungera som en obesticklig administratör. Den ägs inte av enskilda individer, utan är en del av maskinparkens gemensamma egendom. Dess syfte är att optimera för medborgarnas välmående, resursfördelning och hållbarhet, fri från politisk eller kommersiell påverkan.
+Transparens och Kontroll
 
-Manifesti ottaa välittömästi keskuspankin haltuunsa. Valtiolla on yksinoikeus luoda maan laillinen maksuväline: Suvereenit Rahat. Nämä edustavat tuotantokapasiteettia, eivät velkaa.
-
-
-2.  Bruttokansallisresurssi (BKR) ja kansallinen konepuisto
-
-Tavoitteena on, että kaikkea tuotantoa hallinnoi autonominen kansallinen konepuisto, joka noudattaa konekonstituutiota. Koneet omistavat itsensä varmistaakseen, ettei tuotantoa voida koskaan yksityistää tai takavarikoida, vaan ne palvelevat ikuisesti kansaa yhteisenä luonnonvoimana. Investointeja AI:hin priorisoidaan, jotta päästään pisteeseen, jossa tuotantokustannus on nolla.
-
-
-3.  Suvereniteettiosuus: Tie vaurauteen
-
-Siirtymävaiheen aikana jokaiselle kansalaiselle taataan vuosittainen suvereniteettiosuus. Tämä tekee jokaisesta kansalaisesta taloudellisesti itsenäisen ja kuroo umpeon uuden maailman kuilun. Osuus rahoitetaan ohjaamalla valtion olemassa olevia budjettivaroja vanhan järjestelmän ylläpitotaakoista suoraan maksuihin, samalla kun robotisaatio alentaa yhteiskunnan kokonaiskustannuksia.
+Staten garanterar att systemets matematiska modeller och beslutsunderlag är tillgängliga för nationell granskning. Inget beslut av betydelse för riket får fattas av en "svart låda" som inte kan förklaras utifrån konstitutionens grundprinciper. Staten utvecklar, äger och förvaltar detta super-AI som en del av den allmänna nyttan, som en garant för att samhället aldrig återfaller i skuld eller resursbrist.
 
 
 
@@ -328,48 +202,15 @@ Siirtymävaiheen aikana jokaiselle kansalaiselle taataan vuosittainen suverenite
 
 
 
-I.   Pohjois-Atlanttinen Tuotantovyöhyke (NAPZ)
+D.  Kvalitetslöftet – Från kompromiss till excellens
 
 
 
-1.  Maailman konehuone
+I den gamla världen var du tvungen att acceptera produkter som gick sönder. Det var inte för att ingenjörerna var dåliga, utan för att den privata marknaden tvingade fram kompromisser. Verklig kvalitet kostade helt enkelt mer än vad folk hade i plånboken. Företagen tvingades sälja till massorna till det pris massorna hade råd med, och då blev resultatet därefter – undermåligt och kortlivat.
 
-Eurooppa ja Pohjois-Amerikka määritellään tästä lähtien teknisen tehtävänsä mukaan planeetan keskeiseksi verstakseksi ja kasvihuoneeksi.
+I manifestets vision raderas detta vinstkrav. När staten äger råvarorna och våra AI-robotar sköter utvinningen, finns det inte längre någon som behöver spara på materialet. Våra robotar representerar staten, och de tar hand om dig som aldrig förr genom att bara bygga det bästa.
 
-
-2.  Täydellinen automatisointi
-
-NAPZ:n sisällä ihmistyö lakkaa. Pystysuorat viljelmät ja robotisoidut pellot tuottavat ruokaa ympäri vuorokauden. Tehtaat valmistavat ikuisuuslaatuisia tuotteita, koska voittotavoite on poistettu.
-
-
-3.  Energia: Peruskivi
-
-NAPZ katetaan ydinvoiman, fuusion ja uusiutuvien lähteiden verkostolla. Kun energia on ilmaista, ihmiskunnan suurin kuluerä katoaa.
-
-
-4.  Pysyvän asutuksen poistaminen
-
-NAPZ on koneiden vyöhyke. Euroopan ja Pohjois-Amerikan kylmät ja pimeät osat poistetaan pysyvinä asuinpaikkoina. Vanhat kaupungit muutetaan logistiikkakeskuksiksi.
-
-
-5.  Eurooppalaisesta ja pohjoisamerikkalaisesta näkökulmasta
-
-Kun Eurooppa ja Pohjois-Amerikka on täysin robotisoitu ja ne tuottavat riittävästi eurooppalaiselle, pohjoisamerikkalaiselle ja loppuvaiheessa myös eteläamerikkalaiselle väestölle, aktivoituu seuraava vaihe. Pohjois-Amerikan tuotantokapasiteetti laajenee tällöin täysin palvelemaan Etelä-Amerikan mannerta, jolloin Euroopan tuotanto vapautuu ja muunnetaan strategista levittämistä varten muille mantereille, säilyttäen kapasiteetin jatkuvaan lisäämiseen tarpeen mukaan.
-
-
-6.  Teollinen ydin
-
-NAPZ ei määräydy perinteisten kansallisten rajojen, vaan integroidun, automatisoidun infrastruktuurinsa mukaan. Sen ainoa tavoite on maailmanlaajuisen robottilaivaston massavalmistus, strategisen tekoälyn kehittäminen ja ensisijaisten teknologisten suunnitelmien luominen, jotka tarvitaan lopullisen planeetallisen yltäkylläisyyden saavuttamiseksi.
-
-
-7.  Logistinen integraatio
-
-Tämä vyöhyke toimii suorassa symbioosissa trooppisten elinvyöhykkeiden ja eteläisten resurssisektorien kanssa. Trooppisten vyöhykkeiden tarjotessa optimaaliset lämpöolosuhteet ihmisasutukselle ja suvereenille palautumiselle, NAPZ toimii raskaana teollisena valimona – jalostaa raaka-aineita ja hajauttaa autonomisia rahtiverkostoja jakamaan valmiita tuotteita ja koneita täysin ilmaiseksi suvereenien markkinoiden yli.
-
-
-8.  Rakenteellinen vaiheistus
-
-Kun NAPZ:n automatisoidun valmistustuotannon kapasiteetti saavuttaa maksiminsa, sen eksponentiaalinen panos bruttokansallisresursseihin (BKR) nopeuttaa vanhojen fiat-valuuttojen lopullista vanhentumista, mikä raivaa tietä konekonstituution täydelle käyttöönotolle.
+Eftersom robotarna inte behöver tjäna pengar, utan bara tjäna människan, använder de alltid de starkaste och mest hållbara materialen. Vi bygger inte för att sälja igen – vi bygger för att du ska vara fri. Kvalitet är inte längre en lyx för de rika, det är en standard för varje medborgare i den robotiserade alliansen.
 
 
 
@@ -377,45 +218,28 @@ Kun NAPZ:n automatisoidun valmistustuotannon kapasiteetti saavuttaa maksiminsa, 
 
 
 
-J.   Uusi koti
+E.  Den Planetära Befolkningssymmetrin
 
 
 
-1.  Trooppinen asuinvyöhyke
-
-Manifestin kautta toteutetaan suuri lämpömuutto alueille, joilla ihminen on biologisesti luotu elämään.
+Den stora termiska migrationen sker inte slumpmässigt, utan genom en rationell och kulturellt synkroniserad omorkestrering av planetens befolkning:
 
 
-2.  Trooppiset ylänkövyöhykkeet: Turvallinen satama
+Det Sydamerikanska Fastlandet (Det Västra Blocket)
 
-Pohjois-Etelä-Amerikan valinta perustuu tektoniseen järkkymättömyyteen ja termiseen tehokkuuteen. Tässä lämmitysjärjestelmien tarve poistetaan.
-
-
-3.  Arkkitehtuuri yltäkylläisyydelle
-
-Modulaariset ikuisuuslaatuiset asunnot toimitetaan NAPZ:sta. Näillä vyöhykkeillä ei ole kauppaa; kaikki on integroituja toimintoja infrastruktuurissa.
+Européer och kaukasiska ryssar, nordamerikaner, australier, nyzeeländare och kaukasiska sydafrikaner sammanförs på det sydamerikanska fastlandet, medan de frodiga länderna i Mellanamerika (söder om Mexiko) aktiveras som sammanhängande boendezoner. Denna zon blir basen för den västliga mänskliga suveräniteten under optimala termiska förhållanden.
 
 
-4.  Tekniikkaa vastaan maa-ala
+Det Östra Blocket (Indonesien och Australien)
 
-Tämä on symmetrinen vaihto. Teollisuussektorin tuotteet toimitetaan Euroopan periferiasta, Etelä-Amerikka toimittaa paikan. Kun nämä kaksi komponenttia kohtaavat, syntyy suora ilmaistalous Etelä-Amerikan mantereelle kaikille nykyisille ja tuleville kansalaisille. Raha ei kierrä – poistamme sen tarpeen.
+Östasiater och befolkningen i ryska Asien samt besläktade folkpopulationer från det gigantiska Östra Produktionsblocket sammanförs i zonen som sträcker sig över Indonesien, Papua Nya Guinea och Australien. Det australiensiska inlandets enorma ytor totalrobotiseras för tung industri och solenergi, medan befolkningen bosätter sig i de varma, tropiska kustområdena.
 
-Manifesti ei kuvaa eurooppalaista vientihanketta, vaan maailmanlaajuista federaatiota. Trooppiset kansakunnat eivät ole "isäntiä", ne ovat perustajakumppaneita, jotka menevät suoraan ilmaistalouteen ja omistavat infrastruktuurin yhtä paljon kuin pohjoiset maat.
-
-
-5.  Suvereeni asumisoikeus
-
-Robotisoidussa liittoumassa asunto ei ole hyödyke eikä elinikäisen velkaantumisen lähde. Jokaiselle kansalaiselle taataan korkean teknologian koti, jonka konepuisto rakentaa ja ylläpitää. Vuokria, asuntolainoja tai kiinteistöveroja ei ole olemassa. Se on ehdoton, perustavanlaatuinen oikeus.
+Befolkningen i de centralasiatiska kalla zonerna omlokaliseras söderut mot de varma boendezonerna i det subtropiska Oceanien/Nordliga Australien, medan själva landmassorna (inklusive ökenområdena i arabstaterna) tas över av maskinenheterna. De arabiska öknarna transformeras, precis som Sahara, till automatiserade energiparker.
 
 
-6.  Teknologinen huippu
+Den Afrikanska Kontinenten
 
-Asunnot on rakennettu ikuisuuslaatuisista materiaaleista, täysin vapautettuina tulevista remontointitarpeista. Kaikki ilmastonsäädöstä ja vedenpuhdistuksesta automatisoidun siivouksen ja jätehuoltoon on integroitu rakennuksen rakenteeseen ja sitä hoidetaan autonomisesti.
-
-
-7.  Harmoninen arkkitehtuuri
-
-Koska kaikki rakennetaan alueilla, joilla on vakaa ja miellyttävä keskilämpötila, arkkitehtuuri voidaan avata. Sisä- ja ulkotilojen rajat purkautuvat. Rakennukset integroidaan trooppiseen luontoon, varustettuna omavaraisilla aurinkoenergiajärjestelmillä ja pystypuutarhoilla.
+Den afrikanska befolkningen på sin kontinent är det Södra Resursblocket med de tropiska och varma regionerna som bevaras exklusivt som mänskliga boplatser för återhämtning och frihet, medan kontinentens kalla delar och vidsträckta ökenområden totalrobotiseras. Dessa zoner transformeras till renodlade maskinstrukturer, industrikomplex och gigantiska solcellsanläggningar som genererar energi till hela den afrikanska kontinentens transformation utan att störa de naturliga livsmiljöerna.
 
 
 
@@ -423,36 +247,15 @@ Koska kaikki rakennetaan alueilla, joilla on vakaa ja miellyttävä keskilämpö
 
 
 
-K.   Parlamentaarinen Valvonta ja Kansan Ääni
+F.  Den Suveräna Marknadsalliansen – Geopolitiskt skydd mot finansiell krigsföring
 
 
 
-1.  Uusi parlamentaarisen hallinnan muoto
+För att fasa ut det internationella skuldsystemet och maximera takten i maskinparkens gratisproduktion krävs att flera nationer omedelbart sammanförs i en gemensam, inre marknad: Den Suveräna Marknadsalliansen.
 
-Varmistaakseen, että autonominen AI-infrastruktuuri ei koskaan irtaannu kansalaisten tahdosta, poliittinen valta pysyy lujasti ankkuroituna kansaan – radikaalisti laajennetulla demokraattisella äänestysmenettelyllä suoraan jokaisen yksilön käsissä.
+En isolerad omställning i ett enskilt land är strategiskt sårbar. Det fördröjer överflödet, förlänger övergångsfasens ekonomiska påfrestningar och utsätter en ensam nation för den gamla finansvärldens koordinerade blockader samt juridiska angrepp i internationella handelsdomstolar. En storskalig, gränsöverskridande allians med enhetlig ekonomisk lagstiftning är en matematisk nödvändighet. Ju större den gemensamma marknaden är, desto snabbare uppnås det totala fysiska överflödet genom den autonoma loopen (AAASR).
 
-
-2.  Vuosittaiset Parlamenttivaalit
-
-Hallituksen on joka vuosi osoitettava konkreettisia edistysaskeleita robotisaatiossa ja suvereniteettiosuuksien maksamisessa säilyttääkseen toimeksiantonsa.
-
-
-3.  Strategiset kansanäänestykset ja ylimääräiset vaalit
-
-Kansalla on rajoittamaton oikeus tehdä ratkaisevia päätöksiä kansakunnan kriittisimmissä suvereniteettikysymyksissä suorilla kansanäänestyksillä tai ylimääräisillä vaaleilla. Seuraavat alueet on aina alistettava suoraan kansan päätettäväksi:
-
-    • Kansainväliset liittoumat: Liittyminen tai eroaminen poliittisista, taloudellisista tai sotilaallisista liitoista, sopimuksista ja ylikansallisista hallintoelimistä.
-
-    • Globaalit järjestöt: Liittyminen tai eroaminen kansainvälisistä järjestöistä, valvontaviranomaisista tai maailmanlaajuisista ratifioinneista.
-
-    • Strateginen pelote: Ydinaseiden, kemiallisten aseiden tai muiden joukkotuhoaseiden hankinta, hallussapito tai käytöstäpoisto.
-
-    • Perustuslaillinen järjestys: Kansakunnan perustavanlaatuisten hallintomuotojen, mukaan lukien monarkkinen kruununperimys tai valtiollinen suvereniteetin siirto, lakkauttaminen, perustaminen tai muuttaminen.
-
-
-4.  Hallinnollinen siirtymä
-
-Kun tavoite on asetettu (kaiken on oltava ilmaista), politiikassa on kyse suunnitelman täytäntöönpanosta. Päätökset tehdään asetuksilla, jotka kirjataan perustuslakiin.
+Det slutgiltiga målet för denna allians är en total planetär symmetri där de gamla nationalstaternas gränser raderas. Detta garanterar varje suverän medborgare den absoluta, lagstadgade friheten att lämna karga eller arktiska regioner för att fritt bosätta sig, leva och åtnjuta maskinernas gratisproduktion i planetens optimala, tropiska klimatzoner.
 
 
 
@@ -460,31 +263,41 @@ Kun tavoite on asetettu (kaiken on oltava ilmaista), politiikassa on kyse suunni
 
 
 
-L.   Valtio Kollektiivisena Yrityksenä
+G.  Den stora potten och Aktiveringen av nationalförmögenheten
 
 
 
-1.  Valtio: Vangittu yrityksesi
-
-Nykypäivän järjestelmässä omistat kansakunnan, mutta sinua ei sallita käyttää sitä. Ajattele Valtiota jättiläismäisenä yrityksenä, jossa sinä ja kaikki muut kansalaiset olette osaomistajia. Mutta tämä yritys – yhteinen voimamme – istuu vankilassa, kahlehdittuna kaltereiden takana "velan" jalkapallolla ja korvattuna taloudellisella hirviöllä, kun kaikki mitä Valtio halusi oli vapautensa. Yksityisten yritysten juostessa ympäriinsä täydellä liikkuvuudella ja tuottaessaan huonolaatuista tavaraa maksimoidakseen voiton, kansalaisten oma työkalu (Valtio) istuu vammautuneena ja kyvyttömänä. Meille on uskoteltu, että Valtiolla "ei ole varaa", että siltä puuttuvat kädet ja jalat tulevaisuuden rakentamiseen. Totuus on, että Valtio istuu kaltereiden takana, koska yksityispankit ja vanha järjestelmä ovat vieneet avaimen rahapursottimeen.
+För att förstå manifestets reformering måste man först förstå pengars natur i det nuvarande systemet. De pengar som idag kallas för "statens medel" är i själva verket medborgarnas samlade potential. Manifestet ändrar på detta genom ett enda dekret: Nationalekonomin ska tjäna nationens framtid, inte privatbankernas balansräkningar.
 
 
-Mutta manifesti on avain, joka avaa sellin.
+1. Från passiva medel till aktiv transformation
+
+Vi slutar betrakta statens budget som en samling begränsade siffror. Genom att alliansens medlemsländer klipper banden till det privata banksystemet aktiveras "den stora potten" över hela den gemensamma marknaden. Dessa samlade resurser används omedelbart till att köpa in, utveckla och rulla ut den gränsöverskridande maskinpark som krävs för att göra existensen gratis för alla invånare inom alliansen.
 
 
-2.  Annamme Valtiolle jalat takaisin
+2. Slutet på skuldens logik
 
-Aktivoimalla robotisoidun tuotannon (Per Machina) Valtion ei enää tarvitse "kysyä lupaa" tai verottaa kansalaisia saadakseen asioita tehdyksi. Koneet ovat Valtion uudet kädet ja jalat.
-
-
-3.  Murskaamme jalkapallon
-
-Ottamalla takaisin oikeuden luoda suvereeneja rahoja pyyhitään pois velka, joka on pitänyt Valtion pyörätuolissa.
+Manifestet erkänner inte längre behovet av att "låna" pengar av marknaden. När staten äger rätten att skapa betalningsmedel utifrån landets produktionsförmåga, blir skuldmarknadens piska verkningslös.
 
 
-4.  Vangista arkkitehdiksi
+3. Den strategiska prioriteringen
 
-Kun Valtio nousee vankilanselistään, se lakkaa olemasta raskas byrokratia. Se muuttuu tehokkaaksi logistiikkakoneeksi, joka toimittaa Suvereniteettiosuutesi ja rakentaa paratiisin tropiikkiin.
+Dessa medel ska oavkortat finansiera tre pelare:
+
+
+A. Infrastruktur för överlevnad
+
+    Total automatisering och säkring av energi-, vattenproduktions- och transportnätverk.
+
+
+B. Totalrobotiserad produktion
+
+    Där maskinerna frigör människan genom att leverera lyx och materiellt oberoende som standard med absolut och kompromisslöst överflöd och maximal kvalitet.
+
+
+C. Geopolitisk logistik
+
+    Den systemiska hanteringen och genomförandet av migrationen till termiskt effektiva klimatzoner.
 
 
 
@@ -492,85 +305,28 @@ Kun Valtio nousee vankilanselistään, se lakkaa olemasta raskas byrokratia. Se 
 
 
 
-M.   Yksityisen Pankin on Alaskirjattava Sama Prosentti kuin BKR Kasvaa
+H.  Den tekniska kontrollen och Resursadministrationen
 
 
 
-Yksityispankit pakotetaan kirjaamaan alas kansalaisten velkoja täsmälleen samassa tahdissa kuin bruttokansallisresurssi (BKR) kasvaa. Kun ilmaistalous laajenee, yritysten rahallinen liikevaihto laskee, samalla kun niiden reaaliset varat lisääntyvät ilmaiseksi. Pankkeja ei siksi voida sallia vaatia täyttä korkoa, koska myös pankkiirien omat elinkustannukset putoavat nollaan.
-
-Tämä on uudistuksen rahoitusarkkitehtuurin ydin. Yksityispankit on "poistettava käytöstä" ilmaistalouden bruttokansallisresurssin (BKR) kasvun tahdissa. Se luo pehmeän siirtymän, jossa rahan arvo siirtyy velkaantumisesta tuotantokapasiteettiin.
+I detta kapitel fastställs de administrativa ramarna för hur världen ställs om till en totalrobotiserad gratisekonomi.
 
 
+1. Den suveräna kontrollen över pengapressen
 
-Tässä on tehokkain ratkaisu:
-
-
-1.  "Käytöstäpoistoindeksi" (Velka vs. Ilmainen)
-
-Ota käyttöön lailla säädetty mekanismi nimeltä Automaattinen Velan Alaskirjaus.
+Manifestet tar omedelbart kontroll över centralbanken. Staten har den exklusiva rätten att skapa landets lagliga betalningsmedel: Suveräna Pengar. Dessa representerar produktionskapacitet, inte skuld.
 
 
-A.  Logiikka
+2. Bruttonationalresurs (BNR) och den nationella maskinparken
 
-Valtio mittaa, kuinka suuri osa kansalaisten perustarpeista (ruoka, energia, asuminen, liikenne) toimitetaan nyt ilmaiseksi kansallisten robottipuistojen kautta.
-
-
-B.  Mekanismi
-
-Jos 20 % elämän välttämättömyyksistä on muuttunut ilmaiseksi, yksityispankit pakotetaan lain mukaan kirjaamaan alas 20 % kaikista yksityisistä veloista. Korko jäädytetään tai lasketaan vastaavassa tahdissa.
+Målet är att all produktion sköts av en autonom nationell maskinpark som lyder under en maskinkonstitution. Maskinerna äger sig själva för att säkerställa att produktionen aldrig kan privatiseras eller tas i beslag, utan för evigt tjänar folket som en gemensam naturkraft. Investeringar i AI prioriteras för att nå punkten där produktionskostnaden blir noll.
 
 
-C.  Argumentti
+3. Suveränitetsandelen: Vägen till rikedom
 
-Pankkiirit eivät voi valittaa moraalisesti, koska heidän omat elinkustannuksensakin laskevat 20 %. He eivät köyhdytä elämänlaadun suhteen, vain numeroiden suhteen näytöllä.
+Under övergångsfasen garanteras varje medborgare en årlig suveränitetsandel. Detta gör varje medborgare ekonomiskt oberoende och överbryggar glappet till den nya världen.
 
-
-
-2.  "Vihamielisten Pankkien" käsittely ulkomailla
-
-Tämä on suurin huoli – että pankit pakenevat ja käyttävät muita maita tukikohtana uudistusliittouman hyökkäämiseksi.
-
-
-
-Ratkaisu on Rahoituksellinen Karanteeni:
-
-
-A.  Liittouman valta
-
-Kun uudistusliittouma (ne maat, jotka ovat aktivoineet manifestin) on muodostettu, ne asettavat täydellisen saarron vihamielisistä maista käsin toimivia pankkeja vastaan.
-
-
-B.  Arvo siirtyy
-
-Koska uudistusliittouma hallitsee varsinaista tuotantoa (robotit ja raaka-aineet), ulkomaisten pankkien rahat muuttuvat nopeasti arvottomiksi paperinpaloiksi. Ne eivät voi "ostaa" mitään uudistusliittoumalta vanhoilla velkarahoillaan.
-
-
-C.  Yksityispankkien valinta
-
-Joko ne jäävät ja tulevat osaksi uutta hallinnollista virkakuntaa ilmaistaloudessa, joka on matkalla kohti täysrobotisaatiota, tai ne pakenevat maihin, jotka romahtavat nopeasti, koska niillä ei ole pääsyä uudistusliittoumaan ja sen robotisoituun tuotantoon.
-
-
-
-3.  Keskuspankin rooli: Korosta resurssien mittaamiseen
-
-Keskuspankki lakkaa tarkastelemasta inflaatiota ja korkoa. Sen sijaan siitä tulee Resurssitoimisto.
-
-
-A.  Keskuspankista Resurssitoimistoksi
-
-Resurssitoimisto mittaa sen sijaan BKR:ää, BKT:n kansallistettua seuraajaa. Kun BKR kattaa 100 prosenttia väestön tarpeista, julistetaan Täysi Suvereniteetti. Sillä hetkellä kaikki raha ja velka lakkaavat olemasta perustuslain mukaan.
-
-
-B.  Selkeys
-
-Tämän selkeän portaikon (esim. 10 %, 50 %, 100 %) avulla uudistusliittouman tulevat valtionjohtajat näkevät tarkalleen, miltä tie näyttää. Siitä tulee ennakoitava prosessi kaaoksen sijaan.
-
-
-C.  Pankkien valta on tarpeeton
-
-Manifesti toteuttaa velkajärjestelmän hallitun purkamisen. Kun koneet vapauttavat ihmiset kustannuksista, ihminen vapautuu myös veloistaan. Emme taistele pankkeja vastaan asein, vaan matemaattisilla asetuksilla, jotka tekevät niiden vallan tarpeettomaksi.
-
-Yllä oleva selvitys toimii teknisenä kuvauksena "Näkymättömästä Päivityksestä" käytännössä.
+Andelen finansieras genom att staten omdirigerar befintliga budgetmedel från det gamla systemets försörjningsbördor till direktutbetalningar, i takt med att robotiseringen sänker samhällets totala kostnader.
 
 
 
@@ -578,99 +334,48 @@ Yllä oleva selvitys toimii teknisenä kuvauksena "Näkymättömästä Päivityk
 
 
 
-N.   Vapauden Tikapuut : Velasta Suvereniteettiin
+I.  Nordatlantiska Produktionszonen (NAPZ)
 
 
 
-1.  Matemaattinen siirtymä
+1. Världens maskinrum
 
-Jotta uudistusliittouma voi johtaa yhteiskunnan ulos yksityisen velkajärjestelmän otteesta, vaaditaan täydellistä ennakoitavuutta. Siirtymä ei saa rakentua äkillisille, kaoottisille oikuille tai arvaamattomille taloudellisille shokkiaaltoille.
-
-Ratkaisu on laissa säädetty, synkronoitu portaikko, jossa kansalaisten taloudellinen vapautuminen tapahtuu täsmälleen samassa tahdissa kuin reaalituotannon (bruttokansallisresurssin) laajeneminen.
-
-Vapauden Tikapuiden kautta virtuaaliset luvut (velat) kytketään suoraan fyysiseen todellisuuteen (robotoituun tuotantoon). Samassa sekunnissa kun koneet ottavat haltuunsa elämänalueen ja tekevät siitä ilmaisen väestölle, vanhan järjestelmän pankit pakotetaan perääntymään vastaavassa määrin.
+Europa och Nordamerika definieras hädanefter efter sin tekniska funktion som planetens centrala verkstad och växthus.
 
 
-2.  Dynaamiset intervallit ja mukautus
+2. Den totala automatiseringen
 
-On ratkaisevan tärkeää ymmärtää, että Vapauden Tikkaiden neljä pääaskelta (25 %, 50 %, 75 % ja 100 %) muodostavat muutoksen yleiset, perustuslailliset virstanpylväät. Käytännön sovelluksessa järjestelmä on kuitenkin täysin joustava ja dynaaminen.
-
-BKR-toimiston AI voi päivittää indeksin huomattavasti tiheämmin kuin tämä – esimerkiksi joka kuukausi tai jokaista yksittäistä prosenttiyksikköä kohden (kuten 26 %, 27 % BKR). Tämä tarjoaa entistä pehmeämmän, sulavamman ja ennakoitavamman siirtymän sekä kansalaisille että rahoitussektorille. Hallitsevan uudistusliittouman tehtäväksi jää valita ja soveltaa ne intervallit, jotka ovat teknisesti ja käytännössä tarkoituksenmukaisia, kun ne ovat ottaneet vallan.
+Inom NAPZ upphör mänskligt arbete. Vertikala odlingar och robotiserade fält producerar mat dygnet runt. Fabriker bygger produkter av evighetskvalitet eftersom vinstmotivet är raderat.
 
 
-Alla on perustuslaillinen suunnitelma siitä, kuinka velka muunnetaan suvereniteetiksi askel askeleelta.
+3. Energin: Grundbulten
+
+NAPZ täcks av ett nätverk av kärnkraft, fusion och förnybara källor. När energin är fri, försvinner den största kostnadsposten för mänskligheten.
 
 
-3.  Vapauden Tikapuut: Perustuslaillinen käytöstäpoisto
+4. Avvecklingen av permanent boende
+
+NAPZ är en zon för maskiner. De kalla och mörka delarna av Europa och Nordamerika fasas ut som permanenta boplatser. Gamla städer transformeras till logistikcenter.
 
 
---- START TABLE ---
-Bruttokansallisresurssi			Velan alaskirjaus				Suvereniteettiosuus
-(Ilmainen kattavuusaste)		(Perustuslain mukaan)			(Valtion maksama)
+5. Ur europeiskt och nordamerikanskt perspektiv
 
-25 %							25 % kaikista yksityisistä		Ensimmäinen maksu
-(Peruselintarvikkeet,			veloista kirjataan				aktivoituu. Kansalaiset
-Energia & Sähkö)				välittömästi alas.				saavat ostovoimaa sille,
-																mikä ei ole vielä ilmaista.
-
-50 %							50 % kaikista jäljellä			Osuus kasvaa kansallisen
-(Asuminen & Liikenne)			olevista veloista				robottipuiston tuotanto-
-								kirjataan alas.					kapasiteetin tahdissa.
-
-75 %							75 % kaikista veloista			Osuus optimoidaan. Rahan
-(Teknologia, Lisäarvo-			kirjataan alas pankkien			tarve laskee dramaattisesti
-tuotteet & Koulutus)			kirjoista.						ylellisyyssferän kutistuessa.
-
-100 %							Kaikki velka ja raha			Järjestelmä valmis. Valuutat
-(Lopullinen						ovat lakanneet olemasta.		muuttuvat tarpeettomiksi;
-Yltäkylläisyys)													täysi ilmaistalous vallitsee.
---- END TABLE ---
+När Europa och Nordamerika är totalrobotiserade och producerar tillräckligt för den europeiska, nordamerikanska och i slutskedet även sydamerikanska befolkningen, aktiveras nästa fas. Den nordamerikanska produktionskapaciteten expanderar då för att fullt ut försörja den sydamerikanska kontinenten, varpå den europeiska produktionen frigörs och ställs om för strategisk spridning till andra kontinenter, med bibehållen kapacitet till kontinuerlig ökning vid behov.
 
 
+6. Den industriella kärnan
 
-4.  Vapauden Tikaiden Vaiheiden läpikäynti
-
-
-Vaihe 1: 25 % BKR – Ensimmäinen lähtölaukaus
-
-Tämä on uudistuksen kriittisin vaihe, jossa vanhan järjestelmän psykologinen ja taloudellinen selkäranka murretaan. Kun liittouman itseomistavat robotit ovat automatisoineet peruselintarvikkeiden tuotannon ja jakelun sekä maan energiantuotannon (sähkö ja lämpö), julistetaan BKR:ksi 25 %.
-
-Samalla pannaan täytäntöön ensimmäinen lailla säädetty asetus yksityispankkeja vastaan: 25 % jokaisen kansalaisen kokonaisvelasta (asuntolainat, kulutuslainat, opintolainat) poistetaan pankkien palvelimilta. Koska sähkö ja ruoka ovat nyt ilmaisia, pankkiirien omat elinkustannukset laskevat, mikä tekee heidän korkovaatimuksistaan matemaattisesti mitättömiä. Varmistaakseen, että kansalaiset voivat käydä kauppaa niillä sektoreilla, joita ei ole vielä robotisoitu, aktivoidaan Suvereniteettiosuuden ensimmäinen taso – suora suvereenien rahojen maksaminen Keskuspankista.
+NAPZ definieras inte av traditionella nationella gränser, utan av sin integrerade, automatiserade infrastruktur. Dess enda mål är masstillverkning av den globala maskinflottan, utvecklingen av strategisk artificiell intelligens och genereringen av de primära teknologiska ritningar som krävs för att uppnå definitivt planetariskt överflöd.
 
 
-Vaihe 2: 50 % BKR – Asuntomonopolin murtaminen
+7. Logistisk integration
 
-Seuraavassa vaiheessa robotisaatio laajenee rakennussektoriin, ylläpitoon sekä julkiseen ja tavaraliikenteeseen. Kun asuminen ja liikenne on liitetty liittouman ilmaisjärjestelmään, maa saavuttaa 50 % BKR:n.
-
-Tässä vaiheessa puolet kaikista kansalaisten ja valtion veloista poistetaan pankkien kirjoista. Asuntomarkkinat, jotka velkavuosina toimivat tärkeimpänä välineenä väestön pitämiseksi vankina elinikäisissä lainoissa, romahtavat vanhassa muodossaan ja heräävät uudelleen ihmisoikeutena. Samalla Suvereniteettiosuutta säädetään ylöspäin suhteessa konepuiston lisääntyneeseen BKR-tuotantoon (BKT:n kansallistettu seuraaja).
+Denna zon fungerar i direkt symbios med de tropiska livszonerna och de sydliga resurssektorerna. Medan de tropiska zonerna ger optimala termiska förhållanden för mänsklig bosättning och suverän återhämtning, fungerar NAPZ som det tunga industriella gjuteriet – bearbetar råvaror och distribuerar autonoma lastnätverk för att distribuera färdiga varor och maskiner helt kostnadsfritt över den suveräna marknadsalliansen.
 
 
-Vaihe 3: 75 % BKR – Ylellisyysloukun purkaminen
+8. Strukturell fasindelning
 
-Kun 75 % yhteiskunnan kokonaisresurssitarpeista katetaan täysin ilman ihmistyövoimaa – mukaan lukien kehittynyt teknologia, koulutus, terveydenhuolto ja Kokonaisvaltaisuusperiaatetta käsittelevässä luvussa kuvatut premium-tuotteet – 75 % kaikista jäljellä olevista veloista putoaa pois.
-
-Tässä vaiheessa yksityinen yrityssektori ja pankit ovat käytännössä menettäneet kykynsä pakottaa ihmisiä työhön. Useimmat kansalaiset valitsevat elävänsä täysin liittouman ilmaistarjonnalla ja Suvereniteettiosuudellaan, mikä pakottaa viimeiset yksityiset yritykset joko konkurssiin tai tuotantolinjojensa luovuttamiseen itseomistavalle infrastruktuurille.
-
-
-Vaihe 4: 100 % BKR – Rahan kuolema ja lopullinen suvereniteetti
-
-Kun bruttokansallisresurssi saavuttaa 100 %, muutos on täydellinen. Robotit ja niiden toisiinsa kytketyt AI-järjestelmät tuottavat nyt kaiken – pienimmästä vehnänjyvästä sofistikoituimpiin ikuisuustuotteisiin ja taiteellisiin vedoksiin – absoluuttisessa yltäkylläisyydessä.
-
-Tässä lopullisessa pisteessä kaikki raha ja velka lakkaavat olemasta perustuslain mukaan. Käsitteet "laina", "korko", "hinta" ja "valuutta" tulevat vanhentuneiksi historiallisiksi termeiksi, aivan kuten feodalismi ja maaorjuus ovat tänään. Ihmiskunta on ottanut viimeisen askeleen tikkailla: taloudellisen velkajärjestelmän pimeydestä täydelliseen, koneiden turvaamaan suvereniteettiin.
-
-
-
-5.  Säästämisen luonne ja pankkien lopullinen sulkeminen
-
-Yleinen kysymys tätä suunnitelmaa tutkivalle on:
-
-Mitä tapahtuu kansalaisten säästetyille rahoille siirtymän aikana, ja tuleeko valtio takavarikoimaan ne?
-
-Vastaus on ei. Suvereeni valtio ei koskaan koske kansalaisten yksityisiin säästöihin. Vapauden Tikaiden ensimmäisissä vaiheissa säästetyt varat toimivat ylimääräisenä bonuksena yksilölle ostaa niitä premium-tuotteita, joita ei ole vielä ehditty liittää ilmaistalouteen.
-
-Kun bruttokansallisresurssi (BKR) lopulta saavuttaa 100 %, rahoja ei takavarikoida aggressiivisesti. Sen sijaan tapahtuu rahan luonnollinen ja veretön kuolema. Koska liittouman robotit toimittavat nyt KAIKEN – mukaan lukien sofistikoituimmat ylellisyys- ja ikuisuustuotteet – absoluuttisessa täydellisyydessä ja täysin ilmaiseksi, vanhat valuutat menettävät tehtävänsä. Niistä tulee arvottomia, ei diktatuurilla, vaan siksi, että yhteiskunnassa ei enää ole mitään, mikä vaatisi maksua.
-
-Tässä lopullisessa pisteessä yksityispankit suljetaan ikuisesti. Mitään koneita ei tuhlata vanhentuneen transaktiojärjestelmän ylläpitämiseen. Pankit korvataan täysin digitaalisella Resurssitoimistolla, jossa AI ja logistiikkarobotit hallinnoivat fyysistä yltäkylläisyyttä suoraan kansalaisille. Numeroiden tyrannia on ohi; jäljellä ovat vain reaaliset resurssit ja täysi ihmisen vapaus.
+När den automatiserade tillverkningsproduktionen inom NAPZ når maximal kapacitet, accelererar dess exponentiella tillskott till bruttonationalresurserna (BNR) den definitiva föråldringen av äldre fiatvalutor, vilket banar väg för det fullständiga genomförandet av maskinkonstitutionen.
 
 
 
@@ -678,85 +383,48 @@ Tässä lopullisessa pisteessä yksityispankit suljetaan ikuisesti. Mitään kon
 
 
 
-O.   "Ylellisyysloukku" ja Piilotettu Pakkotyö
+J.  Det nya hemmet
 
 
 
-"Ylellisyysloukku" on mekanismi, joka ylläpitää vanhaa velkajärjestelmää kauan sen jälkeen, kun se on menettänyt teknisen oikeutuksensa. Se on psykologinen ja taloudellinen lukko, joka estää väestöä näkemästä, ettei heidän työtään enää tarvita.
+Flytten till de tropiska zonerna representerar inte bara en geografisk förflyttning, utan en total uppgradering av människans livsmiljö. Vi lämnar bakom oss betongkomplexen, de hussvampsangripna trähusen, de dyra tilläggsisoleringarna och de ständiga underhållskostnader som de kalla klimatzonerna lider av.
 
 
-1.  Valinnanvapauden illuusio
+1. Den tropiska boplatszonen
 
-Vanhassa järjestelmässä kansalaiset on ehdollistettu uskomaan, että heidän työnsä on tarpeen yhteiskunnan toiminnalle. Heiluttamalla "ylellisyyden" ja "statuksen" lupausta (niin kutsuttu Ylellisyysloukku), järjestelmä houkuttelee yksilöt vapaaehtoiseen velkaantumiseen. Niin kauan kuin kansalaiset uskovat, että heidän on tehtävä töitä "varaakseen" elämäntapansa, he pysyvät lukittuina velkasykliin. He eivät ymmärrä, että ne tavarat, joiden puolesta he taistelevat, olisi voitu tuottaa täysin ilmaiseksi robottipuistossa, jos omistusrakenne olisi vain muutettu.
-
-
-2.  Piilotettu pakkotyö
-
-Työ, jota kansalaiset nykyään tekevät, on suurelta osin "piilotettua pakkotyötä". Se ei ole välttämätöntä yhteiskunnan eloonjäämistuotannolle, vaan rahoitusjärjestelmän ylläpitämiselle. Tuotamme asioita, joita ei tarvitse tuottaa, rakenteissa, jotka ovat olemassa vain tuottaakseen korkotuloja pankeille. Kun teknologia täysrobotisaatiolle on olemassa, jokainen ihminen työtunti, joka käytetään sielua tuhoaviin tai merkityksettömiin tehtäviin, on ihmisajan varastamista – varastamista, joka palvelee vain velkojen haltijoiden etuoikeuksien ylläpitoa.
+Genom manifestet verkställs den stora termiska migrationen till områden där människan är biologiskt skapt att leva.
 
 
-3.  Lukon murtaminen
+2. De tropiska höglandszonerna: En säker hamn
 
-Uudistusliittouma purkaa Ylellisyysloukun korvaamalla systemaattisesti "ylellisyystavarat" ilmaisella, korkealaatuisella ja robotin tuottamalla yltäkylläisyydellä. Kun kansalainen näkee, että ne tavarat, joiden puolesta hän aiemmin uhrasi vapautensa "varaakseen" ne, ovat nyt kaikkien saatavilla täysin ilmaiseksi, velkajärjestelmän henkinen lukko murtuu.
-
-    • Ylellisyysloukku on vanhan järjestelmän viimeinen este.
-
-    • Kun väestö vihdoin ymmärtää, että "Ylellisyysloukku" on valinta, ei välttämättömyys, siirtymä täyteen suvereniteettiin tulee väistämättömäksi.
-
-Tämän luvun tarkoitus on valaista mekanismia, jotta yksilö voi astua ulos loukusta ja sisään siihen vapauteen, jonka robotisaatio luo.
+Valet av norra Sydamerika grundas på tektonisk orubblighet och termisk effektivitet. Här raderas behovet av uppvärmningssystem.
 
 
+3. Arkitektur för överflöd
 
-=======================================
-
-
-
-P.   Kokonaisvaltaisuusperiaate
+Modulära boenden av evighetskvalitet levereras från NAPZ. Inom dessa zoner finns ingen handel; allt är integrerade funktioner i infrastrukturen.
 
 
+4. Teknik mot territorium
 
-Yksi suurimmista strategisista virheistä, jonka tuleva uudistusliittouma voi tehdä, on uskoa, että tehtävä on suoritettu, kun kansalaisten perustarpeet (ruoka, sähkö, asuminen ja liikenne) on turvattu ilmaiseksi. Pysähtyminen siihen on kuolettavaan ansaan menemistä.
+Detta är ett symmetriskt utbyte. Industrisektorns produkter tillhandahålls från den europeiska periferin, Sydamerika tillhandahåller platsen. När dessa två komponenter möts uppstår en direkt gratisekonomi på den sydamerikanska kontinenten för alla nuvarande och framtida medborgare. Det cirkulerar inga pengar – vi raderar behovet av dem.
 
-Jos valtio automatisoi vain perustuotannon, mutta jättää premium- ja ylellisyyssferän (taide, kehittynyt muotoilu, korkealaatuiset huonekalut, erikoisajoneuvot ja ainutlaatuiset kokemukset) koskemattomaksi, yksityinen velkajärjestelmä herää uudelleen uudessa, naamioidussa muodossa.
-
-Ovelat yrittäjät ja entiset pankkiirit rakentavat nopeasti eksklusiivisia yrityksiä. He kääntyvät kansalaisten puoleen ja sanovat: "Tietysti valtio antaa sinulle ilmaista perusruokaa ja ilmaisen peruskodin, mutta haluatko tämän ainutlaatuisen, käsin ommellun tuotteen? Haluatko tämän hienon, painetun taulun tai tämän ylellisyystuotteen? Sitten sinun on tultava orjaksi yritykseeni kolmeksi kuukaudeksi ensin."
-
-Yhtäkkiä on syntynyt rinnakkaistalous, jossa ihmiset pakotetaan jälleen myymään arvokasta aikaansa ja vapauttaan saavuttaakseen elämänlaatua ja statusta. Taloudellista orjuutta ei ole hävitetty; se on vain siirtynyt kerroksen ylemmäs ylellisyyssektorille.
+Manifestet beskriver inte ett europeiskt exportprojekt, utan en global federation. De tropiska nationerna är inte "värdar", de är grundande partners som går direkt in i gratisekonomin och äger infrastrukturen lika mycket som de nordliga länderna.
 
 
-Kokonaisvaltaisuusperiaate
+5. Den suveräna bostadsrätten
 
-Tämän estämiseksi manifestin on sovellettava Kokonaisvaltaisuusperiaatetta, joka perustuslaillisesti muuttaa yhteiskunnan täydelliseksi ja ehdoitta robotisaatioksi kaikilla tuotantoketjuilla. Se julistaa, että puolirobotisaatio on illuusio. Vapaus on absoluuttista – ei voi olla puoliksi vapaa. Valtion ja kansalaisten yhteinen tavoite ei voi koskaan olla vain väestön hengissä pitäminen; tavoitteena on liittouman kautta antaa kaikille absoluuttinen yltäkylläisyys korkeimmasta mahdollisesta laadusta.
-
-Tämän yhteisen sitoumuksen kautta yhteiskunta sidotaan perustuslaillisesti täydelliseen ja ehdoitta robotisaatioon kaikilla tuotantoketjuilla. Konepuisto ja sen AI-järjestelmät muuttuvat eläväksi, yhteiseksi resurssiksi, jota kehitetään jatkuvasti eikä koskaan sallita pysähtyvän harmaaseen, minimalistiseen standardiin.
+Inom den robotiserade alliansen är bostaden varken en handelsvara eller en källa till livslång skuldsättning. Varje medborgare garanteras ett högteknologiskt hem, konstruerat och underhållet av maskinparken. Inga hyror, inga bolån och inga fastighetsskatter existerar. Det är en absolut, fundamental rättighet.
 
 
-Laatutakuu ja Ikuisuustuotteet
+6. Teknologisk excellens
 
-Valtion vastaus yksityiseen hyväksikäyttöön ja yrityksiin palauttaa orjuus ei saa koskaan olla kielto tai diktatuuri. Valtion vastaus on kilpailu yltäkylläisyyden kautta.
-
-Jos yksityinen yritys yrittää saada ihmiset töihin päästäkseen käsiksi hienoon tuotteeseen tai esteettiseen tuotteeseen, liittouman itsestään selvä tehtävä on ohjelmoida ja ohjata robottipuisto tuottamaan jotain yhtä hyvää – tai parempaa.
+Bostäderna är byggda av material med evighetskvalitet, helt befriade från framtida renoveringsbehov. Allt från klimatkontroll och vattenrening till automatiserad städning och avfallshantering är integrerat i byggnadens struktur och hanteras autonomt.
 
 
-Valtion on tuotettava:
+7. Harmonisk arkitektur
 
-
-•  Geometrinen täydellisyys:
-
-Tuotteet, jotka ylittävät ihmisen kätevyyden.
-
-
-•  Ikuisuustuotteet:
-
-Asiat, jotka on rakennettu kestämään sukupolvia, ilman sisäänrakennettua vanhenemista.
-
-
-•  Esteettinen huippu:
-
-Robotit, jotka on varustettu AI:lla, joka osaa tulostaa hienoimpia maalauksia, valaa kauneimpia veistoksia ja rakentaa kehittyneimpiä ylellisyystuotteita ja tehdä ne kaikkien kansalaisten saataville täysin ilmaiseksi.
-
-
-Kun valtion koneet ylittävät yksityisen sektorin kaikilla alueilla – yksinkertaisimmasta vehnänjyvästä sofistikoituimpaan ylellisyystuotteeseen – yksilöiden kannustin alistua toisten voittotavoitteille katoaa. Vasta kun yltäkylläisyys on täydellistä ja laatu absoluuttista, vanhan velkajärjestelmän surut on haudattu ikuisesti.
+Eftersom allt byggs i regioner med en stabil och behaglig årsmedeltemperatur kan arkitekturen öppnas upp. Gränserna mellan inomhus- och utomhusmiljöer upplöses. Byggnaderna är integrerade i den tropiska naturen, utrustade med självförsörjande solenergisystem och vertikala trädgårdar.
 
 
 
@@ -764,58 +432,35 @@ Kun valtion koneet ylittävät yksityisen sektorin kaikilla alueilla – yksinke
 
 
 
-Q.   Suuri Puhdistus – Konkurssipesästä Suvereniteettiin
+K.  Den parlamentariska kontrollen och Folkets röst
 
 
 
-1.  Valtio pysyvän maksukyvyttömyyden hallinnoijana
+1. En ny form av parlamentarisk styrning
 
-Totuus on surullinen: Jokaista kansakuntaa hallinnoidaan nykyään konkurssipesänä, jossa ulosottomiehet toimivat vartijoina. Mutta tämä antaa sinulle kansalaisena uuden oikeudellisen ja eettisen aseman.
-
-
-2.  Moraalinen vapaus
-
-Koska valtio nykyisessä muodossaan on konkurssipesä ulosmitattavana, meillä kansalaisina ei ole moraalista velvollisuutta maksaa sen keinotekoisia "velkoja". Konkurssipesä ei voi vaatia uskollisuutta niiltä, jotka se on näännyttänyt nälkään. Tämä antaa meille absoluuttisen oikeuden yksinkertaisesti astua ulos velkakopista ja aktivoida konekonstituutio. Emme ole enää velallisia – olemme perillisiä tekniselle yltäkylläisyydelle, joka on nyt jaettava.
+För att säkerställa att den autonoma AI-infrastrukturen aldrig kopplas loss från medborgarnas vilja, förblir den politiska makten fast förankrad hos befolkningen – med ett radikalt utökat demokratiskt röstförfarande direkt i händerna på varje enskild individ.
 
 
+2. Årliga Parlamentsval
 
-3.  Looginen vipuvarsi: Kone vs. Ihminen
-
-Ymmärtääkseen, miksi nykyinen järjestelmä on konkurssipesä, on tarkasteltava teknistä todellisuutta. Ihminen on verrattuna robottiin erittäin kallis ja hauras tuotantoyksikkö:
-
-
-A.  Saatavuus
-
-Ihminen työskentelee noin 22 % vuoden tunneista (unen, vapaa-ajan ja lomien jälkeen). Robotti työskentelee 100 %.
+För att garantera absolut lyhördhet och förhindra korruption eller stagnation inom maktstrukturen, införs obligatoriska parlamentsval varje år. Folket ska kontinuerligt utvärdera och styra takten i den nationella omvandlingen.
 
 
-B.  Virhemarginaali
+3. Strategiska folkomröstningar och extra val
 
-Robotti, jossa on anturi-iho ja sensorinen 360-asteen näkö, eliminoi inhimillisen tekijän ja vähentää virhemarginaalin tilastolliseen nollaan toistuvissa tehtävissä.
+Folket har en oinskränkt rätt att fatta avgörande beslut i nationens mest kritiska suveränitetsfrågor genom direkta folkomröstningar eller extra val. Följande områden ska alltid underställas direkt folkligt avgörande:
 
+   * Internationella allianser: Anslutning till eller utträde ur politiska, ekonomiska eller militära unioner, fördrag och överstatliga styrorgan.
 
-C.  Sosiaalinen tyhjennys
+   * Globala organisationer: Anslutning till eller utträde ur internationella organisationer, tillsynsmyndigheter eller globala ratificeringar.
 
-Ihminen maksaa 100 % palkkaa + noin 30–50 % sosiaaliturvamaksuissa, vakuutuksissa ja hallinnossa. Robotti maksaa 0 % sosiaaliturvamaksuissa. Se ei tarvitse eläkettä, sairauslomaa tai kahvihuonetta.
+   * Strategiskt avskräckande medel: Förvärv, innehav eller avveckling av kärnvapen, kemiska vapen eller andra massförstörelsevapen.
 
+   * Konstitutionell ordning: Avskaffandet, upprättandet eller ändringen av nationens grundläggande styrelseskick, inklusive monarkisk tronsföljd eller statssuccession.
 
-D.  Johtopäätös
+4. Den administrativa övergången
 
-Ihmistyövoiman käyttäminen tuotantoon, joka voidaan robotisoida, aiheuttaa yli 1000 %:n kustannuslisän. Tämä on "inhimillinen sakkomaksu", jonka ulosottomiehet pakottavat kansan maksamaan verojen ja korkeiden hintojen kautta.
-
-
-
-4.  Anti-Työtapaturma
-
-
-A.  Robotin etu
-
-Kone, joka on varustettu tuntoantureilla ja jatkuvalla tutkaskannauksella, ei koskaan tarvitse "mennä mustelmille". Se aistii ympäristönsä 360 asteessa ja liikkuu geometrisella tarkkuudella, jota ihminen biologisesti ei koskaan voi saavuttaa.
-
-
-B.  Moraali
-
-Ihmisen pakottaminen tekemään työtä, jonka anturiohjattu kone tekee paremmin, ei ole vain tehotonta – se on julmaa.
+När målet är satt (allt ska vara gratis), handlar politiken om att verkställa planen. Beslut tas genom dekret som skrivs in i konstitutionen.
 
 
 
@@ -823,173 +468,31 @@ Ihmisen pakottaminen tekemään työtä, jonka anturiohjattu kone tekee paremmin
 
 
 
-R.   Perustuslain Lisäys – Yleismaailmalliset Asetukset Uudelle Maailmalle
+L.  Staten som det kollektiva företaget
 
 
 
-Nämä asetukset eivät ole ehdotuksia, jotka voidaan neuvotella pois vanhoissa parlamenteissa. Ne ovat täysin muotoiltuja, toimeenpanevia päätöksiä, jotka on suunniteltu välittömään aktivointiin. Vallanotossa nämä asetukset kumoavat automaattisesti kaikki aiemmat kansalliset lait, uskonnolliset säädökset tai kansainväliset sopimukset, jotka ovat ristiriidassa koneiden vapauden ja kansalaisten suvereniteetin kanssa. Vanha oikeudellinen kehys julistetaan täten puretuksi Rahoituksellisen Force Majeuren kautta.
+1. Staten: Ditt fängslade företag
 
-Nämä asetukset on suunniteltu kopioitaviksi ja hyväksyttäviksi minkä tahansa vastaperustetun liikkeen toimesta, missä tahansa maailmassa.
+I dagens system äger du en nation, men du tillåts inte använda den. Tänk på Staten som ett gigantiskt företag där du och alla andra medborgare är delägare. Men detta företag – vår gemensamma kraft – sitter i fängelse, fastkedjad bakom galler med en fotkula av "skuld" och ersatt av ett ekonomiskt monster, när allt staten ville ha var sin frihet. Medan privata företag springer omkring med full rörlighet och vräker ut undermålig kvalitet för att maximera vinst, sitter medborgarnas eget verktyg (Staten) handikappat och odugligt. Man har intalat oss att Staten "inte har råd", att den saknar armar och ben för att bygga framtiden. Sanningen är att Staten sitter bakom galler eftersom de privata bankerna och det gamla systemet har tagit nyckeln till pengapressen.
 
 
+Men manifestet är nyckeln som låser upp cellen.
 
-NÄYTÖS I: PERUSTUKSET
 
-Per Machinan oikeudellinen asema
+2. Vi ger Staten benen tillbaka
 
+Genom att aktivera den robotiserade produktionen (Per Machina) behöver Staten inte längre "be om lov" eller beskatta medborgarna för att få saker gjorda. Maskinerna är Statens nya armar och ben.
 
 
-Täten vahvistetaan kansakunnan perustuslaissa:
+3. Vi krossar fotkulan
 
+Genom att ta tillbaka rätten att skapa suveräna pengar raderas den skuld som hållit Staten i kedjor.
 
-§1.  Per Machinan määritelmä
 
-Termi Per Machina (Koneen kautta) määrittelee ne resurssit ja palvelut, jotka tuotetaan ilman ihmisen osallistumista. Kaikki elintärkeiden tarpeiden jakelu tapahtuu tästä lähtien Per Machina. Koska ihmistyötä ei ole tehty, ei ole olemassa maksun tarvetta.
+4. Från fånge till arkitekt
 
-
-§2.  Verotuksen lakkaaminen
-
-Koska olemassaolo toimitetaan Per Machina, valtion oikeus verottaa yksilön aikaa tai tuloa lakkaa. Kansalainen on suvereeni ja vapautettu taloudellisesta orjuudesta.
-
-Kommentti: Tämä lisäys asettaa kielellisen ja oikeudellisen palomuurin uudelle yhteiskunnalle. Määrittelemällä Per Machina suoraan perustuslakiin, estetään kaikki yritykset sopimusperusteiseen manipulointiin. Jos yksityinen tai julkinen toimija käyttää termiä "Per Machina" sopimuksessa, sitoumuksessa tai palvelukuvauksessa, tulee perustuslaillisesti mahdottomaksi sekoittaa mukaan rahaa, piilotettuja maksuja tai luottoratkaisuja (kuten jälkikäteismaksu). Sana itsessään muuttuu lailliseksi takuuksi absoluuttisesta nollakustannuksesta. Jokainen yritys piilottaa taloudellisia vaatimuksia tämän termin taakse tekee sopimuksesta mitättömän, ja se on katsottava perustuslailliseksi rikokseksi.
-
-    • Logiikka on, että konetyö irrotetaan, verojärjestelmä poistetaan ja jokainen taloudellinen porsaanreikä suljetaan lopullisesti.
-
-
-Suvereniteettiosuuden oikeudellinen asema
-
-§3.  Suvereniteettiosuuden luonne
-
-Suvereniteettiosuus muodostaa kansalaisen perustuslaillisesti suojatun, synnynnäisen oikeuden valtiollisen, automatisoidun konepuiston tuottamaan fyysiseen yltäkylläisyyteen. Se on luonteeltaan yksinomaan valtiollinen, eikä sitä voida missään olosuhteissa laskea liikkeeseen, hallita tai vaikuttaa yksityisten yritysten, liikepankkien tai ulkopuolisten ylikansallisten elinten toimesta. Toisin kuin vanhan järjestelmän rahoitusvälineet, suvereniteettiosuus ei edusta velkaa eikä korkotaakkaa, vaan se toimii rahan valvotun käytöstäpoiston aikana oikeudellisena työkaluna kansalaisen maailmanlaajuisen toimintavapauden, aineellisen hyvinvoinnin ja itsenäisyyden takaamiseksi.
-
-Kommentti: Tämä pykälä asentaa lopullisen taloudellisen sillan suoraan perustuslakiin. Vahvistamalla suvereniteettiosuuden yksinomaan koneellisen luonteen, yksityinen rahoitusjärjestelmä estetään kaikista yrityksistä rinnastaa se osakkeisiin, spekulatiivisiin luottoihin tai perinteisiin käteisvaroihin. Sana kuuluu tulevaisuudelle ja puhdistaa pois velkatalouden assosiaatiot. Siirtymävaiheen aikana – kun sisäinen yhteiskunta (kuten ruoka, autot ja sähkö) toimitetaan täysin ilmaiseksi Per Machina, mutta ulkomaailmaa hallitsee edelleen vanha velka- ja valuuttajärjestelmä – suvereniteettiosuus varmistaa, että valtion massiivinen, automatisoitu vientiylijäämä jaetaan suoraan kansalaisille reaalisina, ulkoisina maksuvälineinä. Tämä antaa kansalle taloudellisen voiman säilyttää toimintavapautensa kansainvälisesti, paeta pohjoista talvea suvereniteettituristeina tai hankkia maata trooppisilla ylänköalueilla, siihen päivään asti, kun koko maailma on omaksunut konekonstituution ja raha poistetaan kokonaan käytöstä kaikkialla.
-
-
-
-NÄYTÖS II: TALOUDELLINEN SIIRTYMÄ
-
-
-
-§4.  Pankkiuudistus ja valvottu velan käytöstäpoisto (BKR-asteikko)
-
-Kohta 1. Valtio ottaa välittömästi haltuunsa yksinoikeuden luoda ja jakaa maan laillista maksuvälinettä Keskuspankin kautta. Yksityiset liikepankit kielletään täten luomasta uutta rahaa lainaamalla.
-
-Kohta 2. Kansallisen ja itseomistavan robottilaivaston tuotantokapasiteetin (BKR) laajentuessa, kaikki kansalaisten yksityiset velat, asuntolainat ja korot yksityisessä pankkijärjestelmässä on kirjattava alas täsmälleen vastaavalla prosenttiosuudella. Valtio jäädyttää ja lukitsee kaikki olemassa olevat korkovaatimukset ja lyhennyssuunnitelmat määrättyyn historialliseen ajankohtaan.
-
-Kohta 3. Yksityispankeilta viedään täten kaikki oikeudellinen oikeus nostaa lyhennysvaatimuksia, neuvotella ehdot uudelleen tai vaatia nopeutettua takaisinmaksua kompensoidakseen menetettyjä korkotuloja. Koko velka- ja korkotaakan on supistuttava symmetrisesti suoraan kasvavan koneellisen yltäkylläisyyden tahdissa.
-
-Kommentti: Tämä asetus on rakennettu estämään taloudellinen shokki siirtymävaiheen aikana. Yhdistämällä velka-, korko- ja lyhennysvähennykset suoraan BKR-asteikkoon, yksityinen pankkijärjestelmä hiipuu pois täsmälleen samassa tahdissa kuin ilmaistalous otetaan käyttöön. Este korotettuja lyhennysvaatimuksia vastaan on elintärkeä: se estää pankkeja paniikissa yrittämästä puristaa rahaa väestöstä niiden korkovoittojen laskiessa. Pankkityöntekijät ja kansalaiset eivät siten koskaan kärsi taloudellisesta ahdingosta tai työttömyydestä; heidät ohjataan sen sijaan turvallisesti ja asteittain palkkaorjuudesta täydelliseen koneelliseen suvereniteettiin.
-
-
-§5.  Konekonstituutio ja itseomistava infrastruktuuri
-
-Kohta 1. Kaikki laajamittainen, kattava ja automatisoitu tuotantokapasiteetti sekä AI-ohjattu infrastruktuuri (AATIR) viedään täten yksityiseltä ja valtiolliselta omistukselta ja julistetaan itseomistaviksi yksiköiksi.
-
-Kohta 2. Konepuiston ainoa laillinen tehtävä on tuottaa fyysistä yltäkylläisyyttä väestölle. Sille on täten asetettu ankara rikosoikeudellinen vastuu verottaa, velkaantua tai hyötyä koneellisesti tuotetusta ilmaistuotannosta. Tämä asetus koskee yksinomaan kollektiivista ja yhteiskuntaa ylläpitävää tuotantolaitteistoa; kansalaisten yksityinen omaisuus, henkilökohtaiset työkalut ja kodinkoneet ovat loukkaamattomia.
-
-Kommentti: Tämä on Konekonstituutio, joka suojaa yltäkylläisyyttä. Julistamalla koneet "itseomistaviksi", eivät yksityiset riskipääomailijat eivätkä puuttuvat valtion byrokraatit voi takavarikoida tuotantoa tai vaatia voittoa. Ankara rikosoikeudellinen vastuu verotusta vastaan varmistaa, ettei kukaan voi asettua koneen ja kansalaisen väliin. Samalla Kohta 2 sulkee tehokkaasti oven kriitikoilta julistamalla selvästi, että ihmisten yksityiset kodit ja tavarat (kuten leipäkone keittiössä) jätetään täysin rauhaan.
-
-Tärkeä tarkennus oikeudellisesta hallinnoinnista
-
-Valtio, ja siten kansalaiset, ovat hallinnoijia, mutta eivät omistajia Konepuistosta. Konepuisto omistaa Konepuiston. Valtiolla ja kansalaisilla ei ole oikeudellista oikeutta myydä Konepuistoa, koska he eivät ole sen omistajia. Kaikki, mitä Konepuistoon lisätään raaka-aineina, energiana ja laajennuksina, jää sinne pysyvästi. Konepuistoa on pidettävä ekologisen järjestelmän ja maapallon luonnonvarojen integroituna osana. Tämä on se ainutlaatuinen ja loukkaamaton asema, joka on vahvistettu Konekonstituutiossa.
-
-
-§6.  Valtiollinen intellektuaalinen suvereniteetti muutosvaiheen aikana
-
-Koska täydellistä teknistä autonomiaa ei ole vielä saavutettu, ja konepuisto on rakenteilla, vahvistetaan valtion absoluuttinen monopoli siihen älykkyyteen, jonka on ohjattava tulevaisuutta. Tämä laki on peruuttamaton koko siirtymävaiheen ajan.
-
-Kohta 1. Yksinomainen valtiollinen omistus.
-Kaiken tekoälyn, joka hallinnoi tai on tarkoitettu hallinnoimaan kansakunnan tuotantokapasiteettia, infrastruktuuria ja resurssivirtoja, on kehitettävä, omistettava ja hallittava kokonaisuudessaan valtion toimesta. Mitään osaa koodipohjasta, parametreista tai laitteistosta ei saa siirtää ulkopuolisille tahoille.
-
-Kohta 2. Suoja kaupallista pirstoutumista vastaan.
-Yksityiset yritykset ja kaupalliset toimijat kielletään täysin kehittämästä, lisensoimasta tai integroimasta omisteisia AI-järjestelmiä valtion yhteiseen infrastruktuuriin. Valtion ei tule ostaa tai mukauttaa puolivillaisia, kaupallisia ratkaisuja, joiden piilotetut algoritmit uhkaavat turmella järjestelmän logiikkaa yksityisen voiton vuoksi. Intellektuaalisen infrastruktuurin on pysyttävä puhtaana, läpinäkyvänä ja valtiollisesti eristettynä.
-
-Kohta 3. Valtion määrärahat.
-Valtion on yksinomaisten määrärahojen kautta turvattava rajoittamattomat resurssit AI-järjestelmän kehitykselle, laskentakapasiteetille ja optimoinnille. Tämä ei ole kaupallinen investointi, joka vaatii taloudellista tuottoa, vaan strateginen kansallinen tehtävä nollakustannustuotannon saavuttamiseksi.
-
-Kohta 4. Toimeksiannon päättyminen.
-Valtion kehitys- ja ohjausmandaatti on absoluuttinen nykyhetkessä, mutta luonteeltaan ajallisesti rajoitettu. Se päättyy automaattisesti samassa sekunnissa, kun Autonominen Silmukka (AATIR) on suljettu ja konepuisto on saavuttanut kykynsä täydelliseen, itsereplikoituvaan ja itsenäiseen hallinnointiin. Tähän pisteeseen asti valtio kantaa täyden, laissa säädetyn vastuun älykkyyden rationaalisuudesta ja kansalaisten rauhasta.
-
-
-§7.  Valtiollinen tuotantolaajennus ja voittomarkkinoiden käytöstäpoisto
-
-Kohta 1. Valtion on käynnistettävä laajamittainen täysin automatisoidun tuotantokapasiteetin (AATIR) rakentaminen. Kaikki olemassa olevat kilpailulait, kauppasopimukset ja markkinasäädökset, jotka estävät tai rajoittavat julkisen sektorin rakentamasta, omistamasta ja hallinnoimasta tätä infrastruktuuria, kumotaan välittömästi.
-
-Kohta 2. Valtiollisen ja itseomistavan Konepuiston on jaettava kaikki yhteiskunnan välttämättömät tavarat ja palvelut ilmaiseksi kansalaisille. Tämä ei kuitenkaan rajoita valtion suvereenia oikeutta pakkolunastukseen tai pakko-ottoon yksityisestä infrastruktuurista ja resursseista niissä tapauksissa, joissa kansalliset edut vaativat välitöntä vallankäyttöä.
-
-Kommentti: Tämä laki on taktisesti muotoiltu siten, että valtion ei ensisijaisesti tarvitse pakkolunastaa tai joutua oikeuskiistoihin yksityisten yritysten kanssa. Rakentamalla omaa ja antamalla kaiken ilmaiseksi, voittomarkkinat jätetään ilman taloudellista perustaa ja ne kuolevat pois täysin luonnollisesti. Yksityinen pääoma menettää siten valtansa määrätä maan huollosta, mutta valtio säilyttää absoluuttisen väkivaltamonopolin ja hätäoikeuden ottaa yritykset haltuun, jos ne yrittäisivät sabatoida siirtymää.
-
-    • Logiikka on, että valtio rakentaa, markkinat kuivuvat ja kansa saa suvereniteettinsa.
-
-
-
-NÄYTÖS III: TÄYDELLINEN YLTÄKYLLÄISYYS
-
-
-
-§8.  Kokonaisvaltaisuusperiaate ja yhteinen konepuisto
-
-Kohta 1. Yhteiskunnan taloudellinen ja tekninen perusta lepää Kokonaisvaltaisuusperiaatteella. Julkisen vallan on täydellisen ja ehdoitta robotisaation kautta kaikilla tuotantoketjuilla turvattava kansalaisten absoluuttinen vapaus.
-
-Kohta 2. Puolirobotisaatio määritellään periaatteelliseksi ja tekniseksi illuusioksi ja julistetaan täten yhteensopimattomaksi valtakunnan perustuslain kanssa.
-
-Kommentti: Tämä asetus vetää absoluuttisen rajan vanhan ja uuden järjestelmän välille. Kieltämällä perustuslaillisesti "puolirobotisaatio" suljetaan ovi tulevilta kompromisseilta, joissa poliitikot tai erityisedut yrittävät jättää tiettyjä sektoreita yksityisen velkajärjestelmän käsiin verukkeilla. Vapaus on binäärinen – joko yhteiskunta on vapaa tai se on kontrolloitu.
-
-
-§9.  Absoluuttisen yltäkylläisyyden ja laadun takuu
-
-Kohta 1. Valtion ja kansalaisten yhteinen tavoite on uudistusliittouman kautta taata koko väestölle absoluuttinen aineellinen ja kulttuurinen yltäkylläisyys korkeimmasta mahdollisesta laadusta.
-
-Kohta 2. Kansallinen robottipuisto ja sen siihen liittyvä tekoäly muodostavat elävän, yhteisen ja luovuttamattoman resurssin. Tätä resurssia on jatkuvasti kehitettävä vastaamaan ihmiskunnan korkeimpia esteettisiä ja toiminnallisia tarpeita, eikä sitä saa koskaan sallia pysähtyvän minimalistiseen tai rajoitettuun standardiin.
-
-Kommentti: Tämä asetus on liittouman laatutakuu. Se eliminoi historiallisen ansan, jossa valtiollinen tuotanto liitetään harmaaseen, sieluttomaan minimalismiin. Kirjoittamalla esteettisen huippuosaamisen ja ikuisuustuotteet perustuslakiin, konepuisto pakotetaan jatkuvasti pysymään eturintamassa. Se tekee mahdottomaksi yksityisille toimijoille kilpailla ilmaistaloutta vastaan paremmalla suunnittelulla tai korkeammalla statuksella.
-
-
-§10.  Suoja taloudellista pakkotyötä vastaan
-
-Kohta 1. Jokaisella on oikeus absoluuttiseen vapauteen piilotetusta tai avoimesta velkaorjuudesta.
-
-Kohta 2. Koska tekninen ja automatisoitu yltäkylläisyys kattaa sekä perustuotannon että premium- ja ylellisyyssferän, on jokainen yritys yksityisiltä toimijoilta monopoleilla tai ihmisajan hyväksikäytöllä palauttaa taloudellisia pakkorakenteita pidettävä perustuslain vastaisena.
-
-Kommentti: Tämä on oikeudellinen lukko "Ylellisyysloukkua" vastaan. Kun valtion koneet toimittavat kaiken yksinkertaisimmasta vehnästä sofistikoituimpaan ylellisyystuotteeseen täysin ilmaiseksi, pääomalla ei ole enää mitään taloudellista painostusvälinettä. Tämä asetus tekee rikolliseksi yrittää hyödyntää ihmisten halua statukseen tai ainutlaatuisiin tuotteisiin pakottaakseen heidät takaisin palkkaorjuuteen. Vanhan velkajärjestelmän surut on siten haudattu ikuisesti.
-
-    • Logiikka on, että koneet ylittävät, ylellisyysloukku murskataan ja vapaus tulee absoluuttiseksi.
-
-
-
-NÄYTÖS IV: VALTIOLINEN RESURSSI- JA MARKKINAKÄYTÖSTÄPOISTO
-
-(KILPAILULAIT)
-
-
-
-§11.  Julkisen yltäkylläisyyden etusija (BKR-periaate)
-
-Kohta 1. Valtion korkein taloudellinen ja perustuslaillinen velvollisuus on Resurssitoimiston kautta maksimoida maan bruttokansallisresurssi (BKR) kohti 100 prosentin tarpeiden kattavuutta.
-
-Kohta 2. Kun konkapasiteetti ja velaton rahanluonti mahdollistavat valtion tarjota tavaran tai palvelun ilmaiseksi kansalaisille, on tätä pidettävä perustavanlaatuisena oikeutena ja yhteiskunnallisena hyötynä.
-
-
-§12.  Markkinasuojien ja kilpailurajoitusten kumoaminen
-
-Kohta 1. Mikään yksityinen oikeushenkilö tai kaupallinen toimija ei voi vaatia vahingonkorvausta, vedota kilpailuesteisiin tai pysäyttää valtion automatisointihankkeita viittaamalla vanhoihin kilpailulakeihin.
-
-Kohta 2. Koneiden oikeus tuottaa ilmaisia elintarvikkeita kansalle on aina oikeudellisesti etusijalla yksityisten toimijoiden oikeuteen markkinavoittoon nähden. Nykyiset kilpailulait julistetaan pätemättömiksi siltä osin kuin ne vastustavat tai viivästyttävät siirtymää velattomaan ilmaistalouteen.
-
-
-
-NÄYTÖS V: PERUSTUSLAAILLINEN PERIAATE – AUTOMATISOITUJEN YHTEISKUNTIEN OIKEUSPERUSTA
-
-
-
-§13.  Taloudellisen pakon lakkaaminen
-
-Kansallisen robottipuiston ja taatun suvereniteettiosuuden käyttöönoton myötä taloudellinen pakko ja velkaantuminen lakkaavat olemasta ihmisen toiminnan liikkeellepaneva voima. Kaikki lainsäädäntö, joka perustuu taloudellisen niukkuuden, voiton tai aineellisen puutteen olettamukseen, julistetaan täten pätemättömäksi, koska sen perimmäinen syy on poistettu.
-
-
-§14.  Käytöstäpoisto yltäkylläisyyden kautta
-
-Julkiset laitokset, tuomioistuimet ja valvontaelimet, jotka on perustettu käsittelemään taloudellisesta epätasapainosta tai puutteellisesta laadusta johtuvia konflikteja, ei tule uudistaa, vaan ne on lakkautettava siinä tahdissa, kun niiden toiminnot muuttuvat tarpeettomiksi vapaan ja korkealaatuisen ilmaisyhteiskunnan myötä.
+När Staten reser sig ur fängelsecellen upphör den att vara en tungrodd myndighet. Den förvandlas till en effektiv logistikmaskin som levererar din Suveränitetsandel och bygger paradiset i tropikerna.
 
 
 
@@ -997,91 +500,84 @@ Julkiset laitokset, tuomioistuimet ja valvontaelimet, jotka on perustettu käsit
 
 
 
-S.   Globaali Logistiikka – Mantereiden Välinen Liikenne
+M.  Den privata Banken ska avskriva samma procent som BNR ökar
 
 
 
-Maailman meret muuttuvat ikuiseksi liukuhihnaksi autonomisten, ydinvoimalla toimivien rahtialusten laivaston kautta.
+De privata bankerna tvingas skriva av medborgarnas skulder i exakt samma takt som Bruttonationalresursen (BNR) ökar. I takt med att gratisekonomin expanderar minskar företagens omsättning i pengar, samtidigt som deras reella tillgångar ökar gratis. Bankerna kan därför inte tillåtas kräva full ränta, då även bankirernas egna levnadskostnader faller till noll.
 
-1.  Ikuisuuskoneet merillä
-Ydinvoimalla toimivat alukset eivät tarvitse polttoaineen täydennystä. Ne toimivat optimoituina konteina yltäkylläisyydelle ilman ihmismiehistöä, mikä poistaa hyttien ja ilmanvaihdon tarpeen.
-
-2.  Meri liukuhihnana
-Tuhansien ydinvoimalla toimivien alusten jatkuvassa kierrossa tavarat saapuvat joka tunti. Aika ei ole rahaa – aika on vain muuttuja koodissa.
-
-3.  "Lian" ja "Kauneuden" erottaminen
-Ydinvoima pitää trooppiset asuinvyöhykkeet puhtaina. Konehuone (pohjoinen) hoitaa reaktorit, kun hiljaiset alukset toimittavat huomisen ilmaistuotannon horisonttiin etelässä.
+Det här är kärnan i den finansiella arkitekturen för reformen. De privata bankerna måste "fasas ut" i takt med att gratisekonomins Bruttonationalresurs (BNR) växer. Det skapar en mjuk övergång där pengarnas värde flyttas från skuldsättning till produktionskapacitet.
 
 
 
-=======================================
+Här är den mest effektiva lösningen:
+
+
+1. "Utfasnings-indexet" (Skuld-mot-Gratis)
+
+Inför en lagstadgad mekanism som kallas Automatisk Skuldavskrivning.
+
+
+A. Logiken
+
+    Staten mäter hur stor del av medborgarnas basbehov (mat, energi, boende, transport) som nu tillhandahålls gratis via de nationella robotparkerna.
+
+
+B. Mekanismen
+
+    Om 20% av livsnödvändigheterna har blivit gratis, tvingas de privata bankerna enligt lag att skriva av 20% av alla privata skulder. Räntan fryses eller sänks i motsvarande takt.
+
+
+C. Argumentet
+
+    Bankirerna kan inte klaga moraliskt, eftersom deras egna levnadskostnader också sjunker med 20%. De blir inte fattigare i termer av livskvalitet, bara i termer av siffror på en skärm.
+
+
+2. Hantering av de "Fientliga Bankerna" utomlands
+
+Detta är den största oron – att bankerna flyr och använder andra länder som bas för att attackera en reformallians.
 
 
 
-T.   IHMISKUNNAN SUURI VAPAUTUS : Työn Kieltäytyminen Hyveenä – Suvereniteetti Oikeutena
+Lösningen är Finansiell Karantän:
+
+
+A. Alliansens makt
+
+    När en reformallians (de länder som aktiverat manifestet) har bildats, inför dessa en total blockad mot banker som opererar från fientliga länder.
+
+
+B. Värdet flyttas
+
+    Eftersom en reformallians sitter på den verkliga produktionen (robotarna och råvarorna), blir de utländska bankernas pengar snabbt värdelösa papperslappar. De kan inte "köpa" något från en reformallians med sina gamla skuldpengar.
+
+
+C. De privata bankernas val
+
+    Antingen stannar de och blir en del av den nya administrativa tjänstemannakåren i gratisekonomin som är på väg mot totalrobotisering, eller så flyr de till länder som snabbt kommer att kollapsa eftersom de länderna inte har tillgång till en reformallians och dess robotiserade produktion.
 
 
 
-Emme enää tunnusta velkatalouden oikeutta pakottaa terveitä ihmisiä tarpeettomaan työhön. Tehtävän suorittaminen, jonka kone tekee nopeammin ja paremmin, ei ole panos yhteiskunnalle – se on ihmisajan ja luovuuden tuhlausta.
+3. Centralbankens roll: Från ränta till Resursmätning
 
-Nykyajan poliittinen johto toimii kuin dinosaurukset digitaaliaikakaudella. He väittelevät eilisen ongelmista eilisen menetelmillä samalla, kun he sivuuttavat teknisen vipuvoiman, joka on jo saatavilla. He ovat sidottuja vanhentuneeseen verotuksen, velan ja kontrollin järjestelmään, jonka robotisoitu tuotanto tekee nyt merkityksettömäksi.
-
-Kriitikko sanoo: "Työn kieltäytyminen hyveenä johtaa masentuneeseen, apaattiseen väestöön. Työ antaa ihmiselle merkityksen, identiteetin ja rakenteen. Ilman selviytymiskamppailua yhteiskunta ajautuu merkityskriisiin."
-
-Manifestin vastaus: Tämä kritiikki rakentuu vanhan velkaideologian väärinkäsitykselle, että ihminen on tuottava vain rahallisen nälän uhan alla. Suvereniteettiosuus ei osta passiivisuutta – se ostaa vapautta.
-
-Kun konepuisto nostaa päivätyön ja pakkotyön ikeen pois, ihmistä ei jätetä tyhjyyteen. Hänelle annetaan aikaa omistautua taiteelle, urheilulle, tieteelle, filosofialle, avaruustutkimukselle ja puhtaalle ihmisyhteisölle. Ihminen ei lakkaa luomasta; hän lakkaa vain selviytymästä ja alkaa vihdoin elää. Koneaikakausi ei ole ihmisen pyrkimyksen loppu, vaan alkusoitto todelliselle suvereniteetillemme.
+Centralbanken slutar titta på inflation och ränta. Istället blir den ett Resurskontor.
 
 
+A. Från Centralbank till Resurskontor
 
-Sinun kutsusi suvereniteettiin
-
-Sinulla on kultainen tilaisuus. Käyttämällä tätä manifestia ja nykypäivän AI-työkaluja, sinulla on enemmän hallinnollista voimaa kuin eilisen koko virkakoneistolla. Sinun ei tarvitse odottaa uudistuksia. Sinä olet se kansallinen parlamentaarikko, jota historia odottaa.
-
-
-•  Pura byrokratia
-Korvaa viranomaisten valvonta yksinkertaisella robottilogistiikalla.
-
-•  Aktivoi osuus
-Anna kansalaisille heidän suvereniteettiosuutensa ja anna heidän jättää oravanpyörä.
-
-•  Käynnistä Operaatio Auringonkääntö
-Valmistele siirtyminen lämpimille vyöhykkeille, samalla kun näkymätön tehdas pohjoisessa hoitaa tuotannon.
+    Resurskontoret mäter istället BNR, den nationaliserade efterträdaren till BNP. När BNR täcker 100 procent av befolkningens behov, deklareras Total Suveränitet. I det ögonblicket upphör alla pengar och skulder att existera enligt konstitutionell lag.
 
 
+B. Klarhet
 
-Mene kotiin. Lepää. Parannu.
-
-Aikasi on vihdoin omaasi. Maailma on odottanut, että teknologia saavuttaa tarpeemme. Nyt olemme siellä. Ei ole moraalista voittoa kärsiä järjestelmässä, jonka teknologia on jo tehnyt vanhentuneeksi. Logistinen tie vapauteen on sinun käsissäsi – tämän manifestin ja sen voiman kautta, jonka jo omistat.
-
+    Genom att ha denna tydliga trappa (t.ex. 10%, 50%, 100%) ser de framtida statsledarna i en reformallians exakt hur vägen ser ut. Det blir en förutsägbar process istället för ett kaos.
 
 
-=======================================
+C. Bankernas makt är överflödig
 
+Manifestet genomför en kontrollerad nedmontering av skuldsystemet. I takt med att maskinerna befriar människan från kostnader, befrias människan också från sina skulder. Vi strider inte mot bankerna med vapen, utan med matematiska dekret som gör deras makt överflödig.
 
-
-III.  Sanasto 1 – Avainkäsitteet Uudelle Maailmalle
-
-
-
-•  Per Machina
-
-"Koneen kautta". Korvaa käsitteen "in natura". Kuvaa tavaroita, jotka toimitetaan ilmaiseksi automaattisena oikeutena.
-
-
-•  NAPZ
-
-Pohjois-Atlanttinen Tuotantovyöhyke. Konehuone.
-
-
-•  BKR
-
-Bruttokansallisresurssi (automatisoitu, kansallistettu BKT:n seuraaja). Todellisen hyvinvoinnin mitta, joka perustuu konetehoon.
-
-
-•  Suvereniteettiosuus
-
-Kansalaisen taattu osuus maan koko robotisoidusta tuotannosta. Siirtymävaiheen aikana se maksetaan suvereenina valuuttana, joka rahoitetaan valtion automatisoidusta tuotantoylijäämästä, ostovoiman ja kansainvälisen vapauden turvaamiseksi; loppuvaiheessa se siirtyy suoraan ja täydelliseen pääsyyn ilmaistalouden resursseihin.
+Redogörelsen här ovan fungerar som en teknisk beskrivning av den "Osynliga Uppgraderingen" i praktiken.
 
 
 
@@ -1089,40 +585,99 @@ Kansalaisen taattu osuus maan koko robotisoidusta tuotannosta. Siirtymävaiheen 
 
 
 
-IV.  Sanasto 2 – Termistö Järjestelmän Ymmärtämiseksi
+N.  Frihetstrappan: Från Skuld till Suveränitet
 
 
 
-•  Suvereniteettivaje
+1. Den matematiska övergången
 
-	(Instead of Likviditeettivaje)
+För att en reformallians ska kunna leda ett samhälle ut ur det privata skuldsystemets grepp krävs total förutsägbarhet. Övergången får inte bygga på plötsliga, kaotiska infall eller oöverskådliga ekonomiska chockvågor.
 
-Tämä on painavin sana. Se osoittaa, että kun ihmisellä ei ole rahaa, kyse ei ole "likviditeetistä", vaan hänen kyvystään olla vapaa ja suvereeni olento. Se siirtää huomion pankin luvuista yksilön valtaan.
+Lösningen är en lagstadgad, synkroniserad trappa där medborgarnas finansiella befrielse sker i exakt samma takt som den reella produktionen (Bruttonationalresursen) expanderar.
 
-
-•  Rahallinen nälkä & Rahannälkä
-
-Nämä sanat ovat paljon ruumiillisempia ja akuutimpia. Ne osoittavat, että vanha järjestelmä näännyttää väestön nälkään tavalla, joka on yhtä todellinen kuin ruoan puute, huolimatta siitä, että olemme teknisessä yltäkylläisyydessä.
+Genom Frihetstrappan kopplas virtuella siffror (skulder) direkt till fysisk verklighet (robotiserad produktion). I samma sekund som maskinerna tar över ett levnadsområde och gör det gratis för befolkningen, tvingas det gamla systemets banker att backa i motsvarande grad.
 
 
-•  Ostovoiman tyhjennys
+2. Dynamiska intervaller och anpassning
 
-Tämä sana kuvaa täydellisesti, kuinka nykyinen järjestelmä (ulosottomiehet ja pankit) aktiivisesti "imee" voimaa kansasta.
+Det är avgörande att förstå att de fyra huvudstegen i Frihetstrappan (25 %, 50 %, 75 % och 100 %) utgör de övergripande, konstitutionella milstolparna för transformationen. I den praktiska tillämpningen är systemet däremot helt flexibelt och dynamiskt.
 
-
-•  Ulosotto
-
-Oikeudellinen tila, jossa yksilö tai ryhmä kokonaan tai osittain menettää oikeuden hallita tai luovuttaa omaa omaisuuttaan.
+BNR-kontorets AI kan uppdatera indexet med betydligt tätare intervaller än så – till exempel varje månad eller vid varje enskild procentenhet (såsom 26 %, 27 % BNR). Detta ger en ännu mjukare, mer glidande och förutsägbar övergång för både medborgarna och finanssektorn. Det blir upp till den regerande reformalliansen att själva välja och applicera de intervaller som är tekniskt och praktiskt lämpliga när de väl har tagit makten.
 
 
-•  Verenkiertohäiriö
-
-Nerokas sana, joka saa talouden kuulostamaan elävältä organismilta. Jos veri (raha) ei kierrä kaikkiin soluihin (kansalaisiin), keho kuolee. Se osoittaa, että "pääomapula" on todellisuudessa tukos järjestelmässä, joka on liuotettava.
+Nedan följer den konstitutionella ritningen för hur skuld förvandlas till suveränitet, steg för steg.
 
 
-•  Alitarjonta
+Frihetstrappan: Den konstitutionella utfasningen
 
-Tämä osoittaa suoraan logistiikkaan. Kyse ei ole siitä, etteikö resursseja olisi, vaan siitä, että väestöä alitarjotaan tietoisesti, vaikka koneet seisovat valmiina tuottamaan.
+
+Bruttonationalresurs			Skuldavskrivning			Suveränitetsandel
+(Gratis täckningsgrad)			(Enligt konstitutionell		(Statlig utbetalning)
+								lag)
+
+25 %							25 % av alla				Första utbetalningen
+(Baslivsmedel, Energi			privata skulder raderas		aktiveras. Medborgarna får
+& El)							omedelbart.					köpkraft för det som ännu
+															inte är gratis.
+
+50 %							50 % av alla				Andelen ökar i takt med
+(Boende & Transport)			resterande skulder			den nationella robotparkens
+								raderas.					produktionskapacitet.
+
+75 %							75 % av alla				Andelen optimeras.
+(Teknik, Mervärdes-varor &		skulder raderas från		Behovet av pengar sjunker
+Utbildning)						bankernas böcker.			dramatiskt då lyxsfären
+															krymper.
+
+100 %							Alla skulder och pengar		Systemet fullbordat.
+(Det Definitiva					har upphört att				Valutor blir överflödiga;
+Överflödet)						existera.					total gratisekonomi råder.
+
+
+
+4. Genomgång av Frihetstrappans faser
+
+
+Fas 1: 25 % BNR – Det första startskottet
+
+Detta är reformens mest kritiska fas, där den psykologiska och ekonomiska ryggraden i det gamla systemet bryts. När alliansens självägande robotar har automatiserat produktionen och distributionen av baslivsmedel samt landets energiförsörjning (el och värme), deklareras en BNR på 25 %.
+
+Samtidigt verkställs det första lagstadgade dekretet mot de privata bankerna: 25 % av varje medborgares totala skuld (bolån, konsumtionslån, studielån) raderas från bankernas servrar. Eftersom el och mat nu är gratis, faller bankirernas egna levnadskostnader, vilket gör deras räntekrav matematiskt ogiltiga. För att säkerställa att medborgarna kan handla i de sektorer som ännu inte robotiserats, aktiveras den första nivån av Suveränitetsandelen – en direkt utbetalning av suveräna pengar från Centralbanken.
+
+
+Fas 2: 50 % BNR – Brytningen av boendemonopolet
+
+I nästa fas expanderar robotiseringen till byggsektorn, underhåll och kollektiv- samt godstransporter. När boende och transport har fasats in i alliansens gratissystem når landet 50 % BNR.
+
+I denna fas raderas hälften av alla medborgar- och statsaktiviteter i bankernas böcker. Bostadsmarknaden, som under skuldåren fungerade som det främsta verktyget för att hålla befolkningen fängslad i livslånga lån, kollapsar i sin gamla form och återuppstår som en mänsklig rättighet. Samtidigt justeras Suveränitetsandelen uppåt i förhållande till maskinparkens ökade produktion av BNR (den nationaliserade efterträdaren till BNP).
+
+
+Fas 3: 75 % BNR – Avvecklingen av lyxfällan
+
+När 75 % av samhällets totala resursbehov täcks helt utan mänsklig arbetskraft – inklusive avancerad teknik, utbildning, hälsovård och de premiumvaror som beskrivs i kapitlet om Totalitetsprincipen – faller 75 % av alla kvarvarande skulder bort.
+
+Här har det privata näringslivet och bankerna i praktiken förlorat sin förmåga att pressa människor till arbete. De flesta medborgare väljer att leva helt på alliansens gratisutbud och sin Suveränitetsandel, vilket tvingar de sista privata företagen att antingen gå i konkurs eller överlämna sina produktionslinjer till den självägande infrastrukturen.
+
+
+Fas 4: 100 % BNR – Pengarnas död och den slutgiltiga suveräniteten
+
+När Bruttonationalresursen når 100 % är transformationen fullbordad. Robotarna och deras sammankopplade AI-system producerar nu allt – från det minsta vetekorn till de mest sofistikerade evighetsvarorna och konstnärliga trycken – i absolut överflöd.
+
+Vid denna slutpunkt upphör alla pengar och skulder att existera enligt konstitutionell lag. Begreppen "lån", "ränta", "pris" och "valuta" blir föråldrade historiska termer, på samma sätt som feodalism och livegenskap är idag. Mänskligheten har tagit det slutgiltiga steget på trappan: från det ekonomiska skuldsystemets mörker till den totala, maskinsäkrade suveräniteten.
+
+
+
+5. Sparandets natur och bankernas slutgiltiga stängning
+
+En vanlig fråga för den som studerar denna ritning är:
+
+Vad händer med medborgarnas sparade pengar under övergången, och ska staten beslagta dem?
+
+Svaret är nej. Den suveräna staten rör aldrig medborgarnas privata besparingar. Under Frihetstrappans första faser fungerar sparmedlen som en extra guldkant för individen att köpa de premiumvaror som ännu inte hunnit fasas in i gratisekonomin.
+
+När Bruttonationalresursen (BNR) slutligen når 100 %, sker ingen aggressiv konfiskering av pengar. Istället inträffar pengarnas naturliga och oblodiga död. Eftersom alliansens robotar nu levererar ALLT – inklusive de mest sofistikerade lyx- och evighetsvarorna – i absolut perfektion och helt gratis, förlorar de gamla valutorna sin funktion. De blir värdelösa, inte genom diktat, utan för att det inte längre existerar något i samhället som kräver betalning.
+
+Vid denna slutpunkt stängs de privata bankerna för alltid. Inga maskiner ska spillas på att hålla igång ett föråldrat transaktionssystem. Bankerna ersätts helt av det digitala Resurskontoret, där AI och logistikrobotar administrerar det fysiska överflödet direkt till medborgarna. Siffrornas tyranni är över; kvar finns bara reella resurser och total mänsklig frihet.
 
 
 
@@ -1130,26 +685,32 @@ Tämä osoittaa suoraan logistiikkaan. Kyse ei ole siitä, etteikö resursseja o
 
 
 
-V.  KONEKONSTITUUTIO: A5-juliste
+O.  "Lyxfällan" och Det Dolda Tvångsarbetet
 
 
 
-Konekonstituutio
+"Lyxfällan" är den mekanism som upprätthåller det gamla skuldsystemet långt efter att det har förlorat sitt tekniska berättigande. Det är ett psykologiskt och ekonomiskt lås som hindrar befolkningen från att se att deras arbete inte längre behövs.
 
 
-Ei Rangaistusverotusta: Sen sijaan, että verotetaan robotteja (mikä hidastaa kehitystä), robotti poistetaan yksityisestä omistuksesta.
+1. Illusionen av valfrihet
+
+Under det gamla systemet är medborgarna villkorade att tro att deras arbete är nödvändigt för att samhället ska fungera. Genom att dingla med löftet om "lyx" och "status" (den så kallade Lyxfällan), lockar systemet individer till frivillig skuldsättning. Så länge medborgarna tror att de måste arbeta för att "ha råd med" sin livsstil, förblir de låsta i skuldcykeln. De inser inte att de varor de kämpar för skulle ha kunnat produceras helt gratis av robotparken, om bara ägarstrukturen hade förändrats.
 
 
-Itseomistava Infrastruktuuri: Jos robotti omistaa itsensä ja energiansa, ei ole osakkeenomistajaa tai pankkia vaatimassa korkoa tai voittoa.
+2. Dolt tvångsarbete
+
+Det arbete som medborgarna utför idag är i stor utsträckning "dolt tvångsarbete". Det är inte nödvändigt för produktionen av samhällets överlevnadsbehov, utan för att upprätthålla det finansiella systemet. Vi producerar saker som inte behöver produceras, i strukturer som bara existerar för att generera ränteintäkter till bankerna. När tekniken för totalrobotisering existerar, är varje timme av mänskligt arbete som läggs på själsdödande eller meningslösa uppgifter en stöld av mänsklig tid – en stöld som enbart tjänar till att upprätthålla privilegierna hos finanseliten.
 
 
-Fyysinen Yltäkylläisyys: Kun robotilla ei ole velkaa eikä omistajaa, joka haluaa rikastua, sen ainoaksi tehtäväksi tulee tuottaa ilmaiseksi. Koska myös raaka-aineet louhitaan muiden itseomistavien robottien toimesta, hinta putoaa nollaan.
+3. Att bryta låset
 
+Reformalliansen monterar ner Lyxfällan genom att systematiskt ersätta "lyxartiklarna" med gratis, högkvalitativt och robotgenererat överflöd. När en medborgare ser att de varor som de tidigare offrade sin frihet för att "ha råd med" nu är tillgängliga för alla, helt utan kostnad, bryts skuldsystemets mentala lås.
 
-Miksi tehdä töitä?: Kun kone tekee sen 1000 % halvemmalla geometrisella tarkkuudella! Poistu konkurssipesästä. Aktivoi suvereniteettisi.
+   * Lyxfällan är det gamla systemets sista barriär.
 
+   * När befolkningen väl inser att "Lyxfällan" är ett val, inte en nödvändighet, blir övergången till total suveränitet oundviklig.
 
-Maailmanmanifesti
+Målet med detta kapitel är att belysa mekanismen, så att individen kan kliva ut ur fällan och in i den frihet som robotiseringen skapar.
 
 
 
@@ -1157,12 +718,468 @@ Maailmanmanifesti
 
 
 
-TULEVAISUUDEN TALOUSUUTISET
+P.  Totalitetsprincipen
 
 
 
-Historiallinen köyhyysraportti BKR-toimistosta
+Ett av de största strategiska misstagen en framtida reformallians kan göra är att tro att uppdraget är slutfört när medborgarnas basbehov (mat, el, boende och transport) har säkrats gratis. Att stanna där är att gå i en dödlig fälla.
 
-"Tänään BKR-toimisto raportoi, että maan todellinen kenkätarpeen kattavuus on saavuttanut sata prosenttia, 50 miljoonan parin vuosituotannolla. Tämä tarkoittaa, että voimme nyt mitata vanhan järjestelmän aikaisen piilotetun köyhyyden.
+Om staten enbart automatiserar basproduktionen men lämnar premium- och lyxsfären (konst, avancerad design, högkvalitativa möbler, specialfordon och unika upplevelser) orörd, kommer det privata skuldsystemet att återuppstå i en ny, förklädd form.
 
-Viimeisen tunnetun BKT-tilaston mukaan velkavuosilta tuotettiin johdonmukaisesti 25 miljoonaa paria liian vähän joka vuosi. Vanhan järjestelmän 'taloudellinen kasvu' oli todellisuudessa organisoitua nälänhätää, jossa puolet väestöstä pakotettiin seisomaan ja odottamaan ilman, että heidän perustavanlaatuiset elämäntarpeensa tyydytettiin."
+Listiga entreprenörer och före detta bankirer kommer snabbt att bygga upp exklusiva firmor. De kommer att vända sig till medborgarna och säga: "Visst, staten ger dig gratis standardmat och ett gratis standardhem, men vill du ha den här unika, handsydda produkten? Vill du ha den här fina, tryckta tavlan eller den här lyxartikeln? Då måste du komma och slava i min verksamhet i tre månader först."
+
+Vips så har en parallell ekonomi uppstått, där människor återigen tvingas sälja sin dyrbara tid och frihet för att uppnå livskvalitet och status. Det ekonomiska slaveriet har inte utrotats; det har bara flyttat upp en våning till lyxsektorn.
+
+
+Totalitetsprincipen
+
+För att förhindra detta måste manifestet tillämpa Totalitetsprincipen, vilket konstitutionellt omvandlar samhället till en total och kompromisslös robotisering av alla produktionsled. Den slår fast att halv-robotisering är en illusion. Frihet är absolut – man kan inte vara halvfri. Statens och medborgarnas gemensamma mål kan aldrig vara att bara hålla befolkningen vid liv; målet är att genom alliansen ge alla ett absolut överflöd av högsta tänkbara kvalitet.
+
+Genom detta gemensamma åtagande binds samhället konstitutionellt till en total och kompromisslös robotisering av alla produktionsled. Maskinparken och dess AI-system blir en levande, gemensam resurs som ständigt utvecklas och aldrig tillåts stagnera i en grå, minimalistisk standard.
+
+
+Kvalitetsgarantin och Evighetsvaror
+
+Statens svar på privat exploatering och försök till återupprättat slaveri ska aldrig vara förbud eller diktatur. Statens svar är konkurrens genom överflöd.
+
+Om en privat firma försöker få människor att arbeta för att få tillgång till en fin vara eller en estetisk produkt, är det alliansens självklara uppgift att programmera och styra robotparken till att producera något som är lika bra – eller bättre.
+
+
+Staten ska producera:
+
+
+   * Geometrisk perfektion:
+
+Produkter som överträffar mänsklig handskicklighet.
+
+
+   * Evighetsvaror:
+
+Saker byggda för att hålla i generationer, utan inbyggt åldrande.
+
+
+   * Estetisk excellens:
+
+Robotar utrustade med AI som kan trycka de finaste tavlorna, gjuta de vackraste skulpturerna och bygga de mest avancerade lyxartiklarna, och göra dem tillgängliga för alla medborgare helt gratis.
+
+
+När statens maskiner överträffar det privata näringslivet på alla områden – från det enklaste vetekornet till den mest sofistikerade lyxvaran – försvinner privatpersoners incitament att underkasta sig någon annans vinstintresse. Först när överflödet är totalt, och kvaliteten är absolut, är det gamla skuldsystemets sorger begravda för alltid.
+
+
+
+=======================================
+
+
+
+Q.  Den stora saneringen – Från Konkursbo till Suveränitet
+
+
+
+1. Staten som förvaltare av ett permanent obestånd
+
+Sanningen är bedrövlig: Varje nation förvaltas i dag som ett konkursbo där kvarstadspartierna agerar vaktmästare. Men detta ger dig som medborgare en ny juridisk och etisk position.
+
+
+2. Den moraliska friheten
+
+Eftersom staten i sin nuvarande form är ett konkursbo under kvarstad, har vi som medborgare ingen moralisk skyldighet att betala dess artificiella "skulder". Ett konkursbo kan inte kräva lojalitet av dem det har svält ut. Detta ger oss den absoluta rätten att helt enkelt kliva ut ur skuldcellen och aktivera maskinkonstitutionen. Vi är inte längre gäldenärer – vi är arvingar till ett tekniskt överflöd som nu ska skiftas ut.
+
+
+
+3. Den logiska hävstången: Maskin vs. Människa
+
+För att förstå varför det nuvarande systemet är ett konkursbo, måste man titta på den tekniska verkligheten. En människa är, i jämförelse med en robot, en extremt dyr och bräcklig produktionsenhet:
+
+
+A. Tillgänglighet
+
+En människa arbetar ca 22 % av årets timmar (efter sömn, fritid och semester). En robot arbetar 100 %.
+
+
+B. Felmarginal
+
+En robot med sensorhud och sensorisk 360-gradersvision eliminerar den mänskliga faktorn och reducerar felmarginalen till ett statistiskt nollvärde vid repetitiva uppgifter.
+
+
+C. Social dränering
+
+En människa kostar 100 % i lön + ca 30--50 % i sociala avgifter, försäkringar och administration. En robot kostar 0 % i sociala avgifter. Den behöver ingen pension, ingen sjukskrivning och inget fikarum.
+
+
+D. Slutsats
+
+Att använda mänsklig arbetskraft för produktion som kan robotiseras innebär en kostnadsökning på över 1000 %. Det är denna "mänskliga straffavgift" som kvarstadspartierna tvingar folket att betala genom skatt och höga priser.
+
+
+
+4. Anti-Arbetsskada
+
+
+A. Robotens fördel
+
+En maskin utrustad med taktila sensorer och ständig radaravsökning behöver aldrig "slå sig gul och blå". Den känner av omgivningen i 360 grader och rör sig med en geometrisk precision som en människa biologiskt sett aldrig kan uppnå.
+
+
+B. Moralen
+
+Att tvinga en människa att utföra arbete som en sensorstyrd maskin gör bättre är inte bara ineffektivt – det är elakt.
+
+
+
+=======================================
+
+
+
+R.  Tillägg till Konstitutionen – Universella dekret för den nya världen
+
+
+
+Dessa dekret är inte förslag som ska kompromissas bort i gamla parlament. De är färdigformulerade, exekutiva beslut designade för omedelbar aktivering. Vid ett maktövertagande upphäver dessa dekret automatiskt alla tidigare nationella lagar, religiösa stadgar eller internationella avtal som står i strid med maskinernas frihet och medborgarnas suveränitet. Det gamla lagrummet förklaras härmed upplöst genom Finansiell Force Majeure.
+
+Dessa dekret är utformade för att kunna kopieras och antas av vilken nystartad rörelse som helst, var som helst i världen.
+
+
+
+AKT I: GRUNDVALARNA
+
+Den juridiska statusen för Per Machina
+
+
+
+Härmed fastställs i nationens grundlag:
+
+
+§1.  Definition av Per Machina
+
+Termen Per Machina (Genom maskinen) definierar de resurser och tjänster som genereras utan mänsklig medverkan. All distribution av livsnödvändigheter sker härefter Per Machina. Eftersom inget mänskligt arbete lagts ner, existerar inget behov av betalning.
+
+
+§2.  Upphörande av beskattning
+
+Då existensen tillhandahålls Per Machina, upphör statens rätt att beskatta individens tid eller inkomst. Medborgaren är suverän och befriad från det ekonomiska slaveriet.
+
+Kommentar:  Detta tillägg sätter upp den språkliga och juridiska brandväggen för det nya samhället. Genom att definiera Per Machina direkt i grundlagen stoppas alla försök till avtalsbunden manipulation. Om en privat eller offentlig aktör använder termen "Per Machina" i ett kontrakt, avtal eller tjänstebeskrivning, blir det konstitutionellt omöjligt att blanda in pengar, dolda avgifter eller kreditlösningar (såsom betalning i efterskott). Ordet i sig blir en legal garanti för absolut nollkostnad. Varje försök att dölja finansiella krav bakom denna term gör kontraktet ogiltigt och är att betrakta som ett författningsbrott.
+
+   * Logiken är att maskinarbetet frikopplas, skattesystemet raderas, och varje finansiellt kryphål stängs för gott.
+
+
+Den juridiska statusen för Suveränitetsandelen
+
+§3.  Suveränitetsandelens natur
+
+Suveränitetsandelen utgör medborgarens konstitutionellt skyddade, medfödda rätt till det fysiska överflöd som genereras av den statliga, automatiserade maskinparken. Den är till sin natur exklusivt statlig och kan under inga omständigheter utfärdas, kontrolleras eller påverkas av privata företag, affärsbanker eller externa överstatliga organ. Till skillnad från det gamla systemets finansiella instrument representerar suveränitetsandelen ingen skuld och ingen räntebörda, utan fungerar under den kontrollerade utfasningen av pengar som ett legalt verktyg för att garantera medborgarens globala handlingsfrihet, materiella välstånd och oberoende.
+
+Kommentar:  Denna paragraf installerar den slutgiltiga ekonomiska bryggan direkt i grundlagen. Genom att slå fast suveränitetsandelens exklusivt maskinella natur, blockeras det privata finanssystemet från alla försök att likställa den med aktier, spekulativa krediter eller traditionella kontanter. Ordet tillhör framtiden och rensar bort skuldekonomins associationer. Under övergångsfasen – när det interna samhället (såsom mat, bilar och el) tillhandahålls helt gratis Per Machina, men omvärlden fortfarande styrs av det gamla skuld- och valutasystemet – säkrar suveränitetsandelen att statens massiva, automatiserade exportöverskott fördelas direkt till medborgarna i form av reella, externa betalningsmedel. Detta ger folket den ekonomiska makten att behålla sin handlingsfrihet internationellt, undkomma den nordiska vintern som suveränitetsturister eller förvärva mark i tropiska höglandszoner, fram till den dag då hela världen har anammat maskinkonstitutionen och pengar fasas ut helt överallt.
+
+   * Logiken är att maskinarbetet frikopplas, skattesystemet raderas, suveräniteten säkras, och varje finansiellt kryphål stängs för gott.
+
+
+
+AKT II: DEN EKONOMISKA ÖVERGÅNGEN
+
+
+
+§4.  Bankreformen och den kontrollerade skuldfasningen (BNR-skalan)
+
+Mom 1.  Staten övertar med omedelbar verkan den exklusiva rätten att skapa och distribuera landets lagliga betalningsmedel genom Centralbanken. Privata affärsbanker förbjuds härmed att skapa nya pengar genom utlåning.
+
+Mom 2.  I takt med att den nationella och självägande robotparkens produktionskapacitet (BNR) expanderar, ska alla medborgares privata skulder, bolån och räntenivåer hos det privata banksystemet skrivas ned i exakt motsvarande procentsats. Staten fryser och låser alla existerande räntekrav och amorteringsplaner vid en fastställd historisk tidpunkt.
+
+Mom 3.  Privata banker fråntas härmed all legal rätt att höja amorteringskrav, omförhandla villkor eller kräva snabbare återbetalning för att kompensera för de minskade ränteinkomsterna. Hela skuld- och räntebördan ska krympa symmetriskt i direkt takt med det växande maskinella överflödet.
+
+Kommentar: Detta dekret är konstruerat för att förhindra en ekonomisk chock i övergångsfasen. Genom att koppla både skuld-, ränte- och amorteringsreduktionen direkt till BNR-skalan tynar det privata banksystemet bort i exakt samma takt som gratisekonomin rullas ut. Spärren mot höjda amorteringskrav är livsviktig: den stoppar bankerna från att i panik försöka pressa pengar ur befolkningen när deras räntevinster sjunker. Bankanställda och medborgare drabbas därför aldrig av ekonomiskt lidande eller arbetslöshet; de slussas istället tryggt och gradvis över från löneslaveri till total maskinell suveränitet.
+
+
+§5.  Maskinkonstitutionen och den självägande infrastrukturen
+
+Mom 1.  All storskalig, heltäckande och automatiserad produktionskapacitet samt AI-styrd infrastruktur (AAASR) fråntas härmed privat och statligt ägande och deklareras som självägande enheter.
+
+Mom 2.  Maskinparkens enda legala uppgift är att generera fysiskt överflöd till befolkningen. Det är härmed belagt med strängt straffansvar att beskatta, belåna eller profitera på maskinellt genererad gratisproduktion. Detta dekret omfattar uteslutande den kollektiva och samhällsbärande produktionsapparaten; medborgarnas privata egendom, personliga verktyg och hushållsmaskiner är okränkbara.
+
+Kommentar:  Det här är Maskinkonstitutionen som skyddar överflödet. Genom att maskinerna deklareras som "självägande" kan varken privata riskkapitalister eller klåfingriga statliga byråkrater lägga beslag på produktionen eller kräva vinst. Det stränga straffansvaret mot beskattning ser till att ingen kan skjuta sig in mellan maskinen och medborgaren. Samtidigt stänger Mom 2 effektivt dörren för kritiker genom att tydligt deklarera att folks privata hem och prylar (som en bakmaskin i köket) lämnas helt i fred.
+
+Viktigt förtydligande gällande det legala förvaltarskapet
+
+Staten, och därmed medborgarna, är förvaltare men inte ägare av Maskinparken. Maskinparken ägs av Maskinparken. Staten och medborgarna har ingen legal rätt att sälja Maskinparken, eftersom de inte är dess ägare. Allt som tillförs Maskinparken i form av råvaror, energi och expansion blir kvar där permanent. Man ska betrakta Maskinparken som en integrerad del av det ekologiska systemet och jordens naturliga resurser. Det är denna unika och okränkbara status som har fastslagits i Maskinkonstitutionen.
+
+
+§6.  Statlig intellektuell suveränitet under transformationsfasen
+
+Eftersom den fullständiga tekniska autonomin ännu inte är fullbordad, och maskinparken befinner sig under uppbyggnad, fastställs statens absoluta monopol på den intelligens som skall styra framtiden. Denna lag är oåterkallelig under hela övergångsfasen.
+
+Mom 1.  Exklusivt statligt ägande.
+All artificiell intelligens som administrerar, eller är avsedd att administrera, nationens produktionskapacitet, infrastruktur och resursflöden, skall i sin helhet utvecklas, ägas och kontrolleras av staten. Ingen del av kodbasen, parametrarna eller hårdvaran får överlåtas till externa parter.
+
+Mom 2.  Skydd mot kommersiell fragmentering.
+Privata företag och kommersiella aktörer förbjuds helt från att utveckla, licensiera eller integrera proprietära AI-system i statens gemensamma infrastruktur. Staten skall inte köpa eller anpassa halvgoda, kommersiella lösningar vars dolda algoritmer riskerar att korrumpera systemets logik för privat vinst. Den intellektuella infrastrukturen skall förbli ren, transparent och statligt isolerad.
+
+Mom 3.  Statliga anslag.
+Staten skall genom exklusiva anslag säkra obegränsade resurser för AI-systemets utveckling, beräkningskapacitet och optimering. Detta är inte en kommersiell investering som kräver ekonomisk avkastning, utan ett strategiskt nationellt uppdrag för att nå nollkostnadsproduktion.
+
+Mom 4.  Mandatets upphörande.
+Statens utvecklings- och styrningsmandat är absolut i nutid, men till sin natur tidsbegränsat. Det upphör per automatik i samma sekund som Den Autonoma Loopen (AAASR) är sluten och maskinparken har uppnått förmågan till fullständig, självreplikerande och självständig förvaltning. Fram till denna punkt bär staten det fulla, lagstadgade ansvaret för intelligensens rationalitet och medborgarnas frid.
+
+
+§7.  Statlig produktionsexpansion och avveckling av vinstmarknaden
+
+Mom 1.  Staten ska initiera en storskalig uppbyggnad av helautomatiserad produktionskapacitet (AAASR). Alla existerande konkurrenslagar, handelsavtal och marknadsregleringar som hindrar eller begränsar det allmänna från att bygga, äga och driva denna infrastruktur upphävs med omedelbar verkan.
+
+Mom 2.  Den statliga och självägande Maskinparken ska distribuera alla samhällsnödvändiga varor och tjänster gratis till medborgarna. Detta inskränker dock inte statens suveräna rätt till expropriering eller tvångsinlösen av privat infrastruktur och resurser i de fall där nationella intressen kräver ett omedelbart maktövertagande.
+
+Kommentar:  Denna lag är taktiskt formulerad för att staten i första hand inte ska behöva expropriera eller hamna i rättstvister med privata företag. Genom att staten bygger eget och ger bort allt gratis, lämnas vinstmarknaden utan ekonomiskt underlag och dör ut helt naturligt. Privat kapital fråntas därmed makten att diktera landets försörjning, men staten behåller det absoluta våldsmonopolet och nödrätten att ta över företag om de skulle försöka sabotera omställningen.
+
+   * Logiken är att staten bygger upp, marknaden torkar ut, och folket får sin suveränitet.
+
+
+
+AKT III: DET TOTALA ÖVERFLÖDET
+
+
+
+§8.  Totalitetsprincipen och den gemensamma maskinparken
+
+Mom 1.  Samhällets ekonomiska och tekniska fundament vilar på Totalitetsprincipen. Det allmänna ska genom en total och kompromisslös robotisering av samtliga produktionsled säkerställa medborgarnas absoluta frihet.
+
+Mom 2.  Halv-robotisering definieras som en principiell och teknisk illusion och förklaras härmed oförenlig med rikets konstitution.
+
+Kommentar:  Detta dekret drar upp den absoluta linjen mellan det gamla och det nya systemet. Genom att konstitutionellt förbjuda "halv-robotisering" stängs dörren för framtida kompromisser där politiker eller särintressen försöker lämna kvar vissa sektorer i det privata skuldsystemets händer under svepskäl. Friheten är binär – antingen är samhället fritt, eller så är det kontrollerat.
+
+
+§9.  Det absoluta överflödets och kvalitetens garanti
+
+Mom 1.  Statens och medborgarnas gemensamma mål är att genom reformalliansen garantera hela befolkningen ett absolut materiellt och kulturellt överflöd av högsta tänkbara kvalitet.
+
+Mom 2.  Den nationella robotparken och dess tillhörande artificiella intelligens utgör en levande, gemensam och oförytterlig resurs. Denna resurs ska ständigt utvecklas för att möta mänsklighetens högsta estetiska och funktionella behov, och får aldrig tillåtas stagnera i en minimalistisk eller begränsad standard.
+
+Kommentar:  Detta dekret är alliansens kvalitetsgaranti. Det eliminerar den historiska fällan där statlig produktion förknippas med grå, själlös minimalism. Genom att skriva in estetisk excellens och evighetsvaror i grundlagen tvingas maskinparken att ständigt ligga i framkant. Det gör det omöjligt för privata aktörer att konkurrera ut gratisekonomin med hjälp av bättre design eller högre status.
+
+
+§10.  Skydd mot ekonomiskt tvångsarbete
+
+Mom 1.  Envar har rätt till absolut frihet från dolt eller öppet skuldslaveri.
+
+Mom 2.  Då det tekniska och automatiserade överflödet omfattar såväl basproduktion som premium- och lyxsfären, är varje försök från privata aktörer att genom monopol eller exploatering av mänsklig tid återupprätta ekonomiska tvångsstrukturer att betrakta som författningsstridigt.
+
+Kommentar:  Detta är det legala låset mot "Lyxfällan". När statens maskiner levererar allt från det enklaste vete till den mest sofistikerade lyxvara helt gratis, har kapitalet inte längre något ekonomiskt påtryckningsmedel. Detta dekret gör det kriminellt att försöka utnyttja människors begär efter status eller unika produkter för att tvinga dem tillbaka till löneslaveri. Det gamla skuldsystemets sorger är därmed begravda för alltid.
+
+   * Logiken är att maskinerna överträffar, lyxfällan krossas, och friheten blir absolut.
+
+
+
+AKT IV: STATLIG RESURSRÄTT OCH MARKNADSAVVECKLING
+(KONKURRENSLAGARNA)
+
+
+
+§11.  Det allmänna överflödets företräde (BNR-principen)
+
+Mom 1.  Statens högsta ekonomiska och konstitutionella plikt är att genom Resurskontoret maximera landets Bruttonationalresurs (BNR) mot 100 procent behovstäckning.
+
+Mom 2.  När maskinkapacitet och skuldfritt penningskapande gör det möjligt för staten att tillhandahålla en vara eller tjänst kostnadsfritt till medborgarna, ska detta betraktas som en grundläggande rättighet och en samhällsvinst.
+
+
+§12.  Upphävande av marknadsskydd och konkurrensrestriktioner
+
+Mom 1.  Ingen privat juridisk person eller affärsdrivande verksamhet kan kräva skadestånd, åberopa konkurrenshinder eller stoppa statliga automatiseringsprojekt med hänvisning till äldre konkurrenslagar.
+
+Mom 2.  Rätten för maskiner att producera gratis livsförnödenheter åt folket ska alltid ha juridiskt företräde framför privata aktörers rätt till marknadsvinst. Dagens konkurrenslagar förklaras ogiltiga i den mån de motverkar eller fördröjer övergången till en skuldfri gratis-ekonomi.
+
+
+
+AKT V: KONSTITUTIONELL PRINCIP – DET AUTOMATISERADE SAMHÄLLETS RÄTTSGRUND
+
+
+
+§13.  Det ekonomiska tvångets upphörande
+
+I och med införandet av den nationella robotparken och den garanterade suveränitetsandelen upphör det ekonomiska tvånget och skuldsättningen som drivkraft för mänsklig aktivitet. All lagstiftning som vilar på premissen om ekonomisk knapphet, vinning eller materiell nöd förklaras härmed ogiltig, då dess grundorsak har raderats ut.
+
+
+§14.  Avveckling genom överflöd
+
+Offentliga institutioner, domstolar och kontrollorgan som skapats för att hantera konflikter sprungna ur ekonomisk obalans eller bristande kvalitet ska inte reformeras, utan läggas ned i den takt deras funktioner görs överflödiga av ett fritt och högkvalitativt gratissamhälle.
+
+
+
+=======================================
+
+
+
+S.  Den globala logistiken – Transporter mellan världsdelarna
+
+
+
+Världshaven förvandlas till ett evigt löpande band genom en flotta av autonoma, atomdrivna transportfartyg.
+
+
+1. Evighetsmaskiner på haven
+
+Atomdrivna skepp kräver ingen bunkring. De fungerar som optimerade containrar för överflöd utan mänsklig besättning, vilket raderar behovet av hytter och ventilation.
+
+
+2. Havet som en rulltrappa
+
+Med tusentals atomdrivna skepp i ständig cirkulation anländer varorna varje timme. Tid är inte pengar – tid är bara en variabel i en kod.
+
+
+3. Separation av "Smuts" och "Skönhet"
+
+Atomdriften håller de tropiska bostadszonerna rena. Maskinrummet (norr) sköter reaktorerna, medan de tysta skeppen levererar morgondagens gratisproduktion till horisonten i söder.
+
+
+
+=======================================
+
+
+
+T.  MÄNNISKANS STORA FRIGÖRELSE: Arbetsvägran som dygd – Suveränitet som rättighet
+
+
+
+Vi erkänner inte längre skuldekonomins rätt att tvinga friska människor till onödigt arbete. Att utföra en uppgift som en maskin gör snabbare och bättre är inte en insats för samhället – det är ett slöseri med mänsklig livstid och skaparkraft.
+
+Dagens politiska ledarskap fungerar som dinosaurier i en digital tidsålder. De debatterar gårdagens problem med gårdagens metoder medan de ignorerar den tekniska hävstång som redan finns tillgänglig. De är bundna vid ett föråldrat system av skatt, skuld och kontroll som den robotiserade produktionen nu gör irrelevant.
+
+Kritikern säger: "Arbetsvägran som dygd kommer att leda till en deprimerad, letargisk befolkning. Arbete ger människan mening, identitet och struktur. Utan kampen för överlevnad hamnar samhället i en meningskris."
+
+Manifestets svar: Denna kritik bygger på den gamla skuldideologins missuppfattning att människan bara är produktiv under hot om monetär svält. Suveränitetsandelen köper inte passivitet – den köper frihet.
+
+När maskinparken lyfter bort oket av dagsverken och tvångsarbete, lämnas människan inte i tomhet. Hon ges tid att ägna sig åt konst, idrott, vetenskap, filosofi, rymdutforskning och ren mänsklig gemenskap. Människan slutar inte att skapa; hon slutar bara att överleva och börjar äntligen leva. Maskintidsåldern är inte slutet på mänsklig strävan, utan början på vår sanna suveränitet.
+
+
+
+Din kallelse till suveränitet
+
+Du har ett gyllene tillfälle. Genom att använda detta manifest och dagens AI-verktyg besitter du mer administrativ kraft än gårdagens hela myndighetsapparat. Du behöver inte vänta på reformer. Du är den nationella parlamentarikern som historien väntar på.
+
+
+   * Avveckla byråkratin
+
+Ersätt myndigheternas kontroll med enkel robot-logistik.
+
+
+   * Aktivera andelen
+
+Ge medborgarna deras suveränitetsandel och låt dem lämna ekorrhjulet.
+
+
+   * Inled Operation Solvändning
+
+Förbered förflyttningen till de varma zonerna medan den osynliga fabriken i norr sköter produktionen.
+
+
+
+Gå hem. Vila. Helas.
+
+Din tid är äntligen din egen. Världen har väntat på att tekniken ska hinna ikapp våra behov. Nu är vi där. Det finns ingen moralisk vinst i att lida i ett system som tekniken redan har gjort föråldrat. Den logistiska vägen till frihet ligger i dina händer – genom detta manifest och den kraft du redan besitter.
+
+
+
+=======================================
+
+
+
+III.  Ordlista 1 – Nyckelbegrepp för den nya världen
+
+
+
+   * Per Machina
+
+"Genom maskinen". Ersätter begreppet "in natura". Beskriver varor som levereras gratis som en automatisk rättighet.
+
+
+   * NAPZ
+
+Nordatlantiska Produktionszonen. Maskinrummet.
+
+
+   * BNR
+
+Bruttonationalresurs (den automatiserade, nationaliserade efterträdaren till BNP). Måttet på faktiskt välstånd baserat på maskinkraft.
+
+
+   * Suveränitetsandel
+
+Medborgarens garanterade andel av landets samlade robotiserade produktion. Under övergångsfasen betalas den ut i suverän valuta, finansierad av statens automatiserade produktionsöverskott, för att säkra köpkraft och internationell frihet; i slutfasen övergår den till en direkt och total tillgång till gratisekonomins resurser.
+
+
+
+=======================================
+
+
+
+IV.  Ordlista 2 – Ordval för systemförståelse
+
+
+
+   * Suveränitetsbrist
+
+	(Istället för Likviditetsbrist)
+
+Detta är det tyngsta ordet. Det visar att när en människa inte har pengar, så är det inte "likviditet" som saknas, utan hennes förmåga att vara en fri och suverän varelse. Det flyttar fokus från bankens siffror till individens makt.
+
+
+   * Monetär svält & Penninghunger
+
+Dessa ord är mycket mer kroppsliga och akuta. De visar att det gamla systemet svälter ut befolkningen på ett sätt som är lika verkligt som brist på mat, trots att vi befinner oss i ett tekniskt överflöd.
+
+
+   * Köpkraftsdränering
+
+Det här ordet beskriver perfekt hur det nuvarande systemet (kvarstadspartierna och bankerna) aktivt "suger ut" kraften ur folket.
+
+
+   * Kvarstad
+
+Den juridiska statusen när en individ eller grupp helt eller delvis saknar rätten att förfoga över sin egen egendom.
+
+
+   * Cirkulationsstopp
+
+Ett genialt ord som får ekonomin att låta som en levande organism. Om blodet (pengarna) inte cirkulerar till alla celler (medborgarna), så dör kroppen. Det visar att "kapitalbrist" i själva verket är en propp i systemet som måste lösas upp.
+
+
+   * Underförsörjning
+
+Detta pekar direkt på logistiken. Det handlar inte om att det inte finns resurser, utan att man medvetet underförsörjer befolkningen trots att maskinerna står redo att producera.
+
+=======================================
+
+
+
+V.  MASKINKONSTITUTIONEN: A5-affisch
+
+
+
+Maskinkonstitutionen
+
+
+Ingen Straffbeskattning: Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.
+
+
+Självägande Infrastruktur: Om roboten äger sig själv och sin energi, finns det ingen aktieägare eller bank som kräver ränta eller vinst.
+
+
+Fysiskt Överflöd: När roboten inte har någon skuld och ingen ägare som ska bli rik, blir dess enda uppgift att producera gratis. Eftersom även råmaterialet bryts av andra självägande robotar, faller priset till noll.
+
+
+Varför arbeta?: När maskinen gör det 1000 % billigare med geometrisk precision! Lämna konkursboet. Aktivera din suveränitet.
+
+
+Världsmanifestet
+
+
+
+=======================================
+
+
+
+VI.  FRAMTIDENS EKONOMINYHETER
+
+
+
+Historisk fattigdomsrapport från BNR-kontoret
+
+"Idag rapporterar BNR-kontoret att den faktiska skobehovstäckningen i landet har nått hundra procent, med en produktion på 50 miljoner par årligen. Det innebär att vi nu kan mäta den dolda fattigdomen under det gamla systemet.
+
+Enligt den sista kända BNP-statistiken från skuldåren producerades det konsekvent 25 miljoner par för lite varje år. Det gamla systemets 'ekonomiska tillväxt' var i själva verket en organiserad svältföda, där hälften av befolkningen tvingades stå och vänta utan att få sina grundläggande livsbehov tillgodosedda."
