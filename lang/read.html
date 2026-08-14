@@ -74,41 +74,42 @@
         }
 
         .manifesto-table {
-            width: 100%;
-            max-width: 700px;
-            margin: 20px auto;
-            border-collapse: collapse;
-            font-family: 'Gelasio', 'Georgia', serif;
-            font-size: clamp(10pt, 2vw, 12pt);
-            text-align: left;
-            table-layout: fixed;
-        }
-        .manifesto-table th {
-            font-weight: bold;
-            padding: 10px 12px;
-            border: 1px solid #ccc;
-            text-align: center;
-            width: 33.33%;
-            word-wrap: break-word;
-            white-space: normal;
-            overflow-wrap: break-word;
-        }
-        .manifesto-table td {
-            padding: 10px 12px;
-            border: 1px solid #ccc;
-            vertical-align: top;
-            word-wrap: break-word;
-            white-space: normal;
-            overflow-wrap: break-word;
-        }
-        .manifesto-table td:first-child {
-            font-weight: bold;
-            text-align: center;
-            width: 33.33%;
-            word-wrap: break-word;
-            white-space: normal;
-            overflow-wrap: break-word;
-        }
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(10pt, 2vw, 12pt);
+    text-align: left;
+    table-layout: fixed;
+}
+.manifesto-table th {
+    font-weight: bold;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 33.33%;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    background-color: #efefef;  /* ← NY: Väldigt ljusgrå */
+}
+.manifesto-table td {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+.manifesto-table td:first-child {
+    font-weight: bold;
+    text-align: center;
+    width: 33.33%;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
 
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
