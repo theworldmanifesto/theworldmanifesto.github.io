@@ -2,7 +2,6 @@
    MENU.CSS - Global meny för The World Manifesto
    ============================================================ */
 
-/* --- Grundläggande menycontainer --- */
 .site-nav {
     position: fixed;
     top: 10px;
@@ -10,7 +9,7 @@
     right: 0;
     margin: 0 auto;
     max-width: 800px;
-    padding: 5px 8px;
+    padding: 5px 12px;
     z-index: 300;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
@@ -22,16 +21,23 @@
 .nav-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+/* Titeln till vänster (större font) */
+.site-title {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+    padding-left: 4px;
+    white-space: nowrap;
+    letter-spacing: -0.2px;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-}
-
-/* --- Viktig: Håll menyn synlig när musen är över hela dropdown-området --- */
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .dropbtn {
@@ -52,14 +58,15 @@
     border-color: #999;
 }
 
-/* --- Rullgardinsmeny (dropdown) --- */
+/* Rullgardinsmenyn (Dold tills man hovrar/klickar) */
 .dropdown-content {
     display: none;
     position: absolute;
-    left: -10px;
+    right: 0;
+    left: auto;
     top: 100%;
-    margin-top: 0;           /* ← ÄNDRAT: 4px → 0 */
-    padding-top: 4px;        /* ← NYTT: osynlig brygga */
+    margin-top: 0;
+    padding-top: 4px;
     background-color: #fff;
     min-width: 220px;
     border: 1px solid #e5e5e5;
@@ -67,11 +74,6 @@
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     overflow: hidden;
     z-index: 999;
-}
-
-/* ← NYTT: Håll menyn öppen när musen är över själva menyn */
-.dropdown-content:hover {
-    display: block;
 }
 
 .dropdown-content a {
@@ -92,51 +94,44 @@
     background-color: #f7f7f7;
 }
 
-/* --- Desktop: hover öppnar menyn --- */
+/* Desktop: Visa vid hover */
 @media (min-width: 601px) {
     .dropdown:hover .dropdown-content {
         display: block;
     }
 }
 
-/* --- Mobil: klick öppnar menyn --- */
+/* Mobiljusteringar */
 @media (max-width: 600px) {
     .site-nav {
         left: 10px;
-        right: auto;
-        margin: 0;
-        max-width: none;
+        right: 10px;
+        margin: 0 auto;
         top: 6px;
-        padding: 4px 6px;
+        padding: 4px 8px;
     }
-    
+
+    .site-title {
+        font-size: 18px;
+    }
+
     .dropbtn {
-        font-size: 15px;
+        font-size: 14px;
         padding: 5px 10px;
     }
-    
+
     .dropdown-content {
-        position: static;
-        left: 0;
+        position: absolute;
+        right: 0;
+        left: auto;
         margin-top: 6px;
-        padding-top: 0;      /* ← Återställ på mobil */
-        box-shadow: none;
-        width: 100vw;
+        padding-top: 0;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        width: 80vw;
         max-width: 280px;
     }
-    
+
     .dropdown.active .dropdown-content {
         display: block;
     }
-}
-
-/* ============================================================
-   SPECIAL: tropics.html - menyn i vänstra hörnet
-   ============================================================ */
-body.tropics-page .site-nav {
-    left: 10px;
-    right: auto;
-    margin: 0;
-    max-width: none;
-    transform: none;
 }
