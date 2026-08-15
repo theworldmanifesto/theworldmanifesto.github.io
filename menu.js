@@ -16,20 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- SKAPA MENYN ---
     const menuHTML = `
         <div class="site-nav">
-            <div class="nav-container">
-                <span class="site-title"><a href="${base}index.html" style="text-decoration: none; color: inherit;">The World Manifesto</a></span>
-                <div class="dropdown" id="homeDropdown">
-                    <a href="${base}index.html" class="dropbtn" id="homeBtn">🌐 HOME</a>
-                    <div class="dropdown-content">
-                        <a href="${base}lang/en.html">🇬🇧 ENGLISH</a>
-                        <a href="${base}lang/zh.html">🇨🇳 简体中文</a>
-                        <a href="${base}lang/sv.html">🇸🇪 SVENSKA</a>
-                        <a href="${base}lang/lang.html">🌐 More Languages</a>
-                        <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
-                        <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
-                        <a href="${base}robotel/robotel.html">👄 Robotel</a>
-                        <a href="${base}share/share.html">💬 Share</a>
-                    </div>
+            <div class="dropdown" id="homeDropdown">
+                <a href="${base}index.html" class="dropbtn" id="homeBtn">🌐 HOME</a>
+                <div class="dropdown-content">
+                    <a href="${base}lang/en.html">🇬🇧 ENGLISH</a>
+                    <a href="${base}lang/zh.html">🇨🇳 简体中文</a>
+                    <a href="${base}lang/sv.html">🇸🇪 SVENSKA</a>
+                    <a href="${base}lang/lang.html">🌐 More Languages</a>
+                    <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
+                    <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
+                    <a href="${base}robotel/robotel.html">👄 Robotel</a>
+                    <a href="${base}share/share.html">💬 Share</a>
                 </div>
             </div>
         </div>
