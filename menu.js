@@ -1,5 +1,5 @@
 // ============================================================
-// MENY – The World Manifesto (med språkstöd)
+// MENY – The World Manifesto (med språkstöd + menyrad + dropdown)
 // ============================================================
 // Denna fil skapar en enhetlig meny för hela webbplatsen.
 // Den laddas in i alla HTML-sidor via <script src="menu.js"></script>
@@ -54,7 +54,6 @@
         'crs': { home: 'Lakaz', freedom: 'Leskalye Liberte', tropics: 'Tropik', robotel: 'Robo', share: 'Partaz' },
         'se': { home: 'Ruohta', freedom: 'Friddjavuođa Rámpa', tropics: 'Davvisámegiella', robotel: 'Robot', share: 'Juogat' },
         'fit': { home: 'Koti', freedom: 'Vapauten Portaat', tropics: 'Tropiikit', robotel: 'Robotti', share: 'Jaa' },
-        // Standard (fallback)
         'default': { home: 'Home', freedom: 'Freedom Staircase', tropics: 'The Tropics', robotel: 'Robotel', share: 'Share' }
     };
 
@@ -62,35 +61,29 @@
     // 2. HÄMTA AKTUELLT SPRÅK
     // ------------------------------------------------------------
     function getCurrentLanguage() {
-        // Kolla URL-parametern
         const urlParams = new URLSearchParams(window.location.search);
         const langParam = urlParams.get('lang');
-        if (langParam && menuTranslations[langParam]) {
-            return langParam;
-        }
+        if (langParam && menuTranslations[langParam]) return langParam;
 
-        // Kolla webbläsarens språk
         const browserLang = navigator.language || navigator.languages?.[0] || 'en';
         const langCode = browserLang.split('-')[0].toLowerCase();
-        if (menuTranslations[langCode]) {
-            return langCode;
-        }
+        if (menuTranslations[langCode]) return langCode;
 
-        // Fallback
         return 'en';
     }
 
     // ------------------------------------------------------------
-    // 3. SKAPA MENYN
+    // 3. SKAPA MENYN (menyrad + "MENY"-knapp + dropdown)
     // ------------------------------------------------------------
     function createMenu() {
         const currentLang = getCurrentLanguage();
         const t = menuTranslations[currentLang] || menuTranslations['default'];
 
         const menuHTML = `
-            <div id="menu" style="
+            <!-- MENYRAD (alla länkar synliga) -->
+            <div id="menu-bar" style="
                 background-color: #f8f8f8;
-                padding: 12px 20px;
+                padding: 10px 20px;
                 text-align: center;
                 border-bottom: 1px solid #e0e0e0;
                 font-family: Georgia, 'Times New Roman', Times, serif;
@@ -121,13 +114,85 @@
                    onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
                     📤 ${t.share}
                 </a>
+
+                <!-- "MENY"-knapp (öppnar rullgardin) -->
+                <button id="menu-toggle" style="
+                    background: #e0e0e0;
+                    border: 1px solid #ccc;
+                    color: #1a1a1a;
+                    font-size: 13px;
+                    font-weight: bold;
+                    padding: 4px 12px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-family: inherit;
+                    transition: background 0.2s;
+                " onmouseover="this.style.background='#d0d0d0'" 
+                   onmouseout="this.style.background='#e0e0e0'">
+                    ☰ MENY
+                </button>
+            </div>
+
+            <!-- RULLGARDINSMENY (dold tills man klickar på "MENY") -->
+            <div id="dropdown-menu" style="
+                display: none;
+                background: #f8f8f8;
+                border-bottom: 1px solid #e0e0e0;
+                padding: 10px 0;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            ">
+                <div style="max-width: 800px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 20px; padding: 0 20px;">
+                    <a href="/" style="color: #1a1a1a; text-decoration: none; font-weight: bold; transition: color 0.3s;"
+                       onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                        🏠 ${t.home}
+                    </a>
+                    <a href="/freedom-staircase/freedom-staircase.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
+                       onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                        🪜 ${t.freedom}
+                    </a>
+                    <a href="/tropics/tropics.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
+                       onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                        🌴 ${t.tropics}
+                    </a>
+                    <a href="/robotel/robotel.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
+                       onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                        🤖 ${t.robotel}
+                    </a>
+                    <a href="/share/share.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
+                       onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
+                        📤 ${t.share}
+                    </a>
+                </div>
             </div>
         `;
 
-        // Sätt in menyn i #main-menu
         const menuContainer = document.getElementById('main-menu');
         if (menuContainer) {
             menuContainer.innerHTML = menuHTML;
+
+            // Toggle-funktion för rullgardin
+            const toggleBtn = document.getElementById('menu-toggle');
+            const dropdown = document.getElementById('dropdown-menu');
+            if (toggleBtn && dropdown) {
+                toggleBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+                });
+
+                // Stäng dropdown om man klickar utanför menyn
+                document.addEventListener('click', function(e) {
+                    if (!menuContainer.contains(e.target)) {
+                        dropdown.style.display = 'none';
+                    }
+                });
+
+                // Stäng dropdown om man klickar på en länk i rullgardinen
+                dropdown.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        dropdown.style.display = 'none';
+                    });
+                });
+            }
         } else {
             // Fallback: sätt in i början av body
             const body = document.body;
@@ -145,5 +210,4 @@
     } else {
         createMenu();
     }
-
 })();
