@@ -1,16 +1,10 @@
 // ============================================================
-// MENY – The World Manifesto (med språkstöd)
-// ============================================================
-// Denna fil skapar en enhetlig meny för hela webbplatsen.
-// Den laddas in i alla HTML-sidor via <script src="menu.js"></script>
+// MENU.JS - Global meny för The World Manifesto
 // ============================================================
 
-(function() {
-    'use strict';
+document.addEventListener('DOMContentLoaded', function() {
 
-    // ------------------------------------------------------------
-    // 1. SPRÅKÖVERSÄTTNINGAR FÖR MENY
-    // ------------------------------------------------------------
+    // --- SPRÅKÖVERSÄTTNINGAR FÖR MENY (för länktexterna) ---
     const menuTranslations = {
         'sv': { home: 'Hem', freedom: 'Frihetstrappan', tropics: 'Tropikerna', robotel: 'Robotel', share: 'Dela' },
         'en': { home: 'Home', freedom: 'Freedom Staircase', tropics: 'The Tropics', robotel: 'Robotel', share: 'Share' },
@@ -54,96 +48,71 @@
         'crs': { home: 'Lakaz', freedom: 'Leskalye Liberte', tropics: 'Tropik', robotel: 'Robo', share: 'Partaz' },
         'se': { home: 'Ruohta', freedom: 'Friddjavuođa Rámpa', tropics: 'Davvisámegiella', robotel: 'Robot', share: 'Juogat' },
         'fit': { home: 'Koti', freedom: 'Vapauten Portaat', tropics: 'Tropiikit', robotel: 'Robotti', share: 'Jaa' },
-        // Standard (fallback)
         'default': { home: 'Home', freedom: 'Freedom Staircase', tropics: 'The Tropics', robotel: 'Robotel', share: 'Share' }
     };
 
-    // ------------------------------------------------------------
-    // 2. HÄMTA AKTUELLT SPRÅK
-    // ------------------------------------------------------------
     function getCurrentLanguage() {
-        // Kolla URL-parametern
         const urlParams = new URLSearchParams(window.location.search);
         const langParam = urlParams.get('lang');
-        if (langParam && menuTranslations[langParam]) {
-            return langParam;
-        }
-
-        // Kolla webbläsarens språk
+        if (langParam && menuTranslations[langParam]) return langParam;
         const browserLang = navigator.language || navigator.languages?.[0] || 'en';
         const langCode = browserLang.split('-')[0].toLowerCase();
-        if (menuTranslations[langCode]) {
-            return langCode;
-        }
-
-        // Fallback
+        if (menuTranslations[langCode]) return langCode;
         return 'en';
     }
 
-    // ------------------------------------------------------------
-    // 3. SKAPA MENYN
-    // ------------------------------------------------------------
-    function createMenu() {
-        const currentLang = getCurrentLanguage();
-        const t = menuTranslations[currentLang] || menuTranslations['default'];
+    const currentLang = getCurrentLanguage();
+    const t = menuTranslations[currentLang] || menuTranslations['default'];
 
-        const menuHTML = `
-            <div id="menu" style="
-                background-color: #f8f8f8;
-                padding: 12px 20px;
-                text-align: center;
-                border-bottom: 1px solid #e0e0e0;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                font-size: 16px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 8px 20px;
-            ">
-                <a href="/" style="color: #1a1a1a; text-decoration: none; font-weight: bold; transition: color 0.3s;" 
-                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
-                    🏠 ${t.home}
-                </a>
-                <a href="/freedom-staircase/freedom-staircase.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
-                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
-                    🪜 ${t.freedom}
-                </a>
-                <a href="/tropics/tropics.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
-                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
-                    🌴 ${t.tropics}
-                </a>
-                <a href="/robotel/robotel.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
-                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
-                    🤖 ${t.robotel}
-                </a>
-                <a href="/share/share.html" style="color: #1a1a1a; text-decoration: none; transition: color 0.3s;"
-                   onmouseover="this.style.color='#555'" onmouseout="this.style.color='#1a1a1a'">
-                    📤 ${t.share}
-                </a>
+    // --- SKAPA MENYN MED ABSOLUTA SÖKVÄGAR ---
+    const menuHTML = `
+        <div class="site-nav">
+            <div class="nav-container">
+                <div class="dropdown" id="homeDropdown">
+                    <a href="/index.html" class="dropbtn" id="homeBtn">☰ MENU</a>
+                    <div class="dropdown-content">
+                        <a href="/lang/read.html?lang=en">🇬🇧 ${t.home}</a>
+                        <a href="/lang/read.html?lang=zh">🇨🇳 中文</a>
+                        <a href="/lang/read.html?lang=sv">🇸🇪 ${t.home}</a>
+                        <a href="/lang/lang.html">🌐 More Languages</a>
+                        <a href="/freedom-staircase/freedom-staircase.html">🪜 ${t.freedom}</a>
+                        <a href="/tropics/tropics.html">🌎 ${t.tropics}</a>
+                        <a href="/robotel/robotel.html">🤖 ${t.robotel}</a>
+                        <a href="/share/share.html">💬 ${t.share}</a>
+                    </div>
+                </div>
             </div>
-        `;
+        </div>
+    `;
 
-        // Sätt in menyn i #main-menu
-        const menuContainer = document.getElementById('main-menu');
-        if (menuContainer) {
-            menuContainer.innerHTML = menuHTML;
-        } else {
-            // Fallback: sätt in i början av body
-            const body = document.body;
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = menuHTML;
-            body.insertBefore(tempDiv.firstElementChild, body.firstChild);
-        }
+    // Hitta containern och sätt in menyn
+    const menuContainer = document.getElementById('main-menu');
+    if (menuContainer) {
+        menuContainer.innerHTML = menuHTML;
     }
 
-    // ------------------------------------------------------------
-    // 4. KÖR NÄR DOM ÄR REDO
-    // ------------------------------------------------------------
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', createMenu);
-    } else {
-        createMenu();
-    }
+    // --- MOBIL: KLICK ÖPPNAR MENYN ---
+    const dropdown = document.getElementById('homeDropdown');
+    const btn = document.getElementById('homeBtn');
+    let isOpen = false;
 
-})();
+    if (btn && dropdown) {
+        btn.addEventListener('click', function(e) {
+            if (window.innerWidth <= 600) {
+                if (!isOpen) {
+                    e.preventDefault();
+                    dropdown.classList.add('active');
+                    isOpen = true;
+                }
+                // Andra klicket – låt länken gå
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+                isOpen = false;
+            }
+        });
+    }
+});
