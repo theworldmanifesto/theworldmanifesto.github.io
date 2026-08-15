@@ -109,11 +109,18 @@
 .lang-flag-img {
     width: 40px;
     height: 26px;
-    object-fit: cover;     /* ← Fyller rutan, beskär vid behov – ingen förvrängning */
+    object-fit: cover;
     display: block;
     background: transparent;
     border: 1px solid #888;
     box-sizing: border-box;
+}
+
+/* 🎯 Specialregel för Sydkorea */
+.lang-flag-img[src$="kr.svg"] {
+    width: 48px;        /* ← Öka bredden */
+    height: 32px;       /* ← Öka höjden i samma proportion */
+    object-fit: cover;
 }
     </style>
 </head>
