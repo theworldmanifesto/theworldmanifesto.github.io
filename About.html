@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – The World Manifesto</title>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 1.25;
+            color: #1a1a1a;
+            background-color: #fcfcfc;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .about-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1a1a1a;
+            line-height: 1.4;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .about-text span {
+            color: #f39c12;
+        }
+        @media only screen and (max-width: 768px) {
+            .about-text {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER: Meny (laddas från menu.js) -->
+    <div id="main-menu"></div>
+
+    <!-- HUVUDINNEHÅLL -->
+    <div class="container">
+        <p class="about-text">
+            This website gives you the <span>best political platform</span> in world history!
+        </p>
+    </div>
+
+    <!-- FOOTER (laddas från footer.js) -->
+
+    <!-- Meny JS (laddar header) -->
+    <script src="menu.js"></script>
+    <!-- Sidfot JS -->
+    <script src="footer.js"></script>
+
+</body>
+</html>
