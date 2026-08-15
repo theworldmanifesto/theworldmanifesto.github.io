@@ -109,9 +109,9 @@
 .lang-flag-img {
     width: 40px;
     height: 26px;
-    object-fit: cover;     /* ← Fyller rutan, beskär vid behov – ingen förvrängning */
+    object-fit: contain;    /* ← Hela flaggan syns, men vit yta runt */
     display: block;
-    background: transparent;
+    background: transparent; /* ← Gör att bakgrunden inte är vit */
     border: 1px solid #888;
     box-sizing: border-box;
 }
