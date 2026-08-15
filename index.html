@@ -86,32 +86,28 @@
             font-size: 13px;
             font-family: sans-serif;
         }
-        .lang-flags {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            margin: 15px 0;
-            flex-wrap: wrap;
-        }
-        .lang-flags a {
-            text-decoration: none;
-            transition: transform 0.2s;
-            display: inline-block;
-                box-shadow: 0 0 0 1px #ccc;   /* ← Tunn grå kant */
-        }
-        .lang-flags a:hover {
-            transform: scale(1.2);
-        }
+.lang-flags {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
 .lang-flags a {
     text-decoration: none;
     transition: transform 0.2s;
     display: inline-block;
 }
 
+.lang-flags a:hover {
+    transform: scale(1.2);
+}
+
 .lang-flag-img {
     width: 40px;
     height: 26px;
-    object-fit: contain;
+    object-fit: fill;
     display: block;
     background: transparent;
     border: 1px solid #888;
