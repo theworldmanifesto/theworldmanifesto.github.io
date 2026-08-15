@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <a href="${base}share/share.html">💬 Share</a>
                     </div>
                 </div>
+                <span class="site-title"><a href="${base}index.html" style="text-decoration: none; color: inherit;">The World Manifesto</a></span>
             </div>
         </div>
     `;
