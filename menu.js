@@ -13,14 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const base = getBasePath();
-    const baseOneLevel = getBasePath() + '..';
 
     // --- SKAPA MENYN ---
     const menuHTML = `
         <div class="site-nav">
             <div class="nav-container">
                 <div class="dropdown" id="homeDropdown">
-                    <a href="${base}index.html" class="dropbtn" id="homeBtn">🌐HOME</a>
+                    <a href="${base}index.html" class="dropbtn" id="homeBtn">🌐 HOME</a>
                     <div class="dropdown-content">
                         <a href="${base}lang/en.html">🇬🇧 ENGLISH</a>
                         <a href="${base}lang/zh.html">🇨🇳 简体中文</a>
@@ -54,8 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.preventDefault();
                     dropdown.classList.add('active');
                     isOpen = true;
-                } else {
-                    // Andra klicket – låt länken gå
                 }
             }
         });
