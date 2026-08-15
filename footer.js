@@ -57,7 +57,7 @@
         margin-bottom: 0;
         text-align: center;
     `;
-    copyrightP.textContent = 'The World Manifesto – Publicerad 2026';
+    copyrightP.textContent = 'The World Manifesto – Published 2026';
     footer.appendChild(copyrightP);
 
     // ------------------------------------------------------------
