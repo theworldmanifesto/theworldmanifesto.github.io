@@ -3,22 +3,33 @@
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    // --- RÄKNA UT HUR MÅNGA NIVÅER UPP VI BEFINNER OSS ---
+    function getBasePath() {
+        const path = window.location.pathname;
+        const parts = path.split('/').filter(p => p.length > 0);
+        // Räkna antal mappar (exklusive filnamnet)
+        const depth = parts.length > 0 ? parts.length - 1 : 0;
+        return '../'.repeat(Math.max(0, depth));
+    }
 
-    // --- SKAPA MENYN MED ABSOLUTA SÖKVÄGAR ---
+    const base = getBasePath();
+    const baseOneLevel = getBasePath() + '..';
+
+    // --- SKAPA MENYN ---
     const menuHTML = `
         <div class="site-nav">
             <div class="nav-container">
                 <div class="dropdown" id="homeDropdown">
-                    <a href="/index.html" class="dropbtn" id="homeBtn">🏠HOME</a>
+                    <a href="${base}index.html" class="dropbtn" id="homeBtn">🌐HOME</a>
                     <div class="dropdown-content">
-                        <a href="/lang/en.html">🇬🇧 ENGLISH</a>
-                        <a href="/lang/zh.html">🇨🇳 简体中文</a>
-                        <a href="/lang/sv.html">🇸🇪 SVENSKA</a>
-                        <a href="/lang/lang.html">🌐 More Languages</a>
-                        <a href="/freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
-                        <a href="/tropics/tropics.html">🌎 The Tropics</a>
-                        <a href="/robotel/robotel.html">🤖 Robotel</a>
-                        <a href="/share/share.html">💬 Share</a>
+                        <a href="${base}lang/en.html">🇬🇧 ENGLISH</a>
+                        <a href="${base}lang/zh.html">🇨🇳 简体中文</a>
+                        <a href="${base}lang/sv.html">🇸🇪 SVENSKA</a>
+                        <a href="${base}lang/lang.html">🌐 More Languages</a>
+                        <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
+                        <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
+                        <a href="${base}robotel/robotel.html">👄 Robotel</a>
+                        <a href="${base}share/share.html">💬 Share</a>
                     </div>
                 </div>
             </div>
@@ -43,8 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.preventDefault();
                     dropdown.classList.add('active');
                     isOpen = true;
+                } else {
+                    // Andra klicket – låt länken gå
                 }
-                // Andra klicket – låt länken gå
             }
         });
 
