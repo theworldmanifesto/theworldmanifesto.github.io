@@ -92,12 +92,14 @@
     justify-content: center;
     margin: 15px 0;
     flex-wrap: wrap;
+    align-items: center;   /* ← Lägg till så flaggorna centreras vertikalt */
 }
 
 .lang-flags a {
     text-decoration: none;
     transition: transform 0.2s;
     display: inline-block;
+    line-height: 0;        /* ← Ta bort extra mellanrum under bilden */
 }
 
 .lang-flags a:hover {
@@ -107,7 +109,7 @@
 .lang-flag-img {
     width: 40px;
     height: 26px;
-    object-fit: fill;
+    object-fit: cover;     /* ← Fyller rutan, beskär vid behov – ingen förvrängning */
     display: block;
     background: transparent;
     border: 1px solid #888;
