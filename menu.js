@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function getBasePath() {
         const path = window.location.pathname;
         const parts = path.split('/').filter(p => p.length > 0);
-        // Räkna antal mappar (exklusive filnamnet)
         const depth = parts.length > 0 ? parts.length - 1 : 0;
         return '../'.repeat(Math.max(0, depth));
     }
@@ -18,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuHTML = `
         <div class="site-nav">
             <div class="nav-container">
+                <span class="site-title"><a href="${base}index.html" style="text-decoration: none; color: inherit;">The World Manifesto</a></span>
                 <div class="dropdown" id="homeDropdown">
                     <a href="${base}index.html" class="dropbtn" id="homeBtn">🌐 HOME</a>
                     <div class="dropdown-content">
@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         <a href="${base}share/share.html">💬 Share</a>
                     </div>
                 </div>
-                <span class="site-title"><a href="${base}index.html" style="text-decoration: none; color: inherit;">The World Manifesto</a></span>
             </div>
         </div>
     `;
