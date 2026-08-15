@@ -1,38 +1,13 @@
 /* ============================================================
-   MENU.CSS - Global meny för The World Manifesto
+   MENU.CSS - Fristående menyknapp för The World Manifesto
    ============================================================ */
 
+/* Placerar knappen längst upp till höger */
 .site-nav {
     position: fixed;
-    top: 10px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 5px 12px;
+    top: 12px;
+    right: 15px;
     z-index: 300;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    backdrop-filter: blur(4px);
-    box-sizing: border-box;
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Titeln till vänster (större font) */
-.site-title {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #1a1a1a;
-    padding-left: 4px;
-    white-space: nowrap;
-    letter-spacing: -0.2px;
 }
 
 .dropdown {
@@ -40,15 +15,18 @@
     display: inline-block;
 }
 
+/* Snygg inramad knapp utan bred bård runt om */
 .dropbtn {
     color: #1a1a1a;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 6px 12px;
+    padding: 8px 14px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
     display: inline-block;
     transition: 0.2s;
 }
@@ -58,20 +36,18 @@
     border-color: #999;
 }
 
-/* Rullgardinsmenyn (Dold tills man hovrar/klickar) */
+/* Rullgardinsmenyn */
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
-    left: auto;
     top: 100%;
-    margin-top: 0;
-    padding-top: 4px;
+    margin-top: 6px;
     background-color: #fff;
     min-width: 220px;
     border: 1px solid #e5e5e5;
     border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
     overflow: hidden;
     z-index: 999;
 }
@@ -104,29 +80,17 @@
 /* Mobiljusteringar */
 @media (max-width: 600px) {
     .site-nav {
-        left: 10px;
+        top: 8px;
         right: 10px;
-        margin: 0 auto;
-        top: 6px;
-        padding: 4px 8px;
-    }
-
-    .site-title {
-        font-size: 18px;
     }
 
     .dropbtn {
         font-size: 14px;
-        padding: 5px 10px;
+        padding: 6px 12px;
     }
 
     .dropdown-content {
-        position: absolute;
         right: 0;
-        left: auto;
-        margin-top: 6px;
-        padding-top: 0;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
         width: 80vw;
         max-width: 280px;
     }
