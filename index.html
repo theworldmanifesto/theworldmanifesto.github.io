@@ -102,18 +102,21 @@
         .lang-flags a:hover {
             transform: scale(1.2);
         }
-        .lang-flags .lang-label {
-            font-size: 14px;
-            color: #666;
-            display: block;
-            margin-top: 2px;
-        }
+.lang-flags a {
+    text-decoration: none;
+    transition: transform 0.2s;
+    display: inline-block;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    background: transparent;
+}
+
 .lang-flag-img {
-    aspect-ratio: 1 / 1;
-    width: 32px;
+    width: 40px;
+    height: 26px;
     object-fit: contain;
-    vertical-align: middle;
-        background: transparent;
+    display: block;
+    background: transparent;
 }
     </style>
 </head>
