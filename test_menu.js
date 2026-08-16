@@ -1,5 +1,5 @@
 // ============================================================
-// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor + båda ikonerna)
+// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor + menu.png)
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -18,9 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
         return window.innerWidth <= 600;
     }
 
-    // --- Bygg knapptext beroende på skärmbredd ---
-    function getButtonText() {
-        return isMobile() ? '☰ MENU' : '🌐 HOME';
+    // --- Bygg knappens ikon/text beroende på skärmbredd ---
+    function getButtonContent() {
+        if (isMobile()) {
+            // Mobil: visa ☰ MENU (eller bara ikon?)
+            return '☰ MENU';
+        } else {
+            // Desktop: visa menu.png istället för text
+            return `<img src="${base}menu_icons/menu.png" width="28" height="28" alt="MENU" style="vertical-align: middle; display: block;">`;
+        }
     }
 
     // --- Hjälpfunktion för att skapa en menyrad med PNG-ikon (vänster) ---
@@ -46,11 +52,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- SKAPA MENYN MED PNG-IKONER ---
     function buildMenu() {
-        const btnText = getButtonText();
+        const btnContent = getButtonContent();
         return `
             <div class="site-nav">
                 <div class="dropdown" id="homeDropdown">
-                    <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
+                    <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnContent}</a>
                     <div class="dropdown-content">
                         ${menuItem('home.png', 'HOME', 'index.html')}
                         ${menuItem('GB_flag.png', 'ENGLISH', 'lang/en.html')}
@@ -73,15 +79,17 @@ document.addEventListener('DOMContentLoaded', function() {
         menuContainer.innerHTML = buildMenu();
     }
 
-    // --- Uppdatera knapptext vid fönsterändring ---
-    function updateButtonText() {
+    // --- Uppdatera knappinnehåll vid fönsterändring ---
+    function updateButtonContent() {
         const btn = document.getElementById('homeBtn');
         if (btn) {
-            btn.textContent = getButtonText();
+            // Ersätt innehållet med nytt baserat på skärmbredd
+            const newContent = getButtonContent();
+            btn.innerHTML = newContent;
         }
     }
 
-    window.addEventListener('resize', updateButtonText);
+    window.addEventListener('resize', updateButtonContent);
 
     // --- MOBIL: KLICK VÄXLAR MENYN ---
     const dropdown = document.getElementById('homeDropdown');
@@ -113,5 +121,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    console.log('🧪 TESTMENY LADDAD – med flaggor + båda ikonerna för The Tropics');
+    console.log('🧪 TESTMENY LADDAD – menu.png som knappikon på desktop');
 });
