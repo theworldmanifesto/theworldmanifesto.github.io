@@ -1,81 +1,122 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🧪 TEST - Meny med SVG-ikoner</title>
-    <link rel="stylesheet" href="test_menu.css">
-    <style>
-        body {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            line-height: 1.25;
-            color: #1a1a1a;
-            background-color: #fcfcfc;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            min-height: 85vh;
-            justify-content: center;
-            text-align: center;
-        }
-        .test-badge {
-            display: inline-block;
-            background: #ff6b6b;
-            color: #fff;
-            padding: 4px 14px;
-            border-radius: 30px;
-            font-size: 14px;
-            font-weight: bold;
-            font-family: sans-serif;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 36px;
-            font-weight: normal;
-            margin-bottom: 10px;
-        }
-        .note {
-            font-family: sans-serif;
-            font-size: 14px;
-            color: #666;
-            margin-top: 30px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-        }
-        .note code {
-            background: #f0f0f0;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 13px;
-        }
-    </style>
-</head>
-<body>
+/* ============================================================
+   TEST_MENU.CSS - Identisk med din riktiga meny
+   ============================================================ */
 
-    <!-- Menyn injekteras här -->
-    <div id="main-menu"></div>
+.site-nav {
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 300;
+    pointer-events: none;
+}
 
-    <div class="container">
-        <main>
-            <div class="test-badge">🧪 TESTLÄGE – SVG-ikoner</div>
-            <h1>The World Manifesto</h1>
-            <p style="font-size: 18px; color: #555; font-style: italic;">
-                Testa dina nya SVG-ikoner i menyn
-            </p>
-            <div class="note">
-                <p>⬆️ Titta upp till höger – här är menyn med SVG-ikoner.</p>
-                <p>Länkarna är <strong>inte</strong> aktiva – detta är bara en visuell test.</p>
-                <p>För att byta ikoner, redigera <code>test_menu.js</code> – leta efter <code>&lt;svg&gt;</code>-taggarna.</p>
-            </div>
-        </main>
-    </div>
+.dropdown {
+    position: relative;
+    display: inline-block;
+    pointer-events: auto;
+}
 
-    <script src="test_menu.js"></script>
-</body>
-</html>
+.dropbtn {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.dropbtn:hover {
+    background: #f7f7f7;
+    border-color: #999;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 8px;
+    background-color: #fff;
+    min-width: 220px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: transparent;
+}
+
+.dropdown-content a {
+    color: #1a1a1a;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: system-ui, sans-serif;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 6px;
+}
+
+.dropdown-content a:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f7f7f7;
+}
+
+@media (min-width: 601px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-nav {
+        top: 8px;
+        right: 10px;
+        padding: 0;
+    }
+
+    .dropbtn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .dropdown-content {
+        right: 0;
+        width: 80vw;
+        max-width: 280px;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+}
