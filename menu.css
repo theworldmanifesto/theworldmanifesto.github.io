@@ -1,21 +1,30 @@
 /* ============================================================
-   MENU.CSS - Fristående menyknapp för The World Manifesto
+   MENU.CSS - Menyknapp anpassad till innehållets bredd
    ============================================================ */
 
-/* Placerar knappen längst upp till höger */
+/* Centrerad behållare som matchar textens maxbredd (800px) */
 .site-nav {
     position: fixed;
     top: 12px;
-    right: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
     z-index: 300;
+    pointer-events: none; /* Tomrummet runt knappen går att klicka/skrolla igenom */
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    pointer-events: auto; /* Aktiverar klick för själva knappen och menyn */
 }
 
-/* Snygg inramad knapp utan bred bård runt om */
+/* Snygg inramad knapp */
 .dropbtn {
     color: #1a1a1a;
     text-decoration: none;
@@ -81,7 +90,7 @@
 @media (max-width: 600px) {
     .site-nav {
         top: 8px;
-        right: 10px;
+        padding: 0 10px;
     }
 
     .dropbtn {
