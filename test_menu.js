@@ -1,5 +1,5 @@
 // ============================================================
-// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor + palm_tree)
+// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor + båda ikonerna)
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -33,12 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
-    // --- Hjälpfunktion för menyrad med ikon till HÖGER ---
-    function menuItemWithRightIcon(iconFile, label, url) {
+    // --- Hjälpfunktion för menyrad med ikon på BÅDE vänster och höger ---
+    function menuItemWithBothIcons(leftIcon, rightIcon, label, url) {
         return `
             <a href="${base}${url}">
+                <img src="${base}menu_icons/${leftIcon}" width="24" height="24" alt="${label}" style="vertical-align: middle; margin-right: 8px; border-radius: 4px;">
                 ${label}
-                <img src="${base}menu_icons/${iconFile}" width="24" height="24" alt="${label}" style="vertical-align: middle; margin-left: 8px; border-radius: 4px;">
+                <img src="${base}menu_icons/${rightIcon}" width="24" height="24" alt="${label}" style="vertical-align: middle; margin-left: 8px; border-radius: 4px;">
             </a>
         `;
     }
@@ -112,5 +113,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    console.log('🧪 TESTMENY LADDAD – med flaggor + tropics_palm_tree.png till höger');
+    console.log('🧪 TESTMENY LADDAD – med flaggor + båda ikonerna för The Tropics');
 });
