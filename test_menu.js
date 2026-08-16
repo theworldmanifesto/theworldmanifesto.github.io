@@ -1,5 +1,5 @@
 // ============================================================
-// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor + menu.png)
+// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor + earth_globe.png)
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Mobil: visa ☰ MENU (text)
             return '☰ MENU';
         } else {
-            // Desktop: visa menu.png + texten "MENU" (samma storlek som menyns ikoner)
+            // Desktop: visa earth_globe.png + texten "MENU" (samma storlek som menyns ikoner)
             return `
-                <img src="${base}menu_icons/menu.png" width="24" height="24" alt="MENU" style="vertical-align: middle; margin-right: 6px; border-radius: 4px;">
+                <img src="${base}menu_icons/earth_globe.png" width="24" height="24" alt="MENU" style="vertical-align: middle; margin-right: 6px; border-radius: 4px;">
                 MENU
             `;
         }
@@ -124,5 +124,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    console.log('🧪 TESTMENY LADDAD – menu.png + texten "MENU" på desktop');
+    console.log('🧪 TESTMENY LADDAD – earth_globe.png + texten "MENU" på desktop');
 });
