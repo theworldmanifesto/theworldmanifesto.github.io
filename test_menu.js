@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         ${menuItem('SE_flag.png', 'SVENSKA', 'lang/sv.html')}
                         ${menuItem('lang.png', 'More Languages', 'lang/lang.html')}
                         ${menuItem('freedom_staircase.png', 'Freedom Staircase', 'freedom-staircase/freedom-staircase.html')}
-                        ${menuItemWithRightIcon('tropics_palm_tree.png', 'The Tropics', 'tropics/tropics.html')}
+                        ${menuItemWithBothIcons('tropics.png', 'tropics_palm_tree.png', 'The Tropics', 'tropics/tropics.html')}
                         ${menuItem('robotel.png', 'Robotel', 'robotel/robotel.html')}
                         ${menuItem('share.png', 'Share', 'share/share.html')}
                     </div>
