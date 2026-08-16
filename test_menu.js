@@ -1,5 +1,5 @@
 // ============================================================
-// MENU.JS - Global meny för The World Manifesto (med PNG-ikoner)
+// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor)
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
-    // --- SKAPA MENYN MED PNG-IKONER ---
+    // --- SKAPA MENYN MED PNG-IKONER (med flaggor) ---
     function buildMenu() {
         const btnText = getButtonText();
         return `
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
                     <div class="dropdown-content">
                         ${menuItem('home.png', 'HOME', 'index.html')}
-                        ${menuItem('lang.png', 'ENGLISH', 'lang/en.html')}
-                        ${menuItem('lang.png', '简体中文', 'lang/zh.html')}
-                        ${menuItem('lang.png', 'SVENSKA', 'lang/sv.html')}
+                        ${menuItem('GB_flag.png', 'ENGLISH', 'lang/en.html')}
+                        ${menuItem('ZH_flag.png', '简体中文', 'lang/zh.html')}
+                        ${menuItem('SE_flag.png', 'SVENSKA', 'lang/sv.html')}
                         ${menuItem('lang.png', 'More Languages', 'lang/lang.html')}
                         ${menuItem('freedom_staircase.png', 'Freedom Staircase', 'freedom-staircase/freedom-staircase.html')}
                         ${menuItem('tropics.png', 'The Tropics', 'tropics/tropics.html')}
@@ -101,4 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
+
+    console.log('🧪 TESTMENY LADDAD – med flaggor (GB, ZH, SE)');
 });
