@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 TEST - Meny med SVG-ikoner</title>
+    <link rel="stylesheet" href="test_menu.css">
+    <style>
+        body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 1.25;
+            color: #1a1a1a;
+            background-color: #fcfcfc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 85vh;
+            justify-content: center;
+            text-align: center;
+        }
+        .test-badge {
+            display: inline-block;
+            background: #ff6b6b;
+            color: #fff;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        .note {
+            font-family: sans-serif;
+            font-size: 14px;
+            color: #666;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .note code {
+            background: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menyn injekteras här -->
+    <div id="main-menu"></div>
+
+    <div class="container">
+        <main>
+            <div class="test-badge">🧪 TESTLÄGE – SVG-ikoner</div>
+            <h1>The World Manifesto</h1>
+            <p style="font-size: 18px; color: #555; font-style: italic;">
+                Testa dina nya SVG-ikoner i menyn
+            </p>
+            <div class="note">
+                <p>⬆️ Titta upp till höger – här är menyn med SVG-ikoner.</p>
+                <p>Länkarna är <strong>inte</strong> aktiva – detta är bara en visuell test.</p>
+                <p>För att byta ikoner, redigera <code>test_menu.js</code> – leta efter <code>&lt;svg&gt;</code>-taggarna.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="test_menu.js"></script>
+</body>
+</html>

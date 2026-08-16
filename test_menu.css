@@ -1,0 +1,128 @@
+/* ============================================================
+   TEST_MENU.CSS - Identisk med din riktiga meny
+   ============================================================ */
+
+/* Behållare – fast positionerad längst till höger */
+.site-nav {
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 300;
+    pointer-events: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    pointer-events: auto;
+}
+
+/* Snygg inramad knapp */
+.dropbtn {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.dropbtn:hover {
+    background: #f7f7f7;
+    border-color: #999;
+}
+
+/* Rullgardinsmenyn */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 8px;
+    background-color: #fff;
+    min-width: 220px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+/* Osynlig brygga */
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: transparent;
+}
+
+.dropdown-content a {
+    color: #1a1a1a;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: system-ui, sans-serif;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 6px;
+}
+
+.dropdown-content a:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f7f7f7;
+}
+
+/* Desktop: Visa vid hover */
+@media (min-width: 601px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Mobiljusteringar */
+@media (max-width: 600px) {
+    .site-nav {
+        top: 8px;
+        right: 10px;
+        padding: 0;
+    }
+
+    .dropbtn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .dropdown-content {
+        right: 0;
+        width: 80vw;
+        max-width: 280px;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+}
