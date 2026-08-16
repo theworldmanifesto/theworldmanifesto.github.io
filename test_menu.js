@@ -53,28 +53,28 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
-    // --- SKAPA MENYN MED PNG-IKONER ---
-    function buildMenu() {
-        const btnContent = getButtonContent();
-        return `
-            <div class="site-nav">
-                <div class="dropdown" id="homeDropdown">
-                    <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnContent}</a>
-                    <div class="dropdown-content">
-                        ${menuItem('home.png', 'HOME', 'index.html')}
-                        ${menuItem('GB_flag.png', 'ENGLISH', 'lang/en.html')}
-                        ${menuItem('ZH_flag.png', '简体中文', 'lang/zh.html')}
-                        ${menuItem('SE_flag.png', 'SVENSKA', 'lang/sv.html')}
-                        ${menuItem('lang.png', 'More Languages', 'lang/lang.html')}
-                        ${menuItem('freedom_staircase.png', 'Freedom Staircase', 'freedom-staircase/freedom-staircase.html')}
-                        ${menuItemWithBothIcons('tropics.png', 'tropics_palm_tree.png', 'The Tropics', 'tropics/tropics.html')}
-                        ${menuItem('robotel.png', 'Robotel', 'robotel/robotel.html')}
-                        ${menuItem('share.png', 'Share', 'share/share.html')}
-                    </div>
+// --- SKAPA MENYN MED PNG- och SVG-IKONER ---
+function buildMenu() {
+    const btnContent = getButtonContent();
+    return `
+        <div class="site-nav">
+            <div class="dropdown" id="homeDropdown">
+                <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnContent}</a>
+                <div class="dropdown-content">
+                    ${menuItem('home.png', 'HOME', 'index.html')}
+                    ${menuItem('../lang/flags/gb.svg', 'ENGLISH', 'lang/en.html')}
+                    ${menuItem('../lang/flags/cn.svg', '简体中文', 'lang/zh.html')}
+                    ${menuItem('../lang/flags/se.svg', 'SVENSKA', 'lang/sv.html')}
+                    ${menuItem('lang.png', 'More Languages', 'lang/lang.html')}
+                    ${menuItem('freedom_staircase.png', 'Freedom Staircase', 'freedom-staircase/freedom-staircase.html')}
+                    ${menuItemWithBothIcons('tropics.png', 'tropics_palm_tree.png', 'The Tropics', 'tropics/tropics.html')}
+                    ${menuItem('robotel.png', 'Robotel', 'robotel/robotel.html')}
+                    ${menuItem('share.png', 'Share', 'share/share.html')}
                 </div>
             </div>
-        `;
-    }
+        </div>
+    `;
+}
 
     // Sätt in menyn
     const menuContainer = document.getElementById('main-menu');
