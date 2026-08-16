@@ -1,17 +1,15 @@
 /* ============================================================
-   MENU.CSS - Menyknapp anpassad till innehållets bredd
+   MENU.CSS - Menyknapp längst till höger på skärmen
    ============================================================ */
 
-/* Centrerad behållare som matchar textens maxbredd (800px) */
+/* Behållare – fast positionerad längst till höger */
 .site-nav {
     position: fixed;
     top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 800px;
-    padding: 0 15px;
-    box-sizing: border-box;
+    right: 20px;          /* Längst till höger med lite marginal */
+    width: auto;
+    max-width: none;
+    padding: 0;
     display: flex;
     justify-content: flex-end;
     z-index: 300;
@@ -51,7 +49,7 @@
     position: absolute;
     right: 0;
     top: 100%;
-    margin-top: 8px; /* Det visuella avståndet (glipan) */
+    margin-top: 8px;
     background-color: #fff;
     min-width: 220px;
     border: 1px solid #e5e5e5;
@@ -64,7 +62,7 @@
 .dropdown-content::before {
     content: '';
     position: absolute;
-    top: -12px; /* Sträcker sig 12px uppåt över hela glipan upp till knappen */
+    top: -12px;
     left: 0;
     right: 0;
     height: 12px;
@@ -108,7 +106,8 @@
 @media (max-width: 600px) {
     .site-nav {
         top: 8px;
-        padding: 0 10px;
+        right: 10px;      /* Lite mindre marginal på mobil */
+        padding: 0;
     }
 
     .dropbtn {
