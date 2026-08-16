@@ -1,5 +1,5 @@
 // ============================================================
-// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor)
+// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor + palm_tree)
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return isMobile() ? '☰ MENU' : '🌐 HOME';
     }
 
-    // --- Hjälpfunktion för att skapa en menyrad med PNG-ikon ---
+    // --- Hjälpfunktion för att skapa en menyrad med PNG-ikon (vänster) ---
     function menuItem(iconFile, label, url) {
         return `
             <a href="${base}${url}">
@@ -33,7 +33,17 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
-    // --- SKAPA MENYN MED PNG-IKONER (med flaggor) ---
+    // --- Hjälpfunktion för menyrad med ikon till HÖGER ---
+    function menuItemWithRightIcon(iconFile, label, url) {
+        return `
+            <a href="${base}${url}">
+                ${label}
+                <img src="${base}menu_icons/${iconFile}" width="24" height="24" alt="${label}" style="vertical-align: middle; margin-left: 8px; border-radius: 4px;">
+            </a>
+        `;
+    }
+
+    // --- SKAPA MENYN MED PNG-IKONER ---
     function buildMenu() {
         const btnText = getButtonText();
         return `
@@ -47,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         ${menuItem('SE_flag.png', 'SVENSKA', 'lang/sv.html')}
                         ${menuItem('lang.png', 'More Languages', 'lang/lang.html')}
                         ${menuItem('freedom_staircase.png', 'Freedom Staircase', 'freedom-staircase/freedom-staircase.html')}
-                        ${menuItem('tropics.png', 'The Tropics', 'tropics/tropics.html')}
+                        ${menuItemWithRightIcon('tropics_palm_tree.png', 'The Tropics', 'tropics/tropics.html')}
                         ${menuItem('robotel.png', 'Robotel', 'robotel/robotel.html')}
                         ${menuItem('share.png', 'Share', 'share/share.html')}
                     </div>
@@ -102,5 +112,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    console.log('🧪 TESTMENY LADDAD – med flaggor (GB, ZH, SE)');
+    console.log('🧪 TESTMENY LADDAD – med flaggor + tropics_palm_tree.png till höger');
 });
