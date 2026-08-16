@@ -1,5 +1,5 @@
 // ============================================================
-// TEST_MENU.JS - Testmeny med PNG-ikoner (med flaggor + earth_globe.png)
+// TEST_MENU.JS - Testmeny med PNG-ikoner + SVG-flaggor
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Mobil: visa ☰ MENU (text)
             return '☰ MENU';
         } else {
-            // Desktop: visa earth_globe.png + texten "MENU" (samma storlek som menyns ikoner)
+            // Desktop: visa earth_globe.png + texten "MENU"
             return `
                 <img src="${base}menu_icons/earth_globe.png" width="24" height="24" alt="MENU" style="vertical-align: middle; margin-right: 6px; border-radius: 4px;">
                 MENU
@@ -32,11 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // --- Hjälpfunktion för att skapa en menyrad med PNG-ikon (vänster) ---
+    // --- Hjälpfunktion för menyrad med PNG-ikon (kvadratisk, 24×24) ---
     function menuItem(iconFile, label, url) {
         return `
             <a href="${base}${url}">
                 <img src="${base}menu_icons/${iconFile}" width="24" height="24" alt="${label}" style="vertical-align: middle; margin-right: 8px; border-radius: 4px;">
+                ${label}
+            </a>
+        `;
+    }
+
+    // --- Hjälpfunktion för menyrad med SVG-flagga (rektangulär, 24×16) ---
+    function menuItemFlag(iconFile, label, url) {
+        return `
+            <a href="${base}${url}">
+                <img src="${base}lang/flags/${iconFile}" width="24" height="16" alt="${label}" style="vertical-align: middle; margin-right: 8px; border-radius: 4px; object-fit: cover;">
                 ${label}
             </a>
         `;
@@ -53,28 +63,28 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
-// --- SKAPA MENYN MED PNG- och SVG-IKONER ---
-function buildMenu() {
-    const btnContent = getButtonContent();
-    return `
-        <div class="site-nav">
-            <div class="dropdown" id="homeDropdown">
-                <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnContent}</a>
-                <div class="dropdown-content">
-                    ${menuItem('home.png', 'HOME', 'index.html')}
-                    ${menuItem('../lang/flags/gb.svg', 'ENGLISH', 'lang/en.html')}
-                    ${menuItem('../lang/flags/cn.svg', '简体中文', 'lang/zh.html')}
-                    ${menuItem('../lang/flags/se.svg', 'SVENSKA', 'lang/sv.html')}
-                    ${menuItem('lang.png', 'More Languages', 'lang/lang.html')}
-                    ${menuItem('freedom_staircase.png', 'Freedom Staircase', 'freedom-staircase/freedom-staircase.html')}
-                    ${menuItemWithBothIcons('tropics.png', 'tropics_palm_tree.png', 'The Tropics', 'tropics/tropics.html')}
-                    ${menuItem('robotel.png', 'Robotel', 'robotel/robotel.html')}
-                    ${menuItem('share.png', 'Share', 'share/share.html')}
+    // --- SKAPA MENYN MED PNG- OCH SVG-IKONER ---
+    function buildMenu() {
+        const btnContent = getButtonContent();
+        return `
+            <div class="site-nav">
+                <div class="dropdown" id="homeDropdown">
+                    <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnContent}</a>
+                    <div class="dropdown-content">
+                        ${menuItem('home.png', 'HOME', 'index.html')}
+                        ${menuItemFlag('gb.svg', 'ENGLISH', 'lang/en.html')}
+                        ${menuItemFlag('cn.svg', '简体中文', 'lang/zh.html')}
+                        ${menuItemFlag('se.svg', 'SVENSKA', 'lang/sv.html')}
+                        ${menuItem('lang.png', 'More Languages', 'lang/lang.html')}
+                        ${menuItem('freedom_staircase.png', 'Freedom Staircase', 'freedom-staircase/freedom-staircase.html')}
+                        ${menuItemWithBothIcons('tropics.png', 'tropics_palm_tree.png', 'The Tropics', 'tropics/tropics.html')}
+                        ${menuItem('robotel.png', 'Robotel', 'robotel/robotel.html')}
+                        ${menuItem('share.png', 'Share', 'share/share.html')}
+                    </div>
                 </div>
             </div>
-        </div>
-    `;
-}
+        `;
+    }
 
     // Sätt in menyn
     const menuContainer = document.getElementById('main-menu');
@@ -86,7 +96,6 @@ function buildMenu() {
     function updateButtonContent() {
         const btn = document.getElementById('homeBtn');
         if (btn) {
-            // Ersätt innehållet med nytt baserat på skärmbredd
             const newContent = getButtonContent();
             btn.innerHTML = newContent;
         }
@@ -124,5 +133,5 @@ function buildMenu() {
         }
     }
 
-    console.log('🧪 TESTMENY LADDAD – earth_globe.png + texten "MENU" på desktop');
+    console.log('🧪 TESTMENY LADDAD – earth_globe.png + "MENU" på desktop, SVG-flaggor');
 });
