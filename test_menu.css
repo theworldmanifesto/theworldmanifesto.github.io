@@ -2,7 +2,6 @@
    TEST_MENU.CSS - Identisk med din riktiga meny
    ============================================================ */
 
-/* Behållare – fast positionerad längst till höger */
 .site-nav {
     position: fixed;
     top: 12px;
@@ -22,7 +21,6 @@
     pointer-events: auto;
 }
 
-/* Snygg inramad knapp */
 .dropbtn {
     color: #1a1a1a;
     text-decoration: none;
@@ -43,7 +41,6 @@
     border-color: #999;
 }
 
-/* Rullgardinsmenyn */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -58,7 +55,6 @@
     z-index: 999;
 }
 
-/* Osynlig brygga */
 .dropdown-content::before {
     content: '';
     position: absolute;
@@ -96,14 +92,12 @@
     background-color: #f7f7f7;
 }
 
-/* Desktop: Visa vid hover */
 @media (min-width: 601px) {
     .dropdown:hover .dropdown-content {
         display: block;
     }
 }
 
-/* Mobiljusteringar */
 @media (max-width: 600px) {
     .site-nav {
         top: 8px;
