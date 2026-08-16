@@ -51,14 +51,24 @@
     position: absolute;
     right: 0;
     top: 100%;
-    margin-top: 6px;
+    margin-top: 8px; /* Det visuella avståndet (glipan) */
     background-color: #fff;
     min-width: 220px;
     border: 1px solid #e5e5e5;
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-    overflow: hidden;
     z-index: 999;
+}
+
+/* Osynlig brygga som täcker glipan så att hover-effekten inte bryts */
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -12px; /* Sträcker sig 12px uppåt över hela glipan upp till knappen */
+    left: 0;
+    right: 0;
+    height: 12px;
+    background: transparent;
 }
 
 .dropdown-content a {
@@ -71,8 +81,16 @@
     border-bottom: 1px solid #f0f0f0;
 }
 
+/* Avrundade hörn på översta och nedersta länken */
+.dropdown-content a:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 .dropdown-content a:last-child {
     border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .dropdown-content a:hover {
