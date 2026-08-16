@@ -21,11 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Bygg knappens ikon/text beroende på skärmbredd ---
     function getButtonContent() {
         if (isMobile()) {
-            // Mobil: visa ☰ MENU (eller bara ikon?)
+            // Mobil: visa ☰ MENU (text)
             return '☰ MENU';
         } else {
-            // Desktop: visa menu.png istället för text
-            return `<img src="${base}menu_icons/menu.png" width="28" height="28" alt="MENU" style="vertical-align: middle; display: block;">`;
+            // Desktop: visa menu.png + texten "MENU" (samma storlek som menyns ikoner)
+            return `
+                <img src="${base}menu_icons/menu.png" width="24" height="24" alt="MENU" style="vertical-align: middle; margin-right: 6px; border-radius: 4px;">
+                MENU
+            `;
         }
     }
 
@@ -121,5 +124,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    console.log('🧪 TESTMENY LADDAD – menu.png som knappikon på desktop');
+    console.log('🧪 TESTMENY LADDAD – menu.png + texten "MENU" på desktop');
 });
