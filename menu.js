@@ -13,12 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const base = getBasePath();
 
-    // --- SKAPA MENYN ---
+    // --- SKAPA MENYN (med HOME som första länk i rullgardinen) ---
     const menuHTML = `
         <div class="site-nav">
             <div class="dropdown" id="homeDropdown">
                 <a href="${base}index.html" class="dropbtn" id="homeBtn">🌐 HOME</a>
                 <div class="dropdown-content">
+                    <a href="${base}index.html">🏠 HOME</a>
                     <a href="${base}lang/en.html">🇬🇧 ENGLISH</a>
                     <a href="${base}lang/zh.html">🇨🇳 简体中文</a>
                     <a href="${base}lang/sv.html">🇸🇪 SVENSKA</a>
@@ -38,26 +39,31 @@ document.addEventListener('DOMContentLoaded', function() {
         menuContainer.innerHTML = menuHTML;
     }
 
-    // --- MOBIL: KLICK ÖPPNAR MENYN ---
+    // --- MOBIL: KLICK VÄXLAR MENYN (ÖPPNA/STÄNG) ---
     const dropdown = document.getElementById('homeDropdown');
     const btn = document.getElementById('homeBtn');
-    let isOpen = false;
 
     if (btn && dropdown) {
         btn.addEventListener('click', function(e) {
+            // Endast på mobil (≤600px)
             if (window.innerWidth <= 600) {
-                if (!isOpen) {
-                    e.preventDefault();
-                    dropdown.classList.add('active');
-                    isOpen = true;
+                e.preventDefault(); // Förhindra navigation till index.html
+
+                // Växla (toggle) menyns synlighet
+                const isOpen = dropdown.classList.contains('active');
+                if (isOpen) {
+                    dropdown.classList.remove('active'); // Stäng
+                } else {
+                    dropdown.classList.add('active'); // Öppna
                 }
             }
+            // På desktop ( >600px) gör vi inget – länken fungerar som vanligt (går till index.html)
         });
 
+        // Klick utanför menyn stänger den (även på mobil)
         document.addEventListener('click', function(e) {
             if (!dropdown.contains(e.target)) {
                 dropdown.classList.remove('active');
-                isOpen = false;
             }
         });
     }
