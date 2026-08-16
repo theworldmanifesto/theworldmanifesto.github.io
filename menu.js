@@ -52,14 +52,23 @@ document.addEventListener('DOMContentLoaded', function() {
         menuContainer.innerHTML = buildMenu();
     }
 
-    // --- MOBIL: KLICK VÄXLAR MENYN (ÖPPNA/STÄNG) ---
+    // --- Uppdatera knapptext vid fönsterändring ---
+    function updateButtonText() {
+        const btn = document.getElementById('homeBtn');
+        if (btn) {
+            btn.textContent = getButtonText();
+        }
+    }
+
+    // Lyssna på fönsterändringar
+    window.addEventListener('resize', updateButtonText);
+
+    // --- MOBIL: KLICK VÄXLAR MENYN ---
     const dropdown = document.getElementById('homeDropdown');
     const btn = document.getElementById('homeBtn');
 
-    function setupMenuEvents() {
-        if (!btn || !dropdown) return;
-
-        // Ta bort gamla eventlisteners för att undvika dubletter
+    if (btn && dropdown) {
+        // Ta bort gamla eventlisteners (för att undvika dubletter)
         const newBtn = btn.cloneNode(true);
         btn.parentNode.replaceChild(newBtn, btn);
         const newDropdown = dropdown.cloneNode(true);
@@ -72,14 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
             freshBtn.addEventListener('click', function(e) {
                 if (isMobile()) {
                     e.preventDefault(); // Förhindra navigation
-                    const isOpen = freshDropdown.classList.contains('active');
-                    if (isOpen) {
-                        freshDropdown.classList.remove('active');
-                    } else {
-                        freshDropdown.classList.add('active');
-                    }
+                    freshDropdown.classList.toggle('active');
                 }
-                // På desktop gör vi inget – länken fungerar normalt
             });
 
             // Klick utanför stänger menyn
@@ -90,22 +93,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-
-    // --- Uppdatera knapptext vid fönsterändring (resize) ---
-    function updateButtonText() {
-        const btn = document.getElementById('homeBtn');
-        if (btn) {
-            btn.textContent = getButtonText();
-        }
-    }
-
-    // Lyssna på fönsterändringar
-    window.addEventListener('resize', function() {
-        updateButtonText();
-        // Uppdatera även menyns beteende om den har förstörts
-        setupMenuEvents();
-    });
-
-    // Initiera events
-    setupMenuEvents();
 });
