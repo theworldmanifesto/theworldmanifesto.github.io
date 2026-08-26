@@ -199,10 +199,10 @@
         <!-- HOME-meny (befintlig) -->
         <div id="main-menu"></div>
 
-        <!-- READ-meny (ny – språkval) -->
+        <!-- READ-meny (språkval) – KORREKT SÖKVÄG -->
         <div class="read-menu">
             <label for="read-select">READ:</label>
-            <select id="read-select" onchange="if(this.value) window.location.href='lang/' + this.value + '.html'">
+            <select id="read-select" onchange="if(this.value) window.location.href='lang/read.html?lang=' + this.value">
                 <option value="">-- Choose language --</option>
                 <option value="af">Afrikaans</option>
                 <option value="ar">العربية</option>
