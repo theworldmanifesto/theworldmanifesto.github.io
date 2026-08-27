@@ -1,25 +1,28 @@
 /* ======================================== */
-/* MENY – MODERN, FLYTANDE, INGEN BÅRD     */
+/* MENY – CENTRERAD MOT INNEHÅLLET          */
 /* ======================================== */
 
 .nav-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
-    background: transparent; /* Ingen bakgrund – flytande */
+    justify-content: flex-start; /* Menyerna grupperas till vänster */
+    gap: 16px;                  /* Mellanrum mellan READ och HEM */
+    max-width: 800px;           /* SAMMA BREDD SOM DITT INNEHÅLL */
+    margin: 0 auto;             /* CENTRERAR HELA MENYRADEN */
+    padding: 12px 20px;         /* Luft inuti */
+    background: transparent;    /* Ingen bakgrund */
     position: sticky;
     top: 0;
     z-index: 500;
     flex-wrap: wrap;
-    gap: 8px;
 }
 
-/* READ – vänster, ingen etikett */
+/* READ – vänster */
 .read-menu {
     display: inline-block;
     font-family: sans-serif;
     font-size: 14px;
+    flex-shrink: 0; /* Förhindrar att den krymper */
 }
 
 .read-menu select {
@@ -37,15 +40,20 @@
     border-color: #888;
 }
 
-/* HEM – höger (flytande, som tidigare) */
+/* HEM – höger (fortfarande "flytande") */
 #main-menu {
     display: inline-block;
+    flex-shrink: 0; /* Förhindrar att den krymper */
 }
 
 .site-nav {
     position: relative;
     display: inline-block;
 }
+
+/* ======================================== */
+/* HEM-KNAPP – OFÖRÄNDRAD                   */
+/* ======================================== */
 
 .dropbtn {
     color: #1a1a1a;
@@ -67,11 +75,14 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
-/* Rullgardin – HEM */
+/* ======================================== */
+/* RULLGARDIN – HEM                         */
+/* ======================================== */
+
 .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;
+    left: 0;               /* Ändrat från right: 0 till left: 0 */
     top: 100%;
     margin-top: 8px;
     background: rgba(255, 255, 255, 0.95);
@@ -119,6 +130,7 @@
 @media (max-width: 600px) {
     .nav-wrapper {
         padding: 8px 12px;
+        gap: 10px;
     }
 
     .dropbtn {
@@ -127,7 +139,7 @@
     }
 
     .dropdown-content {
-        right: 0;
+        left: 0;
         width: 80vw;
         max-width: 280px;
     }
