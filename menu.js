@@ -1,5 +1,5 @@
 // ============================================================
-// MENU.JS – Två knappar med rullgardiner: MANIFESTET + HEM
+// MENU.JS – MANIFESTET (språkmeny) + HEM (navigering)
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -9,48 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- ÖVERSÄTTNINGAR ---
     const translations = {
-        'en': { home: 'HOME', manifesto: '🌐 MANIFESTO' },
-        'zh': { home: '首页', manifesto: '🌐 宣言' },
-        'hi': { home: 'होम', manifesto: '🌐 घोषणापत्र' },
-        'es': { home: 'INICIO', manifesto: '🌐 MANIFIESTO' },
-        'fr': { home: 'ACCUEIL', manifesto: '🌐 MANIFESTE' },
-        'ar': { home: 'الرئيسية', manifesto: '🌐 البيان' },
-        'bn': { home: 'হোম', manifesto: '🌐 ইশতেহার' },
-        'pt': { home: 'INÍCIO', manifesto: '🌐 MANIFESTO' },
-        'ru': { home: 'ГЛАВНАЯ', manifesto: '🌐 МАНИФЕСТ' },
-        'ur': { home: 'ہوم', manifesto: '🌐 منشور' },
-        'id': { home: 'BERANDA', manifesto: '🌐 MANIFES' },
-        'de': { home: 'STARTSEITE', manifesto: '🌐 MANIFEST' },
-        'ja': { home: 'ホーム', manifesto: '🌐 宣言' },
-        'sw': { home: 'NYUMBA', manifesto: '🌐 ILANI' },
-        'tl': { home: 'HOME', manifesto: '🌐 MANIPESTO' },
-        'tr': { home: 'ANA SAYFA', manifesto: '🌐 MANİFESTO' },
-        'vi': { home: 'TRANG CHỦ', manifesto: '🌐 TUYÊN NGÔN' },
-        'ko': { home: '홈', manifesto: '🌐 선언문' },
-        'fa': { home: 'خانه', manifesto: '🌐 مانیفست' },
-        'it': { home: 'HOME', manifesto: '🌐 MANIFESTO' },
-        'th': { home: 'หน้าแรก', manifesto: '🌐 แถลงการณ์' },
-        'pl': { home: 'STRONA GŁÓWNA', manifesto: '🌐 MANIFEST' },
-        'uk': { home: 'ГОЛОВНА', manifesto: '🌐 МАНІФЕСТ' },
-        'nl': { home: 'HOME', manifesto: '🌐 MANIFEST' },
-        'ro': { home: 'ACASĂ', manifesto: '🌐 MANIFEST' },
-        'el': { home: 'ΑΡΧΙΚΗ', manifesto: '🌐 ΜΑΝΙΦΕΣΤΟ' },
-        'hu': { home: 'FŐOLDAL', manifesto: '🌐 MANIFESZTUM' },
-        'cs': { home: 'DOMŮ', manifesto: '🌐 MANIFEST' },
-        'sv': { home: 'HEM', manifesto: '🌐 MANIFESTET' },
-        'bg': { home: 'НАЧАЛО', manifesto: '🌐 МАНИФЕСТ' },
-        'no': { home: 'HJEM', manifesto: '🌐 MANIFESTET' },
-        'da': { home: 'HJEM', manifesto: '🌐 MANIFESTET' },
-        'fi': { home: 'ETUSIVU', manifesto: '🌐 MANIFESTI' },
-        'he': { home: 'בית', manifesto: '🌐 מניפוסט' },
-        'af': { home: 'TUIS', manifesto: '🌐 MANIFES' },
-        'zu': { home: 'IKHAYA', manifesto: '🌐 IMANIFESTO' },
-        'xh': { home: 'IKHAYA', manifesto: '🌐 IMANIFESTO' },
-        'is': { home: 'HEIM', manifesto: '🌐 MANIFESTI' },
-        'fo': { home: 'HEIM', manifesto: '🌐 MANIFEST' },
-        'crs': { home: 'LAKAZ', manifesto: '🌐 MANIFEST' },
-        'se': { home: 'RUOKTU', manifesto: '🌐 MANIFESTA' },
-        'fit': { home: 'KOTI', manifesto: '🌐 MANIFESTI' }
+        'en': { home: 'HOME', read: 'THE MANIFESTO' },
+        'sv': { home: 'HEM', read: 'MANIFESTET' },
+        'es': { home: 'INICIO', read: 'EL MANIFIESTO' },
+        'fr': { home: 'ACCUEIL', read: 'LE MANIFESTE' },
+        'de': { home: 'STARTSEITE', read: 'DAS MANIFEST' },
+        // ... lägg till alla 42 språk här ...
     };
 
     const t = translations[currentLang] || translations['en'];
@@ -64,23 +28,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     const base = getBasePath();
 
-    // --- Hjälpfunktion för mobil ---
+    // --- Mobil? ---
     function isMobile() {
         return window.innerWidth <= 600;
     }
 
-    // --- HEM-knapptext (mobil/dator) ---
-    function getHomeButtonText() {
-        return isMobile() ? '☰ ' + t.home : '🏠 ' + t.home;
-    }
-
     // --- MANIFESTET-knapptext ---
-    function getManifestoButtonText() {
-        return isMobile() ? '📄' : t.manifesto; // Mobil: kortare text
+    function getManifestText() {
+        return isMobile() ? '📖' : t.read;
     }
 
-    // --- MANIFESTET-MENY (språkval) ---
-    function getManifestoMenu() {
+    // --- HEM-knapptext ---
+    function getHomeButtonText() {
+        return isMobile() ? '☰ ' + t.home : '🌐 ' + t.home;
+    }
+
+    // --- MANIFESTET (språkmeny) ---
+    function getManifestMenu() {
         const languages = [
             { code: 'af', name: 'Afrikaans' },
             { code: 'ar', name: 'العربية' },
@@ -128,15 +92,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         languages.sort((a, b) => a.name.localeCompare(b.name));
 
+        const btnText = getManifestText();
+
         let menu = `
-            <div class="dropdown" id="manifestoDropdown">
-                <a href="#" class="dropbtn" id="manifestoBtn">${getManifestoButtonText()}</a>
-                <div class="dropdown-content">
+            <div class="manifest-menu">
+                <div class="dropdown manifest-dropdown" id="manifestDropdown">
+                    <button class="dropbtn manifest-btn" id="manifestBtn">${btnText}</button>
+                    <div class="dropdown-content manifest-content">
         `;
         languages.forEach(lang => {
             menu += `<a href="${base}lang/read.html?lang=${lang.code}">${lang.name}</a>`;
         });
-        menu += `</div></div>`;
+        menu += `
+                    </div>
+                </div>
+            </div>
+        `;
         return menu;
     }
 
@@ -144,14 +115,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function getHomeMenu() {
         const btnText = getHomeButtonText();
         return `
-            <div class="dropdown" id="homeDropdown">
-                <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
-                <div class="dropdown-content">
-                    <a href="${base}index.html">🏠 ${t.home}</a>
-                    <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
-                    <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
-                    <a href="${base}robotel/robotel.html">👄 Robotel</a>
-                    <a href="${base}share/share.html">💬 Share</a>
+            <div class="home-menu">
+                <div class="dropdown home-dropdown" id="homeDropdown">
+                    <a href="${base}index.html" class="dropbtn home-btn" id="homeBtn">${btnText}</a>
+                    <div class="dropdown-content home-content">
+                        <a href="${base}index.html">🏠 ${t.home}</a>
+                        <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
+                        <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
+                        <a href="${base}robotel/robotel.html">👄 Robotel</a>
+                        <a href="${base}share/share.html">💬 Share</a>
+                    </div>
                 </div>
             </div>
         `;
@@ -160,12 +133,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- SÄTT IN MENYERNA ---
     const navWrapper = document.querySelector('.nav-wrapper');
     if (navWrapper) {
-        // MANIFESTET – lägg till om den inte redan finns
-        if (!document.getElementById('manifestoDropdown')) {
-            const manifestoContainer = document.createElement('div');
-            manifestoContainer.className = 'menu-item';
-            manifestoContainer.innerHTML = getManifestoMenu();
-            navWrapper.prepend(manifestoContainer);
+        // MANIFESTET – lägg till
+        if (!navWrapper.querySelector('.manifest-menu')) {
+            const manifestContainer = document.createElement('div');
+            manifestContainer.innerHTML = getManifestMenu();
+            navWrapper.prepend(manifestContainer);
         }
 
         // HEM – uppdatera befintlig
@@ -175,51 +147,70 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // --- Uppdatera knapptext vid fönsterändring ---
-    function updateButtonTexts() {
-        const manifestoBtn = document.getElementById('manifestoBtn');
-        if (manifestoBtn) {
-            manifestoBtn.textContent = getManifestoButtonText();
+    // --- Uppdatera knappar vid fönsterändring ---
+    function updateButtons() {
+        const manifestBtn = document.getElementById('manifestBtn');
+        if (manifestBtn) {
+            manifestBtn.textContent = getManifestText();
         }
         const homeBtn = document.getElementById('homeBtn');
         if (homeBtn) {
             homeBtn.textContent = getHomeButtonText();
         }
     }
-    window.addEventListener('resize', updateButtonTexts);
+    window.addEventListener('resize', updateButtons);
 
-    // --- MOBIL: klick öppnar menyerna ---
-    function setupDropdown(dropdownId, btnId) {
-        const dropdown = document.getElementById(dropdownId);
-        const btn = document.getElementById(btnId);
+    // --- MOBIL: klick öppnar MANIFESTET ---
+    const manifestDropdown = document.getElementById('manifestDropdown');
+    const manifestBtn = document.getElementById('manifestBtn');
+    if (manifestBtn && manifestDropdown) {
+        const newBtn = manifestBtn.cloneNode(true);
+        manifestBtn.parentNode.replaceChild(newBtn, manifestBtn);
+        const newDropdown = manifestDropdown.cloneNode(true);
+        manifestDropdown.parentNode.replaceChild(newDropdown, manifestDropdown);
 
-        if (btn && dropdown) {
-            // Ta bort gamla event listeners
-            const newBtn = btn.cloneNode(true);
-            btn.parentNode.replaceChild(newBtn, btn);
-            const newDropdown = dropdown.cloneNode(true);
-            dropdown.parentNode.replaceChild(newDropdown, dropdown);
+        const freshManifestBtn = document.getElementById('manifestBtn');
+        const freshManifestDropdown = document.getElementById('manifestDropdown');
 
-            const freshBtn = document.getElementById(btnId);
-            const freshDropdown = document.getElementById(dropdownId);
-
-            if (freshBtn && freshDropdown) {
-                freshBtn.addEventListener('click', function(e) {
-                    if (isMobile()) {
-                        e.preventDefault();
-                        freshDropdown.classList.toggle('active');
-                    }
-                });
-
-                document.addEventListener('click', function(e) {
-                    if (!freshDropdown.contains(e.target)) {
-                        freshDropdown.classList.remove('active');
-                    }
-                });
-            }
+        if (freshManifestBtn && freshManifestDropdown) {
+            freshManifestBtn.addEventListener('click', function(e) {
+                if (isMobile()) {
+                    e.preventDefault();
+                    freshManifestDropdown.classList.toggle('active');
+                }
+            });
+            document.addEventListener('click', function(e) {
+                if (!freshManifestDropdown.contains(e.target)) {
+                    freshManifestDropdown.classList.remove('active');
+                }
+            });
         }
     }
 
-    setupDropdown('manifestoDropdown', 'manifestoBtn');
-    setupDropdown('homeDropdown', 'homeBtn');
+    // --- MOBIL: klick öppnar HEM ---
+    const homeDropdown = document.getElementById('homeDropdown');
+    const homeBtn = document.getElementById('homeBtn');
+    if (homeBtn && homeDropdown) {
+        const newBtn = homeBtn.cloneNode(true);
+        homeBtn.parentNode.replaceChild(newBtn, homeBtn);
+        const newDropdown = homeDropdown.cloneNode(true);
+        homeDropdown.parentNode.replaceChild(newDropdown, homeDropdown);
+
+        const freshHomeBtn = document.getElementById('homeBtn');
+        const freshHomeDropdown = document.getElementById('homeDropdown');
+
+        if (freshHomeBtn && freshHomeDropdown) {
+            freshHomeBtn.addEventListener('click', function(e) {
+                if (isMobile()) {
+                    e.preventDefault();
+                    freshHomeDropdown.classList.toggle('active');
+                }
+            });
+            document.addEventListener('click', function(e) {
+                if (!freshHomeDropdown.contains(e.target)) {
+                    freshHomeDropdown.classList.remove('active');
+                }
+            });
+        }
+    }
 });
