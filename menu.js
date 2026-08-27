@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- HÄMTA SPRÅK ---
     const currentLang = document.documentElement.lang || 'en';
 
-    // --- ÖVERSÄTTNINGAR FÖR MENYERNA ---
+    // --- ÖVERSÄTTNINGAR ---
     const translations = {
         'en': { home: 'HOME', read: '-- READ: Choose language --' },
         'zh': { home: '首页', read: '-- 阅读: 选择语言 --' },
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return isMobile() ? '☰ ' + t.home : '🌐 ' + t.home;
     }
 
-    // --- READ-MENY (utan separat etikett, med "Läs:" i rullgardinen) ---
+    // --- READ-MENY ---
     function getReadMenu() {
         const languages = [
             { code: 'af', name: 'Afrikaans' },
