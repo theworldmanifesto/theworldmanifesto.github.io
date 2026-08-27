@@ -1,663 +1,148 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The World Manifesto</title>
-    <link rel="stylesheet" href="menu.css">
-    <style>
-        body {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            line-height: 1.25;
-            color: #1a1a1a;
-            background-color: #fcfcfc;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 10px 20px 40px 20px;
-            display: flex;
-            flex-direction: column;
-            min-height: 85vh;
-            justify-content: space-between;
-        }
-        main { text-align: center; }
-
-        /* ======================================== */
-        /* MENY – READ + MENY                       */
-        /* ======================================== */
-
-        .nav-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 16px;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 12px 20px;
-            background: transparent;
-            position: sticky;
-            top: 0;
-            z-index: 500;
-            flex-wrap: wrap;
-        }
-
-        /* READ-MENY – SPRÅKVALS-RULLGARDIN */
-        .read-menu {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
-
-        .read-menu label {
-            margin-right: 4px;
-            font-weight: bold;
-            color: #1a1a1a;
-        }
-
-        .read-menu select {
-            padding: 6px 12px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(4px);
-            font-size: 13px;
-            cursor: pointer;
-            transition: border-color 0.2s;
-            font-family: sans-serif;
-        }
-
-        .read-menu select:hover {
-            border-color: #888;
-        }
-
-        .read-menu select:focus {
-            outline: none;
-            border-color: #555;
-        }
-
-        /* MENY-MENY – FLYTANDE */
-        #main-menu {
-            display: inline-block;
-            flex-shrink: 0;
-        }
-
-        .site-nav {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* MENY-knapp – button, inte länk */
-        .dropbtn {
-            color: #1a1a1a;
-            font-size: 16px;
-            font-weight: bold;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(8px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            display: inline-block;
-            transition: background 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-            font-family: system-ui, sans-serif;
-        }
-
-        .dropbtn:hover {
-            background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            left: 0;
-            top: 100%;
-            margin-top: 8px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
-            min-width: 200px;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-            border: 1px solid rgba(200, 200, 200, 0.2);
-            z-index: 999;
-            overflow: hidden;
-        }
-
-        .dropdown-content a {
-            color: #1a1a1a;
-            padding: 10px 16px;
-            text-decoration: none;
-            display: block;
-            font-size: 14px;
-            font-family: system-ui, sans-serif;
-            border-bottom: 1px solid #f0f0f0;
-            transition: background 0.15s;
-        }
-
-        .dropdown-content a:last-child {
-            border-bottom: none;
-        }
-
-        .dropdown-content a:hover {
-            background: #f7f7f7;
-        }
-
-        @media (min-width: 601px) {
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .nav-wrapper {
-                padding: 8px 12px;
-                gap: 10px;
-            }
-
-            .dropbtn {
-                font-size: 14px;
-                padding: 6px 12px;
-            }
-
-            .dropdown-content {
-                left: 0;
-                width: 80vw;
-                max-width: 280px;
-            }
-
-            .dropdown.active .dropdown-content {
-                display: block;
-            }
-
-            .read-menu select {
-                font-size: 12px;
-                padding: 4px 8px;
-            }
-
-            .read-menu label {
-                font-size: 12px;
-            }
-        }
-
-        /* ======================================== */
-        /* SLOGAN-RUTAN                             */
-        /* ======================================== */
-
-        #slogan-box {
-            max-width: 680px;
-            margin: 30px auto;
-            border: 1px solid #ddd;
-            border-radius: 16px;
-            padding: 28px 24px;
-            text-align: center;
-        }
-
-        #slogan-text {
-            font-size: 22px;
-            line-height: 1.45;
-            min-height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.4s;
-            font-style: italic;
-            color: #444;
-        }
-
-        .dots {
-            display: flex;
-            gap: 7px;
-            justify-content: center;
-            margin: 14px 0;
-        }
-
-        .dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #ddd;
-            cursor: pointer;
-        }
-
-        .dot.on { background: #111; }
-
-        .btns {
-            display: flex;
-            gap: 6px;
-            justify-content: center;
-            flex-wrap: wrap;
-            font-family: sans-serif;
-        }
-
-        .b {
-            padding: 7px 12px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .bx { background: #000; color: #fff; }
-        .bf { background: #1877F2; color: #fff; }
-        .bw { background: #25D366; color: #fff; }
-        .bt { background: #26A5E4; color: #fff; }
-        .bm { background: #666; color: #fff; }
-        .bc { background: #fff; color: #000; border: 1px solid #ccc; }
-
-        /* ======================================== */
-        /* FLAGGOR – startsidan                     */
-        /* ======================================== */
-
-        .lang-flags {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            margin: 15px 0;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .lang-flags > div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .lang-flags .lang-label {
-            font-size: 12px;
-            color: #666;
-            display: block;
-            margin-top: 2px;
-        }
-
-        .lang-flags a {
-            text-decoration: none;
-            transition: transform 0.2s;
-            display: inline-block;
-            line-height: 0;
-        }
-
-        .lang-flags a:hover {
-            transform: scale(1.2);
-        }
-
-        .lang-flag-img {
-            width: 30px;
-            height: 20px;
-            object-fit: cover;
-            display: block;
-            background: transparent;
-            border: 1px solid #CCC;
-            box-sizing: border-box;
-        }
-
-        .lang-flag-img[src$="kr.svg"] {
-            width: 33.5px;
-            height: 22px;
-            object-fit: cover;
-        }
-
 /* ======================================== */
-/* TEST – Tvinga fram MENY                  */
+/* MENY – READ + MENY                       */
 /* ======================================== */
 
-#main-menu {
-    display: inline-block !important;
-    background: #ff0000 !important;
-    padding: 10px !important;
-    border: 2px solid #000 !important;
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    flex-wrap: wrap;
 }
 
-#main-menu .dropbtn {
-    display: inline-block !important;
-    color: #fff !important;
-    background: #000 !important;
-    font-size: 18px !important;
-    padding: 10px 20px !important;
+/* READ-MENY – SPRÅKVALS-RULLGARDIN */
+.read-menu {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    flex-shrink: 0;
 }
 
-    </style>
-</head>
-<body>
+.read-menu label {
+    margin-right: 4px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
 
-    <!-- ======================================== -->
-    <!-- NAVIGATION: READ + MENY                   -->
-    <!-- ======================================== -->
+.read-menu select {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    font-family: sans-serif;
+}
 
-    <div class="nav-wrapper">
-        <!-- READ – språkvalsrullgardin -->
-        <div class="read-menu">
-            <label for="read-select">LÄS:</label>
-            <select id="read-select" onchange="if(this.value) window.location.href='lang/read.html?lang=' + this.value">
-                <option value="">Välj språk</option>
-                <option value="af">Afrikaans</option>
-                <option value="ar">العربية</option>
-                <option value="bg">Български</option>
-                <option value="bn">বাংলা</option>
-                <option value="crs">Kreol seselwa</option>
-                <option value="cs">Čeština</option>
-                <option value="da">Dansk</option>
-                <option value="de">Deutsch</option>
-                <option value="el">Ελληνικά</option>
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fa">فارسی</option>
-                <option value="fi">Suomi</option>
-                <option value="fit">Meänkieli</option>
-                <option value="fo">Føroyskt</option>
-                <option value="fr">Français</option>
-                <option value="he">עברית</option>
-                <option value="hi">हिंदी</option>
-                <option value="hu">Magyar</option>
-                <option value="id">Bahasa Indonesia</option>
-                <option value="is">Íslenska</option>
-                <option value="it">Italiano</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option>
-                <option value="nl">Nederlands</option>
-                <option value="no">Norsk</option>
-                <option value="pl">Polski</option>
-                <option value="pt">Português</option>
-                <option value="ro">Română</option>
-                <option value="ru">Русский</option>
-                <option value="se">Davvisámegiella</option>
-                <option value="sv">Svenska</option>
-                <option value="sw">Kiswahili</option>
-                <option value="th">ภาษาไทย</option>
-                <option value="tl">Filipino</option>
-                <option value="tr">Türkçe</option>
-                <option value="uk">Українська</option>
-                <option value="ur">اردو</option>
-                <option value="vi">Tiếng Việt</option>
-                <option value="xh">isiXhosa</option>
-                <option value="zh">中文</option>
-                <option value="zu">isiZulu</option>
-            </select>
-        </div>
+.read-menu select:hover {
+    border-color: #888;
+}
 
-        <!-- MENY – navigering -->
-        <div id="main-menu"></div>
-    </div>
+.read-menu select:focus {
+    outline: none;
+    border-color: #555;
+}
 
-    <!-- ======================================== -->
-    <!-- HUVUDINNEHÅLL                             -->
-    <!-- ======================================== -->
+/* ======================================== */
+/* MENY – direkt i HTML (ingen JavaScript)  */
+/* ======================================== */
 
-    <div class="container">
-        <main>
-            <h1 id="main-title" style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
+.menu-container {
+    display: inline-block;
+    position: relative;
+}
 
-            <div style="margin-bottom: 25px;">
-                <img src="pics/freedom_staircase_main_page.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
-            </div>
+.menu-btn {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    font-family: system-ui, sans-serif;
+    transition: background 0.2s, box-shadow 0.2s;
+}
 
-            <!-- FLAGGOR (alla 42) -->
-            <div class="lang-flags">
-                <!-- Svenska -->
-                <div><a href="lang/read.html?lang=sv"><img src="lang/flags/se.svg" alt="Svenska" class="lang-flag-img"></a><span class="lang-label">Svenska</span></div>
-                <!-- Engelska -->
-                <div><a href="lang/read.html?lang=en"><img src="lang/flags/gb.svg" alt="English" class="lang-flag-img"></a><span class="lang-label">English</span></div>
-                <!-- Kinesiska -->
-                <div><a href="lang/read.html?lang=zh"><img src="lang/flags/cn.svg" alt="中文" class="lang-flag-img"></a><span class="lang-label">中文</span></div>
-                <!-- Hindi -->
-                <div><a href="lang/read.html?lang=hi"><img src="lang/flags/in.svg" alt="हिन्दी" class="lang-flag-img"></a><span class="lang-label">हिन्दी</span></div>
-                <!-- Spanska -->
-                <div><a href="lang/read.html?lang=es"><img src="lang/flags/es.svg" alt="Español" class="lang-flag-img"></a><span class="lang-label">Español</span></div>
-                <!-- Franska -->
-                <div><a href="lang/read.html?lang=fr"><img src="lang/flags/fr.svg" alt="Français" class="lang-flag-img"></a><span class="lang-label">Français</span></div>
-                <!-- Arabiska -->
-                <div><a href="lang/read.html?lang=ar"><img src="lang/flags/sa.svg" alt="العربية" class="lang-flag-img"></a><span class="lang-label">العربية</span></div>
-                <!-- Indonesiska -->
-                <div><a href="lang/read.html?lang=id"><img src="lang/flags/id.svg" alt="Bahasa Indonesia" class="lang-flag-img"></a><span class="lang-label">Indonesia</span></div>
-                <!-- Bengali -->
-                <div><a href="lang/read.html?lang=bn"><img src="lang/flags/bd.svg" alt="বাংলা" class="lang-flag-img"></a><span class="lang-label">বাংলা</span></div>
-                <!-- Portugisiska -->
-                <div><a href="lang/read.html?lang=pt"><img src="lang/flags/pt.svg" alt="Português" class="lang-flag-img"></a><span class="lang-label">Português</span></div>
-                <!-- Ryska -->
-                <div><a href="lang/read.html?lang=ru"><img src="lang/flags/ru.svg" alt="Русский" class="lang-flag-img"></a><span class="lang-label">Русский</span></div>
-                <!-- Ukrainska -->
-                <div><a href="lang/read.html?lang=uk"><img src="lang/flags/ua.svg" alt="Українська" class="lang-flag-img"></a><span class="lang-label">Українська</span></div>
-                <!-- Bulgariska -->
-                <div><a href="lang/read.html?lang=bg"><img src="lang/flags/bg.svg" alt="Български" class="lang-flag-img"></a><span class="lang-label">Български</span></div>
-                <!-- Urdu -->
-                <div><a href="lang/read.html?lang=ur"><img src="lang/flags/pk.svg" alt="اردو" class="lang-flag-img"></a><span class="lang-label">اردو</span></div>
-                <!-- Japanska -->
-                <div><a href="lang/read.html?lang=ja"><img src="lang/flags/jp.svg" alt="日本語" class="lang-flag-img"></a><span class="lang-label">日本語</span></div>
-                <!-- Filippinska -->
-                <div><a href="lang/read.html?lang=tl"><img src="lang/flags/ph.svg" alt="Filipino" class="lang-flag-img"></a><span class="lang-label">Filipino</span></div>
-                <!-- Tyska -->
-                <div><a href="lang/read.html?lang=de"><img src="lang/flags/de.svg" alt="Deutsch" class="lang-flag-img"></a><span class="lang-label">Deutsch</span></div>
-                <!-- Koreanska -->
-                <div><a href="lang/read.html?lang=ko"><img src="lang/flags/kr.svg" alt="한국어" class="lang-flag-img"></a><span class="lang-label">한국어</span></div>
-                <!-- Thailändska -->
-                <div><a href="lang/read.html?lang=th"><img src="lang/flags/th.svg" alt="ไทย" class="lang-flag-img"></a><span class="lang-label">ไทย</span></div>
-                <!-- Vietnamesiska -->
-                <div><a href="lang/read.html?lang=vi"><img src="lang/flags/vn.svg" alt="Tiếng Việt" class="lang-flag-img"></a><span class="lang-label">Tiếng Việt</span></div>
-                <!-- Turkiska -->
-                <div><a href="lang/read.html?lang=tr"><img src="lang/flags/tr.svg" alt="Türkçe" class="lang-flag-img"></a><span class="lang-label">Türkçe</span></div>
-                <!-- Persiska -->
-                <div><a href="lang/read.html?lang=fa"><img src="lang/flags/ir.svg" alt="فارسی" class="lang-flag-img"></a><span class="lang-label">فارسی</span></div>
-                <!-- Swahili -->
-                <div><a href="lang/read.html?lang=sw"><img src="lang/flags/tz.svg" alt="Kiswahili" class="lang-flag-img"></a><span class="lang-label">Kiswahili</span></div>
-                <!-- Italienska -->
-                <div><a href="lang/read.html?lang=it"><img src="lang/flags/it.svg" alt="Italiano" class="lang-flag-img"></a><span class="lang-label">Italiano</span></div>
-                <!-- Polska -->
-                <div><a href="lang/read.html?lang=pl"><img src="lang/flags/pl.svg" alt="Polski" class="lang-flag-img"></a><span class="lang-label">Polski</span></div>
-                <!-- Nederländska -->
-                <div><a href="lang/read.html?lang=nl"><img src="lang/flags/nl.svg" alt="Nederlands" class="lang-flag-img"></a><span class="lang-label">Nederlands</span></div>
-                <!-- Rumänska -->
-                <div><a href="lang/read.html?lang=ro"><img src="lang/flags/ro.svg" alt="Română" class="lang-flag-img"></a><span class="lang-label">Română</span></div>
-                <!-- Grekiska -->
-                <div><a href="lang/read.html?lang=el"><img src="lang/flags/gr.svg" alt="Ελληνικά" class="lang-flag-img"></a><span class="lang-label">Ελληνικά</span></div>
-                <!-- Afrikaans -->
-                <div><a href="lang/read.html?lang=af"><img src="lang/flags/za.svg" alt="Afrikaans" class="lang-flag-img"></a><span class="lang-label">Afrikaans</span></div>
-                <!-- Zulu -->
-                <div><a href="lang/read.html?lang=zu"><img src="lang/flags/za.svg" alt="isiZulu" class="lang-flag-img"></a><span class="lang-label">isiZulu</span></div>
-                <!-- Xhosa -->
-                <div><a href="lang/read.html?lang=xh"><img src="lang/flags/za.svg" alt="isiXhosa" class="lang-flag-img"></a><span class="lang-label">isiXhosa</span></div>
-                <!-- Tjeckiska -->
-                <div><a href="lang/read.html?lang=cs"><img src="lang/flags/cz.svg" alt="Čeština" class="lang-flag-img"></a><span class="lang-label">Čeština</span></div>
-                <!-- Ungerska -->
-                <div><a href="lang/read.html?lang=hu"><img src="lang/flags/hu.svg" alt="Magyar" class="lang-flag-img"></a><span class="lang-label">Magyar</span></div>
-                <!-- Hebreiska -->
-                <div><a href="lang/read.html?lang=he"><img src="lang/flags/il.svg" alt="עברית" class="lang-flag-img"></a><span class="lang-label">עברית</span></div>
-                <!-- Seychellisk kreol -->
-                <div><a href="lang/read.html?lang=crs"><img src="lang/flags/sc.svg" alt="Seselwa" class="lang-flag-img"></a><span class="lang-label">Seselwa</span></div>
-                <!-- Nordsamiska -->
-                <div><a href="lang/read.html?lang=se"><img src="lang/flags/dsg.svg" alt="Davvisámegiella" class="lang-flag-img"></a><span class="lang-label">Davvisámegiella</span></div>
-                <!-- Meänkieli -->
-                <div><a href="lang/read.html?lang=fit"><img src="lang/flags/fit.svg" alt="Meänkieli" class="lang-flag-img"></a><span class="lang-label">Meänkieli</span></div>
-                <!-- Norska -->
-                <div><a href="lang/read.html?lang=no"><img src="lang/flags/no.svg" alt="Norsk" class="lang-flag-img"></a><span class="lang-label">Norsk</span></div>
-                <!-- Finska -->
-                <div><a href="lang/read.html?lang=fi"><img src="lang/flags/fi.svg" alt="Suomi" class="lang-flag-img"></a><span class="lang-label">Suomi</span></div>
-                <!-- Danska -->
-                <div><a href="lang/read.html?lang=da"><img src="lang/flags/dk.svg" alt="Dansk" class="lang-flag-img"></a><span class="lang-label">Dansk</span></div>
-                <!-- Isländska -->
-                <div><a href="lang/read.html?lang=is"><img src="lang/flags/is.svg" alt="Íslenska" class="lang-flag-img"></a><span class="lang-label">Íslenska</span></div>
-                <!-- Färöiska -->
-                <div><a href="lang/read.html?lang=fo"><img src="lang/flags/fo.svg" alt="Føroyskt" class="lang-flag-img"></a><span class="lang-label">Føroyskt</span></div>
-            </div>
+.menu-btn:hover {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
 
-            <!-- SLOGAN-RUTAN -->
-            <div id="slogan-box">
-                <div id="slogan-text"></div>
-                <div id="dots" class="dots"></div>
-                <div class="btns">
-                    <a id="btn-x" class="b bx" href="#">Share on X</a>
-                    <a id="btn-fb" class="b bf" href="#">Facebook</a>
-                    <a id="btn-wa" class="b bw" href="#">WhatsApp</a>
-                    <a id="btn-tg" class="b bt" href="#">Telegram</a>
-                    <a id="btn-em" class="b bm" href="#">Email</a>
-                    <a id="btn-copy" class="b bc" href="#">Copy Link</a>
-                </div>
-            </div>
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    min-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(200, 200, 200, 0.2);
+    z-index: 999;
+    overflow: hidden;
+}
 
-        </main>
-    </div>
+.menu-dropdown a {
+    color: #1a1a1a;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-family: system-ui, sans-serif;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.15s;
+}
 
-    <!-- ======================================== -->
-    <!-- SLOGAN-LOGIK + SPRÅK                     -->
-    <!-- ======================================== -->
+.menu-dropdown a:last-child {
+    border-bottom: none;
+}
 
-    <script>
-        const PAGE = "https://sites.google.com/view/worldmanifesto/";
-        const MANIFESTO = "The World Manifesto";
-        const COPIED = "Copied!";
+.menu-dropdown a:hover {
+    background: #f7f7f7;
+}
 
-        // Hämta språk från URL eller webbläsaren
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentLang = (urlParams.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
+.menu-container:hover .menu-dropdown {
+    display: block;
+}
 
-        // ---------- ÖVERSÄTTNINGAR FÖR STARTSIDAN ----------
-        const pageTranslations = {
-            'en': { title: 'The World Manifesto' },
-            'zh': { title: '世界宣言' },
-            'hi': { title: 'विश्व घोषणापत्र' },
-            'es': { title: 'El Manifiesto Mundial' },
-            'fr': { title: 'Le Manifeste Mondial' },
-            'ar': { title: 'البيان العالمي' },
-            'bn': { title: 'বিশ্ব ইশতেহার' },
-            'pt': { title: 'O Manifesto Mundial' },
-            'ru': { title: 'Всемирный манифест' },
-            'ur': { title: 'عالمی منشور' },
-            'id': { title: 'Manifest Dunia' },
-            'de': { title: 'Weltmanifest' },
-            'ja': { title: '世界宣言' },
-            'sw': { title: 'Ilani ya Dunia' },
-            'tl': { title: 'Manipesto ng Mundo' },
-            'tr': { title: 'Dünya Manifestosu' },
-            'vi': { title: 'Tuyên ngôn Thế giới' },
-            'ko': { title: '세계 선언문' },
-            'fa': { title: 'مانیفست جهانی' },
-            'it': { title: 'Manifesto Mondiale' },
-            'th': { title: 'แถลงการณ์โลก' },
-            'pl': { title: 'Manifest Światowy' },
-            'uk': { title: 'Всесвітній маніфест' },
-            'nl': { title: 'Wereldmanifest' },
-            'ro': { title: 'Manifestul Mondial' },
-            'el': { title: 'Παγκόσμιο Μανιφέστο' },
-            'hu': { title: 'Világkiáltvány' },
-            'cs': { title: 'Světový manifest' },
-            'sv': { title: 'Världsmanifestet' },
-            'bg': { title: 'Световен манифест' },
-            'no': { title: 'Verdensmanifestet' },
-            'da': { title: 'Verdensmanifestet' },
-            'fi': { title: 'Maailmanmanifesti' },
-            'he': { title: 'מניפוסט העולם' },
-            'af': { title: 'Wêreldmanifest' },
-            'zu': { title: 'IManifesto Yomhlaba' },
-            'xh': { title: 'IManifesto Yehlabathi' },
-            'is': { title: 'Heimsmanifestið' },
-            'fo': { title: 'Heimsskráin' },
-            'crs': { title: 'Manifest lemonn' },
-            'se': { title: 'Máilmmi Manifesta' },
-            'fit': { title: 'Mailmanmanifesti' }
-        };
+@media (max-width: 600px) {
+    .nav-wrapper {
+        padding: 8px 12px;
+        gap: 10px;
+    }
 
-        // Sätt titeln
-        const titleText = pageTranslations[currentLang]?.title || pageTranslations['en'].title;
-        document.getElementById('main-title').textContent = titleText;
-        document.title = titleText;
+    .menu-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
 
-        // ---------- SLOGAN-LOGIK ----------
-        let slogans = [];
-        let i = 0, paused = false;
+    .menu-dropdown {
+        left: 0;
+        width: 80vw;
+        max-width: 280px;
+    }
 
-        const btnX = document.getElementById('btn-x');
-        const btnFb = document.getElementById('btn-fb');
-        const btnWa = document.getElementById('btn-wa');
-        const btnTg = document.getElementById('btn-tg');
-        const btnEm = document.getElementById('btn-em');
-        const btnCopy = document.getElementById('btn-copy');
-        const q = document.getElementById('slogan-text');
-        const dots = document.getElementById('dots');
+    .read-menu select {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
 
-        function openNew(u) { window.open(u, '_blank', 'noopener'); }
-
-        function show() {
-            q.style.opacity = 0;
-            setTimeout(() => {
-                const t = slogans[i];
-                const share = '"' + t + '" ' + PAGE;
-                q.textContent = '"' + t + '"';
-                q.style.opacity = 1;
-
-                const uX = 'https://x.com/intent/tweet?text=' + encodeURIComponent(share);
-                const uF = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(PAGE) + '&quote=' + encodeURIComponent(t);
-                const uW = 'https://wa.me/?text=' + encodeURIComponent(share);
-                const uT = 'https://t.me/share/url?url=' + encodeURIComponent(PAGE) + '&text=' + encodeURIComponent('"' + t + '"');
-                const uM = 'mailto:?subject=' + encodeURIComponent(MANIFESTO) + '&body=' + encodeURIComponent(share);
-
-                btnX.onclick = (e) => { e.preventDefault(); openNew(uX); };
-                btnFb.onclick = (e) => { e.preventDefault(); openNew(uF); };
-                btnWa.onclick = (e) => { e.preventDefault(); openNew(uW); };
-                btnTg.onclick = (e) => { e.preventDefault(); openNew(uT); };
-                btnEm.onclick = (e) => { e.preventDefault(); window.location.href = uM; };
-                btnCopy.onclick = (e) => {
-                    e.preventDefault();
-                    navigator.clipboard.writeText(share);
-                    const old = btnCopy.textContent;
-                    btnCopy.textContent = COPIED;
-                    setTimeout(() => btnCopy.textContent = old, 1200);
-                };
-
-                [...dots.children].forEach((a, b) => a.className = b === i ? 'dot on' : 'dot');
-            }, 200);
-        }
-
-        document.getElementById('slogan-box').onmouseenter = () => paused = true;
-        document.getElementById('slogan-box').onmouseleave = () => paused = false;
-
-        function next() {
-            if (!paused && slogans.length > 0) {
-                i = (i + 1) % slogans.length;
-                show();
-            }
-        }
-
-        // ---------- LADDA SLOGANS ----------
-        fetch('slogans.json')
-            .then(response => {
-                if (!response.ok) throw new Error('Kunde inte läsa JSON');
-                return response.json();
-            })
-            .then(data => {
-                const slogansData = data[currentLang.toUpperCase()] || data['SV'] || data['EN'] || {};
-                slogans = Object.values(slogansData);
-
-                if (slogans.length > 0) {
-                    slogans.forEach((_, idx) => {
-                        const d = document.createElement('span');
-                        d.className = 'dot' + (idx === 0 ? ' on' : '');
-                        d.onclick = () => { i = idx; show(); };
-                        dots.appendChild(d);
-                    });
-                    show();
-                    setInterval(next, 10000);
-                }
-            })
-            .catch(err => console.error('Fel:', err));
-    </script>
-
-    <!-- JavaScript – MENY -->
-    <script src="menu.js"></script>
-    <script>
-        console.log('✅ index.html har laddats!');
-        console.log('🔍 main-menu finns?', document.getElementById('main-menu'));
-    </script>
-    <script src="footer.js"></script>
-
-</body>
-</html>
+    .read-menu label {
+        font-size: 12px;
+    }
+}
