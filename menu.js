@@ -10,50 +10,50 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- ORDBOK FÖR ALLA SPRÅK (menytexter) ---
     const translations = {
         // Större språk
-        'en': { home: 'MENU', read: 'READ:', choose: 'Choose language' },
-        'zh': { home: '菜单', read: '阅读:', choose: '选择语言' },
-        'hi': { home: 'मेनू', read: 'पढ़ें:', choose: 'भाषा चुनें' },
-        'es': { home: 'MENÚ', read: 'LEER:', choose: 'Elige idioma' },
-        'fr': { home: 'MENU', read: 'LIRE:', choose: 'Choisissez la langue' },
-        'ar': { home: 'القائمة', read: 'اقرأ:', choose: 'اختر اللغة' },
-        'bn': { home: 'মেনু', read: 'পড়ুন:', choose: 'ভাষা নির্বাচন করুন' },
-        'pt': { home: 'MENU', read: 'LER:', choose: 'Escolha o idioma' },
-        'ru': { home: 'МЕНЮ', read: 'ЧИТАТЬ:', choose: 'Выберите язык' },
-        'ur': { home: 'مینو', read: 'پڑھیں:', choose: 'زبان منتخب کریں' },
-        'id': { home: 'MENU', read: 'BACA:', choose: 'Pilih bahasa' },
-        'de': { home: 'MENÜ', read: 'LESEN:', choose: 'Sprache wählen' },
-        'ja': { home: 'メニュー', read: '読む:', choose: '言語を選択' },
-        'sw': { home: 'MENU', read: 'SOMA:', choose: 'Chagua lugha' },
-        'tl': { home: 'MENU', read: 'BASAHIN:', choose: 'Pumili ng wika' },
-        'tr': { home: 'MENÜ', read: 'OKU:', choose: 'Dil seçin' },
-        'vi': { home: 'MENU', read: 'ĐỌC:', choose: 'Chọn ngôn ngữ' },
-        'ko': { home: '메뉴', read: '읽기:', choose: '언어 선택' },
-        'fa': { home: 'منو', read: 'خواندن:', choose: 'انتخاب زبان' },
-        'it': { home: 'MENU', read: 'LEGGI:', choose: 'Scegli la lingua' },
-        'th': { home: 'เมนู', read: 'อ่าน:', choose: 'เลือกภาษา' },
-        'pl': { home: 'MENU', read: 'CZYTAJ:', choose: 'Wybierz język' },
-        'uk': { home: 'МЕНЮ', read: 'ЧИТАТИ:', choose: 'Виберіть мову' },
-        'nl': { home: 'MENU', read: 'LEES:', choose: 'Kies taal' },
-        'ro': { home: 'MENIU', read: 'CITEȘTE:', choose: 'Alegeți limba' },
-        'el': { home: 'ΜΕΝΟΥ', read: 'ΔΙΑΒΑΣΤΕ:', choose: 'Επιλέξτε γλώσσα' },
-        'hu': { home: 'MENÜ', read: 'OLVASS:', choose: 'Válasszon nyelvet' },
-        'cs': { home: 'MENU', read: 'ČTĚTE:', choose: 'Vyberte jazyk' },
-        'sv': { home: 'MENY', read: 'LÄS:', choose: 'Välj språk' },
-        'bg': { home: 'МЕНЮ', read: 'ЧЕТЕТЕ:', choose: 'Изберете език' },
-        'no': { home: 'MENY', read: 'LES:', choose: 'Velg språk' },
-        'da': { home: 'MENU', read: 'LÆS:', choose: 'Vælg sprog' },
-        'fi': { home: 'VALIKKO', read: 'LUE:', choose: 'Valitse kieli' },
-        'he': { home: 'תפריט', read: 'קרא:', choose: 'בחר שפה' },
-        'af': { home: 'MENU', read: 'LEES:', choose: 'Kies taal' },
+        'en': { home: 'Home', menu: 'MENU', read: 'READ:', choose: 'Choose language' },
+        'zh': { home: '首页', menu: '菜单', read: '阅读:', choose: '选择语言' },
+        'hi': { home: 'होम', menu: 'मेनू', read: 'पढ़ें:', choose: 'भाषा चुनें' },
+        'es': { home: 'Inicio', menu: 'MENÚ', read: 'LEER:', choose: 'Elige idioma' },
+        'fr': { home: 'Accueil', menu: 'MENU', read: 'LIRE:', choose: 'Choisissez la langue' },
+        'ar': { home: 'الرئيسية', menu: 'القائمة', read: 'اقرأ:', choose: 'اختر اللغة' },
+        'bn': { home: 'হোম', menu: 'মেনু', read: 'পড়ুন:', choose: 'ভাষা নির্বাচন করুন' },
+        'pt': { home: 'Início', menu: 'MENU', read: 'LER:', choose: 'Escolha o idioma' },
+        'ru': { home: 'Главная', menu: 'МЕНЮ', read: 'ЧИТАТЬ:', choose: 'Выберите язык' },
+        'ur': { home: 'ہوم', menu: 'مینو', read: 'پڑھیں:', choose: 'زبان منتخب کریں' },
+        'id': { home: 'Beranda', menu: 'MENU', read: 'BACA:', choose: 'Pilih bahasa' },
+        'de': { home: 'Startseite', menu: 'MENÜ', read: 'LESEN:', choose: 'Sprache wählen' },
+        'ja': { home: 'ホーム', menu: 'メニュー', read: '読む:', choose: '言語を選択' },
+        'sw': { home: 'Nyumbani', menu: 'MENU', read: 'SOMA:', choose: 'Chagua lugha' },
+        'tl': { home: 'Home', menu: 'MENU', read: 'BASAHIN:', choose: 'Pumili ng wika' },
+        'tr': { home: 'Ana Sayfa', menu: 'MENÜ', read: 'OKU:', choose: 'Dil seçin' },
+        'vi': { home: 'Trang chủ', menu: 'MENU', read: 'ĐỌC:', choose: 'Chọn ngôn ngữ' },
+        'ko': { home: '홈', menu: '메뉴', read: '읽기:', choose: '언어 선택' },
+        'fa': { home: 'خانه', menu: 'منو', read: 'خواندن:', choose: 'انتخاب زبان' },
+        'it': { home: 'Home', menu: 'MENU', read: 'LEGGI:', choose: 'Scegli la lingua' },
+        'th': { home: 'หน้าแรก', menu: 'เมนู', read: 'อ่าน:', choose: 'เลือกภาษา' },
+        'pl': { home: 'Strona główna', menu: 'MENU', read: 'CZYTAJ:', choose: 'Wybierz język' },
+        'uk': { home: 'Головна', menu: 'МЕНЮ', read: 'ЧИТАТИ:', choose: 'Виберіть мову' },
+        'nl': { home: 'Home', menu: 'MENU', read: 'LEES:', choose: 'Kies taal' },
+        'ro': { home: 'Acasă', menu: 'MENIU', read: 'CITEȘTE:', choose: 'Alegeți limba' },
+        'el': { home: 'Αρχική', menu: 'ΜΕΝΟΥ', read: 'ΔΙΑΒΑΣΤΕ:', choose: 'Επιλέξτε γλώσσα' },
+        'hu': { home: 'Főoldal', menu: 'MENÜ', read: 'OLVASS:', choose: 'Válasszon nyelvet' },
+        'cs': { home: 'Domů', menu: 'MENU', read: 'ČTĚTE:', choose: 'Vyberte jazyk' },
+        'sv': { home: 'Hem', menu: 'MENY', read: 'LÄS:', choose: 'Välj språk' },
+        'bg': { home: 'Начало', menu: 'МЕНЮ', read: 'ЧЕТЕТЕ:', choose: 'Изберете език' },
+        'no': { home: 'Hjem', menu: 'MENY', read: 'LES:', choose: 'Velg språk' },
+        'da': { home: 'Hjem', menu: 'MENU', read: 'LÆS:', choose: 'Vælg sprog' },
+        'fi': { home: 'Etusivu', menu: 'VALIKKO', read: 'LUE:', choose: 'Valitse kieli' },
+        'he': { home: 'בית', menu: 'תפריט', read: 'קרא:', choose: 'בחר שפה' },
+        'af': { home: 'Tuis', menu: 'MENU', read: 'LEES:', choose: 'Kies taal' },
 
         // Mindre/regionala språk
-        'zu': { home: 'IMENU', read: 'FUNDA:', choose: 'Khetha ulimi' },
-        'xh': { home: 'IMENU', read: 'FUNDA:', choose: 'Khetha ulimi' },
-        'is': { home: 'VALMYND', read: 'LESA:', choose: 'Veldu tungumál' },
-        'fo': { home: 'MENU', read: 'LES:', choose: 'Vel mál' },
-        'crs': { home: 'MENI', read: 'LIR:', choose: 'Sazir langaz' },
-        'se': { home: 'MENU', read: 'LOHKKA:', choose: 'Vállje giella' },
-        'fit': { home: 'VALIKKO', read: 'LUVE:', choose: 'Välj kieli' }
+        'zu': { home: 'Ikhaya', menu: 'IMENU', read: 'FUNDA:', choose: 'Khetha ulimi' },
+        'xh': { home: 'Ikhaya', menu: 'IMENU', read: 'FUNDA:', choose: 'Khetha ulimi' },
+        'is': { home: 'Heim', menu: 'VALMYND', read: 'LESA:', choose: 'Veldu tungumál' },
+        'fo': { home: 'Heim', menu: 'MENU', read: 'LES:', choose: 'Vel mál' },
+        'crs': { home: 'Lakaz', menu: 'MENI', read: 'LIR:', choose: 'Sazir langaz' },
+        'se': { home: 'Ruoktu', menu: 'MENU', read: 'LOHKKA:', choose: 'Vállje giella' },
+        'fit': { home: 'Koti', menu: 'VALIKKO', read: 'LUVE:', choose: 'Välj kieli' }
     };
 
     // Välj rätt språk eller fallback till engelska
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Bygg knapptext beroende på skärmbredd ---
     function getButtonText() {
-        return isMobile() ? '☰' : '📋 ' + t.home;
+        return isMobile() ? '☰' : '📋 ' + t.menu;
     }
 
     // --- READ-MENY (språkval) ---
@@ -141,13 +141,13 @@ document.addEventListener('DOMContentLoaded', function() {
         return menu;
     }
 
-    // --- SKAPA MENY-MENYN ---
+    // --- SKAPA MENY-MENYN (knappen är inte en länk) ---
     function buildMenu() {
         const btnText = getButtonText();
         return `
             <div class="site-nav">
                 <div class="dropdown" id="homeDropdown">
-                    <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
+                    <button class="dropbtn" id="homeBtn">${btnText}</button>
                     <div class="dropdown-content">
                         <a href="${base}index.html">🏠 ${t.home}</a>
                         <a href="${base}lang/lang.html">🌐 More Languages</a>
@@ -203,13 +203,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const freshDropdown = document.getElementById('homeDropdown');
 
         if (freshBtn && freshDropdown) {
+            // Klick på knappen – öppna/stäng menyn
             freshBtn.addEventListener('click', function(e) {
+                e.preventDefault();
                 if (isMobile()) {
-                    e.preventDefault();
                     freshDropdown.classList.toggle('active');
                 }
             });
 
+            // Klick utanför – stäng menyn
             document.addEventListener('click', function(e) {
                 if (!freshDropdown.contains(e.target)) {
                     freshDropdown.classList.remove('active');
