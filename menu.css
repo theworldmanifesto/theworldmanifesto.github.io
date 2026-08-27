@@ -1,200 +1,127 @@
-/* ======================================== */
-/* MENY – MANIFESTET + HEM                  */
-/* ======================================== */
+/* ============================================================
+   MENU.CSS - Menyknapp längst till höger på skärmen
+   ============================================================ */
 
-.nav-wrapper {
+/* Behållare – fast positionerad längst till höger */
+.site-nav {
+    position: fixed;
+    top: 12px;
+    right: 20px;          /* Längst till höger med lite marginal */
+    width: auto;
+    max-width: none;
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 12px 20px;
+    justify-content: flex-end;
+    z-index: 300;
+    pointer-events: none; /* Tomrummet runt knappen går att klicka/skrolla igenom */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    pointer-events: auto; /* Aktiverar klick för själva knappen och menyn */
+}
+
+/* Snygg inramad knapp */
+.dropbtn {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.dropbtn:hover {
+    background: #f7f7f7;
+    border-color: #999;
+}
+
+/* Rullgardinsmenyn */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 8px;
+    background-color: #fff;
+    min-width: 220px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 999;
+}
+
+/* Osynlig brygga som täcker glipan så att hover-effekten inte bryts */
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
     background: transparent;
-    position: sticky;
-    top: 0;
-    z-index: 500;
-    flex-wrap: wrap;
 }
 
-/* ======================================== */
-/* MANIFESTET – SPRÅKMENY                   */
-/* ======================================== */
-
-.manifest-menu {
-    display: inline-block;
-    flex-shrink: 0;
-}
-
-.manifest-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.manifest-btn {
+.dropdown-content a {
     color: #1a1a1a;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    cursor: pointer;
-    transition: background 0.2s, box-shadow 0.2s;
-    font-family: sans-serif;
-}
-
-.manifest-btn:hover {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-/* MANIFESTET-rullgardin */
-.manifest-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    margin-top: 0; /* INGEN GLIPA */
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    min-width: 200px;
-    max-height: 400px;
-    overflow-y: auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    border: 1px solid rgba(200, 200, 200, 0.2);
-    z-index: 999;
-}
-
-.manifest-content a {
-    color: #1a1a1a;
-    padding: 10px 16px;
+    padding: 10px 14px;
     text-decoration: none;
     display: block;
     font-size: 14px;
     font-family: system-ui, sans-serif;
     border-bottom: 1px solid #f0f0f0;
-    transition: background 0.15s;
 }
 
-.manifest-content a:last-child {
+/* Avrundade hörn på översta och nedersta länken */
+.dropdown-content a:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dropdown-content a:last-child {
     border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.manifest-content a:hover {
-    background: #f7f7f7;
+.dropdown-content a:hover {
+    background-color: #f7f7f7;
 }
 
-/* ======================================== */
-/* HEM – NAVIGERING                         */
-/* ======================================== */
-
-.home-menu {
-    display: inline-block;
-    flex-shrink: 0;
-}
-
-.home-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.home-btn {
-    color: #1a1a1a;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    display: inline-block;
-    transition: background 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-}
-
-.home-btn:hover {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-/* HEM-rullgardin */
-.home-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    margin-top: 0; /* INGEN GLIPA */
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    min-width: 200px;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    border: 1px solid rgba(200, 200, 200, 0.2);
-    z-index: 999;
-    overflow: hidden;
-}
-
-.home-content a {
-    color: #1a1a1a;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    font-family: system-ui, sans-serif;
-    border-bottom: 1px solid #f0f0f0;
-    transition: background 0.15s;
-}
-
-.home-content a:last-child {
-    border-bottom: none;
-}
-
-.home-content a:hover {
-    background: #f7f7f7;
-}
-
-/* ======================================== */
-/* DESKTOP – HOVER (utan glipa)             */
-/* ======================================== */
-
+/* Desktop: Visa vid hover */
 @media (min-width: 601px) {
-    .manifest-dropdown:hover .manifest-content,
-    .home-dropdown:hover .home-content {
+    .dropdown:hover .dropdown-content {
         display: block;
     }
 }
 
-/* ======================================== */
-/* MOBIL – KLICK                            */
-/* ======================================== */
-
+/* Mobiljusteringar */
 @media (max-width: 600px) {
-    .nav-wrapper {
-        padding: 8px 12px;
-        gap: 8px;
+    .site-nav {
+        top: 8px;
+        right: 10px;      /* Lite mindre marginal på mobil */
+        padding: 0;
     }
 
-    .manifest-btn,
-    .home-btn {
+    .dropbtn {
         font-size: 14px;
         padding: 6px 12px;
     }
 
-    .manifest-content,
-    .home-content {
-        left: 0;
+    .dropdown-content {
+        right: 0;
         width: 80vw;
         max-width: 280px;
     }
 
-    .manifest-dropdown.active .manifest-content,
-    .home-dropdown.active .home-content {
+    .dropdown.active .dropdown-content {
         display: block;
     }
 }
