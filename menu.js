@@ -1,5 +1,5 @@
 // ============================================================
-// MENU.JS – Modern meny med READ + HEM
+// MENU.JS – Två knappar med rullgardiner: MANIFESTET + HEM
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -9,48 +9,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- ÖVERSÄTTNINGAR ---
     const translations = {
-        'en': { home: 'HOME', read: '-- READ: Choose language --' },
-        'zh': { home: '首页', read: '-- 阅读: 选择语言 --' },
-        'hi': { home: 'होम', read: '-- पढ़ें: भाषा चुनें --' },
-        'es': { home: 'INICIO', read: '-- LEER: Elige idioma --' },
-        'fr': { home: 'ACCUEIL', read: '-- LIRE: Choisissez la langue --' },
-        'ar': { home: 'الرئيسية', read: '-- اقرأ: اختر اللغة --' },
-        'bn': { home: 'হোম', read: '-- পড়ুন: ভাষা নির্বাচন করুন --' },
-        'pt': { home: 'INÍCIO', read: '-- LER: Escolha o idioma --' },
-        'ru': { home: 'ГЛАВНАЯ', read: '-- ЧИТАТЬ: Выберите язык --' },
-        'ur': { home: 'ہوم', read: '-- پڑھیں: زبان منتخب کریں --' },
-        'id': { home: 'BERANDA', read: '-- BACA: Pilih bahasa --' },
-        'de': { home: 'STARTSEITE', read: '-- LESEN: Sprache wählen --' },
-        'ja': { home: 'ホーム', read: '-- 読む: 言語を選択 --' },
-        'sw': { home: 'NYUMBA', read: '-- SOMA: Chagua lugha --' },
-        'tl': { home: 'HOME', read: '-- BASAHIN: Pumili ng wika --' },
-        'tr': { home: 'ANA SAYFA', read: '-- OKU: Dil seçin --' },
-        'vi': { home: 'TRANG CHỦ', read: '-- ĐỌC: Chọn ngôn ngữ --' },
-        'ko': { home: '홈', read: '-- 읽기: 언어 선택 --' },
-        'fa': { home: 'خانه', read: '-- خواندن: انتخاب زبان --' },
-        'it': { home: 'HOME', read: '-- LEGGI: Scegli la lingua --' },
-        'th': { home: 'หน้าแรก', read: '-- อ่าน: เลือกภาษา --' },
-        'pl': { home: 'STRONA GŁÓWNA', read: '-- CZYTAJ: Wybierz język --' },
-        'uk': { home: 'ГОЛОВНА', read: '-- ЧИТАТИ: Виберіть мову --' },
-        'nl': { home: 'HOME', read: '-- LEES: Kies taal --' },
-        'ro': { home: 'ACASĂ', read: '-- CITEȘTE: Alegeți limba --' },
-        'el': { home: 'ΑΡΧΙΚΗ', read: '-- ΔΙΑΒΑΣΤΕ: Επιλέξτε γλώσσα --' },
-        'hu': { home: 'FŐOLDAL', read: '-- OLVASS: Válasszon nyelvet --' },
-        'cs': { home: 'DOMŮ', read: '-- ČTĚTE: Vyberte jazyk --' },
-        'sv': { home: 'HEM', read: '-- LÄS: Välj språk --' },
-        'bg': { home: 'НАЧАЛО', read: '-- ЧЕТЕТЕ: Изберете език --' },
-        'no': { home: 'HJEM', read: '-- LES: Velg språk --' },
-        'da': { home: 'HJEM', read: '-- LÆS: Vælg sprog --' },
-        'fi': { home: 'ETUSIVU', read: '-- LUE: Valitse kieli --' },
-        'he': { home: 'בית', read: '-- קרא: בחר שפה --' },
-        'af': { home: 'TUIS', read: '-- LEES: Kies taal --' },
-        'zu': { home: 'IKHAYA', read: '-- FUNDA: Khetha ulimi --' },
-        'xh': { home: 'IKHAYA', read: '-- FUNDA: Khetha ulimi --' },
-        'is': { home: 'HEIM', read: '-- LESA: Veldu tungumál --' },
-        'fo': { home: 'HEIM', read: '-- LES: Vel mál --' },
-        'crs': { home: 'LAKAZ', read: '-- LIR: Sazir langaz --' },
-        'se': { home: 'RUOKTU', read: '-- LOHKKA: Vállje giella --' },
-        'fit': { home: 'KOTI', read: '-- LUVE: Välj kieli --' }
+        'en': { home: 'HOME', manifesto: '🌐 MANIFESTO' },
+        'zh': { home: '首页', manifesto: '🌐 宣言' },
+        'hi': { home: 'होम', manifesto: '🌐 घोषणापत्र' },
+        'es': { home: 'INICIO', manifesto: '🌐 MANIFIESTO' },
+        'fr': { home: 'ACCUEIL', manifesto: '🌐 MANIFESTE' },
+        'ar': { home: 'الرئيسية', manifesto: '🌐 البيان' },
+        'bn': { home: 'হোম', manifesto: '🌐 ইশতেহার' },
+        'pt': { home: 'INÍCIO', manifesto: '🌐 MANIFESTO' },
+        'ru': { home: 'ГЛАВНАЯ', manifesto: '🌐 МАНИФЕСТ' },
+        'ur': { home: 'ہوم', manifesto: '🌐 منشور' },
+        'id': { home: 'BERANDA', manifesto: '🌐 MANIFES' },
+        'de': { home: 'STARTSEITE', manifesto: '🌐 MANIFEST' },
+        'ja': { home: 'ホーム', manifesto: '🌐 宣言' },
+        'sw': { home: 'NYUMBA', manifesto: '🌐 ILANI' },
+        'tl': { home: 'HOME', manifesto: '🌐 MANIPESTO' },
+        'tr': { home: 'ANA SAYFA', manifesto: '🌐 MANİFESTO' },
+        'vi': { home: 'TRANG CHỦ', manifesto: '🌐 TUYÊN NGÔN' },
+        'ko': { home: '홈', manifesto: '🌐 선언문' },
+        'fa': { home: 'خانه', manifesto: '🌐 مانیفست' },
+        'it': { home: 'HOME', manifesto: '🌐 MANIFESTO' },
+        'th': { home: 'หน้าแรก', manifesto: '🌐 แถลงการณ์' },
+        'pl': { home: 'STRONA GŁÓWNA', manifesto: '🌐 MANIFEST' },
+        'uk': { home: 'ГОЛОВНА', manifesto: '🌐 МАНІФЕСТ' },
+        'nl': { home: 'HOME', manifesto: '🌐 MANIFEST' },
+        'ro': { home: 'ACASĂ', manifesto: '🌐 MANIFEST' },
+        'el': { home: 'ΑΡΧΙΚΗ', manifesto: '🌐 ΜΑΝΙΦΕΣΤΟ' },
+        'hu': { home: 'FŐOLDAL', manifesto: '🌐 MANIFESZTUM' },
+        'cs': { home: 'DOMŮ', manifesto: '🌐 MANIFEST' },
+        'sv': { home: 'HEM', manifesto: '🌐 MANIFESTET' },
+        'bg': { home: 'НАЧАЛО', manifesto: '🌐 МАНИФЕСТ' },
+        'no': { home: 'HJEM', manifesto: '🌐 MANIFESTET' },
+        'da': { home: 'HJEM', manifesto: '🌐 MANIFESTET' },
+        'fi': { home: 'ETUSIVU', manifesto: '🌐 MANIFESTI' },
+        'he': { home: 'בית', manifesto: '🌐 מניפוסט' },
+        'af': { home: 'TUIS', manifesto: '🌐 MANIFES' },
+        'zu': { home: 'IKHAYA', manifesto: '🌐 IMANIFESTO' },
+        'xh': { home: 'IKHAYA', manifesto: '🌐 IMANIFESTO' },
+        'is': { home: 'HEIM', manifesto: '🌐 MANIFESTI' },
+        'fo': { home: 'HEIM', manifesto: '🌐 MANIFEST' },
+        'crs': { home: 'LAKAZ', manifesto: '🌐 MANIFEST' },
+        'se': { home: 'RUOKTU', manifesto: '🌐 MANIFESTA' },
+        'fit': { home: 'KOTI', manifesto: '🌐 MANIFESTI' }
     };
 
     const t = translations[currentLang] || translations['en'];
@@ -69,13 +69,18 @@ document.addEventListener('DOMContentLoaded', function() {
         return window.innerWidth <= 600;
     }
 
-    // --- HEM-knapptext ---
-    function getButtonText() {
-        return isMobile() ? '☰ ' + t.home : '🌐 ' + t.home;
+    // --- HEM-knapptext (mobil/dator) ---
+    function getHomeButtonText() {
+        return isMobile() ? '☰ ' + t.home : '🏠 ' + t.home;
     }
 
-    // --- READ-MENY ---
-    function getReadMenu() {
+    // --- MANIFESTET-knapptext ---
+    function getManifestoButtonText() {
+        return isMobile() ? '📄' : t.manifesto; // Mobil: kortare text
+    }
+
+    // --- MANIFESTET-MENY (språkval) ---
+    function getManifestoMenu() {
         const languages = [
             { code: 'af', name: 'Afrikaans' },
             { code: 'ar', name: 'العربية' },
@@ -124,31 +129,29 @@ document.addEventListener('DOMContentLoaded', function() {
         languages.sort((a, b) => a.name.localeCompare(b.name));
 
         let menu = `
-            <div class="read-menu">
-                <select id="read-select" onchange="if(this.value) window.location.href='${base}lang/read.html?lang=' + this.value">
-                    <option value="">${t.read}</option>
+            <div class="dropdown" id="manifestoDropdown">
+                <a href="#" class="dropbtn" id="manifestoBtn">${getManifestoButtonText()}</a>
+                <div class="dropdown-content">
         `;
         languages.forEach(lang => {
-            menu += `<option value="${lang.code}">${lang.name}</option>`;
+            menu += `<a href="${base}lang/read.html?lang=${lang.code}">${lang.name}</a>`;
         });
-        menu += `</select></div>`;
+        menu += `</div></div>`;
         return menu;
     }
 
-    // --- HEM-MENY ---
+    // --- HEM-MENY (navigering) ---
     function getHomeMenu() {
-        const btnText = getButtonText();
+        const btnText = getHomeButtonText();
         return `
-            <div class="site-nav">
-                <div class="dropdown" id="homeDropdown">
-                    <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
-                    <div class="dropdown-content">
-                        <a href="${base}index.html">🏠 ${t.home}</a>
-                        <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
-                        <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
-                        <a href="${base}robotel/robotel.html">👄 Robotel</a>
-                        <a href="${base}share/share.html">💬 Share</a>
-                    </div>
+            <div class="dropdown" id="homeDropdown">
+                <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
+                <div class="dropdown-content">
+                    <a href="${base}index.html">🏠 ${t.home}</a>
+                    <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
+                    <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
+                    <a href="${base}robotel/robotel.html">👄 Robotel</a>
+                    <a href="${base}share/share.html">💬 Share</a>
                 </div>
             </div>
         `;
@@ -157,53 +160,66 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- SÄTT IN MENYERNA ---
     const navWrapper = document.querySelector('.nav-wrapper');
     if (navWrapper) {
-        if (!navWrapper.querySelector('.read-menu')) {
-            const readContainer = document.createElement('div');
-            readContainer.innerHTML = getReadMenu();
-            navWrapper.prepend(readContainer);
+        // MANIFESTET – lägg till om den inte redan finns
+        if (!document.getElementById('manifestoDropdown')) {
+            const manifestoContainer = document.createElement('div');
+            manifestoContainer.className = 'menu-item';
+            manifestoContainer.innerHTML = getManifestoMenu();
+            navWrapper.prepend(manifestoContainer);
+        }
+
+        // HEM – uppdatera befintlig
+        const menuContainer = document.getElementById('main-menu');
+        if (menuContainer) {
+            menuContainer.innerHTML = getHomeMenu();
         }
     }
 
-    const menuContainer = document.getElementById('main-menu');
-    if (menuContainer) {
-        menuContainer.innerHTML = getHomeMenu();
-    }
-
-    // --- Uppdatera HEM-knapp vid fönsterändring ---
-    function updateButtonText() {
-        const btn = document.getElementById('homeBtn');
-        if (btn) {
-            btn.textContent = getButtonText();
+    // --- Uppdatera knapptext vid fönsterändring ---
+    function updateButtonTexts() {
+        const manifestoBtn = document.getElementById('manifestoBtn');
+        if (manifestoBtn) {
+            manifestoBtn.textContent = getManifestoButtonText();
+        }
+        const homeBtn = document.getElementById('homeBtn');
+        if (homeBtn) {
+            homeBtn.textContent = getHomeButtonText();
         }
     }
-    window.addEventListener('resize', updateButtonText);
+    window.addEventListener('resize', updateButtonTexts);
 
-    // --- MOBIL: klick öppnar HEM-menyn ---
-    const dropdown = document.getElementById('homeDropdown');
-    const btn = document.getElementById('homeBtn');
+    // --- MOBIL: klick öppnar menyerna ---
+    function setupDropdown(dropdownId, btnId) {
+        const dropdown = document.getElementById(dropdownId);
+        const btn = document.getElementById(btnId);
 
-    if (btn && dropdown) {
-        const newBtn = btn.cloneNode(true);
-        btn.parentNode.replaceChild(newBtn, btn);
-        const newDropdown = dropdown.cloneNode(true);
-        dropdown.parentNode.replaceChild(newDropdown, dropdown);
+        if (btn && dropdown) {
+            // Ta bort gamla event listeners
+            const newBtn = btn.cloneNode(true);
+            btn.parentNode.replaceChild(newBtn, btn);
+            const newDropdown = dropdown.cloneNode(true);
+            dropdown.parentNode.replaceChild(newDropdown, dropdown);
 
-        const freshBtn = document.getElementById('homeBtn');
-        const freshDropdown = document.getElementById('homeDropdown');
+            const freshBtn = document.getElementById(btnId);
+            const freshDropdown = document.getElementById(dropdownId);
 
-        if (freshBtn && freshDropdown) {
-            freshBtn.addEventListener('click', function(e) {
-                if (isMobile()) {
-                    e.preventDefault();
-                    freshDropdown.classList.toggle('active');
-                }
-            });
+            if (freshBtn && freshDropdown) {
+                freshBtn.addEventListener('click', function(e) {
+                    if (isMobile()) {
+                        e.preventDefault();
+                        freshDropdown.classList.toggle('active');
+                    }
+                });
 
-            document.addEventListener('click', function(e) {
-                if (!freshDropdown.contains(e.target)) {
-                    freshDropdown.classList.remove('active');
-                }
-            });
+                document.addEventListener('click', function(e) {
+                    if (!freshDropdown.contains(e.target)) {
+                        freshDropdown.classList.remove('active');
+                    }
+                });
+            }
         }
     }
+
+    setupDropdown('manifestoDropdown', 'manifestoBtn');
+    setupDropdown('homeDropdown', 'homeBtn');
 });
