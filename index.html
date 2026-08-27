@@ -199,11 +199,11 @@
         <!-- HOME-meny (befintlig) -->
         <div id="main-menu"></div>
 
-        <!-- READ-meny (språkval) – KORREKT SÖKVÄG -->
+        <!-- READ-meny (språkval) – med översättning -->
         <div class="read-menu">
-            <label for="read-select">READ:</label>
-            <select id="read-select" onchange="if(this.value) window.location.href='lang/read.html?lang=' + this.value">
-                <option value="">-- Choose language --</option>
+            <label for="read-select" id="read-label">READ:</label>
+            <select id="read-select">
+                <option value="" id="read-default">-- Choose language --</option>
                 <option value="af">Afrikaans</option>
                 <option value="ar">العربية</option>
                 <option value="bg">Български</option>
@@ -256,7 +256,7 @@
 
     <div class="container">
         <main>
-            <h1 style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
+            <h1 id="main-title" style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
 
             <div style="margin-bottom: 25px;">
                 <img src="pics/freedom_staircase_main_page.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
@@ -309,7 +309,7 @@
                 <div><a href="lang/read.html?lang=fo"><img src="lang/flags/fo.svg" alt="Føroyskt" class="lang-flag-img"></a><span class="lang-label">Føroyskt</span></div>
             </div>
 
-            <!-- SLOGAN-RUTAN (utan rullgardin) -->
+            <!-- SLOGAN-RUTAN -->
             <div id="slogan-box">
                 <div id="slogan-text"></div>
                 <div id="dots" class="dots"></div>
@@ -327,7 +327,7 @@
     </div>
 
     <!-- ======================================== -->
-    <!-- SLOGAN-LOGIK                             -->
+    <!-- SLOGAN-LOGIK + SPRÅK                     -->
     <!-- ======================================== -->
 
     <script>
@@ -335,9 +335,119 @@
         const MANIFESTO = "The World Manifesto";
         const COPIED = "Copied!";
 
+        // Hämta språk från URL eller webbläsaren
         const urlParams = new URLSearchParams(window.location.search);
-        const currentLang = (urlParams.get('lang') || 'sv').toUpperCase();
+        const currentLang = (urlParams.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
 
+        // ---------- ÖVERSÄTTNINGAR FÖR STARTSIDAN ----------
+        const pageTranslations = {
+            'en': { title: 'The World Manifesto' },
+            'zh': { title: '世界宣言' },
+            'hi': { title: 'विश्व घोषणापत्र' },
+            'es': { title: 'El Manifiesto Mundial' },
+            'fr': { title: 'Le Manifeste Mondial' },
+            'ar': { title: 'البيان العالمي' },
+            'bn': { title: 'বিশ্ব ইশতেহার' },
+            'pt': { title: 'O Manifesto Mundial' },
+            'ru': { title: 'Всемирный манифест' },
+            'ur': { title: 'عالمی منشور' },
+            'id': { title: 'Manifest Dunia' },
+            'de': { title: 'Weltmanifest' },
+            'ja': { title: '世界宣言' },
+            'sw': { title: 'Ilani ya Dunia' },
+            'tl': { title: 'Manipesto ng Mundo' },
+            'tr': { title: 'Dünya Manifestosu' },
+            'vi': { title: 'Tuyên ngôn Thế giới' },
+            'ko': { title: '세계 선언문' },
+            'fa': { title: 'مانیفست جهانی' },
+            'it': { title: 'Manifesto Mondiale' },
+            'th': { title: 'แถลงการณ์โลก' },
+            'pl': { title: 'Manifest Światowy' },
+            'uk': { title: 'Всесвітній маніфест' },
+            'nl': { title: 'Wereldmanifest' },
+            'ro': { title: 'Manifestul Mondial' },
+            'el': { title: 'Παγκόσμιο Μανιφέστο' },
+            'hu': { title: 'Világkiáltvány' },
+            'cs': { title: 'Světový manifest' },
+            'sv': { title: 'Världsmanifestet' },
+            'bg': { title: 'Световен манифест' },
+            'no': { title: 'Verdensmanifestet' },
+            'da': { title: 'Verdensmanifestet' },
+            'fi': { title: 'Maailmanmanifesti' },
+            'he': { title: 'מניפוסט העולם' },
+            'af': { title: 'Wêreldmanifest' },
+            'zu': { title: 'IManifesto Yomhlaba' },
+            'xh': { title: 'IManifesto Yehlabathi' },
+            'is': { title: 'Heimsmanifestið' },
+            'fo': { title: 'Heimsskráin' },
+            'crs': { title: 'Manifest lemonn' },
+            'se': { title: 'Máilmmi Manifesta' },
+            'fit': { title: 'Mailmanmanifesti' }
+        };
+
+        // Sätt titeln
+        const titleText = pageTranslations[currentLang]?.title || pageTranslations['en'].title;
+        document.getElementById('main-title').textContent = titleText;
+        document.title = titleText;
+
+        // ---------- READ-MENY – ÖVERSÄTT ----------
+        const readTranslations = {
+            'en': { label: 'READ:', default: '-- Choose language --' },
+            'zh': { label: '阅读:', default: '-- 选择语言 --' },
+            'hi': { label: 'पढ़ें:', default: '-- भाषा चुनें --' },
+            'es': { label: 'LEER:', default: '-- Elige idioma --' },
+            'fr': { label: 'LIRE:', default: '-- Choisissez la langue --' },
+            'ar': { label: 'اقرأ:', default: '-- اختر اللغة --' },
+            'bn': { label: 'পড়ুন:', default: '-- ভাষা নির্বাচন করুন --' },
+            'pt': { label: 'LER:', default: '-- Escolha o idioma --' },
+            'ru': { label: 'ЧИТАТЬ:', default: '-- Выберите язык --' },
+            'ur': { label: 'پڑھیں:', default: '-- زبان منتخب کریں --' },
+            'id': { label: 'BACA:', default: '-- Pilih bahasa --' },
+            'de': { label: 'LESEN:', default: '-- Sprache wählen --' },
+            'ja': { label: '読む:', default: '-- 言語を選択 --' },
+            'sw': { label: 'SOMA:', default: '-- Chagua lugha --' },
+            'tl': { label: 'BASAHIN:', default: '-- Pumili ng wika --' },
+            'tr': { label: 'OKU:', default: '-- Dil seçin --' },
+            'vi': { label: 'ĐỌC:', default: '-- Chọn ngôn ngữ --' },
+            'ko': { label: '읽기:', default: '-- 언어 선택 --' },
+            'fa': { label: 'خواندن:', default: '-- انتخاب زبان --' },
+            'it': { label: 'LEGGI:', default: '-- Scegli la lingua --' },
+            'th': { label: 'อ่าน:', default: '-- เลือกภาษา --' },
+            'pl': { label: 'CZYTAJ:', default: '-- Wybierz język --' },
+            'uk': { label: 'ЧИТАТИ:', default: '-- Виберіть мову --' },
+            'nl': { label: 'LEES:', default: '-- Kies taal --' },
+            'ro': { label: 'CITEȘTE:', default: '-- Alegeți limba --' },
+            'el': { label: 'ΔΙΑΒΑΣΤΕ:', default: '-- Επιλέξτε γλώσσα --' },
+            'hu': { label: 'OLVASS:', default: '-- Válasszon nyelvet --' },
+            'cs': { label: 'ČTĚTE:', default: '-- Vyberte jazyk --' },
+            'sv': { label: 'LÄS:', default: '-- Välj språk --' },
+            'bg': { label: 'ЧЕТЕТЕ:', default: '-- Изберете език --' },
+            'no': { label: 'LES:', default: '-- Velg språk --' },
+            'da': { label: 'LÆS:', default: '-- Vælg sprog --' },
+            'fi': { label: 'LUE:', default: '-- Valitse kieli --' },
+            'he': { label: 'קרא:', default: '-- בחר שפה --' },
+            'af': { label: 'LEES:', default: '-- Kies taal --' },
+            'zu': { label: 'FUNDA:', default: '-- Khetha ulimi --' },
+            'xh': { label: 'FUNDA:', default: '-- Khetha ulimi --' },
+            'is': { label: 'LESA:', default: '-- Veldu tungumál --' },
+            'fo': { label: 'LES:', default: '-- Vel mál --' },
+            'crs': { label: 'LIR:', default: '-- Sazir langaz --' },
+            'se': { label: 'LOHKKA:', default: '-- Vállje giella --' },
+            'fit': { label: 'LUVE:', default: '-- Välj kieli --' }
+        };
+
+        const readText = readTranslations[currentLang] || readTranslations['en'];
+        document.getElementById('read-label').textContent = readText.label;
+        document.getElementById('read-default').textContent = readText.default;
+
+        // ---------- READ-MENY – OMDIRIGERING ----------
+        document.getElementById('read-select').addEventListener('change', function() {
+            if (this.value) {
+                window.location.href = 'lang/read.html?lang=' + this.value;
+            }
+        });
+
+        // ---------- SLOGAN-LOGIK ----------
         let slogans = [];
         let i = 0, paused = false;
 
@@ -393,13 +503,14 @@
             }
         }
 
+        // ---------- LADDA SLOGANS ----------
         fetch('slogans.json')
             .then(response => {
                 if (!response.ok) throw new Error('Kunde inte läsa JSON');
                 return response.json();
             })
             .then(data => {
-                const slogansData = data[currentLang] || data['SV'] || data['EN'] || {};
+                const slogansData = data[currentLang.toUpperCase()] || data['SV'] || data['EN'] || {};
                 slogans = Object.values(slogansData);
 
                 if (slogans.length > 0) {
