@@ -1,5 +1,5 @@
 // ============================================================
-// MENU.JS – Modern meny med READ + HEM (flytande)
+// MENU.JS – Modern meny med READ + HEM
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -9,53 +9,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- ÖVERSÄTTNINGAR FÖR MENYERNA ---
     const translations = {
-        'en': { home: 'HOME', read: '🌐 Choose language' },
-        'zh': { home: '首页', read: '🌐 选择语言' },
-        'hi': { home: 'होम', read: '🌐 भाषा चुनें' },
-        'es': { home: 'INICIO', read: '🌐 Elige idioma' },
-        'fr': { home: 'ACCUEIL', read: '🌐 Choisissez la langue' },
-        'ar': { home: 'الرئيسية', read: '🌐 اختر اللغة' },
-        'bn': { home: 'হোম', read: '🌐 ভাষা নির্বাচন করুন' },
-        'pt': { home: 'INÍCIO', read: '🌐 Escolha o idioma' },
-        'ru': { home: 'ГЛАВНАЯ', read: '🌐 Выберите язык' },
-        'ur': { home: 'ہوم', read: '🌐 زبان منتخب کریں' },
-        'id': { home: 'BERANDA', read: '🌐 Pilih bahasa' },
-        'de': { home: 'STARTSEITE', read: '🌐 Sprache wählen' },
-        'ja': { home: 'ホーム', read: '🌐 言語を選択' },
-        'sw': { home: 'NYUMBA', read: '🌐 Chagua lugha' },
-        'tl': { home: 'HOME', read: '🌐 Pumili ng wika' },
-        'tr': { home: 'ANA SAYFA', read: '🌐 Dil seçin' },
-        'vi': { home: 'TRANG CHỦ', read: '🌐 Chọn ngôn ngữ' },
-        'ko': { home: '홈', read: '🌐 언어 선택' },
-        'fa': { home: 'خانه', read: '🌐 انتخاب زبان' },
-        'it': { home: 'HOME', read: '🌐 Scegli la lingua' },
-        'th': { home: 'หน้าแรก', read: '🌐 เลือกภาษา' },
-        'pl': { home: 'STRONA GŁÓWNA', read: '🌐 Wybierz język' },
-        'uk': { home: 'ГОЛОВНА', read: '🌐 Виберіть мову' },
-        'nl': { home: 'HOME', read: '🌐 Kies taal' },
-        'ro': { home: 'ACASĂ', read: '🌐 Alegeți limba' },
-        'el': { home: 'ΑΡΧΙΚΗ', read: '🌐 Επιλέξτε γλώσσα' },
-        'hu': { home: 'FŐOLDAL', read: '🌐 Válasszon nyelvet' },
-        'cs': { home: 'DOMŮ', read: '🌐 Vyberte jazyk' },
-        'sv': { home: 'HEM', read: '🌐 Välj språk' },
-        'bg': { home: 'НАЧАЛО', read: '🌐 Изберете език' },
-        'no': { home: 'HJEM', read: '🌐 Velg språk' },
-        'da': { home: 'HJEM', read: '🌐 Vælg sprog' },
-        'fi': { home: 'ETUSIVU', read: '🌐 Valitse kieli' },
-        'he': { home: 'בית', read: '🌐 בחר שפה' },
-        'af': { home: 'TUIS', read: '🌐 Kies taal' },
-        'zu': { home: 'IKHAYA', read: '🌐 Khetha ulimi' },
-        'xh': { home: 'IKHAYA', read: '🌐 Khetha ulimi' },
-        'is': { home: 'HEIM', read: '🌐 Veldu tungumál' },
-        'fo': { home: 'HEIM', read: '🌐 Vel mál' },
-        'crs': { home: 'LAKAZ', read: '🌐 Sazir langaz' },
-        'se': { home: 'RUOKTU', read: '🌐 Vállje giella' },
-        'fit': { home: 'KOTI', read: '🌐 Välj kieli' }
+        'en': { home: 'HOME', read: '-- READ: Choose language --' },
+        'zh': { home: '首页', read: '-- 阅读: 选择语言 --' },
+        'hi': { home: 'होम', read: '-- पढ़ें: भाषा चुनें --' },
+        'es': { home: 'INICIO', read: '-- LEER: Elige idioma --' },
+        'fr': { home: 'ACCUEIL', read: '-- LIRE: Choisissez la langue --' },
+        'ar': { home: 'الرئيسية', read: '-- اقرأ: اختر اللغة --' },
+        'bn': { home: 'হোম', read: '-- পড়ুন: ভাষা নির্বাচন করুন --' },
+        'pt': { home: 'INÍCIO', read: '-- LER: Escolha o idioma --' },
+        'ru': { home: 'ГЛАВНАЯ', read: '-- ЧИТАТЬ: Выберите язык --' },
+        'ur': { home: 'ہوم', read: '-- پڑھیں: زبان منتخب کریں --' },
+        'id': { home: 'BERANDA', read: '-- BACA: Pilih bahasa --' },
+        'de': { home: 'STARTSEITE', read: '-- LESEN: Sprache wählen --' },
+        'ja': { home: 'ホーム', read: '-- 読む: 言語を選択 --' },
+        'sw': { home: 'NYUMBA', read: '-- SOMA: Chagua lugha --' },
+        'tl': { home: 'HOME', read: '-- BASAHIN: Pumili ng wika --' },
+        'tr': { home: 'ANA SAYFA', read: '-- OKU: Dil seçin --' },
+        'vi': { home: 'TRANG CHỦ', read: '-- ĐỌC: Chọn ngôn ngữ --' },
+        'ko': { home: '홈', read: '-- 읽기: 언어 선택 --' },
+        'fa': { home: 'خانه', read: '-- خواندن: انتخاب زبان --' },
+        'it': { home: 'HOME', read: '-- LEGGI: Scegli la lingua --' },
+        'th': { home: 'หน้าแรก', read: '-- อ่าน: เลือกภาษา --' },
+        'pl': { home: 'STRONA GŁÓWNA', read: '-- CZYTAJ: Wybierz język --' },
+        'uk': { home: 'ГОЛОВНА', read: '-- ЧИТАТИ: Виберіть мову --' },
+        'nl': { home: 'HOME', read: '-- LEES: Kies taal --' },
+        'ro': { home: 'ACASĂ', read: '-- CITEȘTE: Alegeți limba --' },
+        'el': { home: 'ΑΡΧΙΚΗ', read: '-- ΔΙΑΒΑΣΤΕ: Επιλέξτε γλώσσα --' },
+        'hu': { home: 'FŐOLDAL', read: '-- OLVASS: Válasszon nyelvet --' },
+        'cs': { home: 'DOMŮ', read: '-- ČTĚTE: Vyberte jazyk --' },
+        'sv': { home: 'HEM', read: '-- LÄS: Välj språk --' },
+        'bg': { home: 'НАЧАЛО', read: '-- ЧЕТЕТЕ: Изберете език --' },
+        'no': { home: 'HJEM', read: '-- LES: Velg språk --' },
+        'da': { home: 'HJEM', read: '-- LÆS: Vælg sprog --' },
+        'fi': { home: 'ETUSIVU', read: '-- LUE: Valitse kieli --' },
+        'he': { home: 'בית', read: '-- קרא: בחר שפה --' },
+        'af': { home: 'TUIS', read: '-- LEES: Kies taal --' },
+        'zu': { home: 'IKHAYA', read: '-- FUNDA: Khetha ulimi --' },
+        'xh': { home: 'IKHAYA', read: '-- FUNDA: Khetha ulimi --' },
+        'is': { home: 'HEIM', read: '-- LESA: Veldu tungumál --' },
+        'fo': { home: 'HEIM', read: '-- LES: Vel mál --' },
+        'crs': { home: 'LAKAZ', read: '-- LIR: Sazir langaz --' },
+        'se': { home: 'RUOKTU', read: '-- LOHKKA: Vállje giella --' },
+        'fit': { home: 'KOTI', read: '-- LUVE: Välj kieli --' }
     };
 
     const t = translations[currentLang] || translations['en'];
 
-    // --- SÖKVÄG (för att hantera olika mappdjup) ---
+    // --- SÖKVÄG ---
     function getBasePath() {
         const path = window.location.pathname;
         const parts = path.split('/').filter(p => p.length > 0);
@@ -69,12 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
         return window.innerWidth <= 600;
     }
 
-    // --- HEM-knapptext (mobil/dator) ---
+    // --- HEM-knapptext ---
     function getButtonText() {
         return isMobile() ? '☰ ' + t.home : '🌐 ' + t.home;
     }
 
-    // --- READ-MENY (språkval, utan "Läs:") ---
+    // --- READ-MENY (utan separat etikett, med "Läs:" i rullgardinen) ---
     function getReadMenu() {
         const languages = [
             { code: 'af', name: 'Afrikaans' },
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return menu;
     }
 
-    // --- HEM-MENY (utan "More Languages") ---
+    // --- HEM-MENY ---
     function getHomeMenu() {
         const btnText = getButtonText();
         return `
@@ -144,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
                     <div class="dropdown-content">
                         <a href="${base}index.html">🏠 ${t.home}</a>
-                        <!-- More Languages BORTTAGEN -->
                         <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
                         <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
                         <a href="${base}robotel/robotel.html">👄 Robotel</a>
@@ -158,7 +157,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- SÄTT IN MENYERNA ---
     const navWrapper = document.querySelector('.nav-wrapper');
     if (navWrapper) {
-        // READ – lägg till om den inte redan finns
         if (!navWrapper.querySelector('.read-menu')) {
             const readContainer = document.createElement('div');
             readContainer.innerHTML = getReadMenu();
@@ -166,7 +164,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // HEM – uppdatera befintlig
     const menuContainer = document.getElementById('main-menu');
     if (menuContainer) {
         menuContainer.innerHTML = getHomeMenu();
