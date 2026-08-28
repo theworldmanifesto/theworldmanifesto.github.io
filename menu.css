@@ -36,10 +36,14 @@
     position: absolute;
     left: 0;
     top: 100%;
-    margin-top: 0;
-    padding-top: 4px;
-    background: transparent;
+    margin-top: 4px;
     min-width: 200px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(200, 200, 200, 0.2);
+    overflow: hidden;
     z-index: 999;
 }
 
@@ -50,8 +54,6 @@
     display: block;
     font-size: 14px;
     font-family: system-ui, sans-serif;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
     border-bottom: 1px solid #f0f0f0;
     transition: background 0.15s;
 }
@@ -64,43 +66,37 @@
     background: #f7f7f7;
 }
 
-/* Desktop: hover öppnar menyn */
+/* Desktop: hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Mobil + klick: active-klass öppnar menyn */
+/* Mobil: active */
 .dropdown.active .dropdown-content {
     display: block;
 }
 
-/* Mobil */
 @media (max-width: 600px) {
-    .dropdown-content {
-        position: static;
-        box-shadow: none;
-        padding-top: 0;
-        margin-top: 4px;
-        width: 80vw;
-        max-width: 280px;
-        background: transparent;
-    }
-    .dropdown-content a {
-        background: rgba(255, 255, 255, 0.98);
-        border-radius: 8px;
-        margin-top: 2px;
-    }
     .dropbtn {
         font-size: 14px;
         padding: 6px 12px;
     }
+    .dropdown-content {
+        left: 0;
+        right: 0;
+        min-width: 200px;
+    }
 }
 
-/* tropics.html special */
+/* ============================================================
+   SPECIAL: tropics.html – menyn i vänstra hörnet
+   ============================================================ */
 body.tropics-page .site-nav {
+    position: fixed;
+    top: 10px;
     left: 10px;
-    right: auto;
-    margin: 0;
-    max-width: none;
-    transform: none;
+    z-index: 300;
+}
+body.tropics-page .dropdown-content {
+    left: 0;
 }
