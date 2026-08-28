@@ -201,10 +201,24 @@
 </head>
 <body>
 
-    <!-- ======================================== -->
-    <!-- MENYN INJECTAS HÄR AV MENU.JS            -->
-    <!-- ======================================== -->
+<!-- ======================================== -->
+<!-- NAVIGATION: READ + MENY                   -->
+<!-- ======================================== -->
+
+<div class="nav-wrapper">
+
+    <!-- READ – språkvalsrullgardin -->
+    <div class="read-menu">
+        <label for="read-select">LÄS:</label>
+        <select id="read-select" onchange="if(this.value) window.location.href='lang/read.html?lang=' + this.value">
+            <!-- ... alla språk ... -->
+        </select>
+    </div>
+
+    <!-- MENY – INJECTAS AV MENU.JS -->
     <div id="main-menu"></div>
+
+</div>
 
     <!-- ======================================== -->
     <!-- READ – språkvalsrullgardin               -->
@@ -298,12 +312,11 @@
     <!-- SLOGAN-LOGIK + SPRÅK                     -->
     <!-- ======================================== -->
 
-    <script>
-        // ... (din befintliga slogan-logik, oförändrad) ...
-    </script>
+<!-- MENY JAVASCRIPT -->
+<script src="menu.js"></script>
 
-    <!-- FOOTER -->
-    <script src="footer.js"></script>
+<!-- FOOTER -->
+<script src="footer.js"></script>
 
     <!-- MENY (måste vara efter footer så att den inte skriver över) -->
     <script src="menu.js"></script>
