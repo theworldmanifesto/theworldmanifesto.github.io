@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'en': {
             menuLabel: 'MENU',
             home: 'Home',
-            theWorldManifesto: 'The World Manifesto',   // ← NYTT NAMN
+            theWorldManifesto: 'The World Manifesto',
             freedomStaircase: 'Freedom Staircase',
             tropics: 'The Tropics',
             robotel: 'Robotel',
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'sv': {
             menuLabel: 'MENY',
             home: 'Hem',
-            theWorldManifesto: 'The World Manifesto',   // ← SAMMA PÅ SVENSKA
+            theWorldManifesto: 'Världsmanifestet',   // ← RÄTTAT!
             freedomStaircase: 'Frihetstrappan',
             tropics: 'Tropikerna',
             robotel: 'Robotel',
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'zh': {
             menuLabel: '菜单',
             home: '首页',
-            theWorldManifesto: 'The World Manifesto',
+            theWorldManifesto: '世界宣言',
             freedomStaircase: '自由阶梯',
             tropics: '热带地区',
             robotel: '机器人',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'es': {
             menuLabel: 'MENÚ',
             home: 'Inicio',
-            theWorldManifesto: 'The World Manifesto',
+            theWorldManifesto: 'El Manifiesto Mundial',
             freedomStaircase: 'Escalera de la Libertad',
             tropics: 'Los Trópicos',
             robotel: 'Robotel',
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'fr': {
             menuLabel: 'MENU',
             home: 'Accueil',
-            theWorldManifesto: 'The World Manifesto',
+            theWorldManifesto: 'Le Manifeste Mondial',
             freedomStaircase: 'Escalier de la Liberté',
             tropics: 'Les Tropiques',
             robotel: 'Robotel',
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'de': {
             menuLabel: 'MENÜ',
             home: 'Startseite',
-            theWorldManifesto: 'The World Manifesto',
+            theWorldManifesto: 'Weltmanifest',
             freedomStaircase: 'Freiheitstreppe',
             tropics: 'Die Tropen',
             robotel: 'Robotel',
