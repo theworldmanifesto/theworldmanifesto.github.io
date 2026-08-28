@@ -48,8 +48,22 @@
     <div class="container">
 
         <!-- RUBRIKER – UPPDATERAS AV JAVASCRIPT -->
-        <h1 id="manifesto-title">The World Manifesto</h1>
-        <h2 id="manifesto-subtitle">The Manifesto for Definitive Abundance</h2>
+<h1 id="title">The World Manifesto</h1>
+<h2 id="subtitle">The Manifesto for Definitive Abundance</h2>
+<script>
+    // Läs språk från URL
+    const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
+    
+    // Översättningar – bara de språk du använder
+    const titles = {
+        'sv': ['Världsmanifestet', 'Manifestet för definitivt överflöd'],
+        'en': ['The World Manifesto', 'The Manifesto for Definitive Abundance']
+    };
+    
+    const t = titles[lang] || titles['en'];
+    document.getElementById('title').textContent = t[0];
+    document.getElementById('subtitle').textContent = t[1];
+</script>
         <div class="author" id="manifesto-author">Sven Yngerstedt</div>
         <div class="edition" id="manifesto-edition">First edition, 2026</div>
 
