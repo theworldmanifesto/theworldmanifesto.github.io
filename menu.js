@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'en': {
             menuLabel: 'MENU',
             home: 'Home',
-            moreLanguages: 'More Languages',
+            theWorldManifesto: 'The World Manifesto',   // ← NYTT NAMN
             freedomStaircase: 'Freedom Staircase',
             tropics: 'The Tropics',
             robotel: 'Robotel',
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'sv': {
             menuLabel: 'MENY',
             home: 'Hem',
-            moreLanguages: 'Fler språk',
+            theWorldManifesto: 'The World Manifesto',   // ← SAMMA PÅ SVENSKA
             freedomStaircase: 'Frihetstrappan',
             tropics: 'Tropikerna',
             robotel: 'Robotel',
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'zh': {
             menuLabel: '菜单',
             home: '首页',
-            moreLanguages: '更多语言',
+            theWorldManifesto: 'The World Manifesto',
             freedomStaircase: '自由阶梯',
             tropics: '热带地区',
             robotel: '机器人',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'es': {
             menuLabel: 'MENÚ',
             home: 'Inicio',
-            moreLanguages: 'Más idiomas',
+            theWorldManifesto: 'The World Manifesto',
             freedomStaircase: 'Escalera de la Libertad',
             tropics: 'Los Trópicos',
             robotel: 'Robotel',
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'fr': {
             menuLabel: 'MENU',
             home: 'Accueil',
-            moreLanguages: 'Plus de langues',
+            theWorldManifesto: 'The World Manifesto',
             freedomStaircase: 'Escalier de la Liberté',
             tropics: 'Les Tropiques',
             robotel: 'Robotel',
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'de': {
             menuLabel: 'MENÜ',
             home: 'Startseite',
-            moreLanguages: 'Weitere Sprachen',
+            theWorldManifesto: 'The World Manifesto',
             freedomStaircase: 'Freiheitstreppe',
             tropics: 'Die Tropen',
             robotel: 'Robotel',
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return window.innerWidth <= 600;
     }
 
-    // --- SKAPA MENYN (med knapp istället för länk) ---
+    // --- SKAPA MENYN ---
     function buildMenu() {
         return `
             <div class="site-nav">
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <button class="dropbtn" id="menuBtn">${t.menuLabel}</button>
                     <div class="dropdown-content">
                         <a href="${base}index.html">🏠 ${t.home}</a>
-                        <a href="${base}lang/lang.html">🌐 ${t.moreLanguages}</a>
+                        <a href="${base}lang/lang.html">📜 ${t.theWorldManifesto}</a>
                         <a href="${base}freedom-staircase/freedom-staircase.html">🪜 ${t.freedomStaircase}</a>
                         <a href="${base}tropics/tropics.html">🌎 ${t.tropics}</a>
                         <a href="${base}robotel/robotel.html">🤖 ${t.robotel}</a>
@@ -115,26 +115,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuBtn = document.getElementById('menuBtn');
 
     if (menuBtn && dropdown) {
-        // Klick på knappen växlar menyn
         menuBtn.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-
-            // Toggle active-klass
             dropdown.classList.toggle('active');
-
-            // För desktop: även hantera display via CSS
             const content = dropdown.querySelector('.dropdown-content');
             if (content) {
-                if (dropdown.classList.contains('active')) {
-                    content.style.display = 'block';
-                } else {
-                    content.style.display = 'none';
-                }
+                content.style.display = dropdown.classList.contains('active') ? 'block' : 'none';
             }
         });
 
-        // Stäng menyn om man klickar utanför
         document.addEventListener('click', function(e) {
             if (!dropdown.contains(e.target)) {
                 dropdown.classList.remove('active');
@@ -144,14 +134,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-
-        // Vid hover på desktop ska menyn visas (om man inte använder active)
-        // Vi använder active för att styra både hover och klick.
-        // Så vi lägger till en hover-regel i CSS istället.
-        // I CSS: .dropdown:hover .dropdown-content { display: block; }
-        // Men vi vill att klick ska fungera också.
-        // Så vi låter CSS:en sköta hover, och JS sköter klick via active-klassen.
     }
-
-    // --- Uppdatera om fönstret ändras (ingen extra funktion behövs) ---
 });
