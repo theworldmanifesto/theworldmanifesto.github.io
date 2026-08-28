@@ -48,94 +48,33 @@
     <div class="container">
 
         <!-- RUBRIKER – UPPDATERAS AV JAVASCRIPT -->
-<h1 id="title">The World Manifesto</h1>
-<h2 id="subtitle">The Manifesto for Definitive Abundance</h2>
-<script>
-    // Läs språk från URL
-    const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
-    
-    // Översättningar – bara de språk du använder
-    const titles = {
-        'sv': ['Världsmanifestet', 'Manifestet för definitivt överflöd'],
-        'en': ['The World Manifesto', 'The Manifesto for Definitive Abundance']
-    };
-    
-    const t = titles[lang] || titles['en'];
-    document.getElementById('title').textContent = t[0];
-    document.getElementById('subtitle').textContent = t[1];
-</script>
-        <div class="author" id="manifesto-author">Sven Yngerstedt</div>
-        <div class="edition" id="manifesto-edition">First edition, 2026</div>
+        <h1 id="title">The World Manifesto</h1>
+        <h2 id="subtitle">The Manifesto for Definitive Abundance</h2>
+        <div class="author">Sven Yngerstedt</div>
+        <div class="edition">First edition, 2026</div>
 
-        <div id="manifesto-content" class="manifesto-text">
+        <div id="content" class="manifesto-text">
             <p>Laddar...</p>
         </div>
 
     </div>
 
-    <!-- MENY -->
     <script src="../menu.js"></script>
 
-    <!-- RUBRIK-ÖVERSÄTTNINGAR -->
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentLang = urlParams.get('lang') || document.documentElement.lang || 'en';
-
-        // SAMMA ÖVERSÄTTNINGAR SOM I MENU.JS (fast med rubriker)
-        const titleTranslations = {
-            'sv': {
-                title: 'Världsmanifestet',
-                subtitle: 'Manifestet för definitivt överflöd',
-                author: 'Sven Yngerstedt',
-                edition: 'Första utgåvan, 2026'
-            },
-            'en': {
-                title: 'The World Manifesto',
-                subtitle: 'The Manifesto for Definitive Abundance',
-                author: 'Sven Yngerstedt',
-                edition: 'First edition, 2026'
-            },
-            'zh': {
-                title: '世界宣言',
-                subtitle: '最终富足宣言',
-                author: 'Sven Yngerstedt',
-                edition: '第一版，2026年'
-            },
-            'es': {
-                title: 'El Manifiesto Mundial',
-                subtitle: 'El Manifiesto para la Abundancia Definitiva',
-                author: 'Sven Yngerstedt',
-                edition: 'Primera edición, 2026'
-            },
-            'fr': {
-                title: 'Le Manifeste Mondial',
-                subtitle: 'Le Manifeste pour l\'Abondance Définitive',
-                author: 'Sven Yngerstedt',
-                edition: 'Première édition, 2026'
-            },
-            'de': {
-                title: 'Weltmanifest',
-                subtitle: 'Das Manifest für den endgültigen Überfluss',
-                author: 'Sven Yngerstedt',
-                edition: 'Erste Auflage, 2026'
-            }
-            // Lägg till alla 42 språk här...
+        // Läs språk från URL
+        const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
+        
+        // Översättningar
+        const titles = {
+            'sv': ['Världsmanifestet', 'Manifestet för definitivt överflöd'],
+            'en': ['The World Manifesto', 'The Manifesto for Definitive Abundance']
+            // Lägg till fler språk här...
         };
-
-        const t = titleTranslations[currentLang] || titleTranslations['en'];
-
-        // Uppdatera rubrikerna
-        document.getElementById('manifesto-title').textContent = t.title;
-        document.getElementById('manifesto-subtitle').textContent = t.subtitle;
-        document.getElementById('manifesto-author').textContent = t.author;
-        document.getElementById('manifesto-edition').textContent = t.edition;
-
-        // HÄR LADDAR DU MANIFESTTEXTEN (anpassa efter din struktur)
-        // fetch('manifesto_' + currentLang + '.json')
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         document.getElementById('manifesto-content').innerHTML = data.text;
-        //     });
+        
+        const t = titles[lang] || titles['en'];
+        document.getElementById('title').textContent = t[0];
+        document.getElementById('subtitle').textContent = t[1];
     </script>
 
     <script src="../footer.js"></script>
