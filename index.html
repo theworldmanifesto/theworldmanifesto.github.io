@@ -1,67 +1,325 @@
-<script>
-    // ========================================
-    // ÖVERSÄTT MENY + LÄS
-    // ========================================
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World Manifesto</title>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        /* ... all CSS som tidigare ... */
+    </style>
+</head>
+<body>
 
-    const lang = (navigator.language || 'sv').split('-')[0].toLowerCase();
+    <!-- ======================================== -->
+    <!-- NAVIGATION: READ + MENY                   -->
+    <!-- ======================================== -->
 
-    const translations = {
-        'en': { menu: 'MENU', read: 'READ:' },
-        'sv': { menu: 'MENY', read: 'LÄS:' },
-        'es': { menu: 'MENÚ', read: 'LEER:' },
-        'fr': { menu: 'MENU', read: 'LIRE:' },
-        'de': { menu: 'MENÜ', read: 'LESEN:' },
-        'zh': { menu: '菜单', read: '阅读:' },
-        'hi': { menu: 'मेनू', read: 'पढ़ें:' },
-        'ar': { menu: 'القائمة', read: 'اقرأ:' },
-        'bn': { menu: 'মেনু', read: 'পড়ুন:' },
-        'pt': { menu: 'MENU', read: 'LER:' },
-        'ru': { menu: 'МЕНЮ', read: 'ЧИТАТЬ:' },
-        'ur': { menu: 'مینو', read: 'پڑھیں:' },
-        'id': { menu: 'MENU', read: 'BACA:' },
-        'ja': { menu: 'メニュー', read: '読む:' },
-        'sw': { menu: 'MENU', read: 'SOMA:' },
-        'tl': { menu: 'MENU', read: 'BASAHIN:' },
-        'tr': { menu: 'MENÜ', read: 'OKU:' },
-        'vi': { menu: 'MENU', read: 'ĐỌC:' },
-        'ko': { menu: '메뉴', read: '읽기:' },
-        'fa': { menu: 'منو', read: 'خواندن:' },
-        'it': { menu: 'MENU', read: 'LEGGI:' },
-        'th': { menu: 'เมนู', read: 'อ่าน:' },
-        'pl': { menu: 'MENU', read: 'CZYTAJ:' },
-        'uk': { menu: 'МЕНЮ', read: 'ЧИТАТИ:' },
-        'nl': { menu: 'MENU', read: 'LEES:' },
-        'ro': { menu: 'MENIU', read: 'CITEȘTE:' },
-        'el': { menu: 'ΜΕΝΟΥ', read: 'ΔΙΑΒΑΣΤΕ:' },
-        'hu': { menu: 'MENÜ', read: 'OLVASS:' },
-        'cs': { menu: 'MENU', read: 'ČTĚTE:' },
-        'bg': { menu: 'МЕНЮ', read: 'ЧЕТЕТЕ:' },
-        'no': { menu: 'MENY', read: 'LES:' },
-        'da': { menu: 'MENU', read: 'LÆS:' },
-        'fi': { menu: 'VALIKKO', read: 'LUE:' },
-        'he': { menu: 'תפריט', read: 'קרא:' },
-        'af': { menu: 'MENU', read: 'LEES:' },
-        'zu': { menu: 'IMENU', read: 'FUNDA:' },
-        'xh': { menu: 'IMENU', read: 'FUNDA:' },
-        'is': { menu: 'VALMYND', read: 'LESA:' },
-        'fo': { menu: 'MENU', read: 'LES:' },
-        'crs': { menu: 'MENI', read: 'LIR:' },
-        'se': { menu: 'MENU', read: 'LOHKKA:' },
-        'fit': { menu: 'VALIKKO', read: 'LUVE:' }
-    };
+    <div class="nav-wrapper">
 
-    const t = translations[lang] || translations['sv'];
+        <!-- READ – språkvalsrullgardin -->
+        <div class="read-menu">
+            <label for="read-select">LÄS:</label>
+            <select id="read-select" onchange="if(this.value) window.location.href='lang/read.html?lang=' + this.value">
+                <option value="">Välj språk</option>
+                <option value="af">Afrikaans</option>
+                <option value="ar">العربية</option>
+                <option value="bg">Български</option>
+                <option value="bn">বাংলা</option>
+                <option value="crs">Kreol seselwa</option>
+                <option value="cs">Čeština</option>
+                <option value="da">Dansk</option>
+                <option value="de">Deutsch</option>
+                <option value="el">Ελληνικά</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fa">فارسی</option>
+                <option value="fi">Suomi</option>
+                <option value="fit">Meänkieli</option>
+                <option value="fo">Føroyskt</option>
+                <option value="fr">Français</option>
+                <option value="he">עברית</option>
+                <option value="hi">हिंदी</option>
+                <option value="hu">Magyar</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="is">Íslenska</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="nl">Nederlands</option>
+                <option value="no">Norsk</option>
+                <option value="pl">Polski</option>
+                <option value="pt">Português</option>
+                <option value="ro">Română</option>
+                <option value="ru">Русский</option>
+                <option value="se">Davvisámegiella</option>
+                <option value="sv">Svenska</option>
+                <option value="sw">Kiswahili</option>
+                <option value="th">ภาษาไทย</option>
+                <option value="tl">Filipino</option>
+                <option value="tr">Türkçe</option>
+                <option value="uk">Українська</option>
+                <option value="ur">اردو</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="xh">isiXhosa</option>
+                <option value="zh">中文</option>
+                <option value="zu">isiZulu</option>
+            </select>
+        </div>
 
-    // Översätt MENY-knappen
-    const menuBtn = document.querySelector('.menu-btn');
-    if (menuBtn) {
-        // Ta bort "📋 " om du vill ha ren text, annars behåll
-        menuBtn.textContent = '📋 ' + t.menu;
-    }
+        <!-- MENY – navigering -->
+        <div class="menu-container">
+            <button class="menu-btn">📋 MENY</button>
+            <div class="menu-dropdown">
+                <div class="menu-dropdown-inner">
+                    <a href="index.html">🏠 Hem</a>
+                    <a href="lang/lang.html">🌐 More Languages</a>
+                    <a href="freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
+                    <a href="tropics/tropics.html">🌎 The Tropics</a>
+                    <a href="robotel/robotel.html">👄 Robotel</a>
+                    <a href="share/share.html">💬 Share</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    // Översätt LÄS-etiketten
-    const readLabel = document.querySelector('.read-menu label');
-    if (readLabel) {
-        readLabel.textContent = t.read;
-    }
-</script>
+    <!-- ======================================== -->
+    <!-- HUVUDINNEHÅLL                             -->
+    <!-- ======================================== -->
+
+    <div class="container">
+        <main>
+            <!-- TITEL – KLICKBAR -->
+            <a href="lang/read.html?lang=sv" style="text-decoration: none; color: inherit;">
+                <h1 id="main-title" style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
+            </a>
+
+            <div style="margin-bottom: 25px;">
+                <img src="pics/freedom_staircase_main_page.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
+            </div>
+
+            <!-- FLAGGOR (alla 42) -->
+            <div class="lang-flags">
+                <!-- ... alla flaggor ... -->
+            </div>
+
+            <!-- SLOGAN-RUTAN -->
+            <div id="slogan-box">
+                <div id="slogan-text"></div>
+                <div id="dots" class="dots"></div>
+                <div class="btns">
+                    <a id="btn-x" class="b bx" href="#">Share on X</a>
+                    <a id="btn-fb" class="b bf" href="#">Facebook</a>
+                    <a id="btn-wa" class="b bw" href="#">WhatsApp</a>
+                    <a id="btn-tg" class="b bt" href="#">Telegram</a>
+                    <a id="btn-em" class="b bm" href="#">Email</a>
+                    <a id="btn-copy" class="b bc" href="#">Copy Link</a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- SLOGAN-LOGIK + SPRÅK                     -->
+    <!-- ======================================== -->
+
+    <script>
+        const PAGE = "https://sites.google.com/view/worldmanifesto/";
+        const MANIFESTO = "The World Manifesto";
+        const COPIED = "Copied!";
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentLang = (urlParams.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
+
+        const pageTranslations = {
+            'en': { title: 'The World Manifesto' },
+            'zh': { title: '世界宣言' },
+            'hi': { title: 'विश्व घोषणापत्र' },
+            'es': { title: 'El Manifiesto Mundial' },
+            'fr': { title: 'Le Manifeste Mondial' },
+            'ar': { title: 'البيان العالمي' },
+            'bn': { title: 'বিশ্ব ইশতেহার' },
+            'pt': { title: 'O Manifesto Mundial' },
+            'ru': { title: 'Всемирный манифест' },
+            'ur': { title: 'عالمی منشور' },
+            'id': { title: 'Manifest Dunia' },
+            'de': { title: 'Weltmanifest' },
+            'ja': { title: '世界宣言' },
+            'sw': { title: 'Ilani ya Dunia' },
+            'tl': { title: 'Manipesto ng Mundo' },
+            'tr': { title: 'Dünya Manifestosu' },
+            'vi': { title: 'Tuyên ngôn Thế giới' },
+            'ko': { title: '세계 선언문' },
+            'fa': { title: 'مانیفست جهانی' },
+            'it': { title: 'Manifesto Mondiale' },
+            'th': { title: 'แถลงการณ์โลก' },
+            'pl': { title: 'Manifest Światowy' },
+            'uk': { title: 'Всесвітній маніфест' },
+            'nl': { title: 'Wereldmanifest' },
+            'ro': { title: 'Manifestul Mondial' },
+            'el': { title: 'Παγκόσμιο Μανιφέστο' },
+            'hu': { title: 'Világkiáltvány' },
+            'cs': { title: 'Světový manifest' },
+            'sv': { title: 'Världsmanifestet' },
+            'bg': { title: 'Световен манифест' },
+            'no': { title: 'Verdensmanifestet' },
+            'da': { title: 'Verdensmanifestet' },
+            'fi': { title: 'Maailmanmanifesti' },
+            'he': { title: 'מניפוסט העולם' },
+            'af': { title: 'Wêreldmanifest' },
+            'zu': { title: 'IManifesto Yomhlaba' },
+            'xh': { title: 'IManifesto Yehlabathi' },
+            'is': { title: 'Heimsmanifestið' },
+            'fo': { title: 'Heimsskráin' },
+            'crs': { title: 'Manifest lemonn' },
+            'se': { title: 'Máilmmi Manifesta' },
+            'fit': { title: 'Mailmanmanifesti' }
+        };
+
+        const titleText = pageTranslations[currentLang]?.title || pageTranslations['en'].title;
+        document.getElementById('main-title').textContent = titleText;
+        document.title = titleText;
+
+        // ---------- SLOGAN-LOGIK ----------
+        let slogans = [];
+        let i = 0, paused = false;
+
+        const btnX = document.getElementById('btn-x');
+        const btnFb = document.getElementById('btn-fb');
+        const btnWa = document.getElementById('btn-wa');
+        const btnTg = document.getElementById('btn-tg');
+        const btnEm = document.getElementById('btn-em');
+        const btnCopy = document.getElementById('btn-copy');
+        const q = document.getElementById('slogan-text');
+        const dots = document.getElementById('dots');
+
+        function openNew(u) { window.open(u, '_blank', 'noopener'); }
+
+        function show() {
+            q.style.opacity = 0;
+            setTimeout(() => {
+                const t = slogans[i];
+                const share = '"' + t + '" ' + PAGE;
+                q.textContent = '"' + t + '"';
+                q.style.opacity = 1;
+
+                const uX = 'https://x.com/intent/tweet?text=' + encodeURIComponent(share);
+                const uF = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(PAGE) + '&quote=' + encodeURIComponent(t);
+                const uW = 'https://wa.me/?text=' + encodeURIComponent(share);
+                const uT = 'https://t.me/share/url?url=' + encodeURIComponent(PAGE) + '&text=' + encodeURIComponent('"' + t + '"');
+                const uM = 'mailto:?subject=' + encodeURIComponent(MANIFESTO) + '&body=' + encodeURIComponent(share);
+
+                btnX.onclick = (e) => { e.preventDefault(); openNew(uX); };
+                btnFb.onclick = (e) => { e.preventDefault(); openNew(uF); };
+                btnWa.onclick = (e) => { e.preventDefault(); openNew(uW); };
+                btnTg.onclick = (e) => { e.preventDefault(); openNew(uT); };
+                btnEm.onclick = (e) => { e.preventDefault(); window.location.href = uM; };
+                btnCopy.onclick = (e) => {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(share);
+                    const old = btnCopy.textContent;
+                    btnCopy.textContent = COPIED;
+                    setTimeout(() => btnCopy.textContent = old, 1200);
+                };
+
+                [...dots.children].forEach((a, b) => a.className = b === i ? 'dot on' : 'dot');
+            }, 200);
+        }
+
+        document.getElementById('slogan-box').onmouseenter = () => paused = true;
+        document.getElementById('slogan-box').onmouseleave = () => paused = false;
+
+        function next() {
+            if (!paused && slogans.length > 0) {
+                i = (i + 1) % slogans.length;
+                show();
+            }
+        }
+
+        fetch('slogans.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Kunde inte läsa JSON');
+                return response.json();
+            })
+            .then(data => {
+                const slogansData = data[currentLang.toUpperCase()] || data['SV'] || data['EN'] || {};
+                slogans = Object.values(slogansData);
+
+                if (slogans.length > 0) {
+                    slogans.forEach((_, idx) => {
+                        const d = document.createElement('span');
+                        d.className = 'dot' + (idx === 0 ? ' on' : '');
+                        d.onclick = () => { i = idx; show(); };
+                        dots.appendChild(d);
+                    });
+                    show();
+                    setInterval(next, 10000);
+                }
+            })
+            .catch(err => console.error('Fel:', err));
+
+        // ---------- ÖVERSÄTT MENY + LÄS ----------
+        const menuTranslations = {
+            'en': { menu: 'MENU', read: 'READ:' },
+            'sv': { menu: 'MENY', read: 'LÄS:' },
+            'es': { menu: 'MENÚ', read: 'LEER:' },
+            'fr': { menu: 'MENU', read: 'LIRE:' },
+            'de': { menu: 'MENÜ', read: 'LESEN:' },
+            'zh': { menu: '菜单', read: '阅读:' },
+            'hi': { menu: 'मेनू', read: 'पढ़ें:' },
+            'ar': { menu: 'القائمة', read: 'اقرأ:' },
+            'bn': { menu: 'মেনু', read: 'পড়ুন:' },
+            'pt': { menu: 'MENU', read: 'LER:' },
+            'ru': { menu: 'МЕНЮ', read: 'ЧИТАТЬ:' },
+            'ur': { menu: 'مینو', read: 'پڑھیں:' },
+            'id': { menu: 'MENU', read: 'BACA:' },
+            'ja': { menu: 'メニュー', read: '読む:' },
+            'sw': { menu: 'MENU', read: 'SOMA:' },
+            'tl': { menu: 'MENU', read: 'BASAHIN:' },
+            'tr': { menu: 'MENÜ', read: 'OKU:' },
+            'vi': { menu: 'MENU', read: 'ĐỌC:' },
+            'ko': { menu: '메뉴', read: '읽기:' },
+            'fa': { menu: 'منو', read: 'خواندن:' },
+            'it': { menu: 'MENU', read: 'LEGGI:' },
+            'th': { menu: 'เมนู', read: 'อ่าน:' },
+            'pl': { menu: 'MENU', read: 'CZYTAJ:' },
+            'uk': { menu: 'МЕНЮ', read: 'ЧИТАТИ:' },
+            'nl': { menu: 'MENU', read: 'LEES:' },
+            'ro': { menu: 'MENIU', read: 'CITEȘTE:' },
+            'el': { menu: 'ΜΕΝΟΥ', read: 'ΔΙΑΒΑΣΤΕ:' },
+            'hu': { menu: 'MENÜ', read: 'OLVASS:' },
+            'cs': { menu: 'MENU', read: 'ČTĚTE:' },
+            'bg': { menu: 'МЕНЮ', read: 'ЧЕТЕТЕ:' },
+            'no': { menu: 'MENY', read: 'LES:' },
+            'da': { menu: 'MENU', read: 'LÆS:' },
+            'fi': { menu: 'VALIKKO', read: 'LUE:' },
+            'he': { menu: 'תפריט', read: 'קרא:' },
+            'af': { menu: 'MENU', read: 'LEES:' },
+            'zu': { menu: 'IMENU', read: 'FUNDA:' },
+            'xh': { menu: 'IMENU', read: 'FUNDA:' },
+            'is': { menu: 'VALMYND', read: 'LESA:' },
+            'fo': { menu: 'MENU', read: 'LES:' },
+            'crs': { menu: 'MENI', read: 'LIR:' },
+            'se': { menu: 'MENU', read: 'LOHKKA:' },
+            'fit': { menu: 'VALIKKO', read: 'LUVE:' }
+        };
+
+        const menuT = menuTranslations[currentLang] || menuTranslations['sv'];
+
+        const menuBtn = document.querySelector('.menu-btn');
+        if (menuBtn) {
+            menuBtn.textContent = '📋 ' + menuT.menu;
+        }
+
+        const readLabel = document.querySelector('.read-menu label');
+        if (readLabel) {
+            readLabel.textContent = menuT.read;
+        }
+    </script>
+
+    <!-- FOOTER -->
+    <script src="footer.js"></script>
+
+</body>
+</html>
