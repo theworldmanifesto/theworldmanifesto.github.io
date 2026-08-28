@@ -4,10 +4,10 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    // --- HÄMTA SIDANS SPRÅK ---
+    // --- LÄS SPRÅK FRÅN <html lang="..."> ---
     const currentLang = document.documentElement.lang || 'en';
 
-    // --- ÖVERSÄTTNINGAR ---
+    // --- ALLA ÖVERSÄTTNINGAR PÅ ETT STÄLLE! ---
     const translations = {
         'en': {
             menuLabel: 'MENU',
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'sv': {
             menuLabel: 'MENY',
             home: 'Hem',
-            manifesto: 'Världsmanifestet',
+            manifesto: 'Världsmanifestet',     // ← SVENSKA!
             freedom: 'Frihetstrappan',
             tropics: 'Tropikerna',
             robotel: 'Robotel',
@@ -35,8 +35,35 @@ document.addEventListener('DOMContentLoaded', function() {
             tropics: '热带地区',
             robotel: '机器人',
             share: '分享'
+        },
+        'es': {
+            menuLabel: 'MENÚ',
+            home: 'Inicio',
+            manifesto: 'El Manifiesto Mundial',
+            freedom: 'Escalera de la Libertad',
+            tropics: 'Los Trópicos',
+            robotel: 'Robotel',
+            share: 'Compartir'
+        },
+        'fr': {
+            menuLabel: 'MENU',
+            home: 'Accueil',
+            manifesto: 'Le Manifeste Mondial',
+            freedom: 'Escalier de la Liberté',
+            tropics: 'Les Tropiques',
+            robotel: 'Robotel',
+            share: 'Partager'
+        },
+        'de': {
+            menuLabel: 'MENÜ',
+            home: 'Startseite',
+            manifesto: 'Weltmanifest',
+            freedom: 'Freiheitstreppe',
+            tropics: 'Die Tropen',
+            robotel: 'Robotel',
+            share: 'Teilen'
         }
-        // Lägg till fler språk här...
+        // Lägg till alla 42 språk här...
     };
 
     const t = translations[currentLang] || translations['en'];
