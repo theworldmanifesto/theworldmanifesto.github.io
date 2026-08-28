@@ -5,6 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The World Manifesto</title>
     <link rel="stylesheet" href="../menu.css">
+    <!-- ... din CSS ... -->
+</head>
+<body>
+
+    <div class="nav-wrapper">
+        <div id="main-menu"></div>
+    </div>
+
+    <div class="container">
+
+        <!-- RUBRIKER – uppdateras av JavaScript -->
+        <h1 id="manifesto-title">The World Manifesto</h1>
+        <h2 id="manifesto-subtitle">The Manifesto for Definitive Abundance</h2>
+        <div class="author" id="manifesto-author">Sven Yngerstedt</div>
+        <div class="edition" id="manifesto-edition">First edition, 2026</div>
+
+        <div id="manifesto-content" class="manifesto-text">
+            <p>Laddar...</p>
+        </div>
+
+    </div>
+
+    <script src="../menu.js"></script>
+
+    <script>
+        // Hämta språk från URL (t.ex. ?lang=sv)
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentLang = urlParams.get('lang') || 'en';
+
+        // Översättningar – lägg till alla 42 språk här
+        const translations = {
+            'sv': {
+                title: 'Världsmanifestet',
+                subtitle: 'Manifestet för definitivt överflöd',
+                author: 'Sven Yngerstedt',
+                edition: 'Första utgåvan, 2026'
+            },
+            'en': {
+                title: 'The World Manifesto',
+                subtitle: 'The Manifesto for Definitive Abundance',
+                author: 'Sven Yngerstedt',
+                edition: 'First edition, 2026'
+            }
+            // Lägg till fler språk här...
+        };
+
+        const t = translations[currentLang] || translations['en'];
+
+        // Uppdatera rubrikerna
+        document.getElementById('manifesto-title').textContent = t.title;
+        document.getElementById('manifesto-subtitle').textContent = t.subtitle;
+        document.getElementById('manifesto-author').textContent = t.author;
+        document.getElementById('manifesto-edition').textContent = t.edition;
+
+        // Ladda manifesttexten (anpassa efter din struktur)
+        // fetch('manifesto_' + currentLang + '.json') ...
+    </script>
+
+    <script src="../footer.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World Manifesto</title>
+    <link rel="stylesheet" href="../menu.css">
     <style>
         body {
             font-family: Georgia, Cambria, "Times New Roman", Times, serif;
