@@ -1,402 +1,109 @@
-/* ======================================== */
-/* MENY – READ + MENY                       */
-/* ======================================== */
-
-.nav-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 16px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 12px 20px;
-    background: transparent;
-    position: sticky;
-    top: 0;
-    z-index: 500;
-    flex-wrap: wrap;
-}
-
-/* ======================================== */
-/* READ-MENY – SPRÅKVALS-RULLGARDIN          */
-/* ======================================== */
-
-.read-menu {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 14px;
-    flex-shrink: 0;
-}
-
-.read-menu label {
-    margin-right: 4px;
-    font-weight: bold;
-    color: #1a1a1a;
-}
-
-.read-menu select {
-    padding: 6px 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(4px);
-    font-size: 13px;
-    cursor: pointer;
-    transition: border-color 0.2s;
-    font-family: sans-serif;
-}
-
-.read-menu select:hover {
-    border-color: #888;
-}
-
-.read-menu select:focus {
-    outline: none;
-    border-color: #555;
-}
-
-/* ======================================== */
-/* MENY-MENY – FLYTANDE                       */
-/* ======================================== */
-
-#main-menu {
-    display: inline-block;
-    flex-shrink: 0;
-}
-
-.site-nav {
-    position: relative;
-    display: inline-block;
-}
-
-/* MENY-knapp – button, inte länk */
-.dropbtn {
-    color: #1a1a1a;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    display: inline-block;
-    transition: background 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-    font-family: system-ui, sans-serif;
-}
-
-.dropbtn:hover {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-/* ======================================== */
-/* MENY-RULLGARDIN                            */
-/* ======================================== */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    margin-top: 8px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
-    min-width: 200px;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    border: 1px solid rgba(200, 200, 200, 0.2);
-    z-index: 999;
-    overflow: hidden;
-}
-
-.dropdown-content a {
-    color: #1a1a1a;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    font-family: system-ui, sans-serif;
-    border-bottom: 1px solid #f0f0f0;
-    transition: background 0.15s;
-}
-
-.dropdown-content a:last-child {
-    border-bottom: none;
-}
-
-.dropdown-content a:hover {
-    background: #f7f7f7;
-}
-
-/* ======================================== */
-/* DESKTOP – HOVER                          */
-/* ======================================== */
-
-@media (min-width: 601px) {
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-}
-
-/* ======================================== */
-/* MOBIL – KLICK                            */
-/* ======================================== */
-
-@media (max-width: 600px) {
-    .nav-wrapper {
-        padding: 8px 12px;
-        gap: 10px;
-    }
-
-    .dropbtn {
-        font-size: 14px;
-        padding: 6px 12px;
-    }
-
-    .dropdown-content {
-        left: 0;
-        width: 80vw;
-        max-width: 280px;
-    }
-
-    .dropdown.active .dropdown-content {
-        display: block;
-    }
-
-    .read-menu select {
-        font-size: 12px;
-        padding: 4px 8px;
-    }
-
-    .read-menu label {
-        font-size: 12px;
-    }
-}// ============================================================
+// ============================================================
 // MENU.JS - Global meny för The World Manifesto
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    // --- HÄMTA SIDANS SPRÅK från <html lang="..."> ---
+    // 1. Känn av sidans språk från <html lang="...">
     const currentLang = document.documentElement.lang || 'en';
 
-    // --- ORDBOK FÖR ALLA SPRÅK (menytexter) ---
+    // 2. Ordbok för alla menytexter på alla 42 språk
     const translations = {
-        // Större språk
-        'en': { home: 'Home', menu: 'MENU', read: 'READ:', choose: 'Choose language' },
-        'zh': { home: '首页', menu: '菜单', read: '阅读:', choose: '选择语言' },
-        'hi': { home: 'होम', menu: 'मेनू', read: 'पढ़ें:', choose: 'भाषा चुनें' },
-        'es': { home: 'Inicio', menu: 'MENÚ', read: 'LEER:', choose: 'Elige idioma' },
-        'fr': { home: 'Accueil', menu: 'MENU', read: 'LIRE:', choose: 'Choisissez la langue' },
-        'ar': { home: 'الرئيسية', menu: 'القائمة', read: 'اقرأ:', choose: 'اختر اللغة' },
-        'bn': { home: 'হোম', menu: 'মেনু', read: 'পড়ুন:', choose: 'ভাষা নির্বাচন করুন' },
-        'pt': { home: 'Início', menu: 'MENU', read: 'LER:', choose: 'Escolha o idioma' },
-        'ru': { home: 'Главная', menu: 'МЕНЮ', read: 'ЧИТАТЬ:', choose: 'Выберите язык' },
-        'ur': { home: 'ہوم', menu: 'مینو', read: 'پڑھیں:', choose: 'زبان منتخب کریں' },
-        'id': { home: 'Beranda', menu: 'MENU', read: 'BACA:', choose: 'Pilih bahasa' },
-        'de': { home: 'Startseite', menu: 'MENÜ', read: 'LESEN:', choose: 'Sprache wählen' },
-        'ja': { home: 'ホーム', menu: 'メニュー', read: '読む:', choose: '言語を選択' },
-        'sw': { home: 'Nyumbani', menu: 'MENU', read: 'SOMA:', choose: 'Chagua lugha' },
-        'tl': { home: 'Home', menu: 'MENU', read: 'BASAHIN:', choose: 'Pumili ng wika' },
-        'tr': { home: 'Ana Sayfa', menu: 'MENÜ', read: 'OKU:', choose: 'Dil seçin' },
-        'vi': { home: 'Trang chủ', menu: 'MENU', read: 'ĐỌC:', choose: 'Chọn ngôn ngữ' },
-        'ko': { home: '홈', menu: '메뉴', read: '읽기:', choose: '언어 선택' },
-        'fa': { home: 'خانه', menu: 'منو', read: 'خواندن:', choose: 'انتخاب زبان' },
-        'it': { home: 'Home', menu: 'MENU', read: 'LEGGI:', choose: 'Scegli la lingua' },
-        'th': { home: 'หน้าแรก', menu: 'เมนู', read: 'อ่าน:', choose: 'เลือกภาษา' },
-        'pl': { home: 'Strona główna', menu: 'MENU', read: 'CZYTAJ:', choose: 'Wybierz język' },
-        'uk': { home: 'Головна', menu: 'МЕНЮ', read: 'ЧИТАТИ:', choose: 'Виберіть мову' },
-        'nl': { home: 'Home', menu: 'MENU', read: 'LEES:', choose: 'Kies taal' },
-        'ro': { home: 'Acasă', menu: 'MENIU', read: 'CITEȘTE:', choose: 'Alegeți limba' },
-        'el': { home: 'Αρχική', menu: 'ΜΕΝΟΥ', read: 'ΔΙΑΒΑΣΤΕ:', choose: 'Επιλέξτε γλώσσα' },
-        'hu': { home: 'Főoldal', menu: 'MENÜ', read: 'OLVASS:', choose: 'Válasszon nyelvet' },
-        'cs': { home: 'Domů', menu: 'MENU', read: 'ČTĚTE:', choose: 'Vyberte jazyk' },
-        'sv': { home: 'Hem', menu: 'MENY', read: 'LÄS:', choose: 'Välj språk' },
-        'bg': { home: 'Начало', menu: 'МЕНЮ', read: 'ЧЕТЕТЕ:', choose: 'Изберете език' },
-        'no': { home: 'Hjem', menu: 'MENY', read: 'LES:', choose: 'Velg språk' },
-        'da': { home: 'Hjem', menu: 'MENU', read: 'LÆS:', choose: 'Vælg sprog' },
-        'fi': { home: 'Etusivu', menu: 'VALIKKO', read: 'LUE:', choose: 'Valitse kieli' },
-        'he': { home: 'בית', menu: 'תפריט', read: 'קרא:', choose: 'בחר שפה' },
-        'af': { home: 'Tuis', menu: 'MENU', read: 'LEES:', choose: 'Kies taal' },
-
-        // Mindre/regionala språk
-        'zu': { home: 'Ikhaya', menu: 'IMENU', read: 'FUNDA:', choose: 'Khetha ulimi' },
-        'xh': { home: 'Ikhaya', menu: 'IMENU', read: 'FUNDA:', choose: 'Khetha ulimi' },
-        'is': { home: 'Heim', menu: 'VALMYND', read: 'LESA:', choose: 'Veldu tungumál' },
-        'fo': { home: 'Heim', menu: 'MENU', read: 'LES:', choose: 'Vel mál' },
-        'crs': { home: 'Lakaz', menu: 'MENI', read: 'LIR:', choose: 'Sazir langaz' },
-        'se': { home: 'Ruoktu', menu: 'MENU', read: 'LOHKKA:', choose: 'Vállje giella' },
-        'fit': { home: 'Koti', menu: 'VALIKKO', read: 'LUVE:', choose: 'Välj kieli' }
+        'en': { home: '🏠HOME', menu: '📋 MENU', more: '🌐 More Languages', freedom: '🪜 Freedom Staircase', tropics: '🌎 The Tropics', robotel: '🤖 Robotel', share: '💬 Share' },
+        'zh': { home: '🏠首页', menu: '📋 菜单', more: '🌐 更多语言', freedom: '🪜 自由阶梯', tropics: '🌎 热带地区', robotel: '🤖 机器人', share: '💬 分享' },
+        'hi': { home: '🏠होम', menu: '📋 मेनू', more: '🌐 और भाषाएँ', freedom: '🪜 स्वतंत्रता सीढ़ी', tropics: '🌎 उष्णकटिबंधीय', robotel: '🤖 रोबोटेल', share: '💬 साझा करें' },
+        'es': { home: '🏠INICIO', menu: '📋 MENÚ', more: '🌐 Más idiomas', freedom: '🪜 Escalera de la Libertad', tropics: '🌎 Los Trópicos', robotel: '🤖 Robotel', share: '💬 Compartir' },
+        'fr': { home: '🏠ACCUEIL', menu: '📋 MENU', more: '🌐 Plus de langues', freedom: '🪜 Escalier de la Liberté', tropics: '🌎 Les Tropiques', robotel: '🤖 Robotel', share: '💬 Partager' },
+        'ar': { home: '🏠الرئيسية', menu: '📋 القائمة', more: '🌐 المزيد من اللغات', freedom: '🪜 سلم الحرية', tropics: '🌎 المناطق المدارية', robotel: '🤖 روبوتيل', share: '💬 مشاركة' },
+        'bn': { home: '🏠হোম', menu: '📋 মেনু', more: '🌐 আরও ভাষা', freedom: '🪜 স্বাধীনতার সিঁড়ি', tropics: '🌎 গ্রীষ্মমণ্ডল', robotel: '🤖 রোবোটেল', share: '💬 শেয়ার করুন' },
+        'pt': { home: '🏠INÍCIO', menu: '📋 MENU', more: '🌐 Mais idiomas', freedom: '🪜 Escada da Liberdade', tropics: '🌎 Os Trópicos', robotel: '🤖 Robotel', share: '💬 Compartilhar' },
+        'ru': { home: '🏠ГЛАВНАЯ', menu: '📋 МЕНЮ', more: '🌐 Больше языков', freedom: '🪜 Лестница Свободы', tropics: '🌎 Тропики', robotel: '🤖 Роботель', share: '💬 Поделиться' },
+        'ur': { home: '🏠ہوم', menu: '📋 مینو', more: '🌐 مزید زبانیں', freedom: '🪜 آزادی کی سیڑھی', tropics: '🌎 اشنکٹبندیی', robotel: '🤖 روبوٹیل', share: '💬 اشتراک کریں' },
+        'id': { home: '🏠BERANDA', menu: '📋 MENU', more: '🌐 Bahasa Lain', freedom: '🪜 Tangga Kebebasan', tropics: '🌎 Daerah Tropis', robotel: '🤖 Robotel', share: '💬 Bagikan' },
+        'de': { home: '🏠STARTSEITE', menu: '📋 MENÜ', more: '🌐 Weitere Sprachen', freedom: '🪜 Freiheitstreppe', tropics: '🌎 Die Tropen', robotel: '🤖 Robotel', share: '💬 Teilen' },
+        'ja': { home: '🏠ホーム', menu: '📋 メニュー', more: '🌐 その他の言語', freedom: '🪜 自由の階段', tropics: '🌎 熱帯地域', robotel: '🤖 ロボテル', share: '💬 シェア' },
+        'sw': { home: '🏠NYUMBA', menu: '📋 MENU', more: '🌐 Lugha Zingine', freedom: '🪜 Ngazi ya Uhuru', tropics: '🌎 Tropiki', robotel: '🤖 Robotel', share: '💬 Shiriki' },
+        'tl': { home: '🏠HOME', menu: '📋 MENU', more: '🌐 Higit pang Wika', freedom: '🪜 Hagdan ng Kalayaan', tropics: '🌎 Ang Tropiko', robotel: '🤖 Robotel', share: '💬 Ibahagi' },
+        'tr': { home: '🏠ANA SAYFA', menu: '📋 MENÜ', more: '🌐 Daha Fazla Dil', freedom: '🪜 Özgürlük Merdiveni', tropics: '🌎 Tropikler', robotel: '🤖 Robotel', share: '💬 Paylaş' },
+        'vi': { home: '🏠TRANG CHỦ', menu: '📋 MENU', more: '🌐 Thêm Ngôn Ngữ', freedom: '🪜 Cầu Thang Tự Do', tropics: '🌎 Vùng Nhiệt Đới', robotel: '🤖 Robotel', share: '💬 Chia sẻ' },
+        'ko': { home: '🏠홈', menu: '📋 메뉴', more: '🌐 더 많은 언어', freedom: '🪜 자유의 계단', tropics: '🌎 열대 지방', robotel: '🤖 로보텔', share: '💬 공유' },
+        'fa': { home: '🏠خانه', menu: '📋 منو', more: '🌐 زبان‌های بیشتر', freedom: '🪜 پله‌های آزادی', tropics: '🌎 مناطق گرمسیری', robotel: '🤖 روبوتل', share: '💬 به اشتراک بگذارید' },
+        'it': { home: '🏠HOME', menu: '📋 MENU', more: '🌐 Altre lingue', freedom: '🪜 Scala della Libertà', tropics: '🌎 I Tropici', robotel: '🤖 Robotel', share: '💬 Condividi' },
+        'th': { home: '🏠หน้าแรก', menu: '📋 เมนู', more: '🌐 ภาษาอื่น ๆ', freedom: '🪜 บันไดแห่งเสรีภาพ', tropics: '🌎 เขตร้อน', robotel: '🤖 โรโบเทล', share: '💬 แชร์' },
+        'pl': { home: '🏠STRONA GŁÓWNA', menu: '📋 MENU', more: '🌐 Więcej języków', freedom: '🪜 Schody Wolności', tropics: '🌎 Tropiki', robotel: '🤖 Robotel', share: '💬 Udostępnij' },
+        'uk': { home: '🏠ГОЛОВНА', menu: '📋 МЕНЮ', more: '🌐 Більше мов', freedom: '🪜 Сходи Свободи', tropics: '🌎 Тропіки', robotel: '🤖 Роботель', share: '💬 Поділитися' },
+        'nl': { home: '🏠HOME', menu: '📋 MENU', more: '🌐 Meer talen', freedom: '🪜 Vrijheidstrap', tropics: '🌎 De Tropen', robotel: '🤖 Robotel', share: '💬 Delen' },
+        'ro': { home: '🏠ACASĂ', menu: '📋 MENU', more: '🌐 Mai multe limbi', freedom: '🪜 Scara Libertății', tropics: '🌎 Tropicele', robotel: '🤖 Robotel', share: '💬 Distribuie' },
+        'el': { home: '🏠ΑΡΧΙΚΗ', menu: '📋 ΜΕΝΟΥ', more: '🌐 Περισσότερες γλώσσες', freedom: '🪜 Σκάλα της Ελευθερίας', tropics: '🌎 Τροπικές περιοχές', robotel: '🤖 Ρομποτέλ', share: '💬 Μοιραστείτε' },
+        'hu': { home: '🏠FŐOLDAL', menu: '📋 MENÜ', more: '🌐 További nyelvek', freedom: '🪜 Szabadság lépcső', tropics: '🌎 Trópusok', robotel: '🤖 Robotel', share: '💬 Megosztás' },
+        'cs': { home: '🏠DOMŮ', menu: '📋 MENU', more: '🌐 Více jazyků', freedom: '🪜 Schody svobody', tropics: '🌎 Tropy', robotel: '🤖 Robotel', share: '💬 Sdílet' },
+        'sv': { home: '🏠HEM', menu: '📋 MENY', more: '🌐 Fler språk', freedom: '🪜 Frihetstrappan', tropics: '🌎 Tropikerna', robotel: '🤖 Robotel', share: '💬 Dela' },
+        'bg': { home: '🏠НАЧАЛО', menu: '📋 МЕНЮ', more: '🌐 Още езици', freedom: '🪜 Стълба на свободата', tropics: '🌎 Тропици', robotel: '🤖 Роботел', share: '💬 Споделете' },
+        'no': { home: '🏠HJEM', menu: '📋 MENY', more: '🌐 Flere språk', freedom: '🪜 Frihetstrappen', tropics: '🌎 Tropene', robotel: '🤖 Robotel', share: '💬 Del' },
+        'da': { home: '🏠HJEM', menu: '📋 MENU', more: '🌐 Flere sprog', freedom: '🪜 Frihedstrappen', tropics: '🌎 Troperne', robotel: '🤖 Robotel', share: '💬 Del' },
+        'fi': { home: '🏠ETUSIVU', menu: '📋 VALIKKO', more: '🌐 Lisää kieliä', freedom: '🪜 Vapauden portaat', tropics: '🌎 Trooppiset alueet', robotel: '🤖 Robotel', share: '💬 Jaa' },
+        'he': { home: '🏠בית', menu: '📋 תפריט', more: '🌐 שפות נוספות', freedom: '🪜 מדרגות החירות', tropics: '🌎 האזורים הטרופיים', robotel: '🤖 רובוטל', share: '💬 שתף' },
+        'af': { home: '🏠TUIS', menu: '📋 MENU', more: '🌐 Meer tale', freedom: '🪜 Vryheidstrap', tropics: '🌎 Die Trope', robotel: '🤖 Robotel', share: '💬 Deel' },
+        'zu': { home: '🏠IKHAYA', menu: '📋 IMENU', more: '🌐 Izilimi Ezengeziwe', freedom: '🪜 Izitebhisi Zenkululeko', tropics: '🌎 Izindawo Ezishisayo', robotel: '🤖 Robotel', share: '💬 Yabelana' },
+        'xh': { home: '🏠IKHAYA', menu: '📋 IMENU', more: '🌐 Iilwimi Ezingeziweyo', freedom: '🪜 Izitebhisi Zenkululeko', tropics: '🌎 Iitropiki', robotel: '🤖 Robotel', share: '💬 Yabelana' },
+        'is': { home: '🏠HEIM', menu: '📋 VALMYND', more: '🌐 Fleiri tungumál', freedom: '🪜 Frelsisstigi', tropics: '🌎 Hitabeltið', robotel: '🤖 Robotel', share: '💬 Deila' },
+        'fo': { home: '🏠HEIM', menu: '📋 MENU', more: '🌐 Fleiri mál', freedom: '🪜 Frælsistrappa', tropics: '🌎 Hitabeltið', robotel: '🤖 Robotel', share: '💬 Deila' },
+        'crs': { home: '🏠LAKAZ', menu: '📋 MENI', more: '🌐 Plis langaz', freedom: '🪜 Eskalye Laliyete', tropics: '🌎 Tropik', robotel: '🤖 Robotel', share: '💬 Partage' },
+        'se': { home: '🏠RUOKTU', menu: '📋 MENU', more: '🌐 Eambbi gielat', freedom: '🪜 Friddjavuoni', tropics: '🌎 Tropihkkat', robotel: '🤖 Robotel', share: '💬 Juoiggat' },
+        'fit': { home: '🏠KOTI', menu: '📋 MENY', more: '🌐 Enempi kieliä', freedom: '🪜 Vapauden portaat', tropics: '🌎 Trooppiset', robotel: '🤖 Robotel', share: '💬 Jaa' }
     };
 
-    // Välj rätt språk eller fallback till engelska
+    // Välj språket från listan, eller fallback till engelska
     const t = translations[currentLang] || translations['en'];
 
-    // --- RÄKNA UT HUR MÅNGA NIVÅER UPP VI BEFINNER OSS ---
-    function getBasePath() {
-        const path = window.location.pathname;
-        const parts = path.split('/').filter(p => p.length > 0);
-        const depth = parts.length > 0 ? parts.length - 1 : 0;
-        return '../'.repeat(Math.max(0, depth));
-    }
-
-    const base = getBasePath();
-
-    // --- Hjälpfunktion för att avgöra om vi är på mobil ---
-    function isMobile() {
-        return window.innerWidth <= 600;
-    }
-
-    // --- Bygg knapptext beroende på skärmbredd ---
-    function getButtonText() {
-        return isMobile() ? '☰' : '📋 ' + t.menu;
-    }
-
-    // --- READ-MENY (språkval) ---
-    function getReadMenu() {
-        const languages = [
-            { code: 'af', name: 'Afrikaans' },
-            { code: 'ar', name: 'العربية' },
-            { code: 'bg', name: 'Български' },
-            { code: 'bn', name: 'বাংলা' },
-            { code: 'crs', name: 'Kreol seselwa' },
-            { code: 'cs', name: 'Čeština' },
-            { code: 'da', name: 'Dansk' },
-            { code: 'de', name: 'Deutsch' },
-            { code: 'el', name: 'Ελληνικά' },
-            { code: 'en', name: 'English' },
-            { code: 'es', name: 'Español' },
-            { code: 'fa', name: 'فارسی' },
-            { code: 'fi', name: 'Suomi' },
-            { code: 'fit', name: 'Meänkieli' },
-            { code: 'fo', name: 'Føroyskt' },
-            { code: 'fr', name: 'Français' },
-            { code: 'he', name: 'עברית' },
-            { code: 'hi', name: 'हिंदी' },
-            { code: 'hu', name: 'Magyar' },
-            { code: 'id', name: 'Bahasa Indonesia' },
-            { code: 'is', name: 'Íslenska' },
-            { code: 'it', name: 'Italiano' },
-            { code: 'ja', name: '日本語' },
-            { code: 'ko', name: '한국어' },
-            { code: 'nl', name: 'Nederlands' },
-            { code: 'no', name: 'Norsk' },
-            { code: 'pl', name: 'Polski' },
-            { code: 'pt', name: 'Português' },
-            { code: 'ro', name: 'Română' },
-            { code: 'ru', name: 'Русский' },
-            { code: 'se', name: 'Davvisámegiella' },
-            { code: 'sv', name: 'Svenska' },
-            { code: 'sw', name: 'Kiswahili' },
-            { code: 'th', name: 'ภาษาไทย' },
-            { code: 'tl', name: 'Filipino' },
-            { code: 'tr', name: 'Türkçe' },
-            { code: 'uk', name: 'Українська' },
-            { code: 'ur', name: 'اردو' },
-            { code: 'vi', name: 'Tiếng Việt' },
-            { code: 'xh', name: 'isiXhosa' },
-            { code: 'zh', name: '中文' },
-            { code: 'zu', name: 'isiZulu' }
-        ];
-
-        languages.sort((a, b) => a.name.localeCompare(b.name));
-
-        let menu = `
-            <div class="read-menu">
-                <label for="read-select">${t.read}</label>
-                <select id="read-select" onchange="if(this.value) window.location.href='${base}lang/read.html?lang=' + this.value">
-                    <option value="">${t.choose}</option>
-        `;
-        languages.forEach(lang => {
-            menu += `<option value="${lang.code}">${lang.name}</option>`;
-        });
-        menu += `</select></div>`;
-        return menu;
-    }
-
-    // --- SKAPA MENY-MENYN (knappen är inte en länk) ---
-    function buildMenu() {
-        const btnText = getButtonText();
-        return `
-            <div class="site-nav">
+    // 3. Skapa menyn med dynamiska texter
+    const menuHTML = `
+        <div class="site-nav">
+            <div class="nav-container">
                 <div class="dropdown" id="homeDropdown">
-                    <button class="dropbtn" id="homeBtn">${btnText}</button>
+                    <a href="/index.html" class="dropbtn" id="homeBtn">${t.home}</a>
                     <div class="dropdown-content">
-                        <a href="${base}index.html">🏠 ${t.home}</a>
-                        <a href="${base}lang/lang.html">🌐 More Languages</a>
-                        <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
-                        <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
-                        <a href="${base}robotel/robotel.html">👄 Robotel</a>
-                        <a href="${base}share/share.html">💬 Share</a>
+                        <a href="/lang/en.html">🇬🇧 ENGLISH</a>
+                        <a href="/lang/zh.html">🇨🇳 简体中文</a>
+                        <a href="/lang/sv.html">🇸🇪 SVENSKA</a>
+                        <a href="/lang/lang.html">${t.more}</a>
+                        <a href="/freedom-staircase/freedom-staircase.html">${t.freedom}</a>
+                        <a href="/tropics/tropics.html">${t.tropics}</a>
+                        <a href="/robotel/robotel.html">${t.robotel}</a>
+                        <a href="/share/share.html">${t.share}</a>
                     </div>
                 </div>
             </div>
-        `;
-    }
+        </div>
+    `;
 
-    // --- SÄTT IN MENYERNA ---
-    const navWrapper = document.querySelector('.nav-wrapper');
-    if (navWrapper) {
-        // READ – lägg till om den inte redan finns
-        if (!navWrapper.querySelector('.read-menu')) {
-            const readContainer = document.createElement('div');
-            readContainer.innerHTML = getReadMenu();
-            navWrapper.prepend(readContainer);
-        }
-    }
-
-    // MENY – uppdatera befintlig
+    // Hitta containern och sätt in menyn
     const menuContainer = document.getElementById('main-menu');
     if (menuContainer) {
-        menuContainer.innerHTML = buildMenu();
+        menuContainer.innerHTML = menuHTML;
     }
 
-    // --- Uppdatera knapptext vid fönsterändring ---
-    function updateButtonText() {
-        const btn = document.getElementById('homeBtn');
-        if (btn) {
-            btn.textContent = getButtonText();
-        }
-    }
-
-    // Lyssna på fönsterändringar
-    window.addEventListener('resize', updateButtonText);
-
-    // --- MOBIL: KLICK VÄXLAR MENYN ---
+    // --- MOBIL: KLICK ÖPPNAR MENYN ---
     const dropdown = document.getElementById('homeDropdown');
     const btn = document.getElementById('homeBtn');
+    let isOpen = false;
 
     if (btn && dropdown) {
-        const newBtn = btn.cloneNode(true);
-        btn.parentNode.replaceChild(newBtn, btn);
-        const newDropdown = dropdown.cloneNode(true);
-        dropdown.parentNode.replaceChild(newDropdown, dropdown);
-
-        const freshBtn = document.getElementById('homeBtn');
-        const freshDropdown = document.getElementById('homeDropdown');
-
-        if (freshBtn && freshDropdown) {
-            // Klick på knappen – öppna/stäng menyn
-            freshBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (isMobile()) {
-                    freshDropdown.classList.toggle('active');
+        btn.addEventListener('click', function(e) {
+            if (window.innerWidth <= 600) {
+                if (!isOpen) {
+                    e.preventDefault();
+                    dropdown.classList.add('active');
+                    isOpen = true;
                 }
-            });
+            }
+        });
 
-            // Klick utanför – stäng menyn
-            document.addEventListener('click', function(e) {
-                if (!freshDropdown.contains(e.target)) {
-                    freshDropdown.classList.remove('active');
-                }
-            });
-        }
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+                isOpen = false;
+            }
+        });
     }
 });
