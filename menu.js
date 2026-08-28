@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // 1. Känn av sidans språk från <html lang="...">
     const currentLang = document.documentElement.lang || 'en';
 
-    // 2. Ordbok för ALLA menytexter på alla 42 språk
+    // 2. Ordbok för ALLA menytexter
     const translations = {
-        // --- STÖRRE SPRÅK ---
         'en': { 
             home: '🏠HOME', 
             menu: '📋 MENU',
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             tropics: '🌎 The Tropics',
             robotel: '🤖 Robotel',
             share: '💬 Share',
-            // Språklänkar
             lang_en: '🇬🇧 ENGLISH',
             lang_zh: '🇨🇳 简体中文',
             lang_sv: '🇸🇪 SVENSKA'
@@ -47,14 +45,14 @@ document.addEventListener('DOMContentLoaded', function() {
             lang_zh: '🇨🇳 简体中文',
             lang_sv: '🇸🇪 瑞典语'
         },
-        // ... FORTSÄTT MED ALLA 42 SPRÅK
-        // (Här lägger du in översättningar för alla språk)
+        // Lägg till fler språk här efter behov
+        // ...
     };
 
     // Fallback till engelska
     const t = translations[currentLang] || translations['en'];
 
-    // --- SKAPA MENYN MED DYNAMISKA TEXTER ---
+    // 3. Skapa hela menyn med dynamiska texter
     const menuHTML = `
         <div class="site-nav">
             <div class="nav-container">
