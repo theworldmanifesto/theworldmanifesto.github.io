@@ -4,14 +4,11 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    // 1. Känn av sidans språk från <html lang="...">
     const currentLang = document.documentElement.lang || 'en';
 
-    // 2. Ordbok för ALLA menytexter
     const translations = {
         'en': { 
             home: '🏠HOME', 
-            menu: '📋 MENU',
             moreLanguages: '🌐 More Languages',
             freedomStaircase: '🪜 Freedom Staircase',
             tropics: '🌎 The Tropics',
@@ -23,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'sv': { 
             home: '🏠HEM', 
-            menu: '📋 MENY',
             moreLanguages: '🌐 Fler språk',
             freedomStaircase: '🪜 Frihetstrappan',
             tropics: '🌎 Tropikerna',
@@ -35,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'zh': { 
             home: '🏠首页', 
-            menu: '📋 菜单',
             moreLanguages: '🌐 更多语言',
             freedomStaircase: '🪜 自由阶梯',
             tropics: '🌎 热带地区',
@@ -44,15 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
             lang_en: '🇬🇧 英语',
             lang_zh: '🇨🇳 简体中文',
             lang_sv: '🇸🇪 瑞典语'
-        },
-        // Lägg till fler språk här efter behov
-        // ...
+        }
+        // Lägg till fler språk här
     };
 
-    // Fallback till engelska
     const t = translations[currentLang] || translations['en'];
 
-    // 3. Skapa hela menyn med dynamiska texter
     const menuHTML = `
         <div class="site-nav">
             <div class="nav-container">
@@ -73,13 +65,12 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
 
-    // Hitta containern och sätt in menyn
     const menuContainer = document.getElementById('main-menu');
     if (menuContainer) {
         menuContainer.innerHTML = menuHTML;
     }
 
-    // --- MOBIL: KLICK ÖPPNAR MENYN ---
+    // Mobil: klick öppnar menyn
     const dropdown = document.getElementById('homeDropdown');
     const btn = document.getElementById('homeBtn');
     let isOpen = false;
