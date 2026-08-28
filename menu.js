@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
         // Större språk
         'en': {
-            home: 'HOME',
+            menuLabel: 'MENU',
+            home: 'Home',
             moreLanguages: 'More Languages',
             freedomStaircase: 'Freedom Staircase',
             tropics: 'The Tropics',
@@ -19,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             share: 'Share'
         },
         'sv': {
-            home: 'HEM',
+            menuLabel: 'MENY',
+            home: 'Hem',
             moreLanguages: 'Fler språk',
             freedomStaircase: 'Frihetstrappan',
             tropics: 'Tropikerna',
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             share: 'Dela'
         },
         'zh': {
+            menuLabel: '菜单',
             home: '首页',
             moreLanguages: '更多语言',
             freedomStaircase: '自由阶梯',
@@ -35,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
             share: '分享'
         },
         'es': {
-            home: 'INICIO',
+            menuLabel: 'MENÚ',
+            home: 'Inicio',
             moreLanguages: 'Más idiomas',
             freedomStaircase: 'Escalera de la Libertad',
             tropics: 'Los Trópicos',
@@ -43,7 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
             share: 'Compartir'
         },
         'fr': {
-            home: 'ACCUEIL',
+            menuLabel: 'MENU',
+            home: 'Accueil',
             moreLanguages: 'Plus de langues',
             freedomStaircase: 'Escalier de la Liberté',
             tropics: 'Les Tropiques',
@@ -51,14 +56,15 @@ document.addEventListener('DOMContentLoaded', function() {
             share: 'Partager'
         },
         'de': {
-            home: 'STARTSEITE',
+            menuLabel: 'MENÜ',
+            home: 'Startseite',
             moreLanguages: 'Weitere Sprachen',
             freedomStaircase: 'Freiheitstreppe',
             tropics: 'Die Tropen',
             robotel: 'Robotel',
             share: 'Teilen'
-        },
-        // ... lägg till fler språk här efter behov
+        }
+        // Lägg till fler språk här efter behov
     };
 
     // Fallback till engelska om språket saknas
@@ -79,18 +85,12 @@ document.addEventListener('DOMContentLoaded', function() {
         return window.innerWidth <= 600;
     }
 
-    // --- Bygg knapptext beroende på skärmbredd ---
-    function getButtonText() {
-        return isMobile() ? '☰ ' + t.home : '🌐 ' + t.home;
-    }
-
-    // --- SKAPA MENYN (med dynamisk knapptext och översättningar) ---
+    // --- SKAPA MENYN (med knapp istället för länk) ---
     function buildMenu() {
-        const btnText = getButtonText();
         return `
             <div class="site-nav">
                 <div class="dropdown" id="homeDropdown">
-                    <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
+                    <button class="dropbtn" id="menuBtn">${t.menuLabel}</button>
                     <div class="dropdown-content">
                         <a href="${base}index.html">🏠 ${t.home}</a>
                         <a href="${base}lang/lang.html">🌐 ${t.moreLanguages}</a>
@@ -110,43 +110,48 @@ document.addEventListener('DOMContentLoaded', function() {
         menuContainer.innerHTML = buildMenu();
     }
 
-    // --- Uppdatera knapptext vid fönsterändring ---
-    function updateButtonText() {
-        const btn = document.getElementById('homeBtn');
-        if (btn) {
-            btn.textContent = getButtonText();
-        }
-    }
-
-    window.addEventListener('resize', updateButtonText);
-
-    // --- MOBIL: KLICK VÄXLAR MENYN ---
+    // --- MOBIL/DESKTOP: KLICK ÖPPNAR/STÄNGER MENYN ---
     const dropdown = document.getElementById('homeDropdown');
-    const btn = document.getElementById('homeBtn');
+    const menuBtn = document.getElementById('menuBtn');
 
-    if (btn && dropdown) {
-        // Klona för att undvika dubbla eventlisteners
-        const newBtn = btn.cloneNode(true);
-        btn.parentNode.replaceChild(newBtn, btn);
-        const newDropdown = dropdown.cloneNode(true);
-        dropdown.parentNode.replaceChild(newDropdown, dropdown);
+    if (menuBtn && dropdown) {
+        // Klick på knappen växlar menyn
+        menuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-        const freshBtn = document.getElementById('homeBtn');
-        const freshDropdown = document.getElementById('homeDropdown');
+            // Toggle active-klass
+            dropdown.classList.toggle('active');
 
-        if (freshBtn && freshDropdown) {
-            freshBtn.addEventListener('click', function(e) {
-                if (isMobile()) {
-                    e.preventDefault();
-                    freshDropdown.classList.toggle('active');
+            // För desktop: även hantera display via CSS
+            const content = dropdown.querySelector('.dropdown-content');
+            if (content) {
+                if (dropdown.classList.contains('active')) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
                 }
-            });
+            }
+        });
 
-            document.addEventListener('click', function(e) {
-                if (!freshDropdown.contains(e.target)) {
-                    freshDropdown.classList.remove('active');
+        // Stäng menyn om man klickar utanför
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+                const content = dropdown.querySelector('.dropdown-content');
+                if (content) {
+                    content.style.display = 'none';
                 }
-            });
-        }
+            }
+        });
+
+        // Vid hover på desktop ska menyn visas (om man inte använder active)
+        // Vi använder active för att styra både hover och klick.
+        // Så vi lägger till en hover-regel i CSS istället.
+        // I CSS: .dropdown:hover .dropdown-content { display: block; }
+        // Men vi vill att klick ska fungera också.
+        // Så vi låter CSS:en sköta hover, och JS sköter klick via active-klassen.
     }
+
+    // --- Uppdatera om fönstret ändras (ingen extra funktion behövs) ---
 });
