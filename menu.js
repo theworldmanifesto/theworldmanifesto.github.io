@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return isMobile() ? '☰ ' + t.home : '🌐 ' + t.home;
     }
 
-    // --- SKAPA MENYN MED BILDER ISTÄLLET FÖR UNICODE (20px) ---
+    // --- SKAPA MENYN MED BILDER FRÅN menu_icons/ (20px) ---
     function buildMenu() {
         const btnText = getButtonText();
         return `
@@ -88,22 +88,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
                     <div class="dropdown-content">
                         <a href="${base}index.html">
-                            <img src="${base}pics/home.png" alt="Home" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.home}
+                            <img src="${base}menu_icons/home.png" alt="Home" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.home}
                         </a>
                         <a href="${base}lang/lang.html">
-                            <img src="${base}pics/languages.svg" alt="Languages" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> More Languages
+                            <img src="${base}menu_icons/languages.svg" alt="Languages" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> More Languages
                         </a>
                         <a href="${base}freedom-staircase/freedom-staircase.html">
-                            <img src="${base}pics/freedom.png" alt="Freedom" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Freedom Staircase
+                            <img src="${base}menu_icons/freedom.png" alt="Freedom" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Freedom Staircase
                         </a>
                         <a href="${base}tropics/tropics.html">
-                            <img src="${base}pics/tropics.png" alt="Tropics" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> The Tropics
+                            <img src="${base}menu_icons/tropics.png" alt="Tropics" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> The Tropics
                         </a>
                         <a href="${base}robotel/robotel.html">
-                            <img src="${base}pics/robotel.png" alt="Robotel" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Robotel
+                            <img src="${base}menu_icons/robotel.png" alt="Robotel" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Robotel
                         </a>
                         <a href="${base}share/share.html">
-                            <img src="${base}pics/share.svg" alt="Share" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> Share
+                            <img src="${base}menu_icons/share.svg" alt="Share" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> Share
                         </a>
                     </div>
                 </div>
