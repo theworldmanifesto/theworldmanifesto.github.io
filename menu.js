@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return isMobile() ? '☰ ' + t.home : '🌐 ' + t.home;
     }
 
-    // --- SKAPA MENYN (med dynamisk knapptext och översättningar) ---
+    // --- SKAPA MENYN MED BILDER ISTÄLLET FÖR UNICODE (20px) ---
     function buildMenu() {
         const btnText = getButtonText();
         return `
@@ -87,13 +87,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="dropdown" id="homeDropdown">
                     <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
                     <div class="dropdown-content">
-                        <a href="${base}index.html">🏠 ${t.home}</a>
-                        <!-- ENGLISH, 简体中文, SVENSKA BORTTAGNA -->
-                        <a href="${base}lang/lang.html">🌐 More Languages</a>
-                        <a href="${base}freedom-staircase/freedom-staircase.html">🪜 Freedom Staircase</a>
-                        <a href="${base}tropics/tropics.html">🌎 The Tropics</a>
-                        <a href="${base}robotel/robotel.html">👄 Robotel</a>
-                        <a href="${base}share/share.html">💬 Share</a>
+                        <a href="${base}index.html">
+                            <img src="${base}pics/home.png" alt="Home" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.home}
+                        </a>
+                        <a href="${base}lang/lang.html">
+                            <img src="${base}pics/languages.svg" alt="Languages" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> More Languages
+                        </a>
+                        <a href="${base}freedom-staircase/freedom-staircase.html">
+                            <img src="${base}pics/freedom.png" alt="Freedom" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Freedom Staircase
+                        </a>
+                        <a href="${base}tropics/tropics.html">
+                            <img src="${base}pics/tropics.png" alt="Tropics" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> The Tropics
+                        </a>
+                        <a href="${base}robotel/robotel.html">
+                            <img src="${base}pics/robotel.png" alt="Robotel" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Robotel
+                        </a>
+                        <a href="${base}share/share.html">
+                            <img src="${base}pics/share.svg" alt="Share" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> Share
+                        </a>
                     </div>
                 </div>
             </div>
