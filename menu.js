@@ -74,18 +74,16 @@ document.addEventListener('DOMContentLoaded', function() {
         return window.innerWidth <= 600;
     }
 
-    // --- Bygg knapptext beroende på skärmbredd ---
-    function getButtonText() {
-        return isMobile() ? '☰ ' + t.home : '🌐 ' + t.home;
-    }
-
-    // --- SKAPA MENYN MED BILDER FRÅN menu_icons/ (20px) ---
+    // --- SKAPA MENYN MED BILDER ISTÄLLET FÖR UNICODE ---
     function buildMenu() {
-        const btnText = getButtonText();
+        // MENY-knappen: bild + text (istället för 📋)
+        const menuIcon = `<img src="${base}menu_icons/menu.png" alt="Menu" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;">`;
+        const btnText = isMobile() ? menuIcon + t.home : menuIcon + t.home;
+
         return `
             <div class="site-nav">
                 <div class="dropdown" id="homeDropdown">
-                    <a href="${base}index.html" class="dropbtn" id="homeBtn">${btnText}</a>
+                    <button class="dropbtn" id="menuBtn">${btnText}</button>
                     <div class="dropdown-content">
                         <a href="${base}index.html">
                             <img src="${base}menu_icons/home.png" alt="Home" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.home}
@@ -119,9 +117,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Uppdatera knapptext vid fönsterändring ---
     function updateButtonText() {
-        const btn = document.getElementById('homeBtn');
+        const btn = document.getElementById('menuBtn');
         if (btn) {
-            btn.textContent = getButtonText();
+            const menuIcon = `<img src="${base}menu_icons/menu.png" alt="Menu" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;">`;
+            btn.innerHTML = menuIcon + t.home;
         }
     }
 
@@ -130,23 +129,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- MOBIL: KLICK VÄXLAR MENYN ---
     const dropdown = document.getElementById('homeDropdown');
-    const btn = document.getElementById('homeBtn');
+    const btn = document.getElementById('menuBtn');
 
     if (btn && dropdown) {
+        // Klona för att undvika dubbla eventlisteners
         const newBtn = btn.cloneNode(true);
         btn.parentNode.replaceChild(newBtn, btn);
         const newDropdown = dropdown.cloneNode(true);
         dropdown.parentNode.replaceChild(newDropdown, dropdown);
 
-        const freshBtn = document.getElementById('homeBtn');
+        const freshBtn = document.getElementById('menuBtn');
         const freshDropdown = document.getElementById('homeDropdown');
 
         if (freshBtn && freshDropdown) {
             freshBtn.addEventListener('click', function(e) {
-                if (isMobile()) {
-                    e.preventDefault();
-                    freshDropdown.classList.toggle('active');
-                }
+                e.preventDefault();
+                e.stopPropagation();
+                freshDropdown.classList.toggle('active');
             });
 
             document.addEventListener('click', function(e) {
