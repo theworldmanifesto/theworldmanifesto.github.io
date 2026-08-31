@@ -210,7 +210,7 @@
             return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         }
 
-        fetch('world_manifesto_quotes.json')
+        fetch('quotes.json')
             .then(response => {
                 if (!response.ok) throw new Error('Kunde inte läsa JSON');
                 return response.json();
