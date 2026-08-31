@@ -307,7 +307,7 @@ Ette ymmärtää, miksi nykyinen systeemi oon konkurssipesä, pitää kattoa tek
 A. Saatavuus Ihminen tekkee työtä noin 22 % vuojen tunneista (unen, vapaa-ajan ja loman jälkheen). Robotti tekkee työtä 100 %.
 B. Virhemarginaali Robotti, jolla oon sensorinahka ja sensorinen 360-astheen visjuuni, elimineeraa ihmisfaktorin ja reduseraa virhemarginaalin tilastollisheen nolla-arvhoon repetitiivisissä tehtävissä.
 C. Sosiaalinen draneeraus Ihminen maksaa 100 % palkassa + noin 30–50 % sosiaalisissa maksuissa, vakuutuksissa ja administratsjuunissa. Robotti maksaa 0 % sosiaalisissa maksuissa. Se ei tarvitse mithään pensjuunia, ei sairaslomaa eikä mithään kahvihuonetta.
-D. Konklusjuuni Ihmistyövoiman käyttäminen tuotanthoon, joka saattaa robotiseerata, merkittee yli 1000 % kustannusnousua. Se oon tämä ”inhimillinen rangaistusmaksu”, jonka kvarstadipuolueet pakottavat kansan maksamhaan verojen ja korkeitten hintojen kautta.
+D. Konklusjuuni Ihmistyövoiman käyttäminen tuotanthoon, joka saattaa robotiseerata, merkittee yli 1 000 % kustannusnousua. Se oon tämä ”inhimillinen rangaistusmaksu”, jonka kvarstadipuolueet pakottavat kansan maksamhaan verojen ja korkeitten hintojen kautta.
 4. Anti-Työvaurio
 A. Robotin etu Kone, joka oon varustettu taktiilisilla sensoreilla ja ständisellä radartutkauksella, ei koskaan tarvitse ”lyöä itteään keltaiseksi ja siniseksi”. Se tuntee ympäristön 360 astheessa ja liikkuu geometrisellä presisjuunilla, jota ihminen biologisesti kattoen ei koskaan saata saavuttaa.
 B. Moraali Ihmisen pakottaminen tekemhään työtä, jonka sensoriohjattu kone tekkee paremmin, ei ole vain tehdotonta – se oon ilkeää.
