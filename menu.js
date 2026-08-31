@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <img src="${base}menu_icons/home.png" alt="Home" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.home}
                         </a>
                         <a href="${base}lang/lang.html">
-                            <img src="${base}menu_icons/languages.svg" alt="Languages" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> More Languages
+                            <img src="${base}menu_icons/languages.svg" alt="Languages" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> The World Manifesto
                         </a>
                         <a href="${base}freedom-staircase/freedom-staircase.html">
                             <img src="${base}menu_icons/freedom.png" alt="Freedom" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Freedom Staircase
