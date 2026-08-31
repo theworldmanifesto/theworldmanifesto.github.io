@@ -9,26 +9,68 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- ORDBOK FÖR ALLA SPRÅK (menytexter) ---
     const translations = {
-        // Större språk
-        'en': { 
-            menu: 'MENU',        // ← MENY-KNAPPEN
-            home: 'HOME',        // ← FÖRSTA POSTEN I MENYN
-            read: 'READ', 
-            choose: '-- Choose language --' 
-        },
+        // --- SVENSKA ---
         'sv': { 
-            menu: 'MENY',        // ← MENY-KNAPPEN
-            home: 'HEM',         // ← FÖRSTA POSTEN I MENYN
-            read: 'LÄS', 
-            choose: '-- Välj språk --' 
+            menu: 'MENY',
+            home: 'HEM',
+            theWorldManifesto: 'Världsmanifestet',
+            freedomStaircase: 'Frihetstrappan',
+            tropics: 'Tropikerna',
+            robotel: 'Robotel',
+            share: 'Dela'
         },
+        // --- ENGELSKA ---
+        'en': { 
+            menu: 'MENU',
+            home: 'HOME',
+            theWorldManifesto: 'The World Manifesto',
+            freedomStaircase: 'Freedom Staircase',
+            tropics: 'The Tropics',
+            robotel: 'Robotel',
+            share: 'Share'
+        },
+        // --- KINESISKA ---
         'zh': { 
-            menu: '菜单', 
-            home: '首页', 
-            read: '阅读', 
-            choose: '-- 选择语言 --' 
-        }
-        // ... alla andra språk här ...
+            menu: '菜单',
+            home: '首页',
+            theWorldManifesto: '世界宣言',
+            freedomStaircase: '自由阶梯',
+            tropics: '热带地区',
+            robotel: '机器人',
+            share: '分享'
+        },
+        // --- SPANSKA ---
+        'es': { 
+            menu: 'MENÚ',
+            home: 'Inicio',
+            theWorldManifesto: 'El Manifiesto Mundial',
+            freedomStaircase: 'Escalera de la Libertad',
+            tropics: 'Los Trópicos',
+            robotel: 'Robotel',
+            share: 'Compartir'
+        },
+        // --- FRANSKA ---
+        'fr': { 
+            menu: 'MENU',
+            home: 'Accueil',
+            theWorldManifesto: 'Le Manifeste Mondial',
+            freedomStaircase: 'Escalier de la Liberté',
+            tropics: 'Les Tropiques',
+            robotel: 'Robotel',
+            share: 'Partager'
+        },
+        // --- TYSKA ---
+        'de': { 
+            menu: 'MENÜ',
+            home: 'Startseite',
+            theWorldManifesto: 'Weltmanifest',
+            freedomStaircase: 'Freiheitstreppe',
+            tropics: 'Die Tropen',
+            robotel: 'Robotel',
+            share: 'Teilen'
+        },
+        // --- LÄGG TILL FLER SPRÅK HÄR ---
+        // ... alla 42 språk
     };
 
     // Välj rätt språk eller fallback till engelska
@@ -63,20 +105,20 @@ document.addEventListener('DOMContentLoaded', function() {
                         <a href="${base}index.html">
                             <img src="${base}menu_icons/home.png" alt="Home" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.home}
                         </a>
-                        <a href="${base}lang/lang.html">
-                            <img src="${base}menu_icons/languages.svg" alt="Languages" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> The World Manifesto
+                        <a href="${base}lang/lang.html?lang=${currentLang}">
+                            <img src="${base}menu_icons/languages.svg" alt="Languages" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.theWorldManifesto}
                         </a>
-                        <a href="${base}freedom-staircase/freedom-staircase.html">
-                            <img src="${base}menu_icons/freedom.png" alt="Freedom" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Freedom Staircase
+                        <a href="${base}freedom-staircase/freedom-staircase.html?lang=${currentLang}">
+                            <img src="${base}menu_icons/freedom.png" alt="Freedom" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.freedomStaircase}
                         </a>
-                        <a href="${base}tropics/tropics.html">
-                            <img src="${base}menu_icons/tropics.png" alt="Tropics" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> The Tropics
+                        <a href="${base}tropics/tropics.html?lang=${currentLang}">
+                            <img src="${base}menu_icons/tropics.png" alt="Tropics" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.tropics}
                         </a>
-                        <a href="${base}robotel/robotel.html">
-                            <img src="${base}menu_icons/robotel.png" alt="Robotel" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> Robotel
+                        <a href="${base}robotel/robotel.html?lang=${currentLang}">
+                            <img src="${base}menu_icons/robotel.png" alt="Robotel" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;border-radius:4px;"> ${t.robotel}
                         </a>
-                        <a href="${base}share/share.html">
-                            <img src="${base}menu_icons/share.svg" alt="Share" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> Share
+                        <a href="${base}share/share.html?lang=${currentLang}">
+                            <img src="${base}menu_icons/share.svg" alt="Share" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.share}
                         </a>
                     </div>
                 </div>
@@ -95,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const btn = document.getElementById('menuBtn');
         if (btn) {
             const menuIcon = `<img src="${base}menu_icons/menu.png" alt="Menu" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;">`;
-            btn.innerHTML = menuIcon + t.menu;   // ← använder t.menu!
+            btn.innerHTML = menuIcon + t.menu;
         }
     }
 
