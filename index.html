@@ -6,9 +6,6 @@
     <title>The World Manifesto</title>
     <link rel="stylesheet" href="menu.css">
     <style>
-        /* ======================================== */
-        /* ALL DIN CSS (OFÖRÄNDRAD)                  */
-        /* ======================================== */
         body {
             font-family: Georgia, Cambria, "Times New Roman", Times, serif;
             line-height: 1.25;
@@ -104,9 +101,10 @@
         }
 
         /* ======================================== */
-        /* SLOGAN-RUTAN (OFÖRÄNDRAD)                */
+        /* QUOTE-RUTAN (ISTÄLLET FÖR SLOGAN)        */
         /* ======================================== */
-        #slogan-box {
+
+        #quote-box {
             max-width: 680px;
             margin: 30px auto;
             border: 1px solid #ddd;
@@ -115,7 +113,7 @@
             text-align: center;
         }
 
-        #slogan-text {
+        #quote-text {
             font-size: 22px;
             line-height: 1.45;
             min-height: 80px;
@@ -169,7 +167,7 @@
         .bc { background: #fff; color: #000; border: 1px solid #ccc; }
 
         /* ======================================== */
-        /* FLAGGOR (OFÖRÄNDRAD)                     */
+        /* FLAGGOR                                  */
         /* ======================================== */
 
         .lang-flags {
@@ -302,9 +300,9 @@
                 <!-- ... dina flaggor ... -->
             </div>
 
-            <!-- SLOGAN-RUTA -->
-            <div id="slogan-box">
-                <div id="slogan-text"></div>
+            <!-- QUOTE-RUTAN (ISTÄLLET FÖR SLOGAN) -->
+            <div id="quote-box">
+                <div id="quote-text"></div>
                 <div id="dots" class="dots"></div>
                 <div class="btns">
                     <a id="btn-x" class="b bx" href="#">Share on X</a>
@@ -320,11 +318,96 @@
     </div>
 
     <!-- ======================================== -->
-    <!-- SLOGAN-LOGIK + SPRÅK (OFÖRÄNDRAD)        -->
+    <!-- QUOTE-LOGIK + SPRÅK                      -->
     <!-- ======================================== -->
 
     <script>
-        // ... DIN SLOGAN-JAVASCRIPT (OFÖRÄNDRAD) ...
+        const PAGE = "https://sites.google.com/view/worldmanifesto/";
+        const MANIFESTO = "The World Manifesto";
+        const COPIED = "Copied!";
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentLang = (urlParams.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
+
+        // ---------- HÄMTA CITAT FRÅN quotes.json ----------
+        let quotes = [];
+        let i = 0, paused = false;
+
+        const q = document.getElementById('quote-text');
+        const dots = document.getElementById('dots');
+
+        function showQuote() {
+            q.style.opacity = 0;
+            setTimeout(() => {
+                const t = quotes[i];
+                const shareText = '"' + t + '" — The World Manifesto ' + PAGE;
+                q.textContent = '"' + t + '"';
+                q.style.opacity = 1;
+
+                // Uppdatera delningsknappar
+                document.getElementById('btn-x').onclick = (e) => { e.preventDefault(); window.open('https://x.com/intent/tweet?text=' + encodeURIComponent(shareText), '_blank'); };
+                document.getElementById('btn-fb').onclick = (e) => { e.preventDefault(); window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(PAGE) + '&quote=' + encodeURIComponent(t), '_blank'); };
+                document.getElementById('btn-wa').onclick = (e) => { e.preventDefault(); window.open('https://wa.me/?text=' + encodeURIComponent(shareText), '_blank'); };
+                document.getElementById('btn-tg').onclick = (e) => { e.preventDefault(); window.open('https://t.me/share/url?url=' + encodeURIComponent(PAGE) + '&text=' + encodeURIComponent('"' + t + '"'), '_blank'); };
+                document.getElementById('btn-em').onclick = (e) => { e.preventDefault(); window.location.href = 'mailto:?subject=' + encodeURIComponent(MANIFESTO) + '&body=' + encodeURIComponent(shareText); };
+                document.getElementById('btn-copy').onclick = (e) => {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(shareText);
+                    const old = document.getElementById('btn-copy').textContent;
+                    document.getElementById('btn-copy').textContent = COPIED;
+                    setTimeout(() => document.getElementById('btn-copy').textContent = old, 1200);
+                };
+
+                [...dots.children].forEach((a, b) => a.className = b === i ? 'dot on' : 'dot');
+            }, 200);
+        }
+
+        function nextQuote() {
+            if (!paused && quotes.length > 0) {
+                i = (i + 1) % quotes.length;
+                showQuote();
+            }
+        }
+
+        document.getElementById('quote-box').onmouseenter = () => paused = true;
+        document.getElementById('quote-box').onmouseleave = () => paused = false;
+
+        // Ladda citat från quotes.json
+        fetch('share/quotes.json')
+            .then(response => {
+                if (!response.ok) {
+                    // Försök med bara quotes.json om share/ inte fungerar
+                    return fetch('quotes.json');
+                }
+                return response;
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('Kunde inte hitta quotes.json');
+                return response.json();
+            })
+            .then(data => {
+                // Använd versaler för språkkod (EN, SV, ZH...)
+                const langKey = currentLang.toUpperCase();
+                const quotesData = data[langKey] || data['SV'] || data['EN'] || {};
+                quotes = Object.values(quotesData);
+
+                if (quotes.length > 0) {
+                    quotes.forEach((_, idx) => {
+                        const d = document.createElement('span');
+                        d.className = 'dot' + (idx === 0 ? ' on' : '');
+                        d.onclick = () => { i = idx; showQuote(); };
+                        dots.appendChild(d);
+                    });
+                    showQuote();
+                    setInterval(nextQuote, 10000);
+                } else {
+                    q.textContent = 'Inga citat tillgängliga.';
+                }
+            })
+            .catch(err => {
+                console.error('Fel:', err);
+                q.textContent = 'Kunde inte ladda citat.';
+            });
     </script>
 
     <!-- ======================================== -->
