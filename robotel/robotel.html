@@ -36,6 +36,13 @@
         .webmaster { font-size: 16px; margin-bottom: 15px; }
         .webmaster a { color: #1a1a1a; text-decoration: none; }
         .copyright { font-size: 14px; color: #666; }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
     </style>
 </head>
 <body>
@@ -49,14 +56,20 @@
 
             <div id="chat-container" style="font-family: Arial, sans-serif; max-width: 500px; margin: 20px auto; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #ffffff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); text-align: left;">
                 <div style="background: #f8fafc; padding: 15px; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: #1e293b; display: flex; justify-content: space-between; align-items: center;">
-                    <span>🤖 Robotel, the World Manifesto's answering robot.</span>
+                    <span>
+                        <img src="../menu_icons/robotel.png" alt="Robotel" class="icon">
+                        Robotel, the World Manifesto's answering robot.
+                    </span>
                     <button onclick="clearChat()" style="background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 14px;">Rensa</button>
                 </div>
                 <div id="chat-box" style="height: 350px; overflow-y: auto; padding: 15px; background: #ffffff; display: flex; flex-direction: column; gap: 10px;">
-                    <div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">🌍 Write your question here below!</div>
+                    <div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">
+                        <img src="../menu_icons/tropics.png" alt="Tropics" class="icon">
+                        Write your question here below!
+                    </div>
                 </div>
                 <div style="display: flex; padding: 10px; border-top: 1px solid #e2e8f0; background: #f8fafc;">
-                    <input type="text" id="user-input" placeholder="🌍 Ask your question..." style="flex: 1; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; outline: none;">
+                    <input type="text" id="user-input" placeholder="Ask your question..." style="flex: 1; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; outline: none;">
                     <button onclick="sendMessage()" style="margin-left: 8px; background: #2563eb; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: bold;">Send</button>
                 </div>
             </div>
@@ -125,7 +138,11 @@
 
     function clearChat() {
         currentLanguage = navigator.language || 'sv-SE';
-        boxEl.innerHTML = `<div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">🧹 Chatten har rensats. Ställ din fråga till Robotel!</div>`;
+        boxEl.innerHTML = `
+            <div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">
+                <img src="../menu_icons/tropics.png" alt="Tropics" class="icon">
+                🧹 Chatten har rensats. Ställ din fråga till Robotel!
+            </div>`;
     }
 
     function escapeHtml(s){
