@@ -44,14 +44,14 @@
             margin-right: auto;
             color: #1a1a1a;
         }
-.flag-icon {
-    display: inline-block;
-    width: clamp(16px, 4vw, 24px);
-    height: auto;
-    vertical-align: middle;
-    border: 1px solid #ccc;
-    filter: saturate(140%) contrast(110%);
-}
+        .flag-icon {
+            display: inline-block;
+            width: clamp(16px, 4vw, 24px);
+            height: auto;
+            vertical-align: middle;
+            border: 1px solid #ccc;
+            filter: saturate(140%) contrast(110%);
+        }
         /* ---------- Författare (från author.js) ---------- */
         #author-container {
             text-align: center;
@@ -140,7 +140,7 @@
         </p>
         <br>
         <h1 id="lang-title">The World Manifesto</h1>
-        <h2 id="lang-subtitle">🌐 More Languages</h2>
+        <h2 id="lang-subtitle"></h2>
         <br>
         <div id="author-container"></div>
         <br>
@@ -150,51 +150,51 @@
     <script src="js/author.js"></script>
     <script>
         // ============================================================
-        // 1. SPRÅKDATA – 42 språk
+        // 1. SPRÅKDATA – 42 språk (med titlar och undertitlar)
         // ============================================================
         const languages = {
-            'sv': { flag: 'flags/se.svg', name: 'Svenska' },
-            'en': { flag: 'flags/gb.svg', name: 'English' },
-            'zh': { flag: 'flags/cn.svg', name: '简体中文' },
-            'hi': { flag: 'flags/in.svg', name: 'हिन्दी' },
-            'es': { flag: 'flags/es.svg', name: 'Español' },
-            'fr': { flag: 'flags/fr.svg', name: 'Français' },
-            'ar': { flag: 'flags/sa.svg', name: 'العربية' },
-            'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia' },
-            'bn': { flag: 'flags/bd.svg', name: 'বাংলা' },
-            'pt': { flag: 'flags/pt.svg', name: 'Português' },
-            'ru': { flag: 'flags/ru.svg', name: 'Русский' },
-            'uk': { flag: 'flags/ua.svg', name: 'Українська' },
-            'bg': { flag: 'flags/bg.svg', name: 'Български' },
-            'ur': { flag: 'flags/pk.svg', name: 'اردو' },
-            'ja': { flag: 'flags/jp.svg', name: '日本語' },
-            'tl': { flag: 'flags/ph.svg', name: 'Filipino' },
-            'de': { flag: 'flags/de.svg', name: 'Deutsch' },
-            'ko': { flag: 'flags/kr.svg', name: '한국어' },
-            'th': { flag: 'flags/th.svg', name: 'ไทย' },
-            'vi': { flag: 'flags/vn.svg', name: 'Tiếng Việt' },
-            'tr': { flag: 'flags/tr.svg', name: 'Türkçe' },
-            'fa': { flag: 'flags/ir.svg', name: 'فارسی' },
-            'sw': { flag: 'flags/tz.svg', name: 'Kiswahili' },
-            'it': { flag: 'flags/it.svg', name: 'Italiano' },
-            'pl': { flag: 'flags/pl.svg', name: 'Polski' },
-            'nl': { flag: 'flags/nl.svg', name: 'Nederlands' },
-            'ro': { flag: 'flags/ro.svg', name: 'Română' },
-            'el': { flag: 'flags/gr.svg', name: 'Ελληνικά' },
-            'af': { flag: 'flags/za.svg', name: 'Afrikaans' },
-            'zu': { flag: 'flags/za.svg', name: 'isiZulu' },
-            'xh': { flag: 'flags/za.svg', name: 'isiXhosa' },
-            'cs': { flag: 'flags/cz.svg', name: 'Čeština' },
-            'hu': { flag: 'flags/hu.svg', name: 'Magyar' },
-            'he': { flag: 'flags/il.svg', name: 'עברית' },
-            'crs': { flag: 'flags/sc.svg', name: 'Seselwa' },
-            'se': { flag: 'flags/dsg.svg', name: 'Davvisámegiella' },
-            'fit': { flag: 'flags/fit.svg', name: 'Meänkieli' },
-            'no': { flag: 'flags/no.svg', name: 'Norsk' },
-            'fi': { flag: 'flags/fi.svg', name: 'Suomi' },
-            'da': { flag: 'flags/dk.svg', name: 'Dansk' },
-            'is': { flag: 'flags/is.svg', name: 'Íslenska' },
-            'fo': { flag: 'flags/fo.svg', name: 'Føroyskt' }
+            'sv': { flag: 'flags/se.svg', name: 'Svenska', title: 'Världsmanifestet', subtitle: 'Manifestet för definitivt överflöd' },
+            'en': { flag: 'flags/gb.svg', name: 'English', title: 'The World Manifesto', subtitle: 'The Manifesto for Definitive Abundance' },
+            'zh': { flag: 'flags/cn.svg', name: '简体中文', title: '世界宣言', subtitle: '终极丰裕宣言' },
+            'hi': { flag: 'flags/in.svg', name: 'हिन्दी', title: 'विश्व घोषणापत्र', subtitle: 'निश्चित प्रचुरता के लिए घोषणापत्र' },
+            'es': { flag: 'flags/es.svg', name: 'Español', title: 'El Manifiesto Mundial', subtitle: 'El Manifiesto para la Abundancia Definitiva' },
+            'fr': { flag: 'flags/fr.svg', name: 'Français', title: 'Le Manifeste Mondial', subtitle: 'Le Manifeste pour l\'Abondance Définitive' },
+            'ar': { flag: 'flags/sa.svg', name: 'العربية', title: 'البيان العالمي', subtitle: 'بيان الوفرة النهائية' },
+            'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia', title: 'Manifesto Dunia', subtitle: 'Manifesto untuk Kelimpahan Definitif' },
+            'bn': { flag: 'flags/bd.svg', name: 'বাংলা', title: 'বিশ্ব ইশতেহার', subtitle: 'চূড়ান্ত প্রাচুর্যের ইশতেহার' },
+            'pt': { flag: 'flags/pt.svg', name: 'Português', title: 'O Manifesto Mundial', subtitle: 'O Manifesto para a Abundância Definitiva' },
+            'ru': { flag: 'flags/ru.svg', name: 'Русский', title: 'Всемирный манифест', subtitle: 'Манифест окончательного изобилия' },
+            'uk': { flag: 'flags/ua.svg', name: 'Українська', title: 'Всесвітній маніфест', subtitle: 'Маніфест остаточного багатства' },
+            'bg': { flag: 'flags/bg.svg', name: 'Български', title: 'Световен манифест', subtitle: 'Манифест за окончателно изобилие' },
+            'ur': { flag: 'flags/pk.svg', name: 'اردو', title: 'عالمی منشور', subtitle: 'حتمی فراوانی کا منشور' },
+            'ja': { flag: 'flags/jp.svg', name: '日本語', title: '世界宣言', subtitle: '究極の豊かさのための宣言' },
+            'tl': { flag: 'flags/ph.svg', name: 'Filipino', title: 'Ang Pandaigdigang Manipesto', subtitle: 'Ang Manipesto para sa Tiyak na Kasaganaan' },
+            'de': { flag: 'flags/de.svg', name: 'Deutsch', title: 'Das Weltmanifest', subtitle: 'Das Manifest für den definitiven Überfluss' },
+            'ko': { flag: 'flags/kr.svg', name: '한국어', title: '세계 선언문', subtitle: '최종적 풍요를 위한 선언문' },
+            'th': { flag: 'flags/th.svg', name: 'ไทย', title: 'แถลงการณ์โลก', subtitle: 'แถลงการณ์เพื่อความอุดมสมบูรณ์ขั้นสุดท้าย' },
+            'vi': { flag: 'flags/vn.svg', name: 'Tiếng Việt', title: 'Tuyên ngôn Thế giới', subtitle: 'Tuyên ngôn cho Sự phong phú Cuối cùng' },
+            'tr': { flag: 'flags/tr.svg', name: 'Türkçe', title: 'Dünya Manifestosu', subtitle: 'Nihai Bolluk Manifestosu' },
+            'fa': { flag: 'flags/ir.svg', name: 'فارسی', title: 'مانیفست جهانی', subtitle: 'مانیفست فراوانی نهایی' },
+            'sw': { flag: 'flags/tz.svg', name: 'Kiswahili', title: 'Ilani ya Dunia', subtitle: 'Ilani ya Wingi wa Mwisho' },
+            'it': { flag: 'flags/it.svg', name: 'Italiano', title: 'Il Manifesto Mondiale', subtitle: 'Il Manifesto per l\'Abbondanza Definitiva' },
+            'pl': { flag: 'flags/pl.svg', name: 'Polski', title: 'Manifest Światowy', subtitle: 'Manifest Ostatecznej Obfitości' },
+            'nl': { flag: 'flags/nl.svg', name: 'Nederlands', title: 'Het Wereldmanifest', subtitle: 'Het Manifest voor Definitieve Overvloed' },
+            'ro': { flag: 'flags/ro.svg', name: 'Română', title: 'Manifestul Mondial', subtitle: 'Manifestul pentru Abundența Definitivă' },
+            'el': { flag: 'flags/gr.svg', name: 'Ελληνικά', title: 'Παγκόσμιο Μανιφέστο', subtitle: 'Μανιφέστο για την Οριστική Αφθονία' },
+            'af': { flag: 'flags/za.svg', name: 'Afrikaans', title: 'Die Wêreldmanifest', subtitle: 'Die Manifest vir Definitiewe Oorvloed' },
+            'zu': { flag: 'flags/za.svg', name: 'isiZulu', title: 'Umbhalo Wezwe', subtitle: 'Umbhalo Wokuchichima Okuphelele' },
+            'xh': { flag: 'flags/za.svg', name: 'isiXhosa', title: 'Isibhengezo Sehlabathi', subtitle: 'Isibhengezo Sobuninzi Obugqibeleleyo' },
+            'cs': { flag: 'flags/cz.svg', name: 'Čeština', title: 'Světový manifest', subtitle: 'Manifest pro konečnou hojnost' },
+            'hu': { flag: 'flags/hu.svg', name: 'Magyar', title: 'Világkiáltvány', subtitle: 'A végső bőség manifesztuma' },
+            'he': { flag: 'flags/il.svg', name: 'עברית', title: 'המניפסט העולמי', subtitle: 'המניפסט לשפע המוחלט' },
+            'crs': { flag: 'flags/sc.svg', name: 'Seselwa', title: 'Manifest Lemonn', subtitle: 'Manifest pour Labondans Definitif' },
+            'se': { flag: 'flags/dsg.svg', name: 'Davvisámegiella', title: 'Máilmmi Manifesta', subtitle: 'Manifesta buot viimma gollu várás' },
+            'fit': { flag: 'flags/fit.svg', name: 'Meänkieli', title: 'Mailmanmanifesti', subtitle: 'Manifesti lopullisen yltäkylläisyyden puolesta' },
+            'no': { flag: 'flags/no.svg', name: 'Norsk', title: 'Verdensmanifestet', subtitle: 'Manifestet for det definitive overflødet' },
+            'fi': { flag: 'flags/fi.svg', name: 'Suomi', title: 'Maailmanmanifesti', subtitle: 'Manifesti lopulliselle yltäkylläisyydelle' },
+            'da': { flag: 'flags/dk.svg', name: 'Dansk', title: 'Verdensmanifestet', subtitle: 'Manifestet for det definitive overflod' },
+            'is': { flag: 'flags/is.svg', name: 'Íslenska', title: 'Heimsmanifestið', subtitle: 'Manifestið fyrir endanlegt gnægð' },
+            'fo': { flag: 'flags/fo.svg', name: 'Føroyskt', title: 'Heimsmanifestið', subtitle: 'Manifestið fyri endaliga nógv' }
         };
 
         function getPreferredLanguage() {
@@ -209,9 +209,15 @@
 
         const lang = getPreferredLanguage();
         const langData = languages[lang];
+
+        // Sätt flagga och språknamn
         document.getElementById('flag-icon').src = langData.flag;
         document.getElementById('flag-icon').alt = langData.name;
         document.getElementById('language-label').textContent = langData.name;
+
+        // ⭐ UPPDATERA RUBRIKERNA ⭐
+        document.getElementById('lang-title').textContent = langData.title;
+        document.getElementById('lang-subtitle').textContent = langData.subtitle;
 
         // ============================================================
         // 3. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
@@ -263,7 +269,6 @@
                 const text = await response.text();
 
                 const lines = text.split('\n');
-                // Filtrera bort tomma rader för att hitta de tre första innehållsraderna
                 const nonEmptyLines = lines.filter(line => line.trim() !== '');
                 const bodyContent = document.getElementById('body-content');
                 let currentHtml = '';
@@ -271,7 +276,6 @@
                 let tableRows = [];
                 let inTable = false;
 
-                // ⭐ VIKTIGT: Börja från rad 3 (index 3) – hoppa över de 3 första icke-tomma raderna
                 for (let i = 3; i < nonEmptyLines.length; i++) {
                     let rawLine = nonEmptyLines[i];
                     let line = rawLine.trim();
