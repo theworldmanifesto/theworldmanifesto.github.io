@@ -98,12 +98,12 @@
         inputEl.value = '';
         boxEl.scrollTop = boxEl.scrollHeight;
 
-        const thinkingDiv = document.createElement('div');
-        thinkingDiv.id = 'thinking';
-        thinkingDiv.style.cssText = 'background: #f1f5f9; color: #94a3b8; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%; font-style: italic;';
-        thinkingDiv.innerHTML = `<img src="../robotel/robotel_pics/robotel_agent_thinking.png" alt="Thinking" class="icon" style="width:20px;height:20px;vertical-align:middle;"> Robotel is thinking...`;
-        boxEl.appendChild(thinkingDiv);
-        boxEl.scrollTop = boxEl.scrollHeight;
+const thinkingDiv = document.createElement('div');
+thinkingDiv.id = 'thinking';
+thinkingDiv.style.cssText = 'background: #f1f5f9; color: #94a3b8; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%; font-style: italic;';
+thinkingDiv.innerHTML = `<img src="../robotel/robotel_pics/robotel_agent_thinking.png" alt="Thinking" class="icon" style="width:20px;height:20px;vertical-align:middle;"> ...`;
+boxEl.appendChild(thinkingDiv);
+boxEl.scrollTop = boxEl.scrollHeight;
 
         try {
             const response = await fetch('https://robotel-live-github.svenyngerstedt2.workers.dev/', {
