@@ -98,8 +98,8 @@
     display: none;
     position: absolute;
     left: 0;
-    top: 100%;
-    margin-top: 0px; /* ÄNDRAD FRÅN 8px TILL 0px - TAR BORT GLIPAN! */
+    top: 100%; /* Exakt under knappen */
+    margin-top: 0; /* Ingen glipa. Punkt slut. */
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     min-width: 200px;
