@@ -44,7 +44,7 @@
             margin-right: 4px;
         }
 
-        /* NYA CSS-REGLER FÖR TANKEBUBBLAN */
+        /* NYA CSS-REGLER FÖR TANKEBUBBLAN OCH PRICKARNA */
         .dold { display: none; }
 
         .tanker {
@@ -56,6 +56,32 @@
             0%   { opacity: 0.4; transform: scale(0.9); }
             50%  { opacity: 1;   transform: scale(1.1); }
             100% { opacity: 0.4; transform: scale(0.9); }
+        }
+
+        /* Prickarna som blinkar i tur och ordning */
+        .thinking-dots {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 4px;
+        }
+        .thinking-dots span {
+            width: 4px;
+            height: 4px;
+            background-color: #94a3b8;
+            border-radius: 50%;
+            margin: 0 2px;
+            animation: blink 1.4s infinite both;
+        }
+        .thinking-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .thinking-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes blink {
+            0% { opacity: 0.2; }
+            20% { opacity: 1; }
+            100% { opacity: 0.2; }
         }
         /* SLUT PÅ NYA CSS-REGLER */
     </style>
@@ -113,13 +139,13 @@
         inputEl.value = '';
         boxEl.scrollTop = boxEl.scrollHeight;
 
-        // Skapar rutan där bubblan ska ligga
+        // Skapar rutan där bubblan och prickarna ska ligga
         const thinkingDiv = document.createElement('div');
         thinkingDiv.id = 'thinking';
         thinkingDiv.style.cssText = 'background: #f1f5f9; color: #94a3b8; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%; font-style: italic;';
         
-        // Här är förändringen: Bilden har fått id="bubbla" och klassen "dold" från början
-        thinkingDiv.innerHTML = `<img id="bubbla" src="../robotel/robotel_pics/robotel_agent_thinking.png" alt="Thinking" class="icon dold" style="width:20px;height:20px;vertical-align:middle;"> ...`;
+        // Bilden + Prickarna (tre små cirklar som blinkar)
+        thinkingDiv.innerHTML = `<img id="bubbla" src="../robotel/robotel_pics/robotel_agent_thinking.png" alt="Thinking" class="icon dold" style="width:20px;height:20px;vertical-align:middle;"> <span class="thinking-dots"><span></span><span></span><span></span></span>`;
         boxEl.appendChild(thinkingDiv);
         boxEl.scrollTop = boxEl.scrollHeight;
 
