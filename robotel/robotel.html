@@ -101,7 +101,7 @@
         const thinkingDiv = document.createElement('div');
         thinkingDiv.id = 'thinking';
         thinkingDiv.style.cssText = 'background: #f1f5f9; color: #94a3b8; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%; font-style: italic;';
-        thinkingDiv.textContent = '🤔 Robotel is thinking...';
+        thinkingDiv.innerHTML = `<img src="../robotel/robotel_pics/robotel_agent_thinking.png" alt="Thinking" class="icon" style="width:20px;height:20px;vertical-align:middle;"> Robotel is thinking...`;
         boxEl.appendChild(thinkingDiv);
         boxEl.scrollTop = boxEl.scrollHeight;
 
@@ -131,7 +131,7 @@
         } catch (err) {
             const thinking = document.getElementById('thinking');
             if(thinking) thinking.remove();
-            boxEl.innerHTML += `<div style="background: #ef4444; color: white; padding: 10px 14px; border-radius: 8px; align-self: flex-start;">❌ Couldn't reach Robotel right now. (${escapeHtml(err.message)})</div>`;
+            boxEl.innerHTML += `<div style="background: #ef4444; color: white; padding: 10px 14px; border-radius: 8px; align-self: flex-start;"><img src="../robotel/robotel_pics/robotel_agent_error.png" alt="Error" class="icon" style="width:20px;height:20px;vertical-align:middle;"> Couldn't reach Robotel right now. (${escapeHtml(err.message)})</div>`;
         }
         boxEl.scrollTop = boxEl.scrollHeight;
     }
@@ -139,10 +139,10 @@
     function clearChat() {
         currentLanguage = navigator.language || 'sv-SE';
         boxEl.innerHTML = `
-            <div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">
-                <img src="../menu_icons/tropics.png" alt="Tropics" class="icon">
-                🧹 Chatten har rensats. Ställ din fråga till Robotel!
-            </div>`;
+    <div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">
+        <img src="../robotel/robotel_pics/robotel_agent_broom.png" alt="Broom" class="icon" style="width:20px;height:20px;vertical-align:middle;">
+        Chatten har rensats. Ställ din fråga till Robotel!
+    </div>`;
     }
 
     function escapeHtml(s){
