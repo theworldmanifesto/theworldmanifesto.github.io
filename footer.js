@@ -9,9 +9,9 @@
     'use strict';
 
     // ------------------------------------------------------------
-    // 1. HÄMTA SPRÅK FRÅN HTML-TAGGEN ELLER WEBBLÄSAREN
+    // 1. HÄMTA SPRÅK (TVINGAD TILL SVENSKA)
     // ------------------------------------------------------------
-    const currentLang = (document.documentElement.lang || 'sv').toLowerCase();
+    const currentLang = 'sv'; // ÄNDRAD RAD: Tvingar alltid till svenska!
 
     // ------------------------------------------------------------
     // 2. ÖVERSÄTTNINGAR FÖR SIDFOTEN
@@ -61,7 +61,7 @@
         'fit': { email: '✉  Sähköposti webmasterille', copyright: 'Mailmanmanifesti – Julkaistu 2026' }
     };
 
-    // Välj rätt översättning eller fallback till svenska
+    // Välj rätt översättning (denna kommer nu alltid vara 'sv')
     const t = translations[currentLang] || translations['sv'];
 
     // ------------------------------------------------------------
