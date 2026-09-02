@@ -314,7 +314,7 @@
 
     // === SPRÅKHANTERING ===
     const urlParams = new URLSearchParams(window.location.search);
-    const currentLang = (urlParams.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
+    const currentLang = (urlParams.get('lang') || document.documentElement.lang || navigator.language || 'sv').split('-')[0].toLowerCase();
 
     // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
     var titlar = {
@@ -392,19 +392,21 @@ const stepsTranslations = {
 };
 
     // === FUNKTIONER ===
-    function updateTitleAndStaircase() {
-        if (currentLang !== 'en' && titlar[currentLang]) {
-            document.getElementById('main-subtitle').textContent = titlar[currentLang];
-            document.getElementById('main-subtitle').style.display = 'block';
-        } else {
-            document.getElementById('main-subtitle').style.display = 'none';
-        }
-
-        var staircaseText = document.getElementById('staircase-text');
-        if (staircaseText && trappan[currentLang]) {
-            staircaseText.textContent = trappan[currentLang];
-        }
+function updateTitleAndStaircase() {
+    // Uppdatera underrubriken (den lilla texten under "The World Manifesto")
+    if (currentLang !== 'en' && titlar[currentLang]) {
+        document.getElementById('main-subtitle').textContent = titlar[currentLang];
+        document.getElementById('main-subtitle').style.display = 'block';
+    } else {
+        document.getElementById('main-subtitle').style.display = 'none';
     }
+
+    // Uppdatera bildtexten "Frihetstrappan"
+    var staircaseText = document.getElementById('staircase-text');
+    if (staircaseText && trappan[currentLang]) {
+        staircaseText.textContent = trappan[currentLang];
+    }
+}
 
     function updateSteps() {
         let langToUse = currentLang;
