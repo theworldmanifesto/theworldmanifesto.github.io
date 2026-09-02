@@ -496,6 +496,11 @@
 
 // Funktion som byter ut texten baserat på språk (oberoende version)
 function updateSteps() {
+    function updateSteps() {
+    // Tvinga svenska om inget annat språk finns
+    const params = new URLSearchParams(window.location.search);
+    const lang = (params.get('lang') || document.documentElement.lang || navigator.language || 'sv').split('-')[0].toLowerCase();
+    ...
     // Beräkna språket själv, oberoende av de andra skripten!
     const params = new URLSearchParams(window.location.search);
     const lang = (params.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
