@@ -275,15 +275,15 @@
             <!-- ======================================== -->
             <!-- DE FYRA STEGEN – STATISK RUTA             -->
             <!-- ======================================== -->
-            <div id="steps-section" style="max-width: 680px; margin: 40px auto 20px auto; padding: 20px; border: 2px solid #8B0000; border-radius: 12px; background-color: #FFF8F8; text-align: left; font-family: Georgia, serif;">
-                <h3 id="steps-title" style="text-align: center; color: #8B0000; font-size: 22px; margin-top: 0; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">The World Manifesto in 4 Steps</h3>
-                <ol style="color: #4A0E0E; font-size: 16px; line-height: 1.6; margin: 0; padding-left: 25px;">
-                    <li id="step-1" style="margin-bottom: 12px;"><strong style="color: #8B0000;">First:</strong> The idea (The World Manifesto) must be made known.</li>
-                    <li id="step-2" style="margin-bottom: 12px;"><strong style="color: #8B0000;">Second:</strong> The idea must enter the national parliament and achieve a majority, where the laws will be changed and, among other things, the debt relief of the Freedom Staircase becomes law and the machine constitution becomes reality.</li>
-                    <li id="step-3" style="margin-bottom: 12px;"><strong style="color: #8B0000;">Third:</strong> The state is fully automated with a production that serves as the population's own free pantry.</li>
-                    <li id="step-4"><strong style="color: #8B0000;">Fourth:</strong> The robots become autonomous once they are self-replicating, at which point Earth gains the part of nature's ecosystem that has been missing until now.</li>
-                </ol>
-            </div>
+<div id="steps-section" style="max-width: 680px; margin: 40px auto 20px auto; padding: 20px; border: 2px solid #8B0000; border-radius: 12px; background-color: #FFF8F8; text-align: left; font-family: Georgia, serif;">
+    <h3 id="steps-title" style="text-align: center; color: #8B0000; font-size: 22px; margin-top: 0; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Världsmanifestet i 4 steg</h3>
+    <ol style="color: #4A0E0E; font-size: 16px; line-height: 1.6; margin: 0; padding-left: 25px;">
+        <li id="step-1" style="margin-bottom: 12px;"><strong>Först:</strong> Idén (Världsmanifestet) måste bli känd.</li>
+        <li id="step-2" style="margin-bottom: 12px;"><strong>För det andra:</strong> Idén måste in i riksdagen och få majoritet, där lagarna ändras och bland annat Frihetstrappans skuldavskrivning blir lag och maskinkonstitutionen blir verklighet.</li>
+        <li id="step-3" style="margin-bottom: 12px;"><strong>För det tredje:</strong> Staten blir helt automatiserad med en produktion som fungerar som befolkningens eget fria skafferi.</li>
+        <li id="step-4"><strong>För det fjärde:</strong> Robotarna blir autonoma när de är självreplikerande, och då får jorden den del av naturens ekosystem som saknats fram till nu.</li>
+    </ol>
+</div>
             
             <!-- QUOTE-RUTAN -->
             <div id="quote-box">
@@ -502,6 +502,88 @@
 
     <script src="menu.js"></script>
     <script src="footer.js"></script>
+
+<script>
+    const PAGE = "https://sites.google.com/view/worldmanifesto/";
+    const MANIFESTO = "The World Manifesto";
+    const COPIED = "Copied!";
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentLang = (urlParams.get('lang') || document.documentElement.lang || navigator.language || 'sv').split('-')[0].toLowerCase();
+
+    let quotes = [];
+    let i = 0, paused = false;
+
+    const q = document.getElementById('quote-text');
+    const dots = document.getElementById('dots');
+
+    function showQuote() {
+        q.style.opacity = 0;
+        setTimeout(() => {
+            const t = quotes[i];
+            const shareText = '"' + t + '" — The World Manifesto ' + PAGE;
+            q.textContent = '"' + t + '"';
+            q.style.opacity = 1;
+
+            document.getElementById('btn-x').onclick = (e) => { e.preventDefault(); window.open('https://x.com/intent/tweet?text=' + encodeURIComponent(shareText), '_blank'); };
+            document.getElementById('btn-fb').onclick = (e) => { e.preventDefault(); window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(PAGE) + '&quote=' + encodeURIComponent(t), '_blank'); };
+            document.getElementById('btn-wa').onclick = (e) => { e.preventDefault(); window.open('https://wa.me/?text=' + encodeURIComponent(shareText), '_blank'); };
+            document.getElementById('btn-tg').onclick = (e) => { e.preventDefault(); window.open('https://t.me/share/url?url=' + encodeURIComponent(PAGE) + '&text=' + encodeURIComponent('"' + t + '"'), '_blank'); };
+            document.getElementById('btn-em').onclick = (e) => { e.preventDefault(); window.location.href = 'mailto:?subject=' + encodeURIComponent(MANIFESTO) + '&body=' + encodeURIComponent(shareText); };
+            document.getElementById('btn-copy').onclick = (e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText(shareText);
+                const old = document.getElementById('btn-copy').textContent;
+                document.getElementById('btn-copy').textContent = COPIED;
+                setTimeout(() => document.getElementById('btn-copy').textContent = old, 1200);
+            };
+
+            [...dots.children].forEach((a, b) => a.className = b === i ? 'dot on' : 'dot');
+        }, 200);
+    }
+
+    function nextQuote() {
+        if (!paused && quotes.length > 0) {
+            i = (i + 1) % quotes.length;
+            showQuote();
+        }
+    }
+
+    document.getElementById('quote-box').onmouseenter = () => paused = true;
+    document.getElementById('quote-box').onmouseleave = () => paused = false;
+
+    fetch('share/quotes.json')
+        .then(response => {
+            if (!response.ok) return fetch('quotes.json');
+            return response;
+        })
+        .then(response => {
+            if (!response.ok) throw new Error('Kunde inte hitta quotes.json');
+            return response.json();
+        })
+        .then(data => {
+            const langKey = currentLang.toUpperCase();
+            const quotesData = data[langKey] || data['SV'] || data['EN'] || {};
+            quotes = Object.values(quotesData);
+
+            if (quotes.length > 0) {
+                quotes.forEach((_, idx) => {
+                    const d = document.createElement('span');
+                    d.className = 'dot' + (idx === 0 ? ' on' : '');
+                    d.onclick = () => { i = idx; showQuote(); };
+                    dots.appendChild(d);
+                });
+                showQuote();
+                setInterval(nextQuote, 10000);
+            } else {
+                q.textContent = 'Inga citat tillgängliga.';
+            }
+        })
+        .catch(err => {
+            console.error('Fel:', err);
+            q.textContent = 'Kunde inte ladda citat.';
+        });
+</script>
     
 </body>
 </html>
