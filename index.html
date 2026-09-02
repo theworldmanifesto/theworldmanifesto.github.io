@@ -44,7 +44,6 @@
             flex-wrap: wrap;
         }
 
-        /* READ – språkvalsrullgardin */
         .read-menu {
             display: inline-block;
             font-family: sans-serif;
@@ -70,38 +69,19 @@
             font-family: sans-serif;
         }
 
-        .read-menu select:hover {
-            border-color: #888;
-        }
+        .read-menu select:hover { border-color: #888; }
+        .read-menu select:focus { outline: none; border-color: #555; }
 
-        .read-menu select:focus {
-            outline: none;
-            border-color: #555;
-        }
-
-        /* MENY – INJECTAS AV MENU.JS */
-        #main-menu {
-            display: inline-block;
-        }
+        #main-menu { display: inline-block; }
 
         @media (max-width: 600px) {
-            .nav-wrapper {
-                padding: 8px 12px;
-                gap: 10px;
-            }
-
-            .read-menu select {
-                font-size: 12px;
-                padding: 4px 8px;
-            }
-
-            .read-menu label {
-                font-size: 12px;
-            }
+            .nav-wrapper { padding: 8px 12px; gap: 10px; }
+            .read-menu select { font-size: 12px; padding: 4px 8px; }
+            .read-menu label { font-size: 12px; }
         }
 
         /* ======================================== */
-        /* QUOTE-RUTAN (ISTÄLLET FÖR SLOGAN)        */
+        /* QUOTE-RUTAN                               */
         /* ======================================== */
 
         #quote-box {
@@ -125,40 +105,12 @@
             color: #444;
         }
 
-        .dots {
-            display: flex;
-            gap: 7px;
-            justify-content: center;
-            margin: 14px 0;
-        }
-
-        .dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #ddd;
-            cursor: pointer;
-        }
-
+        .dots { display: flex; gap: 7px; justify-content: center; margin: 14px 0; }
+        .dot { width: 7px; height: 7px; border-radius: 50%; background: #ddd; cursor: pointer; }
         .dot.on { background: #111; }
 
-        .btns {
-            display: flex;
-            gap: 6px;
-            justify-content: center;
-            flex-wrap: wrap;
-            font-family: sans-serif;
-        }
-
-        .b {
-            padding: 7px 12px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
+        .btns { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; font-family: sans-serif; }
+        .b { padding: 7px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold; cursor: pointer; }
         .bx { background: #000; color: #fff; }
         .bf { background: #1877F2; color: #fff; }
         .bw { background: #25D366; color: #fff; }
@@ -179,45 +131,12 @@
             align-items: center;
         }
 
-        .lang-flags > div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .lang-flags .lang-label {
-            font-size: 12px;
-            color: #666;
-            display: block;
-            margin-top: 2px;
-        }
-
-        .lang-flags a {
-            text-decoration: none;
-            transition: transform 0.2s;
-            display: inline-block;
-            line-height: 0;
-        }
-
-        .lang-flags a:hover {
-            transform: scale(1.2);
-        }
-
-        .lang-flag-img {
-            width: 30px;
-            height: 20px;
-            object-fit: cover;
-            display: block;
-            background: transparent;
-            border: 1px solid #CCC;
-            box-sizing: border-box;
-        }
-
-        .lang-flag-img[src$="kr.svg"] {
-            width: 33.5px;
-            height: 22px;
-            object-fit: cover;
-        }
+        .lang-flags > div { display: flex; flex-direction: column; align-items: center; }
+        .lang-flags .lang-label { font-size: 12px; color: #666; display: block; margin-top: 2px; }
+        .lang-flags a { text-decoration: none; transition: transform 0.2s; display: inline-block; line-height: 0; }
+        .lang-flags a:hover { transform: scale(1.2); }
+        .lang-flag-img { width: 30px; height: 20px; object-fit: cover; display: block; background: transparent; border: 1px solid #CCC; box-sizing: border-box; }
+        .lang-flag-img[src$="kr.svg"] { width: 33.5px; height: 22px; object-fit: cover; }
     </style>
 </head>
 <body>
@@ -289,21 +208,25 @@
 
     <div class="container">
         <main>
+            
+            <!-- NY TVÅRADIG TITEL -->
             <h1 id="main-title" style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
+            <h2 id="main-subtitle" style="font-size: 20px; font-weight: normal; color: #555; margin: 5px 0 25px 0; display: none;"></h2>
 
+            <!-- BILD OCH FRIHETSTRAPPAN (med ID för att kunna byta språk) -->
             <div style="margin-bottom: 25px; text-align: center;">
-    <img src="pics/freedom_staircase_main_page.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
-    <p style="font-size: 16px; font-weight: bold; margin-top: 8px; letter-spacing: 0.5px;">
-        Frihetstrappan
-    </p>
-</div>
+                <img src="pics/freedom_staircase_main_page.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
+                <p id="staircase-text" style="font-size: 16px; font-weight: bold; margin-top: 8px; letter-spacing: 0.5px;">
+                    Frihetstrappan
+                </p>
+            </div>
 
-            <!-- FLAGGOR (alla 42) – KOPIERA IN DINA FLAGGOR HÄR -->
+            <!-- FLAGGOR (alla 42) -->
             <div class="lang-flags">
                 <!-- ... dina flaggor ... -->
             </div>
 
-            <!-- QUOTE-RUTAN (ISTÄLLET FÖR SLOGAN) -->
+            <!-- QUOTE-RUTAN -->
             <div id="quote-box">
                 <div id="quote-text"></div>
                 <div id="dots" class="dots"></div>
@@ -321,7 +244,7 @@
     </div>
 
     <!-- ======================================== -->
-    <!-- QUOTE-LOGIK + SPRÅK                      -->
+    <!-- QUOTE-LOGIK + SPRÅK                       -->
     <!-- ======================================== -->
 
     <script>
@@ -347,7 +270,6 @@
                 q.textContent = '"' + t + '"';
                 q.style.opacity = 1;
 
-                // Uppdatera delningsknappar
                 document.getElementById('btn-x').onclick = (e) => { e.preventDefault(); window.open('https://x.com/intent/tweet?text=' + encodeURIComponent(shareText), '_blank'); };
                 document.getElementById('btn-fb').onclick = (e) => { e.preventDefault(); window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(PAGE) + '&quote=' + encodeURIComponent(t), '_blank'); };
                 document.getElementById('btn-wa').onclick = (e) => { e.preventDefault(); window.open('https://wa.me/?text=' + encodeURIComponent(shareText), '_blank'); };
@@ -375,13 +297,9 @@
         document.getElementById('quote-box').onmouseenter = () => paused = true;
         document.getElementById('quote-box').onmouseleave = () => paused = false;
 
-        // Ladda citat från quotes.json
         fetch('share/quotes.json')
             .then(response => {
-                if (!response.ok) {
-                    // Försök med bara quotes.json om share/ inte fungerar
-                    return fetch('quotes.json');
-                }
+                if (!response.ok) return fetch('quotes.json');
                 return response;
             })
             .then(response => {
@@ -389,7 +307,6 @@
                 return response.json();
             })
             .then(data => {
-                // Använd versaler för språkkod (EN, SV, ZH...)
                 const langKey = currentLang.toUpperCase();
                 const quotesData = data[langKey] || data['SV'] || data['EN'] || {};
                 quotes = Object.values(quotesData);
@@ -414,69 +331,68 @@
     </script>
 
     <!-- ======================================== -->
-    <!-- MENY + FOOTER                            -->
+    <!-- MENY + FOOTER                             -->
     <!-- ======================================== -->
 
     <script src="menu.js"></script>
     <script src="footer.js"></script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var lang = (navigator.language || 'sv').split('-')[0].toLowerCase();
-    var ordbok = {
-        'sv': 'Frihetstrappan',
-        'en': 'Freedom Staircase',
-        'fi': 'Vapauden portaat',
-        'zh': '自由阶梯',
-        'hi': 'स्वतंत्रता सीढ़ी',
-        'es': 'Escalera de la Libertad',
-        'fr': 'Escalier de la Liberté',
-        'de': 'Freiheitstreppe',
-        'ar': 'سلم الحرية',
-        'id': 'Tangga Kebebasan',
-        'bn': 'স্বাধীনতার সিঁড়ি',
-        'pt': 'Escada da Liberdade',
-        'ru': 'Лестница Свободы',
-        'uk': 'Сходи Свободи',
-        'bg': 'Стълбата на свободата',
-        'ur': 'آزادی کی سیڑھی',
-        'ja': '自由の階段',
-        'fil': 'Hagdan ng Kalayaan',
-        'ko': '자유의 계단',
-        'th': 'บันไดเสรีภาพ',
-        'vi': 'Cầu thang Tự do',
-        'tr': 'Özgürlük Merdiveni',
-        'fa': 'پلکان آزادی',
-        'sw': 'Ngazi ya Uhuru',
-        'it': 'Scala della Libertà',
-        'pl': 'Schody Wolności',
-        'nl': 'Vrijheidstrap',
-        'ro': 'Scara Libertății',
-        'el': 'Σκάλα της Ελευθερίας',
-        'af': 'Vryheidstrap',
-        'zu': 'Izitebhisi Zenkululeko',
-        'xh': 'Izinyuko Zenkululeko',
-        'cs': 'Schody svobody',
-        'hu': 'A Szabadság Lépcsői',
-        'he': 'מדרגות החירות',
-        'crs': 'Leskal Libète',
-        'no': 'Frihetstrappen',
-        'se': 'Frihetstrappa',
-        'fit': 'Vapauden portaat',
-        'da': 'Frihedstrappen',
-        'is': 'Frelsisstiginn',
-        'fo': 'Frælsistrappan'
-    };
+    <!-- ======================================== -->
+    <!-- DYNAMISK ÖVERSÄTTNING AV TITEL OCH BILD   -->
+    <!-- ======================================== -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var lang = (navigator.language || 'sv').split('-')[0].toLowerCase();
 
-    // Byt ut texten i alla länkar som innehåller "Frihetstrappan"
-    var alla = document.querySelectorAll('a, h1, h2, p, span, div');
-    for (var i = 0; i < alla.length; i++) {
-        if (alla[i].children.length === 0 && alla[i].innerText.trim() === 'Frihetstrappan') {
-            alla[i].innerText = ordbok[lang] || ordbok['en'];
+        // 1. TITELÖVERSÄTTNINGAR (42 språk)
+        var titlar = {
+            'sv': 'Världsmanifestet', 'en': 'The World Manifesto', 'zh': '世界宣言',
+            'hi': 'विश्व घोषणापत्र', 'es': 'El Manifiesto Mundial', 'fr': 'Le Manifeste Mondial',
+            'de': 'Weltmanifest', 'fi': 'Maailmanmanifesti', 'ja': '世界宣言', 'ko': '세계 선언문',
+            'ru': 'Всемирный манифест', 'pt': 'O Manifesto Mundial', 'it': 'Manifesto Mondiale',
+            'ar': 'البيان العالمي', 'id': 'Manifest Dunia', 'bn': 'বিশ্ব ইশতেহার', 'uk': 'Всесвітній маніфест',
+            'bg': 'Световен манифест', 'ur': 'عالمی منشور', 'fil': 'Manipesto ng Mundo', 'th': 'แถลงการณ์โลก',
+            'vi': 'Tuyên ngôn Thế giới', 'tr': 'Dünya Manifestosu', 'fa': 'مانیفست جهانی', 'sw': 'Ilani ya Dunia',
+            'pl': 'Manifest Światowy', 'nl': 'Wereldmanifest', 'ro': 'Manifestul Mondial', 'el': 'Παγκόσμιο Μανιφέστο',
+            'af': 'Wêreldmanifest', 'zu': 'IManifesto Yomhlaba', 'xh': 'IManifesto Yehlabathi', 'cs': 'Světový manifest',
+            'hu': 'Világkiáltvány', 'he': 'מניפסט העולם', 'crs': 'Manifest lemonn', 'no': 'Verdensmanifestet',
+            'se': 'Máilmmi Manifesta', 'fit': 'Mailmanmanifesti', 'da': 'Verdensmanifestet', 'is': 'Heimsmanifestið',
+            'fo': 'Heimsskráin'
+        };
+
+        // 2. FRIHETSTRAPPAN-ÖVERSÄTTNINGAR (42 språk)
+        var trappan = {
+            'sv': 'Frihetstrappan', 'en': 'Freedom Staircase', 'fi': 'Vapauden portaat',
+            'zh': '自由阶梯', 'hi': 'स्वतंत्रता सीढ़ी', 'es': 'Escalera de la Libertad', 'fr': 'Escalier de la Liberté',
+            'de': 'Freiheitstreppe', 'ar': 'سلم الحرية', 'id': 'Tangga Kebebasan', 'bn': 'স্বাধীনতার সিঁড়ি',
+            'pt': 'Escada da Liberdade', 'ru': 'Лестница Свободы', 'uk': 'Сходи Свободи', 'bg': 'Стълбата на свободата',
+            'ur': 'آزادی کی سیڑھی', 'ja': '自由の階段', 'fil': 'Hagdan ng Kalayaan', 'ko': '자유의 계단',
+            'th': 'บันไดเสรีภาพ', 'vi': 'Cầu thang Tự do', 'tr': 'Özgürlük Merdiveni', 'fa': 'پلکان آزادی',
+            'sw': 'Ngazi ya Uhuru', 'it': 'Scala della Libertà', 'pl': 'Schody Wolności', 'nl': 'Vrijheidstrap',
+            'ro': 'Scara Libertății', 'el': 'Σκάλα της Ελευθερίας', 'af': 'Vryheidstrap', 'zu': 'Izitebhisi Zenkululeko',
+            'xh': 'Izinyuko Zenkululeko', 'cs': 'Schody svobody', 'hu': 'A Szabadság Lépcsői', 'he': 'מדרגות החירות',
+            'crs': 'Leskal Libète', 'no': 'Frihetstrappen', 'se': 'Frihetstrappa', 'fit': 'Vapauden portaat',
+            'da': 'Frihedstrappen', 'is': 'Frelsisstiginn', 'fo': 'Frælsistrappan'
+        };
+
+        // 3. APPLICERA TITELN (Göm den engelska om språket INTE är engelska)
+        var mainTitle = document.getElementById('main-title');
+        var mainSubtitle = document.getElementById('main-subtitle');
+
+        if (lang !== 'en' && titlar[lang]) {
+            mainSubtitle.textContent = titlar[lang];
+            mainSubtitle.style.display = 'block';
+        } else {
+            mainSubtitle.style.display = 'none'; // Engelska besökare ser bara huvudtiteln
         }
-    }
-});
-</script>
+
+        // 4. APPLICERA FRIHETSTRAPPAN
+        var staircaseText = document.getElementById('staircase-text');
+        if (staircaseText && trappan[lang]) {
+            staircaseText.textContent = trappan[lang];
+        }
+    });
+    </script>
     
 </body>
 </html>
