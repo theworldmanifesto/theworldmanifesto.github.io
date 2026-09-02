@@ -1,114 +1,113 @@
 // ============================================================
-// FOOTER – The World Manifesto
+// MENU.JS - Global meny för The World Manifesto (42 språk)
 // ============================================================
 
-(function() {
-    'use strict';
+document.addEventListener('DOMContentLoaded', function() {
 
     // --- HÄMTA SPRÅK FRÅN WEBBlÄSAREN (navigator.language) ---
     const currentLang = (navigator.language || 'sv').split('-')[0].toLowerCase();
 
-    // --- ÖVERSÄTTNINGAR FÖR SIDFOTEN ---
+    // --- ORDBOK FÖR ALLA 42 SPRÅK ---
     const translations = {
-        'en': { email: '✉  Email webmaster', copyright: 'The World Manifesto – Published 2026' },
-        'zh': { email: '✉  ‪给网站管理员的电子邮件', copyright: '世界宣言 – 出版于 2026 年' },
-        'hi': { email: '✉  वेबमास्टर को ईमेल', copyright: 'विश्व घोषणापत्र – 2026 में प्रकाशित' },
-        'es': { email: '✉  Correo electrónico del webmaster', copyright: 'El Manifiesto Mundial – Publicado en 2026' },
-        'fr': { email: '✉  E-mail du webmaster', copyright: 'Le Manifeste Mondial – Publié en 2026' },
-        'ar': { email: '✉  بريد إلكتروني لمدير الموقع', copyright: 'البيان العالمي – نشر في 2026' },
-        'bn': { email: '✉  ওয়েবমাস্টারকে ইমেইল', copyright: 'বিশ্ব ইশতেহার – ২০২৬ সালে প্রকাশিত' },
-        'pt': { email: '✉  E-mail do webmaster', copyright: 'O Manifesto Mundial – Publicado em 2026' },
-        'ru': { email: '✉  Электронная почта веб-мастера', copyright: 'Всемирный манифест – Опубликован в 2026 году' },
-        'ur': { email: '✉  ویب ماسٹر کو ای میل', copyright: 'عالمی منشور – 2026 میں شائع ہوا' },
-        'id': { email: '✉  Email webmaster', copyright: 'Manifest Dunia – Diterbitkan 2026' },
-        'de': { email: '✉  E-Mail an den Webmaster', copyright: 'Weltmanifest – Veröffentlicht 2026' },
-        'ja': { email: '✉  ‪ウェブマスターへのメール', copyright: '世界宣言 – 2026年発行' },
-        'sw': { email: '✉  Barua pepe kwa msimamizi wa wavuti', copyright: 'Ilani ya Dunia – Imechapishwa 2026' },
-        'tl': { email: '✉  Email sa webmaster', copyright: 'Manipesto ng Mundo – Nailathala 2026' },
-        'tr': { email: '✉  Webmaster\'a e-posta', copyright: 'Dünya Manifestosu – 2026\'da yayınlandı' },
-        'vi': { email: '✉  Email quản trị viên', copyright: 'Tuyên ngôn Thế giới – Xuất bản năm 2026' },
-        'ko': { email: '✉  웹마스터에게 이메일 보내기', copyright: '세계 선언문 – 2026년 출판' },
-        'fa': { email: '✉  ایمیل به مدیریت وب‌سایت', copyright: 'مانیفست جهانی – منتشر شده در 2026' },
-        'it': { email: '✉  Email al webmaster', copyright: 'Manifesto Mondiale – Pubblicato nel 2026' },
-        'th': { email: '✉  อีเมลถึงผู้ดูแลเว็บ', copyright: 'แถลงการณ์โลก – เผยแพร่ 2026' },
-        'pl': { email: '✉  E-mail do webmastera', copyright: 'Manifest Światowy – Opublikowano w 2026' },
-        'uk': { email: '✉  Електронна пошта веб-майстра', copyright: 'Всесвітній маніфест – Опубліковано в 2026' },
-        'nl': { email: '✉  E-mail naar webmaster', copyright: 'Wereldmanifest – Gepubliceerd in 2026' },
-        'ro': { email: '✉  E-mail către webmaster', copyright: 'Manifestul Mondial – Publicat în 2026' },
-        'el': { email: '✉  Email στον διαχειριστή ιστοσελίδας', copyright: 'Παγκόσμιο Μανιφέστο – Δημοσιεύθηκε το 2026' },
-        'hu': { email: '✉  E-mail a webmesternek', copyright: 'Világkiáltvány – Kiadva 2026-ban' },
-        'cs': { email: '✉  E-mail správci webu', copyright: 'Světový manifest – Vydáno 2026' },
-        'sv': { email: '✉  E-post webbmaster', copyright: 'Världsmanifestet – Publicerat 2026' },
-        'bg': { email: '✉  Имейл на уебмастъра', copyright: 'Световен манифест – Публикуван през 2026' },
-        'no': { email: '✉  E-post til webmaster', copyright: 'Verdensmanifestet – Publisert 2026' },
-        'da': { email: '✉  E-mail til webmaster', copyright: 'Verdensmanifestet – Udgivet 2026' },
-        'fi': { email: '✉  Sähköposti webmasterille', copyright: 'Maailmanmanifesti – Julkaistu 2026' },
-        'he': { email: '✉  ‪דוא"ל למנהל האתר', copyright: 'מניפוסט העולם – פורסם ב-2026' },
-        'af': { email: '✉  E-pos aan webmeester', copyright: 'Wêreldmanifest – Gepubliseer 2026' },
-        'zu': { email: '✉  I-imeyili kumphathi wewebhu', copyright: 'IManifesto Yomhlaba – Ishicilelwe ngo-2026' },
-        'xh': { email: '✉  I-imeyili kumphathi wewebhu', copyright: 'IManifesto Yehlabathi – Ishicilelwe ngo-2026' },
-        'is': { email: '✉  Tölvupóstur til vefstjóra', copyright: 'Heimsmanifestið – Gefið út 2026' },
-        'fo': { email: '✉  T-postur til vevstjóra', copyright: 'Heimsskráin – Útgivið 2026' },
-        'crs': { email: '✉  Imel pou webmaster', copyright: 'Manifest lemonn – Pibliye 2026' },
-        'se': { email: '✉  E-poasta neahttameasterii', copyright: 'Máilmmi Manifesta – Almmustuvvon 2026' },
-        'fit': { email: '✉  Sähköposti webmasterille', copyright: 'Mailmanmanifesti – Julkaistu 2026' }
+        'sv': { menu: 'MENY', home: 'HEM', manifesto: 'Världsmanifestet', staircase: 'Frihetstrappan', tropics: 'Tropikerna', robotel: 'Robotel', share: 'Dela' },
+        'en': { menu: 'MENU', home: 'HOME', manifesto: 'The World Manifesto', staircase: 'Freedom Staircase', tropics: 'The Tropics', robotel: 'Robotel', share: 'Share' },
+        'fi': { menu: 'VALIKKO', home: 'ETUSIVU', manifesto: 'Maailmanmanifesti', staircase: 'Vapauden portaat', tropics: 'Trooppiset alueet', robotel: 'Robotel', share: 'Jaa' },
+        'zh': { menu: '菜单', home: '首页', manifesto: '世界宣言', staircase: '自由阶梯', tropics: '热带地区', robotel: '机器人', share: '分享' },
+        'hi': { menu: 'मेनू', home: 'होम', manifesto: 'विश्व घोषणापत्र', staircase: 'स्वतंत्रता सीढ़ी', tropics: 'उष्णकटिबंधीय', robotel: 'रोबोटेल', share: 'साझा करें' },
+        'es': { menu: 'MENÚ', home: 'INICIO', manifesto: 'El Manifiesto Mundial', staircase: 'Escalera de la Libertad', tropics: 'Los Trópicos', robotel: 'Robotel', share: 'Compartir' },
+        'fr': { menu: 'MENU', home: 'ACCUEIL', manifesto: 'Le Manifeste Mondial', staircase: 'Escalier de la Liberté', tropics: 'Les Tropiques', robotel: 'Robotel', share: 'Partager' },
+        'de': { menu: 'MENÜ', home: 'STARTSEITE', manifesto: 'Weltmanifest', staircase: 'Freiheitstreppe', tropics: 'Die Tropen', robotel: 'Robotel', share: 'Teilen' },
+        'ar': { menu: 'القائمة', home: 'الرئيسية', manifesto: 'البيان العالمي', staircase: 'سلم الحرية', tropics: 'المناطق الاستوائية', robotel: 'روbotel', share: 'مشاركة' },
+        'id': { menu: 'MENU', home: 'BERANDA', manifesto: 'Manifest Dunia', staircase: 'Tangga Kebebasan', tropics: 'Daerah Tropis', robotel: 'Robotel', share: 'Bagikan' },
+        'bn': { menu: 'মেনু', home: 'হোম', manifesto: 'বিশ্ব ইশতেহার', staircase: 'স্বাধীনতার সিঁড়ি', tropics: 'ক্রান্তীয় অঞ্চল', robotel: 'রোবোটেল', share: 'শেয়ার করুন' },
+        'pt': { menu: 'MENU', home: 'INÍCIO', manifesto: 'O Manifesto Mundial', staircase: 'Escada da Liberdade', tropics: 'Os Trópicos', robotel: 'Robotel', share: 'Compartilhar' },
+        'ru': { menu: 'МЕНЮ', home: 'ГЛАВНАЯ', manifesto: 'Всемирный манифест', staircase: 'Лестница Свободы', tropics: 'Тропики', robotel: 'Роботель', share: 'Поделиться' },
+        'uk': { menu: 'МЕНЮ', home: 'ГОЛОВНА', manifesto: 'Всесвітній маніфест', staircase: 'Сходи Свободи', tropics: 'Тропіки', robotel: 'Роботель', share: 'Поділитися' },
+        'bg': { menu: 'МЕНЮ', home: 'НАЧАЛО', manifesto: 'Световен манифест', staircase: 'Стълбата на свободата', tropics: 'Тропиците', robotel: 'Роботель', share: 'Сподели' },
+        'ur': { menu: 'مینو', home: 'ہوم', manifesto: 'عالمی منشور', staircase: 'آزادی کی سیڑھی', tropics: 'اشنکٹبندیی', robotel: 'روبوٹیل', share: 'شیئر کریں' },
+        'ja': { menu: 'メニュー', home: 'ホーム', manifesto: '世界宣言', staircase: '自由の階段', tropics: '熱帯地域', robotel: 'ロボテル', share: '共有' },
+        'fil': { menu: 'MENU', home: 'HOME', manifesto: 'Manipesto ng Mundo', staircase: 'Hagdan ng Kalayaan', tropics: 'Ang Tropiko', robotel: 'Robotel', share: 'Ibahagi' },
+        'ko': { menu: '메뉴', home: '홈', manifesto: '세계 선언문', staircase: '자유의 계단', tropics: '열대 지방', robotel: '로보텔', share: '공유' },
+        'th': { menu: 'เมนู', home: 'หน้าแรก', manifesto: 'แถลงการณ์โลก', staircase: 'บันไดเสรีภาพ', tropics: 'เขตร้อน', robotel: 'โรโบเทล', share: 'แชร์' },
+        'vi': { menu: 'MENU', home: 'TRANG CHỦ', manifesto: 'Tuyên ngôn Thế giới', staircase: 'Cầu thang Tự do', tropics: 'Vùng nhiệt đới', robotel: 'Robotel', share: 'Chia sẻ' },
+        'tr': { menu: 'MENÜ', home: 'ANA SAYFA', manifesto: 'Dünya Manifestosu', staircase: 'Özgürlük Merdiveni', tropics: 'Tropikler', robotel: 'Robotel', share: 'Paylaş' },
+        'fa': { menu: 'منو', home: 'خانه', manifesto: 'مانیفست جهانی', staircase: 'پلکان آزادی', tropics: 'مناطق استوایی', robotel: 'روbotel', share: 'اشتراک‌گذاری' },
+        'sw': { menu: 'MENU', home: 'NYUMBANI', manifesto: 'Ilani ya Dunia', staircase: 'Ngazi ya Uhuru', tropics: 'Maeneo ya Tropiki', robotel: 'Robotel', share: 'Shiriki' },
+        'it': { menu: 'MENU', home: 'HOME', manifesto: 'Manifesto Mondiale', staircase: 'Scala della Libertà', tropics: 'I Tropici', robotel: 'Robotel', share: 'Condividi' },
+        'pl': { menu: 'MENU', home: 'STRONA GŁÓWNA', manifesto: 'Manifest Światowy', staircase: 'Schody Wolności', tropics: 'Tropiki', robotel: 'Robotel', share: 'Udostępnij' },
+        'nl': { menu: 'MENU', home: 'HOME', manifesto: 'Wereldmanifest', staircase: 'Vrijheidstrap', tropics: 'De Tropen', robotel: 'Robotel', share: 'Delen' },
+        'ro': { menu: 'MENU', home: 'ACASĂ', manifesto: 'Manifestul Mondial', staircase: 'Scara Libertății', tropics: 'Tropicele', robotel: 'Robotel', share: 'Distribuie' },
+        'el': { menu: 'ΜΕΝΟΥ', home: 'ΑΡΧΙΚΗ', manifesto: 'Παγκόσμιο Μανιφέστο', staircase: 'Σκάλα της Ελευθερίας', tropics: 'Οι Τροπικοί', robotel: 'Ρομποτέλ', share: 'Μοιραστείτε' },
+        'af': { menu: 'MENU', home: 'TUIS', manifesto: 'Wêreldmanifest', staircase: 'Vryheidstrap', tropics: 'Die Trope', robotel: 'Robotel', share: 'Deel' },
+        'zu': { menu: 'IMENU', home: 'IKHAYA', manifesto: 'IManifesto Yomhlaba', staircase: 'Izitebhisi Zenkululeko', tropics: 'Izindawo Ezishisayo', robotel: 'Robotel', share: 'Yabelana' },
+        'xh': { menu: 'IMENU', home: 'IKHAYA', manifesto: 'IManifesto Yehlabathi', staircase: 'Izinyuko Zenkululeko', tropics: 'Iindawo Ezishushu', robotel: 'Robotel', share: 'Yabelana' },
+        'cs': { menu: 'MENU', home: 'DOMŮ', manifesto: 'Světový manifest', staircase: 'Schody svobody', tropics: 'Tropy', robotel: 'Robotel', share: 'Sdílet' },
+        'hu': { menu: 'MENÜ', home: 'KEZDŐLAP', manifesto: 'Világkiáltvány', staircase: 'A Szabadság Lépcsői', tropics: 'A Trópusok', robotel: 'Robotel', share: 'Megosztás' },
+        'he': { menu: 'תפריט', home: 'בית', manifesto: 'מניפסט העולם', staircase: 'מדרגות החירות', tropics: 'האזורים הטרופיים', robotel: 'רובוטל', share: 'שתף' },
+        'crs': { menu: 'MENU', home: 'LAK', manifesto: 'Manifest lemonn', staircase: 'Leskal Libète', tropics: 'Latropik', robotel: 'Robotel', share: 'Partaz' },
+        'no': { menu: 'MENY', home: 'HJEM', manifesto: 'Verdensmanifestet', staircase: 'Frihetstrappen', tropics: 'Tropene', robotel: 'Robotel', share: 'Del' },
+        'se': { menu: 'MENY', home: 'RUVŦOT', manifesto: 'Máilmmi Manifesta', staircase: 'Frihetstrappa', tropics: 'Tropiija', robotel: 'Robotel', share: 'Juoge' },
+        'fit': { menu: 'VALIKKO', home: 'ETUSIVU', manifesto: 'Mailmanmanifesti', staircase: 'Vapauden portaat', tropics: 'Trooppiset', robotel: 'Robotel', share: 'Jaa' },
+        'da': { menu: 'MENU', home: 'HJEM', manifesto: 'Verdensmanifestet', staircase: 'Frihedstrappen', tropics: 'Troperne', robotel: 'Robotel', share: 'Del' },
+        'is': { menu: 'VALMYND', home: 'HEIM', manifesto: 'Heimsmanifestið', staircase: 'Frelsisstiginn', tropics: 'Hitabeltið', robotel: 'Robotel', share: 'Deila' },
+        'fo': { menu: 'MENY', home: 'HEIM', manifesto: 'Heimsskráin', staircase: 'Frælsistrappan', tropics: 'Tropiskir', robotel: 'Robotel', share: 'Deil' }
     };
 
-    // Välj rätt översättning (fallback till svenska om språket saknas)
-    const t = translations[currentLang] || translations['sv'];
+    // Välj rätt språk (fallback till engelska)
+    const t = translations[currentLang] || translations['en'];
 
-    // --- SKAPA FOOTER-ELEMENTET ---
-    const footer = document.createElement('footer');
-    footer.style.cssText = `
-        margin-top: 60px;
-        padding: 20px 0 10px 0;
-        text-align: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        border-top: 1px solid #e0e0e0;
-        width: 100%;
-        clear: both;
-        background-color: #fcfcfc;
-    `;
+    // --- RÄKNA UT BAS-SÖKVÄG ---
+    function getBasePath() {
+        const path = window.location.pathname;
+        const parts = path.split('/').filter(p => p.length > 0);
+        const depth = parts.length > 0 ? parts.length - 1 : 0;
+        return '../'.repeat(Math.max(0, depth));
+    }
+    const base = getBasePath();
 
-    // --- WEBBMASTER-E-POST ---
-    const webmasterP = document.createElement('p');
-    webmasterP.style.cssText = `
-        font-size: 16px;
-        margin-bottom: 5px;
-        text-align: center;
-    `;
-    const emailLink = document.createElement('a');
-    emailLink.href = 'mailto:theworldmanifesto@gmail.com';
-    emailLink.textContent = t.email;
-    emailLink.style.cssText = `
-        color: #1a1a1a;
-        text-decoration: none;
-        transition: color 0.3s;
-    `;
-    emailLink.onmouseover = function() { this.style.color = '#555'; };
-    emailLink.onmouseout = function() { this.style.color = '#1a1a1a'; };
-    webmasterP.appendChild(emailLink);
-    footer.appendChild(webmasterP);
+    // --- SKAPA MENYN ---
+    function buildMenu() {
+        const menuIcon = `<img src="${base}menu_icons/menu.png" alt="Menu" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;">`;
+        const btnText = menuIcon + t.menu;
 
-    // --- COPYRIGHT-RAD ---
-    const copyrightP = document.createElement('p');
-    copyrightP.style.cssText = `
-        font-size: 14px;
-        color: #666;
-        margin-top: 5px;
-        margin-bottom: 0;
-        text-align: center;
-    `;
-    copyrightP.textContent = t.copyright;
-    footer.appendChild(copyrightP);
-
-    // --- SÄTT IN FOOTERN I SLUTET AV BODY ---
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() {
-            document.body.appendChild(footer);
-        });
-    } else {
-        document.body.appendChild(footer);
+        return `
+            <div class="site-nav">
+                <div class="dropdown" id="homeDropdown">
+                    <button class="dropbtn" id="menuBtn">${btnText}</button>
+                    <div class="dropdown-content">
+                        <a href="${base}index.html"><img src="${base}menu_icons/home.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.home}</a>
+                        <a href="${base}lang/lang.html?lang=${currentLang}"><img src="${base}menu_icons/languages.svg" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.manifesto}</a>
+                        <a href="${base}freedom-staircase/freedom-staircase.html?lang=${currentLang}"><img src="${base}menu_icons/freedom.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.staircase}</a>
+                        <a href="${base}tropics/tropics.html?lang=${currentLang}"><img src="${base}menu_icons/tropics.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.tropics}</a>
+                        <a href="${base}robotel/robotel.html?lang=${currentLang}"><img src="${base}menu_icons/robotel.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.robotel}</a>
+                        <a href="${base}share/share.html?lang=${currentLang}"><img src="${base}menu_icons/share.svg" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.share}</a>
+                    </div>
+                </div>
+            </div>
+        `;
     }
 
-})();
+    const menuContainer = document.getElementById('main-menu');
+    if (menuContainer) { menuContainer.innerHTML = buildMenu(); }
+
+    // --- KLICK-HANTERING ---
+    const dropdown = document.getElementById('homeDropdown');
+    const btn = document.getElementById('menuBtn');
+    if (btn && dropdown) {
+        const newBtn = btn.cloneNode(true);
+        btn.parentNode.replaceChild(newBtn, btn);
+        const newDropdown = dropdown.cloneNode(true);
+        dropdown.parentNode.replaceChild(newDropdown, dropdown);
+        const freshBtn = document.getElementById('menuBtn');
+        const freshDropdown = document.getElementById('homeDropdown');
+        if (freshBtn && freshDropdown) {
+            freshBtn.addEventListener('click', function(e) {
+                e.preventDefault(); e.stopPropagation();
+                freshDropdown.classList.toggle('active');
+            });
+            document.addEventListener('click', function(e) {
+                if (!freshDropdown.contains(e.target)) freshDropdown.classList.remove('active');
+            });
+        }
+    }
+});
