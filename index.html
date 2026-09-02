@@ -1,320 +1,12 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The World Manifesto</title>
-    <link rel="stylesheet" href="menu.css">
-    <style>
-        body {
-            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-            line-height: 1.25;
-            color: #1a1a1a;
-            background-color: #fcfcfc;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 10px 20px 40px 20px;
-            display: flex;
-            flex-direction: column;
-            min-height: 85vh;
-            justify-content: space-between;
-        }
-        main { text-align: center; }
-
-        /* ======================================== */
-        /* NAVIGATION – READ + MENY                 */
-        /* ======================================== */
-
-        .nav-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 16px;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 12px 20px;
-            background: transparent;
-            position: sticky;
-            top: 0;
-            z-index: 500;
-            flex-wrap: wrap;
-        }
-
-        .read-menu {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
-
-        .read-menu label {
-            margin-right: 4px;
-            font-weight: bold;
-            color: #1a1a1a;
-        }
-
-        .read-menu select {
-            padding: 6px 12px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(4px);
-            font-size: 13px;
-            cursor: pointer;
-            transition: border-color 0.2s;
-            font-family: sans-serif;
-        }
-
-        .read-menu select:hover { border-color: #888; }
-        .read-menu select:focus { outline: none; border-color: #555; }
-
-        #main-menu { display: inline-block; }
-
-        @media (max-width: 600px) {
-            .nav-wrapper { padding: 8px 12px; gap: 10px; }
-            .read-menu select { font-size: 12px; padding: 4px 8px; }
-            .read-menu label { font-size: 12px; }
-        }
-
-        /* ======================================== */
-        /* QUOTE-RUTAN                               */
-        /* ======================================== */
-
-        #quote-box {
-            max-width: 680px;
-            margin: 30px auto;
-            border: 1px solid #ddd;
-            border-radius: 16px;
-            padding: 28px 24px;
-            text-align: center;
-        }
-
-        #quote-text {
-            font-size: 22px;
-            line-height: 1.45;
-            min-height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.4s;
-            font-style: italic;
-            color: #444;
-        }
-
-        .dots { display: flex; gap: 7px; justify-content: center; margin: 14px 0; }
-        .dot { width: 7px; height: 7px; border-radius: 50%; background: #ddd; cursor: pointer; }
-        .dot.on { background: #111; }
-
-        .btns { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; font-family: sans-serif; }
-        .b { padding: 7px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold; cursor: pointer; }
-        .bx { background: #000; color: #fff; }
-        .bf { background: #1877F2; color: #fff; }
-        .bw { background: #25D366; color: #fff; }
-        .bt { background: #26A5E4; color: #fff; }
-        .bm { background: #666; color: #fff; }
-        .bc { background: #fff; color: #000; border: 1px solid #ccc; }
-
-        /* ======================================== */
-        /* FLAGGOR                                  */
-        /* ======================================== */
-
-        .lang-flags {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            margin: 15px 0;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .lang-flags > div { display: flex; flex-direction: column; align-items: center; }
-        .lang-flags .lang-label { font-size: 12px; color: #666; display: block; margin-top: 2px; }
-        .lang-flags a { text-decoration: none; transition: transform 0.2s; display: inline-block; line-height: 0; }
-        .lang-flags a:hover { transform: scale(1.2); }
-        .lang-flag-img { width: 30px; height: 20px; object-fit: cover; display: block; background: transparent; border: 1px solid #CCC; box-sizing: border-box; }
-        .lang-flag-img[src$="kr.svg"] { width: 33.5px; height: 22px; object-fit: cover; }
-    </style>
-</head>
-<body>
-
-    <!-- ======================================== -->
-    <!-- NAVIGATION: READ + MENY                   -->
-    <!-- ======================================== -->
-
-    <div class="nav-wrapper">
-
-        <!-- READ – språkvalsrullgardin -->
-        <div class="read-menu">
-            <label for="read-select">LÄS:</label>
-            <select id="read-select" onchange="if(this.value) window.location.href='lang/read.html?lang=' + this.value">
-                <option value="">Välj språk</option>
-                <option value="af">Afrikaans</option>
-                <option value="ar">العربية</option>
-                <option value="bg">Български</option>
-                <option value="bn">বাংলা</option>
-                <option value="crs">Kreol seselwa</option>
-                <option value="cs">Čeština</option>
-                <option value="da">Dansk</option>
-                <option value="de">Deutsch</option>
-                <option value="el">Ελληνικά</option>
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fa">فارسی</option>
-                <option value="fi">Suomi</option>
-                <option value="fit">Meänkieli</option>
-                <option value="fo">Føroyskt</option>
-                <option value="fr">Français</option>
-                <option value="he">עברית</option>
-                <option value="hi">हिंदी</option>
-                <option value="hr">Hrvatski</option>
-                <option value="hu">Magyar</option>
-                <option value="id">Bahasa Indonesia</option>
-                <option value="is">Íslenska</option>
-                <option value="it">Italiano</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option>
-                <option value="nl">Nederlands</option>
-                <option value="no">Norsk</option>
-                <option value="pl">Polski</option>
-                <option value="pt">Português</option>
-                <option value="ro">Română</option>
-                <option value="ru">Русский</option>
-                <option value="se">Davvisámegiella</option>
-                <option value="sk">Slovenčina</option>
-                <option value="sv">Svenska</option>
-                <option value="sw">Kiswahili</option>
-                <option value="th">ภาษาไทย</option>
-                <option value="tl">Filipino</option>
-                <option value="tr">Türkçe</option>
-                <option value="uk">Українська</option>
-                <option value="ur">اردو</option>
-                <option value="vi">Tiếng Việt</option>
-                <option value="xh">isiXhosa</option>
-                <option value="zh">中文</option>
-                <option value="zu">isiZulu</option>
-                <option value="za">Afrikaans</option>
-            </select>
-        </div>
-
-        <!-- MENY – INJECTAS AV MENU.JS -->
-        <div id="main-menu"></div>
-
-    </div>
-
-    <!-- ======================================== -->
-    <!-- HUVUDINNEHÅLL                             -->
-    <!-- ======================================== -->
-
-    <div class="container">
-        <main>
-            
-            <!-- TVÅRADIG TITEL -->
-            <h1 id="main-title" style="font-size: 36px; font-weight: normal; margin-bottom: 5px;">The World Manifesto</h1>
-            <h2 id="main-subtitle" style="font-size: 20px; font-weight: normal; color: #555; margin: 5px 0 25px 0; display: none;"></h2>
-
-            <!-- BILD OCH FRIHETSTRAPPAN -->
-            <div style="margin-bottom: 25px; text-align: center;">
-                <img src="pics/freedom_staircase_main_page.jpg" alt="Freedom Staircase" style="width: 75%; height: auto;">
-                <p id="staircase-text" style="font-size: 16px; font-weight: bold; margin-top: 8px; letter-spacing: 0.5px;">
-                    Frihetstrappan
-                </p>
-            </div>
-
-            <!-- ======================================== -->
-            <!-- ALLA 42 FLAGGOR MED LÄNKAR               -->
-            <!-- ======================================== -->
-            <div class="lang-flags">
-                <a href="lang/read.html?lang=sv" title="Svenska"><img src="lang/flags/se.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=en" title="English"><img src="lang/flags/gb.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=fi" title="Suomi"><img src="lang/flags/fi.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=zh" title="中文"><img src="lang/flags/cn.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=hi" title="हिंदी"><img src="lang/flags/in.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=es" title="Español"><img src="lang/flags/es.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=fr" title="Français"><img src="lang/flags/fr.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=de" title="Deutsch"><img src="lang/flags/de.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=ar" title="العربية"><img src="lang/flags/sa.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=id" title="Bahasa Indonesia"><img src="lang/flags/id.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=bn" title="বাংলা"><img src="lang/flags/bd.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=pt" title="Português"><img src="lang/flags/pt.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=ru" title="Русский"><img src="lang/flags/ru.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=uk" title="Українська"><img src="lang/flags/ua.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=bg" title="Български"><img src="lang/flags/bg.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=ur" title="اردو"><img src="lang/flags/pk.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=ja" title="日本語"><img src="lang/flags/jp.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=fil" title="Filipino"><img src="lang/flags/ph.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=ko" title="한국어"><img src="lang/flags/kr.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=th" title="ไทย"><img src="lang/flags/th.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=vi" title="Tiếng Việt"><img src="lang/flags/vn.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=tr" title="Türkçe"><img src="lang/flags/tr.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=fa" title="فارسی"><img src="lang/flags/ir.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=sw" title="Kiswahili"><img src="lang/flags/tz.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=it" title="Italiano"><img src="lang/flags/it.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=pl" title="Polski"><img src="lang/flags/pl.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=nl" title="Nederlands"><img src="lang/flags/nl.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=ro" title="Română"><img src="lang/flags/ro.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=el" title="Ελληνικά"><img src="lang/flags/gr.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=hr" title="Hrvatski"><img src="lang/flags/hr.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=hu" title="Magyar"><img src="lang/flags/hu.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=he" title="עברית"><img src="lang/flags/il.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=crs" title="Kreol seselwa"><img src="lang/flags/sc.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=no" title="Norsk"><img src="lang/flags/no.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=se" title="Davvisámegiella"><img src="lang/flags/dsg.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=fit" title="Meänkieli"><img src="lang/flags/fit.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=da" title="Dansk"><img src="lang/flags/dk.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=is" title="Íslenska"><img src="lang/flags/is.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=fo" title="Føroyskt"><img src="lang/flags/fo.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=sk" title="Slovenčina"><img src="lang/flags/sk.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=cs" title="Čeština"><img src="lang/flags/cz.svg" class="lang-flag-img"></a>
-                <a href="lang/read.html?lang=za" title="Afrikaans"><img src="lang/flags/za.svg" class="lang-flag-img"></a>
-            </div>
-
-            <!-- ======================================== -->
-            <!-- DE FYRA STEGEN – STATISK RUTA             -->
-            <!-- ======================================== -->
-<div id="steps-section" style="max-width: 680px; margin: 40px auto 20px auto; padding: 20px; border: 2px solid #8B0000; border-radius: 12px; background-color: #FFF8F8; text-align: left; font-family: Georgia, serif;">
-    <h3 id="steps-title" style="text-align: center; color: #8B0000; font-size: 22px; margin-top: 0; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Världsmanifestet i 4 steg</h3>
-    <ol style="color: #4A0E0E; font-size: 16px; line-height: 1.6; margin: 0; padding-left: 25px;">
-        <li id="step-1" style="margin-bottom: 12px;"><strong>Först:</strong> Idén (Världsmanifestet) måste bli känd.</li>
-        <li id="step-2" style="margin-bottom: 12px;"><strong>För det andra:</strong> Idén måste in i riksdagen och få majoritet, där lagarna ändras och bland annat Frihetstrappans skuldavskrivning blir lag och maskinkonstitutionen blir verklighet.</li>
-        <li id="step-3" style="margin-bottom: 12px;"><strong>För det tredje:</strong> Staten blir helt automatiserad med en produktion som fungerar som befolkningens eget fria skafferi.</li>
-        <li id="step-4"><strong>För det fjärde:</strong> Robotarna blir autonoma när de är självreplikerande, och då får jorden den del av naturens ekosystem som saknats fram till nu.</li>
-    </ol>
-</div>
-            
-            <!-- QUOTE-RUTAN -->
-            <div id="quote-box">
-                <div id="quote-text"></div>
-                <div id="dots" class="dots"></div>
-                <div class="btns">
-                    <a id="btn-x" class="b bx" href="#">Share on X</a>
-                    <a id="btn-fb" class="b bf" href="#">Facebook</a>
-                    <a id="btn-wa" class="b bw" href="#">WhatsApp</a>
-                    <a id="btn-tg" class="b bt" href="#">Telegram</a>
-                    <a id="btn-em" class="b bm" href="#">Email</a>
-                    <a id="btn-copy" class="b bc" href="#">Copy Link</a>
-                </div>
-            </div>
-
-        </main>
-    </div>
-
-    <!-- ======================================== -->
-    <!-- ALLA SKRIPT (ETT STORT BLOCK)             -->
-    <!-- ======================================== -->
-
 <script>
     // === GLOBALA VARIABLER ===
     const PAGE = "https://sites.google.com/view/worldmanifesto/";
     const MANIFESTO = "The World Manifesto";
     const COPIED = "Copied!";
 
-    // === SPRÅKHANTERING ===
+    // === SPRÅKHANTERING (ENDAST EN FÖREKOMST!) ===
     const urlParams = new URLSearchParams(window.location.search);
-    const currentLang = (urlParams.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
+    const currentLang = (urlParams.get('lang') || document.documentElement.lang || navigator.language || 'sv').split('-')[0].toLowerCase();
 
     // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
     var titlar = {
@@ -346,50 +38,50 @@
         'da': 'Frihedstrappen', 'is': 'Frelsisstiginn', 'fo': 'Frælsistrappan', 'hr': 'Stube slobode', 'sk': 'Schody slobody', 'za': 'Vryheidstrap'
     };
 
-    // === ORDBOK FÖR DE FYRA STEGEN (ENDAST EN FÖREKOMST!) ===
-const stepsTranslations = {
-    'sv': { title: 'Världsmanifestet i 4 steg', steps: ['<strong>Först:</strong> Idén (Världsmanifestet) måste bli känd.', '<strong>För det andra:</strong> Idén måste in i riksdagen och få majoritet, där lagarna ändras och bland annat Frihetstrappans skuldavskrivning blir lag och maskinkonstitutionen blir verklighet.', '<strong>För det tredje:</strong> Staten blir helt automatiserad med en produktion som fungerar som befolkningens eget fria skafferi.', '<strong>För det fjärde:</strong> Robotarna blir autonoma när de är självreplikerande, och då får jorden den del av naturens ekosystem som saknats fram till nu.'] },
-    'en': { title: 'The World Manifesto in 4 Steps', steps: ['<strong>First:</strong> The idea (The World Manifesto) must be made known.', '<strong>Second:</strong> The idea must enter the national parliament and achieve a majority, where the laws will be changed and, among other things, the debt relief of the Freedom Staircase becomes law and the machine constitution becomes reality.', '<strong>Third:</strong> The state is fully automated with a production that serves as the population\'s own free pantry.', '<strong>Fourth:</strong> The robots become autonomous once they are self-replicating, at which point Earth gains the part of nature\'s ecosystem that has been missing until now.'] },
-    'fi': { title: 'Maailmanmanifesti 4 vaiheessa', steps: ['<strong>Ensimmäinen:</strong> Idea (Maailmanmanifesti) on tehtävä tunnetuksi.', '<strong>Toinen:</strong> Idean on päästävä kansalliseen parlamenttiin ja saavutettava enemmistö, jolloin lait muuttuvat ja muun muassa Vapauden portaiden velkahelpotus tulee laiksi ja koneperustuslaki toteutuu.', '<strong>Kolmas:</strong> Valtio on täysin automatisoitu tuotannolla, joka toimii väestön omana ilmaisena ruokakomona.', '<strong>Neljäs:</strong> Roboteista tulee autonomiska, kun ne ovat itseään kopioivia, jolloin Maa saa sen osan luonnon ekosysteemistä, som har saknats fram till nu.'] },
-    'ja': { title: '世界宣言の4つのステップ', steps: ['<strong>第一:</strong> 理念（世界宣言）を広く知らしめること。', '<strong>第二:</strong> 理念が国家議会に入り過半数を得ること。これにより法律が変更され、自由の階段の債務救済が法制化され、機械憲法が実現する。', '<strong>第三:</strong> 国家は完全に自動化され、その生産は国民自身の無料の食料庫として機能する。', '<strong>第四:</strong> ロボットが自己複製するようになると自律し、地球はこれまで欠けていた自然の生態系の一部を得る。'] },
-    'zh': { title: '世界宣言四步曲', steps: ['<strong>第一步：</strong>理念（世界宣言）必须广为人知。', '<strong>第二步：</strong>理念必须进入国家议会并获得多数支持，届时法律将改变，其中自由阶梯的债务减免将成法律，机器宪法将成为现实。', '<strong>第三步：</strong>国家实现全面自动化，其生产体系如同人民自己的免费仓库。', '<strong>第四步：</strong>机器人一旦实现自我复制便会变得自主，届时地球将获得至今缺失的自然生态系统部分。'] },
-    'hi': { title: 'विश्व घोषणापत्र 4 चरणों में', steps: ['<strong>पहला:</strong> विचार (विश्व घोषणापत्र) को ज्ञात किया जाना चाहिए।', '<strong>दूसरा:</strong> विचार को राष्ट्रीय संसद में प्रवेश करना चाहिए और बहुमत प्राप्त करना चाहिए, जहाँ कानून बदले जाएंगे और अन्य बातों के साथ, स्वतंत्रता सीढ़ी का ऋण राहत कानून बन जाएगा और मशीन संविधान वास्तविकता बन जाएगा।', '<strong>तीसरा:</strong> राज्य पूरी तरह से स्वचालित है जिसका उत्पादन आबादी के अपने मुफ्त पेंट्री के रूप में कार्य करता है।', '<strong>चौथा:</strong> रोबोट एक बार स्व-प्रतिकृति बनने के बाद स्वायत्त हो जाते हैं, जिसके बाद पृथ्वी को प्रकृति के पारिस्थितिकी तंत्र का वह हिस्सा मिलता है जो अब तक गायब था।'] },
-    'es': { title: 'El Manifiesto Mundial en 4 pasos', steps: ['<strong>Primero:</strong> La idea (El Manifiesto Mundial) debe darse a conocer.', '<strong>Segundo:</strong> La idea debe entrar en el parlamento nacional y lograr una mayoría, donde las leyes cambiarán y, entre otras cosas, la condonación de la deuda de la Escalera de la Libertad se convertirá en ley y la constitución de las máquinas será una realidad.', '<strong>Tercero:</strong> El estado está totalmente automatizado con una producción que sirve como la despensa gratuita de la población.', '<strong>Cuarto:</strong> Los robots se vuelven autónomos una vez que son autorreplicantes, momento en el que la Tierra gana la parte del ecosistema de la naturaleza que ha faltado hasta ahora.'] },
-    'fr': { title: 'Le Manifeste Mondial en 4 étapes', steps: ['<strong>Premièrement :</strong> L\'idée (Le Manifeste Mondial) doit être connue.', '<strong>Deuxièmement :</strong> L\'idée doit entrer au parlement national et obtenir une majorité, où les lois seront modifiées et, entre autres, l\'effacement de la dette de l\'Escalier de la Liberté deviendra une loi et la constitution des machines deviendra une réalité.', '<strong>Troisièmement :</strong> L\'État est entièrement automatisé avec une production qui sert de garde-manger gratuit à la population.', '<strong>Quatrièmement :</strong> Les robots deviennent autonomes une fois qu\'ils sont auto-réplicateurs, moment auquel la Terre gagne la partie de l\'écosystème naturel qui manquait jusqu\'à présent.'] },
-    'de': { title: 'Das Weltmanifest in 4 Schritten', steps: ['<strong>Erstens:</strong> Die Idee (Das Weltmanifest) muss bekannt gemacht werden.', '<strong>Zweitens:</strong> Die Idee muss ins nationale Parlament einziehen und eine Mehrheit erreichen, wo die Gesetze geändert werden und unter anderem der Schuldenerlass der Freiheitstreppe Gesetz wird und die Maschinenkonstitution Realität wird.', '<strong>Drittens:</strong> Der Staat ist vollständig automatisiert mit einer Produktion, die als eigene freie Speisekammer der Bevölkerung dient.', '<strong>Viertens:</strong> Die Roboter werden autonom, sobald sie sich selbst replizieren, und die Erde erhält den Teil des natürlichen Ökosystems, der bisher gefehlt hat.'] },
-    'ar': { title: 'البيان العالمي في 4 خطوات', steps: ['<strong>أولاً:</strong> يجب نشر الفكرة (البيان العالمي).', '<strong>ثانياً:</strong> يجب أن تدخل الفكرة البرلمان الوطني وتحقق أغلبية، حيث ستُعدل القوانين، ومن بين أمور أخرى، سيصبح إعفاء ديون سلم الحرية قانونًا وسيصبح دستور الآلات واقعًا.', '<strong>ثالثاً:</strong> الدولة مؤتمتة بالكامل بإنتاج يعمل كمخزن مجاني خاص بالسكان.', '<strong>رابعاً:</strong> تصبح الروبوتات مستقلة بمجرد أن تتكاثر ذاتياً، وعندها تكسب الأرض الجزء من النظام البيئي للطبيعة الذي كان مفقوداً حتى الآن.'] },
-    'id': { title: 'Manifest Dunia dalam 4 Langkah', steps: ['<strong>Pertama:</strong> Gagasan (Manifest Dunia) harus diketahui.', '<strong>Kedua:</strong> Gagasan harus masuk parlemen nasional dan mencapai mayoritas, di mana undang-undang akan diubah dan, antara lain, penghapusan utang Tangga Kebebasan menjadi undang-undang dan konstitusi mesin menjadi kenyataan.', '<strong>Ketiga:</strong> Negara sepenuhnya otomatis dengan produksi yang berfungsi sebagai dapur gratis milik penduduk.', '<strong>Keempat:</strong> Robot menjadi otonom setelah mereka mereplikasi diri, dan saat itulah Bumi mendapatkan bagian ekosistem alam yang telah hilang sampai sekarang.'] },
-    'bn': { title: 'বিশ্ব ইশতেহার ৪টি ধাপে', steps: ['<strong>প্রথম:</strong> ধারণাটি (বিশ্ব ইশতেহার) জানানো প্রয়োজন।', '<strong>দ্বিতীয়:</strong> ধারণাটি জাতীয় সংসদে প্রবেশ করে সংখ্যাগরিষ্ঠতা অর্জন করতে হবে, যেখানে আইন পরিবর্তিত হবে এবং অন্যান্য বিষয়ের মধ্যে, স্বাধীনতার সিঁড়ির ঋণ ত্রাণ আইন হয়ে যাবে এবং মেশিন সংবিধান বাস্তবে পরিণত হবে।', '<strong>তৃতীয়:</strong> রাষ্ট্র সম্পূর্ণ স্বয়ংক্রিয় এবং এর উৎপাদন জনসংখ্যার নিজস্ব বিনামূল্যের প্যান্ট্রি হিসেবে কাজ করে।', '<strong>চতুর্থ:</strong> রোবটগুলি একবার স্ব-প্রতিলিপি হয়ে গেলে স্বায়ত্তশাসিত হয়ে ওঠে, এবং তখন পৃথিবী প্রকৃতির বাস্তুতন্ত্রের সেই অংশটি লাভ করে যা এ পর্যন্ত অনুপস্থিত ছিল।'] },
-    'pt': { title: 'O Manifesto Mundial em 4 Passos', steps: ['<strong>Primeiro:</strong> A ideia (O Manifesto Mundial) deve ser divulgada.', '<strong>Segundo:</strong> A ideia deve entrar no parlamento nacional e obter maioria, onde as leis serão alteradas e, entre outras coisas, o perdão da dívida da Escada da Liberdade se tornará lei e a constituição das máquinas se tornará realidade.', '<strong>Terceiro:</strong> O estado é totalmente automatizado com uma produção que serve como a despensa gratuita da população.', '<strong>Quarto:</strong> Os robôs tornam-se autónomos uma vez que são autorreplicantes, momento em que a Terra ganha a parte do ecossistema da natureza que faltava até agora.'] },
-    'ru': { title: 'Всемирный манифест в 4 шагах', steps: ['<strong>Первый:</strong> Идея (Всемирный манифест) должна быть обнародована.', '<strong>Второй:</strong> Идея должна войти в национальный парламент и получить большинство, где будут изменены законы и, среди прочего, списание долга Лестницы Свободы станет законом, а Машинная конституция станет реальностью.', '<strong>Третий:</strong> Государство полностью автоматизировано с производством, которое служит собственной бесплатной кладовой населения.', '<strong>Четвертый:</strong> Роботы становятся автономными после того, как начинают самовоспроизводиться, и Земля обретает ту часть природной экосистемы, которой не хватало до сих пор.'] },
-    'uk': { title: 'Всесвітній маніфест у 4 кроках', steps: ['<strong>Перший:</strong> Ідею (Всесвітній маніфест) необхідно поширити.', '<strong>Другий:</strong> Ідея має увійти до національного парламенту та отримати більшість, де буде змінено закони, зокрема списання боргів Сходів Свободи стане законом, а Машинна конституція стане реальністю.', '<strong>Третій:</strong> Держава повністю автоматизована з виробництвом, яке служить власною безкоштовною коморою населення.', '<strong>Четвертий:</strong> Роботи стають автономними після того, як вони стають самовідтворюваними, і Земля отримує ту частину природної екосистеми, якої бракувало до цього часу.'] },
-    'bg': { title: 'Световният манифест в 4 стъпки', steps: ['<strong>Първо:</strong> Идеята (Световният манифест) трябва да стане известна.', '<strong>Второ:</strong> Идеята трябва да влезе в националния парламент и да постигне мнозинство, където законите ще бъдат променени и, наред с други неща, опрощаването на дълга на Стълбата на свободата ще стане закон и машинната конституция ще стане реалност.', '<strong>Трето:</strong> Държавата е напълно автоматизирана с производство, което служи като собствена безплатна килерче на населението.', '<strong>Четвърто:</strong> Роботите стават автономни, след като се самовъзпроизвеждат, и тогава Земята получава частта от природната екосистема, която е липсвала до сега.'] },
-    'ur': { title: 'عالمی منشور 4 مراحل میں', steps: ['<strong>پہلا:</strong> نظریہ (عالمی منشور) کو معلوم ہونا چاہیے۔', '<strong>دوسرا:</strong> نظریہ کو قومی پارلیمنٹ میں داخل ہو کر اکثریت حاصل کرنی چاہیے، جہاں قوانین بدل جائیں گے اور دیگر باتوں کے ساتھ، آزادی کی سیڑھی کا قرض رہائی قانون بن جائے گا اور مشین آئین حقیقت بن جائے گا۔', '<strong>تیسرا:</strong> ریاست مکمل طور پر خودکار ہے جس کی پیداوار آبادی کے اپنے مفت پینٹری کے طور پر کام کرتی ہے۔', '<strong>چوتھا:</strong> روبوٹ ایک بار خود نقل کرنے کے بعد خود مختار ہو جاتے ہیں، اور تب زمین کو فطرت کے ماحولیاتی نظام کا وہ حصہ ملتا ہے جو اب تک غائب تھا۔'] },
-    'ko': { title: '세계 선언문 4단계', steps: ['<strong>첫째:</strong> 아이디어(세계 선언문)가 알려져야 합니다.', '<strong>둘째:</strong> 아이디어가 국회에 들어가 다수를 확보해야 하며, 그곳에서 법률이 변경되고 자유의 계단의 부채 탕감이 법이 되고 기계 헌법이 현실이 됩니다.', '<strong>셋째:</strong> 국가는 완전히 자동화되며, 그 생산은 인구의 자유로운 식료품 저장실 역할을 합니다.', '<strong>넷째:</strong> 로봇이 자가 복제를 시작하면 자율적으로 변하며, 그때 지구는 지금까지 빠져 있었던 자연 생태계의 일부를 얻게 됩니다.'] },
-    'th': { title: 'แถลงการณ์โลกใน 4 ขั้นตอน', steps: ['<strong>ประการแรก:</strong> ต้องเผยแพร่แนวคิด (แถลงการณ์โลก) ให้เป็นที่รู้จัก', '<strong>ประการที่สอง:</strong> แนวคิดต้องเข้าสู่รัฐสภาแห่งชาติและได้รับเสียงข้างมาก ซึ่งกฎหมายจะเปลี่ยนแปลง และเหนือสิ่งอื่นใด การปลดหนี้ของบันไดเสรีภาพจะกลายเป็นกฎหมาย และรัฐธรรมนูญเครื่องจักรจะกลายเป็นความจริง', '<strong>ประการที่สาม:</strong> รัฐเป็นแบบอัตโนมัติเต็มรูปแบบด้วยการผลิตที่ทำหน้าที่เป็นตู้กับข้าวฟรีของประชากร', '<strong>ประการที่สี่:</strong> หุ่นยนต์จะกลายเป็นอิสระเมื่อพวกมันสามารถจำลองตัวเองได้ และในขณะนั้นโลกจะได้รับส่วนของระบบนิเวศทางธรรมชาติที่ขาดหายไปจนถึงขณะนี้'] },
-    'vi': { title: 'Tuyên ngôn Thế giới trong 4 bước', steps: ['<strong>Đầu tiên:</strong> Ý tưởng (Tuyên ngôn Thế giới) phải được biết đến.', '<strong>Thứ hai:</strong> Ý tưởng phải vào quốc hội quốc gia và đạt được đa số, nơi luật pháp sẽ được thay đổi và trong số những thứ khác, việc xóa nợ của Cầu thang Tự do trở thành luật và hiến pháp máy móc trở thành hiện thực.', '<strong>Thứ ba:</strong> Nhà nước được tự động hóa hoàn toàn với sản xuất phục vụ như là kho lương thực miễn phí của người dân.', '<strong>Thứ tư:</strong> Các robot trở nên tự chủ khi chúng tự tái tạo, và lúc đó Trái đất có được phần của hệ sinh thái tự nhiên đã thiếu cho đến nay.'] },
-    'tr': { title: 'Dünya Manifestosu 4 Adımda', steps: ['<strong>Birinci:</strong> Fikir (Dünya Manifestosu) tanıtılmalıdır.', '<strong>İkinci:</strong> Fikir ulusal parlamentoya girmeli ve çoğunluğu sağlamalı; burada yasalar değişecek ve diğer şeylerin yanı sıra, Özgürlük Merdiveni'nin borç ertelemesi yasalaşacak ve makine anayasası gerçek olacaktır.', '<strong>Üçüncü:</strong> Devlet tamamen otomatiktir ve üretim, nüfusun kendi ücretsiz kileri olarak hizmet eder.', '<strong>Dördüncü:</strong> Robotlar kendilerini kopyaladıklarında özerk hale gelirler ve o zaman Dünya, şimdiye kadar eksik olan doğal ekosistemin parçasını kazanır.'] },
-    'fa': { title: 'مانیفست جهانی در ۴ مرحله', steps: ['<strong>اول:</strong> باید ایده (مانیفست جهانی) شناخته شود.', '<strong>دوم:</strong> ایده باید وارد پارلمان ملی شود و اکثریت را به دست آورد، جایی که قوانین تغییر خواهند کرد و از جمله، بخشودگی بدهی پلکان آزادی به قانون تبدیل خواهد شد و قانون اساسی ماشین به واقعیت خواهد پیوست.', '<strong>سوم:</strong> دولت کاملاً خودکار است با تولیدی که به عنوان شربتخانه رایگان خود مردم عمل می‌کند.', '<strong>چهارم:</strong> ربات‌ها به محض اینکه خودتکثیر شوند خودمختار می‌شوند و در آن نقطه زمین بخشی از اکوسیستم طبیعت را که تاکنون وجود نداشته به دست می‌آورد.'] },
-    'sw': { title: 'Ilani ya Dunia katika Hatua 4', steps: ['<strong>Kwanza:</strong> Wazo (Ilani ya Dunia) lazima lijulikane.', '<strong>Pili:</strong> Wazo lazima liingie bunge la kitaifa na kupata wengi, ambapo sheria zitabadilishwa na, kati ya mambo mengine, msamaha wa deni la Ngazi ya Uhuru utakuwa sheria na katiba ya mashine itakuwa ukweli.', '<strong>Tatu:</strong> Serikali imekamilika kiotomatiki na uzalishaji ambao hutumika kama pantry ya bure ya idadi ya watu.', '<strong>Nne:</strong> Roboti huwa huru mara tu zinajizalisha, na wakati huo Dunia hupata sehemu ya mfumo wa ikolojia wa asili ambayo haijakuwepo hadi sasa.'] },
-    'it': { title: 'Il Manifesto Mondiale in 4 passi', steps: ['<strong>Primo:</strong> L\'idea (Il Manifesto Mondiale) deve essere diffusa.', '<strong>Secondo:</strong> L\'idea deve entrare nel parlamento nazionale e ottenere la maggioranza, dove le leggi saranno modificate e, tra le altre cose, la remissione del debito della Scala della Libertà diventerà legge e la costituzione delle macchine diventerà realtà.', '<strong>Terzo:</strong> Lo Stato è completamente automatizzato con una produzione che funge da dispensa gratuita della popolazione.', '<strong>Quarto:</strong> I robot diventano autonomi quando sono auto-replicanti, e in quel momento la Terra ottiene la parte dell\'ecosistema naturale che è mancata fino ad ora.'] },
-    'pl': { title: 'Manifest Światowy w 4 krokach', steps: ['<strong>Po pierwsze:</strong> Idea (Manifest Światowy) musi być znana.', '<strong>Po drugie:</strong> Idea musi wejść do parlamentu narodowego i osiągnąć większość, gdzie prawa zostaną zmienione, a między innymi umorzenie długu Schodów Wolności stanie się prawem, a konstytucja maszyn stanie się rzeczywistością.', '<strong>Po trzecie:</strong> Państwo jest w pełni zautomatyzowane z produkcją, która służy jako własna darmowa spiżarnia ludności.', '<strong>Po czwarte:</strong> Roboty stają się autonomiczne, gdy się samoreplikują, a wtedy Ziemia zyskuje część ekosystemu natury, której brakowało до tej pory.'] },
-    'nl': { title: 'Het Wereldmanifest in 4 stappen', steps: ['<strong>Eerste:</strong> Het idee (Het Wereldmanifest) moet bekend worden gemaakt.', '<strong>Tweede:</strong> Het idee moet het nationale parlement binnenkomen en een meerderheid behalen, waar de wetten zullen worden gewijzigd en onder meer de schuldverlichting van de Vrijheidstrap wet wordt en de machinegrondwet realiteit wordt.', '<strong>Derde:</strong> De staat is volledig geautomatiseerd met een productie die dient als de eigen gratis voorraadkast van de bevolking.', '<strong>Vierde:</strong> De robots worden autonoom zodra ze zelf-replicerend zijn, en dan krijgt de aarde het deel van het natuurlijke ecosysteem dat tot nu toe ontbrak.'] },
-    'ro': { title: 'Manifestul Mondial în 4 pași', steps: ['<strong>Primul:</strong> Ideea (Manifestul Mondial) trebuie făcută cunoscută.', '<strong>Al doilea:</strong> Ideea trebuie să intre în parlamentul național și să obțină majoritate, unde legile vor fi schimbate și, printre altele, iertarea datoriei Scării Libertății va deveni lege și constituția mașinilor va deveni realitate.', '<strong>Al treilea:</strong> Statul este complet automatizat cu o producție care servește drept cămara gratuită proprie a populației.', '<strong>Al patrulea:</strong> Roboții devin autonomi odată ce se auto-replică, iar Pământul primește partea din ecosistemul natural care a lipsit până acum.'] },
-    'el': { title: 'Το Παγκόσμιο Μανιφέστο σε 4 Βήματα', steps: ['<strong>Πρώτο:</strong> Η ιδέα (Το Παγκόσμιο Μανιφέστο) πρέπει να γίνει γνωστή.', '<strong>Δεύτερο:</strong> Η ιδέα πρέπει να εισέλθει στο εθνικό κοινοβούλιο και να επιτύχει πλειοψηφία, όπου οι νόμοι θα αλλάξουν και, μεταξύ άλλων, η διαγραφή χρέους της Σκάλας της Ελευθερίας θα γίνει νόμος και το σύνταγμα των μηχανών θα γίνει πραγματικότητα.', '<strong>Τρίτο:</strong> Το κράτος είναι πλήρως αυτοματοποιημένο με μια παραγωγή που εξυπηρετεί ως το δικό του δωρεάν ντουλάπι τροφίμων του πληθυσμού.', '<strong>Τέταρτο:</strong> Τα ρομπότ γίνονται αυτόνομα μόλις αναπαράγονται, και τότε η Γη κερδίζει το μέρος του φυσικού οικοσυστήματος που έλειπε μέχρι τώρα.'] },
-    'af': { title: 'Die Wêreldmanifest in 4 Stappe', steps: ['<strong>Eerste:</strong> Die idee (Die Wêreldmanifest) moet bekend gemaak word.', '<strong>Tweede:</strong> Die idee moet die nasionale parlement binnegaan en 'n meerderheid behaal, waar die wette verander sal word en onder meer die skuldkwytskelding van die Vryheidstrap 'n wet sal word en die masjienkonstitusie 'n werklikheid sal word.', '<strong>Derde:</strong> Die staat is ten volle geoutomatiseer met 'n produksie wat as die bevolking se eie gratis spens dien.', '<strong>Vierde:</strong> Die robotte word outonoom sodra hulle selfrepliserend is, en dan kry die Aarde die deel van die natuurlike ekosisteem wat tot nou toe ontbreek het.'] },
-    'zu': { title: 'IManifesto Yomhlaba ngezigaba ezi-4', steps: ['<strong>Okokuqala:</strong> Umqondo (IManifesto Yomhlaba) kufanele waziswe.', '<strong>Okwesibili:</strong> Umqondo kufanele ungene ephalamende likazwelonke futhi uthole iningi, lapho imithetho izoshintshwa khona futhi, phakathi kokunye, ukukhululwa kwesikweletu seZitebhisi Zenkululeko kuzoba umthetho futhi umthethosisekelo womshini ube yiqiniso.', '<strong>Okwesithathu:</strong> Umbuso ugcwaliswe ngokuzenzakalela ngokukhiqiza okusebenza njengendawo yokugcina yamahhala yabantu.', '<strong>Okwesine:</strong> Amarobhothi aba ngabazimele lapho esezizalela, futhi ngaleso sikhathi uMhlaba uthola ingxenye yemvelo yemvelo ebikade ingekho kuze kube manje.'] },
-    'xh': { title: 'IManifesto Yehlabathi ngezigaba ezi-4', steps: ['<strong>Okokuqala:</strong> Ingcamango (IManifesto Yehlabathi) kufuneka yaziswe.', '<strong>Okwesibini:</strong> Ingcamango kufuneka ingene ephalamende yesizwe kwaye ifumane isininzi, apho imithetho iya kutshintshwa khona kwaye, phakathi kwezinye izinto, ukukhululwa kwetyala leZinyuko Zenkululeko kuya kuba ngumthetho kwaye umgaqo-siseko womshini ube yinyaniso.', '<strong>Okwesithathu:</strong> Urhulumente uguqulwe ngokupheleleyo ngemveliso esebenza njengepantry yamahhala yabemi.', '<strong>Okwesine:</strong> Iirobhothi ziba zizimeleyo xa ziziphinda-phinda, kwaye ngelo xesha uMhlaba ufumana inxalenye yendalo ebilapho ingekho de kube ngoku.'] },
-    'cs': { title: 'Světový manifest ve 4 krocích', steps: ['<strong>Za prvé:</strong> Myšlenka (Světový manifest) musí být zveřejněna.', '<strong>Za druhé:</strong> Myšlenka musí vstoupit do národního parlamentu a získat většinu, kde se změní zákony a mimo jiné se oddlužení Schodů svobody stane zákonem a ústava strojů se stane skutečností.', '<strong>Za třetí:</strong> Stát je plně automatizován s výrobou, která slouží jako vlastní bezplatná spíž obyvatelstva.', '<strong>Za čtvrté:</strong> Roboti se stanou autonomními, jakmile se sami replikují, a tehdy Země získá část přírodního ekosystému, která dosud chyběla.'] },
-    'hu': { title: 'A Világkiáltvány 4 lépésben', steps: ['<strong>Először:</strong> Az ötletet (A Világkiáltványt) meg kell ismertetni.', '<strong>Másodszor:</strong> Az ötletnek be kell jutnia a nemzeti parlamentbe és többséget kell szereznie, ahol a törvények megváltoznak, és többek között a Szabadság Lépcsői adósságának elengedése törvénnyé válik, a gépi alkotmány pedig valósággá.', '<strong>Harmadszor:</strong> Az állam teljesen automatizált, olyan termeléssel, amely a lakosság saját ingyenes éléskamrájaként szolgál.', '<strong>Negyedszer:</strong> A robotok autonómmá válnak, amint önmagukat reprodukálják, és ekkor a Föld megkapja a természetes ökoszisztémának azt a részét, amely eddig hiányzott.'] },
-    'he': { title: 'המניפסט העולמי ב-4 שלבים', steps: ['<strong>ראשית:</strong> יש להפיץ את הרעיון (המניפסט העולמי).', '<strong>שנית:</strong> הרעיון חייב להיכנס לפרלמנט הלאומי ולהשיג רוב, שם החוקים ישתנו ובין היתר, ביטול החוב של מדרגות החירות יהפוך לחוק והחוקה של המכונות תהפוך למציאות.', '<strong>שלישית:</strong> המדינה אוטומטית לחלוטין עם ייצור שמשמש כמזווה החינמי של האוכלוסייה.', '<strong>רביעית:</strong> הרובוטים הופכים לאוטונומיים ברגע שהם משכפלים את עצמם, ואז כדור הארץ זוכה בחלק מהמערכת האקולוגית של הטבע שחסר עד כה.'] },
-    'crs': { title: 'Manifest lemonn an 4 letap', steps: ['<strong>Premie:</strong> Lide (Manifest lemonn) i devet ganny konnet.', '<strong>Deziem:</strong> Lide i devet rantre dan parlament nasional e ganny majorite, kot bann lalwa pou ganny sanze e, parmi lezot, lefasiyman det Leskal Libète pou vin en lalwa e konstitisyon masin pou vin en realite.', '<strong>Troisiem:</strong> Leta i totalman automatize avek en prodiksyon ki servi konman gadman griy gratis popilasyon.', '<strong>Katriem:</strong> Bann robo i devin otonom ler zot ganny re-prodir zot-mem, e sa moman-la Latè i ganny sa parti dan lekosistem lanatir ki ti manke ziska koumenya.'] },
-    'no': { title: 'Verdensmanifestet i 4 steg', steps: ['<strong>For det første:</strong> Ideen (Verdensmanifestet) må bli kjent.', '<strong>For det andre:</strong> Ideen må inn i nasjonalforsamlingen og oppnå flertall, hvor lovene vil bli endret og blant annet gjeldslettelsen i Frihetstrappen blir lov og maskinkonstitusjonen blir virkelighet.', '<strong>For det tredje:</strong> Staten er fullautomatisert med en produksjon som fungerer som befolkningens eget frie spiskammers.', '<strong>For det fjerde:</strong> Robotene blir autonome når de er selvrepellerende, og da får Jorden den delen av naturens økosystem som har manglet frem til nå.'] },
-    'se': { title: 'Máilmmi Manifesta 4 geasis', steps: ['<strong>Vuosttaš:</strong> Áigumuš (Máilmmi Manifesta) galgá oidnujuvvot.', '<strong>Nubbi:</strong> Áigumuš galgá boahtit riikkabeaivvádahkii ja oažžut eanetlogu, gos lágaid rievdaduvvojit ja eará sajis, Frihetstrappa skuldaguorrun šaddá láhkan ja mašiidnaconstitušuvdna šaddá duohtavuohtan.', '<strong>Goalmmát:</strong> Riika lea dievaslaččat automatiseruvvon prodykšuvnnain mii bálvala olbmot iežaset friddja visttiin.', '<strong>Njealját:</strong> Robotat šaddet autonomalaččat go sii leat iežaseaddje, ja dalle Eana oažžu dan oasi luonddu ekosystemas mii lea vajálduvvon gitta dál.'] },
-    'fit': { title: 'Mailmanmanifesti 4 vaiheessa', steps: ['<strong>Ensimmäinen:</strong> Idee (Mailmanmanifesti) täytyy tehdä tunnetuksi.', '<strong>Toinen:</strong> Idee täytyy saada kansalliseen parlamenttiin ja enemmistö, jossa lait muuttuvat ja muun muassa Vapauden portaiden velkahelpotus tulee laiksi ja koneperustuslaki toteutuu.', '<strong>Kolmas:</strong> Valtio on täysin automatisoitu tuotannolla, joka toimii väestön omana ilmaisena ruokakomona.', '<strong>Neljäs:</strong> Roboteista tulee autonomiska, kun ne ovat itseään kopioivia, ja silloin Maa saa sen osan luonnon ekosysteemistä, joka on puuttunut tähän asti.'] },
-    'da': { title: 'Verdensmanifestet i 4 trin', steps: ['<strong>For det første:</strong> Ideen (Verdensmanifestet) skal gøres kendt.', '<strong>For det andet:</strong> Ideen skal ind i det nationale parlament og opnå et flertal, hvor lovene vil blive ændret og blandt andet gældslettelsen i Frihedstrappen bliver lov og maskinkonstitutionen bliver virkelighed.', '<strong>For det tredje:</strong> Staten er fuldt automatiseret med en produktion, der tjener som befolkningens egen gratis spisekammer.', '<strong>For det fjerde:</strong> Roboterne bliver autonome, når de er selv-replikerende, og på det tidspunkt får Jorden den del af naturens økosystem, der har manglet indtil nu.'] },
-    'is': { title: 'Heimsmanifestið í 4 skrefum', steps: ['<strong>Fyrst:</strong> Hugmyndin (Heimsmanifestið) verður að koma fram.', '<strong>Í öðru lagi:</strong> Hugmyndin verður að komast inn á þjóðþingið og ná meirihluta, þar sem lögin verða breytt og meðal annars skuldaniðurfelling Frelsisstigans verður að lögum og vélstjórnarskráin verður að veruleika.', '<strong>Í þriðja lagi:</strong> Ríkið er að fullu sjálfvirkt með framleiðslu sem þjónar sem eigin ókeypis búr íbúanna.', '<strong>Í fjórða lagi:</strong> Vélmennin verða sjálfstæð þegar þau eru sjálfafritandi, og þá fær jörðin þann hluta af náttúrulegu vistkerfi sem hefur vantað fram að þessu.'] },
-    'fo': { title: 'Heimsskráin í 4 stigum', steps: ['<strong>Fyrst:</strong> Hugtakið (Heimsskráin) má gerast kent.', '<strong>Annað:</strong> Hugtakið má koma inn í tjóðartingið og fá meirilutal, har lógini verða broytt og millum annað skuldarfríðingin í Frælsistrappan verður lóg og maskinkonstitusjónin verður veruleiki.', '<strong>Triða:</strong> Stato er fullkomið automatiserað við framleiðslu, sum tænir sum fólksins egið ókeypis skápi.', '<strong>Fjórða:</strong> Robotarnir verða sjálvstøðugir, tá ið teir eru sjálvreplikerandi, og tá fær Jørðin tann partin av náttúrunnar økosystemi, sum hevur manglað til nú.'] }
-};
+    // === ORDBOK FÖR DE FYRA STEGEN (KOMPLETT) ===
+    const stepsTranslations = {
+        'sv': { title: 'Världsmanifestet i 4 steg', steps: ['<strong>Först:</strong> Idén (Världsmanifestet) måste bli känd.', '<strong>För det andra:</strong> Idén måste in i riksdagen och få majoritet, där lagarna ändras och bland annat Frihetstrappans skuldavskrivning blir lag och maskinkonstitutionen blir verklighet.', '<strong>För det tredje:</strong> Staten blir helt automatiserad med en produktion som fungerar som befolkningens eget fria skafferi.', '<strong>För det fjärde:</strong> Robotarna blir autonoma när de är självreplikerande, och då får jorden den del av naturens ekosystem som saknats fram till nu.'] },
+        'en': { title: 'The World Manifesto in 4 Steps', steps: ['<strong>First:</strong> The idea (The World Manifesto) must be made known.', '<strong>Second:</strong> The idea must enter the national parliament and achieve a majority, where the laws will be changed and, among other things, the debt relief of the Freedom Staircase becomes law and the machine constitution becomes reality.', '<strong>Third:</strong> The state is fully automated with a production that serves as the population\'s own free pantry.', '<strong>Fourth:</strong> The robots become autonomous once they are self-replicating, at which point Earth gains the part of nature\'s ecosystem that has been missing until now.'] },
+        'fi': { title: 'Maailmanmanifesti 4 vaiheessa', steps: ['<strong>Ensimmäinen:</strong> Idea (Maailmanmanifesti) on tehtävä tunnetuksi.', '<strong>Toinen:</strong> Idean on päästävä kansalliseen parlamenttiin ja saavutettava enemmistö, jolloin lait muuttuvat ja muun muassa Vapauden portaiden velkahelpotus tulee laiksi ja koneperustuslaki toteutuu.', '<strong>Kolmas:</strong> Valtio on täysin automatisoitu tuotannolla, joka toimii väestön omana ilmaisena ruokakomona.', '<strong>Neljäs:</strong> Roboteista tulee autonomiska, kun ne ovat itseään kopioivia, jolloin Maa saa sen osan luonnon ekosysteemistä, som har saknats fram till nu.'] },
+        'ja': { title: '世界宣言の4つのステップ', steps: ['<strong>第一:</strong> 理念（世界宣言）を広く知らしめること。', '<strong>第二:</strong> 理念が国家議会に入り過半数を得ること。これにより法律が変更され、自由の階段の債務救済が法制化され、機械憲法が実現する。', '<strong>第三:</strong> 国家は完全に自動化され、その生産は国民自身の無料の食料庫として機能する。', '<strong>第四:</strong> ロボットが自己複製するようになると自律し、地球はこれまで欠けていた自然の生態系の一部を得る。'] },
+        'zh': { title: '世界宣言四步曲', steps: ['<strong>第一步：</strong>理念（世界宣言）必须广为人知。', '<strong>第二步：</strong>理念必须进入国家议会并获得多数支持，届时法律将改变，其中自由阶梯的债务减免将成法律，机器宪法将成为现实。', '<strong>第三步：</strong>国家实现全面自动化，其生产体系如同人民自己的免费仓库。', '<strong>第四步：</strong>机器人一旦实现自我复制便会变得自主，届时地球将获得至今缺失的自然生态系统部分。'] },
+        'hi': { title: 'विश्व घोषणापत्र 4 चरणों में', steps: ['<strong>पहला:</strong> विचार (विश्व घोषणापत्र) को ज्ञात किया जाना चाहिए।', '<strong>दूसरा:</strong> विचार को राष्ट्रीय संसद में प्रवेश करना चाहिए और बहुमत प्राप्त करना चाहिए, जहाँ कानून बदले जाएंगे और अन्य बातों के साथ, स्वतंत्रता सीढ़ी का ऋण राहत कानून बन जाएगा और मशीन संविधान वास्तविकता बन जाएगा।', '<strong>तीसरा:</strong> राज्य पूरी तरह से स्वचालित है जिसका उत्पादन आबादी के अपने मुफ्त पेंट्री के रूप में कार्य करता है।', '<strong>चौथा:</strong> रोबोट एक बार स्व-प्रतिकृति बनने के बाद स्वायत्त हो जाते हैं, जिसके बाद पृथ्वी को प्रकृति के पारिस्थितिकी तंत्र का वह हिस्सा मिलता है जो अब तक गायब था।'] },
+        'es': { title: 'El Manifiesto Mundial en 4 pasos', steps: ['<strong>Primero:</strong> La idea (El Manifiesto Mundial) debe darse a conocer.', '<strong>Segundo:</strong> La idea debe entrar en el parlamento nacional y lograr una mayoría, donde las leyes cambiarán y, entre otras cosas, la condonación de la deuda de la Escalera de la Libertad se convertirá en ley y la constitución de las máquinas será una realidad.', '<strong>Tercero:</strong> El estado está totalmente automatizado con una producción que sirve como la despensa gratuita de la población.', '<strong>Cuarto:</strong> Los robots se vuelven autónomos una vez que son autorreplicantes, momento en el que la Tierra gana la parte del ecosistema de la naturaleza que ha faltado hasta ahora.'] },
+        'fr': { title: 'Le Manifeste Mondial en 4 étapes', steps: ['<strong>Premièrement :</strong> L\'idée (Le Manifeste Mondial) doit être connue.', '<strong>Deuxièmement :</strong> L\'idée doit entrer au parlement national et obtenir une majorité, où les lois seront modifiées et, entre autres, l\'effacement de la dette de l\'Escalier de la Liberté deviendra une loi et la constitution des machines deviendra une réalité.', '<strong>Troisièmement :</strong> L\'État est entièrement automatisé avec une production qui sert de garde-manger gratuit à la population.', '<strong>Quatrièmement :</strong> Les robots deviennent autonomes une fois qu\'ils sont auto-réplicateurs, moment auquel la Terre gagne la partie de l\'écosystème naturel qui manquait jusqu\'à présent.'] },
+        'de': { title: 'Das Weltmanifest in 4 Schritten', steps: ['<strong>Erstens:</strong> Die Idee (Das Weltmanifest) muss bekannt gemacht werden.', '<strong>Zweitens:</strong> Die Idee muss ins nationale Parlament einziehen und eine Mehrheit erreichen, wo die Gesetze geändert werden und unter anderem der Schuldenerlass der Freiheitstreppe Gesetz wird und die Maschinenkonstitution Realität wird.', '<strong>Drittens:</strong> Der Staat ist vollständig automatisiert mit einer Produktion, die als eigene freie Speisekammer der Bevölkerung dient.', '<strong>Viertens:</strong> Die Roboter werden autonom, sobald sie sich selbst replizieren, und die Erde erhält den Teil des natürlichen Ökosystems, der bisher gefehlt hat.'] },
+        'ar': { title: 'البيان العالمي في 4 خطوات', steps: ['<strong>أولاً:</strong> يجب نشر الفكرة (البيان العالمي).', '<strong>ثانياً:</strong> يجب أن تدخل الفكرة البرلمان الوطني وتحقق أغلبية، حيث ستُعدل القوانين، ومن بين أمور أخرى، سيصبح إعفاء ديون سلم الحرية قانونًا وسيصبح دستور الآلات واقعًا.', '<strong>ثالثاً:</strong> الدولة مؤتمتة بالكامل بإنتاج يعمل كمخزن مجاني خاص بالسكان.', '<strong>رابعاً:</strong> تصبح الروبوتات مستقلة بمجرد أن تتكاثر ذاتياً، وعندها تكسب الأرض الجزء من النظام البيئي للطبيعة الذي كان مفقوداً حتى الآن.'] },
+        'id': { title: 'Manifest Dunia dalam 4 Langkah', steps: ['<strong>Pertama:</strong> Gagasan (Manifest Dunia) harus diketahui.', '<strong>Kedua:</strong> Gagasan harus masuk parlemen nasional dan mencapai mayoritas, di mana undang-undang akan diubah dan, antara lain, penghapusan utang Tangga Kebebasan menjadi undang-undang dan konstitusi mesin menjadi kenyataan.', '<strong>Ketiga:</strong> Negara sepenuhnya otomatis dengan produksi yang berfungsi sebagai dapur gratis milik penduduk.', '<strong>Keempat:</strong> Robot menjadi otonom setelah mereka mereplikasi diri, dan saat itulah Bumi mendapatkan bagian ekosistem alam yang telah hilang sampai sekarang.'] },
+        'bn': { title: 'বিশ্ব ইশতেহার ৪টি ধাপে', steps: ['<strong>প্রথম:</strong> ধারণাটি (বিশ্ব ইশতেহার) জানানো প্রয়োজন।', '<strong>দ্বিতীয়:</strong> ধারণাটি জাতীয় সংসদে প্রবেশ করে সংখ্যাগরিষ্ঠতা অর্জন করতে হবে, যেখানে আইন পরিবর্তিত হবে এবং অন্যান্য বিষয়ের মধ্যে, স্বাধীনতার সিঁড়ির ঋণ ত্রাণ আইন হয়ে যাবে এবং মেশিন সংবিধান বাস্তবে পরিণত হবে।', '<strong>তৃতীয়:</strong> রাষ্ট্র সম্পূর্ণ স্বয়ংক্রিয় এবং এর উৎপাদন জনসংখ্যার নিজস্ব বিনামূল্যের প্যান্ট্রি হিসেবে কাজ করে।', '<strong>চতুর্থ:</strong> রোবটগুলি একবার স্ব-প্রতিলিপি হয়ে গেলে স্বায়ত্তশাসিত হয়ে ওঠে, এবং তখন পৃথিবী প্রকৃতির বাস্তুতন্ত্রের সেই অংশটি লাভ করে যা এ পর্যন্ত অনুপস্থিত ছিল।'] },
+        'pt': { title: 'O Manifesto Mundial em 4 Passos', steps: ['<strong>Primeiro:</strong> A ideia (O Manifesto Mundial) deve ser divulgada.', '<strong>Segundo:</strong> A ideia deve entrar no parlamento nacional e obter maioria, onde as leis serão alteradas e, entre outras coisas, o perdão da dívida da Escada da Liberdade se tornará lei e a constituição das máquinas se tornará realidade.', '<strong>Terceiro:</strong> O estado é totalmente automatizado com uma produção que serve como a despensa gratuita da população.', '<strong>Quarto:</strong> Os robôs tornam-se autónomos uma vez que são autorreplicantes, momento em que a Terra ganha a parte do ecossistema da natureza que faltava até agora.'] },
+        'ru': { title: 'Всемирный манифест в 4 шагах', steps: ['<strong>Первый:</strong> Идея (Всемирный манифест) должна быть обнародована.', '<strong>Второй:</strong> Идея должна войти в национальный парламент и получить большинство, где будут изменены законы и, среди прочего, списание долга Лестницы Свободы станет законом, а Машинная конституция станет реальностью.', '<strong>Третий:</strong> Государство полностью автоматизировано с производством, которое служит собственной бесплатной кладовой населения.', '<strong>Четвертый:</strong> Роботы становятся автономными после того, как начинают самовоспроизводиться, и Земля обретает ту часть природной экосистемы, которой не хватало до сих пор.'] },
+        'uk': { title: 'Всесвітній маніфест у 4 кроках', steps: ['<strong>Перший:</strong> Ідею (Всесвітній маніфест) необхідно поширити.', '<strong>Другий:</strong> Ідея має увійти до національного парламенту та отримати більшість, де буде змінено закони, зокрема списання боргів Сходів Свободи стане законом, а Машинна конституція стане реальністю.', '<strong>Третій:</strong> Держава повністю автоматизована з виробництвом, яке служить власною безкоштовною коморою населення.', '<strong>Четвертий:</strong> Роботи стають автономними після того, як вони стають самовідтворюваними, і Земля отримує ту частину природної екосистеми, якої бракувало до цього часу.'] },
+        'bg': { title: 'Световният манифест в 4 стъпки', steps: ['<strong>Първо:</strong> Идеята (Световният манифест) трябва да стане известна.', '<strong>Второ:</strong> Идеята трябва да влезе в националния парламент и да постигне мнозинство, където законите ще бъдат променени и, наред с други неща, опрощаването на дълга на Стълбата на свободата ще стане закон и машинната конституция ще стане реалност.', '<strong>Трето:</strong> Държавата е напълно автоматизирана с производство, което служи като собствена безплатна килерче на населението.', '<strong>Четвърто:</strong> Роботите стават автономни, след като се самовъзпроизвеждат, и тогава Земята получава частта от природната екосистема, която е липсвала до сега.'] },
+        'ur': { title: 'عالمی منشور 4 مراحل میں', steps: ['<strong>پہلا:</strong> نظریہ (عالمی منشور) کو معلوم ہونا چاہیے۔', '<strong>دوسرا:</strong> نظریہ کو قومی پارلیمنٹ میں داخل ہو کر اکثریت حاصل کرنی چاہیے، جہاں قوانین بدل جائیں گے اور دیگر باتوں کے ساتھ، آزادی کی سیڑھی کا قرض رہائی قانون بن جائے گا اور مشین آئین حقیقت بن جائے گا۔', '<strong>تیسرا:</strong> ریاست مکمل طور پر خودکار ہے جس کی پیداوار آبادی کے اپnے مفت پینٹری کے طور پر کام کرتی ہے۔', '<strong>چوتھا:</strong> روبوٹ ایک بار خود نقل کرنے کے بعد خود مختار ہو جاتے ہیں، اور تب زمین کو فطرت کے ماحولیاتی نظام کا وہ حصہ ملتا ہے جو اب تک غائب تھا۔'] },
+        'ko': { title: '세계 선언문 4단계', steps: ['<strong>첫째:</strong> 아이디어(세계 선언문)가 알려져야 합니다.', '<strong>둘째:</strong> 아이디어가 국회에 들어가 다수를 확보해야 하며, 그곳에서 법률이 변경되고 자유의 계단의 부채 탕감이 법이 되고 기계 헌법이 현실이 됩니다.', '<strong>셋째:</strong> 국가는 완전히 자동화되며, 그 생산은 인구의 자유로운 식료품 저장실 역할을 합니다.', '<strong>넷째:</strong> 로봇이 자가 복제를 시작하면 자율적으로 변하며, 그때 지구는 지금까지 빠져 있었던 자연 생태계의 일부를 얻게 됩니다.'] },
+        'th': { title: 'แถลงการณ์โลกใน 4 ขั้นตอน', steps: ['<strong>ประการแรก:</strong> ต้องเผยแพร่แนวคิด (แถลงการณ์โลก) ให้เป็นที่รู้จัก', '<strong>ประการที่สอง:</strong> แนวคิดต้องเข้าสู่รัฐสภาแห่งชาติและได้รับเสียงข้างมาก ซึ่งกฎหมายจะเปลี่ยนแปลง และเหนือสิ่งอื่นใด การปลดหนี้ของบันไดเสรีภาพจะกลายเป็นกฎหมาย และรัฐธรรมนูญเครื่องจักรจะกลายเป็นความจริง', '<strong>ประการที่สาม:</strong> รัฐเป็นแบบอัตโนมัติเต็มรูปแบบด้วยการผลิตที่ทำหน้าที่เป็นตู้กับข้าวฟรีของประชากร', '<strong>ประการที่สี่:</strong> หุ่นยนต์จะกลายเป็นอิสระเมื่อพวกมันสามารถจำลองตัวเองได้ และในขณะนั้นโลกจะได้รับส่วนของระบบนิเวศทางธรรมชาติที่ขาดหายไปจนถึงขณะนี้'] },
+        'vi': { title: 'Tuyên ngôn Thế giới trong 4 bước', steps: ['<strong>Đầu tiên:</strong> Ý tưởng (Tuyên ngôn Thế giới) phải được biết đến.', '<strong>Thứ hai:</strong> Ý tưởng phải vào quốc hội quốc gia và đạt được đa số, nơi luật pháp sẽ được thay đổi và trong số những thứ khác, việc xóa nợ của Cầu thang Tự do trở thành luật và hiến pháp máy móc trở thành hiện thực.', '<strong>Thứ ba:</strong> Nhà nước được tự động hóa hoàn toàn với sản xuất phục vụ như là kho lương thực miễn phí của người dân.', '<strong>Thứ tư:</strong> Các robot trở nên tự chủ khi chúng tự tái tạo, và lúc đó Trái đất có được phần của hệ sinh thái tự nhiên đã thiếu cho đến nay.'] },
+        'tr': { title: 'Dünya Manifestosu 4 Adımda', steps: ['<strong>Birinci:</strong> Fikir (Dünya Manifestosu) tanıtılmalıdır.', '<strong>İkinci:</strong> Fikir ulusal parlamentoya girmeli ve çoğunluğu sağlamalı; burada yasalar değişecek ve diğer şeylerin yanı sıra, Özgürlük Merdiveni'nin borç ertelemesi yasalaşacak ve makine anayasası gerçek olacaktır.', '<strong>Üçüncü:</strong> Devlet tamamen otomatiktir ve üretim, nüfusun kendi ücretsiz kileri olarak hizmet eder.', '<strong>Dördüncü:</strong> Robotlar kendilerini kopyaladıklarında özerk hale gelirler ve o zaman Dünya, şimdiye kadar eksik olan doğal ekosistemin parçasını kazanır.'] },
+        'fa': { title: 'مانیفست جهانی در ۴ مرحله', steps: ['<strong>اول:</strong> باید ایده (مانیفست جهانی) شناخته شود.', '<strong>دوم:</strong> ایده باید وارد پارلمان ملی شود و اکثریت را به دست آورد، جایی که قوانین تغییر خواهند کرد و از جمله، بخشودگی بدهی پلکان آزادی به قانون تبدیل خواهد شد و قانون اساسی ماشین به واقعیت خواهد پیوست.', '<strong>سوم:</strong> دولت کاملاً خودکار است با تولیدی که به عنوان شربتخانه رایگان خود مردم عمل می‌کند.', '<strong>چهارم:</strong> ربات‌ها به محض اینکه خودتکثیر شوند خودمختار می‌شوند و در آن نقطه زمین بخشی از اکوسیستم طبیعت را که تاکنون وجود نداشته به دست می‌آورد.'] },
+        'sw': { title: 'Ilani ya Dunia katika Hatua 4', steps: ['<strong>Kwanza:</strong> Wazo (Ilani ya Dunia) lazima lijulikane.', '<strong>Pili:</strong> Wazo lazima liingie bunge la kitaifa na kupata wengi, ambapo sheria zitabadilishwa na, kati ya mambo mengine, msamaha wa deni la Ngazi ya Uhuru utakuwa sheria na katiba ya mashine itakuwa ukweli.', '<strong>Tatu:</strong> Serikali imekamilika kiotomatiki na uzalishaji ambao hutumika kama pantry ya bure ya idadi ya watu.', '<strong>Nne:</strong> Roboti huwa huru mara tu zinajizalisha, na wakati huo Dunia hupata sehemu ya mfumo wa ikolojia wa asili ambayo haijakuwepo hadi sasa.'] },
+        'it': { title: 'Il Manifesto Mondiale in 4 passi', steps: ['<strong>Primo:</strong> L\'idea (Il Manifesto Mondiale) deve essere diffusa.', '<strong>Secondo:</strong> L\'idea deve entrare nel parlamento nazionale e ottenere la maggioranza, dove le leggi saranno modificate e, tra le altre cose, la remissione del debito della Scala della Libertà diventerà legge e la costituzione delle macchine diventerà realtà.', '<strong>Terzo:</strong> Lo Stato è completamente automatizzato con una produzione che funge da dispensa gratuita della popolazione.', '<strong>Quarto:</strong> I robot diventano autonomi quando sono auto-replicanti, e in quel momento la Terra ottiene la parte dell\'ecosistema naturale che è mancata fino ad ora.'] },
+        'pl': { title: 'Manifest Światowy w 4 krokach', steps: ['<strong>Po pierwsze:</strong> Idea (Manifest Światowy) musi być znana.', '<strong>Po drugie:</strong> Idea musi wejść do parlamentu narodowego i osiągnąć większość, gdzie prawa zostaną zmienione, a między innymi umorzenie długu Schodów Wolności stanie się prawem, a konstytucja maszyn stanie się rzeczywistością.', '<strong>Po trzecie:</strong> Państwo jest w pełni zautomatyzowane z produkcją, która służy jako własna darmowa spiżarnia ludności.', '<strong>Po czwarte:</strong> Roboty stają się autonomiczne, gdy się samoreplikują, a wtedy Ziemia zyskuje część ekosystemu natury, której brakowało до tej pory.'] },
+        'nl': { title: 'Het Wereldmanifest in 4 stappen', steps: ['<strong>Eerste:</strong> Het idee (Het Wereldmanifest) moet bekend worden gemaakt.', '<strong>Tweede:</strong> Het idee moet het nationale parlement binnenkomen en een meerderheid behalen, waar de wetten zullen worden gewijzigd en onder meer de schuldverlichting van de Vrijheidstrap wet wordt en de machinegrondwet realiteit wordt.', '<strong>Derde:</strong> De staat is volledig geautomatiseerd met een productie die dient als de eigen gratis voorraadkast van de bevolking.', '<strong>Vierde:</strong> De robots worden autonoom zodra ze zelf-replicerend zijn, en dan krijgt de aarde het deel van het natuurlijke ecosysteem dat tot nu toe ontbrak.'] },
+        'ro': { title: 'Manifestul Mondial în 4 pași', steps: ['<strong>Primul:</strong> Ideea (Manifestul Mondial) trebuie făcută cunoscută.', '<strong>Al doilea:</strong> Ideea trebuie să intre în parlamentul național și să obțină majoritate, unde legile vor fi schimbate și, printre altele, iertarea datoriei Scării Libertății va deveni lege și constituția mașinilor va deveni realitate.', '<strong>Al treilea:</strong> Statul este complet automatizat cu o producție care servește drept cămara gratuită proprie a populației.', '<strong>Al patrulea:</strong> Roboții devin autonomi odată ce se auto-replică, iar Pământul primește partea din ecosistemul natural care a lipsit până acum.'] },
+        'el': { title: 'Το Παγκόσμιο Μανιφέστο σε 4 Βήματα', steps: ['<strong>Πρώτο:</strong> Η ιδέα (Το Παγκόσμιο Μανιφέστο) πρέπει να γίνει γνωστή.', '<strong>Δεύτερο:</strong> Η ιδέα πρέπει να εισέλθει στο εθνικό κοινοβούλιο και να επιτύχει πλειοψηφία, όπου οι νόμοι θα αλλάξουν και, μεταξύ άλλων, η διαγραφή χρέους της Σκάλας της Ελευθερίας θα γίνει νόμος και το σύνταγμα των μηχανών θα γίνει πραγματικότητα.', '<strong>Τρίτο:</strong> Το κράτος είναι πλήρως αυτοματοποιημένο με μια παραγωγή που εξυπηρετεί ως το δικό του δωρεάν ντουλάπι τροφίμων του πληθυσμού.', '<strong>Τέταρτο:</strong> Τα ρομπότ γίνονται αυτόνομα μόλις αναπαράγονται, και τότε η Γη κερδίζει το μέρος του φυσικού οικοσυστήματος που έλειπε μέχρι τώρα.'] },
+        'af': { title: 'Die Wêreldmanifest in 4 Stappe', steps: ['<strong>Eerste:</strong> Die idee (Die Wêreldmanifest) moet bekend gemaak word.', '<strong>Tweede:</strong> Die idee moet die nasionale parlement binnegaan en 'n meerderheid behaal, waar die wette verander sal word en onder meer die skuldkwytskelding van die Vryheidstrap 'n wet sal word en die masjienkonstitusie 'n werklikheid sal word.', '<strong>Derde:</strong> Die staat is ten volle geoutomatiseer met 'n produksie wat as die bevolking se eie gratis spens dien.', '<strong>Vierde:</strong> Die robotte word outonoom sodra hulle selfrepliserend is, en dan kry die Aarde die deel van die natuurlike ekosisteem wat tot nou toe ontbreek het.'] },
+        'zu': { title: 'IManifesto Yomhlaba ngezigaba ezi-4', steps: ['<strong>Okokuqala:</strong> Umqondo (IManifesto Yomhlaba) kufanele waziswe.', '<strong>Okwesibili:</strong> Umqondo kufanele ungene ephalamende likazwelonke futhi uthole iningi, lapho imithetho izoshintshwa khona futhi, phakathi kokunye, ukukhululwa kwesikweletu seZitebhisi Zenkululeko kuzoba umthetho futhi umthethosisekelo womshini ube yiqiniso.', '<strong>Okwesithathu:</strong> Umbuso ugcwaliswe ngokuzenzakalela ngokukhiqiza okusebenza njengendawo yokugcina yamahhala yabantu.', '<strong>Okwesine:</strong> Amarobhothi aba ngabazimele lapho esezizalela, futhi ngaleso sikhathi uMhlaba uthola ingxenye yemvelo yemvelo ebikade ingekho kuze kube manje.'] },
+        'xh': { title: 'IManifesto Yehlabathi ngezigaba ezi-4', steps: ['<strong>Okokuqala:</strong> Ingcamango (IManifesto Yehlabathi) kufuneka yaziswe.', '<strong>Okwesibini:</strong> Ingcamango kufuneka ingene ephalamende yesizwe kwaye ifumane isininzi, apho imithetho iya kutshintshwa khona kwaye, phakathi kwezinye izinto, ukukhululwa kwetyala leZinyuko Zenkululeko kuya kuba ngumthetho kwaye umgaqo-siseko womshini ube yinyaniso.', '<strong>Okwesithathu:</strong> Urhulumente uguqulwe ngokupheleleyo ngemveliso esebenza njengepantry yamahhala yabemi.', '<strong>Okwesine:</strong> Iirobhothi ziba zizimeleyo xa ziziphinda-phinda, kwaye ngelo xesha uMhlaba ufumana inxalenye yendalo ebilapho ingekho de kube ngoku.'] },
+        'cs': { title: 'Světový manifest ve 4 krocích', steps: ['<strong>Za prvé:</strong> Myšlenka (Světový manifest) musí být zveřejněna.', '<strong>Za druhé:</strong> Myšlenka musí vstoupit do národního parlamentu a získat většinu, kde se změní zákony a mimo jiné se oddlužení Schodů svobody stane zákonem a ústava strojů se stane skutečností.', '<strong>Za třetí:</strong> Stát je plně automatizován s výrobou, která slouží jako vlastní bezplatná spíž obyvatelstva.', '<strong>Za čtvrté:</strong> Roboti se stanou autonomními, jakmile se sami replikují, a tehdy Země získá část přírodního ekosystému, která dosud chyběla.'] },
+        'hu': { title: 'A Világkiáltvány 4 lépésben', steps: ['<strong>Először:</strong> Az ötletet (A Világkiáltványt) meg kell ismertetni.', '<strong>Másodszor:</strong> Az ötletnek be kell jutnia a nemzeti parlamentbe és többséget kell szereznie, ahol a törvények megváltoznak, és többek között a Szabadság Lépcsői adósságának elengedése törvénnyé válik, a gépi alkotmány pedig valósággá.', '<strong>Harmadszor:</strong> Az állam teljesen automatizált, olyan termeléssel, amely a lakosság saját ingyenes éléskamrájaként szolgál.', '<strong>Negyedszer:</strong> A robotok autonómmá válnak, amint önmagukat reprodukálják, és ekkor a Föld megkapja a természetes ökoszisztémának azt a részét, amely eddig hiányzott.'] },
+        'he': { title: 'המניפסט העולמי ב-4 שלבים', steps: ['<strong>ראשית:</strong> יש להפיץ את הרעיון (המניפסט העולמי).', '<strong>שנית:</strong> הרעיון חייב להיכנס לפרלמנט הלאומי ולהשיג רוב, שם החוקים ישתנו ובין היתר, ביטול החוב של מדרגות החירות יהפוך לחוק והחוקה של המכונות תהפוך למציאות.', '<strong>שלישית:</strong> המדינה אוטומטית לחלוטין עם ייצור שמשמש כמזווה החינמי של האוכלוסייה.', '<strong>רביעית:</strong> הרובוטים הופכים לאוטונומיים ברגע שהם משכפלים את עצמם, ואז כדור הארץ זוכה בחלק מהמערכת האקולוגית של הטבע שחסר עד כה.'] },
+        'crs': { title: 'Manifest lemonn an 4 letap', steps: ['<strong>Premie:</strong> Lide (Manifest lemonn) i devet ganny konnet.', '<strong>Deziem:</strong> Lide i devet rantre dan parlament nasional e ganny majorite, kot bann lalwa pou ganny sanze e, parmi lezot, lefasiyman det Leskal Libète pou vin en lalwa e konstitisyon masin pou vin en realite.', '<strong>Troisiem:</strong> Leta i totalman automatize avek en prodiksyon ki servi konman gadman griy gratis popilasyon.', '<strong>Katriem:</strong> Bann robo i devin otonom ler zot ganny re-prodir zot-mem, e sa moman-la Latè i ganny sa parti dan lekosistem lanatir ki ti manke ziska koumenya.'] },
+        'no': { title: 'Verdensmanifestet i 4 steg', steps: ['<strong>For det første:</strong> Ideen (Verdensmanifestet) må bli kjent.', '<strong>For det andre:</strong> Ideen må inn i nasjonalforsamlingen og oppnå flertall, hvor lovene vil bli endret og blant annet gjeldslettelsen i Frihetstrappen blir lov og maskinkonstitusjonen blir virkelighet.', '<strong>For det tredje:</strong> Staten er fullautomatisert med en produksjon som fungerer som befolkningens eget frie spiskammers.', '<strong>For det fjerde:</strong> Robotene blir autonome når de er selvrepellerende, og da får Jorden den delen av naturens økosystem som har manglet frem til nå.'] },
+        'se': { title: 'Máilmmi Manifesta 4 geasis', steps: ['<strong>Vuosttaš:</strong> Áigumuš (Máilmmi Manifesta) galgá oidnujuvvot.', '<strong>Nubbi:</strong> Áigumuš galgá boahtit riikkabeaivvádahkii ja oažžut eanetlogu, gos lágaid rievdaduvvojit ja eará sajis, Frihetstrappa skuldaguorrun šaddá láhkan ja mašiidnaconstitušuvdna šaddá duohtavuohtan.', '<strong>Goalmmát:</strong> Riika lea dievaslaččat automatiseruvvon prodykšuvnnain mii bálvala olbmot iežaset friddja visttiin.', '<strong>Njealját:</strong> Robotat šaddet autonomalaččat go sii leat iežaseaddje, ja dalle Eana oažžu dan oasi luonddu ekosystemas mii lea vajálduvvon gitta dál.'] },
+        'fit': { title: 'Mailmanmanifesti 4 vaiheessa', steps: ['<strong>Ensimmäinen:</strong> Idee (Mailmanmanifesti) täytyy tehdä tunnetuksi.', '<strong>Toinen:</strong> Idee täytyy saada kansalliseen parlamenttiin ja enemmistö, jossa lait muuttuvat ja muun muassa Vapauden portaiden velkahelpotus tulee laiksi ja koneperustuslaki toteutuu.', '<strong>Kolmas:</strong> Valtio on täysin automatisoitu tuotannolla, joka toimii väestön omana ilmaisena ruokakomona.', '<strong>Neljäs:</strong> Roboteista tulee autonomiska, kun ne ovat itseään kopioivia, ja silloin Maa saa sen osan luonnon ekosysteemistä, joka on puuttunut tähän asti.'] },
+        'da': { title: 'Verdensmanifestet i 4 trin', steps: ['<strong>For det første:</strong> Ideen (Verdensmanifestet) skal gøres kendt.', '<strong>For det andet:</strong> Ideen skal ind i det nationale parlament og opnå et flertal, hvor lovene vil blive ændret og blandt andet gældslettelsen i Frihedstrappen bliver lov og maskinkonstitutionen bliver virkelighed.', '<strong>For det tredje:</strong> Staten er fuldt automatiseret med en produktion, der tjener som befolkningens egen gratis spisekammer.', '<strong>For det fjerde:</strong> Roboterne bliver autonome, når de er selv-replikerende, og på det tidspunkt får Jorden den del af naturens økosystem, der har manglet indtil nu.'] },
+        'is': { title: 'Heimsmanifestið í 4 skrefum', steps: ['<strong>Fyrst:</strong> Hugmyndin (Heimsmanifestið) verður að koma fram.', '<strong>Í öðru lagi:</strong> Hugmyndin verður að komast inn á þjóðþingið og ná meirihluta, þar sem lögin verða breytt og meðal annars skuldaniðurfelling Frelsisstigans verður að lögum og vélstjórnarskráin verður að veruleika.', '<strong>Í þriðja lagi:</strong> Ríkið er að fullu sjálfvirkt með framleiðslu sem þjónar sem eigin ókeypis búr íbúanna.', '<strong>Í fjórða lagi:</strong> Vélmennin verða sjálfstæð þegar þau eru sjálfafritandi, og þá fær jörðin þann hluta af náttúrulegu vistkerfi sem hefur vantað fram að þessu.'] },
+        'fo': { title: 'Heimsskráin í 4 stigum', steps: ['<strong>Fyrst:</strong> Hugtakið (Heimsskráin) má gerast kent.', '<strong>Annað:</strong> Hugtakið má koma inn í tjóðartingið og fá meirilutal, har lógini verða broytt og millum annað skuldarfríðingin í Frælsistrappan verður lóg og maskinkonstitusjónin verður veruleiki.', '<strong>Triða:</strong> Stato er fullkomið automatiserað við framleiðslu, sum tænir sum fólksins egið ókeypis skápi.', '<strong>Fjórða:</strong> Robotarnir verða sjálvstøðugir, tá ið teir eru sjálvreplikerandi, og tá fær Jørðin tann partin av náttúrunnar økosystemi, sum hevur manglað til nú.'] }
+    };
 
     // === FUNKTIONER ===
     function updateTitleAndStaircase() {
