@@ -420,5 +420,63 @@
     <script src="menu.js"></script>
     <script src="footer.js"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var lang = (navigator.language || 'sv').split('-')[0].toLowerCase();
+    var ordbok = {
+        'sv': 'Frihetstrappan',
+        'en': 'Freedom Staircase',
+        'fi': 'Vapauden portaat',
+        'zh': '自由阶梯',
+        'hi': 'स्वतंत्रता सीढ़ी',
+        'es': 'Escalera de la Libertad',
+        'fr': 'Escalier de la Liberté',
+        'de': 'Freiheitstreppe',
+        'ar': 'سلم الحرية',
+        'id': 'Tangga Kebebasan',
+        'bn': 'স্বাধীনতার সিঁড়ি',
+        'pt': 'Escada da Liberdade',
+        'ru': 'Лестница Свободы',
+        'uk': 'Сходи Свободи',
+        'bg': 'Стълбата на свободата',
+        'ur': 'آزادی کی سیڑھی',
+        'ja': '自由の階段',
+        'fil': 'Hagdan ng Kalayaan',
+        'ko': '자유의 계단',
+        'th': 'บันไดเสรีภาพ',
+        'vi': 'Cầu thang Tự do',
+        'tr': 'Özgürlük Merdiveni',
+        'fa': 'پلکان آزادی',
+        'sw': 'Ngazi ya Uhuru',
+        'it': 'Scala della Libertà',
+        'pl': 'Schody Wolności',
+        'nl': 'Vrijheidstrap',
+        'ro': 'Scara Libertății',
+        'el': 'Σκάλα της Ελευθερίας',
+        'af': 'Vryheidstrap',
+        'zu': 'Izitebhisi Zenkululeko',
+        'xh': 'Izinyuko Zenkululeko',
+        'cs': 'Schody svobody',
+        'hu': 'A Szabadság Lépcsői',
+        'he': 'מדרגות החירות',
+        'crs': 'Leskal Libète',
+        'no': 'Frihetstrappen',
+        'se': 'Frihetstrappa',
+        'fit': 'Vapauden portaat',
+        'da': 'Frihedstrappen',
+        'is': 'Frelsisstiginn',
+        'fo': 'Frælsistrappan'
+    };
+
+    // Byt ut texten i alla länkar som innehåller "Frihetstrappan"
+    var alla = document.querySelectorAll('a, h1, h2, p, span, div');
+    for (var i = 0; i < alla.length; i++) {
+        if (alla[i].children.length === 0 && alla[i].innerText.trim() === 'Frihetstrappan') {
+            alla[i].innerText = ordbok[lang] || ordbok['en'];
+        }
+    }
+});
+</script>
+    
 </body>
 </html>
