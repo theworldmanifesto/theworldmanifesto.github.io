@@ -272,6 +272,34 @@
                 <a href="lang/read.html?lang=za" title="Afrikaans"><img src="lang/flags/za.svg" class="lang-flag-img"></a>
             </div>
 
+            <!-- RÖD KNAPP FÖR ATT VISA DE 4 STEGEN -->
+            <div style="text-align: center; margin-top: 40px; margin-bottom: 30px;">
+                <button onclick="toggleManifesto()" style="background: linear-gradient(45deg, #FF4500, #FF8C00); border: none; color: white; padding: 15px 30px; font-size: 18px; font-weight: bold; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 15px rgba(255,69,0,0.3); transition: transform 0.2s;">
+                    🔴 Click to see the 4 Steps!
+                </button>
+            </div>
+
+            <div id="manifestoSteps" style="display: none; max-width: 680px; margin: 0 auto 30px auto; padding: 20px; border-left: 5px solid #FF4500; background-color: #FFF5F0; border-radius: 8px; text-align: left; font-family: Georgia, serif;">
+                <h3 style="color: #B22222; margin-top: 0; text-align: center;">The World Manifesto in 4 Steps</h3>
+                <ol style="color: #333; line-height: 1.6; margin-bottom: 0;">
+                    <li><strong>The idea</strong> must be made known.</li>
+                    <li><strong>The idea</strong> must enter parliament and achieve a majority for laws like the Freedom Staircase and machine constitution.</li>
+                    <li><strong>The state</strong> becomes fully automated, acting as a free pantry.</li>
+                    <li><strong>The robots</strong> become autonomous and self-replicating, completing Earth's ecosystem.</li>
+                </ol>
+            </div>
+
+            <script>
+            function toggleManifesto() {
+                var x = document.getElementById('manifestoSteps');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+            }
+            </script>
+            
             <!-- QUOTE-RUTAN -->
             <div id="quote-box">
                 <div id="quote-text"></div>
