@@ -317,9 +317,11 @@
     <!-- ALLA SKRIPT (ETT STORT BLOCK)             -->
     <!-- ======================================== -->
 
+<script src="four_steps.js"></script>
+
     <script>
         // === GLOBALA VARIABLER ===
-        const PAGE = "https://sites.google.com/view/worldmanifesto/";
+        const PAGE = "https://theworldmanifesto.github.io/";
         const MANIFESTO = "The World Manifesto";
         const COPIED = "Copied!";
 
@@ -358,12 +360,7 @@
         };
 
         // === ORDBOK FÖR DE FYRA STEGEN ===
-        const stepsTranslations = {
-            'sv': { title: 'Världsmanifestet i 4 steg', steps: ['<strong>Först:</strong> Idén (Världsmanifestet) måste bli känd.', '<strong>För det andra:</strong> Idén måste in i riksdagen och få majoritet, där lagarna ändras och bland annat Frihetstrappans skuldsystem införs.', '<strong>För det tredje:</strong> Staten blir helt automatiserad med en produktion som fungerar som befolkningens eget fria skafferi.', '<strong>För det fjärde:</strong> Robotarna blir autonoma när de är självreplikerande, och då får jorden den del av naturens ekosystem som saknats fram till nu.'] },
-            'en': { title: 'The World Manifesto in 4 Steps', steps: ['<strong>First:</strong> The idea (The World Manifesto) must be made known.', '<strong>Second:</strong> The idea must enter the national parliament and gain a majority, where the laws are changed and, among other things, the Freedom Staircase debt system is implemented.', '<strong>Third:</strong> The state becomes completely automated with a production that functions as the population\'s own free pantry.', '<strong>Fourth:</strong> The robots become autonomous when they are self-replicating, and then the Earth receives the part of nature\'s ecosystem that has been missing so far.'] },
-            'fi': { title: 'Maailmanmanifesti 4 vaiheessa', steps: ['<strong>Ensimmäinen:</strong> Idea (Maailmanmanifesti) on tehtävä tunnetuksi.', '<strong>Toinen:</strong> Idean on päästävä kansalliseen parlamenttiin ja saatava enemmistö, jossa lakeja muutetaan ja muun muassa Vapaussignaalin velkaosittelu otetaan käyttöön.', '<strong>Kolmas:</strong> Valtio tulee täysin automatisoituneeksi tuotannolla, joka toimii väestön omana vapaana ruokakaappina.', '<strong>Neljäs:</strong> Robotit tulevat autonomisiksi, kun ne ovat itsereplikoituvia, ja silloin Maa saa sen osan luonnon ekosysteemistä, joka on puuttunut tähän mennessä.'] },
-            'en': { title: 'The World Manifesto in 4 Steps', steps: ['<strong>First:</strong> The idea must be made known.', '<strong>Second:</strong> The idea must enter parliament and gain majority support.', '<strong>Third:</strong> The state becomes fully automated with production serving as the people\'s free pantry.', '<strong>Fourth:</strong> Robots become autonomous when self-replicating, restoring nature\'s ecosystem.'] }
-        };
+// stepsTranslations finns nu i four_steps.js
 
         // === FUNKTIONER ===
         function updateTitleAndStaircase() {
