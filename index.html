@@ -494,22 +494,25 @@
         'fo': { title: 'Heimsskráin í 4 stigum', steps: ['<strong>Fyrst:</strong> Hugtakið (Heimsskráin) má gerast kent.', '<strong>Annað:</strong> Hugtakið má koma inn í tjóðartingið og fá meirilutal, har lógini verða broytt og millum annað skuldarfríðingin í Frælsistrappan verður lóg og maskinkonstitusjónin verður veruleiki.', '<strong>Triða:</strong> Stato er fullkomið automatiserað við framleiðslu, sum tænir sum fólksins egið ókeypis skápi.', '<strong>Fjórða:</strong> Robotarnir verða sjálvstøðugir, tá ið teir eru sjálvreplikerandi, og tá fær Jørðin tann partin av náttúrunnar økosystemi, sum hevur manglað til nú.'] }
     };
 
-    // Funktion som byter ut texten baserat på språk
-    function updateSteps(lang) {
-        if (!stepsTranslations[lang]) lang = 'en'; // Fallback till engelska
-        const trans = stepsTranslations[lang];
-        document.getElementById('steps-title').textContent = trans.title;
-        document.getElementById('step-1').innerHTML = trans.steps[0];
-        document.getElementById('step-2').innerHTML = trans.steps[1];
-        document.getElementById('step-3').innerHTML = trans.steps[2];
-        document.getElementById('step-4').innerHTML = trans.steps[3];
-    }
+// Funktion som byter ut texten baserat på språk (oberoende version)
+function updateSteps() {
+    // Beräkna språket själv, oberoende av de andra skripten!
+    const params = new URLSearchParams(window.location.search);
+    const lang = (params.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
+    
+    let langToUse = lang;
+    if (!stepsTranslations[langToUse]) langToUse = 'en';
 
-    // Kör uppdateringen vid sidladdning (och kombinerar med din befintliga språkhantering)
-    document.addEventListener('DOMContentLoaded', function() {
-        // Använder den redan befintliga variabeln currentLang som finns i ditt andra script!
-        updateSteps(currentLang);
-    });
+    const trans = stepsTranslations[langToUse];
+    document.getElementById('steps-title').textContent = trans.title;
+    document.getElementById('step-1').innerHTML = trans.steps[0];
+    document.getElementById('step-2').innerHTML = trans.steps[1];
+    document.getElementById('step-3').innerHTML = trans.steps[2];
+    document.getElementById('step-4').innerHTML = trans.steps[3];
+}
+
+// Kör direkt eftersom skriptet ligger i slutet av body (elementen finns redan)
+updateSteps();
 </script>
     
 </body>
