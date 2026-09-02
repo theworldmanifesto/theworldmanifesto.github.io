@@ -493,28 +493,30 @@
         'is': { title: 'Heimsmanifestið í 4 skrefum', steps: ['<strong>Fyrst:</strong> Hugmyndin (Heimsmanifestið) verður að koma fram.', '<strong>Í öðru lagi:</strong> Hugmyndin verður að komast inn á þjóðþingið og ná meirihluta, þar sem lögin verða breytt og meðal annars skuldaniðurfelling Frelsisstigans verður að lögum og vélstjórnarskráin verður að veruleika.', '<strong>Í þriðja lagi:</strong> Ríkið er að fullu sjálfvirkt með framleiðslu sem þjónar sem eigin ókeypis búr íbúanna.', '<strong>Í fjórða lagi:</strong> Vélmennin verða sjálfstæð þegar þau eru sjálfafritandi, og þá fær jörðin þann hluta af náttúrulegu vistkerfi sem hefur vantað fram að þessu.'] },
         'fo': { title: 'Heimsskráin í 4 stigum', steps: ['<strong>Fyrst:</strong> Hugtakið (Heimsskráin) má gerast kent.', '<strong>Annað:</strong> Hugtakið má koma inn í tjóðartingið og fá meirilutal, har lógini verða broytt og millum annað skuldarfríðingin í Frælsistrappan verður lóg og maskinkonstitusjónin verður veruleiki.', '<strong>Triða:</strong> Stato er fullkomið automatiserað við framleiðslu, sum tænir sum fólksins egið ókeypis skápi.', '<strong>Fjórða:</strong> Robotarnir verða sjálvstøðugir, tá ið teir eru sjálvreplikerandi, og tá fær Jørðin tann partin av náttúrunnar økosystemi, sum hevur manglað til nú.'] }
     };
-// Funktion som byter ut texten baserat på språk (oberoende version)
-function updateSteps() {
-    // Tvinga svenska om inget annat språk finns
-    const params = new URLSearchParams(window.location.search);
-    const lang = (params.get('lang') || document.documentElement.lang || navigator.language || 'sv').split('-')[0].toLowerCase();
+<script>
+    // ORDBOK FÖR DE FYRA STEGEN PÅ 42 SPRÅK
+    const stepsTranslations = {
+        // ... (hela din lista med alla språk) ...
+    };
 
-    let langToUse = lang;
-    if (!stepsTranslations[langToUse]) langToUse = 'en';
+    // Funktion som byter ut texten baserat på språk (oberoende version)
+    function updateSteps() {
+        const params = new URLSearchParams(window.location.search);
+        const lang = (params.get('lang') || document.documentElement.lang || navigator.language || 'sv').split('-')[0].toLowerCase();
 
-    const trans = stepsTranslations[langToUse];
-    document.getElementById('steps-title').textContent = trans.title;
-    document.getElementById('step-1').innerHTML = trans.steps[0];
-    document.getElementById('step-2').innerHTML = trans.steps[1];
-    document.getElementById('step-3').innerHTML = trans.steps[2];
-    document.getElementById('step-4').innerHTML = trans.steps[3];
-}
+        let langToUse = lang;
+        if (!stepsTranslations[langToUse]) langToUse = 'en';
 
-// Kör direkt eftersom skriptet ligger i slutet av body (elementen finns redan)
-updateSteps();
+        const trans = stepsTranslations[langToUse];
+        document.getElementById('steps-title').textContent = trans.title;
+        document.getElementById('step-1').innerHTML = trans.steps[0];
+        document.getElementById('step-2').innerHTML = trans.steps[1];
+        document.getElementById('step-3').innerHTML = trans.steps[2];
+        document.getElementById('step-4').innerHTML = trans.steps[3];
+    }
 
-// Kör direkt eftersom skriptet ligger i slutet av body (elementen finns redan)
-updateSteps();
+    // Kör direkt eftersom skriptet ligger i slutet av body (elementen finns redan)
+    updateSteps();
 </script>
     
 </body>
