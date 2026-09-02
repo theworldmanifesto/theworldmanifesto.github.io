@@ -3,7 +3,7 @@
 /* ======================================== */
 
 body {
-    background-color: #FFFFFB; /* NY BAKGRUNDSFÄRG */
+    background-color: #FFFFFB;
 }
 
 .nav-wrapper {
@@ -21,4 +21,74 @@ body {
     flex-wrap: wrap;
 }
 
-/* ... (resten av din CSS är exakt densamma som tidigare, endast body-färgen är ändrad) ... */
+#main-menu { display: inline-block; }
+
+.dropbtn {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: inline-block;
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: 0; /* Ingen glipa, menyn sitter fast */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    min-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(200, 200, 200, 0.2);
+    z-index: 999;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #1a1a1a;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-family: system-ui, sans-serif;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.15s;
+}
+
+.dropdown-content a:last-child { border-bottom: none; }
+
+.dropdown-content a:hover { background: #f7f7f7; }
+
+/* DESKTOP – HOVER */
+@media (min-width: 601px) {
+    .dropdown:hover .dropdown-content { display: block; }
+}
+
+/* MOBIL – KLICK */
+@media (max-width: 600px) {
+    .nav-wrapper { padding: 8px 12px; gap: 10px; }
+    .dropbtn { font-size: 14px; padding: 6px 12px; }
+    .dropdown-content { left: 0; width: 80vw; max-width: 280px; }
+    .dropdown.active .dropdown-content { display: block; }
+}
