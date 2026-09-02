@@ -459,37 +459,30 @@
     document.getElementById('quote-box').onmouseenter = () => paused = true;
     document.getElementById('quote-box').onmouseleave = () => paused = false;
 
-    fetch('share/quotes.json')
-        .then(response => {
-            if (!response.ok) return fetch('quotes.json');
-            return response;
-        })
-        .then(response => {
-            if (!response.ok) throw new Error('Kunde inte hitta quotes.json');
-            return response.json();
-        })
-        .then(data => {
-            const langKey = currentLang.toUpperCase();
-            const quotesData = data[langKey] || data['SV'] || data['EN'] || {};
-            quotes = Object.values(quotesData);
+fetch('share/quotes.json')
+    .then(response => response.json())
+    .then(data => {
+        const langKey = currentLang.toUpperCase();
+        const quotesData = data[langKey] || data['SV'] || data['EN'] || {};
+        quotes = Object.values(quotesData);
 
-            if (quotes.length > 0) {
-                quotes.forEach((_, idx) => {
-                    const d = document.createElement('span');
-                    d.className = 'dot' + (idx === 0 ? ' on' : '');
-                    d.onclick = () => { i = idx; showQuote(); };
-                    dots.appendChild(d);
-                });
-                showQuote();
-                setInterval(nextQuote, 10000);
-            } else {
-                q.textContent = 'Inga citat tillgängliga.';
-            }
-        })
-        .catch(err => {
-            console.error('Fel:', err);
-            q.textContent = 'Kunde inte ladda citat.';
-        });
+        if (quotes.length > 0) {
+            quotes.forEach((_, idx) => {
+                const d = document.createElement('span');
+                d.className = 'dot' + (idx === 0 ? ' on' : '');
+                d.onclick = () => { i = idx; showQuote(); };
+                dots.appendChild(d);
+            });
+            showQuote();
+            setInterval(nextQuote, 10000);
+        } else {
+            q.textContent = 'Inga citat tillgängliga.';
+        }
+    })
+    .catch(err => {
+        console.error('Fel:', err);
+        q.textContent = 'Kunde inte ladda citat.';
+    });
 
     // === KÖR ALLT DIREKT ===
     updateTitleAndStaircase();
