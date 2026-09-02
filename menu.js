@@ -7,6 +7,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- HÄMTA SPRÅK FRÅN WEBBlÄSAREN (navigator.language) ---
     const currentLang = (navigator.language || 'sv').split('-')[0].toLowerCase();
 
+    // --- MAPPING FÖR FLAGGBILDER (från ../lang/flags/) ---
+    const flagMapping = {
+        'sv': 'se.svg', 'en': 'gb.svg', 'fi': 'fi.svg', 'zh': 'cn.svg',
+        'hi': 'in.svg', 'es': 'es.svg', 'fr': 'fr.svg', 'de': 'de.svg',
+        'ar': 'sa.svg', 'id': 'id.svg', 'bn': 'bd.svg', 'pt': 'pt.svg',
+        'ru': 'ru.svg', 'uk': 'ua.svg', 'bg': 'bg.svg', 'ur': 'pk.svg',
+        'ja': 'jp.svg', 'fil': 'ph.svg', 'ko': 'kr.svg', 'th': 'th.svg',
+        'vi': 'vn.svg', 'tr': 'tr.svg', 'fa': 'ir.svg', 'sw': 'tz.svg',
+        'it': 'it.svg', 'pl': 'pl.svg', 'nl': 'nl.svg', 'ro': 'ro.svg',
+        'el': 'gr.svg', 'af': 'za.svg', 'zu': 'za.svg', 'xh': 'za.svg',
+        'cs': 'cz.svg', 'hu': 'hu.svg', 'he': 'il.svg', 'crs': 'sc.svg',
+        'no': 'no.svg', 'se': 'dsg.svg', 'fit': 'fit.svg', 'da': 'dk.svg',
+        'is': 'is.svg', 'fo': 'fo.svg'
+    };
+
+    // Hämta flaggfilen (fallback till engelsk flagga om språket saknas)
+    const flagFile = flagMapping[currentLang] || 'gb.svg';
+    const flagSrc = `${base}lang/flags/${flagFile}`;
+
     // --- ORDBOK FÖR ALLA 42 SPRÅK ---
     const translations = {
         'sv': { menu: 'MENY', home: 'HEM', manifesto: 'Läs Världsmanifestet', staircase: 'Frihetstrappan', tropics: 'Tropikerna', robotel: 'Robotel', share: 'Dela', read: 'LÄS', chooseLang: 'Välj språk' },
@@ -65,6 +84,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     const base = getBasePath();
 
+    // Hämta flaggfilen (fallback till engelsk flagga om språket saknas)
+    const flagFile = flagMapping[currentLang] || 'gb.svg';
+    const flagSrc = `${base}lang/flags/${flagFile}`;
+
     // --- SKAPA MENYN ---
     function buildMenu() {
         const menuIcon = `<img src="${base}menu_icons/menu.png" alt="Menu" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;">`;
@@ -76,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <button class="dropbtn" id="menuBtn">${btnText}</button>
                     <div class="dropdown-content">
                         <a href="${base}index.html"><img src="${base}menu_icons/home.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.home}</a>
-                        <a href="${base}lang/lang.html?lang=${currentLang}"><img src="${base}menu_icons/languages.svg" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.manifesto}</a>
+                        <a href="${base}lang/lang.html?lang=${currentLang}"><img src="${flagSrc}" alt="Flag" style="width:20px;height:15px;vertical-align:middle;margin-right:8px;border-radius:2px;"> ${t.manifesto}</a>
                         <a href="${base}freedom-staircase/freedom-staircase.html?lang=${currentLang}"><img src="${base}menu_icons/freedom.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.staircase}</a>
                         <a href="${base}tropics/tropics.html?lang=${currentLang}"><img src="${base}menu_icons/tropics.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.tropics}</a>
                         <a href="${base}robotel/robotel.html?lang=${currentLang}"><img src="${base}menu_icons/robotel.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.robotel}</a>
