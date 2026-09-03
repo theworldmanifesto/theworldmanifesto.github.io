@@ -252,7 +252,7 @@
         document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
 
         // --- CITAT (styrs av språkmenyn) ---
-        let currentQuoteLang = 'sv'; // Standard
+        let currentQuoteLang = 'en'; // Standard
 
         function escapeHtml(s) {
             return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -325,7 +325,7 @@
         // --- LADDA CITAT VID SIDLADDNING ---
         // Kolla URL-parametern för språk (t.ex. ?lang=sv)
         const urlParams = new URLSearchParams(window.location.search);
-        const urlLang = urlParams.get('lang') || 'sv';
+        const urlLang = urlParams.get('lang') || 'en';
         document.getElementById('lang-select').value = urlLang;
         loadQuotes(urlLang);
     </script>
