@@ -1,9 +1,16 @@
 /* ======================================== */
-/* MENY – MODERN, FLYTANDE                   */
+/* MENY – VÄNSTER SIDA, FAST POSITION        */
 /* ======================================== */
 
 body {
     background-color: #FFFFFB;
+}
+
+#main-menu {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1000;
 }
 
 .nav-wrapper {
@@ -11,17 +18,10 @@ body {
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 12px 20px;
+    flex-direction: column;
     background: transparent;
-    position: sticky;
-    top: 0;
-    z-index: 500;
-    flex-wrap: wrap;
+    padding: 0;
 }
-
-#main-menu { display: inline-block; }
 
 /* Föräldern – håller menyn på plats */
 .site-nav {
@@ -49,6 +49,7 @@ body {
     display: inline-block;
     transition: background 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .dropbtn:hover {
@@ -61,7 +62,7 @@ body {
     position: absolute;
     left: 0;
     top: 100%;
-    margin-top: 0; /* Ingen glipa, menyn sitter fast */
+    margin-top: 4px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     min-width: 200px;
@@ -94,8 +95,12 @@ body {
 
 /* MOBIL – KLICK */
 @media (max-width: 600px) {
-    .nav-wrapper { padding: 8px 12px; gap: 10px; }
+    #main-menu {
+        left: 10px;
+        top: 10px;
+    }
+    .nav-wrapper { gap: 8px; }
     .dropbtn { font-size: 14px; padding: 6px 12px; }
-    .dropdown-content { left: 0; width: 80vw; max-width: 280px; }
+    .dropdown-content { left: 0; width: 85vw; max-width: 250px; }
     .dropdown.active .dropdown-content { display: block; }
 }
