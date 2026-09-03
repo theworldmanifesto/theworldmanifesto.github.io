@@ -9,6 +9,44 @@
     <link rel="stylesheet" href="../menu.css">
 
     <style>
+
+/* ======================================== */
+/* MENY ANPASSAD FÖR TROPICS (mörk bakgrund) */
+/* ======================================== */
+
+#main-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+#main-menu .dropbtn {
+    background: #FFD700 !important;
+    color: #1B0027 !important;
+    border: 2px solid #FFD700;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#main-menu .dropdown-content {
+    background: #1B0027 !important;
+    border: 1px solid #FFD700 !important;
+    z-index: 1001;
+}
+
+#main-menu .dropdown-content a {
+    color: #fff !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+#main-menu .dropdown-content a:hover {
+    background: #2a0a35 !important;
+    color: #FFD700 !important;
+}
+
         * { box-sizing: border-box; }
         body { 
             margin: 0; 
