@@ -297,16 +297,66 @@
             text-shadow: 0px 0px 3px rgba(0,0,0,0.9);
         }
         
-        @media (max-width: 600px) {
-            .panel-btn { padding: 3px 10px; font-size: 9px; }
-            #control-panel { gap: 5px; padding: 4px 8px; bottom: 115px; }
-            #search-panel { min-width: 150px; padding: 4px 7px; bottom: 65px; }
-            #search-input { font-size: 10px; padding: 4px 8px; }
-            .globe-label { font-size: 8px; }
-            .label-country, .label-island { padding: 1px 4px; }
-            #language-selector { bottom: 8px; padding: 3px 6px; }
-            #lang-dropdown { font-size: 9px; padding: 3px 6px; }
-        }
+@media (max-width: 600px) {
+    /* Menyn högst upp till vänster */
+    #main-menu {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+    }
+
+    /* Info-rutan högst upp till höger */
+    #info-card {
+        top: 10px;
+        right: 10px;
+        left: auto;
+        width: 45vw;
+        max-width: 200px;
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+
+    /* Polar-kortet högst upp till höger */
+    #polar-card {
+        top: 10px;
+        right: 10px;
+        left: auto;
+        width: 45vw;
+        max-width: 200px;
+        padding: 6px 8px;
+    }
+
+    /* Språkmenyn längst ner till vänster */
+    #language-selector {
+        bottom: 8px;
+        left: 10px;
+        padding: 3px 6px;
+    }
+
+    /* Sökrutan ovanför språkmenyn */
+    #search-panel {
+        bottom: 65px;
+        left: 10px;
+        min-width: 150px;
+        padding: 4px 7px;
+    }
+
+    /* Kontrollknapparna ovanför sökrutan */
+    #control-panel {
+        bottom: 115px;
+        left: 10px;
+        gap: 5px;
+        padding: 4px 8px;
+    }
+
+    /* Övriga justeringar */
+    .panel-btn { padding: 3px 10px; font-size: 9px; }
+    #search-input { font-size: 10px; padding: 4px 8px; }
+    .globe-label { font-size: 8px; }
+    .label-country, .label-island { padding: 1px 4px; }
+    #lang-dropdown { font-size: 9px; padding: 3px 6px; }
+}
         @media (max-width: 450px) {
             .panel-btn { padding: 3px 8px; font-size: 8px; }
             #lang-dropdown { font-size: 8px; padding: 2px 5px; }
