@@ -61,7 +61,8 @@
         'sk': { email: '✉  E-mail webmasterovi', copyright: 'Svetový manifest – Vydané v roku 2026', translated: 'Svetový manifest je preložený do 42 jazykov – čo znamená, že viac ako 7 z 10 ľudí na svete si ho môže prečítať vo svojom jazyku.' }
     };
 
-    const t = translations[currentLang] || translations['sv'];
+    // ⭐ FALLBACK TILL ENGELSKA ISTÄLLET FÖR SVENSKA ⭐
+    const t = translations[currentLang] || translations['en'];
 
     // Skapa footer-elementet
     const footer = document.createElement('footer');
@@ -88,10 +89,7 @@
     // 3. Enkel rad om 42 språk (med languages.svg istället för emoji)
     const infoP = document.createElement('p');
     infoP.style.cssText = 'font-size: 11px; color: #888; margin-top: 10px; text-align: center; font-family: system-ui, sans-serif;';
-    
-    // Sätter in bilden och texten på en och samma rad
     infoP.innerHTML = '<img src="' + base + 'menu_icons/languages.svg" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;"> ' + t.translated;
-
     footer.appendChild(infoP);
 
     // Sätt in footern i slutet av body
