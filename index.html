@@ -325,7 +325,7 @@
 
         // === SPRÅKHANTERING ===
         const urlParams = new URLSearchParams(window.location.search);
-        const currentLang = (urlParams.get('lang') || document.documentElement.lang || navigator.language || 'sv').split('-')[0].toLowerCase();
+        const currentLang = (urlParams.get('lang') || navigator.language || document.documentElement.lang || 'sv').split('-')[0].toLowerCase();
 
         // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
         var titlar = {
