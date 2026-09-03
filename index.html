@@ -353,19 +353,19 @@
     // ============================================================
     // FUNKTION: Uppdatera titel (LÄGG TILL DENNA)
     // ============================================================
-    function updateStepsTitle() {
-        const titleElement = document.getElementById('steps-title');
-        if (!titleElement) return;
-        
-        if (stepsTranslations && Object.keys(stepsTranslations).length > 0) {
-            let langToUse = currentLang;
-            if (!stepsTranslations[langToUse]) langToUse = 'en';
-            const trans = stepsTranslations[langToUse];
-            if (trans && trans.title) {
-                titleElement.textContent = trans.title;
-            }
+function updateStepsTitle() {
+    const titleElement = document.getElementById('steps-title');
+    if (!titleElement) return;
+    
+    if (stepsTranslations && Object.keys(stepsTranslations).length > 0) {
+        let langToUse = currentLang;
+        if (!stepsTranslations[langToUse]) langToUse = 'en';
+        const trans = stepsTranslations[langToUse];
+        if (trans && trans.title) {
+            titleElement.textContent = trans.title;
         }
     }
+}
 </script>
 
         // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
