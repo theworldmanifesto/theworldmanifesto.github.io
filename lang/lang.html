@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>The World Manifesto</title>
+    <link rel="stylesheet" href="../menu.css">
     <link rel="stylesheet" href="css/lang.css">
     <style>
         /* ---------- Första sidan – fast formatering ---------- */
@@ -110,6 +111,77 @@
             white-space: nowrap;
             width: 60px;
         }
+
+        /* ---------- NAV-WRAPPER (för meny + READ) ---------- */
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            background: transparent;
+            position: sticky;
+            top: 0;
+            z-index: 500;
+            flex-wrap: wrap;
+        }
+
+        /* READ – språkvalsrullgardin */
+        .read-menu {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .read-menu label {
+            margin-right: 4px;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        .read-menu select {
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(4px);
+            font-size: 13px;
+            cursor: pointer;
+            transition: border-color 0.2s;
+            font-family: sans-serif;
+        }
+
+        .read-menu select:hover {
+            border-color: #888;
+        }
+
+        .read-menu select:focus {
+            outline: none;
+            border-color: #555;
+        }
+
+        /* MENY – INJECTAS AV MENU.JS */
+        #main-menu {
+            display: inline-block;
+        }
+
+        @media (max-width: 600px) {
+            .nav-wrapper {
+                padding: 8px 12px;
+                gap: 10px;
+            }
+            .read-menu select {
+                font-size: 12px;
+                padding: 4px 8px;
+            }
+            .read-menu label {
+                font-size: 12px;
+            }
+        }
+
         /* ---------- Responsiv ---------- */
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
@@ -133,7 +205,30 @@
     </style>
 </head>
 <body>
-    <div id="main-menu"></div>
+
+    <!-- ======================================== -->
+    <!-- NAVIGATION: READ + MENY                   -->
+    <!-- ======================================== -->
+
+    <div class="nav-wrapper">
+
+        <!-- READ – språkvalsrullgardin -->
+        <div class="read-menu">
+            <label for="read-select">LÄS:</label>
+            <select id="read-select" onchange="if(this.value) window.location.href='read.html?lang=' + this.value">
+                <!-- DYNAMISKA SPRÅK LÄGGS TILL HÄR -->
+            </select>
+        </div>
+
+        <!-- MENY – INJECTAS AV MENU.JS -->
+        <div id="main-menu"></div>
+
+    </div>
+
+    <!-- ======================================== -->
+    <!-- HUVUDINNEHÅLL                             -->
+    <!-- ======================================== -->
+
     <div class="page-container">
         <p class="language-name" id="language-name">
             <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
@@ -147,6 +242,10 @@
         <br>
         <div id="body-content"></div>
     </div>
+
+    <!-- ======================================== -->
+    <!-- JAVASCRIPT                               -->
+    <!-- ======================================== -->
 
     <script src="js/author.js"></script>
     <script>
@@ -216,9 +315,23 @@
         document.getElementById('flag-icon').alt = langData.name;
         document.getElementById('language-label').textContent = langData.name;
 
-        // ⭐ UPPDATERA RUBRIKERNA ⭐
+        // Uppdatera rubriker
         document.getElementById('lang-title').textContent = langData.title;
         document.getElementById('lang-subtitle').textContent = langData.subtitle;
+
+        // ============================================================
+        // 2. LADDA SPRÅKVÄLJAREN (READ-rullgardinen)
+        // ============================================================
+        const select = document.getElementById('read-select');
+        // Sortera språk efter namn
+        const sortedLangs = Object.keys(languages).sort((a, b) => languages[a].name.localeCompare(languages[b].name));
+        sortedLangs.forEach(code => {
+            const option = document.createElement('option');
+            option.value = code;
+            option.textContent = languages[code].name;
+            if (code === lang) option.selected = true;
+            select.appendChild(option);
+        });
 
         // ============================================================
         // 3. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
@@ -359,13 +472,12 @@
         }
     </script>
 
-<script>
-    const params = new URLSearchParams(window.location.search);
-    const lang = params.get('lang') || 'sv';
-    document.documentElement.lang = lang;
-</script>
-<script src="../menu.js"></script>
-<script src="../footer.js"></script>
+    <!-- ======================================== -->
+    <!-- MENY + FOOTER                            -->
+    <!-- ======================================== -->
+
+    <script src="../menu.js"></script>
+    <script src="../footer.js"></script>
 
 </body>
 </html>
