@@ -23,6 +23,18 @@ body {
 
 #main-menu { display: inline-block; }
 
+/* Föräldern – håller menyn på plats */
+.site-nav {
+    position: relative;
+    display: inline-block;
+}
+
+/* Barnet – själva rullgardinsmenyn */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropbtn {
     color: #1a1a1a;
     text-decoration: none;
@@ -42,17 +54,6 @@ body {
 .dropbtn:hover {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-/* Föräldern – håller menyn på plats */
-.site-nav {
-    position: relative;
-    display: inline-block;
-}
-
-/* Barnet – själva rullgardinsmenyn */
-.dropdown {
-    position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
