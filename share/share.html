@@ -248,7 +248,7 @@
             })
             .then(data => {
                 const langKey = langCode.toUpperCase();
-                const quotesData = data[langKey] || data['EN'] || data['SV'] || {};
+                const quotesData = data[langKey] || data['SV'] || data['EN'] || {};
                 const quotes = Object.values(quotesData);
                 container.innerHTML = '';
 
