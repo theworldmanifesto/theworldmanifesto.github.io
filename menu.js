@@ -123,23 +123,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // --- KLICK-HANTERING FÖR HUVUDMENYN ---
-    const dropdown = document.getElementById('homeDropdown');
-    const btn = document.getElementById('menuBtn');
-    if (btn && dropdown) {
-        const newBtn = btn.cloneNode(true);
-        btn.parentNode.replaceChild(newBtn, btn);
-        const newDropdown = dropdown.cloneNode(true);
-        dropdown.parentNode.replaceChild(newDropdown, dropdown);
-        const freshBtn = document.getElementById('menuBtn');
-        const freshDropdown = document.getElementById('homeDropdown');
-        if (freshBtn && freshDropdown) {
-            freshBtn.addEventListener('click', function(e) {
+    // OBS: Denna kod körs för VARJE meny som skapas
+    document.querySelectorAll('.site-nav').forEach(function(nav) {
+        const dropdown = nav.querySelector('.dropdown');
+        const btn = nav.querySelector('.dropbtn');
+        if (btn && dropdown) {
+            btn.addEventListener('click', function(e) {
                 e.preventDefault(); e.stopPropagation();
-                freshDropdown.classList.toggle('active');
-            });
-            document.addEventListener('click', function(e) {
-                if (!freshDropdown.contains(e.target)) freshDropdown.classList.remove('active');
+                // Toggle 'active' endast på denna dropdown
+                dropdown.classList.toggle('active');
             });
         }
-    }
+    });
+
+    // Stäng alla menyer när man klickar utanför
+    document.addEventListener('click', function(e) {
+        document.querySelectorAll('.dropdown.active').forEach(function(dropdown) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+        });
+    });
 });
