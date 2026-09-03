@@ -344,17 +344,51 @@
         };
 
         var trappan = {
-            'sv': 'Frihetstrappan', 'en': 'Freedom Staircase', 'fi': 'Vapauden portaat',
-            'zh': '自由阶梯', 'hi': 'स्वतंत्रता सीढ़ी', 'es': 'Escalera de la Libertad', 'fr': 'Escalier de la Liberté',
-            'de': 'Freiheitstreppe', 'ar': 'سلم الحرية', 'id': 'Tangga Kebebasan', 'bn': 'স্বাধীনতার সিঁড়ি',
-            'pt': 'Escada da Liberdade', 'ru': 'Лестница Свободы', 'uk': 'Сходи Свободи', 'bg': 'Стълбата на свободата',
-            'ur': 'آزادی کی سیڑھی', 'ja': '自由の階段', 'fil': 'Hagdan ng Kalayaan', 'ko': '자유의 계단',
-            'th': 'บันไดเสรีภาพ', 'vi': 'Cầu thang Tự do', 'tr': 'Özgürlük Merdiveni', 'fa': 'پلکان آزادی',
-            'sw': 'Ngazi ya Uhuru', 'it': 'Scala della Libertà', 'pl': 'Schody Wolności', 'nl': 'Vrijheidstrap',
-            'ro': 'Scara Libertății', 'el': 'Σκάλα της Ελευθερίας', 'af': 'Vryheidstrap', 'zu': 'Izitebhisi Zenkululeko',
-            'xh': 'Izinyuko Zenkululeko', 'cs': 'Schody svobody', 'hu': 'A Szabadság Lépcsői', 'he': 'מדרגות החירות',
-            'crs': 'Leskal Libète', 'no': 'Frihetstrappen', 'se': 'Frihetstrappa', 'fit': 'Vapauden portaat',
-            'da': 'Frihedstrappen', 'is': 'Frelsisstiginn', 'fo': 'Frælsistrappan', 'hr': 'Stube slobode', 'sk': 'Schody slobody', 'za': 'Vryheidstrap'
+            'en': 'Freedom Staircase',
+            'sv': 'Frihetstrappan',
+            'fi': 'Vapauden portaat',
+            'zh': '自由阶梯',
+            'hi': 'स्वतंत्रता सीढ़ी',
+            'es': 'Escalera de la Libertad',
+            'fr': 'Escalier de la Liberté',
+            'de': 'Freiheitstreppe',
+            'ar': 'سلم الحرية',
+            'id': 'Tangga Kebebasan',
+            'bn': 'স্বাধীনতার সিঁড়ি',
+            'pt': 'Escada da Liberdade',
+            'ru': 'Лестница Свободы',
+            'uk': 'Сходи Свободи',
+            'bg': 'Стълбата на свободата',
+            'ur': 'آزادی کی سیڑھی',
+            'ja': '自由の階段',
+            'fil': 'Hagdan ng Kalayaan',
+            'ko': '자유의 계단',
+            'th': 'บันไดเสรีภาพ',
+            'vi': 'Cầu thang Tự do',
+            'tr': 'Özgürlük Merdiveni',
+            'fa': 'پلکان آزادی',
+            'sw': 'Ngazi ya Uhuru',
+            'it': 'Scala della Libertà',
+            'pl': 'Schody Wolności',
+            'nl': 'Vrijheidstrap',
+            'ro': 'Scara Libertății',
+            'el': 'Σκάλα της Ελευθερίας',
+            'af': 'Vryheidstrap',
+            'zu': 'Izitebhisi Zenkululeko',
+            'xh': 'Izinyuko Zenkululeko',
+            'cs': 'Schody svobody',
+            'hu': 'A Szabadság Lépcsői',
+            'he': 'מדרגות החירות',
+            'crs': 'Leskal Libète',
+            'no': 'Frihetstrappen',
+            'se': 'Frihetstrappa',
+            'fit': 'Vapauden portaat',
+            'da': 'Frihedstrappen',
+            'is': 'Frelsisstiginn',
+            'fo': 'Frælsistrappan',
+            'hr': 'Stube slobode',
+            'sk': 'Schody slobody',
+            'za': 'Vryheidstrap'
         };
 
         // === ORDBOK FÖR DE FYRA STEGEN ===
@@ -372,6 +406,7 @@
 
         // === FUNKTIONER ===
         function updateTitleAndStaircase() {
+            // Uppdatera huvudtiteln
             if (currentLang !== 'en' && titlar[currentLang]) {
                 document.getElementById('main-subtitle').textContent = titlar[currentLang];
                 document.getElementById('main-subtitle').style.display = 'block';
@@ -379,9 +414,11 @@
                 document.getElementById('main-subtitle').style.display = 'none';
             }
 
+            // Uppdatera "Frihetstrappan" – med fallback till engelska
             var staircaseText = document.getElementById('staircase-text');
-            if (staircaseText && trappan[currentLang]) {
-                staircaseText.textContent = trappan[currentLang];
+            if (staircaseText) {
+                var text = trappan[currentLang] || trappan['en'] || 'Frihetstrappan';
+                staircaseText.textContent = text;
             }
         }
 
