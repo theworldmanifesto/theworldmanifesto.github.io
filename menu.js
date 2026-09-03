@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'pl': { menu: 'MENU', home: 'STRONA GŁÓWNA', manifesto: 'Przeczytaj Manifest Światowy', staircase: 'Schody Wolności (english)', tropics: 'Tropiki', robotel: 'Robotel', share: 'Udostępnij', read: 'CZYTAJ', chooseLang: 'Wybierz język' },
         'nl': { menu: 'MENU', home: 'HOME', manifesto: 'Lees het Wereldmanifest', staircase: 'Vrijheidstrap (english)', tropics: 'De Tropen', robotel: 'Robotel', share: 'Delen', read: 'LEES', chooseLang: 'Kies taal' },
         'ro': { menu: 'MENU', home: 'ACASĂ', manifesto: 'Citiți Manifestul Mondial', staircase: 'Scara Libertății (english)', tropics: 'Tropicele', robotel: 'Robotel', share: 'Distribuie', read: 'CITEȘTE', chooseLang: 'Alegeți limba' },
-        'el': { menu: 'ΜΕΝΟΥ', home: 'ΑΡΧΙΚΗ', manifesto: 'Διαβάστε το Παγκόσμιο Μανιφέστο', staircase: 'Σκάλα της Ελευθερίας (english)', tropics: 'Οι Τροπικοί', robotel: 'Ρομποτέλ', share: 'Μοιραστείτε', read: 'ΔΙΑΒΑΣΤΕ', chooseLang: 'Επιλέξτε γλώσσα' },
+        'el': { menu: 'ΜΕΝΟΥ', home: 'ΑΡΙΚΗ', manifesto: 'Διαβάστε το Παγκόσμιο Μανιφέστο', staircase: 'Σκάλα της Ελευθερίας (english)', tropics: 'Οι Τροπικοί', robotel: 'Ρομποτέλ', share: 'Μοιραστείτε', read: 'ΔΙΑΒΑΣΤΕ', chooseLang: 'Επιλέξτε γλώσσα' },
         'af': { menu: 'MENU', home: 'TUIS', manifesto: 'Lees die Wêreldmanifest', staircase: 'Vryheidstrap (english)', tropics: 'Die Trope', robotel: 'Robotel', share: 'Deel', read: 'LEES', chooseLang: 'Kies taal' },
         'zu': { menu: 'IMENU', home: 'IKHAYA', manifesto: 'Funda iManifesto Yomhlaba', staircase: 'Izitebhisi Zenkululeko (english)', tropics: 'Izindawo Ezishisayo', robotel: 'Robotel', share: 'Yabelana', read: 'FUNDA', chooseLang: 'Khetha ulimi' },
         'xh': { menu: 'IMENU', home: 'IKHAYA', manifesto: 'Funda iManifesto Yehlabathi', staircase: 'Izinyuko Zenkululeko (english)', tropics: 'Iindawo Ezishushu', robotel: 'Robotel', share: 'Yabelana', read: 'FUNDA', chooseLang: 'Khetha ulwimi' },
@@ -122,26 +122,20 @@ document.addEventListener('DOMContentLoaded', function() {
         readSelect.textContent = t.chooseLang;
     }
 
-    // --- KLICK-HANTERING FÖR HUVUDMENYN ---
-    // OBS: Denna kod körs för VARJE meny som skapas
-    document.querySelectorAll('.site-nav').forEach(function(nav) {
-        const dropdown = nav.querySelector('.dropdown');
-        const btn = nav.querySelector('.dropbtn');
-        if (btn && dropdown) {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault(); e.stopPropagation();
-                // Toggle 'active' endast på denna dropdown
-                dropdown.classList.toggle('active');
-            });
-        }
-    });
-
-    // Stäng alla menyer när man klickar utanför
-    document.addEventListener('click', function(e) {
-        document.querySelectorAll('.dropdown.active').forEach(function(dropdown) {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove('active');
-            }
+    // --- KLICK-HANTERING FÖR HUVUDMENYN (ENDAST FÖR DENNA MENY) ---
+    const dropdown = document.getElementById('homeDropdown');
+    const btn = document.getElementById('menuBtn');
+    if (btn && dropdown) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            dropdown.classList.toggle('active');
         });
+    }
+
+    // Stäng menyn när man klickar utanför
+    document.addEventListener('click', function(e) {
+        if (dropdown && !dropdown.contains(e.target)) {
+            dropdown.classList.remove('active');
+        }
     });
 });
