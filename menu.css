@@ -57,12 +57,15 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
+/* OSYNLIG BRYGGA + RULLGARDIN */
 .dropdown-content {
     display: none;
     position: absolute;
     left: 0;
     top: 100%;
-    margin-top: 4px;
+    /* Detta skapar den osynliga zonen som håller menyn öppen */
+    padding-top: 4px;
+    margin-top: 0;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(12px);
     min-width: 200px;
@@ -73,6 +76,7 @@ body {
     overflow: hidden;
 }
 
+/* Prickar – de första 4px i dropdown-content är osynliga, men ändå en del av menyn */
 .dropdown-content a {
     color: #1a1a1a;
     padding: 10px 16px;
