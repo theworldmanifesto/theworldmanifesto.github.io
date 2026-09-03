@@ -133,6 +133,7 @@
     </style>
 </head>
 <body>
+    <div id="main-menu"></div>
     <div class="page-container">
         <p class="language-name" id="language-name">
             <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
@@ -910,6 +911,7 @@ function buildTable(translation) {
     const params = new URLSearchParams(window.location.search);
     const lang = params.get('lang') || 'sv';
     document.documentElement.lang = lang;
+<script src="../menu.js"></script>
 </script>
 <script src="../footer.js"></script>
 </body>
