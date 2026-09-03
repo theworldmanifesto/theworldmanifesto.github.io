@@ -136,8 +136,8 @@
     <div class="container">
         <main>
             <header>
-                <h1>Share with others on the Internet</h1>
-                <p>Refer to this manifesto by leaving quotes on various social media.</p>
+                <h1 id="page-title">Share with others on the Internet</h1>
+                <p id="page-subtitle">Refer to this manifesto by leaving quotes on various social media.</p>
             </header>
 
             <div class="lang-bar" id="lang-bar">Below are shown 24 quotes that are taken from The World Manifesto</div>
@@ -189,8 +189,8 @@
 
             <div id="quotes-container"></div>
 
-            <p class="read-more">
-                Want to read it all? <a href="../lang/lang.html">Read the full manifesto in 42 languages →</a>
+            <p class="read-more" id="read-more-text">
+                <a href="../lang/lang.html">Read the full manifesto in 42 languages →</a>
             </p>
         </main>
 
@@ -202,9 +202,58 @@
         const MANIFESTO = "The World Manifesto";
 
         const urlParams = new URLSearchParams(window.location.search);
-        const currentLang = (urlParams.get('lang') || 'sv').toUpperCase();
+        const currentLang = (urlParams.get('lang') || 'sv').toLowerCase();
 
-        document.getElementById('lang-select').value = (urlParams.get('lang') || 'sv').toLowerCase();
+        document.getElementById('lang-select').value = currentLang;
+
+        // --- ÖVERSÄTTNINGAR FÖR RUBRIKER ---
+        const uiTranslations = {
+            'sv': {
+                title: 'Dela med andra på Internet',
+                subtitle: 'Hänvisa till detta manifest genom att lämna citat på olika sociala medier.',
+                langBar: 'Nedan visas 24 citat som är hämtade från Världsmanifestet',
+                readMore: 'Läs hela manifestet på 42 språk →'
+            },
+            'en': {
+                title: 'Share with others on the Internet',
+                subtitle: 'Refer to this manifesto by leaving quotes on various social media.',
+                langBar: 'Below are shown 24 quotes that are taken from The World Manifesto',
+                readMore: 'Read the full manifesto in 42 languages →'
+            },
+            'zh': {
+                title: '在互联网上与他人分享',
+                subtitle: '通过在社交媒体上留下引文来引用本宣言。',
+                langBar: '以下显示的是取自《世界宣言》的24条引文',
+                readMore: '阅读完整宣言，共42种语言 →'
+            },
+            'es': {
+                title: 'Compartir con otros en Internet',
+                subtitle: 'Haga referencia a este manifiesto dejando citas en varias redes sociales.',
+                langBar: 'A continuación se muestran 24 citas tomadas de El Manifiesto Mundial',
+                readMore: 'Leer el manifiesto completo en 42 idiomas →'
+            },
+            'fr': {
+                title: 'Partager avec d\'autres sur Internet',
+                subtitle: 'Référez-vous à ce manifeste en laissant des citations sur divers médias sociaux.',
+                langBar: 'Voici 24 citations tirées du Manifeste Mondial',
+                readMore: 'Lire le manifeste complet en 42 langues →'
+            },
+            'de': {
+                title: 'Mit anderen im Internet teilen',
+                subtitle: 'Beziehen Sie sich auf dieses Manifest, indem Sie Zitate in sozialen Medien hinterlassen.',
+                langBar: 'Nachfolgend werden 24 Zitate aus dem Weltmanifest gezeigt',
+                readMore: 'Das vollständige Manifest in 42 Sprachen lesen →'
+            }
+            // Lägg till fler språk här efter behov
+        };
+
+        // Hämta översättning eller fallback till engelska
+        const ui = uiTranslations[currentLang] || uiTranslations['en'];
+
+        // Uppdatera rubrikerna
+        document.getElementById('page-title').textContent = ui.title;
+        document.getElementById('page-subtitle').textContent = ui.subtitle;
+        document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
 
         function escapeHtml(s) {
             return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -216,9 +265,13 @@
                 return response.json();
             })
             .then(data => {
-                const quotesData = data[currentLang] || data['SV'] || data['EN'] || {};
+                const langKey = currentLang.toUpperCase();
+                const quotesData = data[langKey] || data['SV'] || data['EN'] || {};
                 const quotes = Object.values(quotesData);
                 const container = document.getElementById('quotes-container');
+
+                // Uppdatera lang-bar med antal citat
+                document.getElementById('lang-bar').textContent = ui.langBar.replace('24', quotes.length);
 
                 quotes.forEach((text, idx) => {
                     const escText = escapeHtml(text);
@@ -253,10 +306,6 @@
                         setTimeout(() => btn.textContent = old, 1200);
                     });
                 });
-
-                // Update lang-bar with count
-                document.getElementById('lang-bar').textContent =
-                    'Below are shown ' + quotes.length + ' quotes that are taken from ' + MANIFESTO;
             })
             .catch(err => console.error('Fel:', err));
     </script>
