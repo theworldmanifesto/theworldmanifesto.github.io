@@ -323,9 +323,50 @@
         const MANIFESTO = "The World Manifesto";
         const COPIED = "Copied!";
 
-        // === SPRÅKHANTERING ===
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentLang = (urlParams.get('lang') || navigator.language || document.documentElement.lang || 'sv').split('-')[0].toLowerCase();
+<script>
+    // ============================================================
+    // SPRÅKHANTERING
+    // ============================================================
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentLang = (urlParams.get('lang') || navigator.language || 'sv').split('-')[0].toLowerCase();
+
+    // ============================================================
+    // LADDA four_steps.json
+    // ============================================================
+    let stepsTranslations = {};
+    
+    fetch('four_steps.json')
+        .then(response => response.json())
+        .then(data => {
+            stepsTranslations = data;
+            updateSteps(); // ← Här anropas funktionen
+        })
+        .catch(err => console.error('Fel:', err));
+
+    // ============================================================
+    // FUNKTION: Uppdatera stegen
+    // ============================================================
+    function updateSteps() {
+        // ... din kod här ...
+    }
+
+    // ============================================================
+    // FUNKTION: Uppdatera titel (LÄGG TILL DENNA)
+    // ============================================================
+    function updateStepsTitle() {
+        const titleElement = document.getElementById('steps-title');
+        if (!titleElement) return;
+        
+        if (stepsTranslations && Object.keys(stepsTranslations).length > 0) {
+            let langToUse = currentLang;
+            if (!stepsTranslations[langToUse]) langToUse = 'en';
+            const trans = stepsTranslations[langToUse];
+            if (trans && trans.title) {
+                titleElement.textContent = trans.title;
+            }
+        }
+    }
+</script>
 
         // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
         var titlar = {
