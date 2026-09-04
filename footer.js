@@ -60,8 +60,6 @@ const currentLang = urlLang || (navigator.language || 'sv').split('-')[0].toLowe
         'da': { email: '✉  E-mail til webmaster', copyright: 'Verdensmanifestet – Udgivet 2026', translated: 'Verdensmanifestet er oversat til 42 sprog – hvilket betyder, at mere end 7 ud af 10 mennesker i verden kan læse det på deres eget sprog.' },
         'is': { email: '✉  Tölvupóstur til vefstjóra', copyright: 'Heimsmanifestið – Gefið út 2026', translated: 'Heimsmanifestið er þýtt á 42 tungumál – sem þýðir að meira en 7 af hverjum 10 manneskjum í heiminum geta lesið það á sínu eigin tungumáli.' },
         'fo': { email: '✉  T-postur til vevstjóra', copyright: 'Heimsskráin – Útgivið 2026', translated: 'Heimsskráin er týdd til 42 mál – sum merkir, at meira enn 7 av hvørjum 10 fólkum í heiminum kunnu lesa hana á sínum egna máli.' },
-        'hr': { email: '✉  E-mail webmasteru', copyright: 'Svjetski manifest – Objavljeno 2026.', translated: 'Svjetski manifest preveden je na 42 jezika – što znači da ga više od 7 od 10 ljudi u svijetu može pročitati na svom jeziku.' },
-        'sk': { email: '✉  E-mail webmasterovi', copyright: 'Svetový manifest – Vydané v roku 2026', translated: 'Svetový manifest je preložený do 42 jazykov – čo znamená, že viac ako 7 z 10 ľudí na svete si ho môže prečítať vo svojom jazyku.' }
     };
 
     // ⭐ FALLBACK TILL ENGELSKA ISTÄLLET FÖR SVENSKA ⭐
