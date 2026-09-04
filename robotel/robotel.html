@@ -44,7 +44,6 @@
             margin-right: 4px;
         }
 
-        /* NYA CSS-REGLER FÖR TANKEBUBBLAN OCH PRICKARNA */
         .dold { display: none; }
 
         .tanker {
@@ -57,33 +56,6 @@
             50%  { opacity: 1;   transform: scale(1.1); }
             100% { opacity: 0.4; transform: scale(0.9); }
         }
-
-        /* Prickarna som blinkar i tur och ordning */
-        .thinking-dots {
-            display: inline-flex;
-            align-items: center;
-            margin-left: 4px;
-        }
-        .thinking-dots span {
-            width: 4px;
-            height: 4px;
-            background-color: #94a3b8;
-            border-radius: 50%;
-            margin: 0 2px;
-            animation: blink 1.4s infinite both;
-        }
-        .thinking-dots span:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-        .thinking-dots span:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-        @keyframes blink {
-            0% { opacity: 0.2; }
-            20% { opacity: 1; }
-            100% { opacity: 0.2; }
-        }
-        /* SLUT PÅ NYA CSS-REGLER */
     </style>
 </head>
 <body>
@@ -104,9 +76,9 @@
                     <button onclick="clearChat()" style="background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 14px;">Rensa</button>
                 </div>
                 <div id="chat-box" style="height: 350px; overflow-y: auto; padding: 15px; background: #ffffff; display: flex; flex-direction: column; gap: 10px;">
-                    <div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">
+                    <div id="greeting-message" style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">
                         <img src="../menu_icons/tropics.png" alt="Tropics" class="icon">
-                        Write your question here below!
+                        <span id="greeting-text">Write your question here below!</span>
                     </div>
                 </div>
                 <div style="display: flex; padding: 10px; border-top: 1px solid #e2e8f0; background: #f8fafc;">
@@ -120,6 +92,75 @@
 
     <!-- ROBOTEL CHAT SKRIPT -->
     <script>
+    // ============================================================
+    // 1. ÖVERSÄTTNINGAR FÖR HÄLSNINGSFRASEN (42 SPRÅK)
+    // ============================================================
+    const greetingTranslations = {
+        'sv': 'Skriv din fråga här nedan!',
+        'en': 'Write your question here below!',
+        'fi': 'Kirjoita kysymyksesi tähän alle!',
+        'zh': '在此写下您的问题！',
+        'hi': 'अपना प्रश्न नीचे लिखें!',
+        'es': '¡Escribe tu pregunta aquí abajo!',
+        'fr': 'Écrivez votre question ci-dessous !',
+        'de': 'Schreiben Sie Ihre Frage hier unten!',
+        'ar': 'اكتب سؤالك أدناه!',
+        'id': 'Tulis pertanyaan Anda di bawah ini!',
+        'bn': 'নীচে আপনার প্রশ্ন লিখুন!',
+        'pt': 'Escreva sua pergunta aqui abaixo!',
+        'ru': 'Напишите свой вопрос ниже!',
+        'uk': 'Напишіть своє запитання нижче!',
+        'bg': 'Напишете въпроса си по-долу!',
+        'ur': 'اپنا سوال نیچے لکھیں!',
+        'ja': '下に質問を書いてください！',
+        'tl': 'Isulat ang iyong tanong sa ibaba!',
+        'ko': '질문을 아래에 적으세요!',
+        'th': 'เขียนคำถามของคุณด้านล่าง!',
+        'vi': 'Viết câu hỏi của bạn bên dưới!',
+        'tr': 'Sorunuzu aşağıya yazın!',
+        'fa': 'سوال خود را در زیر بنویسید!',
+        'sw': 'Andika swali lako hapa chini!',
+        'it': 'Scrivi la tua domanda qui sotto!',
+        'pl': 'Napisz swoje pytanie poniżej!',
+        'nl': 'Schrijf uw vraag hieronder!',
+        'ro': 'Scrieți întrebarea dvs. mai jos!',
+        'el': 'Γράψτε την ερώτησή σας παρακάτω!',
+        'af': 'Skryf u vraag hieronder!',
+        'zu': 'Bhala umbuzo wakho ngezansi!',
+        'xh': 'Bhala umbuzo wakho apha ngezantsi!',
+        'cs': 'Napište svou otázku níže!',
+        'hu': 'Írja le kérdését alább!',
+        'he': 'כתבו את שאלתכם למטה!',
+        'crs': 'Ekrir ou kestyon isi anba!',
+        'no': 'Skriv spørsmålet ditt nedenfor!',
+        'se': 'Čále iežat gažaldaga dás vuollelis!',
+        'fit': 'Kirjoita kysymyksesi tähän alle!',
+        'da': 'Skriv dit spørgsmål herunder!',
+        'is': 'Skrifaðu spurninguna þína hér að neðan!',
+        'fo': 'Skrivaðu spurningin tína her niðanfyri!',
+        'hr': 'Napišite svoje pitanje ovdje ispod!',
+        'sk': 'Napíšte svoju otázku nižšie!'
+    };
+
+    // ============================================================
+    // 2. HÄMTA BESÖKARENS SPRÅK
+    // ============================================================
+    const browserLang = (navigator.language || 'en').split('-')[0].toLowerCase();
+    const greeting = greetingTranslations[browserLang] || greetingTranslations['en'];
+
+    // ============================================================
+    // 3. UPPDATERA HÄLSNINGSFRASEN
+    // ============================================================
+    document.addEventListener('DOMContentLoaded', function() {
+        const greetingText = document.getElementById('greeting-text');
+        if (greetingText) {
+            greetingText.textContent = greeting;
+        }
+    });
+
+    // ============================================================
+    // 4. CHATT-FUNKTIONER
+    // ============================================================
     let currentLanguage = navigator.language || 'sv-SE';
 
     const inputEl = document.getElementById('user-input');
@@ -139,17 +180,13 @@
         inputEl.value = '';
         boxEl.scrollTop = boxEl.scrollHeight;
 
-        // Skapar rutan där bubblan och prickarna ska ligga
         const thinkingDiv = document.createElement('div');
         thinkingDiv.id = 'thinking';
         thinkingDiv.style.cssText = 'background: #f1f5f9; color: #94a3b8; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%; font-style: italic;';
-        
-        // Bilden + Prickarna (tre små cirklar som blinkar)
-        thinkingDiv.innerHTML = `<img id="bubbla" src="../robotel/robotel_pics/robotel_agent_thinking.png" alt="Thinking" class="icon dold" style="width:20px;height:20px;vertical-align:middle;"> <span class="thinking-dots"><span></span><span></span><span></span></span>`;
+        thinkingDiv.innerHTML = `<img id="bubbla" src="../robotel/robotel_pics/robotel_agent_thinking.png" alt="Thinking" class="icon dold" style="width:20px;height:20px;vertical-align:middle;"> ...`;
         boxEl.appendChild(thinkingDiv);
         boxEl.scrollTop = boxEl.scrollHeight;
 
-        // Hämta bilden NU och starta pulseringen
         const bubbla = document.getElementById('bubbla');
         bubbla.classList.remove('dold');
         bubbla.classList.add('tanker');
@@ -165,7 +202,6 @@
             });
             const data = await response.json();
             
-            // Tar bort hela tänk-rutan (och animationen) när svaret kommer
             const thinking = document.getElementById('thinking');
             if(thinking) thinking.remove();
 
@@ -174,13 +210,11 @@
             }
 
             let reply = data.reply || 'No reply';
-            // Länkar klickbara
             reply = reply.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" style="color: #2563eb; text-decoration: underline;">$1</a>');
             reply = reply.replace(/\n/g, '<br>');
 
             boxEl.innerHTML += `<div style="background: #ffffff; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px rgba(0,0,0,0.05); max-width: 80%;">${reply}</div>`;
         } catch (err) {
-            // Tar bort hela tänk-rutan (och animationen) om det blir fel
             const thinking = document.getElementById('thinking');
             if(thinking) thinking.remove();
             boxEl.innerHTML += `<div style="background: #ef4444; color: white; padding: 10px 14px; border-radius: 8px; align-self: flex-start;"><img src="../robotel/robotel_pics/robotel_agent_error.png" alt="Error" class="icon" style="width:20px;height:20px;vertical-align:middle;"> Couldn't reach Robotel right now. (${escapeHtml(err.message)})</div>`;
@@ -191,10 +225,11 @@
     function clearChat() {
         currentLanguage = navigator.language || 'sv-SE';
         boxEl.innerHTML = `
-    <div style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">
-        <img src="../robotel/robotel_pics/robotel_agent_broom.png" alt="Broom" class="icon" style="width:20px;height:20px;vertical-align:middle;">
-        Chatten har rensats. Ställ din fråga till Robotel!
+    <div id="greeting-message" style="background: #f1f5f9; color: #1e293b; padding: 10px 14px; border-radius: 8px; align-self: flex-start; max-width: 80%;">
+        <img src="../menu_icons/tropics.png" alt="Tropics" class="icon">
+        <span id="greeting-text">${greeting}</span>
     </div>`;
+        // Uppdatera även "Rensa"-knappens funktion så att den använder rätt språk vid rensning
     }
 
     function escapeHtml(s){
