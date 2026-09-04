@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'el': 'gr.svg', 'af': 'za.svg', 'zu': 'za.svg', 'xh': 'za.svg',
         'cs': 'cz.svg', 'hu': 'hu.svg', 'he': 'il.svg', 'crs': 'sc.svg',
         'no': 'no.svg', 'se': 'dsg.svg', 'fit': 'fit.svg', 'da': 'dk.svg',
-        'is': 'is.svg', 'fo': 'fo.svg', 'hr': 'hr.svg', 'sk': 'sk.svg'
+        'is': 'is.svg', 'fo': 'fo.svg'
     };
 
     // --- ORDBOK FÖR ALLA 42 SPRÅK (med "Läs/Lue/Read" prefix och "english" för Frihetstrappan) ---
@@ -66,8 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
         'da': { menu: 'MENU', home: 'HJEM', manifesto: 'Læs Verdensmanifestet', staircase: 'Frihedstrappen (english)', tropics: 'Troperne', robotel: 'Robotel', share: 'Del', read: 'LÆS', chooseLang: 'Vælg sprog' },
         'is': { menu: 'VALMYND', home: 'HEIM', manifesto: 'Lesa Heimsmanifestið', staircase: 'Frelsisstiginn (english)', tropics: 'Hitabeltið', robotel: 'Robotel', share: 'Deila', read: 'LESA', chooseLang: 'Veldu tungumál' },
         'fo': { menu: 'MENY', home: 'HEIM', manifesto: 'Les Heimsskráina', staircase: 'Frælsistrappan (english)', tropics: 'Tropiskir', robotel: 'Robotel', share: 'Deil', read: 'LES', chooseLang: 'Vel mál' },
-        'hr': { menu: 'MENU', home: 'HOME', manifesto: 'Pročitajte Svjetski manifest', staircase: 'Stube slobode (english)', tropics: 'Tropici', robotel: 'Robotel', share: 'Podijeli', read: 'ČITAJ', chooseLang: 'Odaberite jezik' },
-        'sk': { menu: 'MENU', home: 'DOMOV', manifesto: 'Prečítajte si Svetový manifest', staircase: 'Schody slobody (english)', tropics: 'Tropy', robotel: 'Robotel', share: 'Zdieľať', read: 'ČÍTAJ', chooseLang: 'Vyberte jazyk' }
     };
 
     // Välj rätt språk (fallback till engelska)
@@ -100,8 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <a href="${base}lang/lang.html?lang=${currentLang}"><img src="${flagSrc}" alt="Flag" style="width:20px;height:15px;vertical-align:middle;margin-right:8px;border-radius:2px;"> ${t.manifesto}</a>
                         <a href="${base}freedom-staircase/freedom-staircase.html?lang=en"><img src="${base}menu_icons/freedom.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.staircase}</a>
                         <a href="${base}tropics/tropics.html?lang=${currentLang}"><img src="${base}menu_icons/tropics.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.tropics}</a>
-                        <a href="${base}robotel/robotel.html?lang=${currentLang}"><img src="${base}menu_icons/robotel.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.robotel}</a>
                         <a href="${base}share/share.html?lang=${currentLang}"><img src="${base}menu_icons/share.svg" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.share}</a>
+                        <a href="${base}robotel/robotel.html?lang=${currentLang}"><img src="${base}menu_icons/robotel.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.robotel}</a>
                     </div>
                 </div>
             </div>
