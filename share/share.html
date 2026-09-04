@@ -236,68 +236,84 @@
         return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
-    function loadQuotes(langCode) {
-        currentQuoteLang = langCode;
-        const container = document.getElementById('quotes-container');
-        container.innerHTML = '<p>Laddar citat...</p>';
-
-        fetch('quotes.json')
-            .then(response => {
-                if (!response.ok) throw new Error('Kunde inte läsa JSON');
-                return response.json();
-            })
-            .then(data => {
-                const langKey = langCode.toUpperCase();
-                const quotesData = data[langKey] || data['EN'] || data['SV'] || {};
-                const quotes = Object.values(quotesData);
-                container.innerHTML = '';
-
-                if (quotes.length === 0) {
-                    container.innerHTML = '<p style="color:#888;">Inga citat tillgängliga på detta språk.</p>';
-                    return;
-                }
-
-                quotes.forEach((text, idx) => {
-                    const escText = escapeHtml(text);
-                    const shareText = '"' + text + '" — The World Manifesto ' + PAGE;
-                    const encText = encodeURIComponent(shareText);
-                    const encQuote = encodeURIComponent(text);
-
-                    const card = document.createElement('div');
-                    card.className = 'quote-card';
-                    card.innerHTML = `
-                        <div class="quote-text">"${escText}"</div>
-                        <div class="share-row">
-                            <a class="btn btn-x" href="https://x.com/intent/tweet?text=${encText}" target="_blank">Share on X</a>
-                            <a class="btn btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(PAGE)}&quote=${encQuote}" target="_blank">Facebook</a>
-                            <a class="btn btn-wa" href="https://wa.me/?text=${encText}" target="_blank">WhatsApp</a>
-                            <a class="btn btn-tg" href="https://t.me/share/url?url=${encodeURIComponent(PAGE)}&text=${encQuote}" target="_blank">Telegram</a>
-                            <a class="btn btn-em" href="mailto:?subject=${encodeURIComponent(MANIFESTO)}&body=${encText}" target="_blank">Email</a>
-                            <a class="btn btn-copy" href="#" data-text="${encText}">Copy Link</a>
-                        </div>
-                    `;
-                    container.appendChild(card);
-                });
-
-                // Copy button functionality
-                container.querySelectorAll('.btn-copy').forEach(btn => {
-                    btn.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const text = decodeURIComponent(btn.dataset.text);
-                        navigator.clipboard.writeText(text);
-                        const old = btn.textContent;
-                        btn.textContent = 'Copied!';
-                        setTimeout(() => btn.textContent = old, 1200);
-                    });
-                });
-
-                document.getElementById('lang-select').value = langCode;
-            })
-            .catch(err => {
-                console.error('Fel:', err);
-                container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
-            });
+function loadQuotes(langCode) {
+    console.log('loadQuotes anropad med språk:', langCode);
+    const container = document.getElementById('quotes-container');
+    
+    if (!container) {
+        console.error('Elementet "quotes-container" hittades inte i HTML!');
+        return;
     }
+    
+    container.innerHTML = '<p>Laddar citat...</p>';
+
+    fetch('quotes.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Kunde inte läsa JSON');
+            return response.json();
+        })
+        .then(data => {
+            console.log('JSON-data laddad, nycklar:', Object.keys(data));
+            
+            const langKey = langCode.toUpperCase();
+            console.log('Söker efter nyckel:', langKey);
+            
+            let quotesData = data[langKey];
+            if (!quotesData) {
+                console.log('Språket ' + langKey + ' saknas, använder engelska istället');
+                quotesData = data['EN'] || data['SV'] || {};
+            }
+            
+            const quotes = Object.values(quotesData);
+            console.log('Antal citat som hittades:', quotes.length);
+            container.innerHTML = '';
+
+            if (quotes.length === 0) {
+                container.innerHTML = '<p style="color:#888;">Inga citat tillgängliga på detta språk.</p>';
+                return;
+            }
+
+            quotes.forEach((text, idx) => {
+                const escText = escapeHtml(text);
+                const shareText = '"' + text + '" — The World Manifesto ' + PAGE;
+                const encText = encodeURIComponent(shareText);
+                const encQuote = encodeURIComponent(text);
+
+                const card = document.createElement('div');
+                card.className = 'quote-card';
+                card.innerHTML = `
+                    <div class="quote-text">"${escText}"</div>
+                    <div class="share-row">
+                        <a class="btn btn-x" href="https://x.com/intent/tweet?text=${encText}" target="_blank">Share on X</a>
+                        <a class="btn btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(PAGE)}&quote=${encQuote}" target="_blank">Facebook</a>
+                        <a class="btn btn-wa" href="https://wa.me/?text=${encText}" target="_blank">WhatsApp</a>
+                        <a class="btn btn-tg" href="https://t.me/share/url?url=${encodeURIComponent(PAGE)}&text=${encQuote}" target="_blank">Telegram</a>
+                        <a class="btn btn-em" href="mailto:?subject=${encodeURIComponent(MANIFESTO)}&body=${encText}" target="_blank">Email</a>
+                        <a class="btn btn-copy" href="#" data-text="${encText}">Copy Link</a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            // Copy button functionality
+            container.querySelectorAll('.btn-copy').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const text = decodeURIComponent(btn.dataset.text);
+                    navigator.clipboard.writeText(text);
+                    const old = btn.textContent;
+                    btn.textContent = 'Copied!';
+                    setTimeout(() => btn.textContent = old, 1200);
+                });
+            });
+
+            document.getElementById('lang-select').value = langCode;
+        })
+        .catch(err => {
+            console.error('Fel:', err);
+            container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
+        });
+}
 
     // --- LADDA CITAT VID SIDLADDNING ---
     const urlParams = new URLSearchParams(window.location.search);
