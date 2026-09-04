@@ -2,7 +2,10 @@
     'use strict';
 
     // Hämta språk från webbläsaren
-    const currentLang = (navigator.language || 'sv').split('-')[0].toLowerCase();
+    // Läs språk från URL-parametern (för sidor som är låsta till engelska)
+const urlParams = new URLSearchParams(window.location.search);
+const urlLang = urlParams.get('lang');
+const currentLang = urlLang || (navigator.language || 'sv').split('-')[0].toLowerCase();
 
     // Beräkna bas-sökväg (för att hitta bilder korrekt från alla sidor)
     function getBasePath() {
