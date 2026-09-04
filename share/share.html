@@ -143,7 +143,7 @@
             <div class="lang-bar" id="lang-bar">Below are shown quotes that are taken from The World Manifesto</div>
 
             <select id="lang-select" class="lang-select" onchange="loadQuotes(this.value)">
-                <option value="en">English</option>
+                <option value="en" selected>English</option>
                 <option value="zh">中文</option>
                 <option value="hi">हिन्दी</option>
                 <option value="es">Español</option>
@@ -236,75 +236,51 @@
             return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
         }
 
-        function loadQuotes(langCode) {
-            currentQuoteLang = langCode;
-            const container = document.getElementById('quotes-container');
-            container.innerHTML = '<p>Laddar citat...</p>';
+function loadQuotes(langCode) {
+    currentQuoteLang = langCode;
+    const container = document.getElementById('quotes-container');
+    container.innerHTML = '<p>Laddar citat...</p>';
 
-            fetch('quotes.json')
-                .then(response => {
-                    if (!response.ok) throw new Error('Kunde inte läsa JSON');
-                    return response.json();
-                })
-                .then(data => {
-                    const langKey = langCode.toUpperCase();
-                    // ⭐ FALLBACK: FÖRSÖK MED ENGELSKA FÖRST, SEDAN SVENSKA ⭐
-                    const quotesData = data[langKey] || data['EN'] || data['SV'] || {};
-                    const quotes = Object.values(quotesData);
-                    container.innerHTML = '';
+    fetch('quotes.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Kunde inte läsa JSON');
+            return response.json();
+        })
+        .then(data => {
+            // Försök använda det valda språket
+            const langKey = langCode.toUpperCase();
+            let quotesData = data[langKey];
+            
+            // OM SPRÅKET INTE FINNS, ANVÄND ENGELSKA SOM RESERV
+            if (!quotesData) {
+                quotesData = data['EN'] || {};
+                // Uppdatera menyn så att den visar engelska
+                document.getElementById('lang-select').value = 'en';
+            }
+            
+            const quotes = Object.values(quotesData);
+            container.innerHTML = '';
 
-                    if (quotes.length === 0) {
-                        container.innerHTML = '<p style="color:#888;">Inga citat tillgängliga på detta språk.</p>';
-                        return;
-                    }
+            if (quotes.length === 0) {
+                container.innerHTML = '<p style="color:#888;">Inga citat tillgängliga på detta språk.</p>';
+                return;
+            }
 
-                    quotes.forEach((text, idx) => {
-                        const escText = escapeHtml(text);
-                        const shareText = '"' + text + '" — The World Manifesto ' + PAGE;
-                        const encText = encodeURIComponent(shareText);
-                        const encQuote = encodeURIComponent(text);
-
-                        const card = document.createElement('div');
-                        card.className = 'quote-card';
-                        card.innerHTML = `
-                            <div class="quote-text">"${escText}"</div>
-                            <div class="share-row">
-                                <a class="btn btn-x" href="https://x.com/intent/tweet?text=${encText}" target="_blank">Share on X</a>
-                                <a class="btn btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(PAGE)}&quote=${encQuote}" target="_blank">Facebook</a>
-                                <a class="btn btn-wa" href="https://wa.me/?text=${encText}" target="_blank">WhatsApp</a>
-                                <a class="btn btn-tg" href="https://t.me/share/url?url=${encodeURIComponent(PAGE)}&text=${encQuote}" target="_blank">Telegram</a>
-                                <a class="btn btn-em" href="mailto:?subject=${encodeURIComponent(MANIFESTO)}&body=${encText}" target="_blank">Email</a>
-                                <a class="btn btn-copy" href="#" data-text="${encText}">Copy Link</a>
-                            </div>
-                        `;
-                        container.appendChild(card);
-                    });
-
-                    // Copy button functionality
-                    container.querySelectorAll('.btn-copy').forEach(btn => {
-                        btn.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            const text = decodeURIComponent(btn.dataset.text);
-                            navigator.clipboard.writeText(text);
-                            const old = btn.textContent;
-                            btn.textContent = 'Copied!';
-                            setTimeout(() => btn.textContent = old, 1200);
-                        });
-                    });
-
-                    document.getElementById('lang-select').value = langCode;
-                })
-                .catch(err => {
-                    console.error('Fel:', err);
-                    container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
-                });
-        }
+            // ... resten av din kod som skapar citatkorten ...
+            // (behåll den oförändrad)
+        })
+        .catch(err => {
+            console.error('Fel:', err);
+            container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
+        });
+}
 
         // --- LADDA CITAT VID SIDLADDNING ---
-        const urlParams = new URLSearchParams(window.location.search);
-        const urlLang = urlParams.get('lang') || 'en'; // Fallback till engelska
-        document.getElementById('lang-select').value = urlLang;
-        loadQuotes(urlLang);
+const urlParams = new URLSearchParams(window.location.search);
+const browserLang = (navigator.language || 'en').split('-')[0].toLowerCase();
+const urlLang = urlParams.get('lang') || browserLang || 'en';
+document.getElementById('lang-select').value = urlLang;
+loadQuotes(urlLang);
     </script>
 
     <!-- Meny LÄNK TILL DEN SEPARERADE MENY-JS:EN (ETT STEG UPP) -->
