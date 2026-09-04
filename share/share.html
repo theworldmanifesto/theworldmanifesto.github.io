@@ -203,20 +203,242 @@
     const MANIFESTO = "The World Manifesto";
 
     // --- ÖVERSÄTTNINGAR FÖR RUBRIKER ---
-    const uiTranslations = {
-        'sv': {
-            title: 'Dela med andra på Internet',
-            subtitle: 'Hänvisa till detta manifest genom att lämna citat på olika sociala medier.',
-            langBar: 'Nedan visas citat som är hämtade från Världsmanifestet',
-            readMore: 'Läs hela manifestet på 42 språk →'
-        },
-        'en': {
-            title: 'Share with others on the Internet',
-            subtitle: 'Refer to this manifesto by leaving quotes on various social media.',
-            langBar: 'Below are shown quotes that are taken from The World Manifesto',
-            readMore: 'Read the full manifesto in 42 languages →'
-        }
-    };
+const uiTranslations = {
+    'sv': {
+        title: 'Dela med andra på Internet',
+        subtitle: 'Hänvisa till detta manifest genom att lämna citat på olika sociala medier.',
+        langBar: 'Nedan visas citat som är hämtade från Världsmanifestet',
+        readMore: 'Läs hela manifestet på 42 språk →'
+    },
+    'en': {
+        title: 'Share with others on the Internet',
+        subtitle: 'Refer to this manifesto by leaving quotes on various social media.',
+        langBar: 'Below are shown quotes that are taken from The World Manifesto',
+        readMore: 'Read the full manifesto in 42 languages →'
+    },
+    'fr': {
+        title: 'Partagez avec les autres sur Internet',
+        subtitle: 'Référez-vous à ce manifeste en laissant des citations sur les réseaux sociaux.',
+        langBar: 'Ci-dessous sont présentées 24 citations tirées du Manifeste Mondial',
+        readMore: 'Lire le manifeste complet en 42 langues →'
+    },
+    'es': {
+        title: 'Comparte con otros en Internet',
+        subtitle: 'Consulta este manifiesto dejando citas en varias redes sociales.',
+        langBar: 'A continuación se muestran citas extraídas del Manifiesto Mundial',
+        readMore: 'Leer el manifiesto completo en 42 idiomas →'
+    },
+    'de': {
+        title: 'Teile mit anderen im Internet',
+        subtitle: 'Verweise auf dieses Manifest, indem du Zitate in sozialen Medien hinterlässt.',
+        langBar: 'Unten werden Zitate gezeigt, die aus dem Weltmanifest entnommen sind',
+        readMore: 'Das vollständige Manifest in 42 Sprachen lesen →'
+    },
+    'zh': {
+        title: '在互联网上与他人分享',
+        subtitle: '通过在社交媒体上留下引用来引用这份宣言。',
+        langBar: '以下是摘自《世界宣言》的24条引文',
+        readMore: '阅读42种语言的完整宣言 →'
+    },
+    'hi': {
+        title: 'इंटरनेट पर दूसरों के साथ साझा करें',
+        subtitle: 'सोशल मीडिया पर उद्धरण छोड़कर इस घोषणापत्र का संदर्भ लें।',
+        langBar: 'नीचे विश्व घोषणापत्र से लिए गए उद्धरण दिखाए गए हैं',
+        readMore: '42 भाषाओं में पूरा घोषणापत्र पढ़ें →'
+    },
+    'ar': {
+        title: 'شارك مع الآخرين على الإنترنت',
+        subtitle: 'أشر إلى هذا البيان من خلال ترك اقتباسات على وسائل التواصل الاجتماعي المختلفة.',
+        langBar: 'فيما يلي اقتباسات مأخوذة من البيان العالمي',
+        readMore: 'اقرأ البيان الكامل بـ 42 لغة →'
+    },
+    'bn': {
+        title: 'ইন্টারনেটে অন্যদের সাথে শেয়ার করুন',
+        subtitle: 'সোশ্যাল মিডিয়ায় উদ্ধৃতি রেখে এই ইশতেহারটি উল্লেখ করুন।',
+        langBar: 'নীচে বিশ্ব ইশতেহার থেকে নেওয়া উদ্ধৃতিগুলি দেখানো হয়েছে',
+        readMore: '৪২টি ভাষায় সম্পূর্ণ ইশতেহার পড়ুন →'
+    },
+    'pt': {
+        title: 'Compartilhe com outros na Internet',
+        subtitle: 'Refira-se a este manifesto deixando citações em várias redes sociais.',
+        langBar: 'Abaixo são mostradas citações retiradas do Manifesto Mundial',
+        readMore: 'Leia o manifesto completo em 42 idiomas →'
+    },
+    'ru': {
+        title: 'Поделитесь с другими в Интернете',
+        subtitle: 'Ссылайтесь на этот манифест, оставляя цитаты в социальных сетях.',
+        langBar: 'Ниже приведены цитаты из Всемирного манифеста',
+        readMore: 'Прочитать полный манифест на 42 языках →'
+    },
+    'id': {
+        title: 'Bagikan dengan orang lain di Internet',
+        subtitle: 'Rujuk manifesto ini dengan meninggalkan kutipan di berbagai media sosial.',
+        langBar: 'Di bawah ini ditampilkan kutipan yang diambil dari Manifesto Dunia',
+        readMore: 'Baca manifesto lengkap dalam 42 bahasa →'
+    },
+    'ja': {
+        title: 'インターネットで他の人と共有する',
+        subtitle: 'ソーシャルメディアに引用を残して、この宣言に言及してください。',
+        langBar: '以下は世界宣言から引用された引用文です',
+        readMore: '42言語で完全な宣言を読む →'
+    },
+    'ko': {
+        title: '인터넷에서 다른 사람들과 공유하기',
+        subtitle: '소셜 미디어에 인용문을 남겨 이 선언문을 참조하세요.',
+        langBar: '아래는 세계 선언문에서 인용된 인용문입니다',
+        readMore: '42개 언어로 된 전체 선언문 읽기 →'
+    },
+    'th': {
+        title: 'แบ่งปันกับผู้อื่นบนอินเทอร์เน็ต',
+        subtitle: 'อ้างอิงถึงแถลงการณ์นี้โดยการทิ้งคำพูดไว้บนโซเชียลมีเดียต่างๆ',
+        langBar: 'ด้านล่างนี้เป็นคำพูดที่นำมาจากแถลงการณ์โลก',
+        readMore: 'อ่านแถลงการณ์ฉบับเต็มใน 42 ภาษา →'
+    },
+    'vi': {
+        title: 'Chia sẻ với người khác trên Internet',
+        subtitle: 'Tham khảo tuyên ngôn này bằng cách để lại trích dẫn trên các mạng xã hội.',
+        langBar: 'Dưới đây là các trích dẫn được lấy từ Tuyên ngôn Thế giới',
+        readMore: 'Đọc toàn bộ tuyên ngôn bằng 42 ngôn ngữ →'
+    },
+    'tr': {
+        title: 'İnternette başkalarıyla paylaşın',
+        subtitle: 'Sosyal medyada alıntılar bırakarak bu manifestoya atıfta bulunun.',
+        langBar: 'Aşağıda Dünya Manifestosu\'ndan alınan alıntılar gösterilmektedir',
+        readMore: '42 dilde tam manifestoyu okuyun →'
+    },
+    'fa': {
+        title: 'با دیگران در اینترنت به اشتراک بگذارید',
+        subtitle: 'با گذاشتن نقل قول در رسانه های اجتماعی به این بیانیه مراجعه کنید.',
+        langBar: 'در زیر نقل قول هایی از بیانیه جهانی نشان داده شده است',
+        readMore: 'بیانیه کامل را به 42 زبان بخوانید →'
+    },
+    'sw': {
+        title: 'Shiriki na wengine kwenye Mtandao',
+        subtitle: 'Rejelea ilani hii kwa kuacha nukuu kwenye mitandao ya kijamii.',
+        langBar: 'Hapo chini zinaonyeshwa nukuu zilizochukuliwa kutoka Ilani ya Dunia',
+        readMore: 'Soma ilani kamili katika lugha 42 →'
+    },
+    'it': {
+        title: 'Condividi con altri su Internet',
+        subtitle: 'Fai riferimento a questo manifesto lasciando citazioni sui social media.',
+        langBar: 'Di seguito sono mostrate le citazioni tratte dal Manifesto Mondiale',
+        readMore: 'Leggi il manifesto completo in 42 lingue →'
+    },
+    'pl': {
+        title: 'Udostępnij innym w Internecie',
+        subtitle: 'Odnosząc się do tego manifestu, zostaw cytaty w mediach społecznościowych.',
+        langBar: 'Poniżej przedstawiono cytaty zaczerpnięte z Manifestu Światowego',
+        readMore: 'Przeczytaj pełny manifest w 42 językach →'
+    },
+    'nl': {
+        title: 'Deel met anderen op internet',
+        subtitle: 'Verwijs naar dit manifest door citaten achter te laten op sociale media.',
+        langBar: 'Hieronder worden citaten getoond die zijn overgenomen uit het Wereldmanifest',
+        readMore: 'Lees het volledige manifest in 42 talen →'
+    },
+    'ro': {
+        title: 'Împărtășește cu alții pe Internet',
+        subtitle: 'Referiți-vă la acest manifest lăsând citate pe diverse rețele sociale.',
+        langBar: 'Mai jos sunt prezentate citate preluate din Manifestul Mondial',
+        readMore: 'Citiți manifestul complet în 42 de limbi →'
+    },
+    'el': {
+        title: 'Μοιραστείτε με άλλους στο Διαδίκτυο',
+        subtitle: 'Αναφερθείτε σε αυτό το μανιφέστο αφήνοντας αποσπάσματα στα social media.',
+        langBar: 'Παρακάτω εμφανίζονται αποσπάσματα από το Παγκόσμιο Μανιφέστο',
+        readMore: 'Διαβάστε το πλήρες μανιφέστο σε 42 γλώσσες →'
+    },
+    'af': {
+        title: 'Deel met ander op die Internet',
+        subtitle: 'Verwys na hierdie manifes deur aanhalings op sosiale media te laat.',
+        langBar: 'Hieronder word aanhalings uit die Wêreldmanifest getoon',
+        readMore: 'Lees die volledige manifes in 42 tale →'
+    },
+    'zu': {
+        title: 'Yabelana nabanye ku-inthanethi',
+        subtitle: 'Bhekisa kule manifesto ngokushiya izingcaphuno kumithombo yezokuxhumana.',
+        langBar: 'Ngezansi kukhombisa izingcaphuno ezithathwe kuManifesto Yomhlaba',
+        readMore: 'Funda yonke imanifesto ngezilimi ezingu-42 →'
+    },
+    'xh': {
+        title: 'Yabelana nabanye kwi-Intanethi',
+        subtitle: 'Bhekisa kule manifesto ngokushiya iingcaphuno kumajelo eendaba ezentlalo.',
+        langBar: 'Apha ngezantsi kuboniswa iingcaphuno ezithathwe kwiManifesto Yehlabathi',
+        readMore: 'Funda imanifesto epheleleyo ngeelwimi ezingama-42 →'
+    },
+    'cs': {
+        title: 'Sdílejte s ostatními na internetu',
+        subtitle: 'Odkazujte na tento manifest zanecháváním citátů na sociálních sítích.',
+        langBar: 'Níže jsou uvedeny citáty převzaté ze Světového manifestu',
+        readMore: 'Přečtěte si celý manifest ve 42 jazycích →'
+    },
+    'hu': {
+        title: 'Ossza meg másokkal az interneten',
+        subtitle: 'Hivatkozzon erre a kiáltványra idézetek hagyásával a közösségi médiában.',
+        langBar: 'Az alábbiakban a Világkiáltványból vett idézetek láthatók',
+        readMore: 'Olvassa el a teljes kiáltványt 42 nyelven →'
+    },
+    'he': {
+        title: 'שתף עם אחרים באינטרנט',
+        subtitle: 'התייחס למניפסט זה על ידי השארת ציטוטים ברשתות החברתיות.',
+        langBar: 'להלן ציטוטים שנלקחו מהמניפסט העולמי',
+        readMore: 'קרא את המניפסט המלא ב-42 שפות →'
+    },
+    'crs': {
+        title: 'Partaz avek lezot lo Internet',
+        subtitle: 'Refer a sa manifest an lesan sitasyon lo bann rezo sosyal.',
+        langBar: 'Anba i montre sitasyon ki tir dan Manifest lemonn',
+        readMore: 'Lir manifest konplet an 42 lang →'
+    },
+    'no': {
+        title: 'Del med andre på Internett',
+        subtitle: 'Henvis til dette manifestet ved å legge igjen sitater på sosiale medier.',
+        langBar: 'Nedenfor vises sitater hentet fra Verdensmanifestet',
+        readMore: 'Les hele manifestet på 42 språk →'
+    },
+    'se': {
+        title: 'Juoge earáiguin interneahtas',
+        subtitle: 'Čujuh dán manifestii gávdnan sitašuvnnaid sosiála mediain.',
+        langBar: 'Vuollelis oaidnát sitašuvnnaid mat leat váldojuvvon Máilmmi Manifestas',
+        readMore: 'Loga olles manifesta 42 gillii →'
+    },
+    'fit': {
+        title: 'Jaa toisten kanssa Internetissä',
+        subtitle: 'Viittaa tähän manifestiin jättämällä lainauksia sosiaaliseen mediaan.',
+        langBar: 'Alla näytetään lainaukset Maailmanmanifestista',
+        readMore: 'Lue koko manifesti 42 kielellä →'
+    },
+    'da': {
+        title: 'Del med andre på Internettet',
+        subtitle: 'Henvis til dette manifest ved at efterlade citater på sociale medier.',
+        langBar: 'Nedenfor vises citater fra Verdensmanifestet',
+        readMore: 'Læs hele manifestet på 42 sprog →'
+    },
+    'is': {
+        title: 'Deildu með öðrum á Netinu',
+        subtitle: 'Vísaðu til þessa manifest með því að skilja eftir tilvitnanir á samfélagsmiðlum.',
+        langBar: 'Hér að neðan eru tilvitnanir úr Heimsmanifestinu',
+        readMore: 'Lestu allt manifestið á 42 tungumálum →'
+    },
+    'fo': {
+        title: 'Deil við øðrum á netinum',
+        subtitle: 'Vís til hetta manifest við at leggja eftir siteringar á samfelagsmiðlum.',
+        langBar: 'Niðanfyri vísast siteringar úr Heimsskránni',
+        readMore: 'Les alt manifestið á 42 málum →'
+    },
+    'hr': {
+        title: 'Podijelite s drugima na internetu',
+        subtitle: 'Pozovite se na ovaj manifest ostavljajući citate na društvenim mrežama.',
+        langBar: 'Ispod su prikazani citati preuzeti iz Svjetskog manifesta',
+        readMore: 'Pročitajte cijeli manifest na 42 jezika →'
+    },
+    'sk': {
+        title: 'Zdieľajte s ostatnými na internete',
+        subtitle: 'Odkazujte na tento manifest zanechaním citátov na sociálnych sieťach.',
+        langBar: 'Nižšie sú uvedené citáty prevzaté zo Svetového manifestu',
+        readMore: 'Prečítajte si celý manifest v 42 jazykoch →'
+    }
+};
 
     const browserLang = (navigator.language || 'en').split('-')[0].toLowerCase();
     const ui = uiTranslations[browserLang] || uiTranslations['en'];
