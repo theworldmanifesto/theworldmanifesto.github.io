@@ -148,3 +148,23 @@ body {
     border: 1px solid #CCC;
     box-sizing: border-box;
 }
+
+/* ======================================== */
+/* SPRÅKNAMN UNDER FLAGGOR                   */
+/* ======================================== */
+
+.lang-flags .lang-label {
+    display: block;
+    font-size: 10px;
+    color: #555;
+    margin-top: 2px;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 80px;
+    word-wrap: break-word;
+}
+
+/* Större teckenstorlek för Meänkieli, Nordsamiska, Afrikaans, Zulu, Xhosa */
+.lang-flags .lang-label.large {
+    font-size: 11px;
+}
