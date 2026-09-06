@@ -524,6 +524,39 @@ function setTextDirection(lang) {
 // Anropa direkt när sidan laddas
 setTextDirection(currentLang);
 
+/* ======================================== */
+/* KORREKT RTL-STÖD FÖR LISTOR OCH TEXT     */
+/* ======================================== */
+
+/* Allmän RTL-justering för text */
+[dir="rtl"] body,
+[dir="rtl"] .container,
+[dir="rtl"] main,
+[dir="rtl"] #steps-section,
+[dir="rtl"] #steps-section ol {
+    text-align: right;
+}
+
+[dir="rtl"] #steps-section ol {
+    padding-right: 25px;   /* Ersätter padding-left för RTL */
+    padding-left: 0;
+}
+
+[dir="rtl"] #steps-section li {
+    text-align: right;
+}
+
+/* Behåll mittenjustering för vissa element */
+[dir="rtl"] .lang-flags,
+[dir="rtl"] .dots,
+[dir="rtl"] .btns {
+    text-align: center;
+}
+
+[dir="rtl"] #quote-text {
+    text-align: center;
+}
+
         // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
         var titlar = {
             'sv': 'Världsmanifestet', 'en': 'The World Manifesto', 'zh': '世界宣言',
