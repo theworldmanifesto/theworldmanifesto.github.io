@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- ORDBOK FÖR ALLA 42 SPRÅK (med "Läs/Lue/Read" prefix och "english" för Frihetstrappan) ---
     const translations = {
-        'sv': { menu: 'MENY', home: 'HEM', manifesto: 'Läs Världsmanifestet', staircase: 'Frihetstrappan (english)', tropics: 'Tropikerna', robotel: 'Robotel', share: 'Dela', read: 'LÄS', chooseLang: 'Välj språk' },
+        'sv': { menu: 'MENY', home: 'HEM', manifesto: 'Läs Världsmanifestet', staircase: 'Frihetstrappan (english)', tropics: 'Tropikerna', robotel: 'Robotel', share: 'Dela', read: 'LÄS MANIFESTET:', chooseLang: 'Välj språk' },
         'en': { menu: 'MENU', home: 'HOME', manifesto: 'Read The World Manifesto', staircase: 'Freedom Staircase', tropics: 'The Tropics', robotel: 'Robotel', share: 'Share', read: 'READ', chooseLang: 'Choose language' },
         'fi': { menu: 'VALIKKO', home: 'ETUSIVU', manifesto: 'Lue Maailmanmanifesti', staircase: 'Vapauden portaat (english)', tropics: 'Trooppiset alueet', robotel: 'Robotel', share: 'Jaa', read: 'LUE', chooseLang: 'Valitse kieli' },
         'zh': { menu: '菜单', home: '首页', manifesto: '阅读世界宣言', staircase: '自由阶梯 (english)', tropics: '热带地区', robotel: '机器人', share: '分享', read: '阅读', chooseLang: '选择语言' },
