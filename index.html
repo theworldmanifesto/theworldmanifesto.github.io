@@ -508,51 +508,30 @@
         const urlParams = new URLSearchParams(window.location.search);
         const currentLang = (urlParams.get('lang') || navigator.language || document.documentElement.lang || 'sv').split('-')[0].toLowerCase();
 
-// === RTL-SPRÅK ===
-const rtlLanguages = ['ar', 'he', 'fa', 'ur'];
-
-// Funktion för att sätta rätt textriktning
-function setTextDirection(lang) {
-    const htmlElement = document.documentElement;
-    if (rtlLanguages.includes(lang)) {
-        htmlElement.setAttribute('dir', 'rtl');
-    } else {
-        htmlElement.setAttribute('dir', 'ltr');
-    }
-}
-
-// Anropa direkt när sidan laddas
-setTextDirection(currentLang);
-
 /* ======================================== */
-/* KORREKT RTL-STÖD FÖR LISTOR OCH TEXT     */
+/* RTL-STÖD FÖR ARABISKA, HEBREISKA, M.FL.  */
 /* ======================================== */
 
-/* Allmän RTL-justering för text */
+/* Allmän RTL-justering */
 [dir="rtl"] body,
 [dir="rtl"] .container,
 [dir="rtl"] main,
 [dir="rtl"] #steps-section,
-[dir="rtl"] #steps-section ol {
-    text-align: right;
-}
-
-[dir="rtl"] #steps-section ol {
-    padding-right: 25px;   /* Ersätter padding-left för RTL */
-    padding-left: 0;
-}
-
+[dir="rtl"] #steps-section ol,
 [dir="rtl"] #steps-section li {
     text-align: right;
+}
+
+/* Justera listans indrag för RTL */
+[dir="rtl"] #steps-section ol {
+    padding-right: 25px;
+    padding-left: 0;
 }
 
 /* Behåll mittenjustering för vissa element */
 [dir="rtl"] .lang-flags,
 [dir="rtl"] .dots,
-[dir="rtl"] .btns {
-    text-align: center;
-}
-
+[dir="rtl"] .btns,
 [dir="rtl"] #quote-text {
     text-align: center;
 }
