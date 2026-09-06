@@ -508,6 +508,22 @@
         const urlParams = new URLSearchParams(window.location.search);
         const currentLang = (urlParams.get('lang') || navigator.language || document.documentElement.lang || 'sv').split('-')[0].toLowerCase();
 
+// === RTL-SPRÅK ===
+const rtlLanguages = ['ar', 'he', 'fa', 'ur'];
+
+// Funktion för att sätta rätt textriktning
+function setTextDirection(lang) {
+    const htmlElement = document.documentElement;
+    if (rtlLanguages.includes(lang)) {
+        htmlElement.setAttribute('dir', 'rtl');
+    } else {
+        htmlElement.setAttribute('dir', 'ltr');
+    }
+}
+
+// Anropa direkt när sidan laddas
+setTextDirection(currentLang);
+
         // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
         var titlar = {
             'sv': 'Världsmanifestet', 'en': 'The World Manifesto', 'zh': '世界宣言',
