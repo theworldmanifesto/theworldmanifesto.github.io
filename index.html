@@ -557,23 +557,21 @@ setTextDirection(currentLang);
 /* RTL-STÖD FÖR ARABISKA, HEBREISKA, M.FL.  */
 /* ======================================== */
 
-/* Allmän RTL-justering */
 [dir="rtl"] body,
 [dir="rtl"] .container,
 [dir="rtl"] main,
 [dir="rtl"] #steps-section,
 [dir="rtl"] #steps-section ol,
 [dir="rtl"] #steps-section li {
-    text-align: right;
+    text-align: right !important;
 }
 
-/* Justera listans indrag för RTL */
 [dir="rtl"] #steps-section ol {
-    padding-right: 25px;
-    padding-left: 0;
+    direction: rtl;
+    padding-right: 25px !important;
+    padding-left: 0 !important;
 }
 
-/* Behåll mittenjustering för vissa element */
 [dir="rtl"] .lang-flags,
 [dir="rtl"] .dots,
 [dir="rtl"] .btns,
