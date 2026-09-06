@@ -150,7 +150,7 @@
             border: 2px solid #8B0000;
             border-radius: 12px;
             background-color: #FFF8F8;
-            text-align: left;
+            text-align: start;
             font-family: sans-serif;
         }
 
@@ -507,6 +507,8 @@
         // === SPRÅKHANTERING ===
         const urlParams = new URLSearchParams(window.location.search);
         const currentLang = (urlParams.get('lang') || navigator.language || document.documentElement.lang || 'sv').split('-')[0].toLowerCase();
+const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
+document.documentElement.dir = RTL_LANGS.includes(currentLang) ? 'rtl' : 'ltr';
 
         // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
         var titlar = {
