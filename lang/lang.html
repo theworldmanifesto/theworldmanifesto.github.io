@@ -112,7 +112,7 @@
             width: 60px;
         }
 
-        /* ---------- NAV-WRAPPER (för meny + READ) ---------- */
+        /* ---------- NAV-WRAPPER (för meny) ---------- */
         .nav-wrapper {
             display: flex;
             align-items: center;
@@ -128,18 +128,12 @@
             flex-wrap: wrap;
         }
 
-        /* READ – språkvalsrullgardin */
+        /* READ – språkvalsrullgardin (utan label) */
         .read-menu {
             display: inline-block;
             font-family: sans-serif;
             font-size: 14px;
             flex-shrink: 0;
-        }
-
-        .read-menu label {
-            margin-right: 4px;
-            font-weight: bold;
-            color: #1a1a1a;
         }
 
         .read-menu select {
@@ -177,9 +171,6 @@
                 font-size: 12px;
                 padding: 4px 8px;
             }
-            .read-menu label {
-                font-size: 12px;
-            }
         }
 
         /* ---------- Responsiv ---------- */
@@ -207,61 +198,58 @@
 <body>
 
     <!-- ======================================== -->
-    <!-- NAVIGATION: READ + MENY                   -->
+    <!-- NAVIGATION: MENY                         -->
     <!-- ======================================== -->
 
     <div class="nav-wrapper">
 
-        <!-- READ – språkvalsrullgardin -->
+        <!-- Språkvalsrullgardin (utan label) -->
         <div class="read-menu">
-            <label for="read-select">LÄS MANIFESTET:</label>
-
-<select id="read-select" onchange="if(this.value) window.location.href='read.html?lang=' + this.value">
-    <option value="">Välj språk</option>
-    <option value="af">Afrikaans</option>
-    <option value="ar">العربية</option>
-    <option value="bg">Български</option>
-    <option value="bn">বাংলা</option>
-    <option value="crs">Kreol seselwa</option>
-    <option value="cs">Čeština</option>
-    <option value="da">Dansk</option>
-    <option value="de">Deutsch</option>
-    <option value="el">Ελληνικά</option>
-    <option value="en">English</option>
-    <option value="es">Español</option>
-    <option value="fa">فارسی</option>
-    <option value="fi">Suomi</option>
-    <option value="fit">Meänkieli</option>
-    <option value="fo">Føroyskt</option>
-    <option value="fr">Français</option>
-    <option value="he">עברית</option>
-    <option value="hi">हिंदी</option>
-    <option value="hu">Magyar</option>
-    <option value="id">Bahasa Indonesia</option>
-    <option value="is">Íslenska</option>
-    <option value="it">Italiano</option>
-    <option value="ja">日本語</option>
-    <option value="ko">한국어</option>
-    <option value="nl">Nederlands</option>
-    <option value="no">Norsk</option>
-    <option value="pl">Polski</option>
-    <option value="pt">Português</option>
-    <option value="ro">Română</option>
-    <option value="ru">Русский</option>
-    <option value="se">Davvisámegiella</option>
-    <option value="sv">Svenska</option>
-    <option value="sw">Kiswahili</option>
-    <option value="th">ภาษาไทย</option>
-    <option value="fil">Filipino</option>
-    <option value="tr">Türkçe</option>
-    <option value="uk">Українська</option>
-    <option value="ur">اردو</option>
-    <option value="vi">Tiếng Việt</option>
-    <option value="xh">isiXhosa</option>
-    <option value="zh">中文</option>
-    <option value="zu">isiZulu</option>
-</select>
-
+            <select id="read-select" onchange="if(this.value) window.location.href='read.html?lang=' + this.value">
+                <option value="">Välj språk</option>
+                <option value="af">Afrikaans</option>
+                <option value="ar">العربية</option>
+                <option value="bg">Български</option>
+                <option value="bn">বাংলা</option>
+                <option value="crs">Kreol seselwa</option>
+                <option value="cs">Čeština</option>
+                <option value="da">Dansk</option>
+                <option value="de">Deutsch</option>
+                <option value="el">Ελληνικά</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fa">فارسی</option>
+                <option value="fi">Suomi</option>
+                <option value="fit">Meänkieli</option>
+                <option value="fo">Føroyskt</option>
+                <option value="fr">Français</option>
+                <option value="he">עברית</option>
+                <option value="hi">हिंदी</option>
+                <option value="hu">Magyar</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="is">Íslenska</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="nl">Nederlands</option>
+                <option value="no">Norsk</option>
+                <option value="pl">Polski</option>
+                <option value="pt">Português</option>
+                <option value="ro">Română</option>
+                <option value="ru">Русский</option>
+                <option value="se">Davvisámegiella</option>
+                <option value="sv">Svenska</option>
+                <option value="sw">Kiswahili</option>
+                <option value="th">ภาษาไทย</option>
+                <option value="fil">Filipino</option>
+                <option value="tr">Türkçe</option>
+                <option value="uk">Українська</option>
+                <option value="ur">اردو</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="xh">isiXhosa</option>
+                <option value="zh">中文</option>
+                <option value="zu">isiZulu</option>
+            </select>
         </div>
 
         <!-- MENY – INJECTAS AV MENU.JS -->
@@ -353,9 +341,9 @@
 
         const lang = getPreferredLanguage();
         const langData = languages[lang];
-const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
-document.documentElement.lang = lang;
-document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
+        const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
+        document.documentElement.lang = lang;
+        document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
 
         // Sätt flagga och språknamn
         document.getElementById('flag-icon').src = langData.flag;
@@ -367,7 +355,7 @@ document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
         document.getElementById('lang-subtitle').textContent = langData.subtitle;
 
         // ============================================================
-        // 2. LADDA SPRÅKVÄLJAREN (READ-rullgardinen)
+        // 2. LADDA SPRÅKVÄLJAREN (READ-rullgardinen) – dynamiskt
         // ============================================================
         const select = document.getElementById('read-select');
         // Sortera språk efter namn
