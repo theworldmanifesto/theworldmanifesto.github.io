@@ -39,7 +39,7 @@
             font-size: clamp(11pt, 2.5vw, 13pt);
             line-height: 1.6;
             margin: 10px 0;
-            text-align: left;
+            text-align: start;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
@@ -88,7 +88,7 @@
             border-collapse: collapse;
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(10pt, 2vw, 12pt);
-            text-align: left;
+            text-align: start;
         }
         .manifesto-table th {
             background-color: #f0f0f0;
@@ -309,6 +309,9 @@
 
         const lang = getPreferredLanguage();
         const langData = languages[lang];
+const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
+document.documentElement.lang = lang;
+document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
 
         // Sätt flagga och språknamn
         document.getElementById('flag-icon').src = langData.flag;
