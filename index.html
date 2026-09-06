@@ -203,7 +203,7 @@
                 <option value="sv">Svenska</option>
                 <option value="sw">Kiswahili</option>
                 <option value="th">ภาษาไทย</option>
-                <option value="fil">Filipino</option>
+                <option value="tl">Filipino</option>
                 <option value="tr">Türkçe</option>
                 <option value="uk">Українська</option>
                 <option value="ur">اردو</option>
@@ -464,9 +464,18 @@
                 </div>
             </div>
 
-<div id="steps-section">
-    <!-- Innehållet fylls i av JavaScript från four_steps.json -->
-</div>
+            <!-- ======================================== -->
+            <!-- DE FYRA STEGEN – STATISK RUTA             -->
+            <!-- ======================================== -->
+            <div id="steps-section">
+                <h3 id="steps-title" style="text-align: center; color: #8B0000; font-size: 22px; margin-top: 0; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Världsmanifestet i 4 st[...]</h3>
+                <ol style="color: #4A0E0E; font-size: 16px; line-height: 1.6; margin: 0; padding-left: 25px;">
+                    <li id="step-1" style="margin-bottom: 12px;"><strong>Först:</strong> Idén (Världsmanifestet) måste bli känd.</li>
+                    <li id="step-2" style="margin-bottom: 12px;"><strong>För det andra:</strong> Idén måste in i riksdagen och få majoritet, där lagarna ändras och bland annat Frihetstrappans sk[...]</li>
+                    <li id="step-3" style="margin-bottom: 12px;"><strong>För det tredje:</strong> Staten blir helt automatiserad med en produktion som fungerar som befolkningens eget fria skafferi.</li>
+                    <li id="step-4"><strong>För det fjärde:</strong> Robotarna blir autonoma när de är självreplikerande, och då får jorden den del av naturens ekosystem som saknats fram till n[...]</li>
+                </ol>
+            </div>
             
             <!-- QUOTE-RUTAN -->
             <div id="quote-box">
@@ -498,85 +507,6 @@
         // === SPRÅKHANTERING ===
         const urlParams = new URLSearchParams(window.location.search);
         const currentLang = (urlParams.get('lang') || navigator.language || document.documentElement.lang || 'sv').split('-')[0].toLowerCase();
-
-// === RTL-SPRÅK ===
-const rtlLanguages = ['ar', 'he', 'fa', 'ur'];
-
-function setTextDirection(lang) {
-    console.log('setTextDirection anropad med språk:', lang);
-    const htmlElement = document.documentElement;
-
-    if (rtlLanguages.includes(lang)) {
-        htmlElement.setAttribute('dir', 'rtl');
-        // Tvinga högerjustering på steps-sektionen direkt
-        const stepsSection = document.getElementById('steps-section');
-        if (stepsSection) {
-            stepsSection.style.textAlign = 'right';
-            const ol = stepsSection.querySelector('ol');
-            if (ol) {
-                ol.style.textAlign = 'right';
-                ol.style.paddingRight = '25px';
-                ol.style.paddingLeft = '0';
-            }
-            stepsSection.querySelectorAll('li').forEach(li => {
-                li.style.textAlign = 'right';
-            });
-        }
-    } else {
-        htmlElement.setAttribute('dir', 'ltr');
-        // Återställ till vänsterjustering för LTR
-        const stepsSection = document.getElementById('steps-section');
-        if (stepsSection) {
-            stepsSection.style.textAlign = 'left';
-            const ol = stepsSection.querySelector('ol');
-            if (ol) {
-                ol.style.textAlign = 'left';
-                ol.style.paddingLeft = '25px';
-                ol.style.paddingRight = '0';
-            }
-            stepsSection.querySelectorAll('li').forEach(li => {
-                li.style.textAlign = 'left';
-            });
-        }
-    }
-}
-
-// Anropa direkt när sidan laddas
-setTextDirection(currentLang);
-
-/* ======================================== */
-/* RTL-STÖD FÖR ARABISKA, HEBREISKA, M.FL.  */
-/* ======================================== */
-
-/* Allmän RTL-justering */
-[dir="rtl"] body,
-[dir="rtl"] .container,
-[dir="rtl"] main,
-[dir="rtl"] #steps-section,
-[dir="rtl"] #steps-section ol,
-[dir="rtl"] #steps-section li {
-    text-align: right !important;
-}
-
-[dir="rtl"] #steps-section ol {
-    direction: rtl;
-    padding-right: 25px !important;
-    padding-left: 0 !important;
-}
-
-[dir="rtl"] .lang-flags,
-[dir="rtl"] .dots,
-[dir="rtl"] .btns,
-[dir="rtl"] #quote-text {
-    text-align: center;
-}
-
-/* ------------------------- LÄGG TILL DETTA ------------------------- */
-#steps-section ol {
-    padding-inline-start: 25px;  /* ersätter padding-left */
-    text-align: start;           /* ersätter text-align: left */
-}
-/* ------------------------------------------------------------------ */
 
         // === ORDBOK FÖR TITEL OCH FRIHETSTRAPPAN ===
         var titlar = {
