@@ -126,6 +126,17 @@
         .webmaster { font-size: 16px; margin-bottom: 15px; }
         .webmaster a { color: #1a1a1a; text-decoration: none; }
         .copyright { font-size: 14px; color: #666; }
+
+/* === RTL-STÖD FÖR SHARE-SIDAN === */
+[dir="rtl"] .quote-text {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="rtl"] .share-row {
+    flex-direction: row-reverse;
+}
+
     </style>
 </head>
 <body>
@@ -538,6 +549,11 @@ const uiTranslations = {
     const urlParams = new URLSearchParams(window.location.search);
     const browserLang2 = (navigator.language || 'en').split('-')[0].toLowerCase();
     const urlLang = urlParams.get('lang') || browserLang2 || 'en';
+
+// === RTL-SPRÅK ===
+const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
+document.documentElement.dir = RTL_LANGS.includes(urlLang) ? 'rtl' : 'ltr';
+
     console.log('Slutligt språk som används:', urlLang);
     document.getElementById('lang-select').value = urlLang;
     loadQuotes(urlLang);
