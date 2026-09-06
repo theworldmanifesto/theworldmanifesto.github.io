@@ -508,6 +508,49 @@
         const urlParams = new URLSearchParams(window.location.search);
         const currentLang = (urlParams.get('lang') || navigator.language || document.documentElement.lang || 'sv').split('-')[0].toLowerCase();
 
+// === RTL-SPRÅK ===
+const rtlLanguages = ['ar', 'he', 'fa', 'ur'];
+
+function setTextDirection(lang) {
+    const htmlElement = document.documentElement;
+    if (rtlLanguages.includes(lang)) {
+        htmlElement.setAttribute('dir', 'rtl');
+        // Tvinga högerjustering på steps-sektionen direkt
+        const stepsSection = document.getElementById('steps-section');
+        if (stepsSection) {
+            stepsSection.style.textAlign = 'right';
+            const ol = stepsSection.querySelector('ol');
+            if (ol) {
+                ol.style.textAlign = 'right';
+                ol.style.paddingRight = '25px';
+                ol.style.paddingLeft = '0';
+            }
+            stepsSection.querySelectorAll('li').forEach(li => {
+                li.style.textAlign = 'right';
+            });
+        }
+    } else {
+        htmlElement.setAttribute('dir', 'ltr');
+        // Återställ till vänsterjustering för LTR
+        const stepsSection = document.getElementById('steps-section');
+        if (stepsSection) {
+            stepsSection.style.textAlign = 'left';
+            const ol = stepsSection.querySelector('ol');
+            if (ol) {
+                ol.style.textAlign = 'left';
+                ol.style.paddingLeft = '25px';
+                ol.style.paddingRight = '0';
+            }
+            stepsSection.querySelectorAll('li').forEach(li => {
+                li.style.textAlign = 'left';
+            });
+        }
+    }
+}
+
+// Anropa direkt när sidan laddas
+setTextDirection(currentLang);
+
 /* ======================================== */
 /* RTL-STÖD FÖR ARABISKA, HEBREISKA, M.FL.  */
 /* ======================================== */
