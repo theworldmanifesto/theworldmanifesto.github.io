@@ -1,7 +1,7 @@
 // author.js - Hanterar författarnamnet och dess omgivande tomrader
 
 // Själva namnet (sätt till null eller tom sträng för att dölja)
-const AUTHOR_NAME = "Sven Yngerstedt";
+const AUTHOR_NAME = "Kalle Banan";
 
 // Generera HTML för författarsektionen
 function getAuthorHTML() {
