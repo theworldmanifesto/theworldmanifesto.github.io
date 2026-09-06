@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'de': { home: 'STARTSEITE', read: '-- LESEN: Sprache wählen --' },
         'ja': { home: 'ホーム', read: '-- 読む: 言語を選択 --' },
         'sw': { home: 'NYUMBA', read: '-- SOMA: Chagua lugha --' },
-        'tl': { home: 'HOME', read: '-- BASAHIN: Pumili ng wika --' },
+        'fil': { home: 'HOME', read: '-- BASAHIN: Pumili ng wika --' },
         'tr': { home: 'ANA SAYFA', read: '-- OKU: Dil seçin --' },
         'vi': { home: 'TRANG CHỦ', read: '-- ĐỌC: Chọn ngôn ngữ --' },
         'ko': { home: '홈', read: '-- 읽기: 언어 선택 --' },
