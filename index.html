@@ -512,7 +512,9 @@
 const rtlLanguages = ['ar', 'he', 'fa', 'ur'];
 
 function setTextDirection(lang) {
+    console.log('setTextDirection anropad med språk:', lang);
     const htmlElement = document.documentElement;
+
     if (rtlLanguages.includes(lang)) {
         htmlElement.setAttribute('dir', 'rtl');
         // Tvinga högerjustering på steps-sektionen direkt
