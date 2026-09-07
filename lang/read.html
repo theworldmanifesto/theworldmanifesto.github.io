@@ -322,91 +322,97 @@ document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
         // ============================================================
         // 5. LADDA TEXT – HOPPAR ÖVER DE 3 FÖRSTA ICKE-TOMMA RADERNA
         // ============================================================
-        async function loadText() {
-            try {
-                const response = await fetch(`lang_texts/${lang}.txt`);
-                if (!response.ok) throw new Error('Textfil saknas');
-                const text = await response.text();
+async function loadText() {
+    try {
+        const response = await fetch(`lang_texts/${lang}.txt`);
+        if (!response.ok) throw new Error('Textfil saknas');
+        const text = await response.text();
 
-                const lines = text.split('\n');
-                const nonEmptyLines = lines.filter(line => line.trim() !== '');
-                const bodyContent = document.getElementById('body-content');
-                let currentHtml = '';
-                
-                let tableRows = [];
-                let inTable = false;
+        const lines = text.split('\n');
+        const nonEmptyLines = lines.filter(line => line.trim() !== '');
+        const bodyContent = document.getElementById('body-content');
+        let currentHtml = '';
 
-                for (let i = 3; i < nonEmptyLines.length; i++) {
-                    let rawLine = nonEmptyLines[i];
-                    let line = rawLine.trim();
+        let tableRows = [];
+        let inTable = false;
+        let sepCount = 0;
 
-                    if (line === '') {
-                        if (inTable && tableRows.length > 0) {
-                            currentHtml += buildTable(tableRows);
-                            tableRows = [];
-                            inTable = false;
-                        }
-                        continue;
-                    }
+        for (let i = 3; i < nonEmptyLines.length; i++) {
+            let rawLine = nonEmptyLines[i];
+            let line = rawLine.trim();
 
-                    const pipeCount = (line.match(/\|/g) || []).length;
-                    const tabCount = (line.match(/\t/g) || []).length;
-                    const isTableRow = (pipeCount >= 2 || tabCount >= 2);
+            // Räkna "===" -separatorer. De 2 första (och allt som låg emellan
+            // dem, dvs. den gamla copyright-texten) hoppas helt över.
+            if (line.match(/^=+$/)) {
+                sepCount++;
+                if (sepCount <= 2) continue;
+                currentHtml += `<hr class="separator-line">`;
+                continue;
+            }
+            if (sepCount < 2) continue;
 
-                    if (isTableRow) {
-                        if (!inTable) {
-                            inTable = true;
-                            tableRows = [];
-                        }
-                        tableRows.push(line);
-                        continue;
-                    }
-
-                    if (inTable && tableRows.length > 0) {
-                        currentHtml += buildTable(tableRows);
-                        tableRows = [];
-                        inTable = false;
-                    }
-
-                    if (line.match(/^=+$/)) {
-                        currentHtml += `<hr class="separator-line">`;
-                        continue;
-                    }
-
-                    if (line.toLowerCase() === 'table of contents') {
-                        currentHtml += `<h2 class="toc-title">${line}</h2>`;
-                        continue;
-                    }
-
-                    if (line.startsWith('"') && line.endsWith('"')) {
-                        currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
-                        continue;
-                    }
-
-                    if (line.toLowerCase() === 'to be done') {
-                        currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
-                        continue;
-                    }
-
-                    if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
-                        currentHtml += `<p class="body-text">${line}</p>`;
-                        continue;
-                    }
-
-                    currentHtml += `<p class="body-text">${line}</p>`;
-                }
-
+            if (line === '') {
                 if (inTable && tableRows.length > 0) {
                     currentHtml += buildTable(tableRows);
+                    tableRows = [];
+                    inTable = false;
                 }
-
-                bodyContent.innerHTML = currentHtml;
-
-            } catch (error) {
-                console.error('Fel vid laddning:', error);
-                document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
+                continue;
             }
+
+            const pipeCount = (line.match(/\|/g) || []).length;
+            const tabCount = (line.match(/\t/g) || []).length;
+            const isTableRow = (pipeCount >= 2 || tabCount >= 2);
+
+            if (isTableRow) {
+                if (!inTable) {
+                    inTable = true;
+                    tableRows = [];
+                }
+                tableRows.push(line);
+                continue;
+            }
+
+            if (inTable && tableRows.length > 0) {
+                currentHtml += buildTable(tableRows);
+                tableRows = [];
+                inTable = false;
+            }
+
+            if (line.toLowerCase() === 'table of contents') {
+                currentHtml += `<h2 class="toc-title">${line}</h2>`;
+                continue;
+            }
+
+            if (line.startsWith('"') && line.endsWith('"')) {
+                currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
+                continue;
+            }
+
+            if (line.toLowerCase() === 'to be done') {
+                currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
+                continue;
+            }
+
+            if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                currentHtml += `<p class="body-text">${line}</p>`;
+                continue;
+            }
+
+            currentHtml += `<p class="body-text">${line}</p>`;
         }
+
+        if (inTable && tableRows.length > 0) {
+            currentHtml += buildTable(tableRows);
+        }
+
+        bodyContent.innerHTML = currentHtml;
+
+    } catch (error) {
+        console.error('Fel vid laddning:', error);
+        document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
+    }
+}
 
         // ============================================================
         // 6. KÖR
