@@ -104,9 +104,18 @@ export function clearSavedLanguage() {
 
 // Huvudfunktion - 1. sparat val, 2. webbläsare, 3. fallback
 export function pickBestLanguage(available = AVAILABLE, preferred = []) {
-  // 1. Har besökaren redan valt språk i menyn? Då vinner det alltid.
+  // Kolla webbläsarens språk först för att se om det är baskiska
+  const browserPrefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
+  const isBasque = browserPrefs.some(p => p.startsWith('eu'));
+
+  // 1. Har besökaren redan valt språk i menyn? Då vinner det alltid - UTOM om baskiska och sparat är engelska
   const saved = getSavedLanguage();
   if (saved && available.includes(saved)) {
+    // Om besökaren har baskiska i webbläsaren men engelska sparat, ge spanska istället
+    if (isBasque && saved === 'en' && available.includes('es')) {
+      saveLanguage('es');
+      return 'es';
+    }
     return saved;
   }
 
@@ -143,3 +152,4 @@ export function setupLanguageMenu(menuId = 'lang-menu') {
 
   menu.value = current;
 }
+
