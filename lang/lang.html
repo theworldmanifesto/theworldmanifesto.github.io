@@ -2,139 +2,336 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Välj språk - The World Manifesto</title>
-    <link rel="stylesheet" href="lang/css/lang.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>The World Manifesto</title>
+    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="css/lang.css">
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
-        .lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-top: 20px; }
-        .lang-card { border: 1px solid #ccc; padding: 12px; border-radius: 8px; cursor: pointer; text-align: center; background: white; }
-        .lang-card:hover { background: #f0f0f0; border-color: #888; }
-        .lang-card.active { background: #e3f2fd; border-color: #2196F3; }
-        #read-select { padding: 8px 16px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; }
+        /* ---------- Första sidan – fast formatering ---------- */
+        .language-name {
+            font-family: 'Arimo', 'Arial', sans-serif;
+            font-size: 10pt;
+            font-weight: normal;
+            margin: 0;
+            text-align: center;
+        }
+        .book-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36pt;
+            font-weight: normal;
+            margin: 0 0 5px 0;
+            line-height: 1.2;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        .book-subtitle {
+            font-family: 'Homemade Apple', cursive;
+            font-size: 13pt;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        /* ---------- Resten av texten ---------- */
+        .body-text {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: clamp(11pt, 2.5vw, 13pt);
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: start;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #1a1a1a;
+        }
+        .flag-icon {
+            display: inline-block;
+            width: clamp(16px, 4vw, 24px);
+            height: auto;
+            vertical-align: middle;
+            border: 1px solid #ccc;
+            filter: saturate(140%) contrast(110%);
+        }
+        /* ---------- Författare (från author.js) ---------- */
+        #author-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        #author-container .author {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        /* ---------- Separator ---------- */
+        .separator-line {
+            border: none;
+            border-top: 2px solid #ccc;
+            max-width: 300px;
+            margin: 25px auto;
+        }
+        /* ---------- Table of Contents rubrik ---------- */
+        .toc-title {
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: clamp(16pt, 3vw, 20pt);
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0 20px 0;
+            color: #1a1a1a;
+        }
+        /* ---------- TABELL ---------- */
+        .manifesto-table {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: 'Gelasio', 'Georgia', serif;
+            font-size: clamp(10pt, 2vw, 12pt);
+            text-align: start;
+        }
+        .manifesto-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        .manifesto-table td {
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+        .manifesto-table tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+        .manifesto-table td:first-child {
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            width: 60px;
+        }
+
+        /* ---------- NAV-WRAPPER (för meny) ---------- */
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            background: transparent;
+            position: sticky;
+            top: 0;
+            z-index: 500;
+            flex-wrap: wrap;
+        }
+
+        /* READ – språkvalsrullgardin (utan label) */
+        .read-menu {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .read-menu select {
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(4px);
+            font-size: 13px;
+            cursor: pointer;
+            transition: border-color 0.2s;
+            font-family: sans-serif;
+        }
+
+        .read-menu select:hover {
+            border-color: #888;
+        }
+
+        .read-menu select:focus {
+            outline: none;
+            border-color: #555;
+        }
+
+        /* MENY – INJECTAS AV MENU.JS */
+        #main-menu {
+            display: inline-block;
+        }
+
+        @media (max-width: 600px) {
+            .nav-wrapper {
+                padding: 8px 12px;
+                gap: 10px;
+            }
+            .read-menu select {
+                font-size: 12px;
+                padding: 4px 8px;
+            }
+        }
+
+        /* ---------- Responsiv ---------- */
+        @media only screen and (max-width: 768px) {
+            .book-title { font-size: 28pt !important; }
+            .book-subtitle { font-size: 12pt !important; }
+            .language-name { font-size: 9pt !important; }
+            .body-text { padding: 0 15px; }
+            .manifesto-table td, .manifesto-table th {
+                padding: 6px 8px;
+                font-size: 9pt;
+            }
+        }
+        @media only screen and (max-width: 430px) {
+            .book-title { font-size: 22pt !important; }
+            .book-subtitle { font-size: 11pt !important; }
+            .language-name { font-size: 8pt !important; }
+            .manifesto-table td, .manifesto-table th {
+                padding: 4px 6px;
+                font-size: 8pt;
+            }
+        }
     </style>
-
-    <!-- DETTA ÄR LÖSNINGEN: Ladda din lang.js som modul -->
-    <script type="module">
-      // Om lang.html ligger i root och filen ligger i lang/js/lang.js:
-      // import { pickBestLanguage, saveLanguage, getSavedLanguage, AVAILABLE, RELATED_FALLBACK } from './lang/js/lang.js';
-      
-      // Om lang.html ligger i lang/ mappen och filen ligger i lang/js/lang.js:
-      // import { pickBestLanguage, saveLanguage, getSavedLanguage, AVAILABLE, RELATED_FALLBACK } from './js/lang.js';
-      
-      // Jag använder den som funkar om lang.html ligger i root (vanligast på GitHub Pages):
-      import { pickBestLanguage, saveLanguage, getSavedLanguage, AVAILABLE, RELATED_FALLBACK } from './lang/js/lang.js';
-
-      // Gör funktionerna tillgängliga globalt för felsökning
-      window._pick = pickBestLanguage;
-      window._save = saveLanguage;
-      window._getSaved = getSavedLanguage;
-      window._AVAILABLE = AVAILABLE;
-      window._FALLBACK = RELATED_FALLBACK;
-
-      window.addEventListener('DOMContentLoaded', () => {
-        // 1. Kolla vad besökaren har för språk + fallback-karta
-        const browserLangs = navigator.languages || [navigator.language];
-        console.log('Webbläsarens språk:', browserLangs);
-        
-        // 2. Använd din karta för att hitta bästa språk
-        const best = pickBestLanguage(AVAILABLE, browserLangs);
-        console.log('Bästa matchning via din karta:', best, '(t.ex. ca->es, gl->es, sv-ax->sv, sma->se, fkv->fit)');
-
-        // 3. Visa vilket som är aktivt
-        const info = document.getElementById('detected-info');
-        if (info) {
-          const saved = getSavedLanguage();
-          info.innerHTML = `
-            Webbläsare: <b>${browserLangs.join(', ')}</b><br>
-            Din karta säger: <b>${best}</b><br>
-            Sparat i localStorage: <b>${saved || '(inget ännu)'}</b><br>
-            <small>Testa: ca, gl, sv-ax, sma, fkv, se-fi osv -> ska mappas rätt</small>
-          `;
-        }
-
-        // 4. Fyll språk-menyn och kom ihåg val
-        const select = document.getElementById('read-select');
-        if (select) {
-          // Sätt aktuellt språk i menyn
-          const current = getSavedLanguage() || best;
-          if (select.querySelector(`option[value="${current}"]`)) {
-            select.value = current;
-          }
-
-          select.addEventListener('change', (e) => {
-            const val = e.target.value;
-            if (!val) return;
-            saveLanguage(val); // Kommer ihåg utan cookies!
-            alert(`Sparat: ${val} i localStorage. Nästa gång kommer du direkt hit.`);
-            window.location.href = `lang/read.html?lang=${val}`;
-          });
-        }
-
-        // 5. Klickbara kort
-        document.querySelectorAll('.lang-card').forEach(card => {
-          card.addEventListener('click', () => {
-            const lang = card.dataset.lang;
-            saveLanguage(lang);
-            window.location.href = `lang/read.html?lang=${lang}`;
-          });
-          // Markera aktivt
-          if (card.dataset.lang === (getSavedLanguage() || best)) {
-            card.classList.add('active');
-          }
-        });
-      });
-    </script>
 </head>
 <body>
-    <h1>Välj språk / Choose language</h1>
-    
-    <div id="detected-info" style="background:#f5f5f5; padding:12px; border-radius:8px; font-size:13px; margin:16px 0;"></div>
 
-    <div style="margin:20px 0;">
-        <label for="read-select">Rullgardin:</label>
-        <select id="read-select">
-            <option value="">Välj språk</option>
-            <option value="sv">Svenska</option>
-            <option value="en">English</option>
-            <option value="es">Español (fångar ca, gl, an, ast...)</option>
-            <option value="fit">Meänkieli (fångar fkv, kvk...)</option>
-            <option value="se">Davvisámegiella (fångar sma, smj, smn, sms...)</option>
-            <option value="fo">Føroyskt (fångar fo-dk, fo-no...)</option>
-            <option value="no">Norsk</option>
-            <option value="fi">Suomi</option>
-            <option value="da">Dansk</option>
-            <option value="is">Íslenska</option>
-            <!-- lägg till dina 42 här -->
-        </select>
+    <!-- ======================================== -->
+    <!-- NAVIGATION: MENY                         -->
+    <!-- ======================================== -->
+
+    <div class="nav-wrapper">
+
+        <!-- Språkvalsrullgardin (utan label) -->
+        <div class="read-menu">
+            <select id="read-select" onchange="if(this.value) window.location.href='read.html?lang=' + this.value">
+                <option value="">Välj språk</option>
+                <option value="af">Afrikaans</option>
+                <option value="ar">العربية</option>
+                <option value="bg">Български</option>
+                <option value="bn">বাংলা</option>
+                <option value="crs">Kreol seselwa</option>
+                <option value="cs">Čeština</option>
+                <option value="da">Dansk</option>
+                <option value="de">Deutsch</option>
+                <option value="el">Ελληνικά</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fa">فارسی</option>
+                <option value="fi">Suomi</option>
+                <option value="fit">Meänkieli</option>
+                <option value="fo">Føroyskt</option>
+                <option value="fr">Français</option>
+                <option value="he">עברית</option>
+                <option value="hi">हिंदी</option>
+                <option value="hu">Magyar</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="is">Íslenska</option>
+                <option value="it">Italiano</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="nl">Nederlands</option>
+                <option value="no">Norsk</option>
+                <option value="pl">Polski</option>
+                <option value="pt">Português</option>
+                <option value="ro">Română</option>
+                <option value="ru">Русский</option>
+                <option value="se">Davvisámegiella</option>
+                <option value="sv">Svenska</option>
+                <option value="sw">Kiswahili</option>
+                <option value="th">ภาษาไทย</option>
+                <option value="fil">Filipino</option>
+                <option value="tr">Türkçe</option>
+                <option value="uk">Українська</option>
+                <option value="ur">اردو</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="xh">isiXhosa</option>
+                <option value="zh">中文</option>
+                <option value="zu">isiZulu</option>
+            </select>
+        </div>
+
+        <!-- MENY – INJECTAS AV MENU.JS -->
+        <div id="main-menu"></div>
+
     </div>
 
-    <h3>Klickbara kort (sparar i localStorage)</h3>
-    <div class="lang-grid">
-        <div class="lang-card" data-lang="sv">Svenska (fångar sv-ax Åland)</div>
-        <div class="lang-card" data-lang="es">Español (fångar ca, gl)</div>
-        <div class="lang-card" data-lang="fit">Meänkieli (fångar fkv)</div>
-        <div class="lang-card" data-lang="se">Sámegiella (fångar alla samiska)</div>
-        <div class="lang-card" data-lang="fo">Føroyskt</div>
-        <div class="lang-card" data-lang="en">English</div>
+    <!-- ======================================== -->
+    <!-- HUVUDINNEHÅLL                             -->
+    <!-- ======================================== -->
+
+    <div class="page-container">
+        <p class="language-name" id="language-name">
+            <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
+            <span id="language-label"></span>
+        </p>
+        <br>
+        <h1 id="lang-title">The World Manifesto</h1>
+        <h2 id="lang-subtitle"></h2>
+        <br>
+        <div id="author-container"></div>
+        <br>
+        <div id="copyright-container"></div>
+        <br>
+        <div id="body-content"></div>
     </div>
 
-    <hr style="margin:30px 0;">
+    <!-- ======================================== -->
+    <!-- JAVASCRIPT                               -->
+    <!-- ======================================== -->
 
-    <h4>Så här får du det att fungera:</h4>
-    <ol style="font-size:14px; line-height:1.6;">
-        <li>Se till att <code>lang/js/lang.js</code> på GitHub är denna fil:<br>
-            <code>varldsmanifestet-FINAL-COMPLETE-with-localStorage-PD.js</code> (med gl:es och sv-ax:sv fixarna)</li>
-        <li>Om din <code>lang.html</code> ligger i root, använd:<br>
-            <code>from './lang/js/lang.js'</code></li>
-        <li>Om din <code>lang.html</code> ligger i <code>lang/</code> mappen, använd:<br>
-            <code>from './js/lang.js'</code></li>
-        <li>Byt till <code>&lt;script type="module"&gt;</code> - annars funkar inte <code>import</code></li>
-    </ol>
+    <!-- Dessa script laddas först -->
+    <script src="js/author.js"></script>
+    <script src="js/copyright.js"></script>
 
-    <p style="font-size:12px; color:#666;">
-        Testa i konsolen: öppna Developer Tools (F12) och skriv<br>
-        <code>navigator.languages = ['ca']</code> sedan ladda om - då ska den föreslå <code>es</code>
-    </p>
+    <!-- HUVUD-SKRIPTET (modul) – laddas sist -->
+    <script type="module">
+        // Importera Metas språkhanterare
+        import { pickBestLanguage, saveLanguage } from './js/lang.js';
+
+        // 1. Välj bästa språk
+        const lang = pickBestLanguage();
+
+        // 2. Spara valet (kommer ihåg användaren)
+        saveLanguage(lang);
+
+        // 3. Hitta språkdata
+        const langData = window.languages[lang];
+
+        // 4. Uppdatera sidan
+        if (langData) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = ['ar', 'he', 'fa', 'ur'].includes(lang) ? 'rtl' : 'ltr';
+            document.getElementById('flag-icon').src = langData.flag;
+            document.getElementById('flag-icon').alt = langData.name;
+            document.getElementById('language-label').textContent = langData.name;
+            document.getElementById('lang-title').textContent = langData.title;
+            document.getElementById('lang-subtitle').textContent = langData.subtitle;
+        }
+
+        // 5. Ladda manifesttexten
+        if (typeof loadText === 'function') {
+            loadText();
+        } else {
+            console.warn('loadText() är inte definierad – kontrollera att den finns i ditt script.');
+        }
+
+        // 6. Ladda författare och copyright
+        if (typeof getAuthorHTML === 'function') {
+            document.getElementById('author-container').innerHTML = getAuthorHTML();
+        }
+        if (typeof getCopyrightHTML === 'function') {
+            document.getElementById('copyright-container').innerHTML = getCopyrightHTML();
+        }
+    </script>
+
+    <!-- ======================================== -->
+    <!-- MENY + FOOTER                            -->
+    <!-- ======================================== -->
+
+    <script src="../menu.js"></script>
+    <script src="../footer.js"></script>
+
 </body>
 </html>
