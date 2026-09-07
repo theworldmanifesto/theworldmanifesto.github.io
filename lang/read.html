@@ -132,13 +132,64 @@
             }
         }
     </style>
+
+    <!-- NYTT: Din språk-fallback med localStorage -->
+    <script type="module">
+      import { pickBestLanguage, saveLanguage, getSavedLanguage, AVAILABLE, RELATED_FALLBACK } from './js/lang.js';
+      
+      // Exponera för fallback-funktionen ovan
+      window._available = AVAILABLE;
+      window._related = RELATED_FALLBACK;
+      window._pick = () => pickBestLanguage(AVAILABLE);
+      window._saveLang = saveLanguage;
+      window._getSaved = getSavedLanguage;
+
+      // Hantera språkval
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlLangParam = urlParams.get('lang');
+      
+      // Om ?lang= finns i URL, spara det
+      if (urlLangParam) {
+          const lc = urlLangParam.toLowerCase();
+          const mapped = RELATED_FALLBACK[lc] || lc;
+          if (AVAILABLE.includes(mapped)) {
+              saveLanguage(mapped);
+          } else if (AVAILABLE.includes(lc)) {
+              saveLanguage(lc);
+          }
+      }
+
+      // Ställ in menyn när sidan laddat
+      window.addEventListener('DOMContentLoaded', () => {
+          const select = document.getElementById('read-select');
+          if (!select) return;
+          
+          // Sätt aktuellt språk i menyn
+          const current = urlLangParam ? urlLangParam.toLowerCase() : pickBestLanguage(AVAILABLE);
+          const mappedCurrent = RELATED_FALLBACK[current] || current;
+          if (select.querySelector(`option[value="${mappedCurrent}"]`)) {
+              select.value = mappedCurrent;
+          } else if (select.querySelector(`option[value="${current}"]`)) {
+              select.value = current;
+          }
+
+          // När besökaren väljer språk
+          select.addEventListener('change', (e) => {
+              const val = e.target.value;
+              if (!val) return;
+              saveLanguage(val); // Kommer ihåg utan cookies!
+              window.location.href = 'read.html?lang=' + val;
+          });
+      });
+    </script>
+
 </head>
 <body>
     <div id="main-menu"></div>
 
     <!-- READ – språkvalsrullgardin -->
     <div style="text-align: center; margin: 10px 0 20px 0;">
-        <select id="read-select" onchange="if(this.value) window.location.href='read.html?lang=' + this.value" style="padding: 6px 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 13px; font-family: sans-serif; background: rgba(255, 255, 255, 0.9);">
+        <select id="read-select" id="read-select" style="padding: 6px 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 13px; font-family: sans-serif; background: rgba(255, 255, 255, 0.9);">
             <option value="">Välj språk</option>
             <option value="af">Afrikaans</option>
             <option value="ar">العربية</option>
@@ -194,48 +245,246 @@
         <h1 id="book-title">The World Manifesto</h1>
         <h2 id="book-subtitle">The Manifesto for Definitive Abundance</h2>
         <br>
-        <div id="author-container"></div>
-        <br>
-        <div id="copyright-container"></div>
-        <br>
-        <div id="body-content"></div>
+<div id="author-container"></div>
+<br>
+<div id="copyright-container"></div>
+<br>
+<div id="body-content"></div>
     </div>
-
-    <!-- ======================================== -->
-    <!-- SKRIPT                                  -->
-    <!-- ======================================== -->
 
     <script src="js/author.js"></script>
     <script src="js/copyright.js"></script>
     <script src="../menu.js"></script>
     <script src="../footer.js"></script>
+    <script>
+        // ============================================================
+        // 1. SPRÅKDATA – 42 språk
+        // ============================================================
+const languages = {
+    'sv': { flag: 'flags/se.svg', name: 'Svenska', title: 'Världsmanifestet', subtitle: 'Manifestet för definitivt överflöd' },
+    'en': { flag: 'flags/gb.svg', name: 'English', title: 'The World Manifesto', subtitle: 'The Manifesto for Definitive Abundance' },
+    'zh': { flag: 'flags/cn.svg', name: '简体中文', title: '世界宣言', subtitle: '终极丰裕宣言' },
+    'hi': { flag: 'flags/in.svg', name: 'हिन्दी', title: 'विश्व घोषणापत्र', subtitle: 'निश्चित प्रचुरता के लिए घोषणापत्र' },
+    'es': { flag: 'flags/es.svg', name: 'Español', title: 'El Manifiesto Mundial', subtitle: 'El Manifiesto para la Abundancia Definitiva' },
+    'fr': { flag: 'flags/fr.svg', name: 'Français', title: 'Le Manifeste Mondial', subtitle: 'Le Manifeste pour l\'Abondance Définitive' },
+    'ar': { flag: 'flags/sa.svg', name: 'العربية', title: 'البيان العالمي', subtitle: 'بيان الوفرة النهائية' },
+    'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia', title: 'Manifest Dunia', subtitle: 'Manifesto untuk Kelimpahan Definitif' },
+    'bn': { flag: 'flags/bd.svg', name: 'বাংলা', title: 'বিশ্ব ইশতেহার', subtitle: 'চূড়ান্ত প্রাচুর্যের ইশতেহার' },
+    'pt': { flag: 'flags/pt.svg', name: 'Português', title: 'O Manifesto Mundial', subtitle: 'O Manifesto para a Abundância Definitiva' },
+    'ru': { flag: 'flags/ru.svg', name: 'Русский', title: 'Всемирный манифест', subtitle: 'Манифест окончательного изобилия' },
+    'uk': { flag: 'flags/ua.svg', name: 'Українська', title: 'Всесвітній маніфест', subtitle: 'Маніфест остаточного багатства' },
+    'bg': { flag: 'flags/bg.svg', name: 'Български', title: 'Световен манифест', subtitle: 'Манифест за окончателно изобилие' },
+    'ur': { flag: 'flags/pk.svg', name: 'اردو', title: 'عالمی منشور', subtitle: 'حتمی فراوانی کا منشور' },
+    'ja': { flag: 'flags/jp.svg', name: '日本語', title: '世界宣言', subtitle: '究極の豊かさのための宣言' },
+    'fil': { flag: 'flags/ph.svg', name: 'Filipino', title: 'Ang Pandaigdigang Manipesto', subtitle: 'Ang Manipesto para sa Tiyak na Kasaganaan' },
+    'de': { flag: 'flags/de.svg', name: 'Deutsch', title: 'Das Weltmanifest', subtitle: 'Das Manifest für den definitiven Überfluss' },
+    'ko': { flag: 'flags/kr.svg', name: '한국어', title: '세계 선언문', subtitle: '최종적 풍요를 위한 선언문' },
+    'th': { flag: 'flags/th.svg', name: 'ไทย', title: 'แถลงการณ์โลก', subtitle: 'แถลงการณ์เพื่อความอุดมสมบูรณ์ขั้นสุดท้าย' },
+    'vi': { flag: 'flags/vn.svg', name: 'Tiếng Việt', title: 'Tuyên ngôn Thế giới', subtitle: 'Tuyên ngôn cho Sự phong phú Cuối cùng' },
+    'tr': { flag: 'flags/tr.svg', name: 'Türkçe', title: 'Dünya Manifestosu', subtitle: 'Nihai Bolluk Manifestosu' },
+    'fa': { flag: 'flags/ir.svg', name: 'فارسی', title: 'مانیفست جهانی', subtitle: 'مانیفست فراوانی نهایی' },
+    'sw': { flag: 'flags/tz.svg', name: 'Kiswahili', title: 'Ilani ya Dunia', subtitle: 'Ilani ya Wingi wa Mwisho' },
+    'it': { flag: 'flags/it.svg', name: 'Italiano', title: 'Il Manifesto Mondiale', subtitle: 'Il Manifesto per l\'Abbondanza Definitiva' },
+    'pl': { flag: 'flags/pl.svg', name: 'Polski', title: 'Manifest Światowy', subtitle: 'Manifest Ostatecznej Obfitości' },
+    'nl': { flag: 'flags/nl.svg', name: 'Nederlands', title: 'Het Wereldmanifest', subtitle: 'Het Manifest voor Definitieve Overvloed' },
+    'ro': { flag: 'flags/ro.svg', name: 'Română', title: 'Manifestul Mondial', subtitle: 'Manifestul pentru Abundența Definitivă' },
+    'el': { flag: 'flags/gr.svg', name: 'Ελληνικά', title: 'Παγκόσμιο Μανιφέστο', subtitle: 'Μανιφέστο για την Οριστική Αφθονία' },
+    'af': { flag: 'flags/za.svg', name: 'Afrikaans', title: 'Die Wêreldmanifest', subtitle: 'Die Manifest vir Definitiewe Oorvloed' },
+    'zu': { flag: 'flags/za.svg', name: 'isiZulu', title: 'Umbhalo Wezwe', subtitle: 'Umbhalo Wokuchichima Okuphelele' },
+    'xh': { flag: 'flags/za.svg', name: 'isiXhosa', title: 'Isibhengezo Sehlabathi', subtitle: 'Isibhengezo Sobuninzi Obugqibeleleyo' },
+    'cs': { flag: 'flags/cz.svg', name: 'Čeština', title: 'Světový manifest', subtitle: 'Manifest pro konečnou hojnost' },
+    'hu': { flag: 'flags/hu.svg', name: 'Magyar', title: 'Világkiáltvány', subtitle: 'A végső bőség manifesztuma' },
+    'he': { flag: 'flags/il.svg', name: 'עברית', title: 'המניפסט העולמי', subtitle: 'המניפסט לשפע המוחלט' },
+    'crs': { flag: 'flags/sc.svg', name: 'Seselwa', title: 'Manifest Lemonn', subtitle: 'Manifest pour Labondans Definitif' },
+    'se': { flag: 'flags/dsg.svg', name: 'Davvisámegiella', title: 'Máilmmi Manifesta', subtitle: 'Manifesta buot viimma gollu várás' },
+    'fit': { flag: 'flags/fit.svg', name: 'Meänkieli', title: 'Mailmanmanifesti', subtitle: 'Manifesti lopullisen yltäkylläisyyden puolesta' },
+    'no': { flag: 'flags/no.svg', name: 'Norsk', title: 'Verdensmanifestet', subtitle: 'Manifestet for det definitive overflødet' },
+    'fi': { flag: 'flags/fi.svg', name: 'Suomi', title: 'Maailmanmanifesti', subtitle: 'Manifesti lopulliselle yltäkylläisyydelle' },
+    'da': { flag: 'flags/dk.svg', name: 'Dansk', title: 'Verdensmanifestet', subtitle: 'Manifestet for det definitive overflod' },
+    'is': { flag: 'flags/is.svg', name: 'Íslenska', title: 'Heimsmanifestið', subtitle: 'Manifestið fyrir endanlegt gnægð' },
+    'fo': { flag: 'flags/fo.svg', name: 'Føroyskt', title: 'Heimsmanifestið', subtitle: 'Manifestið fyri endaliga nógv' }
+};
 
-    <!-- METAS SPRÅKHANTERARE (MODUL) – SIST, SÅ ATT ALLT ANNAT FINNS PÅ PLATS -->
-    <script type="module">
-        import { pickBestLanguage, saveLanguage } from './js/lang.js';
-
-        // 1. Välj bästa språk
-        const lang = pickBestLanguage();
-
-        // 2. Spara valet (kommer ihåg användaren)
-        saveLanguage(lang);
-
-        // 3. Hitta språkdata
-        const langData = window.languages[lang];
-
-        // 4. Uppdatera sidan
-        if (langData) {
-            document.documentElement.lang = lang;
-            document.documentElement.dir = ['ar', 'he', 'fa', 'ur'].includes(lang) ? 'rtl' : 'ltr';
-            document.getElementById('flag-icon').src = langData.flag;
-            document.getElementById('flag-icon').alt = langData.name;
-            document.getElementById('language-label').textContent = langData.name;
-            document.getElementById('book-title').textContent = langData.title;
-            document.getElementById('book-subtitle').textContent = langData.subtitle;
+        // NY: Använder din lang/js/lang.js med 324 dialekter + localStorage
+        // Den här funktionen ersätts av modul-versionen nedan, denna är bara fallback om modulen inte laddas
+        function getPreferredLanguage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLang = urlParams.get('lang');
+            if (urlLang) {
+                const lc = urlLang.toLowerCase();
+                // om det är en av dina 42, spara direkt
+                if (window._available && window._available.includes(lc)) {
+                    try { localStorage.setItem('world-manifesto-lang', lc); } catch(e){}
+                    return lc;
+                }
+                // annars kolla fallback-kartan om den finns
+                if (window._related && window._related[lc]) {
+                    const mapped = window._related[lc];
+                    try { localStorage.setItem('world-manifesto-lang', mapped); } catch(e){}
+                    return mapped;
+                }
+                if (languages[lc]) return lc;
+            }
+            // kolla sparat val
+            try {
+                const saved = localStorage.getItem('world-manifesto-lang');
+                if (saved && languages[saved]) return saved;
+            } catch(e){}
+            // fallback via din karta
+            if (window._pick) {
+                const best = window._pick();
+                if (languages[best]) return best;
+            }
+            const browserLang = navigator.language || navigator.languages?.[0] || 'en';
+            const langCode = browserLang.split('-')[0].toLowerCase();
+            if (languages[langCode]) return langCode;
+            return 'en';
         }
 
-        // 5. Ladda manifesttexten
-        if (typeof loadText === 'function') {
+        const lang = getPreferredLanguage();
+        const langData = languages[lang];
+const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
+document.documentElement.lang = lang;
+document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
+        
+        // Sätt flagga och språknamn
+        document.getElementById('flag-icon').src = langData.flag;
+        document.getElementById('flag-icon').alt = langData.name;
+        document.getElementById('language-label').textContent = langData.name;
+
+        // ⭐ UPPDATERA RUBRIKERNA ⭐
+        document.getElementById('book-title').textContent = langData.title;
+        document.getElementById('book-subtitle').textContent = langData.subtitle;
+
+        // ============================================================
+        // 3. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
+        // ============================================================
+        function splitRow(row) {
+            if (row.includes('\t')) {
+                return row.split(/\t+/).map(cell => cell.trim()).filter(cell => cell !== '');
+            }
+            return row.split(/\s*\|\s*/).map(cell => cell.trim()).filter(cell => cell !== '');
+        }
+
+        // ============================================================
+        // 4. BYGG EN HTML-TABELL FRÅN TABELLRADER
+        // ============================================================
+        function buildTable(rows) {
+            if (rows.length === 0) return '';
+
+            const splitRows = rows.map(row => splitRow(row));
+            const maxCols = Math.max(...splitRows.map(r => r.length));
+            const normalizedRows = splitRows.map(r => {
+                while (r.length < maxCols) r.push('');
+                return r;
+            });
+
+            let html = `<table class="manifesto-table">`;
+            const headers = normalizedRows[0];
+            html += `<thead><tr>`;
+            headers.forEach(h => html += `<th>${h}</th>`);
+            html += `</tr></thead><tbody>`;
+
+            for (let r = 1; r < normalizedRows.length; r++) {
+                const cells = normalizedRows[r];
+                html += `<tr>`;
+                cells.forEach(c => html += `<td>${c}</td>`);
+                html += `</tr>`;
+            }
+
+            html += `</tbody></table>`;
+            return html;
+        }
+
+        // ============================================================
+        // 5. LADDA TEXT – HOPPAR ÖVER ALLT MELLAN ===-SEPARATORER
+        // ============================================================
+async function loadText() {
+    try {
+        const response = await fetch(`lang_texts/${lang}.txt`);
+        if (!response.ok) throw new Error('Textfil saknas');
+        const text = await response.text();
+
+        const lines = text.split('\n');
+        const nonEmptyLines = lines.filter(line => line.trim() !== '');
+        const bodyContent = document.getElementById('body-content');
+        let currentHtml = '';
+
+        let tableRows = [];
+        let inTable = false;
+        let sepCount = 0;
+
+        for (let i = 3; i < nonEmptyLines.length; i++) {
+            let rawLine = nonEmptyLines[i];
+            let line = rawLine.trim();
+
+            // Räkna "===" -separatorer. De 2 första (och allt som låg emellan
+            // dem, dvs. den gamla copyright-texten) hoppas helt över.
+            if (line.match(/^=+$/)) {
+                sepCount++;
+                if (sepCount <= 2) continue;
+                currentHtml += `<hr class="separator-line">`;
+                continue;
+            }
+            if (sepCount < 2) continue;
+
+            if (line === '') {
+                if (inTable && tableRows.length > 0) {
+                    currentHtml += buildTable(tableRows);
+                    tableRows = [];
+                    inTable = false;
+                }
+                continue;
+            }
+
+            const pipeCount = (line.match(/\|/g) || []).length;
+            const tabCount = (line.match(/\t/g) || []).length;
+            const isTableRow = (pipeCount >= 2 || tabCount >= 2);
+
+            if (isTableRow) {
+                if (!inTable) {
+                    inTable = true;
+                    tableRows = [];
+                }
+                tableRows.push(line);
+                continue;
+            }
+
+            if (inTable && tableRows.length > 0) {
+                currentHtml += buildTable(tableRows);
+                tableRows = [];
+                inTable = false;
+            }
+
+            if (line.toLowerCase() === 'table of contents') {
+                currentHtml += `<h2 class="toc-title">${line}</h2>`;
+                continue;
+            }
+
+            if (line.startsWith('"') && line.endsWith('"')) {
+                currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
+                continue;
+            }
+
+            if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                currentHtml += `<p class="body-text">${line}</p>`;
+                continue;
+            }
+
+            currentHtml += `<p class="body-text">${line}</p>`;
+        }
+
+        if (inTable && tableRows.length > 0) {
+            currentHtml += buildTable(tableRows);
+        }
+
+        bodyContent.innerHTML = currentHtml;
+
+    } catch (error) {
+        console.error('Fel vid laddning:', error);
+        document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
+    }
+}
 
         // ============================================================
         // 6. KÖR
@@ -248,6 +497,7 @@ if (typeof getAuthorHTML === 'function') {
 if (typeof getCopyrightHTML === 'function') {
     document.getElementById('copyright-container').innerHTML = getCopyrightHTML();
 }
-    </script>   <!-- ← ENDAST EN STÄNGANDE TAG HÄR -->
+    </script>
+
 </body>
 </html>
