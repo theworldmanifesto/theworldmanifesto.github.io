@@ -413,8 +413,12 @@ document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
         // ============================================================
         loadText();
 
-        if (typeof getAuthorHTML === 'function') {
-            document.getElementById('author-container').innerHTML = getAuthorHTML();
+if (typeof getAuthorHTML === 'function') {
+    document.getElementById('author-container').innerHTML = getAuthorHTML();
+}
+if (typeof getCopyrightHTML === 'function') {
+    document.getElementById('copyright-container').innerHTML = getCopyrightHTML();
+}
         }
     </script>
 
