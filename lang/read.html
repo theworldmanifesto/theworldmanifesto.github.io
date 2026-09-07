@@ -389,11 +389,6 @@ async function loadText() {
                 continue;
             }
 
-            if (line.toLowerCase() === 'to be done') {
-                currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
-                continue;
-            }
-
             if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
                 currentHtml += `<p class="body-text">${line}</p>`;
                 continue;
