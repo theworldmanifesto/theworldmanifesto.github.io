@@ -236,11 +236,18 @@
 
         // 5. Ladda manifesttexten
         if (typeof loadText === 'function') {
-            loadText();
-        } else {
-            console.warn('loadText() är inte definierad – kontrollera att den finns i ditt script.');
-        }
-    </script>
 
+        // ============================================================
+        // 6. KÖR
+        // ============================================================
+        loadText();
+
+if (typeof getAuthorHTML === 'function') {
+    document.getElementById('author-container').innerHTML = getAuthorHTML();
+}
+if (typeof getCopyrightHTML === 'function') {
+    document.getElementById('copyright-container').innerHTML = getCopyrightHTML();
+}
+    </script>   <!-- ← ENDAST EN STÄNGANDE TAG HÄR -->
 </body>
 </html>
