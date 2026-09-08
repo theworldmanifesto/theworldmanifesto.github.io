@@ -451,10 +451,6 @@ const uiTranslations = {
     }
 };
 
-// UI will be set after urlLang is determined (see below)
-
-
-    // --- SPRÅK-KARTA MED FALLBACK (inkl wa->fr) ---
     const RELATED_FALLBACK = {
   "af-za": "af", "af-na": "af",
   "an": "es", "an-es": "es",
@@ -529,6 +525,7 @@ const uiTranslations = {
 
     const AVAILABLE = ['sv','en','zh','hi','es','fr','ar','id','bn','pt','ru','uk','bg','ur','ja','fil','de','ko','th','vi','tr','fa','sw','it','pl','nl','ro','el','af','zu','xh','cs','hu','he','crs','se','fit','no','fi','da','is','fo'];
 
+    
 function pickBestLanguage(available = AVAILABLE, preferred = []) {
   const prefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
   for (const raw of prefs) {
@@ -544,19 +541,14 @@ function pickBestLanguage(available = AVAILABLE, preferred = []) {
   return available.includes('en') ? 'en' : available[0];
 }
 
-    // --- BESTÄM SPRÅK MED FALLBACK (wa->fr) ---
-    const urlParams = new URLSearchParams(window.location.search);
-    const rawUrlLang = urlParams.get('lang');
-    const urlLang = rawUrlLang ? pickBestLanguage(AVAILABLE, [rawUrlLang]) : pickBestLanguage();
 
-    // UI-språk = samma som urlLang, så rubrikerna följer citat-språket (wa->fr)
-    const browserLang = urlLang;
+    const browserLang = pickBestLanguage();
     const ui = uiTranslations[browserLang] || uiTranslations['en'];
 
     document.getElementById('page-title').textContent = ui.title;
     document.getElementById('page-subtitle').textContent = ui.subtitle;
     document.getElementById('lang-bar').textContent = ui.langBar;
-    document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html?lang=' + urlLang + '">' + ui.readMore + '</a>';
+    document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
 
     let currentQuoteLang = 'en';
 
@@ -565,7 +557,6 @@ function pickBestLanguage(available = AVAILABLE, preferred = []) {
     }
 
     function loadQuotes(langCode) {
-function loadQuotes(langCode) {
         console.log('loadQuotes anropad med språk:', langCode);
         const container = document.getElementById('quotes-container');
         
@@ -644,6 +635,12 @@ function loadQuotes(langCode) {
                 container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
             });
     }
+
+    // --- LADDA CITAT VID SIDLADDNING ---
+    const urlParams = new URLSearchParams(window.location.search);
+    const rawUrlLang = urlParams.get('lang');
+    const browserLang2 = pickBestLanguage();
+    const urlLang = rawUrlLang ? pickBestLanguage(AVAILABLE, [rawUrlLang]) : browserLang2;
 
 // === RTL-SPRÅK ===
 const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
