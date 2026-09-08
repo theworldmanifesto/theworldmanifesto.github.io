@@ -1,283 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>The World Manifesto</title>
-    <link rel="stylesheet" href="../menu.css">
-    <link rel="stylesheet" href="css/lang.css">
-    <style>
-        .language-name { font-family: 'Arimo', 'Arial', sans-serif; font-size: 10pt; font-weight: normal; margin: 0; text-align: center; }
-        .book-title { font-family: 'Dancing Script', cursive; font-size: 36pt; font-weight: normal; margin: 0 0 5px 0; line-height: 1.2; text-align: center; color: #1a1a1a; }
-        .book-subtitle { font-family: 'Homemade Apple', cursive; font-size: 13pt; font-weight: normal; margin: 0 0 10px 0; line-height: 1.2; text-align: center; color: #1a1a1a; }
-        .body-text { font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(11pt, 2.5vw, 13pt); line-height: 1.6; margin: 10px 0; text-align: start; max-width: 700px; margin-left: auto; margin-right: auto; color: #1a1a1a; }
-        .flag-icon { display: inline-block; width: clamp(16px, 4vw, 24px); height: auto; vertical-align: middle; border: 1px solid #ccc; filter: saturate(140%) contrast(110%); }
-        #author-container { text-align: center; margin-top: 30px; }
-        #author-container .author { font-family: 'Gelasio', 'Georgia', serif; font-size: 12pt; font-weight: bold; margin: 0; }
-        .separator-line { border: none; border-top: 2px solid #ccc; max-width: 300px; margin: 25px auto; }
-        .toc-title { font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(16pt, 3vw, 20pt); font-weight: bold; text-align: center; margin: 30px 0 20px 0; color: #1a1a1a; }
-        .manifesto-table { width: 100%; max-width: 700px; margin: 20px auto; border-collapse: collapse; font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(10pt, 2vw, 12pt); text-align: start; }
-        .manifesto-table th { background-color: #f0f0f0; font-weight: bold; padding: 10px 12px; border: 1px solid #ccc; text-align: center; }
-        .manifesto-table td { padding: 10px 12px; border: 1px solid #ccc; vertical-align: top; }
-        .manifesto-table tr:nth-child(even) td { background-color: #f9f9f9; }
-        .manifesto-table td:first-child { font-weight: bold; text-align: center; white-space: nowrap; width: 60px; }
-        .nav-wrapper { display: flex; align-items: center; justify-content: flex-start; gap: 16px; max-width: 800px; margin: 0 auto; padding: 12px 20px; background: transparent; position: sticky; top: 0; z-index: 500; flex-wrap: wrap; }
-        .read-menu { display: inline-block; font-family: sans-serif; font-size: 14px; flex-shrink: 0; }
-        .read-menu select { padding: 6px 12px; border-radius: 8px; border: 1px solid #ccc; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(4px); font-size: 13px; cursor: pointer; transition: border-color 0.2s; font-family: sans-serif; }
-        .read-menu select:hover { border-color: #888; }
-        .read-menu select:focus { outline: none; border-color: #555; }
-        #main-menu { display: inline-block; }
-        @media (max-width: 600px) { .nav-wrapper { padding: 8px 12px; gap: 10px; } .read-menu select { font-size: 12px; padding: 4px 8px; } }
-        @media only screen and (max-width: 768px) { .book-title { font-size: 28pt !important; } .book-subtitle { font-size: 12pt !important; } .language-name { font-size: 9pt !important; } .body-text { padding: 0 15px; } .manifesto-table td, .manifesto-table th { padding: 6px 8px; font-size: 9pt; } }
-        @media only screen and (max-width: 430px) { .book-title { font-size: 22pt !important; } .book-subtitle { font-size: 11pt !important; } .language-name { font-size: 8pt !important; } .manifesto-table td, .manifesto-table th { padding: 4px 6px; font-size: 8pt; } }
-    </style>
-</head>
-<body>
-    <div class="nav-wrapper">
-        <div class="read-menu">
-            <select id="read-select">
-                <option value="">Välj språk</option>
-                <option value="af">Afrikaans</option>
-                <option value="ar">العربية</option>
-                <option value="bg">Български</option>
-                <option value="bn">বাংলা</option>
-                <option value="crs">Kreol seselwa</option>
-                <option value="cs">Čeština</option>
-                <option value="da">Dansk</option>
-                <option value="de">Deutsch</option>
-                <option value="el">Ελληνικά</option>
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fa">فارسی</option>
-                <option value="fi">Suomi</option>
-                <option value="fit">Meänkieli</option>
-                <option value="fo">Føroyskt</option>
-                <option value="fr">Français</option>
-                <option value="he">עברית</option>
-                <option value="hi">हिंदी</option>
-                <option value="hu">Magyar</option>
-                <option value="id">Bahasa Indonesia</option>
-                <option value="is">Íslenska</option>
-                <option value="it">Italiano</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option>
-                <option value="nl">Nederlands</option>
-                <option value="no">Norsk</option>
-                <option value="pl">Polski</option>
-                <option value="pt">Português</option>
-                <option value="ro">Română</option>
-                <option value="ru">Русский</option>
-                <option value="se">Davvisámegiella</option>
-                <option value="sv">Svenska</option>
-                <option value="sw">Kiswahili</option>
-                <option value="th">ภาษาไทย</option>
-                <option value="fil">Filipino</option>
-                <option value="tr">Türkçe</option>
-                <option value="uk">Українська</option>
-                <option value="ur">اردو</option>
-                <option value="vi">Tiếng Việt</option>
-                <option value="xh">isiXhosa</option>
-                <option value="zh">中文</option>
-                <option value="zu">isiZulu</option>
-            </select>
-        </div>
-        <div id="main-menu"></div>
-    </div>
+/*
+  Världsmanifestet - FINAL COMPLETE UTAN localStorage-minne
+  CC0 1.0 Universal - Public Domain
+  https://creativecommons.org/publicdomain/zero/1.0/
 
-    <div class="page-container">
-        <p class="language-name" id="language-name">
-            <img id="flag-icon" src="" alt="" class="flag-icon" width="20" height="auto">
-            <span id="language-label"></span>
-        </p>
-        <br>
-        <h1 id="lang-title" class="book-title">The World Manifesto</h1>
-        <h2 id="lang-subtitle" class="book-subtitle"></h2>
-        <br>
-        <div id="author-container"></div>
-        <br>
-        <div id="copyright-container"></div>
-        <br>
-        <div id="body-content"></div>
-    </div>
+  Denna fil gör 1 sak:
+  1. Automatisk detektering av 324+ dialekter -> dina 42 språk
+  Ingen lagring, varje besök går på webbläsarens språk + fallback.
+  Baskiska eu -> es, galiciska gl -> es, katalanska ca -> es,
+  Åland sv-ax -> sv, meänkieli fkv -> fit, alla samiska -> se osv.
+*/
 
-    <script src="js/author.js"></script>
-    <script src="js/copyright.js"></script>
+export const AVAILABLE = [
+  'sv','en','zh','hi','es','fr','ar','id','bn','pt','ru','uk','bg','ur','ja','fil','de','ko','th','vi','tr','fa','sw','it','pl','nl','ro','el','af','zu','xh','cs','hu','he','crs','se','fit','no','fi','da','is','fo'
+];
 
-    <script>
-
-const languages = {
-    'sv': { flag: 'flags/se.svg', name: 'Svenska', title: 'Världsmanifestet', subtitle: 'Manifestet för definitivt överflöd' },
-    'en': { flag: 'flags/gb.svg', name: 'English', title: 'The World Manifesto', subtitle: 'The Manifesto for Definitive Abundance' },
-    'zh': { flag: 'flags/cn.svg', name: '简体中文', title: '世界宣言', subtitle: '终极丰裕宣言' },
-    'hi': { flag: 'flags/in.svg', name: 'हिन्दी', title: 'विश्व घोषणापत्र', subtitle: 'निश्चित प्रचुरता के लिए घोषणापत्र' },
-    'es': { flag: 'flags/es.svg', name: 'Español', title: 'El Manifiesto Mundial', subtitle: 'El Manifiesto para la Abundancia Definitiva' },
-    'fr': { flag: 'flags/fr.svg', name: 'Français', title: 'Le Manifeste Mondial', subtitle: "Le Manifeste pour l'Abondance Définitive" },
-    'ar': { flag: 'flags/sa.svg', name: 'العربية', title: 'البيان العالمي', subtitle: 'بيان الوفرة النهائية' },
-    'id': { flag: 'flags/id.svg', name: 'Bahasa Indonesia', title: 'Manifest Dunia', subtitle: 'Manifesto untuk Kelimpahan Definitif' },
-    'bn': { flag: 'flags/bd.svg', name: 'বাংলা', title: 'বিশ্ব ইশতেহার', subtitle: 'চূড়ান্ত প্রাচুর্যের ইশতেহার' },
-    'pt': { flag: 'flags/pt.svg', name: 'Português', title: 'O Manifesto Mundial', subtitle: 'O Manifesto para a Abundância Definitiva' },
-    'ru': { flag: 'flags/ru.svg', name: 'Русский', title: 'Всемирный манифест', subtitle: 'Манифест окончательного изобилия' },
-    'uk': { flag: 'flags/ua.svg', name: 'Українська', title: 'Всесвітній маніфест', subtitle: 'Маніфест остаточного багатства' },
-    'bg': { flag: 'flags/bg.svg', name: 'Български', title: 'Световен манифест', subtitle: 'Манифест за окончателно изобилие' },
-    'ur': { flag: 'flags/pk.svg', name: 'اردو', title: 'عالمی منشور', subtitle: 'حتمی فراوانی کا منشور' },
-    'ja': { flag: 'flags/jp.svg', name: '日本語', title: '世界宣言', subtitle: '究極の豊かさのための宣言' },
-    'fil': { flag: 'flags/ph.svg', name: 'Filipino', title: 'Ang Pandaigdigang Manipesto', subtitle: 'Ang Manipesto para sa Tiyak na Kasaganaan' },
-    'de': { flag: 'flags/de.svg', name: 'Deutsch', title: 'Das Weltmanifest', subtitle: 'Das Manifest für den definitiven Überfluss' },
-    'ko': { flag: 'flags/kr.svg', name: '한국어', title: '세계 선언문', subtitle: '최종적 풍요를 위한 선언문' },
-    'th': { flag: 'flags/th.svg', name: 'ไทย', title: 'แถลงการณ์โลก', subtitle: 'แถลงการณ์เพื่อความอุดมสมบูรณ์ขั้นสุดท้าย' },
-    'vi': { flag: 'flags/vn.svg', name: 'Tiếng Việt', title: 'Tuyên ngôn Thế giới', subtitle: 'Tuyên ngôn cho Sự phong phú Cuối cùng' },
-    'tr': { flag: 'flags/tr.svg', name: 'Türkçe', title: 'Dünya Manifestosu', subtitle: 'Nihai Bolluk Manifestosu' },
-    'fa': { flag: 'flags/ir.svg', name: 'فارسی', title: 'مانیفست جهانی', subtitle: 'مانیفست فراوانی نهایی' },
-    'sw': { flag: 'flags/tz.svg', name: 'Kiswahili', title: 'Ilani ya Dunia', subtitle: 'Ilani ya Wingi wa Mwisho' },
-    'it': { flag: 'flags/it.svg', name: 'Italiano', title: 'Il Manifesto Mondiale', subtitle: 'Il Manifesto per l\'Abbondanza Definitiva' },
-    'pl': { flag: 'flags/pl.svg', name: 'Polski', title: 'Światowy Manifest', subtitle: 'Manifest Ostatecznej Obfitości' },
-    'nl': { flag: 'flags/nl.svg', name: 'Nederlands', title: 'Het Wereldmanifest', subtitle: 'Het Manifest voor Definitieve Overvloed' },
-    'ro': { flag: 'flags/ro.svg', name: 'Română', title: 'Manifestul Mondial', subtitle: 'Manifestul pentru Abundență Definitivă' },
-    'el': { flag: 'flags/gr.svg', name: 'Ελληνικά', title: 'Το Παγκόσμιο Μανιφέστο', subtitle: 'Το Μανιφέστο για την Οριστική Αφθονία' },
-    'af': { flag: 'flags/za.svg', name: 'Afrikaans', title: 'Die Wêreldmanifes', subtitle: 'Die Manifes vir Definitiewe Oorvloed' },
-    'zu': { flag: 'flags/za.svg', name: 'isiZulu', title: 'Uhlaka Lomhlaba Wonke', subtitle: 'Uhlaka Lwenala Eliphelele' },
-    'xh': { flag: 'flags/za.svg', name: 'isiXhosa', title: 'Ilizwi Lehlabathi', subtitle: 'Ilizwi Lobuninzi Obugqibeleleyo' },
-    'cs': { flag: 'flags/cz.svg', name: 'Čeština', title: 'Světový manifest', subtitle: 'Manifest definitivního dostatku' },
-    'hu': { flag: 'flags/hu.svg', name: 'Magyar', title: 'Világmanifesztum', subtitle: 'A Végleges Bőség Manifesztuma' },
-    'he': { flag: 'flags/il.svg', name: 'עברית', title: 'המניפסט העולמי', subtitle: 'המניפסט לשפע סופי' },
-    'crs': { flag: 'flags/sc.svg', name: 'Kreol seselwa', title: 'Manifes Mondyal', subtitle: 'Manifes pour Labondans Definitif' },
-    'se': { flag: 'flags/se_sapmi.svg', name: 'Davvisámegiella', title: 'Máilmmi manifesta', subtitle: 'Manifesta loahpalaš abundánsii' },
-    'fit': { flag: 'flags/fit.svg', name: 'Meänkieli', title: 'Mailman manifesti', subtitle: 'Manifesti lopullisesta runsaudesta' },
-    'no': { flag: 'flags/no.svg', name: 'Norsk', title: 'Verdensmanifestet', subtitle: 'Manifestet for Definitiv Overflod' },
-    'fi': { flag: 'flags/fi.svg', name: 'Suomi', title: 'Maailman manifesti', subtitle: 'Lopullisen runsauden manifesti' },
-    'da': { flag: 'flags/dk.svg', name: 'Dansk', title: 'Verdensmanifestet', subtitle: 'Manifestet for Definitiv Overflod' },
-    'is': { flag: 'flags/is.svg', name: 'Íslenska', title: 'Heimsyfirlýsingin', subtitle: 'Yfirlýsing um endanlega gnægð' },
-    'fo': { flag: 'flags/fo.svg', name: 'Føroyskt', title: 'Heimsmanifestið', subtitle: 'Manifestið fyri endaliga gnøgd' }
+export const RELATED_FALLBACK = {
+  "af-za": "af", "af-na": "af",
+  "an": "es", "an-es": "es",
+  "ar-eg": "ar", "ar-sa": "ar", "ar-dz": "ar", "ar-ma": "ar", "ar-iq": "ar", "ar-sy": "ar", "ar-lb": "ar", "ar-jo": "ar", "ar-ps": "ar", "ar-ye": "ar", "ar-om": "ar", "ar-ae": "ar", "ar-qa": "ar", "ar-bh": "ar", "ar-kw": "ar", "ar-ly": "ar", "ar-tn": "ar", "ar-sd": "ar", "ar-so": "ar", "ary": "ar", "arz": "ar", "apc": "ar", "aeb": "ar", "acm": "ar",
+  "ast": "es", "ast-es": "es",
+  "az": "tr", "az-az": "tr", "az-ir": "tr",
+  "be": "uk", "be-by": "uk",
+  "bg-bg": "bg",
+  "bn-bd": "bn", "bn-in": "bn", "rkt": "bn",
+  "ca": "es", "ca-ad": "es", "ca-es": "es", "ca-fr": "es", "ca-it": "es", "ca-valencia": "es",
+  "ceb": "fil",
+  "co": "it",
+  "crh": "tr",
+  "crs": "crs", "crs-sc": "crs",
+  "cs-cz": "cs",
+  "da-dk": "da", "da-gl": "da",
+  "de-at": "de", "de-be": "de", "de-ch": "de", "de-de": "de", "de-li": "de", "bar": "de", "gsw": "de", "ksh": "de", "nds": "de",
+  "el-gr": "el", "el-cy": "el", "grc": "el",
+  "en-au": "en", "en-bz": "en", "en-ca": "en", "en-gb": "en", "en-gh": "en", "en-gy": "en", "en-hk": "en", "en-ie": "en", "en-in": "en", "en-jm": "en", "en-ke": "en", "en-mt": "en", "en-mw": "en", "en-my": "en", "en-ng": "en", "en-nz": "en", "en-ph": "en", "en-pk": "en", "en-sg": "en", "en-tt": "en", "en-tz": "en", "en-ug": "en", "en-us": "en", "en-za": "en", "ang": "en", "enm": "en", "sco": "en",
+  "es-419": "es", "es-ar": "es", "es-bo": "es", "es-bz": "es", "es-cl": "es", "es-co": "es", "es-cr": "es", "es-cu": "es", "es-do": "es", "es-ec": "es", "es-es": "es", "es-gq": "es", "es-gt": "es", "es-hn": "es", "es-mx": "es", "es-ni": "es", "es-pa": "es", "es-pe": "es", "es-ph": "es", "es-pr": "es", "es-py": "es", "es-sv": "es", "es-us": "es", "es-uy": "es", "es-ve": "es", "eu": "es", "eu-es": "es", "eu-fr": "es", "ext": "es", "lad": "es", "gl-es": "es", "oc": "es", "oc-ar": "es", "oc-es": "es",
+  "fa-af": "fa", "fa-ir": "fa", "ckb": "fa", "prs": "fa", "tg": "fa", "tg-tj": "fa",
+  "fi-fi": "fi",
+  "fil-ph": "fil", "tl": "fil", "tl-ph": "fil", "ilo": "fil",
+  "fit": "fit", "fit-fi": "fit", "fit-no": "fit", "fit-se": "fit", "fi-se-tornio": "fit", "fi-tornio": "fit", "fkv": "fit", "fkv-fi": "fit", "fkv-no": "fit", "kvk": "fit",
+  "fo": "fo", "fo-dk": "fo", "fo-fa": "fo", "fo-fare": "fo", "fo-fo": "fo", "fo-gl": "fo", "fo-no": "fo", "fo-se": "fo", "fao": "fo",
+  "fr-be": "fr", "fr-bf": "fr", "fr-ca": "fr", "fr-cd": "fr", "fr-cg": "fr", "fr-ch": "fr", "fr-ci": "fr", "fr-cm": "fr", "fr-fr": "fr", "fr-gn": "fr", "fr-ht": "fr", "fr-lu": "fr", "fr-mc": "fr", "fr-ml": "fr", "fr-ne": "fr", "fr-pf": "fr", "fr-rw": "fr", "fr-sn": "fr", "fr-td": "fr",
+  "fy": "nl",
+  "gl": "es",
+  "gag": "tr",
+  "gn": "es", "gn-py": "es", "gug": "es",
+  "he-il": "he", "yi": "he",
+  "hi-in": "hi", "bho": "hi", "hif": "hi",
+  "ht": "crs",
+  "hu-hu": "hu",
+  "id-id": "id", "ms": "id", "ms-bn": "id", "ms-id": "id", "ms-my": "id", "ms-sg": "id", "ind": "id", "zsm": "id",
+  "is-is": "is",
+  "it-ch": "it", "it-it": "it", "it-sm": "it", "it-va": "it", "lmo": "it", "scn": "it", "vec": "it",
+  "ja-jp": "ja",
+  "ko-kp": "ko", "ko-kr": "ko",
+  "lmo": "it",
+  "mfe": "crs",
+  "ms": "id",
+  "mwl": "pt",
+  "nb": "no", "nb-no": "no", "nn": "no", "nn-no": "no", "no-no": "no", "nob": "no", "nno": "no",
+  "nl-be": "nl", "nl-nl": "nl", "zea": "nl",
+  "pl-pl": "pl", "szl": "pl",
+  "pt-ao": "pt", "pt-br": "pt", "pt-ch": "pt", "pt-cv": "pt", "pt-gw": "pt", "pt-lu": "pt", "pt-mo": "pt", "pt-mz": "pt", "pt-pt": "pt", "pt-st": "pt", "pt-tl": "pt",
+  "qu": "es", "qu-bo": "es", "qu-ec": "es", "qu-pe": "es", "quz": "es", "qve": "es", "qwh": "es",
+  "ro-md": "ro", "ro-ro": "ro", "mo": "ro", "rup": "ro",
+  "ru-by": "ru", "ru-kg": "ru", "ru-kz": "ru", "ru-md": "ru", "ru-ru": "ru", "ru-ua": "ru",
+  "scn": "it",
+  "se": "se", "se-fi": "se", "se-no": "se", "se-se": "se", "sia": "se", "sjd": "se", "sjd-ru": "se", "sje": "se", "sje-no": "se", "sje-se": "se", "sjk": "se", "sjt": "se", "sju": "se", "sju-no": "se", "sju-se": "se", "sma": "se", "sma-no": "se", "sma-se": "se", "sme": "se", "smi": "se", "smi-fi": "se", "smi-no": "se", "smi-ru": "se", "smi-se": "se", "smj": "se", "smj-no": "se", "smj-se": "se", "smn": "se", "smn-fi": "se", "sms": "se", "sms-fi": "se", "sms-no": "se", "sms-ru": "se",
+  "sk": "cs", "sk-sk": "cs",
+  "sv-ax": "sv", "sv-fi": "sv", "sv-se": "sv",
+  "sw-cd": "sw", "sw-ke": "sw", "sw-tz": "sw", "sw-ug": "sw",
+  "th-th": "th",
+  "tr-cy": "tr", "tr-tr": "tr",
+  "uk-ua": "uk", "rue": "uk",
+  "ur-in": "ur", "ur-pk": "ur",
+  "vi-vn": "vi",
+  "wuu": "zh", "yue": "zh", "yue-hk": "zh",
+  "zh-cn": "zh", "zh-hans": "zh", "zh-hant": "zh", "zh-hk": "zh", "zh-mo": "zh", "zh-sg": "zh", "zh-tw": "zh",
+  "zu-za": "zu",
+  "xh-za": "xh"
 };
-window.languages = languages;
 
-    </script>
-
-    <script type="module">
-        import { pickBestLanguage, saveLanguage, getSavedLanguage } from './js/lang.js';
-
-        // Fyll rullgardinen och hantera val
-        function setupSelect(currentLang) {
-            const select = document.getElementById('read-select');
-            if (!select) return;
-            // Sortera språk efter namn
-            const sortedLangs = Object.keys(languages).sort((a,b) => languages[a].name.localeCompare(languages[b].name));
-            // Rensa och fyll på nytt (behåll första "Välj språk")
-            const first = select.options[0];
-            select.innerHTML = '';
-            select.appendChild(first);
-            sortedLangs.forEach(code => {
-                const option = document.createElement('option');
-                option.value = code;
-                option.textContent = languages[code].name;
-                if (code === currentLang) option.selected = true;
-                select.appendChild(option);
-            });
-
-            select.addEventListener('change', (e) => {
-                const val = e.target.value;
-                if (!val) return;
-                saveLanguage(val); // Kom ihåg utan cookies!
-                window.location.href = 'read.html?lang=' + val;
-            });
-        }
-
-        // 1. Välj bästa språk via din karta (inkl ca->es, gl->es, sv-ax->sv, sma->se, fkv->fit)
-        const urlParams = new URLSearchParams(window.location.search);
-        const urlLang = urlParams.get('lang');
-        let lang;
-        if (urlLang && languages[urlLang.toLowerCase()]) {
-            lang = urlLang.toLowerCase();
-            saveLanguage(lang);
-        } else {
-            lang = pickBestLanguage(); // kollar localStorage först, sedan webbläsare + fallback
-        }
-
-        // 2. Hitta data
-        const langData = languages[lang] || languages['en'];
-
-        // 3. Uppdatera sidan
-        document.documentElement.lang = lang;
-        document.documentElement.dir = ['ar','he','fa','ur'].includes(lang) ? 'rtl' : 'ltr';
-        const flagIcon = document.getElementById('flag-icon');
-        const langLabel = document.getElementById('language-label');
-        const langTitle = document.getElementById('lang-title');
-        const langSubtitle = document.getElementById('lang-subtitle');
-        if (flagIcon) { flagIcon.src = langData.flag; flagIcon.alt = langData.name; }
-        if (langLabel) langLabel.textContent = langData.name;
-        if (langTitle) langTitle.textContent = langData.title;
-        if (langSubtitle) langSubtitle.textContent = langData.subtitle;
-
-        setupSelect(lang);
-
-        // 4. Hjälpfunktioner för tabell
-        function splitRow(row) {
-            if (row.includes('\t')) return row.split(/\t+/).map(c => c.trim()).filter(c => c !== '');
-            return row.split(/\s*\|\s*/).map(c => c.trim()).filter(c => c !== '');
-        }
-        function buildTable(rows) {
-            if (rows.length === 0) return '';
-            const splitRows = rows.map(row => splitRow(row));
-            const maxCols = Math.max(...splitRows.map(r => r.length));
-            const normalizedRows = splitRows.map(r => { while (r.length < maxCols) r.push(''); return r; });
-            let html = `<table class="manifesto-table"><thead><tr>`;
-            normalizedRows[0].forEach(h => html += `<th>${h}</th>`);
-            html += `</tr></thead><tbody>`;
-            for (let r = 1; r < normalizedRows.length; r++) {
-                html += `<tr>`;
-                normalizedRows[r].forEach(c => html += `<td>${c}</td>`);
-                html += `</tr>`;
-            }
-            html += `</tbody></table>`;
-            return html;
-        }
-        async function loadText() {
-            try {
-                const response = await fetch(`lang_texts/${lang}.txt`);
-                if (!response.ok) throw new Error('Textfil saknas');
-                const text = await response.text();
-                const lines = text.split('\n');
-                const nonEmptyLines = lines.filter(line => line.trim() !== '');
-                const bodyContent = document.getElementById('body-content');
-                let currentHtml = '';
-                let tableRows = []; let inTable = false;
-                for (let i = 3; i < nonEmptyLines.length; i++) {
-                    let line = nonEmptyLines[i].trim();
-                    if (line === '') {
-                        if (inTable && tableRows.length > 0) { currentHtml += buildTable(tableRows); tableRows = []; inTable = false; }
-                        continue;
-                    }
-                    const pipeCount = (line.match(/\|/g) || []).length;
-                    const tabCount = (line.match(/\t/g) || []).length;
-                    const isTableRow = (pipeCount >= 2 || tabCount >= 2);
-                    if (isTableRow) { if (!inTable) { inTable = true; tableRows = []; } tableRows.push(line); continue; }
-                    if (inTable && tableRows.length > 0) { currentHtml += buildTable(tableRows); tableRows = []; inTable = false; }
-                    if (line.match(/^=+$/)) { currentHtml += `<hr class="separator-line">`; continue; }
-                    if (line.toLowerCase() === 'table of contents') { currentHtml += `<h2 class="toc-title">${line}</h2>`; continue; }
-                    if (line.startsWith('"') && line.endsWith('"')) { currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`; continue; }
-                    if (line.toLowerCase() === 'to be done') { currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">To be done</h2>`; continue; }
-                    if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) { currentHtml += `<p class="body-text">${line}</p>`; continue; }
-                    currentHtml += `<p class="body-text">${line}</p>`;
-                }
-                if (inTable && tableRows.length > 0) currentHtml += buildTable(tableRows);
-                if (bodyContent) bodyContent.innerHTML = currentHtml;
-            } catch (error) {
-                console.error('Fel vid laddning:', error);
-                const bc = document.getElementById('body-content');
-                if (bc) bc.innerHTML = '<p class="body-text">Text could not be loaded.</p>';
-            }
-        }
-        loadText();
-
-        if (typeof getAuthorHTML === 'function') {
-            document.getElementById('author-container').innerHTML = getAuthorHTML();
-        }
-        if (typeof getCopyrightHTML === 'function') {
-            document.getElementById('copyright-container').innerHTML = getCopyrightHTML();
-        }
-    </script>
-
-    <script src="../menu.js"></script>
-    <script src="../footer.js"></script>
-</body>
-</html>
+// UTAN minne - varje besök går på webbläsarens språk
+export function pickBestLanguage(available = AVAILABLE, preferred = []) {
+  const prefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
+  for (const raw of prefs) {
+    const tag = raw.toLowerCase().trim();
+    if (!tag) continue;
+    if (available.includes(tag)) return tag;
+    const base = tag.split('-')[0];
+    if (available.includes(base)) return base;
+    if (RELATED_FALLBACK[tag] && available.includes(RELATED_FALLBACK[tag])) return RELATED_FALLBACK[tag];
+    if (RELATED_FALLBACK[base] && available.includes(RELATED_FALLBACK[base])) return RELATED_FALLBACK[base];
+    try {
+      const max = new Intl.Locale(tag).maximize();
+      if (available.includes(max.language)) return max.language;
+    } catch(e) {}
+  }
+  return available.includes('en') ? 'en' : available[0];
+}
