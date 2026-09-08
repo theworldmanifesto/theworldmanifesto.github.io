@@ -65,7 +65,7 @@
             max-width: 300px;
             margin: 25px auto;
         }
-        .toc-title {
+        .toc-title { margin-bottom: 10px;
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(16pt, 3vw, 20pt);
             font-weight: bold;
@@ -456,8 +456,8 @@ async function loadText() {
                 inTable = false;
             }
 
-            if (line.toLowerCase() === 'table of contents') {
-                currentHtml += `<h2 class="toc-title">${line}</h2>`;
+            if (line.toLowerCase().includes('table of contents') || line.toLowerCase().includes('innehållsförteckning') || line.toLowerCase().includes('innholdsfortegnelse') || line.toLowerCase().includes('indholdsfortegnelse') || line.toLowerCase().includes('sisällysluettelo') || line.toLowerCase().includes('table des matières') || line.toLowerCase().includes('inhaltsverzeichnis') || line.toLowerCase().includes('índice') || line.toLowerCase().includes('indice') || line.toLowerCase().includes('contenidos') || line.toLowerCase().includes('sommario') || line.toLowerCase().includes('περιεχόμενα') || line.toLowerCase().includes('содержание') || line.toLowerCase().includes('содржина') || line.toLowerCase().includes('spis treści') || line.toLowerCase().includes('obsah') || line.toLowerCase().includes('tartalomjegyzék') || line.toLowerCase().includes('cuprins') || line.toLowerCase().includes('inhoudsopgave') || line.toLowerCase().includes('sisukord') || line.toLowerCase().includes('saturs') || line.toLowerCase().includes('turinys') || line.toLowerCase().includes('kazalo') || line.toLowerCase().includes('sadržaj') || line.toLowerCase().includes('зміст') || line.toLowerCase().includes('fihirist') || line.toLowerCase().includes('toc') || line.toLowerCase().includes('daftar isi') || line.toLowerCase().includes('목차') || line.toLowerCase().includes('目次') || line.toLowerCase().includes('目录') || line.toLowerCase().includes('目錄') || line.toLowerCase().includes('สารบัญ') || line.toLowerCase().includes('mục lục') || line.toLowerCase().includes('içindekiler') || line.toLowerCase().includes('فهرست') || line.toLowerCase().includes('محتويات') || line.toLowerCase().includes('תוכן עניינים') || line.toLowerCase().includes('अनुक्रमणिका') || line.toLowerCase().includes('সূচিপত্র') || line.toLowerCase().includes('taaloga') || line.toLowerCase().includes('dilolo') || line.toLowerCase().includes('okuqukethwe') || line.toLowerCase().includes('yandikimo') || line.toLowerCase().includes('efnisyfirlit') || line.toLowerCase().includes('innihaldsyvirlit')) {
+                currentHtml += `<h2 class="toc-title">${line}</h2><div style="height:0.8em"></div>`;
                 continue;
             }
 
