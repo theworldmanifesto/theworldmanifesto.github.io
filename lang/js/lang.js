@@ -1,14 +1,13 @@
 /*
-  Världsmanifestet - FINAL COMPLETE med localStorage
+  Världsmanifestet - FINAL COMPLETE UTAN localStorage-minne
   CC0 1.0 Universal - Public Domain
   https://creativecommons.org/publicdomain/zero/1.0/
 
-  Denna fil gör 3 saker:
+  Denna fil gör 1 sak:
   1. Automatisk detektering av 324+ dialekter -> dina 42 språk
-  2. Kommer ihåg besökarens val i språkmenyn utan cookies (localStorage)
-  3. Manuellt val vinner alltid över automatiskt
-
-  Ingen cookie-banner behövs, localStorage skickas inte till servern.
+  Ingen lagring, varje besök går på webbläsarens språk + fallback.
+  Baskiska eu -> es, galiciska gl -> es, katalanska ca -> es,
+  Åland sv-ax -> sv, meänkieli fkv -> fit, alla samiska -> se osv.
 */
 
 export const AVAILABLE = [
@@ -81,45 +80,8 @@ export const RELATED_FALLBACK = {
   "xh-za": "xh"
 };
 
-// ===== localStorage - kommer ihåg valet utan cookies =====
-const STORAGE_KEY = 'world-manifesto-lang';
-
-export function getSavedLanguage() {
-  try {
-    return localStorage.getItem(STORAGE_KEY);
-  } catch(e) { return null; }
-}
-
-export function saveLanguage(lang) {
-  try {
-    localStorage.setItem(STORAGE_KEY, lang);
-  } catch(e) {}
-}
-
-export function clearSavedLanguage() {
-  try {
-    localStorage.removeItem(STORAGE_KEY);
-  } catch(e) {}
-}
-
-// Huvudfunktion - 1. sparat val, 2. webbläsare, 3. fallback
+// UTAN minne - varje besök går på webbläsarens språk
 export function pickBestLanguage(available = AVAILABLE, preferred = []) {
-  // Kolla webbläsarens språk först för att se om det är baskiska
-  const browserPrefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
-  const isBasque = browserPrefs.some(p => p.startsWith('eu'));
-
-  // 1. Har besökaren redan valt språk i menyn? Då vinner det alltid - UTOM om baskiska och sparat är engelska
-  const saved = getSavedLanguage();
-  if (saved && available.includes(saved)) {
-    // Om besökaren har baskiska i webbläsaren men engelska sparat, ge spanska istället
-    if (isBasque && saved === 'en' && available.includes('es')) {
-      saveLanguage('es');
-      return 'es';
-    }
-    return saved;
-  }
-
-  // 2. Annars, kolla webbläsarens språk
   const prefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
   for (const raw of prefs) {
     const tag = raw.toLowerCase().trim();
@@ -136,20 +98,3 @@ export function pickBestLanguage(available = AVAILABLE, preferred = []) {
   }
   return available.includes('en') ? 'en' : available[0];
 }
-
-// För språkmenyn på din GitHub-sajt
-export function setupLanguageMenu(menuId = 'lang-menu') {
-  const menu = document.getElementById(menuId);
-  if (!menu) return;
-
-  const current = pickBestLanguage();
-
-  menu.addEventListener('change', (e) => {
-    const chosen = e.target.value;
-    saveLanguage(chosen); // Kom ihåg utan cookies!
-    location.pathname = `/${chosen}/`;
-  });
-
-  menu.value = current;
-}
-
