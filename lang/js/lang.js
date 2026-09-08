@@ -1,20 +1,14 @@
 /*
-  Världsmanifestet - FINAL COMPLETE UTAN localStorage-minne
-  CC0 1.0 Universal - Public Domain
-  https://creativecommons.org/publicdomain/zero/1.0/
-
-  Denna fil gör 1 sak:
-  1. Automatisk detektering av 324+ dialekter -> dina 42 språk
-  Ingen lagring, varje besök går på webbläsarens språk + fallback.
-  Baskiska eu -> es, galiciska gl -> es, katalanska ca -> es,
-  Åland sv-ax -> sv, meänkieli fkv -> fit, alla samiska -> se osv.
+  Världsmanifestet - FINAL UTAN localStorage-minne - PLAIN VERSION
+  CC0 1.0 Universal - Ingen lagring, varje besök går på webbläsarens språk
+  Baskiska eu -> es, galiciska gl -> es, katalanska ca -> es osv.
 */
 
-export const AVAILABLE = [
+const AVAILABLE = [
   'sv','en','zh','hi','es','fr','ar','id','bn','pt','ru','uk','bg','ur','ja','fil','de','ko','th','vi','tr','fa','sw','it','pl','nl','ro','el','af','zu','xh','cs','hu','he','crs','se','fit','no','fi','da','is','fo'
 ];
 
-export const RELATED_FALLBACK = {
+const RELATED_FALLBACK = {
   "af-za": "af", "af-na": "af",
   "an": "es", "an-es": "es",
   "ar-eg": "ar", "ar-sa": "ar", "ar-dz": "ar", "ar-ma": "ar", "ar-iq": "ar", "ar-sy": "ar", "ar-lb": "ar", "ar-jo": "ar", "ar-ps": "ar", "ar-ye": "ar", "ar-om": "ar", "ar-ae": "ar", "ar-qa": "ar", "ar-bh": "ar", "ar-kw": "ar", "ar-ly": "ar", "ar-tn": "ar", "ar-sd": "ar", "ar-so": "ar", "ary": "ar", "arz": "ar", "apc": "ar", "aeb": "ar", "acm": "ar",
@@ -81,7 +75,7 @@ export const RELATED_FALLBACK = {
 };
 
 // UTAN minne - varje besök går på webbläsarens språk
-export function pickBestLanguage(available = AVAILABLE, preferred = []) {
+function pickBestLanguage(available = AVAILABLE, preferred = []) {
   const prefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
   for (const raw of prefs) {
     const tag = raw.toLowerCase().trim();
