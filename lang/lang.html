@@ -54,7 +54,7 @@
                 <option value="fo">Føroyskt</option>
                 <option value="fr">Français</option>
                 <option value="he">עברית</option>
-                <option value="hi">हिंदी</option>
+                <option value="hi">हिन्दी</option>
                 <option value="hu">Magyar</option>
                 <option value="id">Bahasa Indonesia</option>
                 <option value="is">Íslenska</option>
@@ -182,12 +182,14 @@ window.languages = languages;
             });
         }
 
-        // 1. Välj bästa språk via din karta (inkl ca->es, gl->es, sv-ax->sv, sma->se, fkv->fit)
+        // FIXAD: Baskiska eu -> es, galiciska gl -> es osv. även via ?lang=eu
         const urlParams = new URLSearchParams(window.location.search);
-        const urlLang = urlParams.get('lang');
+        const rawUrlLang = urlParams.get('lang');
         let lang;
-        if (urlLang && languages[urlLang.toLowerCase()]) {
-            lang = urlLang.toLowerCase();
+        if (rawUrlLang) {
+            // Använd pickBestLanguage för att mappa eu->es, ca->es, gl->es, sv-ax->sv osv.
+            const mapped = pickBestLanguage(Object.keys(languages), [rawUrlLang]);
+            lang = mapped;
             saveLanguage(lang);
         } else {
             lang = pickBestLanguage(); // kollar localStorage först, sedan webbläsare + fallback
