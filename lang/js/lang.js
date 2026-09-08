@@ -1,14 +1,15 @@
 /*
-  Världsmanifestet - FINAL UTAN localStorage-minne - PLAIN VERSION
+  Världsmanifestet - FINAL UTAN localStorage - EXPORT VERSION för type="module"
   CC0 1.0 Universal - Ingen lagring, varje besök går på webbläsarens språk
   Baskiska eu -> es, galiciska gl -> es, katalanska ca -> es osv.
+  ANVÄNDS MED: <script type="module"> import { pickBestLanguage } from './js/lang.js'
 */
 
-const AVAILABLE = [
+export const AVAILABLE = [
   'sv','en','zh','hi','es','fr','ar','id','bn','pt','ru','uk','bg','ur','ja','fil','de','ko','th','vi','tr','fa','sw','it','pl','nl','ro','el','af','zu','xh','cs','hu','he','crs','se','fit','no','fi','da','is','fo'
 ];
 
-const RELATED_FALLBACK = {
+export const RELATED_FALLBACK = {
   "af-za": "af", "af-na": "af",
   "an": "es", "an-es": "es",
   "ar-eg": "ar", "ar-sa": "ar", "ar-dz": "ar", "ar-ma": "ar", "ar-iq": "ar", "ar-sy": "ar", "ar-lb": "ar", "ar-jo": "ar", "ar-ps": "ar", "ar-ye": "ar", "ar-om": "ar", "ar-ae": "ar", "ar-qa": "ar", "ar-bh": "ar", "ar-kw": "ar", "ar-ly": "ar", "ar-tn": "ar", "ar-sd": "ar", "ar-so": "ar", "ary": "ar", "arz": "ar", "apc": "ar", "aeb": "ar", "acm": "ar",
@@ -74,8 +75,8 @@ const RELATED_FALLBACK = {
   "xh-za": "xh"
 };
 
-// UTAN minne - varje besök går på webbläsarens språk
-function pickBestLanguage(available = AVAILABLE, preferred = []) {
+// UTAN localStorage - varje besök går på webbläsarens språk
+export function pickBestLanguage(available = AVAILABLE, preferred = []) {
   const prefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
   for (const raw of prefs) {
     const tag = raw.toLowerCase().trim();
@@ -92,3 +93,8 @@ function pickBestLanguage(available = AVAILABLE, preferred = []) {
   }
   return available.includes('en') ? 'en' : available[0];
 }
+
+// Dummy för kompatibilitet med din lang.html som importerar saveLanguage/getSavedLanguage
+export function saveLanguage(lang) {}
+export function getSavedLanguage() { return null; }
+export function clearSavedLanguage() {}
