@@ -1,19 +1,21 @@
 /* ============================================================
-   TYP-SNITT – The World Manifesto - FIXAD för GitHub Pages
-   Använder absoluta URL:er till https://theworldmanifesto.github.io/fonts/
+   TYP-SNITT – The World Manifesto
+   Sökvägar från lang/css/lang.css -> ../../fonts/
+   Boktiteln: The World Manifesto - Dancing Script
+   Bokundertiteln: the manifesto for definitive abundance - Homemade Apple
    ============================================================ */
 
 /* ---------- Gelasio (brödtext – ersätter Georgia) ---------- */
 @font-face {
     font-family: 'Gelasio';
-    src: url('https://theworldmanifesto.github.io/fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
+    src: url('../../fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Gelasio';
-    src: url('https://theworldmanifesto.github.io/fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('../../fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
@@ -22,39 +24,39 @@
 /* ---------- Arimo (gränssnitt – ersätter Arial) ---------- */
 @font-face {
     font-family: 'Arimo';
-    src: url('https://theworldmanifesto.github.io/fonts/Arimo-VariableFont_wght.ttf') format('truetype');
+    src: url('../../fonts/Arimo-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Arimo';
-    src: url('https://theworldmanifesto.github.io/fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('../../fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
 }
 
-/* ---------- Dancing Script (titlar) ---------- */
+/* ---------- Dancing Script (boktiteln) ---------- */
 @font-face {
     font-family: 'Dancing Script';
-    src: url('https://theworldmanifesto.github.io/fonts/DancingScript-Regular.ttf') format('truetype');
+    src: url('../../fonts/DancingScript-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Dancing Script';
-    src: url('https://theworldmanifesto.github.io/fonts/DancingScript-Bold.ttf') format('truetype');
+    src: url('../../fonts/DancingScript-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
-/* ---------- Homemade Apple (specialtexter) ---------- */
+/* ---------- Homemade Apple (bokundertiteln) ---------- */
 @font-face {
     font-family: 'Homemade Apple';
-    src: url('https://theworldmanifesto.github.io/fonts/HomemadeApple-Regular.ttf') format('truetype');
+    src: url('../../fonts/HomemadeApple-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -63,14 +65,14 @@
 /* ---------- Reservfonter ---------- */
 @font-face {
     font-family: 'Roboto';
-    src: url('https://theworldmanifesto.github.io/fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('https://theworldmanifesto.github.io/fonts/Roboto-Bold.ttf') format('truetype');
+    src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -78,7 +80,7 @@
 
 @font-face {
     font-family: 'EB Garamond';
-    src: url('https://theworldmanifesto.github.io/fonts/EBGaramond-Regular.ttf') format('truetype');
+    src: url('../../fonts/EBGaramond-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -148,22 +150,22 @@ body {
     border: 1px solid #ccc;
 }
 
-/* ---------- Huvudtitel (Dancing Script) ---------- */
+/* ---------- Huvudtitel (Dancing Script) - The World Manifesto / Världsmanifestet ---------- */
 .book-title {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', 'Homemade Apple', cursive;
     font-size: clamp(28pt, 8vw, 48pt);
-    font-weight: normal;
+    font-weight: 400;
     margin: 0 0 5px 0;
     line-height: 1.2;
     text-align: center;
     color: #1a1a1a;
 }
 
-/* ---------- Subtitel (Dancing Script) ---------- */
+/* ---------- Subtitel (Homemade Apple) - the manifesto for definitive abundance ---------- */
 .book-subtitle {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Homemade Apple', 'Dancing Script', cursive;
     font-size: clamp(18pt, 5vw, 28pt);
-    font-weight: normal;
+    font-weight: 400;
     margin: 0 0 10px 0;
     line-height: 1.2;
     text-align: center;
@@ -198,9 +200,9 @@ body {
 .body-text strong { font-weight: bold; }
 .body-text em { font-style: italic; }
 
-/* ---------- Specialrubrik (Dancing Script) ---------- */
+/* ---------- Specialrubrik (Dancing Script + Homemade Apple fallback) ---------- */
 .chapter-title-special {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', 'Homemade Apple', cursive;
     font-size: clamp(20pt, 5vw, 32pt);
     font-weight: normal;
     margin: 40px 0 20px 0;
