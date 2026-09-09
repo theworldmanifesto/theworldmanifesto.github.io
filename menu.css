@@ -144,12 +144,35 @@
     margin-left: 8px !important;
 }
 
+/* === TROPICS UNDANTAG - ska vara längst till vänster som förr === */
+body.tropics-left #main-menu {
+    justify-content: flex-start !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+body.tropics-left .nav-wrapper {
+    justify-content: flex-start !important;
+}
+body.tropics-left .dropdown-content {
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+}
+body.tropics-left[dir="rtl"] .dropdown-content {
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
+}
+
 /* === MOBIL === */
 @media (max-width: 600px) {
     .nav-wrapper {
         padding: 8px 12px;
         gap: 10px;
         justify-content: center;
+    }
+    body.tropics-left .nav-wrapper {
+        justify-content: flex-start !important;
     }
     .read-menu select {
         font-size: 12px;
@@ -164,5 +187,15 @@
         left: 50% !important;
         right: auto !important;
         transform: translateX(-50%) !important;
+    }
+    body.tropics-left .dropdown-content {
+        left: 0 !important;
+        right: auto !important;
+        transform: none !important;
+    }
+    body.tropics-left[dir="rtl"] .dropdown-content {
+        left: auto !important;
+        right: 0 !important;
+        transform: none !important;
     }
 }
