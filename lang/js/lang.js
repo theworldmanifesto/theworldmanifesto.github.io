@@ -1,106 +1,302 @@
-/*
-  Världsmanifestet - FINAL UTAN localStorage - EXPORT VERSION för type="module"
-  CC0 1.0 Universal - Ingen lagring, varje besök går på webbläsarens språk
-  Baskiska eu -> es, galiciska gl -> es, katalanska ca -> es osv.
-  ANVÄNDS MED: <script type="module"> import { pickBestLanguage } from './js/lang.js'
-*/
+/* ============================================================
+   TYP-SNITT – The World Manifesto - FIXAD för GitHub Pages
+   Använder absoluta URL:er till https://theworldmanifesto.github.io/fonts/
+   ============================================================ */
 
-export const AVAILABLE = [
-  'sv','en','zh','hi','es','fr','ar','id','bn','pt','ru','uk','bg','ur','ja','fil','de','ko','th','vi','tr','fa','sw','it','pl','nl','ro','el','af','zu','xh','cs','hu','he','crs','se','fit','no','fi','da','is','fo'
-];
-
-export const RELATED_FALLBACK = {
-  "af-za": "af", "af-na": "af",
-  "an": "es", "an-es": "es",
-  "ar-eg": "ar", "ar-sa": "ar", "ar-dz": "ar", "ar-ma": "ar", "ar-iq": "ar", "ar-sy": "ar", "ar-lb": "ar", "ar-jo": "ar", "ar-ps": "ar", "ar-ye": "ar", "ar-om": "ar", "ar-ae": "ar", "ar-qa": "ar", "ar-bh": "ar", "ar-kw": "ar", "ar-ly": "ar", "ar-tn": "ar", "ar-sd": "ar", "ar-so": "ar", "ary": "ar", "arz": "ar", "apc": "ar", "aeb": "ar", "acm": "ar",
-  "ast": "es", "ast-es": "es",
-  "az": "tr", "az-az": "tr", "az-ir": "tr",
-  "be": "uk", "be-by": "uk",
-  "bg-bg": "bg",
-  "bn-bd": "bn", "bn-in": "bn", "rkt": "bn",
-  "ca": "es", "ca-ad": "es", "ca-es": "es", "ca-fr": "es", "ca-it": "es", "ca-valencia": "es",
-  "ceb": "fil",
-  "co": "it",
-  "crh": "tr",
-  "crs": "crs", "crs-sc": "crs",
-  "cs-cz": "cs",
-  "da-dk": "da", "da-gl": "da",
-  "de-at": "de", "de-be": "de", "de-ch": "de", "de-de": "de", "de-li": "de", "bar": "de", "gsw": "de", "ksh": "de", "nds": "de",
-  "el-gr": "el", "el-cy": "el", "grc": "el",
-  "en-au": "en", "en-bz": "en", "en-ca": "en", "en-gb": "en", "en-gh": "en", "en-gy": "en", "en-hk": "en", "en-ie": "en", "en-in": "en", "en-jm": "en", "en-ke": "en", "en-mt": "en", "en-mw": "en", "en-my": "en", "en-ng": "en", "en-nz": "en", "en-ph": "en", "en-pk": "en", "en-sg": "en", "en-tt": "en", "en-tz": "en", "en-ug": "en", "en-us": "en", "en-za": "en", "ang": "en", "enm": "en", "sco": "en",
-  "es-419": "es", "es-ar": "es", "es-bo": "es", "es-bz": "es", "es-cl": "es", "es-co": "es", "es-cr": "es", "es-cu": "es", "es-do": "es", "es-ec": "es", "es-es": "es", "es-gq": "es", "es-gt": "es", "es-hn": "es", "es-mx": "es", "es-ni": "es", "es-pa": "es", "es-pe": "es", "es-ph": "es", "es-pr": "es", "es-py": "es", "es-sv": "es", "es-us": "es", "es-uy": "es", "es-ve": "es", "eu": "es", "eu-es": "es", "eu-fr": "es", "ext": "es", "lad": "es", "gl-es": "es", "oc": "es", "oc-ar": "es", "oc-es": "es",
-  "fa-af": "fa", "fa-ir": "fa", "ckb": "fa", "prs": "fa", "tg": "fa", "tg-tj": "fa",
-  "fi-fi": "fi",
-  "fil-ph": "fil", "tl": "fil", "tl-ph": "fil", "ilo": "fil",
-  "fit": "fit", "fit-fi": "fit", "fit-no": "fit", "fit-se": "fit", "fi-se-tornio": "fit", "fi-tornio": "fit", "fkv": "fit", "fkv-fi": "fit", "fkv-no": "fit", "kvk": "fit",
-  "fo": "fo", "fo-dk": "fo", "fo-fa": "fo", "fo-fare": "fo", "fo-fo": "fo", "fo-gl": "fo", "fo-no": "fo", "fo-se": "fo", "fao": "fo",
-  "fr-be": "fr", "fr-bf": "fr", "fr-ca": "fr", "fr-cd": "fr", "fr-cg": "fr", "fr-ch": "fr", "fr-ci": "fr", "fr-cm": "fr", "fr-fr": "fr", "fr-gn": "fr", "fr-ht": "fr", "fr-lu": "fr", "fr-mc": "fr", "fr-ml": "fr", "fr-ne": "fr", "fr-pf": "fr", "fr-rw": "fr", "fr-sn": "fr", "fr-td": "fr",
-  "fy": "nl",
-  "gl": "es",
-  "gag": "tr",
-  "gn": "es", "gn-py": "es", "gug": "es",
-  "he-il": "he", "yi": "he",
-  "hi-in": "hi", "bho": "hi", "hif": "hi",
-  "ht": "crs",
-  "hu-hu": "hu",
-  "id-id": "id", "ms": "id", "ms-bn": "id", "ms-id": "id", "ms-my": "id", "ms-sg": "id", "ind": "id", "zsm": "id",
-  "is-is": "is",
-  "it-ch": "it", "it-it": "it", "it-sm": "it", "it-va": "it", "lmo": "it", "scn": "it", "vec": "it",
-  "ja-jp": "ja",
-  "ko-kp": "ko", "ko-kr": "ko",
-  "lmo": "it",
-  "mfe": "crs",
-  "ms": "id",
-  "mwl": "pt",
-  "nb": "no", "nb-no": "no", "nn": "no", "nn-no": "no", "no-no": "no", "nob": "no", "nno": "no",
-  "nl-be": "nl", "nl-nl": "nl", "zea": "nl",
-  "pl-pl": "pl", "szl": "pl",
-  "pt-ao": "pt", "pt-br": "pt", "pt-ch": "pt", "pt-cv": "pt", "pt-gw": "pt", "pt-lu": "pt", "pt-mo": "pt", "pt-mz": "pt", "pt-pt": "pt", "pt-st": "pt", "pt-tl": "pt",
-  "qu": "es", "qu-bo": "es", "qu-ec": "es", "qu-pe": "es", "quz": "es", "qve": "es", "qwh": "es",
-  "ro-md": "ro", "ro-ro": "ro", "mo": "ro", "rup": "ro",
-  "ru-by": "ru", "ru-kg": "ru", "ru-kz": "ru", "ru-md": "ru", "ru-ru": "ru", "ru-ua": "ru",
-  "scn": "it",
-  "se": "se", "se-fi": "se", "se-no": "se", "se-se": "se", "sia": "se", "sjd": "se", "sjd-ru": "se", "sje": "se", "sje-no": "se", "sje-se": "se", "sjk": "se", "sjt": "se", "sju": "se", "sju-no": "se", "sju-se": "se", "sma": "se", "sma-no": "se", "sma-se": "se", "sme": "se", "smi": "se", "smi-fi": "se", "smi-no": "se", "smi-ru": "se", "smi-se": "se", "smj": "se", "smj-no": "se", "smj-se": "se", "smn": "se", "smn-fi": "se", "sms": "se", "sms-fi": "se", "sms-no": "se", "sms-ru": "se",
-  "sk": "cs", "sk-sk": "cs",
-  "sv-ax": "sv", "sv-fi": "sv", "sv-se": "sv",
-  "sw-cd": "sw", "sw-ke": "sw", "sw-tz": "sw", "sw-ug": "sw",
-  "th-th": "th",
-  "tr-cy": "tr", "tr-tr": "tr",
-  "uk-ua": "uk", "rue": "uk",
-  "ur-in": "ur", "ur-pk": "ur",
-  "vi-vn": "vi",
-  "wuu": "zh", "yue": "zh", "yue-hk": "zh",
-  "zh-cn": "zh", "zh-hans": "zh", "zh-hant": "zh", "zh-hk": "zh", "zh-mo": "zh", "zh-sg": "zh", "zh-tw": "zh",
-  "wa": "fr", "wa-be": "fr", "wln": "fr",
-  "li": "nl", "li-be": "nl", "li-nl": "nl", "lim": "nl",
-  "lb": "de", "lb-lu": "de",
-  "br": "fr", "br-fr": "fr",
-  "sc": "it", "sc-it": "it",
-  "rm": "it", "rm-ch": "it",
-  "zu-za": "zu",
-  "xh-za": "xh"
-};
-
-// UTAN localStorage - varje besök går på webbläsarens språk
-export function pickBestLanguage(available = AVAILABLE, preferred = []) {
-  const prefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
-  for (const raw of prefs) {
-    const tag = raw.toLowerCase().trim();
-    if (!tag) continue;
-    if (available.includes(tag)) return tag;
-    const base = tag.split('-')[0];
-    if (available.includes(base)) return base;
-    if (RELATED_FALLBACK[tag] && available.includes(RELATED_FALLBACK[tag])) return RELATED_FALLBACK[tag];
-    if (RELATED_FALLBACK[base] && available.includes(RELATED_FALLBACK[base])) return RELATED_FALLBACK[base];
-    try {
-      const max = new Intl.Locale(tag).maximize();
-      if (available.includes(max.language)) return max.language;
-    } catch(e) {}
-  }
-  return available.includes('en') ? 'en' : available[0];
+/* ---------- Gelasio (brödtext – ersätter Georgia) ---------- */
+@font-face {
+    font-family: 'Gelasio';
+    src: url('https://theworldmanifesto.github.io/fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gelasio';
+    src: url('https://theworldmanifesto.github.io/fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
 }
 
-// Dummy för kompatibilitet med din lang.html som importerar saveLanguage/getSavedLanguage
-export function saveLanguage(lang) {}
-export function getSavedLanguage() { return null; }
-export function clearSavedLanguage() {}
+/* ---------- Arimo (gränssnitt – ersätter Arial) ---------- */
+@font-face {
+    font-family: 'Arimo';
+    src: url('https://theworldmanifesto.github.io/fonts/Arimo-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url('https://theworldmanifesto.github.io/fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ---------- Dancing Script (titlar) ---------- */
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('https://theworldmanifesto.github.io/fonts/DancingScript-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('https://theworldmanifesto.github.io/fonts/DancingScript-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------- Homemade Apple (specialtexter) ---------- */
+@font-face {
+    font-family: 'Homemade Apple';
+    src: url('https://theworldmanifesto.github.io/fonts/HomemadeApple-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------- Reservfonter ---------- */
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://theworldmanifesto.github.io/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://theworldmanifesto.github.io/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('https://theworldmanifesto.github.io/fonts/EBGaramond-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ============================================================
+   GRUNDLÄGGANDE STYLING
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Gelasio', 'Georgia', serif;
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ============================================================
+   SIDANS INNEHÅLL
+   ============================================================ */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------- Språknamn ---------- */
+.language-name {
+    font-family: 'Arimo', 'Arial', sans-serif;
+    font-size: clamp(11pt, 3vw, 12pt);
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+/* ---------- Flagga ---------- */
+.flag-icon {
+    display: inline-block;
+    width: clamp(16px, 4vw, 24px);
+    height: auto;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+/* ---------- Huvudtitel (Dancing Script) ---------- */
+.book-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(28pt, 8vw, 48pt);
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* ---------- Subtitel (Dancing Script) ---------- */
+.book-subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(18pt, 5vw, 28pt);
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* ---------- Författare ---------- */
+.author {
+    font-family: 'Arimo', 'Arial', sans-serif;
+    font-size: clamp(11pt, 3vw, 14pt);
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+/* ---------- Brödtext (Gelasio) ---------- */
+.body-text {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(12pt, 2.5vw, 14pt);
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1a1a1a;
+}
+
+.body-text.centered {
+    text-align: center;
+}
+.body-text strong { font-weight: bold; }
+.body-text em { font-style: italic; }
+
+/* ---------- Specialrubrik (Dancing Script) ---------- */
+.chapter-title-special {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(20pt, 5vw, 32pt);
+    font-weight: normal;
+    margin: 40px 0 20px 0;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* ---------- Kapitelrubrik (Gelasio – versaler) ---------- */
+.chapter-title {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(18pt, 4vw, 26pt);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 40px 0 20px 0;
+    color: #1a1a1a;
+}
+
+/* ---------- Sektionsrubrik (Gelasio) ---------- */
+.section-title {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(16pt, 3.5vw, 22pt);
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 15px 0;
+    color: #1a1a1a;
+}
+
+/* ---------- Underrubrik (Gelasio) ---------- */
+.subsection-title {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(14pt, 3vw, 18pt);
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1a1a1a;
+}
+
+/* ---------- Författartext (Arimo) ---------- */
+.author-text {
+    font-family: 'Arimo', 'Arial', sans-serif;
+    font-size: clamp(12pt, 2.5vw, 14pt);
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0;
+    color: #1a1a1a;
+}
+
+/* ---------- Status-text (Gelasio, kursiv) ---------- */
+.status-text {
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(11pt, 2.5vw, 13pt);
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* ---------- Separator ---------- */
+.separator {
+    max-width: 200px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+}
+
+/* ============================================================
+   GRÄNSSNITTSELEMENT (använder Arimo)
+   ============================================================ */
+
+.btns, .lang-select, .lang-flags, .lang-label {
+    font-family: 'Arimo', 'Arial', sans-serif;
+}
+
+/* ============================================================
+   RESPONSIV
+   ============================================================ */
+
+@media only screen and (max-width: 768px) {
+    body { padding: 4% !important; }
+    .body-text { padding: 0 10px; }
+    .subsection-title { padding: 0 10px; }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        padding: 2cm !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .page-container {
+        display: block !important;
+        max-width: 100%;
+    }
+}
