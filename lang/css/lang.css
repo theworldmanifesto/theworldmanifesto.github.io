@@ -1,86 +1,85 @@
 /* ============================================================
    TYP-SNITT – The World Manifesto
-   Sökvägar från lang/css/lang.css -> ../../fonts/
-   Boktiteln: The World Manifesto - Dancing Script
-   Bokundertiteln: the manifesto for definitive abundance - Homemade Apple
+   Sökvägar: /fonts/ från root (funkar från /lang/css/lang.css och överallt)
+   Boktiteln: The World Manifesto / Världsmanifestet -> Dancing Script
+   Bokundertiteln: the manifesto for definitive abundance -> Homemade Apple
    ============================================================ */
 
-/* ---------- Gelasio (brödtext – ersätter Georgia) ---------- */
+/* ---------- Gelasio ---------- */
 @font-face {
     font-family: 'Gelasio';
-    src: url('../../fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
+    src: url('/fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Gelasio';
-    src: url('../../fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('/fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
 }
 
-/* ---------- Arimo (gränssnitt – ersätter Arial) ---------- */
+/* ---------- Arimo ---------- */
 @font-face {
     font-family: 'Arimo';
-    src: url('../../fonts/Arimo-VariableFont_wght.ttf') format('truetype');
+    src: url('/fonts/Arimo-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Arimo';
-    src: url('../../fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('/fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
 }
 
-/* ---------- Dancing Script (boktiteln) ---------- */
+/* ---------- Dancing Script - boktiteln ---------- */
 @font-face {
     font-family: 'Dancing Script';
-    src: url('../../fonts/DancingScript-Regular.ttf') format('truetype');
+    src: url('/fonts/DancingScript-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Dancing Script';
-    src: url('../../fonts/DancingScript-Bold.ttf') format('truetype');
+    src: url('/fonts/DancingScript-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
-/* ---------- Homemade Apple (bokundertiteln) ---------- */
+/* ---------- Homemade Apple - bokundertiteln ---------- */
 @font-face {
     font-family: 'Homemade Apple';
-    src: url('../../fonts/HomemadeApple-Regular.ttf') format('truetype');
+    src: url('/fonts/HomemadeApple-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
-/* ---------- Reservfonter ---------- */
+/* ---------- Reserv ---------- */
 @font-face {
     font-family: 'Roboto';
-    src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
-    src: url('../../fonts/Roboto-Bold.ttf') format('truetype');
+    src: url('/fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'EB Garamond';
-    src: url('../../fonts/EBGaramond-Regular.ttf') format('truetype');
+    src: url('/fonts/EBGaramond-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -89,19 +88,8 @@
 /* ============================================================
    GRUNDLÄGGANDE STYLING
    ============================================================ */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { width: 100%; max-width: 100%; overflow-x: hidden; }
 body {
     background-color: #ffffff;
     font-family: 'Gelasio', 'Georgia', serif;
@@ -118,11 +106,6 @@ body {
     overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
 }
-
-/* ============================================================
-   SIDANS INNEHÅLL
-   ============================================================ */
-
 .page-container {
     display: flex;
     flex-direction: column;
@@ -132,8 +115,6 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
-
-/* ---------- Språknamn ---------- */
 .language-name {
     font-family: 'Arimo', 'Arial', sans-serif;
     font-size: clamp(11pt, 3vw, 12pt);
@@ -141,7 +122,6 @@ body {
     margin: 0;
     text-align: center;
 }
-/* ---------- Flagga ---------- */
 .flag-icon {
     display: inline-block;
     width: clamp(16px, 4vw, 24px);
@@ -150,7 +130,7 @@ body {
     border: 1px solid #ccc;
 }
 
-/* ---------- Huvudtitel (Dancing Script) - The World Manifesto / Världsmanifestet ---------- */
+/* ---------- Huvudtitel - Dancing Script ---------- */
 .book-title {
     font-family: 'Dancing Script', 'Homemade Apple', cursive;
     font-size: clamp(28pt, 8vw, 48pt);
@@ -161,7 +141,7 @@ body {
     color: #1a1a1a;
 }
 
-/* ---------- Subtitel (Homemade Apple) - the manifesto for definitive abundance ---------- */
+/* ---------- Subtitel - Homemade Apple ---------- */
 .book-subtitle {
     font-family: 'Homemade Apple', 'Dancing Script', cursive;
     font-size: clamp(18pt, 5vw, 28pt);
@@ -172,7 +152,6 @@ body {
     color: #1a1a1a;
 }
 
-/* ---------- Författare ---------- */
 .author {
     font-family: 'Arimo', 'Arial', sans-serif;
     font-size: clamp(11pt, 3vw, 14pt);
@@ -180,8 +159,6 @@ body {
     margin: 0;
     text-align: center;
 }
-
-/* ---------- Brödtext (Gelasio) ---------- */
 .body-text {
     font-family: 'Gelasio', 'Georgia', serif;
     font-size: clamp(12pt, 2.5vw, 14pt);
@@ -193,14 +170,9 @@ body {
     margin-right: auto;
     color: #1a1a1a;
 }
-
-.body-text.centered {
-    text-align: center;
-}
+.body-text.centered { text-align: center; }
 .body-text strong { font-weight: bold; }
 .body-text em { font-style: italic; }
-
-/* ---------- Specialrubrik (Dancing Script + Homemade Apple fallback) ---------- */
 .chapter-title-special {
     font-family: 'Dancing Script', 'Homemade Apple', cursive;
     font-size: clamp(20pt, 5vw, 32pt);
@@ -209,8 +181,6 @@ body {
     text-align: center;
     color: #1a1a1a;
 }
-
-/* ---------- Kapitelrubrik (Gelasio – versaler) ---------- */
 .chapter-title {
     font-family: 'Gelasio', 'Georgia', serif;
     font-size: clamp(18pt, 4vw, 26pt);
@@ -221,8 +191,6 @@ body {
     margin: 40px 0 20px 0;
     color: #1a1a1a;
 }
-
-/* ---------- Sektionsrubrik (Gelasio) ---------- */
 .section-title {
     font-family: 'Gelasio', 'Georgia', serif;
     font-size: clamp(16pt, 3.5vw, 22pt);
@@ -231,8 +199,6 @@ body {
     margin: 30px 0 15px 0;
     color: #1a1a1a;
 }
-
-/* ---------- Underrubrik (Gelasio) ---------- */
 .subsection-title {
     font-family: 'Gelasio', 'Georgia', serif;
     font-size: clamp(14pt, 3vw, 18pt);
@@ -244,8 +210,6 @@ body {
     margin-right: auto;
     color: #1a1a1a;
 }
-
-/* ---------- Författartext (Arimo) ---------- */
 .author-text {
     font-family: 'Arimo', 'Arial', sans-serif;
     font-size: clamp(12pt, 2.5vw, 14pt);
@@ -254,8 +218,6 @@ body {
     margin: 5px 0;
     color: #1a1a1a;
 }
-
-/* ---------- Status-text (Gelasio, kursiv) ---------- */
 .status-text {
     font-family: 'Gelasio', 'Georgia', serif;
     font-size: clamp(11pt, 2.5vw, 13pt);
@@ -264,32 +226,20 @@ body {
     margin: 10px 0;
     color: #555;
 }
-
-/* ---------- Separator ---------- */
 .separator {
     max-width: 200px;
     margin: 30px auto;
     border: 1px solid #ccc;
 }
-
-/* ============================================================
-   GRÄNSSNITTSELEMENT (använder Arimo)
-   ============================================================ */
-
 .btns, .lang-select, .lang-flags, .lang-label {
     font-family: 'Arimo', 'Arial', sans-serif;
 }
-
-/* ============================================================
-   RESPONSIV
-   ============================================================ */
 
 @media only screen and (max-width: 768px) {
     body { padding: 4% !important; }
     .body-text { padding: 0 10px; }
     .subsection-title { padding: 0 10px; }
 }
-
 @media only screen and (min-width: 769px) {
     body {
         padding: 2cm !important;
