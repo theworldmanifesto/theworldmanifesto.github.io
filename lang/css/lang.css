@@ -1,8 +1,9 @@
 /* ============================================================
-   TYP-SNITT – The World Manifesto
-   Sökvägar: /fonts/ från root (funkar från /lang/css/lang.css och överallt)
+   TYP-SNITT – The World Manifesto - FIXAD VERSION
+   Sökvägar: /fonts/ från root - funkar från /lang/css/lang.css
    Boktiteln: The World Manifesto / Världsmanifestet -> Dancing Script
    Bokundertiteln: the manifesto for definitive abundance -> Homemade Apple
+   Använder !important för att vinna över inline <style> i lang.html
    ============================================================ */
 
 /* ---------- Gelasio ---------- */
@@ -130,22 +131,22 @@ body {
     border: 1px solid #ccc;
 }
 
-/* ---------- Huvudtitel - Dancing Script ---------- */
+/* ---------- Huvudtitel - Dancing Script - VINNER ÖVER INLINE STYLE ---------- */
 .book-title {
-    font-family: 'Dancing Script', 'Homemade Apple', cursive;
-    font-size: clamp(28pt, 8vw, 48pt);
-    font-weight: 400;
+    font-family: 'Dancing Script', 'Homemade Apple', cursive !important;
+    font-size: clamp(28pt, 8vw, 48pt) !important;
+    font-weight: 400 !important;
     margin: 0 0 5px 0;
     line-height: 1.2;
     text-align: center;
     color: #1a1a1a;
 }
 
-/* ---------- Subtitel - Homemade Apple ---------- */
+/* ---------- Subtitel - Homemade Apple - VINNER ÖVER INLINE STYLE ---------- */
 .book-subtitle {
-    font-family: 'Homemade Apple', 'Dancing Script', cursive;
-    font-size: clamp(18pt, 5vw, 28pt);
-    font-weight: 400;
+    font-family: 'Homemade Apple', 'Dancing Script', cursive !important;
+    font-size: clamp(18pt, 5vw, 28pt) !important;
+    font-weight: 400 !important;
     margin: 0 0 10px 0;
     line-height: 1.2;
     text-align: center;
@@ -174,7 +175,7 @@ body {
 .body-text strong { font-weight: bold; }
 .body-text em { font-style: italic; }
 .chapter-title-special {
-    font-family: 'Dancing Script', 'Homemade Apple', cursive;
+    font-family: 'Dancing Script', 'Homemade Apple', cursive !important;
     font-size: clamp(20pt, 5vw, 32pt);
     font-weight: normal;
     margin: 40px 0 20px 0;
@@ -234,7 +235,6 @@ body {
 .btns, .lang-select, .lang-flags, .lang-label {
     font-family: 'Arimo', 'Arial', sans-serif;
 }
-
 @media only screen and (max-width: 768px) {
     body { padding: 4% !important; }
     .body-text { padding: 0 10px; }
