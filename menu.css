@@ -90,12 +90,11 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;                   /* Ändra från 50% till 0 */
     top: 100%;
     margin-top: 8px;
     background: #fff;
-    min-width: 260px;
+    min-width: 200px;           /* Något mindre på mobil */
     border: 1px solid #ddd;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
@@ -197,5 +196,14 @@ body.tropics-left[dir="rtl"] .dropdown-content {
         left: auto !important;
         right: 0 !important;
         transform: none !important;
+    }
+}
+/* === MOBIL: Vänsterjustera dropdown === */
+@media (max-width: 600px) {
+    .dropdown-content {
+        left: 0 !important;
+        right: auto !important;
+        transform: none !important;
+        min-width: 180px;
     }
 }
