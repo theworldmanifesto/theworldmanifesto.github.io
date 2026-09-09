@@ -6,6 +6,11 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    // Tropics undantag - om vi är på tropics.html ska menyn vara längst vänster
+    if (window.location.pathname.toLowerCase().includes('tropics')) {
+        document.body.classList.add('tropics-left');
+    }
+
 const RELATED_FALLBACK = {
   "af-za": "af", "af-na": "af",
   "an": "es", "an-es": "es",
