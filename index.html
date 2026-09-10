@@ -143,6 +143,53 @@
         .lang-flag-img { width: 30px; height: 20px; object-fit: cover; display: block; background: transparent; border: 1px solid #CCC; box-sizing: border-box; }
         .lang-flag-img[src$="kr.svg"] { width: 33.5px; height: 22px; object-fit: cover; }
 
+/* Sydafrikanska flaggor med bokstäver ovanpå */
+.flag-wrapper {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flag-wrapper a {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.flag-wrapper a:hover { transform: scale(1.2); }
+.flag-wrapper .letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;
+    pointer-events: none;
+    line-height: 1;
+}
+
+/* Språknamn under flaggorna – klickbara länkar utan styling */
+.lang-flags .lang-label,
+.lang-flags .lang-label a,
+.flag-wrapper .lang-label,
+.flag-wrapper .lang-label a {
+    text-decoration: none !important;
+    color: #666 !important;
+    font-size: 10px;
+    display: block;
+    margin-top: 2px;
+    transition: none;
+}
+.lang-flags .lang-label a:hover,
+.flag-wrapper .lang-label a:hover {
+    text-decoration: none !important;
+    color: #666 !important;
+}
+
         #steps-section {
             max-width: 680px;
             margin: 40px auto 20px auto;
