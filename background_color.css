@@ -1,1 +1,14 @@
+:root {
+    --bg-main: #FFFFEF;      /* Varm elfenben/gräddvit för lässidor */
+    --bg-tropics: #050508;   /* Mörk rymdbakgrund för 3D-globen */
+}
 
+/* Standard för alla vanliga sidor */
+body {
+    background-color: var(--bg-main);
+}
+
+/* Specifik bakgrund för tropics.html */
+body.tropics-page {
+    background-color: var(--bg-tropics);
+}
