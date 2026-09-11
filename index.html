@@ -201,55 +201,69 @@
             font-family: sans-serif;
         }
 
-        /* ======================================== */
-        /* DAGENS SLOGAN – DISKRET RUTA              */
-        /* ======================================== */
+/* ======================================== */
+/* DAGENS SLOGAN – DISKRET RUTA              */
+/* ======================================== */
 
-        #slogan-section {
-            max-width: 680px;
-            margin: 30px auto 10px auto;
-            padding: 0 10px;
-            text-align: center;
-            font-family: sans-serif;
-        }
+#slogan-section {
+    max-width: 680px;
+    margin: 30px auto 10px auto;
+    padding: 0 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
 
-        #slogan-toggle {
-            background: none;
-            border: none;
-            color: #999;
-            font-size: 12px;
-            font-family: sans-serif;
-            letter-spacing: 0.5px;
-            cursor: pointer;
-            padding: 6px 10px;
-            transition: color 0.2s;
-        }
-        #slogan-toggle:hover { color: #666; }
+#slogan-toggle {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    padding: 6px 10px;
+    transition: color 0.2s;
+}
+#slogan-toggle:hover { color: #666; }
 
-        #slogan-box {
-            display: none;
-            max-width: 560px;
-            margin: 12px auto 0 auto;
-            padding: 16px 20px;
-            border: 1px dashed #ddd;
-            border-radius: 12px;
-            background: #fafafa;
-            color: #666;
-            font-size: 15px;
-            line-height: 1.5;
-            font-style: italic;
-        }
-        #slogan-box.visible { display: block; }
+#slogan-box {
+    display: none;
+    max-width: 560px;
+    margin: 12px auto 0 auto;
+    padding: 16px 20px 14px 20px;
+    border: 1px dashed #ddd;
+    border-radius: 12px;
+    background: #fafafa;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    font-style: italic;
+}
+#slogan-box.visible { display: block; }
 
-        #slogan-label {
-            display: block;
-            font-size: 10px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: #bbb;
-            margin-bottom: 8px;
-            font-style: normal;
-        }
+#slogan-label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #bbb;
+    margin-bottom: 8px;
+    font-style: normal;
+}
+
+#slogan-see-all {
+    display: block;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #999;
+    font-style: normal;
+    transition: color 0.2s;
+}
+#slogan-see-all:hover { color: #8B0000; }
 
     </style>
     <link rel="stylesheet" href="background_color.css">
@@ -827,164 +841,206 @@
                 q.textContent = 'Kunde inte ladda citat.';
             });
 
-        // ========================================
-        // DAGENS SLOGAN – DISKRET, NEDANFÖR CITATEN
-        // ========================================
-        const sloganToggle = document.getElementById('slogan-toggle');
-        const sloganBox = document.getElementById('slogan-box');
-        const sloganText = document.getElementById('slogan-text');
-        const sloganLabel = document.getElementById('slogan-label');
+// ========================================
+// DAGENS SLOGAN – DISKRET, NEDANFÖR CITATEN
+// ========================================
+const sloganToggle = document.getElementById('slogan-toggle');
+const sloganBox    = document.getElementById('slogan-box');
+const sloganText   = document.getElementById('slogan-text');
+const sloganLabel  = document.getElementById('slogan-label');
 
-        const SLOGAN_LABEL_TEXTS = {
-            'sv': 'Dagens slogan',
-            'en': "Today's Slogan",
-            'zh': '今日口号',
-            'hi': 'आज का नारा',
-            'es': 'Lema de hoy',
-            'fr': "Slogan du jour",
-            'ar': 'شعار اليوم',
-            'id': 'Slogan hari ini',
-            'bn': 'আজকের স্লোগান',
-            'pt': 'Slogan do dia',
-            'ru': 'Лозунг дня',
-            'uk': 'Гасло дня',
-            'bg': 'Лозунг на деня',
-            'ur': 'آج کا نعرہ',
-            'ja': '今日のスローガン',
-            'fil': 'Slogan ngayong araw',
-            'de': 'Slogan des Tages',
-            'ko': '오늘의 구호',
-            'th': 'สโลแกนประจำวัน',
-            'vi': 'Khẩu hiệu hôm nay',
-            'tr': 'Günün Sloganı',
-            'fa': 'شعار امروز',
-            'sw': 'Slogan ya leo',
-            'it': 'Slogan del giorno',
-            'pl': 'Slogan dnia',
-            'nl': 'Slogan van de dag',
-            'ro': 'Sloganul zilei',
-            'el': 'Σύνθημα της ημέρας',
-            'af': 'Slogan van die dag',
-            'zu': 'Isiqubulo sanamuhla',
-            'xh': 'Isiqubulo sasemhlabeni',
-            'cs': 'Slogan dne',
-            'hu': 'A nap szlogenje',
-            'he': 'סלוגן היום',
-            'crs': 'Slogan ozour',
-            'se': 'Beaivvi ságastallan',
-            'fit': 'Päivän slogan',
-            'no': 'Dagens slogan',
-            'fi': 'Päivän iskulause',
-            'da': 'Dagens slogan',
-            'is': 'Dagsins slagorð',
-            'fo': 'Dagsins slagorð'
-        };
+const SLOGAN_LABEL_TEXTS = {
+    'sv': 'Dagens slogan',
+    'en': "Today's Slogan",
+    'de': 'Slogan des Tages',
+    'fr': "Slogan du jour",
+    'es': 'Lema de hoy',
+    'it': 'Slogan del giorno',
+    'pt': 'Slogan do dia',
+    'nl': 'Slogan van de dag',
+    'pl': 'Slogan dnia',
+    'da': 'Dagens slogan',
+    'no': 'Dagens slogan',
+    'fi': 'Päivän iskulause',
+    'is': 'Dagsins slagorð',
+    'fo': 'Dagsins slagorð',
+    'cs': 'Slogan dne',
+    'hu': 'A nap szlogenje',
+    'ro': 'Sloganul zilei',
+    'el': 'Σύνθημα της ημέρας',
+    'tr': 'Günün Sloganı',
+    'ru': 'Лозунг дня',
+    'uk': 'Гасло дня',
+    'bg': 'Лозунг на деня',
+    'ar': 'شعار اليوم',
+    'he': 'סלוגן היום',
+    'fa': 'شعار امروز',
+    'ur': 'آج کا نعرہ',
+    'hi': 'आज का नारा',
+    'bn': 'আজকের স্লোগান',
+    'th': 'สโลแกนประจำวัน',
+    'vi': 'Khẩu hiệu hôm nay',
+    'id': 'Slogan hari ini',
+    'ja': '今日のスローガン',
+    'ko': '오늘의 구호',
+    'zh': '今日口号',
+    'sw': 'Slogan ya leo',
+    'af': 'Slogan van die dag',
+    'zu': 'Isiqubulo sanamuhla',
+    'xh': 'Isiqubulo sasemhlabeni',
+    'crs': 'Slogan ozour',
+    'se': 'Beaivvi ságastallan',
+    'fit': 'Päivän slogan'
+};
 
-        const SLOGAN_TOGGLE_TEXTS = {
-            'sv': '▾ Visa dagens slogan',
-            'en': '▾ Show today\'s slogan',
-            'zh': '▾ 显示今日口号',
-            'hi': '▾ आज का नारा दिखाएँ',
-            'es': '▾ Mostrar el lema de hoy',
-            'fr': '▾ Afficher le slogan du jour',
-            'ar': '▾ عرض شعار اليوم',
-            'id': '▾ Tampilkan slogan hari ini',
-            'bn': '▾ আজকের স্লোগান দেখান',
-            'pt': '▾ Mostrar o slogan do dia',
-            'ru': '▾ Показать лозунг дня',
-            'uk': '▾ Показати гасло дня',
-            'bg': '▾ Покажи лозунга на деня',
-            'ur': '▾ آج کا نعرہ دکھائیں',
-            'ja': '▾ 今日のスローガンを表示',
-            'fil': '▾ Ipakita ang slogan ngayong araw',
-            'de': '▾ Slogan des Tages anzeigen',
-            'ko': '▾ 오늘의 구호 보기',
-            'th': '▾ แสดงสโลแกนประจำวัน',
-            'vi': '▾ Hiện khẩu hiệu hôm nay',
-            'tr': '▾ Günün sloganını göster',
-            'fa': '▾ نمایش شعار امروز',
-            'sw': '▾ Onyesha slogan ya leo',
-            'it': '▾ Mostra lo slogan del giorno',
-            'pl': '▾ Pokaż slogan dnia',
-            'nl': '▾ Toon slogan van de dag',
-            'ro': '▾ Afișează sloganul zilei',
-            'el': '▾ Εμφάνιση συνθήματος ημέρας',
-            'af': '▾ Wys slogans van die dag',
-            'zu': '▾ Khombisa isiqubulo sanamuhla',
-            'xh': '▾ Bonisa isiqubulo sasemhlabeni',
-            'cs': '▾ Zobrazit slogan dne',
-            'hu': '▾ A nap szlogenjének megjelenítése',
-            'he': '▾ הצג סלוגן היום',
-            'crs': '▾ Montre slogan ozour',
-            'se': '▾ Čájet beaivvi ságastallama',
-            'fit': '▾ Näytä päivän slogan',
-            'no': '▾ Vis dagens slogan',
-            'fi': '▾ Näytä päivän iskulause',
-            'da': '▾ Vis dagens slogan',
-            'is': '▾ Sýna slagorð dagsins',
-            'fo': '▾ Vís dagsins slagorð'
-        };
+const SLOGAN_TOGGLE_TEXTS = {
+    'sv': '▾ Visa dagens slogan',
+    'en': "▾ Show today's slogan",
+    'de': '▾ Slogan des Tages anzeigen',
+    'fr': '▾ Afficher le slogan du jour',
+    'es': '▾ Mostrar el lema de hoy',
+    'it': '▾ Mostra lo slogan del giorno',
+    'pt': '▾ Mostrar o slogan do dia',
+    'nl': '▾ Toon slogan van de dag',
+    'pl': '▾ Pokaż slogan dnia',
+    'da': '▾ Vis dagens slogan',
+    'no': '▾ Vis dagens slogan',
+    'fi': '▾ Näytä päivän iskulause',
+    'is': '▾ Sýna slagorð dagsins',
+    'fo': '▾ Vís dagsins slagorð',
+    'cs': '▾ Zobrazit slogan dne',
+    'hu': '▾ A nap szlogenjének megjelenítése',
+    'ro': '▾ Afișează sloganul zilei',
+    'el': '▾ Εμφάνιση συνθήματος ημέρας',
+    'tr': '▾ Günün sloganını göster',
+    'ru': '▾ Показать лозунг дня',
+    'uk': '▾ Показати гасло дня',
+    'bg': '▾ Покажи лозунга на деня',
+    'ar': '▾ عرض شعار اليوم',
+    'he': '▾ הצג סלוגן היום',
+    'fa': '▾ نمایش شعار امروز',
+    'ur': '▾ آج کا نعرہ دکھائیں',
+    'hi': '▾ आज का नारा दिखाएँ',
+    'bn': '▾ আজকের স্লোগান দেখান',
+    'th': '▾ แสดงสโลแกนประจำวัน',
+    'vi': '▾ Hiện khẩu hiệu hôm nay',
+    'id': '▾ Tampilkan slogan hari ini',
+    'ja': '▾ 今日のスローガンを表示',
+    'ko': '▾ 오늘의 구호 보기',
+    'zh': '▾ 显示今日口号',
+    'sw': '▾ Onyesha slogan ya leo',
+    'af': '▾ Wys slogans van die dag',
+    'zu': '▾ Khombisa isiqubulo sanamuhla',
+    'xh': '▾ Bonisa isiqubulo sasemhlabeni',
+    'crs': '▾ Montre slogan ozour',
+    'se': '▾ Čájet beaivvi ságastallama',
+    'fit': '▾ Näytä päivän slogan'
+};
 
-        if (sloganLabel) {
-            sloganLabel.textContent = SLOGAN_LABEL_TEXTS[currentLang] || SLOGAN_LABEL_TEXTS['en'];
+const SLOGAN_SEE_ALL_TEXTS = {
+    'sv': 'Se alla slogans →',
+    'en': 'See all slogans →',
+    'de': 'Alle Slogans ansehen →',
+    'fr': 'Voir tous les slogans →',
+    'es': 'Ver todos los eslóganes →',
+    'it': 'Vedi tutti gli slogan →',
+    'pt': 'Ver todos os slogans →',
+    'nl': 'Bekijk alle slogans →',
+    'pl': 'Zobacz wszystkie slogany →',
+    'da': 'Se alle slogans →',
+    'no': 'Se alle slagord →',
+    'fi': 'Katso kaikki iskulauseet →',
+    'is': 'Sjá öll slagorð →',
+    'fo': 'Síggj øll slagorð →',
+    'cs': 'Zobrazit všechny slogany →',
+    'hu': 'Összes szlogen megtekintése →',
+    'ro': 'Vezi toate sloganurile →',
+    'el': 'Δείτε όλα τα συνθήματα →',
+    'tr': 'Tüm sloganları gör →',
+    'ru': 'Посмотреть все лозунги →',
+    'uk': 'Переглянути всі гасла →',
+    'bg': 'Виж всички лозунги →',
+    'ar': 'عرض كل الشعارات →',
+    'he': 'הצג את כל הסלוגנים →',
+    'fa': 'مشاهده همه شعارها →',
+    'ur': 'تمام نعرے دیکھیں →',
+    'hi': 'सभी नारे देखें →',
+    'bn': 'সব স্লোগান দেখুন →',
+    'th': 'ดูสโลแกนทั้งหมด →',
+    'vi': 'Xem tất cả khẩu hiệu →',
+    'id': 'Lihat semua slogan →',
+    'ja': 'すべてのスローガンを見る →',
+    'ko': '모든 구호 보기 →',
+    'zh': '查看所有口号 →',
+    'sw': 'Ona slogan zote →',
+    'af': 'Sien alle slagspreuke →',
+    'zu': 'Bona zonke iziqubulo →',
+    'xh': 'Jonga zonke iingcaphuno →',
+    'crs': 'Get tou bann slogan →',
+    'se': 'Geahča buot ságastallamiid →',
+    'fit': 'Katso kaikki sloganit →'
+};
+
+if (sloganLabel) {
+    sloganLabel.textContent = SLOGAN_LABEL_TEXTS[currentLang] || SLOGAN_LABEL_TEXTS['en'];
+}
+if (sloganToggle) {
+    sloganToggle.textContent = SLOGAN_TOGGLE_TEXTS[currentLang] || SLOGAN_TOGGLE_TEXTS['en'];
+}
+const sloganSeeAll = document.getElementById('slogan-see-all');
+if (sloganSeeAll) {
+    sloganSeeAll.textContent = SLOGAN_SEE_ALL_TEXTS[currentLang] || SLOGAN_SEE_ALL_TEXTS['en'];
+}
+
+if (sloganToggle && sloganBox) {
+    sloganToggle.addEventListener('click', () => {
+        const isVisible = sloganBox.classList.toggle('visible');
+        sloganToggle.setAttribute('aria-expanded', isVisible ? 'true' : 'false');
+        if (isVisible) {
+            loadDailySlogan();
         }
-        if (sloganToggle) {
-            sloganToggle.textContent = SLOGAN_TOGGLE_TEXTS[currentLang] || SLOGAN_TOGGLE_TEXTS['en'];
-        }
+    });
+}
 
-        if (sloganToggle && sloganBox) {
-            sloganToggle.addEventListener('click', () => {
-                const isVisible = sloganBox.classList.toggle('visible');
-                sloganToggle.setAttribute('aria-expanded', isVisible ? 'true' : 'false');
-                if (isVisible) {
-                    // Uppdatera texten när man öppnar (första gången) – dagens slogan
-                    loadDailySlogan();
-                }
-            });
-        }
+let sloganLoaded = false;
 
-        let sloganData = null;
-        let sloganLoaded = false;
+function loadDailySlogan() {
+    if (sloganLoaded || !sloganText) return;
+    sloganLoaded = true;
 
-        function loadDailySlogan() {
-            if (sloganLoaded || !sloganText) return;
-            sloganLoaded = true;
+    fetch('slogans.json')
+        .then(response => response.json())
+        .then(data => {
+            const langKey = currentLang.toUpperCase();
+            const slogansObj = data[langKey] || data['EN'] || data['SV'] || null;
 
-            fetch('slogans.json')
-                .then(response => response.json())
-                .then(data => {
-                    sloganData = data;
-                    const langKey = currentLang.toUpperCase();
-                    let slogansObj = data[langKey] || data['EN'] || data['SV'] || null;
+            if (!slogansObj) {
+                sloganText.textContent = 'Inga slogans tillgängliga.';
+                return;
+            }
 
-                    if (!slogansObj || Object.keys(slogansObj).length === 0) {
-                        sloganText.textContent = 'Inga slogans tillgängliga.';
-                        return;
-                    }
+            const slogans = Array.isArray(slogansObj)
+                ? slogansObj
+                : Object.values(slogansObj);
 
-                    // Gör om till en array av texter
-                    let slogans = Array.isArray(slogansObj)
-                        ? slogansObj
-                        : Object.values(slogansObj);
+            if (slogans.length === 0) {
+                sloganText.textContent = 'Inga slogans tillgängliga.';
+                return;
+            }
 
-                    if (slogans.length === 0) {
-                        sloganText.textContent = 'Inga slogans tillgängliga.';
-                        return;
-                    }
-
-                    // Välj dagens slogan baserat på datum (stabilt hela dagen)
-                    const now = new Date();
-                    const dayIndex = Math.floor(
-                        (now.getTime() - now.getTimezoneOffset() * 60000) / 86400000
-                    );
-                    const idx = Math.abs(dayIndex) % slogans.length;
-                    sloganText.textContent = slogans[idx];
-                })
-                .catch(err => {
-                    console.error('Fel vid inläsning av slogans.json:', err);
-                    sloganText.textContent = 'Kunde inte ladda slogans.';
-                });
-        }
+            // Dagens slogan – samma hela dagen
+            const now = new Date();
+            const dayIndex = Math.floor(
+                (now.getTime() - now.getTimezoneOffset() * 60000) / 86400000
+            );
+            const idx = Math.abs(dayIndex) % slogans.length;
+            sloganText.textContent = slogans[idx];
+        })
+        .catch(err => {
+            console.error('Fel vid inläsning av slogans.json:', err);
+            sloganText.textContent = 'Kunde inte ladda slogans.';
+        });
+}
 
         // === KÖR ALLT DIREKT ===
         updateTitleAndStaircase();
