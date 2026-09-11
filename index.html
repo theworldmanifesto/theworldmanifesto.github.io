@@ -74,28 +74,27 @@
 
         #main-menu { display: inline-block; flex-shrink: 0; }
 
-        /* --- Slogan-ticker: tunn vit bård --- */
-        #slogan-ticker {
-            flex: 1 1 200px;
-            min-width: 0;
-            height: 30px;
-            background: #ffffff;
-            border: 1px solid #e6e6e6;
-            border-radius: 15px;
-            overflow: hidden;
-            position: relative;
-            display: none; /* visas av JS när slogans finns */
-            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-        }
+/* --- Slogan-ticker: tunn transparent bård --- */
+#slogan-ticker {
+    flex: 1 1 200px;
+    min-width: 0;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #e6e6e6;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: none; /* visas av JS när slogans finns */
+}
 
-        #slogan-ticker .ticker-track {
-            display: inline-flex;
-            align-items: center;
-            height: 100%;
-            white-space: nowrap;
-            will-change: transform;
-            animation: scroll 60s linear infinite;
-        }
+#slogan-ticker .ticker-track {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+    will-change: transform;
+    animation: scroll 60s linear infinite;
+}
 
 #slogan-ticker .ticker-item {
     display: inline-block;
@@ -103,15 +102,15 @@
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
     font-style: italic;
     font-size: 13px;
-    color: #333;
+    color: #7a7a7a;
     letter-spacing: 0.2px;
 }
 
-        #slogan-ticker .ticker-item::after {
-            content: "•";
-            margin-left: 28px;
-            color: #c9c9c9;
-        }
+#slogan-ticker .ticker-item::after {
+    content: "•";
+    margin-left: 28px;
+    color: #cfcfcf;
+}
 
         @keyframes scroll {
             from { transform: translateX(0); }
