@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>The World Manifesto - Multilingual Tropical Globe | 3D Interactive Atlas</title>
 
-    <!-- === MENY CSS === -->
     <link rel="stylesheet" href="../menu.css">
 
     <style>
@@ -64,7 +63,6 @@ body.tropics-page .dropdown-content a {
         
         #canvas-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
         
-        /* --- ÖVRIGA UI-ELEMENT (nedre vänster, staplade) --- */
         .ui-element {
             position: fixed;
             z-index: 100;
@@ -75,66 +73,100 @@ body.tropics-page .dropdown-content a {
             backdrop-filter: blur(5px);
         }
         
-        /* Språkmeny – längst ner */
+        /* ============================================ */
+        /* SPRÅKMENY – EGENBYGGD DROPDOWN MED FLAGGOR   */
+        /* ============================================ */
         #language-selector {
             bottom: 10px;
             left: 10px;
-            padding: 4px 8px;
+            padding: 0;
             border-radius: 40px;
             background: rgba(27, 0, 39, 0.85);
             backdrop-filter: blur(8px);
             z-index: 110;
+            overflow: visible;
         }
-        #lang-dropdown {
-            background: rgba(27, 0, 39, 0.95);
+
+        /* Den synliga knappen (stängd ruta) */
+        #lang-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px 12px 4px 8px;
+            background: transparent;
             color: #fff;
             border: 1px solid #FFD700;
             border-radius: 30px;
-            padding: 4px 8px;
             font-size: 11px;
+            font-weight: 500;
             cursor: pointer;
             outline: none;
-            font-weight: 500;
-            /* Flagga på själva select-elementet (den stängda rutan) */
-            background-repeat: no-repeat;
-            background-position: 6px center;
-            background-size: 18px 12px;
-            padding-left: 30px;
+            font-family: inherit;
+            min-width: 110px;
         }
-        #lang-dropdown:hover {
-            background-color: #1B0027;
-            border-color: #FFD700;
-        }
-        #lang-dropdown option {
+        #lang-button:hover {
             background: #1B0027;
+        }
+        #lang-button .lang-flag {
+            width: 18px;
+            height: 12px;
+            object-fit: cover;
+            display: block;
+            border: 1px solid #444;
+            border-radius: 2px;
+        }
+        #lang-button .lang-arrow {
+            margin-left: auto;
+            font-size: 9px;
+            color: #FFD700;
+            line-height: 1;
+        }
+
+        /* Listan med val (stängd som standard) */
+        #lang-list {
+            display: none;
+            position: absolute;
+            bottom: calc(100% + 6px);
+            left: 0;
+            min-width: 150px;
+            background: #1B0027;
+            border: 1px solid #FFD700;
+            border-radius: 12px;
+            padding: 4px;
+            z-index: 200;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+        }
+        #lang-list.open {
+            display: block;
+        }
+
+        .lang-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            font-size: 12px;
             color: #fff;
+            cursor: pointer;
+            border-radius: 8px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            white-space: nowrap;
         }
-        /* SVG-flaggor i språkmenyn – fungerar i Chrome och Edge */
-        #lang-dropdown option[value="en"] {
-            background-image: url('https://theworldmanifesto.github.io/lang/flags/gb.svg');
-            background-repeat: no-repeat;
-            background-position: 6px center;
-            background-size: 18px 12px;
-            padding-left: 30px;
+        .lang-option:hover {
+            background: #2a0a35;
+            color: #FFD700;
         }
-        #lang-dropdown option[value="sv"] {
-            background-image: url('https://theworldmanifesto.github.io/lang/flags/se.svg');
-            background-repeat: no-repeat;
-            background-position: 6px center;
-            background-size: 18px 12px;
-            padding-left: 30px;
+        .lang-option .lang-flag {
+            width: 18px;
+            height: 12px;
+            object-fit: cover;
+            display: block;
+            border: 1px solid #444;
+            border-radius: 2px;
         }
-        #lang-dropdown option[value="zh"] {
-            background-image: url('https://theworldmanifesto.github.io/lang/flags/cn.svg');
-            background-repeat: no-repeat;
-            background-position: 6px center;
-            background-size: 18px 12px;
-            padding-left: 30px;
+        .lang-option.selected {
+            background: #3a1a55;
         }
-        /* Flagga på den stängda rutan – byts via klass */
-        #lang-dropdown.lang-en { background-image: url('https://theworldmanifesto.github.io/lang/flags/gb.svg'); }
-        #lang-dropdown.lang-sv { background-image: url('https://theworldmanifesto.github.io/lang/flags/se.svg'); }
-        #lang-dropdown.lang-zh { background-image: url('https://theworldmanifesto.github.io/lang/flags/cn.svg'); }
         
         /* Sökruta – ovanför språkmenyn */
         #search-panel {
@@ -182,7 +214,6 @@ body.tropics-page .dropdown-content a {
         .autocomplete-item:hover { background: #ffd96633; }
         .autocomplete-item:last-child { border-bottom: none; }
         
-        /* Kontrollpanel (knappar) – ovanför sökrutan */
         #control-panel {
             bottom: 120px;
             left: 10px;
@@ -209,7 +240,6 @@ body.tropics-page .dropdown-content a {
         #rotate-btn.active { background: #3b82f6; }
         .panel-btn:active { transform: scale(0.95); }
         
-        /* INFO-KORT */
 #info-card {
     top: 10px;
     right: 10px;
@@ -253,7 +283,6 @@ body.tropics-page .dropdown-content a {
             font-family: monospace;
         }
         
-        /* POLARKORT */
 #polar-card {
     top: 10px;
     right: 10px;
@@ -293,7 +322,6 @@ body.tropics-page .dropdown-content a {
             border-left: 3px solid #fff;
         }
         
-        /* GLOBE-ETIKETTER */
         .globe-label {
             position: absolute;
             z-index: 15;
@@ -336,7 +364,6 @@ body.tropics-page .dropdown-content a {
         }
         
 @media (max-width: 600px) {
-    /* Menyn högst upp till vänster */
     #main-menu {
         position: fixed;
         top: 10px;
@@ -344,7 +371,6 @@ body.tropics-page .dropdown-content a {
         z-index: 1000;
     }
 
-    /* Info-rutan högst upp till höger */
 #info-card {
     top: 10px;
     right: 10px;
@@ -355,7 +381,6 @@ body.tropics-page .dropdown-content a {
     font-size: 11px;
 }
 
-    /* Polar-kortet högst upp till höger */
 #polar-card {
     top: 10px;
     right: 10px;
@@ -366,14 +391,11 @@ body.tropics-page .dropdown-content a {
     font-size: 11px;
 }
 
-    /* Språkmenyn längst ner till vänster */
     #language-selector {
         bottom: 8px;
         left: 10px;
-        padding: 3px 6px;
     }
 
-    /* Sökrutan ovanför språkmenyn */
     #search-panel {
         bottom: 65px;
         left: 10px;
@@ -381,7 +403,6 @@ body.tropics-page .dropdown-content a {
         padding: 4px 7px;
     }
 
-    /* Kontrollknapparna ovanför sökrutan */
     #control-panel {
         bottom: 115px;
         left: 10px;
@@ -389,16 +410,21 @@ body.tropics-page .dropdown-content a {
         padding: 4px 8px;
     }
 
-    /* Övriga justeringar */
     .panel-btn { padding: 3px 10px; font-size: 9px; }
     #search-input { font-size: 10px; padding: 4px 8px; }
     .globe-label { font-size: 8px; }
     .label-country, .label-island { padding: 1px 4px; }
-    #lang-dropdown { font-size: 9px; padding: 3px 6px; padding-left: 26px; background-size: 15px 10px; }
+    #lang-button { font-size: 10px; padding: 3px 10px 3px 6px; min-width: 95px; }
+    #lang-button .lang-flag { width: 16px; height: 11px; }
+    .lang-option { font-size: 11px; padding: 5px 8px; }
+    .lang-option .lang-flag { width: 16px; height: 11px; }
 }
         @media (max-width: 450px) {
             .panel-btn { padding: 3px 8px; font-size: 8px; }
-            #lang-dropdown { font-size: 8px; padding: 2px 5px; padding-left: 24px; background-size: 14px 9px; }
+            #lang-button { font-size: 9px; padding: 2px 8px 2px 5px; min-width: 85px; }
+            #lang-button .lang-flag { width: 14px; height: 10px; }
+            .lang-option { font-size: 10px; padding: 4px 7px; }
+            .lang-option .lang-flag { width: 14px; height: 10px; }
         }
     </style>
 
@@ -413,22 +439,36 @@ body.tropics-page .dropdown-content a {
     <div id="canvas-container"></div>
     <div id="labels-container" style="position: absolute; width:100%; height:100%; top:0; left:0; pointer-events:none; z-index:5;"></div>
     
-    <!-- SPRÅKMENY (längst ner) -->
+    <!-- ============================================ -->
+    <!-- SPRÅKMENY (längst ner) – EGEN DROPDOWN        -->
+    <!-- ============================================ -->
     <div id="language-selector" class="ui-element">
-        <select id="lang-dropdown" class="lang-en">
-            <option value="en">English</option>
-            <option value="sv">Svenska</option>
-            <option value="zh">中文</option>
-        </select>
+        <button id="lang-button" type="button">
+            <img id="lang-button-flag" class="lang-flag" src="https://theworldmanifesto.github.io/lang/flags/gb.svg" alt="">
+            <span id="lang-button-label">English</span>
+            <span class="lang-arrow">▲</span>
+        </button>
+        <div id="lang-list">
+            <div class="lang-option selected" data-lang="en">
+                <img class="lang-flag" src="https://theworldmanifesto.github.io/lang/flags/gb.svg" alt="">
+                <span>English</span>
+            </div>
+            <div class="lang-option" data-lang="sv">
+                <img class="lang-flag" src="https://theworldmanifesto.github.io/lang/flags/se.svg" alt="">
+                <span>Svenska</span>
+            </div>
+            <div class="lang-option" data-lang="zh">
+                <img class="lang-flag" src="https://theworldmanifesto.github.io/lang/flags/cn.svg" alt="">
+                <span>中文</span>
+            </div>
+        </div>
     </div>
     
-    <!-- SÖKRUTA -->
     <div id="search-panel" class="ui-element">
         <input type="text" id="search-input" placeholder="Search tropical destination..." autocomplete="off">
         <div id="autocomplete-list"></div>
     </div>
 
-    <!-- KONTROLLKNAPPAR -->
     <div id="control-panel" class="ui-element">
         <button id="tour-btn" class="panel-btn">🌍 Round-Trip</button>
         <button id="rotate-btn" class="panel-btn">🔄 Rotate</button>
@@ -455,14 +495,9 @@ body.tropics-page .dropdown-content a {
         </div>
     </div>
 
-    <!-- === MENY JAVASCRIPT === -->
     <script src="../menu.js"></script>
 
-    <!-- === DIN TROPICS JAVASCRIPT === -->
     <script>
-        // --- MENY: hover på desktop, klick på mobil (från menu.js) ---
-        // (Denna funktionalitet finns nu i menu.js)
-
         // Helper function - Celsius only
         function formatTemp(celsiusStr) {
             let cleanCelsius = celsiusStr ? celsiusStr.replace('+', '') : '24';
@@ -824,7 +859,6 @@ body.tropics-page .dropdown-content a {
               en: { name: 'Vietnam', desc: 'Stretching along the South China Sea with lush Mekong Delta.' },
               sv: { name: 'Vietnam', desc: 'Sträcker sig längs Sydkinesiska havet med frodigt Mekongdelta.' },
               zh: { name: '越南', desc: '沿着南海延伸，拥有郁郁葱葱的湄公河三角洲。' } },
-            // Taiwan – tillagd
             { lat: 23.5, lon: 121.0, type: 'country', coldestWinter: '+16.5', 
               en: { name: 'Taiwan', desc: 'A mountainous island nation straddling the Tropic of Cancer, with lush tropical forests and hot springs.' },
               sv: { name: 'Taiwan', desc: 'En bergig önation som sträcker sig över Kräftans vändkrets, med frodiga tropiska skogar och heta källor.' },
@@ -961,7 +995,6 @@ body.tropics-page .dropdown-content a {
               en: { name: 'South China Sea', desc: '' }, sv: { name: 'Sydkinesiska havet', desc: '' }, zh: { name: '南海', desc: '' } }
         ];
 
-        // Build PLACES array from the multilingual data
         let currentLang = 'en';
         let PLACES = [];
         
@@ -977,10 +1010,8 @@ body.tropics-page .dropdown-content a {
             }));
         }
         
-        // Initialize with English
         PLACES = rebuildPlacesArray('en');
         
-        // Translation strings for UI elements
         const UI_TEXTS = {
             en: {
                 searchPlaceholder: "Search tropical destination...",
@@ -1041,14 +1072,9 @@ body.tropics-page .dropdown-content a {
             }
         };
         
-        // Function to update UI text based on selected language
         function updateUILanguage(lang) {
             const texts = UI_TEXTS[lang];
-            
-            // Update search placeholder
             document.getElementById('search-input').placeholder = texts.searchPlaceholder;
-            
-            // Update buttons (if not in active state)
             if (!tourInterval) {
                 document.getElementById('tour-btn').innerHTML = texts.tourBtn;
             }
@@ -1057,7 +1083,6 @@ body.tropics-page .dropdown-content a {
             }
         }
         
-        // Function to update info card with current language
         let currentInfoItem = null;
         
         function updateInfoCardLanguage(lang) {
@@ -1081,39 +1106,74 @@ body.tropics-page .dropdown-content a {
                 document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(currentInfoItem.coldestWinter)}</span>`;
             }
         }
+
+        // ============================================
+        // SPRÅKHANTERING – EGEN DROPDOWN
+        // ============================================
+        const LANG_META = {
+            'en': { label: 'English', flag: 'https://theworldmanifesto.github.io/lang/flags/gb.svg' },
+            'sv': { label: 'Svenska', flag: 'https://theworldmanifesto.github.io/lang/flags/se.svg' },
+            'zh': { label: '中文',    flag: 'https://theworldmanifesto.github.io/lang/flags/cn.svg' }
+        };
+
+        const langButton = document.getElementById('lang-button');
+        const langButtonFlag = document.getElementById('lang-button-flag');
+        const langButtonLabel = document.getElementById('lang-button-label');
+        const langList = document.getElementById('lang-list');
+
+        // Öppna/stäng listan när man klickar på knappen
+        langButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langList.classList.toggle('open');
+        });
+
+        // Klick utanför stänger listan
+        document.addEventListener('click', (e) => {
+            if (!langList.contains(e.target) && e.target !== langButton) {
+                langList.classList.remove('open');
+            }
+        });
+
+        // Välj språk
+        langList.querySelectorAll('.lang-option').forEach(opt => {
+            opt.addEventListener('click', () => {
+                const lang = opt.dataset.lang;
+                switchLanguage(lang);
+                langList.classList.remove('open');
+            });
+        });
+
+        // Uppdatera knappen (flagga + text + markering i listan)
+        function updateLangButton(lang) {
+            const meta = LANG_META[lang] || LANG_META['en'];
+            langButtonFlag.src = meta.flag;
+            langButtonLabel.textContent = meta.label;
+            langList.querySelectorAll('.lang-option').forEach(o => {
+                o.classList.toggle('selected', o.dataset.lang === lang);
+            });
+        }
         
         // Switch language function
         function switchLanguage(lang) {
             currentLang = lang;
-
-            // Uppdatera flagga på den stängda språkrutan
-            const dd = document.getElementById('lang-dropdown');
-            dd.classList.remove('lang-en', 'lang-sv', 'lang-zh');
-            if (lang === 'en') dd.classList.add('lang-en');
-            else if (lang === 'sv') dd.classList.add('lang-sv');
-            else if (lang === 'zh') dd.classList.add('lang-zh');
+            updateLangButton(lang);
             
-            // Rebuild PLACES array with new language
             const newPlaces = rebuildPlacesArray(lang);
             
-            // Update existing place objects with new names and descriptions
             PLACES.forEach((place, idx) => {
                 if (idx < newPlaces.length) {
                     place.name = newPlaces[idx].name;
                     place.desc = newPlaces[idx].desc;
                     place._data = PLACES_DATA[idx];
                     
-                    // Update DOM element text
                     if (place.dom) {
                         place.dom.innerText = place.name;
                     }
                 }
             });
             
-            // Update UI texts
             updateUILanguage(lang);
             
-            // Update info card if open
             if (currentInfoItem && currentInfoItem._data) {
                 updateInfoCardLanguage(lang);
             }
@@ -1157,16 +1217,6 @@ body.tropics-page .dropdown-content a {
             }
         }
         
-        // Language switcher - dropdown event
-        const langDropdown = document.getElementById('lang-dropdown');
-        langDropdown.addEventListener('change', (e) => {
-            const lang = e.target.value;
-            switchLanguage(lang);
-            if (searchInput.value.trim()) {
-                updateSearchResults();
-            }
-        });
-        
         searchInput.addEventListener('input', updateSearchResults);
         
         document.addEventListener('click', function(e) {
@@ -1194,13 +1244,11 @@ body.tropics-page .dropdown-content a {
         controls.minDistance = 9.0;
         controls.maxDistance = 18.0;
 
-        // Lighting
         scene.add(new THREE.AmbientLight(0xffffff, 0.8));
         const dirLight = new THREE.DirectionalLight(0xffffff, 0.7);
         dirLight.position.set(10, 15, 5);
         scene.add(dirLight);
         
-        // --- STARFIELD ---
         function createStarfield() {
             const starGeometry = new THREE.BufferGeometry();
             const starMaterial = new THREE.PointsMaterial({ 
@@ -1225,20 +1273,16 @@ body.tropics-page .dropdown-content a {
             return stars;
         }
 
-        // Create the starfield
         const starField = createStarfield();
 
-        // --- ROTATING SUN/PLANET ---
         const sunRadius = 0.65;
         const sunGeometrySphere = new THREE.SphereGeometry(sunRadius, 96, 96);
         
-        // Canvas: 1150 × 400
         const textCanvas = document.createElement('canvas');
         textCanvas.width = 1150;
         textCanvas.height = 400;
         const ctx = textCanvas.getContext('2d');
         
-        // Golden gradient background
         const gradient = ctx.createLinearGradient(0, 0, 0, textCanvas.height);
         gradient.addColorStop(0, '#FFD700');
         gradient.addColorStop(0.5, '#FFC107');
@@ -1246,18 +1290,15 @@ body.tropics-page .dropdown-content a {
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, textCanvas.width, textCanvas.height);
         
-        // Text settings
         ctx.textAlign = 'left';
         ctx.textBaseline = 'middle';
         ctx.fillStyle = '#7A0000';
         ctx.font = 'bold 39px "Segoe UI", Arial, sans-serif';
         
-        // Text: "✦   THE WORLD MANIFESTO   "
         const cleanText = "✦   THE WORLD MANIFESTO   ";
         ctx.fillText(cleanText, 30, textCanvas.height / 2);
         ctx.fillText(cleanText, 590, textCanvas.height / 2);
         
-        // Create texture
         const sunTextTexture = new THREE.CanvasTexture(textCanvas);
         sunTextTexture.wrapS = THREE.ClampToEdgeWrapping;
         sunTextTexture.wrapT = THREE.ClampToEdgeWrapping;
@@ -1276,7 +1317,6 @@ body.tropics-page .dropdown-content a {
         sunMesh.position.set(8.5, 1.5, 0);
         sunOrbitGroup.add(sunMesh);
 
-        // --- GLOBE ---
         const globeRadius = 5;
         const globeGroup = new THREE.Group();
         scene.add(globeGroup);
@@ -1287,7 +1327,6 @@ body.tropics-page .dropdown-content a {
         const globeMesh = new THREE.Mesh(geometry, material);
         globeGroup.add(globeMesh);
         
-        // Polar caps (invisible by default)
         function createPolarCap(isNorth) {
             const capGeo = new THREE.SphereGeometry(globeRadius + 0.08, 64, 64, 0, Math.PI * 2, 0, (90 - 23.436) * Math.PI / 180);
             const capMat = new THREE.MeshBasicMaterial({
@@ -1305,7 +1344,6 @@ body.tropics-page .dropdown-content a {
         globeGroup.add(northPolarCap);
         globeGroup.add(southPolarCap);
 
-        // Latitude lines
         function createSolidLatitudeLine(latitude, color) {
             const points = [];
             const radLat = (latitude * Math.PI) / 180;
@@ -1322,7 +1360,6 @@ body.tropics-page .dropdown-content a {
             return new THREE.Line(lineGeometry, lineMaterial);
         }
 
-        // Equator
         const equatorLat = 0;
         const radLatEq = (equatorLat * Math.PI) / 180;
         const yEq = globeRadius * Math.sin(radLatEq);
@@ -1340,7 +1377,6 @@ body.tropics-page .dropdown-content a {
         const equatorLine = new THREE.Line(equatorGeometry, equatorMaterial);
         globeGroup.add(equatorLine);
 
-        // Tropics
         globeGroup.add(createSolidLatitudeLine(23.44, 0xff6666));
         globeGroup.add(createSolidLatitudeLine(-23.44, 0x77aaff));
 
@@ -1353,7 +1389,6 @@ body.tropics-page .dropdown-content a {
             return new THREE.Vector3(x, y, z);
         }
 
-        // Create labels
         const labelsContainer = document.getElementById('labels-container');
         PLACES.forEach(place => {
             const div = document.createElement('div');
@@ -1376,7 +1411,6 @@ body.tropics-page .dropdown-content a {
             place.dom = div;
         });
 
-        // Fly-to animation
         let animating = false;
         let targetCamPos = null;
         let targetCtrlTarget = null;
@@ -1389,7 +1423,6 @@ body.tropics-page .dropdown-content a {
             animating = true;
         }
 
-        // Auto-rotate
         let autoRotateFlag = false;
         const rotateBtn = document.getElementById('rotate-btn');
         rotateBtn.addEventListener('click', () => {
@@ -1405,7 +1438,6 @@ body.tropics-page .dropdown-content a {
             }
         });
 
-        // Info Card
         const infoCard = document.getElementById('info-card');
         const infoTitle = document.getElementById('info-title');
         const infoBadge = document.getElementById('info-badge');
@@ -1446,7 +1478,6 @@ body.tropics-page .dropdown-content a {
         }
         document.getElementById('info-close').addEventListener('click', () => { infoCard.style.display = 'none'; currentInfoItem = null; });
 
-        // Tour System
         let tourInterval = null;
         let tourDestinations = PLACES.filter(p => p.type !== 'ocean');
         let visitedIdx = [];
@@ -1497,7 +1528,6 @@ body.tropics-page .dropdown-content a {
         }
         tourBtn.addEventListener('click', () => { if(tourInterval) stopTour(); else startTour(); });
 
-        // --- POLAR DETECTION ---
         const polarCard = document.getElementById('polar-card');
         const polarRecordDiv = document.getElementById('polar-record');
         const snowWeightSpan = document.getElementById('snow-weight');
@@ -1548,7 +1578,6 @@ body.tropics-page .dropdown-content a {
             }
         }
 
-        // --- Animation Loop ---
         const vecHelper = new THREE.Vector3();
         function animate() {
             requestAnimationFrame(animate);
@@ -1556,10 +1585,7 @@ body.tropics-page .dropdown-content a {
                 globeGroup.rotation.y += 0.003;
             }
             
-            // Rotate the sun orbiter
             sunOrbitGroup.rotation.y += 0.003;
-            
-            // Stars rotate slowly
             starField.rotation.y += 0.00005;
             
             if(animating && targetCamPos) {
