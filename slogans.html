@@ -176,12 +176,9 @@
         <main>
             <header>
                 <h1 id="page-title">Slogans</h1>
-                <p id="page-subtitle">Korta, direkta rader ur Världsmanifestet. Tänkta att spridas som de är.</p>
             </header>
 
             <div class="divider"></div>
-
-            <div class="lang-bar" id="lang-bar">Nedan visas slogans hämtade från Världsmanifestet</div>
 
             <select id="lang-select" class="lang-select" onchange="loadSlogans(this.value)">
                 <option value="sv">Svenska</option>
@@ -736,8 +733,6 @@
     const ui = uiTranslations[currentLang] || uiTranslations['en'];
 
     document.getElementById('page-title').textContent = ui.title;
-    document.getElementById('page-subtitle').textContent = ui.subtitle;
-    document.getElementById('lang-bar').textContent = ui.langBar;
     document.querySelector('.back-link').textContent = ui.back;
 
     // === RTL ===
