@@ -195,7 +195,7 @@ function pickBestLanguage(available = AVAILABLE, preferred = []) {
                         <a href="${base}freedom-staircase/freedom-staircase.html?lang=en"><img src="${base}menu_icons/freedom.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.staircase}</a>
                         <a href="${base}tropics/tropics.html?lang=${currentLang}"><img src="${base}menu_icons/tropics.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.tropics}</a>
                         <a href="${base}share/share.html?lang=${currentLang}"><img src="${base}menu_icons/share.svg" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.share}</a>
-                        <a href="${base}qr/qr.html?lang=${currentLang}"><img src="${base}menu_icons/qr_code.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.qr}</a>
+                        <a href="${base}qr/qr.html?lang=${currentLang}"><img src="${base}menu_icons/qr.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.qr}</a>
                         <a href="${base}robotel/robotel.html?lang=${currentLang}"><img src="${base}menu_icons/robotel.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.robotel}</a>
                     </div>
                 </div>
