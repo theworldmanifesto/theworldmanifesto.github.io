@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World Manifesto — Share Quotes</title>
+
+    <!-- LÄNK TILL DEN SEPARERADE MENY-CSS:EN (ETT STEG UPP) -->
+    <link rel="stylesheet" href="../menu.css">
+
+    <style>
+        body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 1.25;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 85vh;
+            justify-content: space-between;
+        }
+
+        main { text-align: center; }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: normal;
+            margin: 0 0 8px 0;
+        }
+
+        header p {
+            color: #555;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .lang-bar {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            padding: 8px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        .lang-select {
+            margin: 8px 0 24px 0;
+            padding: 4px 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+
+        .quote-card {
+            padding: 24px;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .quote-text {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+            font-style: italic;
+            color: #333;
+        }
+
+        .share-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        .btn-x { background: #000; color: #fff; }
+        .btn-fb { background: #1877F2; color: #fff; }
+        .btn-wa { background: #25D366; color: #fff; }
+        .btn-tg { background: #26A5E4; color: #fff; }
+        .btn-em { background: #555; color: #fff; }
+        .btn-copy { background: #fff; color: #000; border: 1px solid #ccc; }
+
+        .read-more {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .read-more a {
+            color: #555;
+        }
+
+        /* === QR-SEKTION === */
+        .qr-section {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .qr-section h2 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #8B0000;
+            letter-spacing: 0.5px;
+            margin: 0 0 20px 0;
+        }
+
+        .qr-section img {
+            width: min(70vw, 260px);
+            height: auto;
+            border: 1px solid #eee;
+            border-radius: 12px;
+        }
+
+        .qr-section .qr-hint {
+            font-size: 13px;
+            color: #777;
+            margin: 16px 0 20px 0;
+            font-style: italic;
+        }
+
+        .qr-section .qr-pdf {
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 13px;
+            color: #555;
+            text-decoration: underline;
+            padding: 6px 12px;
+        }
+
+        .qr-section .qr-pdf:hover {
+            color: #8B0000;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+
+        .webmaster { font-size: 16px; margin-bottom: 15px; }
+        .webmaster a { color: #1a1a1a; text-decoration: none; }
+        .copyright { font-size: 14px; color: #666; }
+
+/* === RTL-STÖD FÖR SHARE-SIDAN === */
+[dir="rtl"] .quote-text {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="rtl"] .share-row {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .qr-section .qr-hint { text-align: right; }
+
+    </style>
+
+    <link rel="stylesheet" href="../background_color.css">    <!-- Bakgrundsfärg -->
+
+</head>
+<body>
+
+    <!-- HÄR INJECTAS DEN SEPARERADE MENYN AUTOMATISKT -->
+    <div id="main-menu"></div>
+
+    <div class="container">
+        <main>
+            <header>
+                <h1 id="page-title">Share with others on the Internet</h1>
+                <p id="page-subtitle">Refer to this manifesto by leaving quotes on various social media.</p>
+            </header>
+
+            <div class="lang-bar" id="lang-bar">Below are shown 24 quotes that are taken from The World Manifesto</div>
+
+            <select id="lang-select" class="lang-select" onchange="loadQuotes(this.value)">
+                <option value="en" selected>English</option>  <!-- ← DETTA SKA VARA FÖRVALT -->
+                <option value="zh">中文</option>
+                <option value="hi">हिन्दी</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ar">العربية</option>
+                <option value="bn">বাংলা</option>
+                <option value="pt">Português</option>
+                <option value="ru">Русский</option>
+                <option value="ur">اردو</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="de">Deutsch</option>
+                <option value="ja">日本語</option>
+                <option value="sw">Kiswahili</option>
+                <option value="tl">Filipino</option>
+                <option value="tr">Türkçe</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="ko">한국어</option>
+                <option value="fa">فارسی</option>
+                <option value="th">ไทย</option>
+                <option value="it">Italiano</option>
+                <option value="pl">Polski</option>
+                <option value="uk">Українська</option>
+                <option value="nl">Nederlands</option>
+                <option value="ro">Română</option>
+                <option value="el">Ελληνικά</option>
+                <option value="hu">Magyar</option>
+                <option value="cs">Čeština</option>
+                <option value="sv">Svenska</option>  <!-- ← INGA selected här -->
+                <option value="bg">Български</option>
+                <option value="no">Norsk</option>
+                <option value="da">Dansk</option>
+                <option value="fi">Suomi</option>
+                <option value="he">עברית</option>
+                <option value="af">Afrikaans</option>
+                <option value="zu">isiZulu</option>
+                <option value="xh">isiXhosa</option>
+                <option value="is">Íslenska</option>
+                <option value="fo">Føroyskt</option>
+                <option value="crs">Seselwa</option>
+                <option value="se">Davvisámegiella</option>
+                <option value="fit">Meänkieli</option>
+            </select>
+
+            <div id="quotes-container"></div>
+
+            <div class="qr-section">
+                <h2>QR</h2>
+                <img src="../qr/qr-worldmanifesto.png" alt="QR — The World Manifesto">
+                <p class="qr-hint">Scan this code with your phone's camera to open this site.</p>
+                <a class="qr-pdf" href="../qr/qr-worldmanifesto-a4.pdf" download>A4 PDF — for printing</a>
+            </div>
+
+            <p class="read-more" id="read-more-text">
+                <a href="../lang/lang.html">Read the full manifesto in 42 languages →</a>
+            </p>
+        </main>
+
+    </div>
+
+    <!-- CITAT HÄMTNINGS SKRIPT -->
+
+<script>
+    const PAGE = "/";
+    const MANIFESTO = "The World Manifesto";
+
+    // --- ÖVERSÄTTNINGAR FÖR RUBRIKER ---
+const uiTranslations = {
+    'sv': {
+        title: 'Dela med andra på Internet',
+        subtitle: 'Hänvisa till detta manifest genom att lämna citat på olika sociala medier.',
+        langBar: 'Nedan visas citat som är hämtade från Världsmanifestet',
+        readMore: 'Läs hela manifestet på 42 språk →'
+    },
+    'en': {
+        title: 'Share with others on the Internet',
+        subtitle: 'Refer to this manifesto by leaving quotes on various social media.',
+        langBar: 'Below are shown quotes that are taken from The World Manifesto',
+        readMore: 'Read the full manifesto in 42 languages →'
+    },
+    'fr': {
+        title: 'Partagez avec les autres sur Internet',
+        subtitle: 'Référez-vous à ce manifeste en laissant des citations sur les réseaux sociaux.',
+        langBar: 'Ci-dessous sont présentées 24 citations tirées du Manifeste Mondial',
+        readMore: 'Lire le manifeste complet en 42 langues →'
+    },
+    'es': {
+        title: 'Comparte con otros en Internet',
+        subtitle: 'Consulta este manifiesto dejando citas en varias redes sociales.',
+        langBar: 'A continuación se muestran citas extraídas del Manifiesto Mundial',
+        readMore: 'Leer el manifiesto completo en 42 idiomas →'
+    },
+    'de': {
+        title: 'Teile mit anderen im Internet',
+        subtitle: 'Verweise auf dieses Manifest, indem du Zitate in sozialen Medien hinterlässt.',
+        langBar: 'Unten werden Zitate gezeigt, die aus dem Weltmanifest entnommen sind',
+        readMore: 'Das vollständige Manifest in 42 Sprachen lesen →'
+    },
+    'zh': {
+        title: '在互联网上与他人分享',
+        subtitle: '通过在社交媒体上留下引用来引用这份宣言。',
+        langBar: '以下是摘自《世界宣言》的24条引文',
+        readMore: '阅读42种语言的完整宣言 →'
+    },
+    'hi': {
+        title: 'इंटरनेट पर दूसरों के साथ साझा करें',
+        subtitle: 'सोशल मीडिया पर उद्धरण छोड़कर इस घोषणापत्र का संदर्भ लें।',
+        langBar: 'नीचे विश्व घोषणापत्र से लिए गए उद्धरण दिखाए गए हैं',
+        readMore: '42 भाषाओं में पूरा घोषणापत्र पढ़ें →'
+    },
+    'ar': {
+        title: 'شارك مع الآخرين على الإنترنت',
+        subtitle: 'أشر إلى هذا البيان من خلال ترك اقتباسات على وسائل التواصل الاجتماعي المختلفة.',
+        langBar: 'فيما يلي اقتباسات مأخوذة من البيان العالمي',
+        readMore: 'اقرأ البيان الكامل بـ 42 لغة →'
+    },
+    'bn': {
+        title: 'ইন্টারনেটে অন্যদের সাথে শেয়ার করুন',
+        subtitle: 'সোশ্যাল মিডিয়ায় উদ্ধৃতি রেখে এই ইশতেহারটি উল্লেখ করুন।',
+        langBar: 'নীচে বিশ্ব ইশতেহার থেকে নেওয়া উদ্ধৃতিগুলি দেখানো হয়েছে',
+        readMore: '৪২টি ভাষায় সম্পূর্ণ ইশতেহার পড়ুন →'
+    },
+    'pt': {
+        title: 'Compartilhe com outros na Internet',
+        subtitle: 'Refira-se a este manifesto deixando citações em várias redes sociais.',
+        langBar: 'Abaixo são mostradas citações retiradas do Manifesto Mundial',
+        readMore: 'Leia o manifesto completo em 42 idiomas →'
+    },
+    'ru': {
+        title: 'Поделитесь с другими в Интернете',
+        subtitle: 'Ссылайтесь на этот манифест, оставляя цитаты в социальных сетях.',
+        langBar: 'Ниже приведены цитаты из Всемирного манифеста',
+        readMore: 'Прочитать полный манифест на 42 языках →'
+    },
+    'id': {
+        title: 'Bagikan dengan orang lain di Internet',
+        subtitle: 'Rujuk manifesto ini dengan meninggalkan kutipan di berbagai media sosial.',
+        langBar: 'Di bawah ini ditampilkan kutipan yang diambil dari Manifesto Dunia',
+        readMore: 'Baca manifesto lengkap dalam 42 bahasa →'
+    },
+    'ja': {
+        title: 'インターネットで他の人と共有する',
+        subtitle: 'ソーシャルメディアに引用を残して、この宣言に言及してください。',
+        langBar: '以下は世界宣言から引用された引用文です',
+        readMore: '42言語で完全な宣言を読む →'
+    },
+    'ko': {
+        title: '인터넷에서 다른 사람들과 공유하기',
+        subtitle: '소셜 미디어에 인용문을 남겨 이 선언문을 참조하세요.',
+        langBar: '아래는 세계 선언문에서 인용된 인용문입니다',
+        readMore: '42개 언어로 된 전체 선언문 읽기 →'
+    },
+    'th': {
+        title: 'แบ่งปันกับผู้อื่นบนอินเทอร์เน็ต',
+        subtitle: 'อ้างอิงถึงแถลงการณ์นี้โดยการทิ้งคำพูดไว้บนโซเชียลมีเดียต่างๆ',
+        langBar: 'ด้านล่างนี้เป็นคำพูดที่นำมาจากแถลงการณ์โลก',
+        readMore: 'อ่านแถลงการณ์ฉบับเต็มใน 42 ภาษา →'
+    },
+    'vi': {
+        title: 'Chia sẻ với người khác trên Internet',
+        subtitle: 'Tham khảo tuyên ngôn này bằng cách để lại trích dẫn trên các mạng xã hội.',
+        langBar: 'Dưới đây là các trích dẫn được lấy từ Tuyên ngôn Thế giới',
+        readMore: 'Đọc toàn bộ tuyên ngôn bằng 42 ngôn ngữ →'
+    },
+    'tr': {
+        title: 'İnternette başkalarıyla paylaşın',
+        subtitle: 'Sosyal medyada alıntılar bırakarak bu manifestoya atıfta bulunun.',
+        langBar: 'Aşağıda Dünya Manifestosu\'ndan alınan alıntılar gösterilmektedir',
+        readMore: '42 dilde tam manifestoyu okuyun →'
+    },
+    'fa': {
+        title: 'با دیگران در اینترنت به اشتراک بگذارید',
+        subtitle: 'با گذاشتن نقل قول در رسانه های اجتماعی به این بیانیه مراجعه کنید.',
+        langBar: 'در زیر نقل قول هایی از بیانیه جهانی نشان داده شده است',
+        readMore: 'بیانیه کامل را به 42 زبان بخوانید →'
+    },
+    'sw': {
+        title: 'Shiriki na wengine kwenye Mtandao',
+        subtitle: 'Rejelea ilani hii kwa kuacha nukuu kwenye mitandao ya kijamii.',
+        langBar: 'Hapo chini zinaonyeshwa nukuu zilizochukuliwa kutoka Ilani ya Dunia',
+        readMore: 'Soma ilani kamili katika lugha 42 →'
+    },
+    'it': {
+        title: 'Condividi con altri su Internet',
+        subtitle: 'Fai riferimento a questo manifesto lasciando citazioni sui social media.',
+        langBar: 'Di seguito sono mostrate le citazioni tratte dal Manifesto Mondiale',
+        readMore: 'Leggi il manifesto completo in 42 lingue →'
+    },
+    'pl': {
+        title: 'Udostępnij innym w Internecie',
+        subtitle: 'Odnosząc się do tego manifestu, zostaw cytaty w mediach społecznościowych.',
+        langBar: 'Poniżej przedstawiono cytaty zaczerpnięte z Manifestu Światowego',
+        readMore: 'Przeczytaj pełny manifest w 42 językach →'
+    },
+    'nl': {
+        title: 'Deel met anderen op internet',
+        subtitle: 'Verwijs naar dit manifest door citaten achter te laten op sociale media.',
+        langBar: 'Hieronder worden citaten getoond die zijn overgenomen uit het Wereldmanifest',
+        readMore: 'Lees het volledige manifest in 42 talen →'
+    },
+    'ro': {
+        title: 'Împărtășește cu alții pe Internet',
+        subtitle: 'Referiți-vă la acest manifest lăsând citate pe diverse rețele sociale.',
+        langBar: 'Mai jos sunt prezentate citate preluate din Manifestul Mondial',
+        readMore: 'Citiți manifestul complet în 42 de limbi →'
+    },
+    'el': {
+        title: 'Μοιραστείτε με άλλους στο Διαδίκτυο',
+        subtitle: 'Αναφερθείτε σε αυτό το μανιφέστο αφήνοντας αποσπάσματα στα social media.',
+        langBar: 'Παρακάτω εμφανίζονται αποσπάσματα από το Παγκόσμιο Μανιφέστο',
+        readMore: 'Διαβάστε το πλήρες μανιφέστο σε 42 γλώσσες →'
+    },
+    'af': {
+        title: 'Deel met ander op die Internet',
+        subtitle: 'Verwys na hierdie manifes deur aanhalings op sosiale media te laat.',
+        langBar: 'Hieronder word aanhalings uit die Wêreldmanifest getoon',
+        readMore: 'Lees die volledige manifes in 42 tale →'
+    },
+    'zu': {
+        title: 'Yabelana nabanye ku-inthanethi',
+        subtitle: 'Bhekisa kule manifesto ngokushiya izingcaphuno kumithombo yezokuxhumana.',
+        langBar: 'Ngezansi kukhombisa izingcaphuno ezithathwe kuManifesto Yomhlaba',
+        readMore: 'Funda yonke imanifesto ngezilimi ezingu-42 →'
+    },
+    'xh': {
+        title: 'Yabelana nabanye kwi-Intanethi',
+        subtitle: 'Bhekisa kule manifesto ngokushiya iingcaphuno kumajelo eendaba ezentlalo.',
+        langBar: 'Apha ngezantsi kuboniswa iingcaphuno ezithathwe kwiManifesto Yehlabathi',
+        readMore: 'Funda imanifesto epheleleyo ngeelwimi ezingama-42 →'
+    },
+    'cs': {
+        title: 'Sdílejte s ostatními na internetu',
+        subtitle: 'Odkazujte na tento manifest zanecháváním citátů na sociálních sítích.',
+        langBar: 'Níže jsou uvedeny citáty převzaté ze Světového manifestu',
+        readMore: 'Přečtěte si celý manifest ve 42 jazycích →'
+    },
+    'hu': {
+        title: 'Ossza meg másokkal az interneten',
+        subtitle: 'Hivatkozzon erre a kiáltványra idézetek hagyásával a közösségi médiában.',
+        langBar: 'Az alábbiakban a Világkiáltványból vett idézetek láthatók',
+        readMore: 'Olvassa el a teljes kiáltványt 42 nyelven →'
+    },
+    'he': {
+        title: 'שתף עם אחרים באינטרנט',
+        subtitle: 'התייחס למניפסט זה על ידי השארת ציטוטים ברשתות החברתיות.',
+        langBar: 'להלן ציטוטים שנלקחו מהמניפסט העולמי',
+        readMore: 'קרא את המניפסט המלא ב-42 שפות →'
+    },
+    'crs': {
+        title: 'Partaz avek lezot lo Internet',
+        subtitle: 'Refer a sa manifest an lesan sitasyon lo bann rezo sosyal.',
+        langBar: 'Anba i montre sitasyon ki tir dan Manifest lemonn',
+        readMore: 'Lir manifest konplet an 42 lang →'
+    },
+    'no': {
+        title: 'Del med andre på Internett',
+        subtitle: 'Henvis til dette manifestet ved å legge igjen sitater på sosiale medier.',
+        langBar: 'Nedenfor vises sitater hentet fra Verdensmanifestet',
+        readMore: 'Les hele manifestet på 42 språk →'
+    },
+    'se': {
+        title: 'Juoge earáiguin interneahtas',
+        subtitle: 'Čujuh dán manifestii gávdnan sitašuvnnaid sosiála mediain.',
+        langBar: 'Vuollelis oaidnát sitašuvnnaid mat leat váldojuvvon Máilmmi Manifestas',
+        readMore: 'Loga olles manifesta 42 gillii →'
+    },
+    'fit': {
+        title: 'Jaa toisten kanssa Internetissä',
+        subtitle: 'Viittaa tähän manifestiin jättämällä lainauksia sosiaaliseen mediaan.',
+        langBar: 'Alla näytetään lainaukset Maailmanmanifestista',
+        readMore: 'Lue koko manifesti 42 kielellä →'
+    },
+    'da': {
+        title: 'Del med andre på Internettet',
+        subtitle: 'Henvis til dette manifest ved at efterlade citater på sociale medier.',
+        langBar: 'Nedenfor vises citater fra Verdensmanifestet',
+        readMore: 'Læs hele manifestet på 42 sprog →'
+    },
+    'is': {
+        title: 'Deildu með öðrum á Netinu',
+        subtitle: 'Vísaðu til þessa manifest með því að skilja eftir tilvitnanir á samfélagsmiðlum.',
+        langBar: 'Hér að neðan eru tilvitnanir úr Heimsmanifestinu',
+        readMore: 'Lestu allt manifestið á 42 tungumálum →'
+    },
+    'fo': {
+        title: 'Deil við øðrum á netinum',
+        subtitle: 'Vís til hetta manifest við at leggja eftir siteringar á samfelagsmiðlum.',
+        langBar: 'Niðanfyri vísast siteringar úr Heimsskránni',
+        readMore: 'Les alt manifestið á 42 málum →'
+    },
+    'hr': {
+        title: 'Podijelite s drugima na internetu',
+        subtitle: 'Pozovite se na ovaj manifest ostavljajući citate na društvenim mrežama.',
+        langBar: 'Ispod su prikazani citati preuzeti iz Svjetskog manifesta',
+        readMore: 'Pročitajte cijeli manifest na 42 jezika →'
+    },
+    'sk': {
+        title: 'Zdieľajte s ostatnými na internete',
+        subtitle: 'Odkazujte na tento manifest zanechaním citátov na sociálnych sieťach.',
+        langBar: 'Nižšie sú uvedené citáty prevzaté zo Svetového manifestu',
+        readMore: 'Prečítajte si celý manifest v 42 jazykoch →'
+    }
+};
+
+    const RELATED_FALLBACK = {
+  "af-za": "af", "af-na": "af",
+  "an": "es", "an-es": "es",
+  "ar-eg": "ar", "ar-sa": "ar", "ar-dz": "ar", "ar-ma": "ar", "ar-iq": "ar", "ar-sy": "ar", "ar-lb": "ar", "ar-jo": "ar", "ar-ps": "ar", "ar-ye": "ar", "ar-om": "ar", "ar-ae": "ar", "ar-qa": "ar", "ar-bh": "ar", "ar-kw": "ar", "ar-ly": "ar", "ar-tn": "ar", "ar-sd": "ar", "ar-so": "ar", "ary": "ar", "arz": "ar", "apc": "ar", "aeb": "ar", "acm": "ar",
+  "ast": "es", "ast-es": "es",
+  "az": "tr", "az-az": "tr", "az-ir": "tr",
+  "be": "uk", "be-by": "uk",
+  "bg-bg": "bg",
+  "bn-bd": "bn", "bn-in": "bn", "rkt": "bn",
+  "ca": "es", "ca-ad": "es", "ca-es": "es", "ca-fr": "es", "ca-it": "es", "ca-valencia": "es",
+  "ceb": "fil",
+  "co": "it",
+  "crh": "tr",
+  "crs": "crs", "crs-sc": "crs",
+  "cs-cz": "cs",
+  "da-dk": "da", "da-gl": "da",
+  "de-at": "de", "de-be": "de", "de-ch": "de", "de-de": "de", "de-li": "de", "bar": "de", "gsw": "de", "ksh": "de", "nds": "de",
+  "el-gr": "el", "el-cy": "el", "grc": "el",
+  "en-au": "en", "en-bz": "en", "en-ca": "en", "en-gb": "en", "en-gh": "en", "en-gy": "en", "en-hk": "en", "en-ie": "en", "en-in": "en", "en-jm": "en", "en-ke": "en", "en-mt": "en", "en-mw": "en", "en-my": "en", "en-ng": "en", "en-nz": "en", "en-ph": "en", "en-pk": "en", "en-sg": "en", "en-tt": "en", "en-tz": "en", "en-ug": "en", "en-us": "en", "en-za": "en", "ang": "en", "enm": "en", "sco": "en",
+  "es-419": "es", "es-ar": "es", "es-bo": "es", "es-bz": "es", "es-cl": "es", "es-co": "es", "es-cr": "es", "es-cu": "es", "es-do": "es", "es-ec": "es", "es-es": "es", "es-gq": "es", "es-gt": "es", "es-hn": "es", "es-mx": "es", "es-ni": "es", "es-pa": "es", "es-pe": "es", "es-ph": "es", "es-pr": "es", "es-py": "es", "es-sv": "es", "es-us": "es", "es-uy": "es", "es-ve": "es", "eu": "es", "eu-es": "es", "eu-fr": "es", "ext": "es", "lad": "es", "gl-es": "es", "oc": "es", "oc-ar": "es", "oc-es": "es",
+  "fa-af": "fa", "fa-ir": "fa", "ckb": "fa", "prs": "fa", "tg": "fa", "tg-tj": "fa",
+  "fi-fi": "fi",
+  "fil-ph": "fil", "tl": "fil", "tl-ph": "fil", "ilo": "fil",
+  "fit": "fit", "fit-fi": "fit", "fit-no": "fit", "fit-se": "fit", "fi-se-tornio": "fit", "fi-tornio": "fit", "fkv": "fit", "fkv-fi": "fit", "fkv-no": "fit", "kvk": "fit",
+  "fo": "fo", "fo-dk": "fo", "fo-fa": "fo", "fo-fare": "fo", "fo-fo": "fo", "fo-gl": "fo", "fo-no": "fo", "fo-se": "fo", "fao": "fo",
+  "fr-be": "fr", "fr-bf": "fr", "fr-ca": "fr", "fr-cd": "fr", "fr-cg": "fr", "fr-ch": "fr", "fr-ci": "fr", "fr-cm": "fr", "fr-fr": "fr", "fr-gn": "fr", "fr-ht": "fr", "fr-lu": "fr", "fr-mc": "fr", "fr-ml": "fr", "fr-ne": "fr", "fr-pf": "fr", "fr-rw": "fr", "fr-sn": "fr", "fr-td": "fr",
+  "fy": "nl",
+  "gl": "es",
+  "gag": "tr",
+  "gn": "es", "gn-py": "es", "gug": "es",
+  "he-il": "he", "yi": "he",
+  "hi-in": "hi", "bho": "hi", "hif": "hi",
+  "ht": "crs",
+  "hu-hu": "hu",
+  "id-id": "id", "ms": "id", "ms-bn": "id", "ms-id": "id", "ms-my": "id", "ms-sg": "id", "ind": "id", "zsm": "id",
+  "is-is": "is",
+  "it-ch": "it", "it-it": "it", "it-sm": "it", "it-va": "it", "lmo": "it", "scn": "it", "vec": "it",
+  "ja-jp": "ja",
+  "ko-kp": "ko", "ko-kr": "ko",
+  "lmo": "it",
+  "mfe": "crs",
+  "ms": "id",
+  "mwl": "pt",
+  "nb": "no", "nb-no": "no", "nn": "no", "nn-no": "no", "no-no": "no", "nob": "no", "nno": "no",
+  "nl-be": "nl", "nl-nl": "nl", "zea": "nl",
+  "pl-pl": "pl", "szl": "pl",
+  "pt-ao": "pt", "pt-br": "pt", "pt-ch": "pt", "pt-cv": "pt", "pt-gw": "pt", "pt-lu": "pt", "pt-mo": "pt", "pt-mz": "pt", "pt-pt": "pt", "pt-st": "pt", "pt-tl": "pt",
+  "qu": "es", "qu-bo": "es", "qu-ec": "es", "qu-pe": "es", "quz": "es", "qve": "es", "qwh": "es",
+  "ro-md": "ro", "ro-ro": "ro", "mo": "ro", "rup": "ro",
+  "ru-by": "ru", "ru-kg": "ru", "ru-kz": "ru", "ru-md": "ru", "ru-ru": "ru", "ru-ua": "ru",
+  "scn": "it",
+  "se": "se", "se-fi": "se", "se-no": "se", "se-se": "se", "sia": "se", "sjd": "se", "sjd-ru": "se", "sje": "se", "sje-no": "se", "sje-se": "se", "sjk": "se", "sjt": "se", "sju": "se", "sju-no": "se", "sju-se": "se", "sma": "se", "sma-no": "se", "sma-se": "se", "sme": "se", "smi": "se", "smi-fi": "se", "smi-no": "se", "smi-ru": "se", "smi-se": "se", "smj": "se", "smj-no": "se", "smj-se": "se", "smn": "se", "smn-fi": "se", "sms": "se", "sms-fi": "se", "sms-no": "se", "sms-ru": "se",
+  "sk": "cs", "sk-sk": "cs",
+  "sv-ax": "sv", "sv-fi": "sv", "sv-se": "sv",
+  "sw-cd": "sw", "sw-ke": "sw", "sw-tz": "sw", "sw-ug": "sw",
+  "th-th": "th",
+  "tr-cy": "tr", "tr-tr": "tr",
+  "uk-ua": "uk", "rue": "uk",
+  "ur-in": "ur", "ur-pk": "ur",
+  "vi-vn": "vi",
+  "wuu": "zh", "yue": "zh", "yue-hk": "zh",
+  "zh-cn": "zh", "zh-hans": "zh", "zh-hant": "zh", "zh-hk": "zh", "zh-mo": "zh", "zh-sg": "zh", "zh-tw": "zh",
+  "wa": "fr", "wa-be": "fr", "wln": "fr",
+  "li": "nl", "li-be": "nl", "li-nl": "nl", "lim": "nl",
+  "lb": "de", "lb-lu": "de",
+  "br": "fr", "br-fr": "fr",
+  "sc": "it", "sc-it": "it",
+  "rm": "it", "rm-ch": "it",
+  "zu-za": "zu",
+  "xh-za": "xh"
+};
+
+    const AVAILABLE = ['sv','en','zh','hi','es','fr','ar','id','bn','pt','ru','uk','bg','ur','ja','fil','de','ko','th','vi','tr','fa','sw','it','pl','nl','ro','el','af','zu','xh','cs','hu','he','crs','se','fit','no','fi','da','is','fo'];
+
+    
+function pickBestLanguage(available = AVAILABLE, preferred = []) {
+  const prefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
+  for (const raw of prefs) {
+    const tag = raw.toLowerCase().trim();
+    if (!tag) continue;
+    if (available.includes(tag)) return tag;
+    const base = tag.split('-')[0];
+    if (available.includes(base)) return base;
+    if (RELATED_FALLBACK[tag] && available.includes(RELATED_FALLBACK[tag])) return RELATED_FALLBACK[tag];
+    if (RELATED_FALLBACK[base] && available.includes(RELATED_FALLBACK[base])) return RELATED_FALLBACK[base];
+    try { const max = new Intl.Locale(tag).maximize(); if (available.includes(max.language)) return max.language; } catch(e) {}
+  }
+  return available.includes('en') ? 'en' : available[0];
+}
+
+
+    const browserLang = pickBestLanguage();
+    const ui = uiTranslations[browserLang] || uiTranslations['en'];
+
+    document.getElementById('page-title').textContent = ui.title;
+    document.getElementById('page-subtitle').textContent = ui.subtitle;
+    document.getElementById('lang-bar').textContent = ui.langBar;
+    document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
+
+    let currentQuoteLang = 'en';
+
+    function escapeHtml(s) {
+        return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function loadQuotes(langCode) {
+        console.log('loadQuotes anropad med språk:', langCode);
+        const container = document.getElementById('quotes-container');
+        
+        if (!container) {
+            console.error('ERROR: Elementet "quotes-container" hittades inte i HTML!');
+            return;
+        }
+        
+        container.innerHTML = '<p>Laddar citat...</p>';
+
+        fetch('quotes.json')
+            .then(response => {
+                console.log('Response status:', response.status);
+                if (!response.ok) throw new Error('Kunde inte läsa JSON');
+                return response.json();
+            })
+            .then(data => {
+                console.log('JSON-data laddad. Nycklar:', Object.keys(data));
+                
+                const langKey = langCode.toUpperCase();
+                console.log('Söker efter nyckel:', langKey);
+                
+                let quotesData = data[langKey];
+                if (!quotesData) {
+                    console.log('Språket ' + langKey + ' saknas, använder engelska istället');
+                    quotesData = data['EN'] || data['SV'] || {};
+                }
+                
+                const quotes = Object.values(quotesData);
+                console.log('Antal citat:', quotes.length);
+                container.innerHTML = '';
+
+                if (quotes.length === 0) {
+                    container.innerHTML = '<p style="color:#888;">Inga citat tillgängliga på detta språk.</p>';
+                    return;
+                }
+
+                quotes.forEach((text, idx) => {
+                    const escText = escapeHtml(text);
+                    const shareText = '"' + text + '" — The World Manifesto ' + PAGE;
+                    const encText = encodeURIComponent(shareText);
+                    const encQuote = encodeURIComponent(text);
+
+                    const card = document.createElement('div');
+                    card.className = 'quote-card';
+                    card.innerHTML = `
+                        <div class="quote-text">"${escText}"</div>
+                        <div class="share-row">
+                            <a class="btn btn-x" href="https://x.com/intent/tweet?text=${encText}" target="_blank">Share on X</a>
+                            <a class="btn btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(PAGE)}&quote=${encQuote}" target="_blank">Facebook</a>
+                            <a class="btn btn-wa" href="https://wa.me/?text=${encText}" target="_blank">WhatsApp</a>
+                            <a class="btn btn-tg" href="https://t.me/share/url?url=${encodeURIComponent(PAGE)}&text=${encQuote}" target="_blank">Telegram</a>
+                            <a class="btn btn-em" href="mailto:?subject=${encodeURIComponent(MANIFESTO)}&body=${encText}" target="_blank">Email</a>
+                            <a class="btn btn-copy" href="#" data-text="${encText}">Copy Link</a>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+
+                container.querySelectorAll('.btn-copy').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const text = decodeURIComponent(btn.dataset.text);
+                        navigator.clipboard.writeText(text);
+                        const old = btn.textContent;
+                        btn.textContent = 'Copied!';
+                        setTimeout(() => btn.textContent = old, 1200);
+                    });
+                });
+
+                document.getElementById('lang-select').value = langCode;
+                console.log('Citat visade!');
+            })
+            .catch(err => {
+                console.error('Fel vid laddning:', err);
+                container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
+            });
+    }
+
+    // --- LADDA CITAT VID SIDLADDNING ---
+    const urlParams = new URLSearchParams(window.location.search);
+    const rawUrlLang = urlParams.get('lang');
+    const browserLang2 = pickBestLanguage();
+    const urlLang = rawUrlLang ? pickBestLanguage(AVAILABLE, [rawUrlLang]) : browserLang2;
+
+// === RTL-SPRÅK ===
+const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
+document.documentElement.dir = RTL_LANGS.includes(urlLang) ? 'rtl' : 'ltr';
+
+    console.log('Slutligt språk som används:', urlLang);
+    document.getElementById('lang-select').value = urlLang;
+    loadQuotes(urlLang);
+</script>
+
+    <!-- Meny LÄNK TILL DEN SEPARERADE MENY-JS:EN (ETT STEG UPP) -->
+    <script src="../menu.js"></script>
+
+    <!-- Sidfot LÄNK TILL DEN SEPARERADE FOTNOT-JS:EN (ETTS STEG NER) -->
+    <script src="../footer.js"></script>
+
+</body>
+</html>
