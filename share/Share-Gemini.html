@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World Manifesto — Share Quotes</title>
+
+    <!-- LÄNK TILL DEN SEPARERADE MENY-CSS:EN (ETT STEG UPP) -->
+    <link rel="stylesheet" href="../menu.css">
+
+    <style>
+        body {
+            font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+            line-height: 1.25;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 85vh;
+            justify-content: space-between;
+        }
+
+        main { text-align: center; }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: normal;
+            margin: 0 0 8px 0;
+        }
+
+        header p {
+            color: #555;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .lang-bar {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            padding: 8px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            margin: 20px 0;
+        }
+
+        .lang-select {
+            margin: 8px 0 24px 0;
+            padding: 4px 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+
+        .quote-card {
+            padding: 24px;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .quote-text {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+            font-style: italic;
+            color: #333;
+        }
+
+        /* === QR SEKTION === */
+        .qr-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .qr-card h2 {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0;
+            color: #1a1a1a;
+        }
+
+        .qr-image {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 8px;
+            background: #fff;
+        }
+
+        .share-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-x { background: #000; color: #fff; }
+        .btn-fb { background: #1877F2; color: #fff; }
+        .btn-wa { background: #25D366; color: #fff; }
+        .btn-tg { background: #26A5E4; color: #fff; }
+        .btn-em { background: #555; color: #fff; }
+        .btn-copy { background: #fff; color: #000; border: 1px solid #ccc; }
+        .btn-pdf { background: #d93025; color: #fff; }
+
+        .read-more {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .read-more a {
+            color: #555;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+
+        .webmaster { font-size: 16px; margin-bottom: 15px; }
+        .webmaster a { color: #1a1a1a; text-decoration: none; }
+        .copyright { font-size: 14px; color: #666; }
+
+        /* === RTL-STÖD FÖR SHARE-SIDAN === */
+        [dir="rtl"] .quote-text {
+            text-align: right;
+            direction: rtl;
+        }
+
+        [dir="rtl"] .share-row {
+            flex-direction: row-reverse;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../background_color.css">    <!-- Bakgrundsfärg -->
+
+</head>
+<body>
+
+    <!-- HÄR INJECTAS DEN SEPARERADE MENYN AUTOMATISKT -->
+    <div id="main-menu"></div>
+
+    <div class="container">
+        <main>
+            <header>
+                <h1 id="page-title">Share with others on the Internet</h1>
+                <p id="page-subtitle">Refer to this manifesto by leaving quotes on various social media.</p>
+            </header>
+
+            <!-- QR-KOD & FLYER SEKTION -->
+            <div class="quote-card qr-card">
+                <h2 id="qr-title">QR Code & Printable Flyer</h2>
+                <img src="qr-worldmanifesto.png" alt="QR Code — The World Manifesto" class="qr-image">
+                <div class="share-row">
+                    <a class="btn btn-copy" href="qr-worldmanifesto.png" download id="qr-btn-png">📷 Download PNG</a>
+                    <a class="btn btn-pdf" href="qr-worldmanifesto-a4.pdf" target="_blank" id="qr-btn-pdf">📄 Download A4 Flyer (PDF)</a>
+                </div>
+            </div>
+
+            <div class="lang-bar" id="lang-bar">Below are shown 24 quotes that are taken from The World Manifesto</div>
+
+            <select id="lang-select" class="lang-select" onchange="loadQuotes(this.value)">
+                <option value="en" selected>English</option>
+                <option value="zh">中文</option>
+                <option value="hi">हिन्दी</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ar">العربية</option>
+                <option value="bn">বাংলা</option>
+                <option value="pt">Português</option>
+                <option value="ru">Русский</option>
+                <option value="ur">اردو</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="de">Deutsch</option>
+                <option value="ja">日本語</option>
+                <option value="sw">Kiswahili</option>
+                <option value="fil">Filipino</option>
+                <option value="tr">Türkçe</option>
+                <option value="vi">Tiếng Việt</option>
+                <option value="ko">한국어</option>
+                <option value="fa">فارسی</option>
+                <option value="th">ไทย</option>
+                <option value="it">Italiano</option>
+                <option value="pl">Polski</option>
+                <option value="uk">Українська</option>
+                <option value="nl">Nederlands</option>
+                <option value="ro">Română</option>
+                <option value="el">Ελληνικά</option>
+                <option value="hu">Magyar</option>
+                <option value="cs">Čeština</option>
+                <option value="sv">Svenska</option>
+                <option value="bg">Български</option>
+                <option value="no">Norsk</option>
+                <option value="da">Dansk</option>
+                <option value="fi">Suomi</option>
+                <option value="he">עברית</option>
+                <option value="af">Afrikaans</option>
+                <option value="zu">isiZulu</option>
+                <option value="xh">isiXhosa</option>
+                <option value="is">Íslenska</option>
+                <option value="fo">Føroyskt</option>
+                <option value="crs">Seselwa</option>
+                <option value="se">Davvisámegiella</option>
+                <option value="fit">Meänkieli</option>
+            </select>
+
+            <div id="quotes-container"></div>
+
+            <p class="read-more" id="read-more-text">
+                <a href="../lang/lang.html">Read the full manifesto in 42 languages →</a>
+            </p>
+        </main>
+
+    </div>
+
+<script>
+    const PAGE = "/";
+    const MANIFESTO = "The World Manifesto";
+    const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
+
+    // --- ÖVERSÄTTNINGAR FÖR RUBRIKER & QR-SEKTION ---
+    const uiTranslations = {
+        'sv': {
+            title: 'Dela med andra på Internet',
+            subtitle: 'Hänvisa till detta manifest genom att lämna citat på olika sociala medier.',
+            qrTitle: 'QR-kod & utskrivbar affisch',
+            qrPng: '📷 Ladda ner PNG',
+            qrPdf: '📄 Ladda ner A4-flyer (PDF)',
+            langBar: 'Nedan visas citat som är hämtade från Världsmanifestet',
+            readMore: 'Läs hela manifestet på 42 språk →'
+        },
+        'en': {
+            title: 'Share with others on the Internet',
+            subtitle: 'Refer to this manifesto by leaving quotes on various social media.',
+            qrTitle: 'QR Code & Printable Flyer',
+            qrPng: '📷 Download PNG',
+            qrPdf: '📄 Download A4 Flyer (PDF)',
+            langBar: 'Below are shown quotes that are taken from The World Manifesto',
+            readMore: 'Read the full manifesto in 42 languages →'
+        },
+        'fr': {
+            title: 'Partagez avec les autres sur Internet',
+            subtitle: 'Référez-vous à ce manifeste en laissant des citations sur les réseaux sociaux.',
+            qrTitle: 'Code QR & flyer imprimable',
+            qrPng: '📷 Télécharger PNG',
+            qrPdf: '📄 Télécharger le flyer A4 (PDF)',
+            langBar: 'Ci-dessous sont présentées des citations tirées du Manifeste Mondial',
+            readMore: 'Lire le manifeste complet en 42 langues →'
+        },
+        'es': {
+            title: 'Comparte con otros en Internet',
+            subtitle: 'Consulta este manifiesto dejando citas en varias redes sociales.',
+            qrTitle: 'Código QR y folleto imprimible',
+            qrPng: '📷 Descargar PNG',
+            qrPdf: '📄 Descargar folleto A4 (PDF)',
+            langBar: 'A continuación se muestran citas extraídas del Manifiesto Mundial',
+            readMore: 'Leer el manifiesto completo en 42 idiomas →'
+        },
+        'de': {
+            title: 'Teile mit anderen im Internet',
+            subtitle: 'Verweise auf dieses Manifest, indem du Zitate in sozialen Medien hinterlässt.',
+            qrTitle: 'QR-Code & druckbarer Flyer',
+            qrPng: '📷 PNG herunterladen',
+            qrPdf: '📄 A4-Flyer herunterladen (PDF)',
+            langBar: 'Unten werden Zitate gezeigt, die aus dem Weltmanifest entnommen sind',
+            readMore: 'Das vollständige Manifest in 42 Sprachen lesen →'
+        }
+    };
+
+    const RELATED_FALLBACK = {
+        "af-za": "af", "af-na": "af",
+        "ar-eg": "ar", "ar-sa": "ar", "ar-dz": "ar", "ar-ma": "ar",
+        "da-dk": "da", "de-de": "de", "el-gr": "el",
+        "en-gb": "en", "en-us": "en", "es-es": "es", "es-mx": "es",
+        "fi-fi": "fi", "fil-ph": "fil", "tl": "fil", "tl-ph": "fil",
+        "fr-fr": "fr", "it-it": "it", "ja-jp": "ja", "ko-kr": "ko",
+        "nl-nl": "nl", "no-no": "no", "pl-pl": "pl", "pt-br": "pt", "pt-pt": "pt",
+        "ru-ru": "ru", "sv-se": "sv", "th-th": "th", "tr-tr": "tr",
+        "uk-ua": "uk", "zh-cn": "zh", "zh-tw": "zh"
+    };
+
+    const AVAILABLE = ['sv','en','zh','hi','es','fr','ar','id','bn','pt','ru','uk','bg','ur','ja','fil','de','ko','th','vi','tr','fa','sw','it','pl','nl','ro','el','af','zu','xh','cs','hu','he','crs','se','fit','no','fi','da','is','fo'];
+
+    function pickBestLanguage(available = AVAILABLE, preferred = []) {
+        const prefs = (preferred.length ? preferred : (typeof navigator !== 'undefined' ? (navigator.languages || [navigator.language]) : [])).map(s => String(s).toLowerCase());
+        for (const raw of prefs) {
+            const tag = raw.toLowerCase().trim();
+            if (!tag) continue;
+            if (available.includes(tag)) return tag;
+            const base = tag.split('-')[0];
+            if (available.includes(base)) return base;
+            if (RELATED_FALLBACK[tag] && available.includes(RELATED_FALLBACK[tag])) return RELATED_FALLBACK[tag];
+            if (RELATED_FALLBACK[base] && available.includes(RELATED_FALLBACK[base])) return RELATED_FALLBACK[base];
+            try { const max = new Intl.Locale(tag).maximize(); if (available.includes(max.language)) return max.language; } catch(e) {}
+        }
+        return available.includes('en') ? 'en' : available[0];
+    }
+
+    function updateUI(langCode) {
+        const ui = uiTranslations[langCode] || uiTranslations['en'];
+        document.getElementById('page-title').textContent = ui.title;
+        document.getElementById('page-subtitle').textContent = ui.subtitle;
+        document.getElementById('qr-title').textContent = ui.qrTitle;
+        document.getElementById('qr-btn-png').textContent = ui.qrPng;
+        document.getElementById('qr-btn-pdf').textContent = ui.qrPdf;
+        document.getElementById('lang-bar').textContent = ui.langBar;
+        document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
+        
+        // Dynamisk RTL-uppdatering
+        document.documentElement.dir = RTL_LANGS.includes(langCode) ? 'rtl' : 'ltr';
+    }
+
+    function escapeHtml(s) {
+        return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function loadQuotes(langCode) {
+        updateUI(langCode);
+
+        const container = document.getElementById('quotes-container');
+        if (!container) return;
+        
+        container.innerHTML = '<p>Laddar citat...</p>';
+
+        fetch('quotes.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Kunde inte läsa JSON');
+                return response.json();
+            })
+            .then(data => {
+                const langKey = langCode.toUpperCase();
+                let quotesData = data[langKey] || data['EN'] || data['SV'] || {};
+                const quotes = Object.values(quotesData);
+                
+                container.innerHTML = '';
+
+                if (quotes.length === 0) {
+                    container.innerHTML = '<p style="color:#888;">Inga citat tillgängliga på detta språk.</p>';
+                    return;
+                }
+
+                quotes.forEach((text) => {
+                    const escText = escapeHtml(text);
+                    const shareText = '"' + text + '" — The World Manifesto ' + PAGE;
+                    const encText = encodeURIComponent(shareText);
+                    const encQuote = encodeURIComponent(text);
+
+                    const card = document.createElement('div');
+                    card.className = 'quote-card';
+                    card.innerHTML = `
+                        <div class="quote-text">"${escText}"</div>
+                        <div class="share-row">
+                            <a class="btn btn-x" href="https://x.com/intent/tweet?text=${encText}" target="_blank">Share on X</a>
+                            <a class="btn btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(PAGE)}&quote=${encQuote}" target="_blank">Facebook</a>
+                            <a class="btn btn-wa" href="https://wa.me/?text=${encText}" target="_blank">WhatsApp</a>
+                            <a class="btn btn-tg" href="https://t.me/share/url?url=${encodeURIComponent(PAGE)}&text=${encQuote}" target="_blank">Telegram</a>
+                            <a class="btn btn-em" href="mailto:?subject=${encodeURIComponent(MANIFESTO)}&body=${encText}" target="_blank">Email</a>
+                            <a class="btn btn-copy" href="#" data-text="${encText}">Copy Link</a>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+
+                container.querySelectorAll('.btn-copy').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const text = decodeURIComponent(btn.dataset.text);
+                        navigator.clipboard.writeText(text);
+                        const old = btn.textContent;
+                        btn.textContent = 'Copied!';
+                        setTimeout(() => btn.textContent = old, 1200);
+                    });
+                });
+
+                document.getElementById('lang-select').value = langCode;
+            })
+            .catch(err => {
+                console.error('Fel vid laddning:', err);
+                container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
+            });
+    }
+
+    // --- LADDA VID SIDLADDNING ---
+    const urlParams = new URLSearchParams(window.location.search);
+    const rawUrlLang = urlParams.get('lang');
+    const browserLang = pickBestLanguage();
+    const urlLang = rawUrlLang ? pickBestLanguage(AVAILABLE, [rawUrlLang]) : browserLang;
+
+    document.getElementById('lang-select').value = urlLang;
+    loadQuotes(urlLang);
+</script>
+
+    <!-- Meny LÄNK TILL DEN SEPARERADE MENY-JS:EN (ETT STEG UPP) -->
+    <script src="../menu.js"></script>
+
+    <!-- Sidfot LÄNK TILL DEN SEPARERADE FOTNOT-JS:EN (ETTS STEG NER) -->
+    <script src="../footer.js"></script>
+
+</body>
+</html>
