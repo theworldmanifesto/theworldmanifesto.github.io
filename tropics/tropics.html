@@ -252,7 +252,6 @@ body.tropics-page .dropdown-content a {
     border-radius: 16px;
     z-index: 100;
 }
-        }
         #info-close { float: right; cursor: pointer; font-size: 16px; color: #aaa; line-height: 1; }
         #info-close:hover { color: #fff; }
         .badge {
@@ -322,14 +321,15 @@ body.tropics-page .dropdown-content a {
             border-left: 3px solid #fff;
         }
 
-.snowflake-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.15em;
-    margin-right: 0.25em;
-}
-
+        /* --- Snöflinge-ikon (ersätter Unicode ❄️) --- */
+        .snowflake-icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            margin-right: 0.25em;
+        }
+        
         .globe-label {
             position: absolute;
             z-index: 15;
@@ -1050,11 +1050,11 @@ body.tropics-page .dropdown-content a {
                 country: "Land",
                 island: "Ö",
                 territory: "Territorium",
-                polarArctic: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> ARKTIS",
-                polarAntarctic: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> ANTARKTIS",
+                polarArctic: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> ARKTIS',
+                polarAntarctic: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> ANTARKTIS',
                 polarArcticDesc: "Havsis och polarnatt dominerar detta frusna rike.",
                 polarAntarcticDesc: "Den kallaste, blåsigaste och torraste kontinenten på jorden.",
-                snowMass: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> Snömassa:",
+                snowMass: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> Snömassa:',
                 tons: "",
                 polarTempArctic: "-28°C",
                 polarTempAntarctic: "-49°C"
@@ -1069,11 +1069,11 @@ body.tropics-page .dropdown-content a {
                 country: "国家",
                 island: "岛屿",
                 territory: "领土",
-                polarArctic: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> 北极圈",
-                polarAntarctic: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> 南极圈",
+                polarArctic: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> 北极圈',
+                polarAntarctic: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> 南极圈',
                 polarArcticDesc: "海冰和极夜主导着这个冰冻的领域。",
                 polarAntarcticDesc: "地球上最冷、风最大、最干燥的大陆。",
-                snowMass: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> 积雪质量:",
+                snowMass: '<img src="tropics_pics/Snowflake.svg" alt="" class="snowflake-icon"> 积雪质量:',
                 tons: "",
                 polarTempArctic: "-28°C",
                 polarTempAntarctic: "-49°C"
@@ -1129,20 +1129,17 @@ body.tropics-page .dropdown-content a {
         const langButtonLabel = document.getElementById('lang-button-label');
         const langList = document.getElementById('lang-list');
 
-        // Öppna/stäng listan när man klickar på knappen
         langButton.addEventListener('click', (e) => {
             e.stopPropagation();
             langList.classList.toggle('open');
         });
 
-        // Klick utanför stänger listan
         document.addEventListener('click', (e) => {
             if (!langList.contains(e.target) && e.target !== langButton) {
                 langList.classList.remove('open');
             }
         });
 
-        // Välj språk
         langList.querySelectorAll('.lang-option').forEach(opt => {
             opt.addEventListener('click', () => {
                 const lang = opt.dataset.lang;
@@ -1151,7 +1148,6 @@ body.tropics-page .dropdown-content a {
             });
         });
 
-        // Uppdatera knappen (flagga + text + markering i listan)
         function updateLangButton(lang) {
             const meta = LANG_META[lang] || LANG_META['en'];
             langButtonFlag.src = meta.flag;
@@ -1161,7 +1157,6 @@ body.tropics-page .dropdown-content a {
             });
         }
         
-        // Switch language function
         function switchLanguage(lang) {
             currentLang = lang;
             updateLangButton(lang);
