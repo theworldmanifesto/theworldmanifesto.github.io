@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Ljusa cyan-högdagrar (3D-toppar) -->
+    <linearGradient id="gradHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#80d8ff"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    
+    <!-- Klarblå fasett -->
+    <linearGradient id="gradLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="100%" stop-color="#0091ea"/>
+    </linearGradient>
+    
+    <!-- Mellanblå skugga -->
+    <linearGradient id="gradMedium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0091ea"/>
+      <stop offset="100%" stop-color="#0055b5"/>
+    </linearGradient>
+
+    <!-- Djupblå skugga (3D-baksida) -->
+    <linearGradient id="gradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#003c8f"/>
+      <stop offset="100%" stop-color="#001970"/>
+    </linearGradient>
+
+    <!-- Subtil glöd för maximal synlighet mot svart bakgrund -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComponentTransfer in="blur" result="brightBlur">
+        <feFuncA type="linear" slope="0.7"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="brightBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(100, 100)" filter="url(#neonGlow)">
+    <!-- 3D-Arm Mall -->
+    <g id="arm3d">
+      <!-- Stam Vänster (Ljus) & Höger (Mörk skugga) -->
+      <polygon points="0,0 -4,-45 0,-85 0,0" fill="url(#gradHighlight)"/>
+      <polygon points="0,0 4,-45 0,-85 0,0" fill="url(#gradDark)"/>
+
+      <!-- Övre gren Vänster -->
+      <polygon points="0,-50 -28,-72 -14,-76" fill="url(#gradHighlight)"/>
+      <polygon points="0,-50 -28,-72 -7,-58" fill="url(#gradMedium)"/>
+
+      <!-- Övre gren Höger -->
+      <polygon points="0,-50 28,-72 7,-58" fill="url(#gradLight)"/>
+      <polygon points="0,-50 28,-72 14,-76" fill="url(#gradDark)"/>
+
+      <!-- Nedre gren Vänster -->
+      <polygon points="0,-30 -20,-48 -10,-51" fill="url(#gradHighlight)"/>
+      <polygon points="0,-30 -20,-48 -5,-37" fill="url(#gradMedium)"/>
+
+      <!-- Nedre gren Höger -->
+      <polygon points="0,-30 20,-48 5,-37" fill="url(#gradLight)"/>
+      <polygon points="0,-30 20,-48 10,-51" fill="url(#gradDark)"/>
+      
+      <!-- Spets-kristall -->
+      <polygon points="0,-85 -6,-72 0,-68" fill="url(#gradHighlight)"/>
+      <polygon points="0,-85 6,-72 0,-68" fill="url(#gradDark)"/>
+    </g>
+
+    <!-- Rotera armen i 6 vinklar för komplett 3D-stjärna -->
+    <use href="#arm3d" transform="rotate(60)"/>
+    <use href="#arm3d" transform="rotate(120)"/>
+    <use href="#arm3d" transform="rotate(180)"/>
+    <use href="#arm3d" transform="rotate(240)"/>
+    <use href="#arm3d" transform="rotate(300)"/>
+
+    <!-- Central 3D-diamant i mitten -->
+    <polygon points="0,0 0,-16 14,-8" fill="url(#gradHighlight)"/>
+    <polygon points="0,0 14,-8 14,8" fill="url(#gradLight)"/>
+    <polygon points="0,0 14,8 0,16" fill="url(#gradMedium)"/>
+    <polygon points="0,0 0,16 -14,8" fill="url(#gradDark)"/>
+    <polygon points="0,0 -14,8 -14,-8" fill="url(#gradMedium)"/>
+    <polygon points="0,0 -14,-8 0,-16" fill="url(#gradHighlight)"/>
+  </g>
+</svg>
