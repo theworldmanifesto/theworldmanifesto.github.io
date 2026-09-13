@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <radialGradient id="oceanGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#00c6ff" />
+      <stop offset="50%" stop-color="#0072ff" />
+      <stop offset="100%" stop-color="#003399" />
+    </radialGradient>
+    <linearGradient id="landGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8ff78" />
+      <stop offset="50%" stop-color="#78ffd6" />
+      <stop offset="100%" stop-color="#11998e" />
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="8" stdDeviation="5" flood-color="#001d4a" flood-opacity="0.4" />
+    </filter>
+    <clipPath id="globeClip">
+      <circle cx="64" cy="64" r="50" />
+    </clipPath>
+  </defs>
+  <!-- Glob-bas -->
+  <circle cx="64" cy="64" r="50" fill="url(#oceanGrad)" filter="url(#shadow3)" />
+
+  <!-- Kontinenter -->
+  <g clip-path="url(#globeClip)">
+    <!-- Nordamerika -->
+    <path d="M 28 28 C 32 20, 55 22, 60 30 C 65 38, 52 48, 48 52 C 42 50, 36 55, 32 45 C 28 40, 24 32, 28 28 Z" fill="url(#landGrad)" />
+    <!-- Mellanameryka -->
+    <path d="M 48 52 Q 52 58 56 62 L 53 65 L 46 56 Z" fill="url(#landGrad)" />
+    <!-- Sydamerika -->
+    <path d="M 53 64 C 62 62, 80 68, 76 82 C 72 94, 60 108, 52 106 C 48 100, 46 82, 48 74 C 50 68, 48 65, 53 64 Z" fill="url(#landGrad)" />
+    
+    <!-- Tropiskt solsken/värmebälte (Ekvatorn) -->
+    <rect x="14" y="52" width="100" height="24" fill="#ffea00" opacity="0.18" />
+
+    <!-- Blänk / Highlight -->
+    <path d="M 30 22 A 42 42 0 0 1 85 18 A 48 48 0 0 0 30 22 Z" fill="#ffffff" opacity="0.3" />
+  </g>
+</svg>
