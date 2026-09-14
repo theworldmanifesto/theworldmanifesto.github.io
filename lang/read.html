@@ -401,12 +401,41 @@ async function loadText() {
         let inTable = false;
         let sepCount = 0;
 
-        for (let i = 3; i < nonEmptyLines.length; i++) {
-            let rawLine = nonEmptyLines[i];
-            let line = rawLine.trim();
+        // === NYTT: Slå ihop rader som hör till samma logiska rad ===
+        const mergedLines = [];
+        let buffer = '';
 
-            // Räkna "===" -separatorer. De 2 första (och allt som låg emellan
-            // dem, dvs. den gamla copyright-texten) hoppas helt över.
+        for (const rawLine of nonEmptyLines) {
+            const line = rawLine.replace(/\s+$/, '');
+            const trimmed = line.trim();
+
+            if (trimmed === '' || trimmed.match(/^=+$/)) {
+                if (buffer) {
+                    mergedLines.push(buffer);
+                    buffer = '';
+                }
+                mergedLines.push(trimmed);
+                continue;
+            }
+
+            if (buffer === '') {
+                buffer = line;
+            } else {
+                const bufTabs = (buffer.match(/\t/g) || []).length;
+                if (bufTabs >= 2 && !buffer.endsWith('\t')) {
+                    mergedLines.push(buffer);
+                    buffer = line;
+                } else {
+                    buffer += ' ' + trimmed;
+                }
+            }
+        }
+        if (buffer) mergedLines.push(buffer);
+
+        // === Loopa över de ihopslagna raderna ===
+        for (let i = 0; i < mergedLines.length; i++) {
+            let line = mergedLines[i];
+
             if (line.match(/^=+$/)) {
                 sepCount++;
                 if (sepCount <= 2) continue;
