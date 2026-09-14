@@ -1,7 +1,7 @@
 Världsmanifestet
 
 
-Det definitiva överflödet
+det definitiva överflödet
 
 
 
@@ -165,10 +165,15 @@ När den loopen är sluten blir mänsklighetens överflöd inte bara en politisk
 
 För att nå hit krävs ingen blind väntan på framtiden, utan ett omedelbart verkställande. Alliansens (Europa, Nordamerika och Sydamerika) absoluta huvuduppgift vid maktövertagandet är att slå samman sina resurser i ett gemensamt, statligt utvecklingsprojekt: Det Planetära Projektet för den Autonoma Loopen. Detta är vår tids Manhattanprojekt eller Apollo-program, med det enda målet att göra robotparken 100 % självreplikerande och självförsörjande på energi.
 
+
 Genomförandet vilar på två fundament:
+
+
 Den embryonala tekniken
 
 De enskilda komponenterna – avancerade AI-modeller, 3D-printing av metaller och automatiserade fabriker – existerar redan spridda över världen. Maskinen har redan kapacitet att bygga delar av maskinen. Det som saknas är inte tekniken, utan den centraliserade, skuldfriska viljan att stänga kretsloppet.
+
+
 Den planetära symbiosen
 
 Det är här integrationen med de tropiska höglandszonerna blir helt avgörande. Detta är ingen finansiell transaktion, utan en teknologisk och geografisk symbios. De nordliga zonerna bidrar med forskningen och den existerande högteknologin, medan Sydamerika bidrar med ytan, den konstanta solenergin och råvarorna för att testa, rulla ut och expandera de självreplikerande systemen under optimala termiska förhållanden.
@@ -186,12 +191,18 @@ C.  Den Statliga Intelligensens Suveränitet
 
 
 För att säkra mänsklighetens fred och stabilitet i en totalrobotiserad värld, måste den intellektuella infrastruktur som styr staten förbli under oinskränkt statlig kontroll.
+
+
 Exklusivt Statligt Ägande
 
 Den artificiella intelligens som administrerar nationens resurser, logistik och produktionskapacitet utgör landets strategiska kärna. All utveckling, kodbas och modellering av denna intelligens skall ske i statlig regi. Privata aktörer förbjuds att utveckla eller integrera konkurrerande styrsystem i den nationella infrastrukturen. Detta för att förhindra att vinstintressen eller ogenomskinliga algoritmer korrumperar systemets logik.
+
+
 Den Rationella Administratören
 
 AI:n skall fungera som en obesticklig administratör. Den ägs inte av enskilda individer, utan är en del av maskinparkens gemensamma egendom. Dess syfte är att optimera för medborgarnas välmående, resursfördelning och hållbarhet, fri från politisk eller kommersiell påverkan.
+
+
 Transparens och Kontroll
 
 Staten garanterar att systemets matematiska modeller och beslutsunderlag är tillgängliga för nationell granskning. Inget beslut av betydelse för riket får fattas av en "svart låda" som inte kan förklaras utifrån konstitutionens grundprinciper. Staten utvecklar, äger och förvaltar detta super-AI som en del av den allmänna nyttan, som en garant för att samhället aldrig återfaller i skuld eller resursbrist.
@@ -696,7 +707,7 @@ O.  "Lyxfällan" och Det Dolda Tvångsarbetet
 
 1. Illusionen av valfrihet
 
-Under det gamla systemet är medborgarna villkorade att tro att deras arbete är nödvändigt för att samhället ska fungera. Genom att dingla med löftet om "lyx" och "status" (den så kallade Lyxfällan), lockar systemet individer till frivillig skuldsättning. Så länge medborgarna tror att de måste arbeta för att "ha råd med" sin livsstil, förblir de låsta i skuldcykeln. De inser inte att de varor de kämpar för skulle ha kunnat produceras helt gratis av robotparken, om bara ägarstrukturen hade förändrats.
+I det gamla systemet är medborgarna förvillade att tro att deras arbete är nödvändigt för att samhället ska fungera. Genom att frestas med löftet om "lyx" och "status" (den så kallade Lyxfällan), lockar systemet individer till frivillig skuldsättning. Så länge medborgarna tror att de måste arbeta för att "ha råd med" sin livsstil, förblir de låsta i skuldcykeln. De inser inte att de varor de kämpar för skulle ha kunnat produceras helt gratis av robotparken, om bara ägarstrukturen hade förändrats.
 
 
 2. Dolt tvångsarbete
@@ -810,7 +821,7 @@ En människa kostar 100 % i lön + ca 30--50 % i sociala avgifter, försäkringa
 
 D. Slutsats
 
-Att använda mänsklig arbetskraft för produktion som kan robotiseras innebär en kostnadsökning på över 1 000 %. Det är denna "mänskliga straffavgift" som kvarstadspartierna tvingar folket att betala genom skatt och höga priser.
+Att använda mänsklig arbetskraft för produktion som kan robotiseras innebär en kostnadsökning på över 1000 %. Det är denna "mänskliga straffavgift" som kvarstadspartierna tvingar folket att betala genom skatt och höga priser.
 
 
 
