@@ -627,6 +627,10 @@ Bruttonationalresurs			Skuldavskrivning			Suveränitetsandel
  								lag)
 
 --- START TABLE ---
+Bruttonationalresurs			Skuldavskrivning			Suveränitetsandel
+(Gratis täckningsgrad)			(Enligt konstitutionell		(Statlig utbetalning)
+ 								lag)
+
 25 %							25 % av alla				Första utbetalningen
 (Baslivsmedel, Energi			privata skulder raderas		aktiveras. Medborgarna får
 & El)							omedelbart.					köpkraft för det som ännu
