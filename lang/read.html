@@ -344,40 +344,61 @@ document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
         document.getElementById('book-subtitle').textContent = langData.subtitle;
 
         // ============================================================
-        // 3. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
+        // 3. TABELLÖVERSÄTTNINGAR – ALLA 42 SPRÅK
         // ============================================================
-        function splitRow(row) {
-            if (row.includes('\t')) {
-                return row.split(/\t+/).map(cell => cell.trim()).filter(cell => cell !== '');
-            }
-            return row.split(/\s*\|\s*/).map(cell => cell.trim()).filter(cell => cell !== '');
+const tableTranslations = {
+    'en': {
+        title: 'The Freedom Staircase: From Debt to Sovereignty',
+        col1: 'Gross National Resource (GNR)',
+        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
+        col3: 'Sovereignty Share<br>(State Payout)',
+        rows: [
+            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
+            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
+            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
+            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
+        ]
+    },
+    'sv': {
+        title: 'Frihetstrappan: Från skuld till suveränitet',
+        col1: 'Bruttonationalresurs<br>(Gratis täckningsgrad)',
+        col2: 'Skuldavskrivning<br>(Enligt konstitutionell lag)',
+        col3: 'Suveränitetsandel<br>(Statlig utbetalning)',
+        rows: [
+            { gnr: '25 %<br>(Baslivsmedel, Energi & El)', debt: '25 % av alla privata skulder raderas omedelbart.', share: 'Första utbetalningen aktiveras. Medborgarna får köpkraft för det som ännu inte är gratis.' },
+            { gnr: '50 %<br>(Boende & Transport)', debt: '50 % av alla resterande skulder raderas.', share: 'Andelen ökar i takt med den nationella robotparkens produktionskapacitet.' },
+            { gnr: '75 %<br>(Teknik, Mervärdesvaror & Utbildning)', debt: '75 % av alla skulder raderas från bankernas böcker.', share: 'Andelen optimeras. Behovet av pengar sjunker dramatiskt då lyxsfären krymper.' },
+            { gnr: '100 %<br>(Det Definitiva Överflödet)', debt: '100 % av alla skulder och pengar upphör att existera.', share: 'Systemet fullbordat. Valutor blir överflödiga; total gratisekonomi råder.' }
+        ]
+    },
+    // --- RESTEN AV DE 42 SPRÅKEN ---
+    // Kopiera blocken fi, no, da, is, zh, fit, se, hi, es, fr, ar, id, bn,
+    // pt, ru, uk, bg, ur, ja, tl, de, ko, th, vi, tr, fa, sw, it, pl, nl,
+    // ro, el, af, zu, xh, cs, hu, he, crs, fo från din "read - Gammal 1.html"
+    // och klistra in dem här, precis före den avslutande "};"
+};
+
+        function getTranslation(langCode) {
+            return tableTranslations[langCode] || tableTranslations['en'];
         }
 
-        // ============================================================
-        // 4. BYGG EN HTML-TABELL FRÅN TABELLRADER
-        // ============================================================
-        function buildTable(rows) {
-            if (rows.length === 0) return '';
+        function buildTable(translation) {
+            if (!translation) return '<p class="body-text">Table translation not available.</p>';
 
-            const splitRows = rows.map(row => splitRow(row));
-            const maxCols = Math.max(...splitRows.map(r => r.length));
-            const normalizedRows = splitRows.map(r => {
-                while (r.length < maxCols) r.push('');
-                return r;
-            });
-
-            let html = `<table class="manifesto-table">`;
-            const headers = normalizedRows[0];
-            html += `<thead><tr>`;
-            headers.forEach(h => html += `<th>${h}</th>`);
+            let html = `<h2 style="font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(16pt, 3vw, 20pt); font-weight: bold; text-align: center; margin: 30px 0 20px 0; color: #0055cc;">${translation.title}</h2>`;
+            html += `<table class="manifesto-table"><thead><tr>`;
+            html += `<th>${translation.col1}</th>`;
+            html += `<th>${translation.col2}</th>`;
+            html += `<th>${translation.col3}</th>`;
             html += `</tr></thead><tbody>`;
 
-            for (let r = 1; r < normalizedRows.length; r++) {
-                const cells = normalizedRows[r];
+            translation.rows.forEach(row => {
                 html += `<tr>`;
-                cells.forEach(c => html += `<td>${c}</td>`);
+                html += `<td><strong>${row.gnr}</strong></td>`;
+                html += `<td>${row.debt}</td>`;
+                html += `<td>${row.share}</td>`;
                 html += `</tr>`;
-            }
+            });
 
             html += `</tbody></table>`;
             return html;
@@ -389,87 +410,61 @@ document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
 async function loadText() {
     try {
         const response = await fetch(`lang_texts/${lang}.txt`);
-        if (!response.ok) throw new Error('Textfil saknas');
+        if (!response.ok) {
+            throw new Error(`Kunde inte hämta lang_texts/${lang}.txt (status: ${response.status})`);
+        }
         const text = await response.text();
 
-        const lines = text.split('\n');
-        const nonEmptyLines = lines.filter(line => line.trim() !== '');
+        if (text.trim() === '') {
+            throw new Error(`Filen lang_texts/${lang}.txt är tom!`);
+        }
+
+        const allLines = text.split('\n');
+        const nonEmptyLines = allLines.filter(line => line.trim() !== '');
+
         const bodyContent = document.getElementById('body-content');
         let currentHtml = '';
 
-        let tableRows = [];
-        let inTable = false;
-        let sepCount = 0;
-
         for (let i = 3; i < nonEmptyLines.length; i++) {
-            let rawLine = nonEmptyLines[i];
-            let line = rawLine.trim();
+            const line = nonEmptyLines[i].trim();
 
-            // Räkna "===" -separatorer. De 2 första (och allt som låg emellan
-            // dem, dvs. den gamla copyright-texten) hoppas helt över.
+            if (line === '') continue;
+
+            if (line === '--- START TABLE ---') {
+                while (i < nonEmptyLines.length && nonEmptyLines[i].trim() !== '--- END TABLE ---') {
+                    i++;
+                }
+                const translation = getTranslation(lang);
+                currentHtml += buildTable(translation);
+                continue;
+            }
+
             if (line.match(/^=+$/)) {
-                sepCount++;
-                if (sepCount <= 2) continue;
                 currentHtml += `<hr class="separator-line">`;
-                continue;
-            }
-            if (sepCount < 2) continue;
-
-            if (line === '') {
-                if (inTable && tableRows.length > 0) {
-                    currentHtml += buildTable(tableRows);
-                    tableRows = [];
-                    inTable = false;
-                }
-                continue;
-            }
-
-            const pipeCount = (line.match(/\|/g) || []).length;
-            const tabCount = (line.match(/\t/g) || []).length;
-            const isTableRow = (pipeCount >= 2 || tabCount >= 2);
-
-            if (isTableRow) {
-                if (!inTable) {
-                    inTable = true;
-                    tableRows = [];
-                }
-                tableRows.push(line);
-                continue;
-            }
-
-            if (inTable && tableRows.length > 0) {
-                currentHtml += buildTable(tableRows);
-                tableRows = [];
-                inTable = false;
-            }
-
-            if (line.toLowerCase().includes('table of contents') || line.toLowerCase().includes('innehållsförteckning') || line.toLowerCase().includes('innholdsfortegnelse') || line.toLowerCase().includes('indholdsfortegnelse') || line.toLowerCase().includes('sisällysluettelo') || line.toLowerCase().includes('table des matières') || line.toLowerCase().includes('inhaltsverzeichnis') || line.toLowerCase().includes('índice') || line.toLowerCase().includes('indice') || line.toLowerCase().includes('contenidos') || line.toLowerCase().includes('sommario') || line.toLowerCase().includes('περιεχόμενα') || line.toLowerCase().includes('содержание') || line.toLowerCase().includes('содржина') || line.toLowerCase().includes('spis treści') || line.toLowerCase().includes('obsah') || line.toLowerCase().includes('tartalomjegyzék') || line.toLowerCase().includes('cuprins') || line.toLowerCase().includes('inhoudsopgave') || line.toLowerCase().includes('sisukord') || line.toLowerCase().includes('saturs') || line.toLowerCase().includes('turinys') || line.toLowerCase().includes('kazalo') || line.toLowerCase().includes('sadržaj') || line.toLowerCase().includes('зміст') || line.toLowerCase().includes('fihirist') || line.toLowerCase().includes('toc') || line.toLowerCase().includes('daftar isi') || line.toLowerCase().includes('목차') || line.toLowerCase().includes('目次') || line.toLowerCase().includes('目录') || line.toLowerCase().includes('目錄') || line.toLowerCase().includes('สารบัญ') || line.toLowerCase().includes('mục lục') || line.toLowerCase().includes('içindekiler') || line.toLowerCase().includes('فهرست') || line.toLowerCase().includes('محتويات') || line.toLowerCase().includes('תוכן עניינים') || line.toLowerCase().includes('अनुक्रमणिका') || line.toLowerCase().includes('সূচিপত্র') || line.toLowerCase().includes('taaloga') || line.toLowerCase().includes('dilolo') || line.toLowerCase().includes('okuqukethwe') || line.toLowerCase().includes('yandikimo') || line.toLowerCase().includes('efnisyfirlit') || line.toLowerCase().includes('innihaldsyvirlit')) {
-                currentHtml += `<h2 class="toc-title">${line}</h2><div style="height:0.8em"></div>`;
-                continue;
-            }
-
-            if (line.startsWith('"') && line.endsWith('"')) {
+            } else if (line.toLowerCase() === 'table of contents' || line.toLowerCase() === 'innehållsförteckning') {
+                currentHtml += `<h2 class="toc-title">${line}</h2>`;
+            } else if (line.startsWith('"') && line.endsWith('"')) {
                 currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
-                continue;
-            }
-
-            if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+            } else if (line.toLowerCase() === 'to be done' || line.toLowerCase() === 'att göras') {
+                currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
+            } else if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
                 currentHtml += `<p class="body-text">${line}</p>`;
-                continue;
+            } else {
+                currentHtml += `<p class="body-text">${line}</p>`;
             }
-
-            currentHtml += `<p class="body-text">${line}</p>`;
-        }
-
-        if (inTable && tableRows.length > 0) {
-            currentHtml += buildTable(tableRows);
         }
 
         bodyContent.innerHTML = currentHtml;
 
     } catch (error) {
         console.error('Fel vid laddning:', error);
-        document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
+        document.getElementById('body-content').innerHTML = `
+            <p class="body-text" style="color: #cc0000; text-align: center;">
+                ❌ Kunde inte ladda texten.<br>
+                <span style="font-size: 12px;">${error.message}</span><br>
+                <span style="font-size: 12px;">Kontrollera att filen <strong>lang_texts/${lang}.txt</strong> finns på servern.</span>
+            </p>
+        `;
     }
 }
 
