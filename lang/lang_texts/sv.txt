@@ -623,15 +623,10 @@ Frihetstrappan: Den konstitutionella utfasningen
 
 
 --- START TABLE ---
-Bruttonationalresurs			Skuldavskrivning			Suveränitetsandel
-(Gratis täckningsgrad)			(Enligt konstitutionell lag)		(Statlig utbetalning)
-
+Bruttonationalresurs (Gratis täckningsgrad)	Skuldavskrivning (Enligt konstitutionell lag)	Suveränitetsandel (Statlig utbetalning)
 25 % (Baslivsmedel, Energi & El)	25 % av alla privata skulder raderasomedelbart.	Första utbetalningen aktiveras. Medborgarna får köpkraft för det som ännu inte är gratis.
-
 50 % (Boende & Transport)	50 % av alla resterande skulder raderas.	Andelen ökar i takt med den nationella robotparkens produktionskapacitet.
-
 75 % (Teknik, Mervärdes-varor & Utbildning)	75 % av alla skulder raderas från bankernas böcker.	Andelen optimeras. Behovet av pengar sjunker dramatiskt då lyxsfären krymper.
-
 100 % (Det Definitiva Överflödet)	Alla skulder och pengar har upphört att existera.	Systemet fullbordat. Valutor blir överflödiga; total gratisekonomi råder.
 --- END TABLE ---
 
