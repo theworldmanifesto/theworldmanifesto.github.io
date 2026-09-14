@@ -401,12 +401,49 @@ async function loadText() {
         let inTable = false;
         let sepCount = 0;
 
-        for (let i = 3; i < nonEmptyLines.length; i++) {
-            let rawLine = nonEmptyLines[i];
-            let line = rawLine.trim();
+        // === NYTT: Slå ihop rader som hör till samma logiska rad ===
+        // En rad som har färre än 2 tabbar (och inte är en rubrik/separator)
+        // är en fortsättning på föregående rad.
+        const mergedLines = [];
+        let buffer = '';
 
-            // Räkna "===" -separatorer. De 2 första (och allt som låg emellan
-            // dem, dvs. den gamla copyright-texten) hoppas helt över.
+        for (const rawLine of nonEmptyLines) {
+            const line = rawLine.replace(/\s+$/, ''); // ta bort trailing spaces
+            const trimmed = line.trim();
+
+            // Hoppa över separatorer och tomma rader – de hanteras separat
+            if (trimmed === '' || trimmed.match(/^=+$/)) {
+                if (buffer) {
+                    mergedLines.push(buffer);
+                    buffer = '';
+                }
+                mergedLines.push(trimmed);
+                continue;
+            }
+
+            const tabCount = (line.match(/\t/g) || []).length;
+
+            if (buffer === '') {
+                buffer = line;
+            } else {
+                // Om bufferten redan har 2+ tabbar och inte slutar med tabb
+                // → den är färdig, börja på ny rad
+                const bufTabs = (buffer.match(/\t/g) || []).length;
+                if (bufTabs >= 2 && !buffer.endsWith('\t')) {
+                    mergedLines.push(buffer);
+                    buffer = line;
+                } else {
+                    // Annars: slå ihop med föregående
+                    buffer += ' ' + trimmed;
+                }
+            }
+        }
+        if (buffer) mergedLines.push(buffer);
+
+        // === Loopa över de ihopslagna raderna ===
+        for (let i = 0; i < mergedLines.length; i++) {
+            let line = mergedLines[i];
+
             if (line.match(/^=+$/)) {
                 sepCount++;
                 if (sepCount <= 2) continue;
