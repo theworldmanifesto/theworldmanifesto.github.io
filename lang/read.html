@@ -283,6 +283,7 @@ document.getElementById('book-subtitle').textContent = langData.subtitle;
 
 // ============================================================
 // 3. LADDA TEXT – RAKT UPP OCH NER, INGEN TABELL, INGEN TOC
+//    Behåller tomrader så att styckeindelningen bevaras.
 // ============================================================
 async function loadText() {
     const bodyContent = document.getElementById('body-content');
@@ -292,12 +293,37 @@ async function loadText() {
         const text = await response.text();
 
         const lines = text.split('\n');
-        const nonEmptyLines = lines.filter(line => line.trim() !== '');
-        let currentHtml = '';
 
-        for (let i = 3; i < nonEmptyLines.length; i++) {
-            const line = nonEmptyLines[i].trim();
-            if (line === '') continue;
+        // Hitta de tre första icke-tomma raderna (titel, undertitel, författare)
+        // och börja rendera efter dem. Behåll tomrader i resten.
+        let nonEmptySeen = 0;
+        let startIndex = 0;
+        for (let i = 0; i < lines.length; i++) {
+            if (lines[i].trim() !== '') {
+                nonEmptySeen++;
+                if (nonEmptySeen === 3) {
+                    startIndex = i + 1;
+                    break;
+                }
+            }
+        }
+
+        let currentHtml = '';
+        let lastWasEmpty = false;
+
+        for (let i = startIndex; i < lines.length; i++) {
+            const raw = lines[i];
+            const line = raw.trim();
+
+            // Tom rad → styckeavbrott, men kollapsa flera i följd till ett
+            if (line === '') {
+                if (!lastWasEmpty) {
+                    currentHtml += `<div class="paragraph-break"></div>`;
+                    lastWasEmpty = true;
+                }
+                continue;
+            }
+            lastWasEmpty = false;
 
             if (line.match(/^=+$/)) {
                 currentHtml += `<hr class="separator-line">`;
