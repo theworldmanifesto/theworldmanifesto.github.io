@@ -47,7 +47,8 @@
             max-width: 300px;
             margin: 25px auto;
         }
-        .toc-title { margin-bottom: 10px;
+        .toc-title {
+            margin-bottom: 10px;
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(16pt, 3vw, 20pt);
             font-weight: bold;
@@ -56,81 +57,32 @@
             color: #1a1a1a;
         }
 
-.manifesto-table {
-    width: 100%;
-    max-width: 700px;
-    margin: 20px auto;
-    border-collapse: collapse;
-    font-family: 'Gelasio', 'Georgia', serif;
-    font-size: clamp(10pt, 2vw, 12pt);
-    text-align: start;
-    table-layout: fixed;
-}
-.manifesto-table th {
-    font-weight: bold;
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    text-align: center;
-    width: 33.33%;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow-wrap: break-word;
-    background-color: #f7f7f7;
-}
-.manifesto-table td {
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    vertical-align: top;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow-wrap: break-word;
-}
-.manifesto-table td:first-child {
-    font-weight: bold;
-    text-align: center;
-    width: 33.33%;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow-wrap: break-word;
-}
-
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
             .language-name { font-size: 9pt !important; }
             .body-text { padding: 0 15px; }
-            .manifesto-table td, .manifesto-table th {
-                padding: 6px 8px;
-                font-size: 9pt;
-            }
         }
         @media only screen and (max-width: 430px) {
             .book-title { font-size: 22pt !important; }
             .book-subtitle { font-size: 11pt !important; }
             .language-name { font-size: 8pt !important; }
-            .manifesto-table td, .manifesto-table th {
-                padding: 4px 6px;
-                font-size: 8pt;
-            }
         }
     </style>
 
-    <!-- NYTT: Din språk-fallback med localStorage -->
+    <!-- Språk-fallback med localStorage -->
     <script type="module">
       import { pickBestLanguage, saveLanguage, getSavedLanguage, AVAILABLE, RELATED_FALLBACK } from './js/lang.js';
-      
-      // Exponera för fallback-funktionen ovan
+
       window._available = AVAILABLE;
       window._related = RELATED_FALLBACK;
       window._pick = () => pickBestLanguage(AVAILABLE);
       window._saveLang = saveLanguage;
       window._getSaved = getSavedLanguage;
 
-      // Hantera språkval
       const urlParams = new URLSearchParams(window.location.search);
       const urlLangParam = urlParams.get('lang');
-      
-      // Om ?lang= finns i URL, spara det
+
       if (urlLangParam) {
           const lc = urlLangParam.toLowerCase();
           const mapped = RELATED_FALLBACK[lc] || lc;
@@ -141,12 +93,10 @@
           }
       }
 
-      // Ställ in menyn när sidan laddat
       window.addEventListener('DOMContentLoaded', () => {
           const select = document.getElementById('read-select');
           if (!select) return;
-          
-          // Sätt aktuellt språk i menyn
+
           const current = urlLangParam ? urlLangParam.toLowerCase() : pickBestLanguage(AVAILABLE);
           const mappedCurrent = RELATED_FALLBACK[current] || current;
           if (select.querySelector(`option[value="${mappedCurrent}"]`)) {
@@ -155,25 +105,22 @@
               select.value = current;
           }
 
-          // När besökaren väljer språk
           select.addEventListener('change', (e) => {
               const val = e.target.value;
               if (!val) return;
-              saveLanguage(val); // Kommer ihåg utan cookies!
+              saveLanguage(val);
               window.location.href = 'read.html?lang=' + val;
           });
       });
     </script>
 
-    <link rel="stylesheet" href="../background_color.css">    <!-- Bakgrundsfärg -->
-
+    <link rel="stylesheet" href="../background_color.css">
 </head>
 <body>
     <div id="main-menu"></div>
 
-    <!-- READ – språkvalsrullgardin -->
     <div style="text-align: center; margin: 10px 0 20px 0;">
-        <select id="read-select" id="read-select" style="padding: 6px 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 13px; font-family: sans-serif; background: rgba(255, 255, 255, 0.9);">
+        <select id="read-select" style="padding: 6px 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 13px; font-family: sans-serif; background: rgba(255, 255, 255, 0.9);">
             <option value="">Välj språk</option>
             <option value="af">Afrikaans</option>
             <option value="ar">العربية</option>
@@ -229,11 +176,11 @@
         <h1 id="book-title" class="book-title">The World Manifesto</h1>
         <h2 id="book-subtitle" class="book-subtitle">The Manifesto for Definitive Abundance</h2>
         <br>
-<div id="author-container"></div>
-<br>
-<div id="copyright-container"></div>
-<br>
-<div id="body-content"></div>
+        <div id="author-container"></div>
+        <br>
+        <div id="copyright-container"></div>
+        <br>
+        <div id="body-content"></div>
     </div>
 
     <script src="js/author.js"></script>
@@ -242,10 +189,7 @@
     <script src="../footer.js"></script>
     <script>
 // ============================================================
-// 1. SPRÅKDATA – 42 språk (SLUTGILTIG VERSION)
-// Huvudtitel: Title Case (versaler på huvudord)
-// Undertitel: meningstil (endast första ordet versalt) – utom tyska
-// Tyskan: versaler på alla substantiv (Der, Überfluss)
+// 1. SPRÅKDATA
 // ============================================================
 const languages = {
     'sv': { flag: 'flags/se.svg', name: 'Svenska', title: 'Världsmanifestet', subtitle: 'det definitiva överflödet' },
@@ -292,163 +236,73 @@ const languages = {
     'fo': { flag: 'flags/fo.svg', name: 'Føroyskt', title: 'Heimsmanifestið', subtitle: 'endalig nøgd' }
 };
 
-        // NY: Använder din lang/js/lang.js med 324 dialekter + localStorage
-        // Den här funktionen ersätts av modul-versionen nedan, denna är bara fallback om modulen inte laddas
-        function getPreferredLanguage() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const urlLang = urlParams.get('lang');
-            if (urlLang) {
-                const lc = urlLang.toLowerCase();
-                // om det är en av dina 42, spara direkt
-                if (window._available && window._available.includes(lc)) {
-                    try { localStorage.setItem('world-manifesto-lang', lc); } catch(e){}
-                    return lc;
-                }
-                // annars kolla fallback-kartan om den finns
-                if (window._related && window._related[lc]) {
-                    const mapped = window._related[lc];
-                    try { localStorage.setItem('world-manifesto-lang', mapped); } catch(e){}
-                    return mapped;
-                }
-                if (languages[lc]) return lc;
-            }
-            // kolla sparat val
-            try {
-                const saved = localStorage.getItem('world-manifesto-lang');
-                if (saved && languages[saved]) return saved;
-            } catch(e){}
-            // fallback via din karta
-            if (window._pick) {
-                const best = window._pick();
-                if (languages[best]) return best;
-            }
-            const browserLang = navigator.language || navigator.languages?.[0] || 'en';
-            const langCode = browserLang.split('-')[0].toLowerCase();
-            if (languages[langCode]) return langCode;
-            return 'en';
+// ============================================================
+// 2. SPRÅKVAL
+// ============================================================
+function getPreferredLanguage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+    if (urlLang) {
+        const lc = urlLang.toLowerCase();
+        if (window._available && window._available.includes(lc)) {
+            try { localStorage.setItem('world-manifesto-lang', lc); } catch(e){}
+            return lc;
         }
+        if (window._related && window._related[lc]) {
+            const mapped = window._related[lc];
+            try { localStorage.setItem('world-manifesto-lang', mapped); } catch(e){}
+            return mapped;
+        }
+        if (languages[lc]) return lc;
+    }
+    try {
+        const saved = localStorage.getItem('world-manifesto-lang');
+        if (saved && languages[saved]) return saved;
+    } catch(e){}
+    if (window._pick) {
+        const best = window._pick();
+        if (languages[best]) return best;
+    }
+    const browserLang = navigator.language || (navigator.languages && navigator.languages[0]) || 'en';
+    const langCode = browserLang.split('-')[0].toLowerCase();
+    if (languages[langCode]) return langCode;
+    return 'en';
+}
 
-        const lang = getPreferredLanguage();
-        const langData = languages[lang];
+const lang = getPreferredLanguage();
+const langData = languages[lang] || languages['en'];
 const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
 document.documentElement.lang = lang;
 document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
-        
-        // Sätt flagga och språknamn
-        document.getElementById('flag-icon').src = langData.flag;
-        document.getElementById('flag-icon').alt = langData.name;
-        document.getElementById('language-label').textContent = langData.name;
 
-        // ⭐ UPPDATERA RUBRIKERNA ⭐
-        document.getElementById('book-title').textContent = langData.title;
-        document.getElementById('book-subtitle').textContent = langData.subtitle;
+document.getElementById('flag-icon').src = langData.flag;
+document.getElementById('flag-icon').alt = langData.name;
+document.getElementById('language-label').textContent = langData.name;
+document.getElementById('book-title').textContent = langData.title;
+document.getElementById('book-subtitle').textContent = langData.subtitle;
 
-        // ============================================================
-        // 3. TABELLÖVERSÄTTNINGAR – ALLA 42 SPRÅK
-        // ============================================================
-const tableTranslations = {
-    'en': {
-        title: 'The Freedom Staircase: From Debt to Sovereignty',
-        col1: 'Gross National Resource (GNR)',
-        col2: 'Debt Write-Off<br>(According to Constitutional Law)',
-        col3: 'Sovereignty Share<br>(State Payout)',
-        rows: [
-            { gnr: '25 %<br>(Basic Food, Energy & Electricity)', debt: '25 % of all private debts are written off immediately.', share: 'First payout is activated.<br>Citizens receive purchasing power for what is not yet free.' },
-            { gnr: '50 %<br>(Housing & Transport)', debt: '50 % of all remaining debts are written off.', share: 'The share increases in proportion to the national robot park\'s production capacity.' },
-            { gnr: '75 %<br>(Technology, Premium & Education)', debt: '75 % of all debts are written off from the banks\' books.', share: 'The share is optimized. The need for money drops dramatically as the luxury sphere shrinks.' },
-            { gnr: '100 %<br>(The Definitive Abundance)', debt: 'All debts and money have ceased to exist.', share: 'System complete. Currencies become obsolete; a total free economy prevails.' }
-        ]
-    },
-    'sv': {
-        title: 'Frihetstrappan: Från skuld till suveränitet',
-        col1: 'Bruttonationalresurs<br>(Gratis täckningsgrad)',
-        col2: 'Skuldavskrivning<br>(Enligt konstitutionell lag)',
-        col3: 'Suveränitetsandel<br>(Statlig utbetalning)',
-        rows: [
-            { gnr: '25 %<br>(Baslivsmedel, Energi & El)', debt: '25 % av alla privata skulder raderas omedelbart.', share: 'Första utbetalningen aktiveras. Medborgarna får köpkraft för det som ännu inte är gratis.' },
-            { gnr: '50 %<br>(Boende & Transport)', debt: '50 % av alla resterande skulder raderas.', share: 'Andelen ökar i takt med den nationella robotparkens produktionskapacitet.' },
-            { gnr: '75 %<br>(Teknik, Mervärdesvaror & Utbildning)', debt: '75 % av alla skulder raderas från bankernas böcker.', share: 'Andelen optimeras. Behovet av pengar sjunker dramatiskt då lyxsfären krymper.' },
-            { gnr: '100 %<br>(Det Definitiva Överflödet)', debt: '100 % av alla skulder och pengar upphör att existera.', share: 'Systemet fullbordat. Valutor blir överflödiga; total gratisekonomi råder.' }
-        ]
-    },
-    // --- RESTEN AV DE 42 SPRÅKEN ---
-    // Kopiera blocken fi, no, da, is, zh, fit, se, hi, es, fr, ar, id, bn,
-    // pt, ru, uk, bg, ur, ja, tl, de, ko, th, vi, tr, fa, sw, it, pl, nl,
-    // ro, el, af, zu, xh, cs, hu, he, crs, fo från din "read - Gammal 1.html"
-    // och klistra in dem här, precis före den avslutande "};"
-};
-
-        function getTranslation(langCode) {
-            return tableTranslations[langCode] || tableTranslations['en'];
-        }
-
-        function buildTable(translation) {
-            if (!translation) return '<p class="body-text">Table translation not available.</p>';
-
-            let html = `<h2 style="font-family: 'Gelasio', 'Georgia', serif; font-size: clamp(16pt, 3vw, 20pt); font-weight: bold; text-align: center; margin: 30px 0 20px 0; color: #0055cc;">${translation.title}</h2>`;
-            html += `<table class="manifesto-table"><thead><tr>`;
-            html += `<th>${translation.col1}</th>`;
-            html += `<th>${translation.col2}</th>`;
-            html += `<th>${translation.col3}</th>`;
-            html += `</tr></thead><tbody>`;
-
-            translation.rows.forEach(row => {
-                html += `<tr>`;
-                html += `<td><strong>${row.gnr}</strong></td>`;
-                html += `<td>${row.debt}</td>`;
-                html += `<td>${row.share}</td>`;
-                html += `</tr>`;
-            });
-
-            html += `</tbody></table>`;
-            return html;
-        }
-
-        // ============================================================
-        // 5. LADDA TEXT – HOPPAR ÖVER ALLT MELLAN ===-SEPARATORER
-        // ============================================================
+// ============================================================
+// 3. LADDA TEXT – RAKT UPP OCH NER, INGEN TABELL, INGEN TOC
+// ============================================================
 async function loadText() {
+    const bodyContent = document.getElementById('body-content');
     try {
         const response = await fetch(`lang_texts/${lang}.txt`);
-        if (!response.ok) {
-            throw new Error(`Kunde inte hämta lang_texts/${lang}.txt (status: ${response.status})`);
-        }
+        if (!response.ok) throw new Error('Textfil saknas');
         const text = await response.text();
 
-        if (text.trim() === '') {
-            throw new Error(`Filen lang_texts/${lang}.txt är tom!`);
-        }
-
-        const allLines = text.split('\n');
-        const nonEmptyLines = allLines.filter(line => line.trim() !== '');
-
-        const bodyContent = document.getElementById('body-content');
+        const lines = text.split('\n');
+        const nonEmptyLines = lines.filter(line => line.trim() !== '');
         let currentHtml = '';
 
         for (let i = 3; i < nonEmptyLines.length; i++) {
             const line = nonEmptyLines[i].trim();
-
             if (line === '') continue;
-
-            if (line === '--- START TABLE ---') {
-                while (i < nonEmptyLines.length && nonEmptyLines[i].trim() !== '--- END TABLE ---') {
-                    i++;
-                }
-                const translation = getTranslation(lang);
-                currentHtml += buildTable(translation);
-                continue;
-            }
 
             if (line.match(/^=+$/)) {
                 currentHtml += `<hr class="separator-line">`;
-            } else if (line.toLowerCase() === 'table of contents' || line.toLowerCase() === 'innehållsförteckning') {
-                currentHtml += `<h2 class="toc-title">${line}</h2>`;
             } else if (line.startsWith('"') && line.endsWith('"')) {
                 currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
-            } else if (line.toLowerCase() === 'to be done' || line.toLowerCase() === 'att göras') {
-                currentHtml += `<h2 style="font-family: 'Dancing Script', cursive; font-size: clamp(20pt, 5vw, 32pt); font-weight: normal; text-align: center; margin: 40px 0 20px 0; color: #1a1a1a;">${line}</h2>`;
-            } else if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
-                currentHtml += `<p class="body-text">${line}</p>`;
             } else {
                 currentHtml += `<p class="body-text">${line}</p>`;
             }
@@ -458,20 +312,11 @@ async function loadText() {
 
     } catch (error) {
         console.error('Fel vid laddning:', error);
-        document.getElementById('body-content').innerHTML = `
-            <p class="body-text" style="color: #cc0000; text-align: center;">
-                ❌ Kunde inte ladda texten.<br>
-                <span style="font-size: 12px;">${error.message}</span><br>
-                <span style="font-size: 12px;">Kontrollera att filen <strong>lang_texts/${lang}.txt</strong> finns på servern.</span>
-            </p>
-        `;
+        bodyContent.innerHTML = '<p class="body-text">Text could not be loaded.</p>';
     }
 }
 
-        // ============================================================
-        // 6. KÖR
-        // ============================================================
-        loadText();
+loadText();
 
 if (typeof getAuthorHTML === 'function') {
     document.getElementById('author-container').innerHTML = getAuthorHTML();
