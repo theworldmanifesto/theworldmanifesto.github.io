@@ -295,6 +295,7 @@ async function loadText() {
         const lines = text.split('\n');
 
         // Hitta de tre första icke-tomma raderna (titel, undertitel, författare)
+        // och börja rendera efter dem. Behåll tomrader i resten.
         let nonEmptySeen = 0;
         let startIndex = 0;
         for (let i = 0; i < lines.length; i++) {
@@ -308,15 +309,21 @@ async function loadText() {
         }
 
         let currentHtml = '';
+        let lastWasEmpty = false;
 
         for (let i = startIndex; i < lines.length; i++) {
-            const line = lines[i].trim();
+            const raw = lines[i];
+            const line = raw.trim();
 
-            // Tom rad → tomt stycke (ger luft utan extra CSS)
+            // Tom rad → styckeavbrott, men kollapsa flera i följd till ett
             if (line === '') {
-                currentHtml += `<p class="body-text">&nbsp;</p>`;
+                if (!lastWasEmpty) {
+                    currentHtml += `<div class="paragraph-break"></div>`;
+                    lastWasEmpty = true;
+                }
                 continue;
             }
+            lastWasEmpty = false;
 
             if (line.match(/^=+$/)) {
                 currentHtml += `<hr class="separator-line">`;
@@ -326,6 +333,10 @@ async function loadText() {
                 currentHtml += `<p class="body-text">${line}</p>`;
             }
         }
+
+.paragraph-break {
+    height: 1.2em;
+}
 
         bodyContent.innerHTML = currentHtml;
 
