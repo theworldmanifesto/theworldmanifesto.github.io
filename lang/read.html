@@ -24,6 +24,7 @@
             margin-left: auto;
             margin-right: auto;
             color: #1a1a1a;
+            white-space: pre-wrap;
         }
         .flag-icon {
             display: inline-block;
@@ -283,6 +284,7 @@ document.getElementById('book-subtitle').textContent = langData.subtitle;
 
 // ============================================================
 // 3. LADDA TEXT – RAKT UPP OCH NER, INGEN TABELL, INGEN TOC
+//    Behåller tomrader och tabbar.
 // ============================================================
 async function loadText() {
     const bodyContent = document.getElementById('body-content');
@@ -292,19 +294,44 @@ async function loadText() {
         const text = await response.text();
 
         const lines = text.split('\n');
-        const nonEmptyLines = lines.filter(line => line.trim() !== '');
+
+        // Hitta de tre första icke-tomma raderna (titel, undertitel, författare)
+        let nonEmptySeen = 0;
+        let startIndex = 0;
+        for (let i = 0; i < lines.length; i++) {
+            if (lines[i].trim() !== '') {
+                nonEmptySeen++;
+                if (nonEmptySeen === 3) {
+                    startIndex = i + 1;
+                    break;
+                }
+            }
+        }
+
         let currentHtml = '';
+        let lastWasEmpty = false;
 
-        for (let i = 3; i < nonEmptyLines.length; i++) {
-            const line = nonEmptyLines[i].trim();
-            if (line === '') continue;
+        for (let i = startIndex; i < lines.length; i++) {
+            const raw = lines[i];
+            const trimmed = raw.trim();
 
-            if (line.match(/^=+$/)) {
+            // Tom rad → tomt stycke (men kollapsa flera i följd till ett)
+            if (trimmed === '') {
+                if (!lastWasEmpty) {
+                    currentHtml += `<p class="body-text">&nbsp;</p>`;
+                    lastWasEmpty = true;
+                }
+                continue;
+            }
+            lastWasEmpty = false;
+
+            if (trimmed.match(/^=+$/)) {
                 currentHtml += `<hr class="separator-line">`;
-            } else if (line.startsWith('"') && line.endsWith('"')) {
-                currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
+            } else if (trimmed.startsWith('"') && trimmed.endsWith('"')) {
+                currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${trimmed}</p>`;
             } else {
-                currentHtml += `<p class="body-text">${line}</p>`;
+                // Använd raw (otrimmad) så att tabbar bevaras
+                currentHtml += `<p class="body-text">${raw}</p>`;
             }
         }
 
