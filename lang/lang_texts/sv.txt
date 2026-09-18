@@ -627,8 +627,9 @@ Bruttonationalresurs		Skuldavskrivning			Suveränitetsandel
 						lag)
 
 25 %					25 % av alla				Första utbetalningen
-(Baslivsmedel, Energi	privata skulder raderas	aktiveras. Medborgarna får
-& El)					omedelbart.				köpkraft för det som ännu
+(Baslivsmedel, Energi	privata skulder raderas	aktiveras.
+& El)					omedelbart.				Medborgarna får
+												köpkraft för det som ännu
 												inte är gratis.
 
 50 %					50 % av alla				Andelen ökar i takt med
