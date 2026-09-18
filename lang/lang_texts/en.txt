@@ -622,9 +622,11 @@ Gross National Resource		Debt Write-Off					Sovereignty Share
 (Free Coverage Rate)			(According to Constitutional		(State Payout)
 							Law)
 
-25 %						25 % of all private debts are		First payout is activated.
-(Basic Food, Energy			written off immediately.			Citizens receive purchasing
-& Electricity)				 									power for what is not yet free.
+25 %						25 % of all private debts are		First payout is
+(Basic Food, Energy			written off immediately.			activated. Citizens
+& Electricity)				 									receive purchasing
+																power for what is
+																not yet free.
 
 50 %
 (Housing & Transport)		50 % of all remaining debts are		The share increases in
