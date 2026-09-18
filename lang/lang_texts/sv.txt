@@ -622,22 +622,22 @@ Nedan följer den konstitutionella ritningen för hur skuld förvandlas till suv
 Frihetstrappan: Den konstitutionella utfasningen
 
 
-Bruttonationalresurs				Skuldavskrivning			Suveränitetsandel
-(Gratis täckningsgrad)			(Enligt konstitutionell		(Statlig utbetalning)
-								lag)
+Bruttonationalresurs			Skuldavskrivning			Suveränitetsandel
+(Gratis täckningsgrad)		(Enligt konstitutionell		(Statlig utbetalning)
+							lag)
 
-25 %							25 % av alla				Första utbetalningen
-(Baslivsmedel, Energi			privata skulder raderas		aktiveras. Medborgarna får
-& El)							omedelbart.				köpkraft för det som ännu
+25 %						25 % av alla				Första utbetalningen
+(Baslivsmedel, Energi		privata skulder raderas		aktiveras. Medborgarna får
+& El)						omedelbart.				köpkraft för det som ännu
 												inte är gratis.
 
-50 %							50 % av alla				Andelen ökar i takt med
-(Boende & Transport)			resterande skulder		den nationella robotparkens
-								raderas.					produktionskapacitet.
+50 %						50 % av alla				Andelen ökar i takt med
+(Boende & Transport)		resterande skulder		den nationella robotparkens
+							raderas.					produktionskapacitet.
 
-75 %							75 % av alla				Andelen optimeras.
-(Teknik, Mervärdes-varor &		skulder raderas från		Behovet av pengar sjunker
-Utbildning)						bankernas böcker.		dramatiskt då lyxsfären
+75 %						75 % av alla				Andelen optimeras.
+(Teknik, Mervärdes-varor &	skulder raderas från		Behovet av pengar sjunker
+Utbildning)					bankernas böcker.		dramatiskt då lyxsfären
 													krymper.
 
 100 %						Alla skulder och pengar	Systemet fullbordat.
