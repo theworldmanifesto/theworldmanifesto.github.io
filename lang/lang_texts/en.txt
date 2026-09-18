@@ -628,9 +628,8 @@ Gross National Resource		Debt Write-Off				Sovereignty Share
 														power for what is
 														not yet free.
 
-50 %
-(Housing & Transport)		50 % of all remaining		The share increases in
- 							debts are written off.			proportion to the
+50 %						50 % of all remaining		The share increases in
+(Housing & Transport)		debts are written off.			proportion to the
  							 							national robot park's
  							 							production capacity.
 
