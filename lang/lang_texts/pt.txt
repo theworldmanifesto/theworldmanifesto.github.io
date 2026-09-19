@@ -613,8 +613,8 @@ Abaixo está o plano constitucional de como a dívida é transformada em soberan
 3. A Escada da Liberdade: A Eliminação Progressiva Constitucional
 
 
-Recursos Internos Brutos		Baixa de Dívida			Cota de Soberania
-(Taxa de Cobertura			(De Acordo com a Lei		(Pagamento do Estado)
+Recursos Internos Brutos		Baixa de Dívida				Cota de Soberania
+(Taxa de Cobertura			(De Acordo com a Lei			(Pagamento do Estado)
 Gratuita)					Constitucional)
 
 25%						25% de todas as dívidas		O primeiro pagamento
@@ -625,9 +625,9 @@ Energia & Eletricidade)		imediatamente.				recebem poder de
 
 50%						50% de todas as dívidas		A cota aumenta em
 (Habitação & Transporte)		restantes são baixadas.		proporção à
-														capacidade de produção
-														do parque de robôs
-														nacional.
+														capacidade de
+														produção do parque de
+														robôs nacional.
 
 75%						75% de todas as dívidas		A cota é otimizada. A
 (Tecnologia, Premium		são baixadas dos livros		necessidade de
@@ -638,8 +638,9 @@ Energia & Eletricidade)		imediatamente.				recebem poder de
 
 100%							Todas as dívidas e		Sistema completo. As
 (A Abundância Definitiva) 		dinheiro deixaram de		moedas tornam-se
-								existir. 					obsoletas; uma economia
-														livre total prevalece.
+								existir. 					obsoletas; uma
+														economia livre total
+														prevalece.
 
 
 
