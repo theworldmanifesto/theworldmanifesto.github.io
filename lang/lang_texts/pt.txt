@@ -620,7 +620,7 @@ Gratuita)					Constitucional)
 25%							25% de todas as dívidas		O primeiro pagamento é
 (Alimentação Básica,		privadas são baixadas		ativado. Os cidadãos recebem
 Energia & Eletricidade)		imediatamente.				poder  de compra para o que
-															ainda não é gratuito.
+														ainda não é gratuito.
 
 50%							50% de todas as dívidas		A cota aumenta em proporção
 (Habitação & Transporte)	restantes são baixadas.		à capacidade de produção
