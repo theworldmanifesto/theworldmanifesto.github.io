@@ -103,7 +103,7 @@ Ce livre n'est pas écrit pour être lu. Il est écrit pour être exécuté.
 
 =======================================
 
-À FAIRE
+II. À faire
 
 "Ce manifeste n'existe pas pour débattre de l'avenir, mais pour l'administrer. Nous avons atteint un point dans l'histoire où le potentiel de la technologie a dépassé la logique de l'économie. Exiger un paiement pour ce que les machines produisent gratuitement n'est plus de l'économie, c'est de l'oppression. Ce texte est un manuel d'instructions sur la façon dont nous nous débarrassons du joug."
 
