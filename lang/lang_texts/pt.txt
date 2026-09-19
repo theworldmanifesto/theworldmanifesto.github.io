@@ -617,23 +617,27 @@ Recursos Internos Brutos	Baixa de Dívida				Cota de Soberania
 (Taxa de Cobertura			(De Acordo com a Lei		(Pagamento do Estado)
 Gratuita)					Constitucional)
 
-25%							25% de todas as dívidas		O primeiro pagamento é
-(Alimentação Básica,		privadas são baixadas		ativado. Os cidadãos recebem
-Energia & Eletricidade)		imediatamente.				poder  de compra para o que
+25%							25% de todas as dívidas		O primeiro pagamento
+(Alimentação Básica,		privadas são baixadas		é ativado. Os cidadãos
+Energia & Eletricidade)		imediatamente.				recebem poder de
+														compra para o que
 														ainda não é gratuito.
 
-50%							50% de todas as dívidas		A cota aumenta em proporção
-(Habitação & Transporte)	restantes são baixadas.		à capacidade de produção
-														do parque de robôs nacional.
+50%							50% de todas as dívidas		A cota aumenta em
+(Habitação & Transporte)	restantes são baixadas.		proporção à capacidade
+														de produção do parque
+														de robôs nacional.
 
 75%							75% de todas as dívidas		A cota é otimizada. A
-(Tecnologia, Premium		são baixadas dos livros		necessidade de dinheiro cai
-& Educação)					dos bancos.					rasticamente à medida que a
-														esfera de luxo encolhe.
+(Tecnologia, Premium		são baixadas dos livros		necessidade de dinheiro
+& Educação)					dos bancos.					cai rasticamente à
+														medida que a esfera
+														de luxo encolhe.
 
-100%						Todas as dívidas e			Sistema completo. As moedas
-(A Abundância Definitiva) 	dinheiro deixaram de		tornam-se obsoletas; uma
-							existir. 					economia livre total prevalece.
+100%						Todas as dívidas e			Sistema completo. As
+(A Abundância Definitiva) 	dinheiro deixaram de		moedas tornam-se
+							existir. 					obsoletas; uma economia
+														livre total prevalece.
 
 
 
