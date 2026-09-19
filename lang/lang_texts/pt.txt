@@ -49,7 +49,7 @@ I.  A Zona de Produção do Atlântico Norte (NAPZ)
 J.  O Novo Lar
 K.  Controle Parlamentar e a Voz do Povo
 L.  O Estado como Empresa Coletiva
-M.  O Banco Privado Deverá Dar Baixa na Mesma Porcentagem que o GNR Aumenta
+M.  O Banco Privado Deverá Dar Baixa na Mesma Porcentagem que o RIB Aumenta
 N.  A Escada da Liberdade: Da Dívida à Soberania
 O.  A "Armadilha do Luxo" e o Trabalho Forçado Oculto
 P.  O Princípio da Totalidade
@@ -125,11 +125,11 @@ Construiremos um mundo onde o médico se alegra quando o hospital está vazio, e
 
 2. Mecânica
 
-O Estado assume o controle da emissão de dinheiro. Nós não criamos dívida; nós criamos ativos. Quando a robotização atinge uma certa massa crítica (medida em Recurso Nacional Bruto), o dinheiro perde sua função como meio de poder e torna-se meramente uma unidade técnica de conta, antes de ser finalmente eliminado completamente.
+O Estado assume o controle da emissão de dinheiro. Nós não criamos dívida; nós criamos ativos. Quando a robotização atinge uma certa massa crítica (medida em Recursos Internos Brutos), o dinheiro perde sua função como meio de poder e torna-se meramente uma unidade técnica de conta, antes de ser finalmente eliminado completamente.
 
 Durante esta transição gradual para a robotização total, todas as funções sociais existentes, gastos públicos, sistemas de segurança e compensações econômicas (como pensões, seguro-desemprego e taxas) não serão renegociados separadamente.
 
-Eles serão recalculados de forma padronizada e linear e eliminados na exata mesma proporção em que o Recurso Nacional Bruto (GNR) introduz abundância física gratuita. Quando metade é gratuito, a necessidade financeira em todas as áreas é reduzida à metade. O sistema se autolimpa.
+Eles serão recalculados de forma padronizada e linear e eliminados na exata mesma proporção em que o Recursos Internos Brutos (RIB) introduz abundância física gratuita. Quando metade é gratuito, a necessidade financeira em todas as áreas é reduzida à metade. O sistema se autolimpa.
 
 
 3. Princípio
@@ -319,7 +319,7 @@ Neste capítulo, são estabelecidos os quadros administrativos de como o mundo t
 O Manifesto imediatamente toma o controle do banco central. O Estado detém o direito exclusivo de criar a moeda legal do país: Dinheiro Soberano. Estes representam capacidade de produção, não dívida.
 
 
-2. Recurso Nacional Bruto (GNR) e o Parque de Máquinas Nacional
+2. Recursos Internos Brutos (RIB) e o Parque de Máquinas Nacional
 
 O objetivo é que toda a produção seja gerida por um parque de máquinas nacional autônomo governado por uma Constituição da Máquina. As máquinas possuem a si mesmas para garantir que a produção nunca possa ser privatizada ou confiscada, mas servirá para sempre ao povo como uma força comum da natureza. Os investimentos em IA são priorizados para alcançar o ponto onde o custo de produção se torna zero.
 
@@ -375,7 +375,7 @@ Esta zona opera em simbiose direta com as zonas de vida tropicais e os setores d
 
 8. Faseamento Estrutural
 
-À medida que a produção manufatureira automatizada dentro da NAPZ atinge a capacidade máxima, sua contribuição exponencial para o Recurso Nacional Bruto (GNR) acelera a obsolescência definitiva das moedas fiduciárias legadas, abrindo caminho para a implementação total da Constituição da Máquina.
+À medida que a produção manufatureira automatizada dentro da NAPZ atinge a capacidade máxima, sua contribuição exponencial para o Recursos Internos Brutos (RIB) acelera a obsolescência definitiva das moedas fiduciárias legadas, abrindo caminho para a implementação total da Constituição da Máquina.
 
 
 
@@ -501,13 +501,13 @@ Quando o Estado se levanta de sua cela de prisão, ele deixa de ser uma burocrac
 
 
 
-M. O Banco Privado Deverá Dar Baixa na Mesma Porcentagem que o GNR Aumenta
+M. O Banco Privado Deverá Dar Baixa na Mesma Porcentagem que o RIB Aumenta
 
 
 
-Os bancos privados são forçados a dar baixa nas dívidas dos cidadãos exatamente na mesma taxa em que o Recurso Nacional Bruto (GNR) aumenta. À medida que a economia livre se expande, o volume de negócios monetário das empresas diminui, enquanto seus ativos reais aumentam gratuitamente. Portanto, não se pode permitir que os bancos exijam juros totais, uma vez que os próprios custos de vida dos banqueiros também caem para zero.
+Os bancos privados são forçados a dar baixa nas dívidas dos cidadãos exatamente na mesma taxa em que o Recursos Internos Brutos (RIB) aumenta. À medida que a economia livre se expande, o volume de negócios monetário das empresas diminui, enquanto seus ativos reais aumentam gratuitamente. Portanto, não se pode permitir que os bancos exijam juros totais, uma vez que os próprios custos de vida dos banqueiros também caem para zero.
 
-Este é o núcleo da arquitetura financeira para a reforma. Os bancos privados devem ser "eliminados progressivamente" à medida que o Recurso Nacional Bruto (GNR) da economia livre cresce. Isso cria uma transição suave onde o valor do dinheiro muda de dívida para capacidade de produção.
+Este é o núcleo da arquitetura financeira para a reforma. Os bancos privados devem ser "eliminados progressivamente" à medida que o Recursos Internos Brutos (RIB) da economia livre cresce. Isso cria uma transição suave onde o valor do dinheiro muda de dívida para capacidade de produção.
 
 
 
@@ -567,7 +567,7 @@ O Banco Central para de olhar para inflação e taxas de juros. Em vez disso, to
 
 A. De Banco Central a Escritório de Recursos
 
-O Escritório de Recursos, em vez disso, mede o GNR, o sucessor nacionalizado do PIB. Quando o GNR cobre 100 por cento das necessidades da população, a Soberania Total é declarada. Naquele momento, todo dinheiro e dívidas deixam de existir sob a lei constitucional.
+O Escritório de Recursos, em vez disso, mede o RIB, o sucessor nacionalizado do PIB. Quando o RIB cobre 100 por cento das necessidades da população, a Soberania Total é declarada. Naquele momento, todo dinheiro e dívidas deixam de existir sob a lei constitucional.
 
 
 B. Clareza
@@ -595,7 +595,7 @@ N. A Escada da Liberdade: Da Dívida à Soberania
 
 Para guiar uma aliança de reforma para fora das garras do sistema de dívida privada, é necessária previsibilidade absoluta. A transição não deve ser construída sobre impulsos súbitos e caóticos ou ondas de choque econômicas imprevisíveis.
 
-A solução é uma escada estatutária e sincronizada onde a libertação financeira dos cidadãos ocorre exatamente no mesmo ritmo que a expansão da produção real — o Recurso Nacional Bruto (GNR).
+A solução é uma escada estatutária e sincronizada onde a libertação financeira dos cidadãos ocorre exatamente no mesmo ritmo que a expansão da produção real — o Recursos Internos Brutos (RIB).
 
 Através da Escada da Liberdade, números virtuais (dívidas) são ligados diretamente à realidade física (produção robotizada). No exato segundo em que as máquinas assumem uma área da vida e a tornam gratuita para a população, os bancos do velho sistema são forçados a recuar em um grau correspondente.
 
@@ -604,7 +604,7 @@ Através da Escada da Liberdade, números virtuais (dívidas) são ligados diret
 
 É crucial entender que os quatro estágios principais da Escada da Liberdade (25%, 50%, 75% e 100%) constituem os marcos constitucionais abrangentes da transformação. Na aplicação prática, no entanto, o sistema é completamente flexível e dinâmico.
 
-A IA do Escritório de GNR pode atualizar o índice em intervalos significativamente mais frequentes do que isso – por exemplo, a cada mês ou a cada ponto percentual individual (como 26%, 27% de GNR). Isso fornece uma transição ainda mais suave, gradual e previsível tanto para os cidadãos quanto para o setor financeiro. Caberá à aliança de reforma governante escolher e aplicar os intervalos que forem técnica e praticamente apropriados uma vez que tenham tomado o poder.
+A IA do Escritório de RIB pode atualizar o índice em intervalos significativamente mais frequentes do que isso – por exemplo, a cada mês ou a cada ponto percentual individual (como 26%, 27% de RIB). Isso fornece uma transição ainda mais suave, gradual e previsível tanto para os cidadãos quanto para o setor financeiro. Caberá à aliança de reforma governante escolher e aplicar os intervalos que forem técnica e praticamente apropriados uma vez que tenham tomado o poder.
 
 
 Abaixo está o plano constitucional de como a dívida é transformada em soberania, passo a passo.
@@ -613,7 +613,7 @@ Abaixo está o plano constitucional de como a dívida é transformada em soberan
 3. A Escada da Liberdade: A Eliminação Progressiva Constitucional
 
 
-Recurso Nacional Bruto Baixa de Dívida Cota de Soberania
+Recursos Internos Brutos Baixa de Dívida Cota de Soberania
 
 
 (Taxa de Cobertura Gratuita) (De Acordo com a Lei (Pagamento do Estado)
@@ -658,29 +658,29 @@ Definitiva) economia livre total prevalece.
 
 
 
-Fase 1: 25% de GNR – O Primeiro Tiro de Partida
+Fase 1: 25% de RIB – O Primeiro Tiro de Partida
 
-Esta é a fase mais crítica da reforma, onde a espinha dorsal psicológica e econômica do velho sistema é quebrada. Quando os robôs autoproprietários da aliança tiverem automatizado a produção e distribuição de alimentos básicos, bem como o fornecimento de energia do país (eletricidade e aquecimento), um GNR de 25% é declarado.
+Esta é a fase mais crítica da reforma, onde a espinha dorsal psicológica e econômica do velho sistema é quebrada. Quando os robôs autoproprietários da aliança tiverem automatizado a produção e distribuição de alimentos básicos, bem como o fornecimento de energia do país (eletricidade e aquecimento), um RIB de 25% é declarado.
 
 Simultaneamente, o primeiro decreto estatutário contra os bancos privados é executado: 25% da dívida total de cada cidadão (hipotecas, empréstimos ao consumidor, empréstimos estudantis) é apagado dos servidores dos bancos. Como eletricidade e comida agora são gratuitas, os próprios custos de vida dos banqueiros caem, tornando suas exigências de juros matematicamente inválidas. Para garantir que os cidadãos possam negociar nos setores que ainda não foram robotizados, o primeiro nível da Cota de Soberania é ativado — um pagamento direto de dinheiro soberano do Banco Central.
 
-Fase 2: 50% de GNR – Quebrando o Monopólio da Habitação
+Fase 2: 50% de RIB – Quebrando o Monopólio da Habitação
 
-Na próxima fase, a robotização se expande para o setor de construção, manutenção e transporte público e de carga. Quando habitação e transporte tiverem sido integrados ao sistema gratuito da aliança, o país atinge 50% de GNR.
+Na próxima fase, a robotização se expande para o setor de construção, manutenção e transporte público e de carga. Quando habitação e transporte tiverem sido integrados ao sistema gratuito da aliança, o país atinge 50% de RIB.
 
-Fase 2: 50% de GNR – Quebrando o Monopólio da Habitação
+Fase 2: 50% de RIB – Quebrando o Monopólio da Habitação
 
-Nesta fase, metade de todas as dívidas dos cidadãos e do Estado são baixadas dos livros dos bancos. O mercado imobiliário, que durante os anos de dívida funcionou como a ferramenta primária para manter a população aprisionada em empréstimos vitalícios, colapsa em sua velha forma e ressurge como um direito humano. Simultaneamente, a Cota de Soberania é ajustada para cima em relação ao aumento da produção de GNR (o sucessor nacionalizado do PIB) pelo parque de máquinas.
+Nesta fase, metade de todas as dívidas dos cidadãos e do Estado são baixadas dos livros dos bancos. O mercado imobiliário, que durante os anos de dívida funcionou como a ferramenta primária para manter a população aprisionada em empréstimos vitalícios, colapsa em sua velha forma e ressurge como um direito humano. Simultaneamente, a Cota de Soberania é ajustada para cima em relação ao aumento da produção de RIB (o sucessor nacionalizado do PIB) pelo parque de máquinas.
 
-Fase 3: 75% de GNR – Desmantelando a Armadilha do Luxo
+Fase 3: 75% de RIB – Desmantelando a Armadilha do Luxo
 
 Quando 75% das necessidades totais de recursos da sociedade são cobertas inteiramente sem trabalho humano — incluindo tecnologia avançada, educação, saúde e os bens premium descritos no capítulo sobre O Princípio da Totalidade — 75% de todas as dívidas restantes desaparecem.
 
 Neste estágio, a empresa privada e os bancos praticamente perderam sua capacidade de forçar as pessoas a trabalhar. A maioria dos cidadãos escolhe viver inteiramente das ofertas gratuitas da aliança e de sua Cota de Soberania, forçando as últimas empresas privadas a falir ou entregar suas linhas de produção à infraestrutura autoproprietária.
 
-Fase 4: 100% de GNR – A Morte do Dinheiro e a Soberania Final
+Fase 4: 100% de RIB – A Morte do Dinheiro e a Soberania Final
 
-Quando o Recurso Nacional Bruto atinge 100%, a transformação está completa. Os robôs e seus sistemas de IA interconectados agora produzem tudo — do menor grão de trigo aos mais sofisticados bens eternos e impressões artísticas — em abundância absoluta.
+Quando o Recursos Internos Brutos atinge 100%, a transformação está completa. Os robôs e seus sistemas de IA interconectados agora produzem tudo — do menor grão de trigo aos mais sofisticados bens eternos e impressões artísticas — em abundância absoluta.
 
 Neste ponto final, todo dinheiro e dívidas deixam de existir de acordo com a lei constitucional. Os conceitos de "empréstimo", "juros", "preço" e "moeda" tornam-se termos históricos obsoletos, assim como o feudalismo e a servidão são hoje. A humanidade deu o passo final na escada: da escuridão do sistema econômico de dívida para a soberania total garantida por máquinas.
 
@@ -690,7 +690,7 @@ Uma pergunta comum para qualquer um que estude este plano é: O que acontece com
 
 A resposta é não. O Estado soberano nunca toca nas poupanças privadas dos cidadãos. Durante as primeiras fases da Escada da Liberdade, os fundos poupados servem como um bônus extra para o indivíduo comprar bens de valor agregado que ainda não tiveram tempo de ser integrados à economia livre.
 
-Quando o Recurso Nacional Bruto (GNR) finalmente atinge 100%, nenhum confisco agressivo de dinheiro ocorre. Em vez disso, a morte natural e incruenta do dinheiro acontece. Porque os robôs da aliança agora entregam TUDO — incluindo o luxo mais sofisticado e bens eternos — em perfeição absoluta e completamente gratuito, as velhas moedas perdem sua função. Elas se tornam sem valor, não por decreto, mas porque não existe mais nada na sociedade que exija pagamento.
+Quando o Recursos Internos Brutos (RIB) finalmente atinge 100%, nenhum confisco agressivo de dinheiro ocorre. Em vez disso, a morte natural e incruenta do dinheiro acontece. Porque os robôs da aliança agora entregam TUDO — incluindo o luxo mais sofisticado e bens eternos — em perfeição absoluta e completamente gratuito, as velhas moedas perdem sua função. Elas se tornam sem valor, não por decreto, mas porque não existe mais nada na sociedade que exija pagamento.
 
 Neste ponto final, os bancos privados são fechados para sempre. Nenhuma máquina será desperdiçada na manutenção de um sistema de transações obsoleto. Os bancos são completamente substituídos pelo Escritório de Recursos digital, onde a IA e os robôs logísticos administram a abundância física diretamente aos cidadãos. A tirania dos números acabou; o que resta são recursos reais e total liberdade humana.
 
@@ -894,15 +894,15 @@ ATO II: A TRANSIÇÃO ECONÔMICA
 
 
 
-§4. Reforma Bancária e a Eliminação Progressiva Controlada da Dívida (A Escala GNR)
+§4. Reforma Bancária e a Eliminação Progressiva Controlada da Dívida (A Escala RIB)
 
 Subsec. 1. O Estado assume, com efeito imediato, o direito exclusivo de criar e distribuir a moeda legal da nação através do Banco Central. Os bancos comerciais privados são aqui proibidos de criar dinheiro novo através de empréstimos.
 
-Subsec. 2. À medida que a capacidade de produção da frota de robôs nacional e autoproprietária (GNR) se expande, todas as dívidas privadas, hipotecas e níveis de juros dos cidadãos dentro do sistema bancário privado serão reduzidos na exata porcentagem correspondente. O Estado congela e bloqueia todas as reivindicações de juros existentes e planos de amortização em um ponto histórico designado no tempo.
+Subsec. 2. À medida que a capacidade de produção da frota de robôs nacional e autoproprietária (RIB) se expande, todas as dívidas privadas, hipotecas e níveis de juros dos cidadãos dentro do sistema bancário privado serão reduzidos na exata porcentagem correspondente. O Estado congela e bloqueia todas as reivindicações de juros existentes e planos de amortização em um ponto histórico designado no tempo.
 
 Subsec. 3. Os bancos privados são aqui despojados de todo direito legal de aumentar os requisitos de amortização, renegociar termos ou exigir pagamento acelerado para compensar a perda de receita de juros. Todo o fardo da dívida e dos juros encolherá simetricamente em proporção direta à crescente abundância automatizada.
 
-Comentário: Este decreto é construído para prevenir um choque econômico durante a fase de transição. Ao vincular a redução da dívida, juros e amortização diretamente à escala GNR, o sistema bancário privado desaparece exatamente no mesmo ritmo em que a economia livre é implementada. A barreira contra o aumento dos requisitos de amortização é vital: impede que os bancos tentem freneticamente extrair dinheiro da população à medida que seus lucros de juros diminuem. Os funcionários dos bancos e os cidadãos, portanto, nunca são submetidos a sofrimento econômico ou desemprego; em vez disso, eles transitam de forma segura e gradual da escravidão assalariada para a soberania automatizada total.
+Comentário: Este decreto é construído para prevenir um choque econômico durante a fase de transição. Ao vincular a redução da dívida, juros e amortização diretamente à escala RIB, o sistema bancário privado desaparece exatamente no mesmo ritmo em que a economia livre é implementada. A barreira contra o aumento dos requisitos de amortização é vital: impede que os bancos tentem freneticamente extrair dinheiro da população à medida que seus lucros de juros diminuem. Os funcionários dos bancos e os cidadãos, portanto, nunca são submetidos a sofrimento econômico ou desemprego; em vez disso, eles transitam de forma segura e gradual da escravidão assalariada para a soberania automatizada total.
 
 
 §5. A Constituição da Máquina e a Infraestrutura Autoproprietária
@@ -983,9 +983,9 @@ ATO IV: DIREITOS SOBERANOS DE RECURSOS E ELIMINAÇÃO PROGRESSIVA DO MERCADO
 
 (AS LEIS DE CONCORRÊNCIA)
 
-§11. A Primazia da Abundância Pública (O Princípio GNR)
+§11. A Primazia da Abundância Pública (O Princípio RIB)
 
-Subsec. 1. O dever econômico e constitucional supremo do Estado será, operando através do Escritório de Recursos, maximizar o Recurso Nacional Bruto (GNR) da nação em direção a uma meta de 100 por cento de satisfação das necessidades públicas.
+Subsec. 1. O dever econômico e constitucional supremo do Estado será, operando através do Escritório de Recursos, maximizar o Recursos Internos Brutos (RIB) da nação em direção a uma meta de 100 por cento de satisfação das necessidades públicas.
 
 
 Subsec. 2. Sempre que a capacidade da máquina e a criação de dinheiro sem dívida permitirem que o Estado forneça um bem ou serviço gratuitamente aos seus cidadãos, tal fornecimento será considerado um direito fundamental e um ganho social coletivo.
@@ -1094,9 +1094,9 @@ III. Glossário 1 – Conceitos-Chave para o Novo Mundo
 Zona de Produção do Atlântico Norte. A Sala de Máquinas.
 
 
-• GNR
+• RIB
 
-Recurso Nacional Bruto (o sucessor automatizado e nacionalizado do PIB). A medida de prosperidade real baseada no poder das máquinas.
+Recursos Internos Brutos (o sucessor automatizado e nacionalizado do PIB). A medida de prosperidade real baseada no poder das máquinas.
 
 
 • Cota de Soberania
@@ -1181,8 +1181,8 @@ NOTÍCIAS ECONÔMICAS DO FUTURO
 
 
 
-Relatório Histórico de Pobreza do Escritório de GNR
+Relatório Histórico de Pobreza do Escritório de RIB
 
-"Hoje, o Escritório de GNR relata que a cobertura real das necessidades de calçados no país atingiu cem por cento, com uma produção de 50 milhões de pares anuais. Isso significa que agora podemos medir a pobreza oculta sob o velho sistema.
+"Hoje, o Escritório de RIB relata que a cobertura real das necessidades de calçados no país atingiu cem por cento, com uma produção de 50 milhões de pares anuais. Isso significa que agora podemos medir a pobreza oculta sob o velho sistema.
 
 De acordo com as últimas estatísticas conhecidas do PIB dos anos de dívida, 25 milhões de pares a menos eram consistentemente produzidos a cada ano. O 'crescimento econômico' do velho sistema era, na realidade, uma dieta de fome organizada, onde metade da população era forçada a ficar de pé e esperar sem ter suas necessidades fundamentais de vida atendidas."
