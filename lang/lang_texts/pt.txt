@@ -624,9 +624,10 @@ Energia & Eletricidade)		imediatamente.				recebem poder de
 														ainda não é gratuito.
 
 50%						50% de todas as dívidas		A cota aumenta em
-(Habitação & Transporte)		restantes são baixadas.		proporção à capacidade
-														de produção do parque
-														de robôs nacional.
+(Habitação & Transporte)		restantes são baixadas.		proporção à
+														capacidade de produção
+														do parque de robôs
+														nacional.
 
 75%						75% de todas as dívidas		A cota é otimizada. A
 (Tecnologia, Premium		são baixadas dos livros		necessidade de
