@@ -287,22 +287,22 @@ gratuite)					constitutionnelle)
 25 % (Nourriture de base,		25 % de toutes les dettes	Le premier paiement est
 énergie et électricité)			privées sont annulées		activé. Les citoyens
 							immédiatement.			reçoivent un pouvoir
-														d'achat.
+													d'achat.
 
 50 % (Logement et			50 % de toutes les		La part augmente
 transport)					dettes restantes sont		proportionnellement à la
 							annulées.				capacité de production.
 
 75 % (Technologie,			75 % de toutes les		La part est optimisée.
-premium et éducation)		dettes sont annulées	Le besoin d'argent
-							des livres des		diminue considérablement.
+premium et éducation)		dettes sont annulées		Le besoin d'argent
+							des livres des			diminue considérablement.
 							banques.
 
 100 % (L'Abondance			100 % de toutes les		Système complet. Les
 définitive)					dettes et l'argent			monnaies deviennent
 							´cessent d'exister.		obsolètes ; une
-														économie libre
-														prévaut.
+													économie libre
+													prévaut.
 
 
     Examen des Phases de l'Échelle de la Liberté
