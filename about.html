@@ -32,6 +32,12 @@
             --accent-color: #1a1a1a;
             --border-color: #e0e0e0;
             --max-width: 800px;
+            --blue: #1877F2;
+            --green: #25D366;
+            --lightblue: #26A5E4;
+            --orange: #f39c12;
+            --purple: #9b59b6;
+            --yellow: #f1c40f;
         }
 
         body {
@@ -43,7 +49,6 @@
             padding: 0;
         }
 
-        /* Ny container som centrerar innehållet under menyn */
         .container {
             max-width: var(--max-width);
             width: 100%;
@@ -52,19 +57,9 @@
             box-sizing: border-box;
         }
 
-        .nav-back {
-            margin-bottom: 30px;
-        }
-
-        .nav-back a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-
-        .nav-back a:hover {
-            text-decoration: underline;
-        }
+        .nav-back { margin-bottom: 30px; }
+        .nav-back a { color: #555; text-decoration: none; font-size: 0.95rem; }
+        .nav-back a:hover { text-decoration: underline; }
 
         h1 {
             font-size: clamp(2rem, 5vw, 2.8rem);
@@ -80,24 +75,34 @@
             font-style: italic;
         }
 
+        /* === SLOGAN-BANNER MED GRADIENT === */
         .slogan-banner {
-            background-color: #1a1a1a;
+            background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
             color: #ffffff;
-            padding: 15px 20px;
-            border-radius: 6px;
+            padding: 18px 22px;
+            border-radius: 10px;
             font-weight: 600;
             text-align: center;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
             font-size: 1.1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
+        /* === RUBRIKER MED IKON === */
         h2 {
             font-size: 1.5rem;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
             color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid var(--blue);
+        }
+
+        h2 .section-icon {
+            font-size: 1.4rem;
         }
 
         p {
@@ -105,56 +110,90 @@
             font-size: 1.05rem;
         }
 
+        /* === FÄRGADE TIDSLINJE-PUNKTER === */
         .timeline {
             list-style: none;
             padding: 0;
             margin: 30px 0;
-            border-left: 2px solid var(--accent-color);
-            padding-left: 20px;
+            border-left: 2px solid #e0e0e0;
+            padding-left: 25px;
         }
 
         .timeline-item {
-            margin-bottom: 25px;
+            margin-bottom: 22px;
             position: relative;
         }
 
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -27px;
-            top: 6px;
+            left: -32px;
+            top: 8px;
             width: 12px;
             height: 12px;
-            background-color: var(--accent-color);
             border-radius: 50%;
+            background-color: var(--accent-color);
+            box-shadow: 0 0 0 3px var(--bg-color);
         }
+
+        /* Specifika färger per år */
+        .timeline-item[data-color="orange"]::before { background-color: var(--orange); }
+        .timeline-item[data-color="gray"]::before { background-color: #999; }
+        .timeline-item[data-color="blue"]::before { background-color: var(--blue); }
+        .timeline-item[data-color="purple"]::before { background-color: var(--purple); }
+        .timeline-item[data-color="green"]::before { background-color: var(--green); }
+        .timeline-item[data-color="yellow"]::before { background-color: var(--yellow); }
+        .timeline-item[data-color="lightblue"]::before { background-color: var(--lightblue); }
 
         .year {
             font-weight: bold;
             font-size: 1.1rem;
-            color: var(--accent-color);
             display: block;
         }
+
+        .year.orange { color: var(--orange); }
+        .year.gray { color: #666; }
+        .year.blue { color: var(--blue); }
+        .year.purple { color: var(--purple); }
+        .year.green { color: var(--green); }
+        .year.yellow { color: #b8860b; }
+        .year.lightblue { color: var(--lightblue); }
 
         .description {
             font-size: 1rem;
             color: #333;
         }
 
+        /* === FÄRGADE CITAT-RUTOR === */
         blockquote {
-            background-color: #f4f4f4;
-            border-left: 4px solid var(--accent-color);
+            background-color: #eaf4ff;
+            border-left: 5px solid var(--blue);
             margin: 30px 0;
-            padding: 15px 20px;
+            padding: 18px 22px;
             font-style: italic;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #1a1a1a;
         }
 
+        blockquote.orange {
+            background-color: #fff4e0;
+            border-left-color: var(--orange);
+        }
+
+        blockquote.green {
+            background-color: #e8f9ed;
+            border-left-color: var(--green);
+        }
+
+        /* === AUTHOR-BOX === */
         .author-box {
-            background-color: #f9f9f9;
+            background: linear-gradient(135deg, #f9f9f9 0%, #f4f4f4 100%);
             border: 1px solid var(--border-color);
-            border-radius: 6px;
+            border-left: 5px solid var(--purple);
+            border-radius: 8px;
             padding: 20px 25px;
-            margin-top: 40px;
+            margin-top: 45px;
         }
 
         .author-box h2 {
@@ -200,44 +239,44 @@
                     Grunden för mänsklighetens definitiva överflöd lades inte under 2000-talets digitala erövringar – den var i princip färdigställd redan under 1800-talet. En granskning av den tekniska utvecklingens mest avgörande milstolpar visar hur nära världen var en total befrielse från manuellt tvångsarbete långt tidigare än vad som skedde.
                 </p>
 
-                <h2>Historiska milstolpar</h2>
+                <h2><span class="section-icon">⚙️</span> Historiska milstolpar</h2>
                 
                 <ul class="timeline">
-                    <li class="timeline-item">
-                        <span class="year">År 1698</span>
+                    <li class="timeline-item" data-color="orange">
+                        <span class="year orange">År 1698</span>
                         <span class="description">Ångmaskinen uppfinns och bryter för första gången mänsklighetens absoluta beroende av muskelkraft och dragdjur.</span>
                     </li>
-                    <li class="timeline-item">
-                        <span class="year">År 1750</span>
+                    <li class="timeline-item" data-color="gray">
+                        <span class="year gray">År 1750</span>
                         <span class="description">Den industriella revolutionen inleds i England och skalar upp mekanisk massproduktion.</span>
                     </li>
-                    <li class="timeline-item">
-                        <span class="year">År 1800</span>
+                    <li class="timeline-item" data-color="blue">
+                        <span class="year blue">År 1800</span>
                         <span class="description">Det kemiska batteriet uppfinns (och finns kommersiellt tillgängligt i stor skala i USA år 1896).</span>
                     </li>
-                    <li class="timeline-item">
-                        <span class="year">År 1801</span>
+                    <li class="timeline-item" data-color="purple">
+                        <span class="year purple">År 1801</span>
                         <span class="description">Den automatiserade vävstolen uppfinns – världens första programmerbara mekaniska anordning.</span>
                     </li>
-                    <li class="timeline-item">
-                        <span class="year">År 1809</span>
+                    <li class="timeline-item" data-color="lightblue">
+                        <span class="year lightblue">År 1809</span>
                         <span class="description">Elektriskt ljus uppfinns.</span>
                     </li>
-                    <li class="timeline-item">
-                        <span class="year">År 1831</span>
+                    <li class="timeline-item" data-color="green">
+                        <span class="year green">År 1831</span>
                         <span class="description">Generatorn uppfinns och möjliggör omvandling av rörelse till kontrollerbar elektrisk energi.</span>
                     </li>
-                    <li class="timeline-item">
-                        <span class="year">År 1859</span>
+                    <li class="timeline-item" data-color="yellow">
+                        <span class="year yellow">År 1859</span>
                         <span class="description">Det laddningsbara batteriet uppfinns, vilket sluter cirkeln för lagringsbar och mobil drivkraft.</span>
                     </li>
-                    <li class="timeline-item">
-                        <span class="year">År 1954</span>
+                    <li class="timeline-item" data-color="green">
+                        <span class="year green">År 1954</span>
                         <span class="description">Det första offentliga elnätet med kärnkraft tas i bruk.</span>
                     </li>
                 </ul>
 
-                <h2>Den uteblivna vändpunkten</h2>
+                <h2><span class="section-icon">⏸️</span> Den uteblivna vändpunkten</h2>
                 <p>
                     Med dessa fundamentala byggstenar på plats var den naturliga och logiska följden i början av 1900-talet en fullständig övergång till <strong>totalrobotisering</strong> och ett definitivt slut på svält, sliteri och fattigdom. De fysikaliska och tekniska förutsättningarna för att ersätta mänsklig arbetskraft med automatiserade system fanns i sin linda redan då.
                 </p>
@@ -249,17 +288,22 @@
                     "Totalrobotisering är inte en ny eller främmande idé – det är den försenade och naturliga slutpunkten på den industriella revolution som startade för över 300 år sedan."
                 </blockquote>
 
-                <h2>Bromsklossen: Skuldsystemet</h2>
+                <h2><span class="section-icon">💰</span> Bromsklossen: Skuldsystemet</h2>
                 <p>
                     Orsaken till denna fördröjning var inte brist på mänsklig ingenjörskonst, utan den administrativa låsningen vid ett föråldrat finansiellt system. Genom att kräva att människor måste sälja sin tid och sitt kroppsarbete för att rättfärdiga sin existens i ett skuldbaserat pengasystem, hölls samhället fast i ett fiktivt bristsamhälle.
                 </p>
+
+                <blockquote class="orange">
+                    "Det är inte att tekniken saknades. Det är att affärsmodellen krävde att den inte användes fullt ut. En maskin som äger sig själv och producerar gratis har inget räntenetto. En människa som måste låna för att överleva har det."
+                </blockquote>
+
                 <p>
                     En tidig totalrobotisering under 1900-talets första hälft hade omedelbart gjort skuldsystemet och lönearbetet obehövligt. För att bevara de gamla ekonomiska maktstrukturerna konserverades manuellt arbete långt efter att tekniken egentligen gjort det förlegat.
                 </p>
 
-                <h2>Manifestets historiska uppdrag</h2>
+                <h2><span class="section-icon">🗳️</span> Varför finns Världsmanifestet?</h2>
                 <p>
-                    <em>Världsmanifestet</em> bygger på insikten att totalrobotisering inte är något främmande, skrämmande eller oprövat. När vi nu kliver ur den tekniska trädan återtar vi bara den utvecklingskurva som stannades av.
+                    För att det ska finnas ett parti att rösta på som inte är ännu ett löneslaveri-, skuld- eller teknofobparti. Ett parti som kräver en ny form av internationell ekonomisk lagstiftning – en som erkänner teknikens mognad, avskaffar skuldsystemet och ger alla människor rätt till det överflöd som maskinerna skapar.
                 </p>
 
                 <section class="author-box">
