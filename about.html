@@ -22,6 +22,9 @@
     <meta name="twitter:description" content="Varför dröjde totalrobotiseringen? Läs om världens högteknologiska historia, den 200-åriga tekniska trädan och vägen till definitivt överflöd.">
     <meta name="twitter:image" content="https://theworldmanifesto.github.io/og-image.png">
 
+    <!-- ✅ NY: Menyns CSS -->
+    <link rel="stylesheet" href="menu.css">
+
     <style>
         :root {
             --bg-color: #fcfcfc;
@@ -48,19 +51,9 @@
             padding: 20px 0;
         }
 
-        .nav-back {
-            margin-bottom: 30px;
-        }
-
-        .nav-back a {
-            color: #555;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-
-        .nav-back a:hover {
-            text-decoration: underline;
-        }
+        .nav-back { margin-bottom: 30px; }
+        .nav-back a { color: #555; text-decoration: none; font-size: 0.95rem; }
+        .nav-back a:hover { text-decoration: underline; }
 
         h1 {
             font-size: clamp(2rem, 5vw, 2.8rem);
@@ -96,10 +89,7 @@
             color: var(--accent-color);
         }
 
-        p {
-            margin-bottom: 20px;
-            font-size: 1.05rem;
-        }
+        p { margin-bottom: 20px; font-size: 1.05rem; }
 
         .timeline {
             list-style: none;
@@ -109,10 +99,7 @@
             padding-left: 20px;
         }
 
-        .timeline-item {
-            margin-bottom: 25px;
-            position: relative;
-        }
+        .timeline-item { margin-bottom: 25px; position: relative; }
 
         .timeline-item::before {
             content: '';
@@ -132,10 +119,7 @@
             display: block;
         }
 
-        .description {
-            font-size: 1rem;
-            color: #333;
-        }
+        .description { font-size: 1rem; color: #333; }
 
         blockquote {
             background-color: #f4f4f4;
@@ -171,6 +155,9 @@
     </style>
 </head>
 <body>
+
+    <!-- ✅ NY: Menyns container -->
+    <div id="main-menu"></div>
 
     <div class="container">
         
@@ -255,7 +242,6 @@
                     <em>Världsmanifestet</em> bygger på insikten att totalrobotisering inte är något främmande, skrämmande eller oprövat. När vi nu kliver ur den tekniska trädan återtar vi bara den utvecklingskurva som stannades av.
                 </p>
 
-                <!-- Om detta initiativ (Förslag 3) -->
                 <section class="author-box">
                     <h2>Om detta initiativ</h2>
                     <p>
@@ -270,6 +256,9 @@
         </footer>
 
     </div>
+
+    <!-- ✅ NY: Menyns JavaScript -->
+    <script src="menu.js"></script>
 
 </body>
 </html>
