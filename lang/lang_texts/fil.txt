@@ -603,20 +603,21 @@ Elektrisidad)				pribadong utang ay			na-activate. Ang mga
 														sa kung ano ang hindi
 														pa libre.
 
-50 % (Pabahay &				50 % ng lahat ng				Ang bahagi ay tumataas
-Transportasyon)				natitirang utang ay			nang proporsyonal sa
-							na-write off.					kapasidad ng produksyon
-														ng pambansang parke ng
-														robot.
+50 % (Pabahay &				50 % ng lahat ng				Ang bahagi ay
+Transportasyon)				natitirang utang ay			tumataas nang
+							na-write off.					proporsyonal sa
+														kapasidad ng produksyon
+														ng pambansang parke
+														ng robot.
 
-75 % (Teknolohiya			75 % ng lahat ng utang			Ang bahagi ay na-optimize.
-Premium & Edukasyon)		ay na-write off mula sa			Ang pangangailangan para
-							mga libro ng mga bangko.			sa pera ay bumababa nang
-														malaki habang ang luxury
-														sphere ay lumiliit.
+75 % (Teknolohiya			75 % ng lahat ng utang		Ang bahagi ay na-optimize.
+Premium & Edukasyon)		ay na-write off mula sa		Ang pangangailangan para
+							mga libro ng mga bangko.		sa pera ay bumababa nang
+														malaki habang ang
+														luxury sphere ay lumiliit.
 
 100 % (Ang Ganap na		100 % ng lahat ng utang		Kumpleto ang sistema. Ang
-Kasaganaan)					at pera ay tumitigil sa		currency ay nagiging lipas
+Kasaganaan)				at pera ay tumitigil sa		currency ay nagiging lipas
 							pag-iral.					na; isang kabuuang malayang
 														ekonomiya ang umiiral.
 
