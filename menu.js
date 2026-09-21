@@ -2,7 +2,7 @@
 // MENU.JS - Global meny för The World Manifesto (42 språk)
 // FIXAD: Baskiska eu -> es, galiciska gl -> es, katalanska ca -> es osv.
 // Ingen localStorage - varje besök går på webbläsarens språk
-// UPPDATERAD: "About" / "Om" som sista menyval med banner.svg
+// UPPDATERAD: "About" / "Om" som sista menyval med banner.png
 // FIXAD: TL -> FIL (Filippinska)
 // ============================================================
 
@@ -199,7 +199,7 @@ function pickBestLanguage(available = AVAILABLE, preferred = []) {
                         <a href="${base}share/share.html?lang=${currentLang}"><img src="${base}menu_icons/share.svg" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.share}</a>
                         <a href="${base}qr/qr.html?lang=${currentLang}"><img src="${base}menu_icons/qr.svg" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.qr}</a>
                         <a href="${base}robotel/robotel.html?lang=${currentLang}"><img src="${base}menu_icons/robotel.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.robotel}</a>
-                        <a href="${base}about.html?lang=${currentLang}"><img src="${base}menu_icons/banner.svg" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.about}</a>
+                        <a href="${base}about.html?lang=${currentLang}"><img src="${base}menu_icons/banner.png" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;"> ${t.about}</a>
                     </div>
                 </div>
             </div>
