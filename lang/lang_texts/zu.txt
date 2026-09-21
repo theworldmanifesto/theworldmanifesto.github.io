@@ -1,11 +1,12 @@
 IManifesto Yomhlaba
 
 
-Imanifesto yokuchichima okuphelele
+IManifesto Yokuchichima Okuphelele
 
 
 
 Sven Yngerstedt
+
 
 
 =======================================
@@ -24,6 +25,7 @@ Umbhalo uwukufunda, ukukopisha, ukuphrinta, nokwabelana nawo wonke umuntu eMhlab
 
 
 Funda, usakaze, futhi wenze inguquko. IManifesto yokuqala ephelele ihlala itholakala mahhala ku-inthanethi.
+
 
 
 =======================================
@@ -61,6 +63,7 @@ V.  UMTHETHOSISEKELO WOMSHINI: Iphosta engu-A5
 VI.  IZINDABA ZEZOMNOTHO ZEKUSASA
 
 
+
 =======================================
 
 
@@ -74,6 +77,7 @@ Ukushintsha kohlelo akusiyona into yemibono, kodwa eyokuvuthwa kwezobuchwepheshe
 Ukuzama ukugcina amathegi entengo, amazinga enzalo, ukusweleka kokwenziwa, kanye nezimakethe zezikweletu lapho ipaki yemishini ingaletha konke mahhala kufana nokuzama ukugcina ubugqila ngemva kokuba izimboni sezakhiwe. Wuhlelo olufile olugcinwa luphila ngezindlela zokwenziwa.
 
 Le Manifesto iyibhukwana lemiyalo yokuthi siliphatha kanjani ifa lohlelo olushonile futhi senze kusebenze ubukhosi besintu.
+
 
 
 =======================================
@@ -93,6 +97,7 @@ Uma ufuna izwe lakho libe yingxenye yomfelandawonye womhlaba wonke wokwenza amar
 Le ncwadi ayibhalelwanga ukuthi ifundwe. Ibhalelwe ukuthi yenziwe.
 
 
+
 =======================================
 
 
@@ -102,6 +107,7 @@ II.  Okumele Kwenziwe
 
 
 "IManifesto ayikho ukuze kuphikisane ngekusasa, kodwa ukuze iliphathe. Sesifinyelele eqophelweni emlandweni lapho amandla obuchwepheshe asedlule ingqondo yezomnotho. Ukufuna inkokhelo ngalokho imishini ekukhiqiza mahhala akuseyona ezomnotho—kuyingcindezelo. Lo mbhalo uyibhukwana lemiyalo yokuthi siliphakamisa kanjani ijoka."
+
 
 
 =======================================
@@ -129,6 +135,7 @@ Ziyobalwa kabusha ngendlela ehlelekile futhi eqondile futhi zikhishwe ngokwesili
 3.  Isimiso
 
 Asivezi ezinye izindlela A, B, no-C. Siveza Isixazululo. IManifesto kufanele ifundwe njengebhukwana lemiyalo yomshini. Uma ufuna umshini ukuthi uqale, ucindezela inkinobho. IManifesto iyinkinobho.
+
 
 
 =======================================
@@ -164,6 +171,7 @@ Yilapho ukuhlanganiswa nezindawo eziphakeme ezishisayo kuba semqoka ngokuphelele
 UMfelandawonye kumele wethule futhi ubeke phambili le phrojekthi njengesinyathelo sawo sokuqala somthethosisekelo. Enye indlela esikhundleni sohlelo lwamaphepha oluwayo lwanamuhla kanye nomsebenzi ophoqelekile ongenangqondo akuyona inxushunxushu—enye indlela yile phrojekthi ehlosiwe neyomhlaba wonke yokuvala iluphu ezibusayo nokuvumela imishini ukuthi ithwale umthwalo wokukhiqiza unomphela.
 
 
+
 =======================================
 
 
@@ -190,6 +198,7 @@ I-AI izosebenza njengomphathi ongenakonakala. Ayingabanikazi abahlukene, kodwa i
 Umbuso uqinisekisa ukuthi izinhlobo zezibalo zohlelo kanye nezisekelo zokuthatha izinqumo ziyatholakala ukuze zibuyekezwe kuzwelonke. Asikho isinqumo esibalulekile embusweni esingenziwa "yibhokisi elimnyama" elingeke lichazwe ngesisekelo sezimiso eziyisisekelo zomthethosisekelo. Umbuso uthuthukisa, ungunikazi, futhi uphatha le AI-ephakeme njengengxenye yezinsiza zomphakathi, njengesiqinisekiso sokuthi umphakathi awukubuyeli emuva esikweletini noma ekuswelekeni kwezinsiza.
 
 
+
 =======================================
 
 
@@ -203,6 +212,7 @@ Ezweni elidala, wawuphoqeleka ukuba wamukele imikhiqizo eklanyelwe ukuhluleka. L
 Ngaphakathi kombono weManifesto, le nhloso yenzuzo iyasulwa ngokuphelele. Lapho umbuso ungumnikazi wezinto zokusetshenziswa futhi amarobhothi ethu aqhutshwa yi-AI ephethe ukukhishwa kwazo, isidingo sokuvumelana ngobuqotho bezinto ezibonakalayo siyanyamalala. Ukusebenza njengabameleli besakhiwo sombuso, amarobhothi ethu akunakekela ngendlela engakaze ibonwe ngaphambili ngokukhiqiza okungcono kakhulu ngokukhethekile.
 
 Ngenxa yokuthi imishini ayidingi nzuzo, ikhona kuphela ukukhonza isintu, ngokungaguquki isebenzisa izinto eziqine kakhulu neziphila isikhathi eside. Asakhi ukuthengisa futhi—sakha ukuze ukhululeke. Ikhwalithi iyeka ukuba wubunethezeka obugcinelwe abacebile; iba yizinga elingenakuvunyelwana ngalo kuzo zonke izakhamuzi eziNgaphakathi koMfelandawonye Wamarobhothi.
+
 
 
 =======================================
@@ -233,6 +243,7 @@ Abantu basezindaweni ezibandayo zase-Asia Ephakathi bathuthelwa eningizimu baye 
 Abantu base-Afrika ezwenikazi labo bakha iBlokhi Lezinsiza LaseNingizimu, lapho izifunda ezishisayo nezipholile zigcinwa ngokukhethekile njengezindawo zokuhlala abantu ukuze bathole kabusha futhi bakhululeke, kuyilapho izingxenye ezibandayo nezindawo eziwugwadule ezinkulu zezwekazi zenziwa amarobhothi ngokuphelele. Lezi zindawo ziguqulwa zibe yizakhiwo zemishini emsulwa, izakhiwo zezimboni, kanye nezikhungo ezinkulu zamandla elanga ezikhiqiza amandla okuguqulwa kwalo lonke izwekazi lase-Afrika ngaphandle kokuphazamisa izindawo zemvelo.
 
 
+
 =======================================
 
 
@@ -246,6 +257,7 @@ Ukuze kuqedwe uhlelo lwezikweletu lwamazwe ngamazwe futhi kwandiswe isivinini so
 Ukuguquka okuhlukanisiwe phakathi kohulumeni oyedwa kuwubungozi ngokwamasu. Kubambezela ukuchichima, kwelula ukungqubuzana kwezomnotho kwesigaba soguquko, futhi kuveze izwe elilodwa ekuvinjweni okuhleliwe kanye nokuhlaselwa okungokomthetho okuvela ohlelweni oludala lwezezimali ezinkantolo zohwebo lwamazwe ngamazwe. Umfelandawonye omkhulu, onqamula imingcele onemithetho yezomnotho efanayo uyisidingo sezibalo. Uma imakethe eyabelwe yinkulu, ukuchichima okuphelele kwenkomba yomzimba kufezwa ngokushesha nge-luphu ezibusayo (AAASR).
 
 Inhloso enkulu yalo mfelandawonye iwukuhleleka okuphelele komhlaba lapho imingcele yamazwe amadala ihlakazwa. Lokhu kuqinisekisa zonke izakhamuzi ezikhululekile inkululeko ephelele, esemthethweni yokushiya izifunda eziwugwadule noma ezishisayo ukuze zizinze ngokukhululeka, ziphile, futhi zijabulele ukukhiqizwa okungenakuphazamiseka kwemishini ezindaweni ezifanele, ezishisayo zomhlaba.
+
 
 
 =======================================
@@ -290,6 +302,7 @@ C.  I-Logistics Yezombusazwe
 Ukuphathwa ngokohlelo kanye nokwenziwa kokufuduka okuya ezindaweni ezifudumele eziphumelelayo.
 
 
+
 =======================================
 
 
@@ -314,6 +327,7 @@ Inhloso iwukuthi konke ukukhiqiza kuphathwe ipaki yemishini kazwelonke ezibusayo
 3.  Isabelo Sobukhosi: Indlela Eya Engcebweni
 
 Phakathi kwesigaba soguquko, zonke izakhamuzi ziqinisekiswa Isabelo Sobukhosi saminyaka yonke. Lokhu kwenza zonke izakhamuzi zikwazi ukuzimela ngokwezimali futhi kuvala igebe ukuya ezweni elisha. Lesi Sabelo sixhaswa ngokuthi umbuso uqondise kabusha izimali zebhajethi ezikhona zisuke emithwalweni yokondla uhlelo oludala ziye ezinkokhelweni eziqondile, njengoba ukwenziwa kwamarobhothi kwehlisa izindleko eziphelele zomphakathi.
+
 
 
 =======================================
@@ -364,6 +378,7 @@ Le ndawo isebenza ngokuhlanganyela okuqondile nezindawo zokuphila ezishisayo kan
 Njengoba okukhiqizwayo okuzenzakalelayo ngaphakathi kwe-NAPZ kufinyelela umthamo omkhulu, umnikelo wayo wokuphindaphindeka kwiNsiza Kazwelonke Ephelele (GNR) usheshisa ukuphelelwa yisikhathi okumisiwe kwezinhlobo zemali ze-fiat eziyifa, okuvula indlela yokuqaliswa okuphelele koMthethosisekelo Womshini.
 
 
+
 =======================================
 
 
@@ -412,6 +427,7 @@ Amakhaya akhiwa kusetshenziswa izinto zekhwalithi yaphakade, akhululwa ngokuphel
 Njengoba konke kwakhiwa ezindaweni ezinezinga lokushisa elimaphakathi lonyaka elizinzile nelijabulisayo, izakhiwo zingavulwa. Imingcele phakathi kwezindawo ezingaphakathi nezingaphandle iyahlakazwa. Izakhiwo zihlanganiswe nemvelo eshisayo, zinezinhlelo zamandla elanga eziziphilisayo kanye nezingadi eziqondile.
 
 
+
 =======================================
 
 
@@ -448,6 +464,7 @@ Abantu baphethe ilungelo elingavinjelwe lokwenza izinqumo ezinqumayo ezindabeni 
 Lapho inhloso isimisiwe (konke kuyoba mahhala), ukuphatha kugxila ekusebenziseni uhlelo. Izinqumo zenziwa ngezimemezelo ezibhalwe emthethosisekelo.
 
 
+
 =======================================
 
 
@@ -477,6 +494,7 @@ Ngokubuyisa ilungelo lokwakha imali yobukhosi, isikweletu ebesigcine uMbuso esih
 4.  Ukusuka Esibotshweni ukuya Emakhiyeni
 
 Lapho uMbuso usukuma esitokisini sawo, uyayeka ukuba wuhlelo lwamaphepha olukhuni. Uguquka ube ngumshini we-logistics osebenza kahle oletha Isabelo Sakho Sobukhosi futhi owakha ipharadisi ezindaweni ezishisayo.
+
 
 
 =======================================
@@ -564,6 +582,7 @@ IManifesto yenza ukuhlakazwa okulawulwayo kohlelo lwezikweletu. Njengoba imishin
 Ukulandisa okungenhla kusebenza njengencazelo yezobuchwepheshe "Yokuthuthukiswa Okungabonakali" ekusebenzeni.
 
 
+
 =======================================
 
 
@@ -581,25 +600,89 @@ Isixazululo iladi elisemthethweni, elivumelanayo lapho ukukhululwa ngokwezimali 
 NgeLadi Lenkululeko, izinombolo ezibonakalayo (izikweletu) zixhunywa ngqo neqiniso elibonakalayo (ukukhiqizwa ngamarobhothi). Ngomzuzwana nje imishini ethatha indawo yokuphila futhi iyenze yamahhala kubantu, amabhange ohlelo oludala ayaphoqeleka ukuba ahlehlele ezingeni elihambisanayo.
 
 
+2.  Izikhawu Eziguqukayo kanye Nokuzivumelanisa Nezimo
+
+Kubalulekile ukuqonda ukuthi izigaba ezine eziyinhloko zeLadi Lenkululeko (25%, 50%, 75%, no-100%) zakha izimpawu ezinkulu, ezingokomthethosisekelo zoguquko. Ekusebenzeni okungokoqobo, nokho, uhlelo luguquguquka ngokuphelele futhi lunamandla.
+
+I-AI yeHhovisi le-GNR ingabuyekeza inkomba ngezikhawu eziningi kakhulu kunaleso—ngokwesibonelo, njalo ngenyanga noma kuwo wonke amaphesenti angawodwana (njengo-26%, 27% GNR). Lokhu kunikeza inguquko ebushelelezi nakakhulu, ehamba kancane, futhi engabikezelwa kuzo zombili izakhamuzi kanye nomkhakha wezezimali. Kuyoba kumfelandawonye wenguquko obusayo ukukhetha nokusebenzisa izikhawu ezifanele ngokobuchwepheshe nangokusebenza uma esethathe amandla.
+
+
+Ngezansi ipulani yomthethosisekelo yokuthi isikweletu siguqulwa kanjani sibe wubukhosi, isinyathelo ngesinyathelo.
+
+
+3.  Iladi Lenkululeko: Ukukhishwa Okungokomthethosisekelo
+
+
+Insiza Kazwelonke Ephelele	Ukucishwa Kwezikweletu	Isabelo Sobukhosi
+(Izinga Lokufakwa Mahhala)		(NgokoMthetho			(Inkokhelo Yombuso)
+
+
+						Womthethosisekelo)
+25%						U-25% wazo zonke		Inkokhelo yokuqala iyenziwa
+(Ukudla Okuyisisekelo,		izikweletu ezizimele		isebenze. Izakhamuzi zithola amandla
+
+Amandla kanye				uyacishwa ngokushesha.	okuthenga ngalokho okungakabi
+Nogesi)										mahhala.
+50%						U-50% wazo zonke		Isabelo sikhuphuka 
+(Izindlu Nezokuthutha)			izikweletu ezisele		ngokwesilinganiso samandla
+						uyacishwa.			okukhiqiza epaki yamarobhothi
+
+											kazwelonke.
+75%						U-75% wazo zonke		Isabelo siyenziwa sasebenza kahle.
+(Ubucwepheshe, Okuphakeme	izikweletu uyacishwa		Isidingo semali sehla kakhulu
+NeMfundo)				ezincwadini zamabhange.	njengoba indawo yokunethezeka
+
+											isincipha.
+100%					Zonke izikweletu nemali	Uhlelo seluphelele. Izinhlobo zemali
+(Ukuchichima				seziyekile ukuba khona.	ziphelelwa yisikhathi; kunomnotho
 
 
 
+Okuphelele)									okhululekile ophelele.
+
+
+4.  Ukubuyekezwa Kwezigaba ZeLadi Lenkululeko
+
+Isigaba 1: 25% GNR – Ukudutshulwa Kokuqalisa Kokuqala
+
+Lesi yisigaba esibucayi kakhulu senguquko, lapho umgogodla wezengqondo nowomnotho wohlelo oludala wephulwa. Lapho amarobhothi aziphetheyo omfelandawonye eseyenze kwazenzakelala ukukhiqizwa kanye nokusabalalisa ukudla okuyisisekelo kanye nokuhlinzekwa kwamandla ezwe (ugesi nokushisisa), kumenyezelwa i-GNR engu-25%.
+
+
+Ngokuhambisana nalokho, isimemezelo sokuqala esisemthethweni ngokumelene namabhange azimele siyasetshenziswa: u-25% wesikweletu sezakhamuzi ngasinye (izikweletu zezindlu, izikweletu zabathengi, izikweletu zabafundi) uyacishwa kumaseva amabhange. Ngenxa yokuthi ugesi nokudla manje sekumahhala, izindleko zokuphila zabanikazi bamabhange ziyawa, okwenza izimfuno zabo zenzalo zingavumelekile ngokwezibalo. Ukuze kuqinisekiswe ukuthi izakhamuzi zingahweba emikhakheni engakabi ngamarobhothi, izinga lokuqala Lesabelo Sobukhosi liyasebenza—inkokhelo eqondile yemali yobukhosi evela eBhange Elikhulu.
+
+Isigaba 2: 50% GNR – Ukuphula Ukubodla Kwezindlu
+
+Esigabeni esilandelayo, ukwenziwa ngamarobhothi kunwebela emkhakheni wezokwakha, ukugcinwa, kanye nezokuthutha zomphakathi kanye nezimpahla. Lapho izindlu nezokuthutha sezifakwe ohlelweni lwamahhala lomfelandawonye, izwe lifinyelela ku-50% GNR.
+
+
+Kulesi sigaba, ingxenye yazo zonke izikweletu zezakhamuzi nezikahulumeni ziyacishwa ezincwadini zamabhange. Imakethe yezindlu, okwathi phakathi neminyaka yezikweletu yasebenza njengethuluzi eliyinhloko lokugcina abantu beboshwe ezikweletini zempilo yonke, iyabhidlika esimweni sayo esidala futhi iphinde ivele njengelungelo lesintu. Ngokuhambisana nalokho, Isabelo Sobukhosi silungiswa phezulu ngokuphathelene nokukhiqizwa okunyukile kwe-GNR (umlandeli we-GDP owenziwe owkazwelonke) yipaki yemishini.
+
+Isigaba 3: 75% GNR – Ukuhlakaza Isicupho Sokunethezeka
+
+Lapho u-75% wezidingo zezinsiza zomphakathi sekuhlanganiswe ngokuphelele ngaphandle komsebenzi wesintu—kufaka phakathi ubuchwepheshe obuthuthukile, imfundo, ukunakekelwa kwezempilo, kanye nezimpahla eziphakeme ezichazwe esahlukweni ngeSimiso Sokuphelela—u-75% wazo zonke izikweletu ezisele uyanyamalala.
+
+
+Kulesi sigaba, amabhizinisi azimele namabhange aselahlekelwe amandla okuphoqa abantu ukuba basebenze. Iningi lezakhamuzi likhetha ukuphila ngokuphelele ngeminikelo yamahhala yomfelandawonye kanye Nesabelo Sabo Sobukhosi, okuphoqa izinkampani ezizimele zokugcina ukuthi ziqothuke noma zinikele ngemigqa yazo yokukhiqiza kungqalasizinda ezibusayo.
+
+Isigaba 4: 100% GNR – Ukufa Kwemali kanye Nobukhosi Bokugcina
+
+Lapho iNsiza Kazwelonke Ephelele ifinyelela ku-100%, uguquko seluphelele. Amarobhothi kanye nezinhlelo zawo ze-AI ezixhumene manje zikhiqiza konke—kusukela ohlamvwini oluncane lukakolweni kuya ezimpahleni eziphila phakade eziyinkimbinkimbi kakhulu kanye nokuphrinta kobuciko—ngokuchichima okuphelele.
 
 
 
-Ukuqaliswa kusekelwe ezisekelweni ezimbili:
+Kuleli phuzu lokugcina, yonke imali nezikweletu ziyeka ukuba khona ngokomthetho womthethosisekelo. Imiqondo "yemalimboleko", "yenzalo", "yentengo", kanye "nemali" iba ngamatemu omlando aphelelwe yisikhathi, njengoba nje ubufeudal nobugqila kunjalo namuhla. Isintu sesithathe isinyathelo sokugcina eladini: kusukela ebumnyameni bohlelo lwezikweletu lwezomnotho kuya ebukhosini obuphelele, obuvikelwe yimishini.
 
+5.  Ubunjalo Bokonga kanye Nokuvalwa Kokugcina Kwamabhange
 
-1.  Ubuchwepheshe Obusafufusa
+Umbuzo ojwayelekile kunoma ngubani ofunda leli pulani ngothi:
 
-Izingxenye ngayinye—izinhlobo ezithuthukile ze-AI, ukuphrinta kwensimbi nge-3D, kanye nezimboni ezizisebenzelayo—zivele zikhona zihlakazeke emhlabeni wonke. Umshini usuvele unamandla okwakha izingxenye zomshini. Okungekho akusilo ubuchwepheshe, kodwa intando emaphakathi, engenazikweletu yokuvala iluphu.
+Kwenzakalani emalini eyongiwe yezakhamuzi phakathi noguquko, futhi ingabe umbuso uyoyiqoqa?
 
+Impendulo uthi cha. Umbuso wobukhosi awukuthinti neze ukonga okuyimfihlo kwezakhamuzi. Phakathi kwezigaba zokuqala zeLadi Lenkululeko, izimali ezigciniwe zisebenza njengebhonasi eyengeziwe kumuntu ukuze athenge izimpahla ezine-value eyengeziwe ezingakabi naso isikhathi sokufakwa emnothweni okhululekile.
 
-2.  Ukuhlanganyela Komhlaba Wonke
+Lapho iNsiza Kazwelonke Ephelele (GNR) ekugcineni ifinyelela ku-100%, akukho ukuqoqwa kwemali okunonya okwenzekayo. Esikhundleni salokho, ukufa kwemali okungokwemvelo nokungenagazi kuyenzeka. Ngenxa yokuthi amarobhothi omfelandawonye manje aletha KONKE—kufaka phakathi ubunethezeka obuyinkimbinkimbi kakhulu kanye nezimpahla eziphila phakade—ngokuphelela okukhulu futhi mahhala ngokuphelele, izinhlobo zemali ezindala ziyalahlekelwa umsebenzi wazo. Ziba yize, hhayi ngesimemezelo, kodwa ngoba akusekho lutho emphakathini oludinga inkokhelo.
+Kuleli phuzu lokugcina, amabhange azimele avalwa unomphela. Ayikho imishini ezomosha ukugcina uhlelo lokuthengiselana olwaphelelwa yisikhathi. Amabhange athathelwa indawo ngokuphelele yiHhovisi Lezinsiza ledijithali, lapho i-AI namarobhothi e-logistics kuphatha ukuchichima kwenyama ngqo ezakhamuzini. Ubushiqela bezinombolo sephelile; okusele yizinsiza zangempela kanye nenkululeko yesintu ephelele.
 
-Yilapho ukuhlanganiswa nezindawo eziphakeme ezishisayo kuba semqoka ngokuphelele. Lokhu akusiyona into yezimali, kodwa wukuhlanganyela kwezobuchwepheshe kanye nokwendawo. Izindawo ezisenyakatho zifaka isandla ngocwaningo kanye nobuchwepheshe obuphezulu obukhona, kuyilapho iNingizimu Melika ifaka isandla ngendawo, amandla elanga angaguquki, kanye nezinto zokusetshenziswa ukuze kuhlolwe, kwandiswe, futhi kukhuliswe izinhlelo eziziphindaphindayo ngaphansi kwezimo ezishisayo ezifanele.
-
-UMfelandawonye kumele wethule futhi ubeke phambili le phrojekthi njengesinyathelo sawo sokuqala somthethosisekelo. Enye indlela esikhundleni sohlelo lwamaphepha oluwayo lwanamuhla kanye nomsebenzi ophoqelekile ongenangqondo akuyona inxushunxushu—enye indlela yile phrojekthi ehlosiwe neyomhlaba wonke yokuvala iluphu ezibusayo nokuvumela imishini ukuthi ithwale umthwalo wokukhiqiza unomphela.
 
 
 =======================================
@@ -632,6 +715,7 @@ Umfelandawonye wenguquko uyawuhlukanisa Isicupho Sokunethezeka ngokuthatha indaw
     • Uma abantu sebebona ukuthi "Isicupho Sokunethezeka" siwukukhetha, hhayi isidingo, uguquko oluya ebukhosini obuphelele luba yinto engenakugwenywa.
 
 Inhloso yalesi sahluko ukukhanyisa indlela yokwenza, ukuze umuntu ngamunye akwazi ukuphuma esicuphweni futhi angene enkululekweni edalwa ukwenziwa ngamarobhothi.
+
 
 
 =======================================
@@ -684,6 +768,7 @@ Amarobhothi ahlome nge-AI ekwazi ukuphrinta imidwebo emihle kakhulu, ukubumbela 
 
 
 Lapho imishini yombuso idlula umkhakha ozimele kuzo zonke izindawo—ukusuka ohlamvwini olulula lukakolweni kuya entweni yokunethezeka eyinkimbinkimbi kakhulu—isikhuthazo sokuthi abantu bazithobe enjongweni yenzuzo yomunye umuntu siyanyamalala. Kuphela lapho ukuchichima sekuphelele, futhi ikhwalithi isiphelele, lapho usizi lohlelo lwezikweletu oludala lungcwatshwa unomphela.
+
 
 
 =======================================
@@ -742,6 +827,7 @@ Umshini ohlonywe ngezinzwa ezithintayo kanye nokuskena kwe-radar okuqhubekayo aw
 B.  Ukuziphatha
 
 Ukuphoqa umuntu ukuba enze umsebenzi umshini olawulwa yizinzwa owenza kangcono akusikona nje ukungasebenzi kahle—kuwunhlobongo.
+
 
 
 =======================================
@@ -914,6 +1000,7 @@ Ngokwethulwa kwemikhumbi yamarobhothi kazwelonke kanye nesabelo sobukhosi esiqin
 Izikhungo zomphakathi, izinkantolo, kanye nezindikimba ezilawulayo ezisungulwe ukuphatha izingxabano ezivela ekungalinganini kwezomnotho noma ikhwalithi engeyona ngeke ziguqulwe, kodwa kunalokho ziyohlakazwa njengoba imisebenzi yazo yenziwa ukuthi iphelelwe yisikhathi umphakathi okhululekile, onekhwalithi ephezulu engenamali.
 
 
+
 =======================================
 
 
@@ -932,6 +1019,7 @@ Ngezinkulungwane zemikhumbi enikwe amandla yi-nuclear ezungezayo njalo, izimpahl
 
 3.  Ukuhlukaniswa "Kokungcolile" "Nobuhle"
 Ukuhambisa nge-nuclear kugcina izindawo zokuhlala ezishisayo zihlanzekile. Igumbi lenjini (iNyakatho) liphethe ama-reactor, kuyilapho imikhumbi ethule ihambisa ukukhiqizwa kwamahhala kwakusasa emkhathizwe weNingizimu.
+
 
 
 =======================================
@@ -980,6 +1068,7 @@ Yaya ekhaya. Phumula. Lapheka.
 Isikhathi sakho ekugcineni ngesakho. Izwe belilinde ukuthi ubuchwepheshe bufinyelele izidingo zethu. Manje sesilapho. Ayikho impumelelo yokuziphatha ekuhluphekeni ngaphakathi kohlelo ubuchwepheshe osebuvele buphelelwe yisikhathi. Indlela ye-logistics eya enkululekweni isezandleni zakho—ngale Manifesto namandla osuvele unawo.
 
 
+
 =======================================
 
 
@@ -1006,6 +1095,7 @@ Insiza Kazwelonke Ephelele (umlandeli we-GDP ozenzakalelayo, owenziwe owkazwelon
 •  ISabelo Sobukhosi
 
 Isabelo esiqinisekisiwe sesakhamuzi sokukhiqizwa okuphelele kukazwelonke ngamarobhothi. Phakathi nesigaba soguquko, sisatshalaliswa ngohlobo lwemali yobukhosi exhaswa insalela yokukhiqiza ezenzakalelayo yombuso, ukuze kuvikeleke amandla okuthenga kanye nenkululeko yamazwe ngamazwe; esigabeni sokugcina, siguqukela ekufinyeleleni okuqondile nokuphelele ezinsizeni zomnotho okhululekile.
+
 
 
 =======================================
@@ -1048,6 +1138,7 @@ Itemu elihlakaniphile elenza umnotho uzwakale njengento ephilayo. Uma igazi (ima
 Lokhu kukhomba ngqo kwi-logistics. Akukhona ukushoda kwezinsiza, kodwa ukuthi abantu bahlinzekwa ngaphansi ngamabomu naphezu kokuthi imishini isimile ukukhiqiza.
 
 
+
 =======================================
 
 
@@ -1074,11 +1165,12 @@ Ungasebenzela nani?: Lapho umshini ukwenza ngo-1,000% oshibhile ngokunemba kweji
 IManifesto Yomhlaba
 
 
+
 =======================================
 
 
 
-IZINDABA ZEZOMNOTHO ZEKUSASA
+VI.  IZINDABA ZEZOMNOTHO ZEKUSASA
 
 
 
