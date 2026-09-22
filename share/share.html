@@ -56,17 +56,17 @@
             margin: 20px 0;
         }
 
-.lang-select {
-    margin: 8px 0 24px 0;
-    padding: 4px 8px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 13px;
-    font-family: sans-serif;
-    position: sticky;
-    top: 60px;
-    z-index: 400;
-}
+        .lang-select {
+            margin: 8px 0 24px 0;
+            padding: 4px 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+            font-family: sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 400;
+        }
 
         .quote-card {
             padding: 24px;
@@ -313,47 +313,92 @@
         }
 
         // === UPPDATERA ALLT SOM BEROR PÅ SPRÅK ===
-function switchLanguage(newLang) {
-    if (!AVAILABLE.includes(newLang)) newLang = 'en';
-    currentLang = newLang;
-    const ui = uiTranslations[newLang] || uiTranslations['en'];
+        function switchLanguage(newLang) {
+            if (!AVAILABLE.includes(newLang)) newLang = 'en';
+            currentLang = newLang;
+            const ui = uiTranslations[newLang] || uiTranslations['en'];
 
-    const scrollY = window.scrollY;
+            const scrollY = window.scrollY;
 
-    document.getElementById('page-title').textContent = ui.title;
-    document.getElementById('page-subtitle').textContent = ui.subtitle;
-    document.getElementById('lang-bar').textContent = ui.langBar;
-    document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
+            document.getElementById('page-title').textContent = ui.title;
+            document.getElementById('page-subtitle').textContent = ui.subtitle;
+            document.getElementById('lang-bar').textContent = ui.langBar;
+            document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
 
-    setDocumentDirection(newLang);
+            setDocumentDirection(newLang);
 
-    document.getElementById('lang-select').value = newLang;
+            document.getElementById('lang-select').value = newLang;
 
-    loadQuotes(newLang).then(() => {
-        window.scrollTo(0, scrollY);
-    });
-}
+            loadQuotes(newLang).then(() => {
+                window.scrollTo(0, scrollY);
+            });
+        }
 
         // === LADDA CITAT ===
-function loadQuotes(langCode) {
-    const container = document.getElementById('quotes-container');
-    if (!container) return Promise.resolve();   // ← viktigt
+        function loadQuotes(langCode) {
+            const container = document.getElementById('quotes-container');
+            if (!container) return Promise.resolve();
 
-    container.innerHTML = '<p>Laddar citat...</p>';
+            container.innerHTML = '<p>Laddar citat...</p>';
 
-    return fetch('quotes.json')                 // ← return här
-        .then(response => {
-            if (!response.ok) throw new Error('Kunde inte läsa JSON');
-            return response.json();
-        })
-        .then(data => {
-            // ... (allt som förut)
-        })
-        .catch(err => {
-            console.error('Fel vid laddning:', err);
-            container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
-        });
-}
+            return fetch('quotes.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('Kunde inte läsa JSON');
+                    return response.json();
+                })
+                .then(data => {
+                    const langKey = langCode.toUpperCase();
+                    let quotesData = data[langKey];
+                    if (!quotesData) {
+                        quotesData = data['EN'] || data['SV'] || {};
+                    }
+
+                    const quotes = Object.values(quotesData);
+                    container.innerHTML = '';
+
+                    if (quotes.length === 0) {
+                        container.innerHTML = '<p style="color:#888;">Inga citat tillgängliga på detta språk.</p>';
+                        return;
+                    }
+
+                    quotes.forEach((text) => {
+                        const escText = escapeHtml(text);
+                        const shareText = '"' + text + '" — The World Manifesto ' + PAGE;
+                        const encText = encodeURIComponent(shareText);
+                        const encQuote = encodeURIComponent(text);
+
+                        const card = document.createElement('div');
+                        card.className = 'quote-card';
+                        card.innerHTML = `
+                            <div class="quote-text">"${escText}"</div>
+                            <div class="share-row">
+                                <a class="btn btn-x" href="https://x.com/intent/tweet?text=${encText}" target="_blank">Share on X</a>
+                                <a class="btn btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(PAGE)}&quote=${encQuote}" target="_blank">Facebook</a>
+                                <a class="btn btn-wa" href="https://wa.me/?text=${encText}" target="_blank">WhatsApp</a>
+                                <a class="btn btn-tg" href="https://t.me/share/url?url=${encodeURIComponent(PAGE)}&text=${encQuote}" target="_blank">Telegram</a>
+                                <a class="btn btn-em" href="mailto:?subject=${encodeURIComponent(MANIFESTO)}&body=${encText}" target="_blank">Email</a>
+                                <a class="btn btn-copy" href="#" data-text="${encText}">Copy Link</a>
+                            </div>
+                        `;
+                        container.appendChild(card);
+                    });
+
+                    container.querySelectorAll('.btn-copy').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const text = decodeURIComponent(btn.dataset.text);
+                            navigator.clipboard.writeText(text);
+                            const old = btn.textContent;
+                            btn.textContent = 'Copied!';
+                            setTimeout(() => btn.textContent = old, 1200);
+                        });
+                    });
+                })
+                .catch(err => {
+                    console.error('Fel vid laddning:', err);
+                    container.innerHTML = '<p style="color:#cc0000;">Kunde inte ladda citat. Försök igen senare.</p>';
+                });
+        }
 
         // === KLICK PÅ SPRÅK – BYT UTAN OMLADDNING ===
         document.getElementById('lang-select').addEventListener('change', function() {
