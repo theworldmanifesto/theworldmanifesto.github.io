@@ -163,6 +163,67 @@
         [dir="rtl"] .slogan-text { text-align: right; }
         [dir="rtl"] .slogan-actions { justify-content: flex-start; }
         [dir="rtl"] .slogan-num { letter-spacing: normal; }
+
+        /* === SPRÅKVÄLJARE MED FLAGGOR === */
+        .lang-flags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 14px;
+            margin: 10px 0 28px 0;
+            padding: 14px 10px;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .lang-flags > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 72px;
+            text-align: center;
+        }
+
+        .lang-flag-img {
+            width: 28px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+            transition: transform 0.15s, box-shadow 0.15s;
+            display: block;
+            margin: 0 auto 4px auto;
+        }
+
+        .lang-flag-img:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        }
+
+        .lang-label {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            font-size: 10.5px;
+            line-height: 1.2;
+            color: #666;
+            max-width: 84px;
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .lang-label a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .lang-label a:hover {
+            color: #8B0000;
+            text-decoration: underline;
+        }
+
+        /* RTL-vänligt */
+        [dir="rtl"] .lang-flags {
+            direction: rtl;
+        }
     </style>
 
     <link rel="stylesheet" href="background_color.css">
