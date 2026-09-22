@@ -313,22 +313,30 @@
         }
 
         // === UPPDATERA ALLT SOM BEROR PÅ SPRÅK ===
-        function switchLanguage(newLang) {
-            if (!AVAILABLE.includes(newLang)) newLang = 'en';
-            currentLang = newLang;
-            const ui = uiTranslations[newLang] || uiTranslations['en'];
+function switchLanguage(newLang) {
+    if (!AVAILABLE.includes(newLang)) newLang = 'en';
+    currentLang = newLang;
+    const ui = uiTranslations[newLang] || uiTranslations['en'];
 
-            document.getElementById('page-title').textContent = ui.title;
-            document.getElementById('page-subtitle').textContent = ui.subtitle;
-            document.getElementById('lang-bar').textContent = ui.langBar;
-            document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
+    // Spara scrollpositionen INNAN vi byter innehåll
+    const scrollY = window.scrollY;
 
-            setDocumentDirection(newLang);
+    document.getElementById('page-title').textContent = ui.title;
+    document.getElementById('page-subtitle').textContent = ui.subtitle;
+    document.getElementById('lang-bar').textContent = ui.langBar;
+    document.getElementById('read-more-text').innerHTML = '<a href="../lang/lang.html">' + ui.readMore + '</a>';
 
-            document.getElementById('lang-select').value = newLang;
+    setDocumentDirection(newLang);
 
-            loadQuotes(newLang);
-        }
+    document.getElementById('lang-select').value = newLang;
+
+    loadQuotes(newLang);
+
+    // Återställ scrollpositionen EFTER att innehållet byggts upp
+    requestAnimationFrame(() => {
+        window.scrollTo(0, scrollY);
+    });
+}
 
         // === LADDA CITAT ===
         function loadQuotes(langCode) {
