@@ -334,24 +334,28 @@
         }
 
         // === UPPDATERA ALLT SOM BEROR PÅ SPRÅK ===
-        function switchLanguage(newLang) {
-            if (!AVAILABLE.includes(newLang)) newLang = 'en';
-            currentLang = newLang;
-            const ui = uiTranslations[newLang] || uiTranslations['en'];
+function switchLanguage(newLang) {
+    if (!AVAILABLE.includes(newLang)) newLang = 'en';
+    currentLang = newLang;
+    const ui = uiTranslations[newLang] || uiTranslations['en'];
 
-            // 1. UI-text
-            document.getElementById('page-title').textContent = ui.title;
-            document.querySelector('.back-link').textContent = ui.back;
+    // Spara scrollpositionen INNAN vi byter innehåll
+    const scrollY = window.scrollY;
 
-            // 2. RTL / LTR
-            setDocumentDirection(newLang);
+    document.getElementById('page-title').textContent = ui.title;
+    document.querySelector('.back-link').textContent = ui.back;
 
-            // 3. Markera aktuellt språk i dropdownen
-            document.getElementById('lang-select').value = newLang;
+    setDocumentDirection(newLang);
 
-            // 4. Ladda slogans
-            loadSlogans(newLang);
-        }
+    document.getElementById('lang-select').value = newLang;
+
+    loadSlogans(newLang);
+
+    // Återställ scrollpositionen EFTER att innehållet byggts upp
+    requestAnimationFrame(() => {
+        window.scrollTo(0, scrollY);
+    });
+}
 
         // === LADDA SLOGANS ===
         function loadSlogans(langCode) {
