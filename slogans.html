@@ -173,7 +173,7 @@
             <div class="divider"></div>
 
             <!-- Språk-dropdown fylls av populateLangSelect() -->
-            <select id="lang-select" class="lang-select" onchange="loadSlogans(this.value)"></select>
+            <select id="lang-select" class="lang-select"></select>
 
             <div id="slogans-list"></div>
 
@@ -193,375 +193,47 @@
 
         // === UI-TEXTER FÖR SLOGAN-SIDAN ===
         const uiTranslations = {
-            'sv': {
-                title: 'Slogans',
-                back: '← Tillbaka till huvudsidan',
-                copy: 'Kopiera',
-                copied: 'Kopierad!',
-                empty: 'Inga slogans tillgängliga på detta språk.',
-                loading: 'Laddar slogans…',
-                error: 'Kunde inte ladda slogans. Försök igen senare.'
-            },
-            'en': {
-                title: 'Slogans',
-                back: '← Back to the main page',
-                copy: 'Copy',
-                copied: 'Copied!',
-                empty: 'No slogans available in this language.',
-                loading: 'Loading slogans…',
-                error: 'Could not load slogans. Please try again later.'
-            },
-            'de': {
-                title: 'Slogans',
-                back: '← Zurück zur Hauptseite',
-                copy: 'Kopieren',
-                copied: 'Kopiert!',
-                empty: 'Keine Slogans in dieser Sprache verfügbar.',
-                loading: 'Slogans werden geladen…',
-                error: 'Slogans konnten nicht geladen werden. Bitte später erneut versuchen.'
-            },
-            'fr': {
-                title: 'Slogans',
-                back: '← Retour à la page principale',
-                copy: 'Copier',
-                copied: 'Copié !',
-                empty: 'Aucun slogan disponible dans cette langue.',
-                loading: 'Chargement des slogans…',
-                error: 'Impossible de charger les slogans. Veuillez réessayer plus tard.'
-            },
-            'es': {
-                title: 'Eslogans',
-                back: '← Volver a la página principal',
-                copy: 'Copiar',
-                copied: '¡Copiado!',
-                empty: 'No hay eslóganes disponibles en este idioma.',
-                loading: 'Cargando eslóganes…',
-                error: 'No se pudieron cargar los eslóganes. Inténtalo más tarde.'
-            },
-            'it': {
-                title: 'Slogan',
-                back: '← Torna alla pagina principale',
-                copy: 'Copia',
-                copied: 'Copiato!',
-                empty: 'Nessuno slogan disponibile in questa lingua.',
-                loading: 'Caricamento degli slogan…',
-                error: 'Impossibile caricare gli slogan. Riprova più tardi.'
-            },
-            'pt': {
-                title: 'Slogans',
-                back: '← Voltar à página principal',
-                copy: 'Copiar',
-                copied: 'Copiado!',
-                empty: 'Nenhum slogan disponível neste idioma.',
-                loading: 'Carregando slogans…',
-                error: 'Não foi possível carregar os slogans. Tente novamente mais tarde.'
-            },
-            'nl': {
-                title: 'Slogans',
-                back: '← Terug naar de hoofdpagina',
-                copy: 'Kopiëren',
-                copied: 'Gekopieerd!',
-                empty: 'Geen slogans beschikbaar in deze taal.',
-                loading: 'Slogans laden…',
-                error: 'Slogans konden niet worden geladen. Probeer het later opnieuw.'
-            },
-            'pl': {
-                title: 'Slogany',
-                back: '← Powrót do strony głównej',
-                copy: 'Kopiuj',
-                copied: 'Skopiowano!',
-                empty: 'Brak sloganów w tym języku.',
-                loading: 'Ładowanie sloganów…',
-                error: 'Nie udało się załadować sloganów. Spróbuj ponownie później.'
-            },
-            'da': {
-                title: 'Slogans',
-                back: '← Tilbage til forsiden',
-                copy: 'Kopier',
-                copied: 'Kopieret!',
-                empty: 'Ingen slogans tilgængelige på dette sprog.',
-                loading: 'Indlæser slogans…',
-                error: 'Kunne ikke indlæse slogans. Prøv igen senere.'
-            },
-            'no': {
-                title: 'Slogans',
-                back: '← Tilbake til hovedside',
-                copy: 'Kopier',
-                copied: 'Kopiert!',
-                empty: 'Ingen slagord tilgjengelig på dette språket.',
-                loading: 'Laster slagord…',
-                error: 'Kunne ikke laste slagord. Prøv igjen senere.'
-            },
-            'fi': {
-                title: 'Iskulauseet',
-                back: '← Takaisin etusivulle',
-                copy: 'Kopioi',
-                copied: 'Kopioitu!',
-                empty: 'Iskulauseita ei ole saatavilla tällä kielellä.',
-                loading: 'Ladataan iskulauseita…',
-                error: 'Iskulauseiden lataaminen epäonnistui. Yritä myöhemmin uudelleen.'
-            },
-            'ru': {
-                title: 'Лозунги',
-                back: '← Вернуться на главную',
-                copy: 'Копировать',
-                copied: 'Скопировано!',
-                empty: 'Лозунги на этом языке отсутствуют.',
-                loading: 'Загрузка лозунгов…',
-                error: 'Не удалось загрузить лозунги. Попробуйте позже.'
-            },
-            'uk': {
-                title: 'Гасла',
-                back: '← Повернутися на головну',
-                copy: 'Копіювати',
-                copied: 'Скопійовано!',
-                empty: 'Гасла цією мовою відсутні.',
-                loading: 'Завантаження гасел…',
-                error: 'Не вдалося завантажити гасла. Спробуйте пізніше.'
-            },
-            'bg': {
-                title: 'Лозунги',
-                back: '← Обратно към началната страница',
-                copy: 'Копирай',
-                copied: 'Копирано!',
-                empty: 'Няма налични лозунги на този език.',
-                loading: 'Зареждане на лозунги…',
-                error: 'Лозунгите не можаха да се заредят. Опитайте отново по-късно.'
-            },
-            'ar': {
-                title: 'شعارات',
-                back: '← العودة إلى الصفحة الرئيسية',
-                copy: 'نسخ',
-                copied: 'تم النسخ!',
-                empty: 'لا توجد شعارات متاحة بهذه اللغة.',
-                loading: 'جارٍ تحميل الشعارات…',
-                error: 'تعذّر تحميل الشعارات. حاول مرة أخرى لاحقًا.'
-            },
-            'he': {
-                title: 'סלוגנים',
-                back: '← חזרה לעמוד הראשי',
-                copy: 'העתק',
-                copied: 'הועתק!',
-                empty: 'אין סלוגנים זמינים בשפה זו.',
-                loading: 'טוען סלוגנים…',
-                error: 'לא ניתן לטעון את הסלוגנים. נסה שוב מאוחר יותר.'
-            },
-            'zh': {
-                title: '口号',
-                back: '← 返回主页',
-                copy: '复制',
-                copied: '已复制！',
-                empty: '该语言暂无口号。',
-                loading: '正在加载口号…',
-                error: '无法加载口号。请稍后重试。'
-            },
-            'ja': {
-                title: 'スローガン',
-                back: '← メインページに戻る',
-                copy: 'コピー',
-                copied: 'コピーしました！',
-                empty: 'この言語で利用できるスローガンはありません。',
-                loading: 'スローガンを読み込み中…',
-                error: 'スローガンを読み込めませんでした。後でもう一度お試しください。'
-            },
-            'ko': {
-                title: '구호',
-                back: '← 메인 페이지로 돌아가기',
-                copy: '복사',
-                copied: '복사됨!',
-                empty: '이 언어로 제공되는 구호가 없습니다.',
-                loading: '구호를 불러오는 중…',
-                error: '구호를 불러올 수 없습니다. 나중에 다시 시도하세요.'
-            },
-            'hi': {
-                title: 'नारे',
-                back: '← मुख्य पृष्ठ पर वापस जाएँ',
-                copy: 'कॉपी करें',
-                copied: 'कॉपी हो गया!',
-                empty: 'इस भाषा में कोई नारा उपलब्ध नहीं है।',
-                loading: 'नारे लोड हो रहे हैं…',
-                error: 'नारे लोड नहीं हो सके। कृपया बाद में पुनः प्रयास करें।'
-            },
-            'bn': {
-                title: 'স্লোগান',
-                back: '← মূল পাতায় ফিরে যান',
-                copy: 'কপি করুন',
-                copied: 'কপি হয়েছে!',
-                empty: 'এই ভাষায় কোনো স্লোগান নেই।',
-                loading: 'স্লোগান লোড হচ্ছে…',
-                error: 'স্লোগান লোড করা যায়নি। পরে আবার চেষ্টা করুন।'
-            },
-            'tr': {
-                title: 'Sloganlar',
-                back: '← Ana sayfaya dön',
-                copy: 'Kopyala',
-                copied: 'Kopyalandı!',
-                empty: 'Bu dilde slogan yok.',
-                loading: 'Sloganlar yükleniyor…',
-                error: 'Sloganlar yüklenemedi. Lütfen daha sonra tekrar deneyin.'
-            },
-            'fa': {
-                title: 'شعارها',
-                back: '← بازگشت به صفحه اصلی',
-                copy: 'کپی',
-                copied: 'کپی شد!',
-                empty: 'شعاری به این زبان موجود نیست.',
-                loading: 'در حال بارگذاری شعارها…',
-                error: 'بارگذاری شعارها ممکن نشد. بعداً دوباره تلاش کنید.'
-            },
-            'ur': {
-                title: 'نعرے',
-                back: '← مرکزی صفحہ پر واپس جائیں',
-                copy: 'نقل کریں',
-                copied: 'نقل ہو گیا!',
-                empty: 'اس زبان میں کوئی نعرہ دستیاب نہیں۔',
-                loading: 'نعرے لوڈ ہو رہے ہیں…',
-                error: 'نعرے لوڈ نہیں ہو سکے۔ بعد میں دوبارہ کوشش کریں۔'
-            },
-            'th': {
-                title: 'สโลแกน',
-                back: '← กลับไปยังหน้าหลัก',
-                copy: 'คัดลอก',
-                copied: 'คัดลอกแล้ว!',
-                empty: 'ไม่มีสโลแกนในภาษานี้',
-                loading: 'กำลังโหลดสโลแกน…',
-                error: 'ไม่สามารถโหลดสโลแกนได้ กรุณาลองใหม่ภายหลัง'
-            },
-            'vi': {
-                title: 'Khẩu hiệu',
-                back: '← Quay lại trang chính',
-                copy: 'Sao chép',
-                copied: 'Đã sao chép!',
-                empty: 'Không có khẩu hiệu nào bằng ngôn ngữ này.',
-                loading: 'Đang tải khẩu hiệu…',
-                error: 'Không thể tải khẩu hiệu. Vui lòng thử lại sau.'
-            },
-            'id': {
-                title: 'Slogan',
-                back: '← Kembali ke halaman utama',
-                copy: 'Salin',
-                copied: 'Disalin!',
-                empty: 'Tidak ada slogan dalam bahasa ini.',
-                loading: 'Memuat slogan…',
-                error: 'Tidak dapat memuat slogan. Coba lagi nanti.'
-            },
-            'sw': {
-                title: 'Slogan',
-                back: '← Rudi kwenye ukurasa mkuu',
-                copy: 'Nakili',
-                copied: 'Imenakiliwa!',
-                empty: 'Hakuna slogan katika lugha hii.',
-                loading: 'Inapakia slogan…',
-                error: 'Imeshindwa kupakia slogan. Jaribu tena baadaye.'
-            },
-            'cs': {
-                title: 'Slogany',
-                back: '← Zpět na hlavní stránku',
-                copy: 'Kopírovat',
-                copied: 'Zkopírováno!',
-                empty: 'V tomto jazyce nejsou k dispozici žádné slogany.',
-                loading: 'Načítání sloganů…',
-                error: 'Slogany se nepodařilo načíst. Zkuste to znovu později.'
-            },
-            'hu': {
-                title: 'Szlogenek',
-                back: '← Vissza a főoldalra',
-                copy: 'Másolás',
-                copied: 'Másolva!',
-                empty: 'Ezen a nyelven nincsenek szlogenek.',
-                loading: 'Szlogenek betöltése…',
-                error: 'A szlogeneket nem sikerült betölteni. Próbálja újra később.'
-            },
-            'ro': {
-                title: 'Sloganuri',
-                back: '← Înapoi la pagina principală',
-                copy: 'Copiază',
-                copied: 'Copiat!',
-                empty: 'Nu există sloganuri în această limbă.',
-                loading: 'Se încarcă sloganurile…',
-                error: 'Sloganurile nu au putut fi încărcate. Încercați din nou mai târziu.'
-            },
-            'el': {
-                title: 'Συνθήματα',
-                back: '← Επιστροφή στην κύρια σελίδα',
-                copy: 'Αντιγραφή',
-                copied: 'Αντιγράφηκε!',
-                empty: 'Δεν υπάρχουν συνθήματα σε αυτή τη γλώσσα.',
-                loading: 'Φόρτωση συνθημάτων…',
-                error: 'Δεν ήταν δυνατή η φόρτωση των συνθημάτων. Δοκιμάστε ξανά αργότερα.'
-            },
-            'is': {
-                title: 'Slagorð',
-                back: '← Aftur á aðalsíðu',
-                copy: 'Afrita',
-                copied: 'Afritað!',
-                empty: 'Engin slagorð á þessu tungumáli.',
-                loading: 'Hleður slagorðum…',
-                error: 'Ekki tókst að hlaða slagorðum. Reyndu aftur síðar.'
-            },
-            'fo': {
-                title: 'Slagorð',
-                back: '← Aftur til forsíðuna',
-                copy: 'Avrita',
-                copied: 'Avritað!',
-                empty: 'Ongi slagorð á hesummáli.',
-                loading: 'Lagar slagorð…',
-                error: 'Kundi ikki lata slagorð. Royn aftur seinni.'
-            },
-            'crs': {
-                title: 'Slogan',
-                back: '← Retourn lo paz prensipal',
-                copy: 'Kopye',
-                copied: 'Kopye!',
-                empty: 'Pa ena slogan dan sa lang sa.',
-                loading: 'Pe sarz slogan…',
-                error: 'Pa ti kapab sarz slogan. Esey ankor plitar.'
-            },
-            'se': {
-                title: 'Ságastallamat',
-                back: '← Ruovttusíidui',
-                copy: 'Máhca',
-                copied: 'Máhccojuvvon!',
-                empty: 'Ii leat ságastallamiid dán gillii.',
-                loading: 'Viežžá ságastallamiid…',
-                error: 'Ii sáhttán viežžat ságastallamiid. Geahččal fas maŋŋel.'
-            },
-            'fit': {
-                title: 'Sloganit',
-                back: '← Takasi etusivulle',
-                copy: 'Kopiroi',
-                copied: 'Kopiroitu!',
-                empty: 'Ei ole sloganeita tällä kielellä.',
-                loading: 'Ladataan sloganeita…',
-                error: 'Sloganeita ei voitu ladata. Yritä myöhemmin uuestaan.'
-            },
-            'af': {
-                title: 'Slogans',
-                back: '← Terug na die hoofblad',
-                copy: 'Kopieer',
-                copied: 'Gekopieer!',
-                empty: 'Geen slagspreuke beskikbaar in hierdie taal nie.',
-                loading: 'Laai tans slagspreuke…',
-                error: 'Kon nie slagspreuke laai nie. Probeer later weer.'
-            },
-            'zu': {
-                title: 'Iziqubulo',
-                back: '← Buyela ekhasini eliyinhloko',
-                copy: 'Kopisha',
-                copied: 'Kukopishiwe!',
-                empty: 'Azikho iziqubulo ezitholakalayo ngalolu limi.',
-                loading: 'Ilayisha iziqubulo…',
-                error: 'Ayikwazanga ukulayisha iziqubulo. Zama futhi kamuva.'
-            },
-            'xh': {
-                title: 'Iingcaphuno',
-                back: '← Buyela kwiphepha eliphambili',
-                copy: 'Khuphela',
-                copied: 'Ikhutshiwe!',
-                empty: 'Azikho iingcaphuno ezikhoyo ngolu lwimi.',
-                loading: 'Iyalayisha iingcaphuno…',
-                error: 'Ayikwazanga ukulayisha iingcaphuno. Zama kwakhona kamva.'
-            }
+            'sv': { title: 'Slogans', back: '← Tillbaka till huvudsidan', copy: 'Kopiera', copied: 'Kopierad!', empty: 'Inga slogans tillgängliga på detta språk.', loading: 'Laddar slogans…', error: 'Kunde inte ladda slogans. Försök igen senare.' },
+            'en': { title: 'Slogans', back: '← Back to the main page', copy: 'Copy', copied: 'Copied!', empty: 'No slogans available in this language.', loading: 'Loading slogans…', error: 'Could not load slogans. Please try again later.' },
+            'de': { title: 'Slogans', back: '← Zurück zur Hauptseite', copy: 'Kopieren', copied: 'Kopiert!', empty: 'Keine Slogans in dieser Sprache verfügbar.', loading: 'Slogans werden geladen…', error: 'Slogans konnten nicht geladen werden. Bitte später erneut versuchen.' },
+            'fr': { title: 'Slogans', back: '← Retour à la page principale', copy: 'Copier', copied: 'Copié !', empty: 'Aucun slogan disponible dans cette langue.', loading: 'Chargement des slogans…', error: 'Impossible de charger les slogans. Veuillez réessayer plus tard.' },
+            'es': { title: 'Eslogans', back: '← Volver a la página principal', copy: 'Copiar', copied: '¡Copiado!', empty: 'No hay eslóganes disponibles en este idioma.', loading: 'Cargando eslóganes…', error: 'No se pudieron cargar los eslóganes. Inténtalo más tarde.' },
+            'it': { title: 'Slogan', back: '← Torna alla pagina principale', copy: 'Copia', copied: 'Copiato!', empty: 'Nessuno slogan disponibile in questa lingua.', loading: 'Caricamento degli slogan…', error: 'Impossibile caricare gli slogan. Riprova più tardi.' },
+            'pt': { title: 'Slogans', back: '← Voltar à página principal', copy: 'Copiar', copied: 'Copiado!', empty: 'Nenhum slogan disponível neste idioma.', loading: 'Carregando slogans…', error: 'Não foi possível carregar os slogans. Tente novamente mais tarde.' },
+            'nl': { title: 'Slogans', back: '← Terug naar de hoofdpagina', copy: 'Kopiëren', copied: 'Gekopieerd!', empty: 'Geen slogans beschikbaar in deze taal.', loading: 'Slogans laden…', error: 'Slogans konden niet worden geladen. Probeer het later opnieuw.' },
+            'pl': { title: 'Slogany', back: '← Powrót do strony głównej', copy: 'Kopiuj', copied: 'Skopiowano!', empty: 'Brak sloganów w tym języku.', loading: 'Ładowanie sloganów…', error: 'Nie udało się załadować sloganów. Spróbuj ponownie później.' },
+            'da': { title: 'Slogans', back: '← Tilbage til forsiden', copy: 'Kopier', copied: 'Kopieret!', empty: 'Ingen slogans tilgængelige på dette sprog.', loading: 'Indlæser slogans…', error: 'Kunne ikke indlæse slogans. Prøv igen senere.' },
+            'no': { title: 'Slogans', back: '← Tilbake til hovedside', copy: 'Kopier', copied: 'Kopiert!', empty: 'Ingen slagord tilgjengelig på dette språket.', loading: 'Laster slagord…', error: 'Kunne ikke laste slagord. Prøv igjen senere.' },
+            'fi': { title: 'Iskulauseet', back: '← Takaisin etusivulle', copy: 'Kopioi', copied: 'Kopioitu!', empty: 'Iskulauseita ei ole saatavilla tällä kielellä.', loading: 'Ladataan iskulauseita…', error: 'Iskulauseiden lataaminen epäonnistui. Yritä myöhemmin uudelleen.' },
+            'ru': { title: 'Лозунги', back: '← Вернуться на главную', copy: 'Копировать', copied: 'Скопировано!', empty: 'Лозунги на этом языке отсутствуют.', loading: 'Загрузка лозунгов…', error: 'Не удалось загрузить лозунги. Попробуйте позже.' },
+            'uk': { title: 'Гасла', back: '← Повернутися на головну', copy: 'Копіювати', copied: 'Скопійовано!', empty: 'Гасла цією мовою відсутні.', loading: 'Завантаження гасел…', error: 'Не вдалося завантажити гасла. Спробуйте пізніше.' },
+            'bg': { title: 'Лозунги', back: '← Обратно към началната страница', copy: 'Копирай', copied: 'Копирано!', empty: 'Няма налични лозунги на този език.', loading: 'Зареждане на лозунги…', error: 'Лозунгите не можаха да се заредят. Опитайте отново по-късно.' },
+            'ar': { title: 'شعارات', back: '← العودة إلى الصفحة الرئيسية', copy: 'نسخ', copied: 'تم النسخ!', empty: 'لا توجد شعارات متاحة بهذه اللغة.', loading: 'جارٍ تحميل الشعارات…', error: 'تعذّر تحميل الشعارات. حاول مرة أخرى لاحقًا.' },
+            'he': { title: 'סלוגנים', back: '← חזרה לעמוד הראשי', copy: 'העתק', copied: 'הועתק!', empty: 'אין סלוגנים זמינים בשפה זו.', loading: 'טוען סלוגנים…', error: 'לא ניתן לטעון את הסלוגנים. נסה שוב מאוחר יותר.' },
+            'zh': { title: '口号', back: '← 返回主页', copy: '复制', copied: '已复制！', empty: '该语言暂无口号。', loading: '正在加载口号…', error: '无法加载口号。请稍后重试。' },
+            'ja': { title: 'スローガン', back: '← メインページに戻る', copy: 'コピー', copied: 'コピーしました！', empty: 'この言語で利用できるスローガンはありません。', loading: 'スローガンを読み込み中…', error: 'スローガンを読み込めませんでした。後でもう一度お試しください。' },
+            'ko': { title: '구호', back: '← 메인 페이지로 돌아가기', copy: '복사', copied: '복사됨!', empty: '이 언어로 제공되는 구호가 없습니다.', loading: '구호를 불러오는 중…', error: '구호를 불러올 수 없습니다. 나중에 다시 시도하세요.' },
+            'hi': { title: 'नारे', back: '← मुख्य पृष्ठ पर वापस जाएँ', copy: 'कॉपी करें', copied: 'कॉपी हो गया!', empty: 'इस भाषा में कोई नारा उपलब्ध नहीं है।', loading: 'नारे लोड हो रहे हैं…', error: 'नारे लोड नहीं हो सके। कृपया बाद में पुनः प्रयास करें।' },
+            'bn': { title: 'স্লোগান', back: '← মূল পাতায় ফিরে যান', copy: 'কপি করুন', copied: 'কপি হয়েছে!', empty: 'এই ভাষায় কোনো স্লোগান নেই।', loading: 'স্লোগান লোড হচ্ছে…', error: 'স্লোগান লোড করা যায়নি। পরে আবার চেষ্টা করুন।' },
+            'tr': { title: 'Sloganlar', back: '← Ana sayfaya dön', copy: 'Kopyala', copied: 'Kopyalandı!', empty: 'Bu dilde slogan yok.', loading: 'Sloganlar yükleniyor…', error: 'Sloganlar yüklenemedi. Lütfen daha sonra tekrar deneyin.' },
+            'fa': { title: 'شعارها', back: '← بازگشت به صفحه اصلی', copy: 'کپی', copied: 'کپی شد!', empty: 'شعاری به این زبان موجود نیست.', loading: 'در حال بارگذاری شعارها…', error: 'بارگذاری شعارها ممکن نشد. بعداً دوباره تلاش کنید.' },
+            'ur': { title: 'نعرے', back: '← مرکزی صفحہ پر واپس جائیں', copy: 'نقل کریں', copied: 'نقل ہو گیا!', empty: 'اس زبان میں کوئی نعرہ دستیاب نہیں۔', loading: 'نعرے لوڈ ہو رہے ہیں…', error: 'نعرے لوڈ نہیں ہو سکے۔ بعد میں دوبارہ کوشش کریں۔' },
+            'th': { title: 'สโลแกน', back: '← กลับไปยังหน้าหลัก', copy: 'คัดลอก', copied: 'คัดลอกแล้ว!', empty: 'ไม่มีสโลแกนในภาษานี้', loading: 'กำลังโหลดสโลแกน…', error: 'ไม่สามารถโหลดสโลแกนได้ กรุณาลองใหม่ภายหลัง' },
+            'vi': { title: 'Khẩu hiệu', back: '← Quay lại trang chính', copy: 'Sao chép', copied: 'Đã sao chép!', empty: 'Không có khẩu hiệu nào bằng ngôn ngữ này.', loading: 'Đang tải khẩu hiệu…', error: 'Không thể tải khẩu hiệu. Vui lòng thử lại sau.' },
+            'id': { title: 'Slogan', back: '← Kembali ke halaman utama', copy: 'Salin', copied: 'Disalin!', empty: 'Tidak ada slogan dalam bahasa ini.', loading: 'Memuat slogan…', error: 'Tidak dapat memuat slogan. Coba lagi nanti.' },
+            'sw': { title: 'Slogan', back: '← Rudi kwenye ukurasa mkuu', copy: 'Nakili', copied: 'Imenakiliwa!', empty: 'Hakuna slogan katika lugha hii.', loading: 'Inapakia slogan…', error: 'Imeshindwa kupakia slogan. Jaribu tena baadaye.' },
+            'cs': { title: 'Slogany', back: '← Zpět na hlavní stránku', copy: 'Kopírovat', copied: 'Zkopírováno!', empty: 'V tomto jazyce nejsou k dispozici žádné slogany.', loading: 'Načítání sloganů…', error: 'Slogany se nepodařilo načíst. Zkuste to znovu později.' },
+            'hu': { title: 'Szlogenek', back: '← Vissza a főoldalra', copy: 'Másolás', copied: 'Másolva!', empty: 'Ezen a nyelven nincsenek szlogenek.', loading: 'Szlogenek betöltése…', error: 'A szlogeneket nem sikerült betölteni. Próbálja újra később.' },
+            'ro': { title: 'Sloganuri', back: '← Înapoi la pagina principală', copy: 'Copiază', copied: 'Copiat!', empty: 'Nu există sloganuri în această limbă.', loading: 'Se încarcă sloganurile…', error: 'Sloganurile nu au putut fi încărcate. Încercați din nou mai târziu.' },
+            'el': { title: 'Συνθήματα', back: '← Επιστροφή στην κύρια σελίδα', copy: 'Αντιγραφή', copied: 'Αντιγράφηκε!', empty: 'Δεν υπάρχουν συνθήματα σε αυτή τη γλώσσα.', loading: 'Φόρτωση συνθημάτων…', error: 'Δεν ήταν δυνατή η φόρτωση των συνθημάτων. Δοκιμάστε ξανά αργότερα.' },
+            'is': { title: 'Slagorð', back: '← Aftur á aðalsíðu', copy: 'Afrita', copied: 'Afritað!', empty: 'Engin slagorð á þessu tungumáli.', loading: 'Hleður slagorðum…', error: 'Ekki tókst að hlaða slagorðum. Reyndu aftur síðar.' },
+            'fo': { title: 'Slagorð', back: '← Aftur til forsíðuna', copy: 'Avrita', copied: 'Avritað!', empty: 'Ongi slagorð á hesummáli.', loading: 'Lagar slagorð…', error: 'Kundi ikki lata slagorð. Royn aftur seinni.' },
+            'crs': { title: 'Slogan', back: '← Retourn lo paz prensipal', copy: 'Kopye', copied: 'Kopye!', empty: 'Pa ena slogan dan sa lang sa.', loading: 'Pe sarz slogan…', error: 'Pa ti kapab sarz slogan. Esey ankor plitar.' },
+            'se': { title: 'Ságastallamat', back: '← Ruovttusíidui', copy: 'Máhca', copied: 'Máhccojuvvon!', empty: 'Ii leat ságastallamiid dán gillii.', loading: 'Viežžá ságastallamiid…', error: 'Ii sáhttán viežžat ságastallamiid. Geahččal fas maŋŋel.' },
+            'fit': { title: 'Sloganit', back: '← Takasi etusivulle', copy: 'Kopiroi', copied: 'Kopiroitu!', empty: 'Ei ole sloganeita tällä kielellä.', loading: 'Ladataan sloganeita…', error: 'Sloganeita ei voitu ladata. Yritä myöhemmin uuestaan.' },
+            'af': { title: 'Slogans', back: '← Terug na die hoofblad', copy: 'Kopieer', copied: 'Gekopieer!', empty: 'Geen slagspreuke beskikbaar in hierdie taal nie.', loading: 'Laai tans slagspreuke…', error: 'Kon nie slagspreuke laai nie. Probeer later weer.' },
+            'zu': { title: 'Iziqubulo', back: '← Buyela ekhasini eliyinhloko', copy: 'Kopisha', copied: 'Kukopishiwe!', empty: 'Azikho iziqubulo ezitholakalayo ngalolu limi.', loading: 'Ilayisha iziqubulo…', error: 'Ayikwazanga ukulayisha iziqubulo. Zama futhi kamuva.' },
+            'xh': { title: 'Iingcaphuno', back: '← Buyela kwiphepha eliphambili', copy: 'Khuphela', copied: 'Ikhutshiwe!', empty: 'Azikho iingcaphuno ezikhoyo ngolu lwimi.', loading: 'Iyalayisha iingcaphuno…', error: 'Ayikwazanga ukulayisha iingcaphuno. Zama kwakhona kamva.' }
         };
 
         // === SPRÅKHANTERING ===
@@ -644,17 +316,12 @@
             return available.includes('en') ? 'en' : available[0];
         }
 
+        // === AKTUELLT SPRÅK (let, inte const – byts vid klick) ===
         const urlParams = new URLSearchParams(window.location.search);
         const rawUrlLang = urlParams.get('lang');
-        const currentLang = rawUrlLang ? pickBestLanguage(AVAILABLE, [rawUrlLang]) : pickBestLanguage();
+        let currentLang = rawUrlLang ? pickBestLanguage(AVAILABLE, [rawUrlLang]) : pickBestLanguage();
 
-        const ui = uiTranslations[currentLang] || uiTranslations['en'];
-
-        document.getElementById('page-title').textContent = ui.title;
-        document.querySelector('.back-link').textContent = ui.back;
-
-        setDocumentDirection(currentLang);
-
+        // === HJÄLPARE ===
         function escapeHtml(s) {
             return String(s)
                 .replace(/&/g, '&amp;')
@@ -663,6 +330,27 @@
                 .replace(/"/g, '&quot;');
         }
 
+        // === UPPDATERA ALLT SOM BEROR PÅ SPRÅK ===
+        function switchLanguage(newLang) {
+            if (!AVAILABLE.includes(newLang)) newLang = 'en';
+            currentLang = newLang;
+            const ui = uiTranslations[newLang] || uiTranslations['en'];
+
+            // 1. UI-text
+            document.getElementById('page-title').textContent = ui.title;
+            document.querySelector('.back-link').textContent = ui.back;
+
+            // 2. RTL / LTR
+            setDocumentDirection(newLang);
+
+            // 3. Markera aktuellt språk i dropdownen
+            document.getElementById('lang-select').value = newLang;
+
+            // 4. Ladda slogans
+            loadSlogans(newLang);
+        }
+
+        // === LADDA SLOGANS ===
         function loadSlogans(langCode) {
             const container = document.getElementById('slogans-list');
             if (!container) return;
@@ -722,9 +410,27 @@
                 });
         }
 
+        // === KLICK PÅ SPRÅK – BYT UTAN OMLADDNING ===
+        document.getElementById('lang-select').addEventListener('change', function() {
+            const newLang = this.value;
+            if (newLang === currentLang) return;
+
+            const url = new URL(window.location);
+            url.searchParams.set('lang', newLang);
+            history.pushState({ lang: newLang }, '', url);
+
+            switchLanguage(newLang);
+        });
+
+        // === BAKÅT / FRAMÅT-KNAPPEN ===
+        window.addEventListener('popstate', function() {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang') || pickBestLanguage();
+            switchLanguage(lang);
+        });
+
         // === STARTA ===
-        document.getElementById('lang-select').value = currentLang;
-        loadSlogans(currentLang);
+        switchLanguage(currentLang);
     </script>
 
     <!-- MENY -->
