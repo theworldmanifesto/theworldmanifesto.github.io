@@ -1,0 +1,50 @@
+// languages-list.js
+// Listan av alla språk som sajten stödjer.
+// [kod, visningsnamn, engelskt namn (endast för icke-latinska alfabet)]
+
+window.ALL_LANGUAGES = [
+    ['en', 'English'],
+    ['zh', '中文', 'Chinese'],
+    ['hi', 'हिंदी', 'Hindi'],
+    ['es', 'Español'],
+    ['fr', 'Français'],
+    ['ar', 'العربية', 'Arabic'],
+    ['bn', 'বাংলা', 'Bengali'],
+    ['pt', 'Português'],
+    ['ru', 'Русский', 'Russian'],
+    ['ur', 'اردو', 'Urdu'],
+    ['id', 'Bahasa Indonesia'],
+    ['de', 'Deutsch'],
+    ['ja', '日本語', 'Japanese'],
+    ['sw', 'Kiswahili'],
+    ['fil', 'Filipino'],
+    ['tr', 'Türkçe'],
+    ['vi', 'Tiếng Việt'],
+    ['ko', '한국어', 'Korean'],
+    ['fa', 'فارسی', 'Persian'],
+    ['th', 'ไทย', 'Thai'],
+    ['it', 'Italiano'],
+    ['pl', 'Polski'],
+    ['uk', 'Українська', 'Ukrainian'],
+    ['nl', 'Nederlands'],
+    ['ro', 'Română'],
+    ['el', 'Ελληνικά', 'Greek'],
+    ['hu', 'Magyar'],
+    ['cs', 'Čeština'],
+    ['sv', 'Svenska'],
+    ['bg', 'Български', 'Bulgarian'],
+    ['no', 'Norsk'],
+    ['da', 'Dansk'],
+    ['fi', 'Suomi'],
+    ['he', 'עברית', 'Hebrew'],
+    ['af', 'Afrikaans'],
+    ['zu', 'isiZulu'],
+    ['xh', 'isiXhosa'],
+    ['is', 'Íslenska'],
+    ['fo', 'Føroyskt'],
+    ['crs', 'Seselwa'],
+    ['se', 'Davvisámegiella'],
+    ['fit', 'Meänkieli']
+];
+
+window.RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
