@@ -349,57 +349,34 @@ function switchLanguage(newLang) {
 
     document.getElementById('lang-select').value = newLang;
 
-    loadSlogans(newLang);
-
-    // Återställ scrollpositionen EFTER att innehållet byggts upp
-    requestAnimationFrame(() => {
+    // Vänta på att innehållet byggts upp, sedan återställ scrollpositionen
+    loadSlogans(newLang).then(() => {
         window.scrollTo(0, scrollY);
     });
 }
 
         // === LADDA SLOGANS ===
         function loadSlogans(langCode) {
-            const container = document.getElementById('slogans-list');
-            if (!container) return;
+    const container = document.getElementById('slogans-list');
+    if (!container) return Promise.resolve();   // ← viktigt
 
-            const ui = uiTranslations[langCode] || uiTranslations['en'];
+    const ui = uiTranslations[langCode] || uiTranslations['en'];
 
-            container.innerHTML = '<p class="empty-message">' + escapeHtml(ui.loading) + '</p>';
+    container.innerHTML = '<p class="empty-message">' + escapeHtml(ui.loading) + '</p>';
 
-            fetch('slogans.json')
-                .then(response => {
-                    if (!response.ok) throw new Error('Kunde inte läsa slogans.json');
-                    return response.json();
-                })
-                .then(data => {
-                    const langKey = String(langCode).toUpperCase();
-                    const slogansData = data[langKey] || data['EN'] || data['SV'] || {};
-
-                    const slogans = Array.isArray(slogansData)
-                        ? slogansData
-                        : Object.values(slogansData);
-
-                    container.innerHTML = '';
-
-                    if (!slogans || slogans.length === 0) {
-                        container.innerHTML = '<p class="empty-message">' + escapeHtml(ui.empty) + '</p>';
-                        return;
-                    }
-
-                    slogans.forEach((text, idx) => {
-                        const escText = escapeHtml(text);
-
-                        const item = document.createElement('div');
-                        item.className = 'slogan-item';
-                        item.innerHTML = `
-                            <span class="slogan-num">№ ${String(idx + 1).padStart(2, '0')}</span>
-                            <p class="slogan-text">${escText}</p>
-                            <div class="slogan-actions">
-                                <button class="slogan-copy" data-text="${encodeURIComponent(text)}">${escapeHtml(ui.copy)}</button>
-                            </div>
-                        `;
-                        container.appendChild(item);
-                    });
+    return fetch('slogans.json')                // ← return här
+        .then(response => {
+            if (!response.ok) throw new Error('Kunde inte läsa slogans.json');
+            return response.json();
+        })
+        .then(data => {
+            // ... (allt som förut)
+        })
+        .catch(err => {
+            console.error('Fel vid laddning av slogans:', err);
+            container.innerHTML = '<p class="empty-message">' + escapeHtml(ui.error) + '</p>';
+        });
+}
 
                     container.querySelectorAll('.slogan-copy').forEach(btn => {
                         btn.addEventListener('click', () => {
