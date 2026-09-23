@@ -1050,5 +1050,31 @@ function loadDailySlogan() {
     <script src="menu.js"></script>
     <script src="footer.js"></script>
 
+<script>
+    // === LANDSSPECIFIKA FLAGGOR ===
+    // USA och Brasilien får se sina egna flaggor istället för gb.svg / pt.svg
+    (function() {
+        var countryToFlag = {
+            'US': { replace: 'gb', with: 'us' },   // USA → engelska
+            'BR': { replace: 'pt', with: 'br' }    // Brasilien → portugisiska
+        };
+
+        var lang = navigator.language || (navigator.languages && navigator.languages[0]) || '';
+        var parts = lang.split('-');
+        var country = parts[1] ? parts[1].toUpperCase() : '';
+
+        if (!country || !countryToFlag[country]) return;
+
+        var rule = countryToFlag[country];
+        var imgs = document.querySelectorAll('.lang-flags img');
+
+        imgs.forEach(function(img) {
+            if (img.src.indexOf('/' + rule.replace + '.svg') !== -1) {
+                img.src = img.src.replace('/' + rule.replace + '.svg', '/' + rule.with + '.svg');
+            }
+        });
+    })();
+</script>
+
 </body>
 </html>
