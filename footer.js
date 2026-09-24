@@ -172,6 +172,14 @@ function pickBestLanguage(available = AVAILABLE, preferred = []) {
     emailLink.onmouseover = function() { this.style.color = '#555'; };
     emailLink.onmouseout = function() { this.style.color = '#1a1a1a'; };
     webmasterP.appendChild(emailLink);
+
+    // Svenska flaggan till höger om e-postlänken
+    const seFlag = document.createElement('img');
+    seFlag.src = base + 'lang/flags/se.svg';
+    seFlag.alt = 'Sverige';
+    seFlag.style.cssText = 'width: 20px; height: auto; margin-left: 8px; vertical-align: middle; border: 1px solid #333; border-radius: 2px;';
+    webmasterP.appendChild(seFlag);
+
     footer.appendChild(webmasterP);
 
     const copyrightP = document.createElement('p');
