@@ -1057,24 +1057,44 @@ function loadDailySlogan() {
 
 <script>
     // === LANDSSPECIFIKA FLAGGOR ===
-    // USA, Brasilien och Mexiko får se sina egna flaggor
+    // Alla i Amerika (utom Kanada specifikt) ser 🇺🇸 för engelska och 🇧🇷 för portugisiska.
+    // Mexiko ser dessutom 🇲🇽 för spanska.
+    // Kanada: en-CA → 🇨🇦, fr-CA → 🇨🇦 (på respektive språkposition)
     (function() {
-        var countryToFlag = {
-            'US': [
-                { replace: 'gb', with: 'us' }   // USA → engelska
-            ],
-            'BR': [
-                { replace: 'pt', with: 'br' }   // Brasilien → portugisiska
-            ],
-            'MX': [
-                { replace: 'es', with: 'mx' },  // Mexiko → spanska
-                { replace: 'gb', with: 'us' }   // Mexiko → engelska (byts till USA)
-            ]
-        };
+        // Länder i Amerika som får 🇺🇸 + 🇧🇷 (utöver sina egna språk)
+        var americas = [
+            'US', 'BR',                              // Nordamerika (huvudländer)
+            'MX',                                    // Nordamerika (Mexico, extra regel nedan)
+            'GT', 'BZ', 'SV', 'HN', 'NI', 'CR', 'PA', // Centralamerika
+            'CU', 'DO', 'HT', 'JM', 'TT', 'BS', 'BB', 'PR', // Karibien
+            'AR', 'CO', 'VE', 'CL', 'PE', 'EC', 'BO', 'PY', 'UY', 'GY', 'SR' // Sydamerika
+        ];
+
+        var countryToFlag = {};
+
+        // Alla amerikanska länder får 🇺🇸 + 🇧🇷
+        americas.forEach(function(cc) {
+            countryToFlag[cc] = [
+                { replace: 'gb', with: 'us' },
+                { replace: 'pt', with: 'br' }
+            ];
+        });
+
+        // Mexiko får dessutom 🇲🇽 för spanska
+        countryToFlag['MX'].push({ replace: 'es', with: 'mx' });
+
+        // Kanada: hantera en-CA → 🇨🇦 (engelska) eller fr-CA → 🇨🇦 (franska)
+        countryToFlag['CA'] = [
+            { replace: 'gb', with: 'us' },        // en-CA → USA-flaggan (samma som övriga Amerika)
+            { replace: 'pt', with: 'br' },        // CA → 🇧🇷
+            { replace: 'fr', with: 'ca', onlyIfLang: 'fr' },  // fr-CA → 🇨🇦
+            { replace: 'gb', with: 'ca', onlyIfLang: 'en' }   // en-CA → 🇨🇦
+        ];
 
         var lang = navigator.language || (navigator.languages && navigator.languages[0]) || '';
-        var parts = lang.split('-');
+        var parts = lang.toLowerCase().split('-');
         var country = parts[1] ? parts[1].toUpperCase() : '';
+        var langCode = parts[0] ? parts[0].toLowerCase() : '';
 
         if (!country || !countryToFlag[country]) return;
 
@@ -1083,6 +1103,9 @@ function loadDailySlogan() {
 
         imgs.forEach(function(img) {
             rules.forEach(function(rule) {
+                // Om regeln kräver ett specifikt språk — kontrollera det
+                if (rule.onlyIfLang && rule.onlyIfLang !== langCode) return;
+
                 if (img.src.indexOf('/' + rule.replace + '.svg') !== -1) {
                     img.src = img.src.replace('/' + rule.replace + '.svg', '/' + rule.with + '.svg');
                 }
