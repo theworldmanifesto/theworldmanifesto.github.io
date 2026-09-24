@@ -1058,47 +1058,23 @@ function loadDailySlogan() {
 <script>
     // === LANDSSPECIFIKA FLAGGOR ===
     // USA, Brasilien och Mexiko får se sina egna flaggor
-    // Kanada: en-CA → 🇨🇦 English + 🇫🇷 Français
-    //         fr-CA → 🇺🇸 English + 🇨🇦 Français
     (function() {
-        var countryToFlag = {
-            'US': [
-                { replace: 'gb', with: 'us' }   // USA → engelska
-            ],
-            'BR': [
-                { replace: 'pt', with: 'br' }   // Brasilien → portugisiska
-            ],
-            'MX': [
-                { replace: 'es', with: 'mx' },  // Mexiko → spanska
-                { replace: 'gb', with: 'us' },  // Mexiko → engelska (byts till USA)
-                { replace: 'pt', with: 'br' }   // Mexiko → portugisiska (byts till Brasilien)
-            ],
-            'CA': [
-                { replace: 'pt', with: 'br' }   // Kanada → portugisiska (samma som övriga Amerika)
-            ]
-        };
+var countryToFlag = {
+    'US': [
+        { replace: 'gb', with: 'us' }   // USA → engelska
+    ],
+    'BR': [
+        { replace: 'pt', with: 'br' }   // Brasilien → portugisiska
+    ]
+};
 
         var lang = navigator.language || (navigator.languages && navigator.languages[0]) || '';
-        var parts = lang.toLowerCase().split('-');
+        var parts = lang.split('-');
         var country = parts[1] ? parts[1].toUpperCase() : '';
-        var langCode = parts[0] ? parts[0].toLowerCase() : '';
 
         if (!country || !countryToFlag[country]) return;
 
         var rules = countryToFlag[country];
-
-        // Specialfall för Kanada: lägg till språkberoende regel
-        if (country === 'CA') {
-            if (langCode === 'en') {
-                // en-CA: byt 🇬🇧 → 🇨🇦 (engelska behåller Frankrikes flagga)
-                rules.push({ replace: 'gb', with: 'ca' });
-            } else if (langCode === 'fr') {
-                // fr-CA: byt 🇫🇷 → 🇨🇦 och 🇬🇧 → 🇺🇸
-                rules.push({ replace: 'fr', with: 'ca' });
-                rules.push({ replace: 'gb', with: 'us' });
-            }
-        }
-
         var imgs = document.querySelectorAll('.lang-flags img');
 
         imgs.forEach(function(img) {
