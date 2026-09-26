@@ -240,6 +240,8 @@ const languages = {
 // ============================================================
 // 2. SPRÅKVAL
 // ============================================================
+let authorNameFromText = "";  // ← NY: sparas från textfilens rad 6
+
 function getPreferredLanguage() {
     const urlParams = new URLSearchParams(window.location.search);
     const urlLang = urlParams.get('lang');
@@ -285,6 +287,7 @@ document.getElementById('book-subtitle').textContent = langData.subtitle;
 // ============================================================
 // 3. LADDA TEXT – RAKT UPP OCH NER, INGEN TABELL, INGEN TOC
 //    Behåller tomrader och tabbar.
+//    Sparar rad 6 (författarnamnet) i authorNameFromText.
 // ============================================================
 async function loadText() {
     const bodyContent = document.getElementById('body-content');
@@ -295,17 +298,26 @@ async function loadText() {
 
         const lines = text.split('\n');
 
-        // Hitta de tre första icke-tomma raderna (titel, undertitel, författare)
+        // Hitta de fyra första icke-tomma raderna:
+        // 1 = titel, 2 = underrubrik, 3 = tom, 4 = författarnamn
         let nonEmptySeen = 0;
         let startIndex = 0;
+        let authorLineSeen = 0;
         for (let i = 0; i < lines.length; i++) {
             if (lines[i].trim() !== '') {
                 nonEmptySeen++;
                 if (nonEmptySeen === 3) {
+                    authorLineSeen = i;  // ← NY: spara index för 3:e icke-tomma raden
+                }
+                if (nonEmptySeen === 4) {
                     startIndex = i + 1;
                     break;
                 }
             }
+        }
+        // Om bara 3 icke-tomma rader finns (dvs. namn saknas), spara tredje raden
+        if (authorLineSeen > 0) {
+            authorNameFromText = lines[authorLineSeen].trim();
         }
 
         let currentHtml = '';
@@ -343,11 +355,12 @@ async function loadText() {
     }
 }
 
-loadText();
+loadText().then(() => {
+    if (typeof getAuthorHTML === 'function') {
+        document.getElementById('author-container').innerHTML = getAuthorHTML();
+    }
+});
 
-if (typeof getAuthorHTML === 'function') {
-    document.getElementById('author-container').innerHTML = getAuthorHTML();
-}
 if (typeof getCopyrightHTML === 'function') {
     document.getElementById('copyright-container').innerHTML = getCopyrightHTML();
 }
