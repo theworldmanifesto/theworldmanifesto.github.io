@@ -1,19 +1,24 @@
 // author.js - Hanterar författarnamnet och dess omgivande tomrader
 
-// Själva namnet (sätt till null eller tom sträng för att dölja)
-const AUTHOR_NAME = "Sven Yngerstedt";
+// true = visa namnet från textfilen (rad 6)
+// false = visa inget namn alls
+const SHOW_AUTHOR = true;
 
-// Generera HTML för författarsektionen
+// Fallback om textfilens namn saknas
+const AUTHOR_NAME_FALLBACK = "Sven Yngerstedt";
+
 function getAuthorHTML() {
-    if (AUTHOR_NAME && AUTHOR_NAME.trim() !== "") {
-        // Om namn finns: två tomrader före + namn + en tomrad efter
+    const name = (typeof authorNameFromText !== 'undefined' && authorNameFromText)
+        ? authorNameFromText
+        : AUTHOR_NAME_FALLBACK;
+
+    if (SHOW_AUTHOR && name && name.trim() !== "") {
         return `
             <br><br>
-            <p class="author">${AUTHOR_NAME}</p>
+            <p class="author">${name}</p>
             <br>
         `;
     } else {
-        // Om inget namn: bara två tomrader (för att behålla layouten)
         return `
             <br><br>
         `;
