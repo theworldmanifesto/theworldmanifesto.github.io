@@ -24,7 +24,6 @@
             margin-left: auto;
             margin-right: auto;
             color: #1a1a1a;
-            white-space: pre-wrap;
         }
         .flag-icon {
             display: inline-block;
@@ -48,8 +47,7 @@
             max-width: 300px;
             margin: 25px auto;
         }
-        .toc-title {
-            margin-bottom: 10px;
+        .toc-title { margin-bottom: 10px;
             font-family: 'Gelasio', 'Georgia', serif;
             font-size: clamp(16pt, 3vw, 20pt);
             font-weight: bold;
@@ -58,20 +56,68 @@
             color: #1a1a1a;
         }
 
+.manifesto-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Gelasio', 'Georgia', serif;
+    font-size: clamp(10pt, 2vw, 12pt);
+    text-align: start;
+    table-layout: fixed;
+}
+.manifesto-table th {
+    font-weight: bold;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 33.33%;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    background-color: #f7f7f7;
+}
+.manifesto-table td {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+.manifesto-table td:first-child {
+    font-weight: bold;
+    text-align: center;
+    width: 33.33%;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
         @media only screen and (max-width: 768px) {
             .book-title { font-size: 28pt !important; }
             .book-subtitle { font-size: 12pt !important; }
             .language-name { font-size: 9pt !important; }
             .body-text { padding: 0 15px; }
+            .manifesto-table td, .manifesto-table th {
+                padding: 6px 8px;
+                font-size: 9pt;
+            }
         }
         @media only screen and (max-width: 430px) {
             .book-title { font-size: 22pt !important; }
             .book-subtitle { font-size: 11pt !important; }
             .language-name { font-size: 8pt !important; }
+            .manifesto-table td, .manifesto-table th {
+                padding: 4px 6px;
+                font-size: 8pt;
+            }
         }
     </style>
 
-    <!-- Språk-fallback med localStorage -->
+    <link rel="stylesheet" href="../background_color.css">
+
+    <!-- NYTT: Din språk-fallback med localStorage -->
     <script type="module">
       import { pickBestLanguage, saveLanguage, getSavedLanguage, AVAILABLE, RELATED_FALLBACK } from './js/lang.js';
 
@@ -115,7 +161,8 @@
       });
     </script>
 
-    <link rel="stylesheet" href="../background_color.css">
+    <link rel="stylesheet" href="background_color.css">
+
 </head>
 <body>
     <div id="main-menu"></div>
@@ -266,14 +313,14 @@ function getPreferredLanguage() {
         const best = window._pick();
         if (languages[best]) return best;
     }
-    const browserLang = navigator.language || (navigator.languages && navigator.languages[0]) || 'en';
+    const browserLang = navigator.language || navigator.languages?.[0] || 'en';
     const langCode = browserLang.split('-')[0].toLowerCase();
     if (languages[langCode]) return langCode;
     return 'en';
 }
 
 const lang = getPreferredLanguage();
-const langData = languages[lang] || languages['en'];
+const langData = languages[lang];
 const RTL_LANGS = ['ar', 'he', 'fa', 'ur'];
 document.documentElement.lang = lang;
 document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
@@ -285,73 +332,138 @@ document.getElementById('book-title').textContent = langData.title;
 document.getElementById('book-subtitle').textContent = langData.subtitle;
 
 // ============================================================
-// 3. LADDA TEXT – RAKT UPP OCH NER, INGEN TABELL, INGEN TOC
-//    Behåller tomrader och tabbar.
+// 3. HJÄLPFUNKTION: DELA EN RAD PÅ SEPARATOR
+// ============================================================
+function splitRow(row) {
+    if (row.includes('\t')) {
+        return row.split(/\t+/).map(cell => cell.trim()).filter(cell => cell !== '');
+    }
+    return row.split(/\s*\|\s*/).map(cell => cell.trim()).filter(cell => cell !== '');
+}
+
+// ============================================================
+// 4. BYGG EN HTML-TABELL FRÅN TABELLRADER
+// ============================================================
+function buildTable(rows) {
+    if (rows.length === 0) return '';
+
+    const splitRows = rows.map(row => splitRow(row));
+    const maxCols = Math.max(...splitRows.map(r => r.length));
+    const normalizedRows = splitRows.map(r => {
+        while (r.length < maxCols) r.push('');
+        return r;
+    });
+
+    let html = `<table class="manifesto-table">`;
+    const headers = normalizedRows[0];
+    html += `<thead><tr>`;
+    headers.forEach(h => html += `<th>${h}</th>`);
+    html += `</tr></thead><tbody>`;
+
+    for (let r = 1; r < normalizedRows.length; r++) {
+        const cells = normalizedRows[r];
+        html += `<tr>`;
+        cells.forEach(c => html += `<td>${c}</td>`);
+        html += `</tr>`;
+    }
+
+    html += `</tbody></table>`;
+    return html;
+}
+
+// ============================================================
+// 5. LADDA TEXT – HOPPAR ÖVER ALLT MELLAN ===-SEPARATORER
 //    Sparar rad 6 (författarnamnet) i authorNameFromText.
 // ============================================================
 async function loadText() {
-    const bodyContent = document.getElementById('body-content');
     try {
         const response = await fetch(`lang_texts/${lang}.txt`);
         if (!response.ok) throw new Error('Textfil saknas');
         const text = await response.text();
 
         const lines = text.split('\n');
-
-        // Hitta de fyra första icke-tomma raderna:
-        // 1 = titel, 2 = underrubrik, 3 = tom, 4 = författarnamn
-        let nonEmptySeen = 0;
-        let startIndex = 0;
-        let authorLineSeen = 0;
-        for (let i = 0; i < lines.length; i++) {
-            if (lines[i].trim() !== '') {
-                nonEmptySeen++;
-                if (nonEmptySeen === 3) {
-                    authorLineSeen = i;  // ← NY: spara index för 3:e icke-tomma raden
-                }
-                if (nonEmptySeen === 4) {
-                    startIndex = i + 1;
-                    break;
-                }
-            }
-        }
-        // Om bara 3 icke-tomma rader finns (dvs. namn saknas), spara tredje raden
-        if (authorLineSeen > 0) {
-            authorNameFromText = lines[authorLineSeen].trim();
-        }
-
+        const nonEmptyLines = lines.filter(line => line.trim() !== '');
+        const bodyContent = document.getElementById('body-content');
         let currentHtml = '';
-        let lastWasEmpty = false;
 
-        for (let i = startIndex; i < lines.length; i++) {
-            const raw = lines[i];
-            const trimmed = raw.trim();
+        let tableRows = [];
+        let inTable = false;
+        let sepCount = 0;
 
-            // Tom rad → tomt stycke (men kollapsa flera i följd till ett)
-            if (trimmed === '') {
-                if (!lastWasEmpty) {
-                    currentHtml += `<p class="body-text">&nbsp;</p>`;
-                    lastWasEmpty = true;
+        // Spara rad 6 (4:e icke-tomma raden) som författarnamn
+        if (nonEmptyLines.length >= 4) {
+            authorNameFromText = nonEmptyLines[3].trim();
+        }
+
+        for (let i = 4; i < nonEmptyLines.length; i++) {
+            let rawLine = nonEmptyLines[i];
+            let line = rawLine.trim();
+
+            // Räkna "===" -separatorer. De 2 första (och allt som låg emellan
+            // dem, dvs. den gamla copyright-texten) hoppas helt över.
+            if (line.match(/^=+$/)) {
+                sepCount++;
+                if (sepCount <= 2) continue;
+                currentHtml += `<hr class="separator-line">`;
+                continue;
+            }
+            if (sepCount < 2) continue;
+
+            if (line === '') {
+                if (inTable && tableRows.length > 0) {
+                    currentHtml += buildTable(tableRows);
+                    tableRows = [];
+                    inTable = false;
                 }
                 continue;
             }
-            lastWasEmpty = false;
 
-            if (trimmed.match(/^=+$/)) {
-                currentHtml += `<hr class="separator-line">`;
-            } else if (trimmed.startsWith('"') && trimmed.endsWith('"')) {
-                currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${trimmed}</p>`;
-            } else {
-                // Använd raw (otrimmad) så att tabbar bevaras
-                currentHtml += `<p class="body-text">${raw}</p>`;
+            const pipeCount = (line.match(/\|/g) || []).length;
+            const tabCount = (line.match(/\t/g) || []).length;
+            const isTableRow = (pipeCount >= 2 || tabCount >= 2);
+
+            if (isTableRow) {
+                if (!inTable) {
+                    inTable = true;
+                    tableRows = [];
+                }
+                tableRows.push(line);
+                continue;
             }
+
+            if (inTable && tableRows.length > 0) {
+                currentHtml += buildTable(tableRows);
+                tableRows = [];
+                inTable = false;
+            }
+
+            if (line.toLowerCase().includes('table of contents') || line.toLowerCase().includes('innehållsförteckning') || line.toLowerCase().includes('innholdsfortegnelse') || line.toLowerCase().includes('indholdsfortegnelse') || line.toLowerCase().includes('sisällysluettelo') || line.toLowerCase().includes('table des matières') || line.toLowerCase().includes('inhaltsverzeichnis') || line.toLowerCase().includes('índice') || line.toLowerCase().includes('indice') || line.toLowerCase().includes('contenidos') || line.toLowerCase().includes('sommario') || line.toLowerCase().includes('περιεχόμενα') || line.toLowerCase().includes('содержание') || line.toLowerCase().includes('содржина') || line.toLowerCase().includes('spis treści') || line.toLowerCase().includes('obsah') || line.toLowerCase().includes('tartalomjegyzék') || line.toLowerCase().includes('cuprins') || line.toLowerCase().includes('inhoudsopgave') || line.toLowerCase().includes('sisukord') || line.toLowerCase().includes('saturs') || line.toLowerCase().includes('turinys') || line.toLowerCase().includes('kazalo') || line.toLowerCase().includes('sadržaj') || line.toLowerCase().includes('зміст') || line.toLowerCase().includes('fihirist') || line.toLowerCase().includes('toc') || line.toLowerCase().includes('daftar isi') || line.toLowerCase().includes('목차') || line.toLowerCase().includes('目次') || line.toLowerCase().includes('目录') || line.toLowerCase().includes('目錄') || line.toLowerCase().includes('สารบัญ') || line.toLowerCase().includes('mục lục') || line.toLowerCase().includes('içindekiler') || line.toLowerCase().includes('فهرست') || line.toLowerCase().includes('محتويات') || line.toLowerCase().includes('תוכן עניינים') || line.toLowerCase().includes('अनुक्रमणिका') || line.toLowerCase().includes('সূচিপত্র') || line.toLowerCase().includes('taaloga') || line.toLowerCase().includes('dilolo') || line.toLowerCase().includes('okuqukethwe') || line.toLowerCase().includes('yandikimo') || line.toLowerCase().includes('efnisyfirlit') || line.toLowerCase().includes('innihaldsyvirlit')) {
+                currentHtml += `<h2 class="toc-title">${line}</h2><div style="height:0.8em"></div>`;
+                continue;
+            }
+
+            if (line.startsWith('"') && line.endsWith('"')) {
+                currentHtml += `<p class="body-text" style="font-style: italic; text-align: center;">${line}</p>`;
+                continue;
+            }
+
+            if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
+                currentHtml += `<p class="body-text">${line}</p>`;
+                continue;
+            }
+
+            currentHtml += `<p class="body-text">${line}</p>`;
+        }
+
+        if (inTable && tableRows.length > 0) {
+            currentHtml += buildTable(tableRows);
         }
 
         bodyContent.innerHTML = currentHtml;
 
     } catch (error) {
         console.error('Fel vid laddning:', error);
-        bodyContent.innerHTML = '<p class="body-text">Text could not be loaded.</p>';
+        document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
     }
 }
 
