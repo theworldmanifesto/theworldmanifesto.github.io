@@ -2,7 +2,7 @@
 
 // true = visa namnet från textfilen (rad 6)
 // false = visa inget namn alls
-const SHOW_AUTHOR = false;
+const SHOW_AUTHOR = true;
 
 // Fallback om textfilens namn saknas
 const AUTHOR_NAME_FALLBACK = "Sven Yngerstedt";
