@@ -10,42 +10,15 @@
         "description": "Some milestones in humanity's technological development — and why The World Manifesto exists.",
         "section1Title": "Historical Milestones",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "The steam engine is invented, breaking humanity's absolute dependence on muscle power and draft animals for the first time."
-          },
-          {
-            "year": 1750,
-            "text": "The industrial revolution begins in England and scales up mechanical mass production."
-          },
-          {
-            "year": 1800,
-            "text": "The chemical battery is invented (and is commercially available on a large scale in the USA in 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "The automated loom is invented – the world's first programmable mechanical device."
-          },
-          {
-            "year": 1809,
-            "text": "Electric light is invented."
-          },
-          {
-            "year": 1831,
-            "text": "The generator is invented and enables the conversion of movement into controllable electrical energy."
-          },
-          {
-            "year": 1859,
-            "text": "The rechargeable battery is invented, closing the circle for storable and mobile motive power."
-          },
-          {
-            "year": 1954,
-            "text": "The first public nuclear power grid is put into use."
-          },
-          {
-            "year": "Until the present",
-            "text": "But what happened next? What happened was that the development of the industrial revolution unfortunately stalled, no expected total robotization followed, and no one knows why."
-          }
+          { "year": 1698, "text": "The steam engine is invented, breaking humanity's absolute dependence on muscle power and draft animals for the first time." },
+          { "year": 1750, "text": "The industrial revolution begins in England and scales up mechanical mass production." },
+          { "year": 1800, "text": "The chemical battery is invented (and is commercially available on a large scale in the USA in 1896)." },
+          { "year": 1801, "text": "The automated loom is invented – the world's first programmable mechanical device." },
+          { "year": 1809, "text": "Electric light is invented." },
+          { "year": 1831, "text": "The generator is invented and enables the conversion of movement into controllable electrical energy." },
+          { "year": 1859, "text": "The rechargeable battery is invented, closing the circle for storable and mobile motive power." },
+          { "year": 1954, "text": "The first public nuclear power grid is put into use." },
+          { "year": "Until the present", "text": "But what happened next? Collective paralysis. The development of the Industrial Revolution stalled, and the expected total robotization never happened. So let's do it now – and not wait." }
         ],
         "section2Title": "Why does The World Manifesto exist?",
         "paragraphs": [
@@ -60,42 +33,15 @@
         "description": "人类技术发展的一些里程碑——以及为什么世界宣言存在。",
         "section1Title": "历史里程碑",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "蒸汽机被发明，历史上第一次打破了人类对体力劳动和役畜的绝对依赖。"
-          },
-          {
-            "year": 1750,
-            "text": "工业革命在英国开始，并扩大了机械化大规模生产。"
-          },
-          {
-            "year": 1800,
-            "text": "化学电池被发明（并于1896年在美国实现大规模商业化）。"
-          },
-          {
-            "year": 1801,
-            "text": "自动织布机被发明——世界上第一个可编程机械装置。"
-          },
-          {
-            "year": 1809,
-            "text": "电灯被发明。"
-          },
-          {
-            "year": 1831,
-            "text": "发电机被发明，使得机械运动能够转化为可控的电能。"
-          },
-          {
-            "year": 1859,
-            "text": "可充电电池被发明，从而闭合了可储存和移动动力源的循环。"
-          },
-          {
-            "year": 1954,
-            "text": "第一个采用核能的公共电网投入使用。"
-          },
-          {
-            "year": "直至今日",
-            "text": "但后来发生了什么？发生的是，工业革命的发展不幸停滞了，预期的全面机器人化并未到来，而且没有人知道为什么。"
-          }
+          { "year": 1698, "text": "蒸汽机被发明，历史上第一次打破了人类对体力劳动和役畜的绝对依赖。" },
+          { "year": 1750, "text": "工业革命在英国开始，并扩大了机械化大规模生产。" },
+          { "year": 1800, "text": "化学电池被发明（并于1896年在美国实现大规模商业化）。" },
+          { "year": 1801, "text": "自动织布机被发明——世界上第一个可编程机械装置。" },
+          { "year": 1809, "text": "电灯被发明。" },
+          { "year": 1831, "text": "发电机被发明，使得机械运动能够转化为可控的电能。" },
+          { "year": 1859, "text": "可充电电池被发明，从而闭合了可储存和移动动力源的循环。" },
+          { "year": 1954, "text": "第一个采用核能的公共电网投入使用。" },
+          { "year": "直至今日", "text": "但是后来发生了什么？集体行动瘫痪。工业革命的发展停滞了，而预期的全面机器人化从未实现。所以让我们现在就去做——不要再等待。" }
         ],
         "section2Title": "为什么会有世界宣言？",
         "paragraphs": [
@@ -110,42 +56,15 @@
         "description": "मानवता के तकनीकी विकास के कुछ मील के पत्थर — और द वर्ल्ड मेनिफेस्टो क्यों मौजूद है।",
         "section1Title": "ऐतिहासिक मील के पत्थर",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "भाप इंजन का आविष्कार होता है, जो पहली बार मांसपेशियों की शक्ति और भार ढोने वाले पशुओं पर मानवता की पूर्ण निर्भरता को तोड़ता है।"
-          },
-          {
-            "year": 1750,
-            "text": "औद्योगिक क्रांति इंग्लैंड में शुरू होती है और बड़े पैमाने पर मशीनी उत्पादन का विस्तार करती है।"
-          },
-          {
-            "year": 1800,
-            "text": "रासायनिक बैटरी का आविष्कार होता है (और 1896 में संयुक्त राज्य अमेरिका में बड़े पैमाने पर व्यावसायिक रूप से उपलब्ध होती है)।"
-          },
-          {
-            "year": 1801,
-            "text": "स्वचालित करघे का आविष्कार होता है – दुनिया का पहला प्रोग्राम करने योग्य यांत्रिक उपकरण।"
-          },
-          {
-            "year": 1809,
-            "text": "बिजली के प्रकाश का आविष्कार होता है।"
-          },
-          {
-            "year": 1831,
-            "text": "जनरेटर का आविष्कार होता है और गति को नियंत्रित विद्युत ऊर्जा में परिवर्तित करना संभव बनाता है।"
-          },
-          {
-            "year": 1859,
-            "text": "रिचार्जेबल बैटरी का आविष्कार होता है, जो संचयी और मोबाइल प्रेरक शक्ति के चक्र को पूरा करता है।"
-          },
-          {
-            "year": 1954,
-            "text": "पहली सार्वजनिक परमाणु ऊर्जा ग्रिड उपयोग में लाई जाती है।"
-          },
-          {
-            "year": "आज तक",
-            "text": "लेकिन फिर क्या हुआ? जो हुआ वह यह था कि दुर्भाग्य से औद्योगिक क्रांति का विकास रुक गया, कोई अपेक्षित पूर्ण रोबोटीकरण नहीं हुआ, और कोई नहीं जानता क्यों।"
-          }
+          { "year": 1698, "text": "भाप इंजन का आविष्कार होता है, जो पहली बार मांसपेशियों की शक्ति और भार ढोने वाले पशुओं पर मानवता की पूर्ण निर्भरता को तोड़ता है।" },
+          { "year": 1750, "text": "औद्योगिक क्रांति इंग्लैंड में शुरू होती है और बड़े पैमाने पर मशीनी उत्पादन का विस्तार करती है।" },
+          { "year": 1800, "text": "रासायनिक बैटरी का आविष्कार होता है (और 1896 में संयुक्त राज्य अमेरिका में बड़े पैमाने पर व्यावसायिक रूप से उपलब्ध होती है)।" },
+          { "year": 1801, "text": "स्वचालित करघे का आविष्कार होता है – दुनिया का पहला प्रोग्राम करने योग्य यांत्रिक उपकरण।" },
+          { "year": 1809, "text": "बिजली के प्रकाश का आविष्कार होता है।" },
+          { "year": 1831, "text": "जनरेटर का आविष्कार होता है और गति को नियंत्रित विद्युत ऊर्जा में परिवर्तित करना संभव बनाता है।" },
+          { "year": 1859, "text": "रिचार्जेबल बैटरी का आविष्कार होता है, जो संचयी और मोबाइल प्रेरक शक्ति के चक्र को पूरा करता है।" },
+          { "year": 1954, "text": "पहली सार्वजनिक परमाणु ऊर्जा ग्रिड उपयोग में लाई जाती है।" },
+          { "year": "आज तक", "text": "लेकिन फिर क्या हुआ? सामूहिक कार्य-पक्षाघात। औद्योगिक क्रांति का विकास रुक गया, और अपेक्षित पूर्ण रोबोटीकरण कभी नहीं हुआ। तो आइए इसे अब करें – और इंतज़ार न करें।" }
         ],
         "section2Title": "द वर्ल्ड मेनिफेस्टो क्यों मौजूद है?",
         "paragraphs": [
@@ -160,42 +79,15 @@
         "description": "Algunos hitos en el desarrollo tecnológico de la humanidad — y por qué existe el Manifiesto Mundial.",
         "section1Title": "Hitos históricos",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Se inventa la máquina de vapor, rompiendo por primera vez la dependencia absoluta de la humanidad de la fuerza muscular y los animales de tiro."
-          },
-          {
-            "year": 1750,
-            "text": "La revolución industrial comienza en Inglaterra y amplía la producción en masa mecánica."
-          },
-          {
-            "year": 1800,
-            "text": "Se inventa la batería química (y está disponible comercialmente a gran escala en los EE. UU. en 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Se inventa el telar automatizado: el primer dispositivo mecánico programable del mundo."
-          },
-          {
-            "year": 1809,
-            "text": "Se inventa la luz eléctrica."
-          },
-          {
-            "year": 1831,
-            "text": "Se inventa el generador y permite la conversión del movimiento en energía eléctrica controlable."
-          },
-          {
-            "year": 1859,
-            "text": "Se inventa la batería recargable, cerrando el círculo para la fuerza motriz almacenable y móvil."
-          },
-          {
-            "year": 1954,
-            "text": "Se pone en servicio la primera red pública de energía nuclear."
-          },
-          {
-            "year": "Hasta la actualidad",
-            "text": "¿Pero qué pasó después? Lo que pasó fue que el desarrollo de la revolución industrial lamentablemente se estancó, no siguió la total robotización esperada y nadie sabe por qué."
-          }
+          { "year": 1698, "text": "Se inventa la máquina de vapor, rompiendo por primera vez la dependencia absoluta de la humanidad de la fuerza muscular y los animales de tiro." },
+          { "year": 1750, "text": "La revolución industrial comienza en Inglaterra y amplía la producción en masa mecánica." },
+          { "year": 1800, "text": "Se inventa la batería química (y está disponible comercialmente a gran escala en los EE. UU. en 1896)." },
+          { "year": 1801, "text": "Se inventa el telar automatizado: el primer dispositivo mecánico programable del mundo." },
+          { "year": 1809, "text": "Se inventa la luz eléctrica." },
+          { "year": 1831, "text": "Se inventa el generador y permite la conversión del movimiento en energía eléctrica controlable." },
+          { "year": 1859, "text": "Se inventa la batería recargable, cerrando el círculo para la fuerza motriz almacenable y móvil." },
+          { "year": 1954, "text": "Se pone en servicio la primera red pública de energía nuclear." },
+          { "year": "Hasta la actualidad", "text": "Pero ¿qué pasó después? Parálisis colectiva. El desarrollo de la revolución industrial se estancó, y la robotización total esperada nunca llegó. Así que hagámoslo ahora – y no esperemos." }
         ],
         "section2Title": "¿Por qué existe el Manifiesto Mundial?",
         "paragraphs": [
@@ -210,42 +102,15 @@
         "description": "Quelques jalons du développement technologique de l'humanité — et pourquoi le Manifeste mondial existe.",
         "section1Title": "Jalons historiques",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "La machine à vapeur est inventée, brisant pour la première fois la dépendance absolue de l'humanité à l'égard de la force musculaire et des animaux de trait."
-          },
-          {
-            "year": 1750,
-            "text": "La révolution industrielle commence en Angleterre et intensifie la production de masse mécanique."
-          },
-          {
-            "year": 1800,
-            "text": "La batterie chimique est inventée (et est commercialement disponible à grande échelle aux États-Unis en 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Le métier à tisser automatisé est inventé – le tout premier dispositif mécanique programmable au monde."
-          },
-          {
-            "year": 1809,
-            "text": "La lumière électrique est inventée."
-          },
-          {
-            "year": 1831,
-            "text": "Le générateur est inventé et permet la conversion du mouvement en énergie électrique contrôlable."
-          },
-          {
-            "year": 1859,
-            "text": "La batterie rechargeable est inventée, bouclant la boucle pour une force motrice stockable et mobile."
-          },
-          {
-            "year": 1954,
-            "text": "Le premier réseau public d'énergie nucléaire est mis en service."
-          },
-          {
-            "year": "Jusqu'à aujourd'hui",
-            "text": "Mais que s'est-il passé ensuite ? Ce qui s'est passé, c'est que le développement de la révolution industrielle s'est malheureusement arrêté, aucune robotisation totale attendue n'a suivi, et personne ne sait pourquoi."
-          }
+          { "year": 1698, "text": "La machine à vapeur est inventée, brisant pour la première fois la dépendance absolue de l'humanité à l'égard de la force musculaire et des animaux de trait." },
+          { "year": 1750, "text": "La révolution industrielle commence en Angleterre et intensifie la production de masse mécanique." },
+          { "year": 1800, "text": "La batterie chimique est inventée (et est commercialement disponible à grande échelle aux États-Unis en 1896)." },
+          { "year": 1801, "text": "Le métier à tisser automatisé est inventé – le tout premier dispositif mécanique programmable au monde." },
+          { "year": 1809, "text": "La lumière électrique est inventée." },
+          { "year": 1831, "text": "Le générateur est inventé et permet la conversion du mouvement en énergie électrique contrôlable." },
+          { "year": 1859, "text": "La batterie rechargeable est inventée, bouclant la boucle pour une force motrice stockable et mobile." },
+          { "year": 1954, "text": "Le premier réseau public d'énergie nucléaire est mis en service." },
+          { "year": "Jusqu'à aujourd'hui", "text": "Mais que s'est-il passé ensuite ? Paralysie collective. Le développement de la révolution industrielle s'est arrêté, et la robotisation totale attendue n'est jamais venue. Alors faisons-le maintenant – et n'attendons pas." }
         ],
         "section2Title": "Pourquoi le Manifeste mondial existe-t-il ?",
         "paragraphs": [
@@ -260,42 +125,15 @@
         "description": "Beberapa tonggak sejarah dalam perkembangan teknologi umat manusia — dan mengapa Manifesto Dunia ada.",
         "section1Title": "Tonggak Sejarah",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Mesin uap diciptakan, untuk pertama kalinya memutus ketergantungan mutlak umat manusia pada tenaga otot dan hewan beban."
-          },
-          {
-            "year": 1750,
-            "text": "Revolusi industri dimulai di Inggris dan meningkatkan skala produksi massal mekanis."
-          },
-          {
-            "year": 1800,
-            "text": "Baterai kimia diciptakan (dan tersedia secara komersial dalam skala besar di AS pada tahun 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Mesin tenun otomatis diciptakan – perangkat mekanis dapat diprogram pertama di dunia."
-          },
-          {
-            "year": 1809,
-            "text": "Lampu listrik diciptakan."
-          },
-          {
-            "year": 1831,
-            "text": "Generator diciptakan dan memungkinkan konversi gerakan menjadi energi listrik yang dapat dikendalikan."
-          },
-          {
-            "year": 1859,
-            "text": "Baterai isi ulang diciptakan, melengkapi siklus untuk daya penggerak yang dapat disimpan dan bergerak."
-          },
-          {
-            "year": 1954,
-            "text": "Jaringan tenaga nuklir publik pertama mulai digunakan."
-          },
-          {
-            "year": "Hingga saat ini",
-            "text": "Tapi apa yang terjadi kemudian? Yang terjadi adalah bahwa perkembangan revolusi industri sayangnya terhenti, tidak ada total robotisasi yang diharapkan terjadi, dan tidak ada yang tahu mengapa."
-          }
+          { "year": 1698, "text": "Mesin uap diciptakan, untuk pertama kalinya memutus ketergantungan mutlak umat manusia pada tenaga otot dan hewan beban." },
+          { "year": 1750, "text": "Revolusi industri dimulai di Inggris dan meningkatkan skala produksi massal mekanis." },
+          { "year": 1800, "text": "Baterai kimia diciptakan (dan tersedia secara komersial dalam skala besar di AS pada tahun 1896)." },
+          { "year": 1801, "text": "Mesin tenun otomatis diciptakan – perangkat mekanis dapat diprogram pertama di dunia." },
+          { "year": 1809, "text": "Lampu listrik diciptakan." },
+          { "year": 1831, "text": "Generator diciptakan dan memungkinkan konversi gerakan menjadi energi listrik yang dapat dikendalikan." },
+          { "year": 1859, "text": "Baterai isi ulang diciptakan, melengkapi siklus untuk daya penggerak yang dapat disimpan dan bergerak." },
+          { "year": 1954, "text": "Jaringan tenaga nuklir publik pertama mulai digunakan." },
+          { "year": "Hingga saat ini", "text": "Tapi apa yang terjadi selanjutnya? Kelumpuhan tindakan kolektif. Perkembangan revolusi industri terhenti, dan robotisasi total yang diharapkan tidak pernah terjadi. Jadi mari kita lakukan sekarang – dan jangan menunggu." }
         ],
         "section2Title": "Mengapa Manifesto Dunia ada?",
         "paragraphs": [
@@ -310,42 +148,15 @@
         "description": "بعض المحطات الهامة في التطور التكنولوجي للبشرية — ولماذا يوجد البيان العالمي.",
         "section1Title": "محطات تاريخية",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "يُخترع المحرك البخاري، مما يكسر الاعتماد المطلق للبشرية على قوة العضلات وحيوانات الجر لأول مرة."
-          },
-          {
-            "year": 1750,
-            "text": "تبدأ الثورة الصناعية في إنجلترا وتوسع نطاق الإنتاج الجماعي الميكانيكي."
-          },
-          {
-            "year": 1800,
-            "text": "تُخترع البطارية الكيميائية (وتتوفر تجارياً على نطاق واسع في الولايات المتحدة في عام 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "يُخترع النول الآلي – أول جهاز ميكانيكي قابل للبرمجة في العالم."
-          },
-          {
-            "year": 1809,
-            "text": "يُخترع الضوء الكهربائي."
-          },
-          {
-            "year": 1831,
-            "text": "يُخترع المولد الكهربائي ويمكن من تحويل الحركة إلى طاقة كهربائية قابلة للتحكم."
-          },
-          {
-            "year": 1859,
-            "text": "تُخترع البطارية القابلة لإعادة الشحن، لتغلق الدائرة الخاصة بقوة الدفع القابلة للتخزين والمتنقلة."
-          },
-          {
-            "year": 1954,
-            "text": "يتم تشغيل أول شبكة طاقة نووية عامة."
-          },
-          {
-            "year": "حتى اليوم",
-            "text": "ولكن ماذا حدث بعد ذلك؟ ما حدث هو أن تطور الثورة الصناعية توقف للأسف، ولم تتبعه أتمتة روبوتية كاملة متوقعة، ولا أحد يعرف السبب."
-          }
+          { "year": 1698, "text": "يُخترع المحرك البخاري، مما يكسر الاعتماد المطلق للبشرية على قوة العضلات وحيوانات الجر لأول مرة." },
+          { "year": 1750, "text": "تبدأ الثورة الصناعية في إنجلترا وتوسع نطاق الإنتاج الجماعي الميكانيكي." },
+          { "year": 1800, "text": "تُخترع البطارية الكيميائية (وتتوفر تجارياً على نطاق واسع في الولايات المتحدة في عام 1896)." },
+          { "year": 1801, "text": "يُخترع النول الآلي – أول جهاز ميكانيكي قابل للبرمجة في العالم." },
+          { "year": 1809, "text": "يُخترع الضوء الكهربائي." },
+          { "year": 1831, "text": "يُخترع المولد الكهربائي ويمكن من تحويل الحركة إلى طاقة كهربائية قابلة للتحكم." },
+          { "year": 1859, "text": "تُخترع البطارية القابلة لإعادة الشحن، لتغلق الدائرة الخاصة بقوة الدفع القابلة للتخزين والمتنقلة." },
+          { "year": 1954, "text": "يتم تشغيل أول شبكة طاقة نووية عامة." },
+          { "year": "حتى اليوم", "text": "لكن ماذا حدث بعد ذلك؟ شلل العمل الجماعي. توقف تطور الثورة الصناعية، ولم تحدث الأتمتة الكاملة المتوقعة أبدًا. فلنفعلها الآن – ولا ننتظر." }
         ],
         "section2Title": "لماذا يوجد البيان العالمي؟",
         "paragraphs": [
@@ -360,42 +171,15 @@
         "description": "মানবজাতির প্রযুক্তিগত উন্নয়নের কিছু মাইলফলক — এবং কেন দ্য ওয়ার্ল্ড ম্যানিফেস্টো বিদ্যমান।",
         "section1Title": "ঐতিহাসিক মাইলফলক",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "বাষ্পীয় ইঞ্জিন আবিষ্কৃত হয়, যা প্রথমবারের মতো পেশীশক্তি এবং ভারবাহী পশুর ওপর মানবজাতির সম্পূর্ণ নির্ভরতা ভেঙে দেয়।"
-          },
-          {
-            "year": 1750,
-            "text": "ইংল্যান্ডে শিল্প বিপ্লব শুরু হয় এবং যান্ত্রিক গণউৎপাদনকে প্রসারিত করে।"
-          },
-          {
-            "year": 1800,
-            "text": "রাসায়নিক ব্যাটারি আবিষ্কৃত হয় (এবং ১৮৯৬ সালে মার্কিন যুক্তরাষ্ট্রে বৃহৎ পরিসরে বাণিজ্যিক উপায়ে উপলব্ধ হয়)।"
-          },
-          {
-            "year": 1801,
-            "text": "স্বয়ংক্রিয় তাঁত আবিষ্কৃত হয় – বিশ্বের প্রথম প্রোগ্রামযোগ্য যান্ত্রিক যন্ত্র।"
-          },
-          {
-            "year": 1809,
-            "text": "বৈদ্যুতিক আলো আবিষ্কৃত হয়।"
-          },
-          {
-            "year": 1831,
-            "text": "জেনারেটর আবিষ্কৃত হয় এবং গতিকে নিয়ন্ত্রণযোগ্য বৈদ্যুতিক শক্তিতে রূপান্তর করা সম্ভব করে তোলে।"
-          },
-          {
-            "year": 1859,
-            "text": "রিচার্জেবল ব্যাটারি আবিষ্কৃত হয়, যা সঞ্চয়যোগ্য এবং মোবাইল চালিকা শক্তির চক্রকে পূর্ণ করে।"
-          },
-          {
-            "year": 1954,
-            "text": "প্রথম পাবলিক পারমাণবিক বিদ্যুৎ গ্রিড ব্যবহার শুরু হয়।"
-          },
-          {
-            "year": "বর্তমান পর্যন্ত",
-            "text": "কিন্তু তারপর কী ঘটল? যা ঘটল তা হলো দুর্ভাগ্যবশত শিল্প বিপ্লবের বিকাশ থমকে যায়, প্রত্যাশিত পূর্ণ রোবোটাইজেশন অনুসরণ করেনি, এবং কেন তা কেউ জানে না।"
-          }
+          { "year": 1698, "text": "বাষ্পীয় ইঞ্জিন আবিষ্কৃত হয়, যা প্রথমবারের মতো পেশীশক্তি এবং ভারবাহী পশুর ওপর মানবজাতির সম্পূর্ণ নির্ভরতা ভেঙে দেয়।" },
+          { "year": 1750, "text": "ইংল্যান্ডে শিল্প বিপ্লব শুরু হয় এবং যান্ত্রিক গণউৎপাদনকে প্রসারিত করে।" },
+          { "year": 1800, "text": "রাসায়নিক ব্যাটারি আবিষ্কৃত হয় (এবং ১৮৯৬ সালে মার্কিন যুক্তরাষ্ট্রে বৃহৎ পরিসরে বাণিজ্যিক উপায়ে উপলব্ধ হয়)।" },
+          { "year": 1801, "text": "স্বয়ংক্রিয় তাঁত আবিষ্কৃত হয় – বিশ্বের প্রথম প্রোগ্রামযোগ্য যান্ত্রিক যন্ত্র।" },
+          { "year": 1809, "text": "বৈদ্যুতিক আলো আবিষ্কৃত হয়।" },
+          { "year": 1831, "text": "জেনারেটর আবিষ্কৃত হয় এবং গতিকে নিয়ন্ত্রণযোগ্য বৈদ্যুতিক শক্তিতে রূপান্তর করা সম্ভব করে তোলে।" },
+          { "year": 1859, "text": "রিচার্জেবল ব্যাটারি আবিষ্কৃত হয়, যা সঞ্চয়যোগ্য এবং মোবাইল চালিকা শক্তির চক্রকে পূর্ণ করে।" },
+          { "year": 1954, "text": "প্রথম পাবলিক পারমাণবিক বিদ্যুৎ গ্রিড ব্যবহার শুরু হয়।" },
+          { "year": "বর্তমান পর্যন্ত", "text": "এরপর কী ঘটল? যৌথ কর্মপক্ষাঘাত। শিল্প বিপ্লবের বিকাশ থমে গেল, এবং যে পূর্ণাঙ্গ রোবটাইজেশনের আশা করা হয়েছিল তা আর বাস্তবায়িত হয়নি। তাই আসুন আমরা এখনই এটি করি – আর অপেক্ষা না করে।" }
         ],
         "section2Title": "দ্য ওয়ার্ল্ড ম্যানিফেস্টো কেন বিদ্যমান?",
         "paragraphs": [
@@ -410,42 +194,15 @@
         "description": "Alguns marcos no desenvolvimento tecnológico da humanidade — e porque existe o Manifesto Mundial.",
         "section1Title": "Marcos Históricos",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "A máquina a vapor é inventada, quebrando pela primeira vez a dependência absoluta da humanidade em relação à força muscular e aos animais de tração."
-          },
-          {
-            "year": 1750,
-            "text": "A revolução industrial começa na Inglaterra e amplia a produção em massa mecânica."
-          },
-          {
-            "year": 1800,
-            "text": "A bateria química é inventada (e fica comercialmente disponível em larga escala nos EUA em 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "O tear automático é inventado – o primeiro dispositivo mecânico programável do mundo."
-          },
-          {
-            "year": 1809,
-            "text": "A luz elétrica é inventada."
-          },
-          {
-            "year": 1831,
-            "text": "O gerador é inventado e permite converter o movimento em energia elétrica controlável."
-          },
-          {
-            "year": 1859,
-            "text": "A bateria recarregável é inventada, fechando o círculo para a força motriz armazenável e móvel."
-          },
-          {
-            "year": 1954,
-            "text": "A primeira rede pública de energia nuclear entra em funcionamento."
-          },
-          {
-            "year": "Até os dias de hoje",
-            "text": "Mas o que aconteceu depois? O que aconteceu foi que o desenvolvimento da revolução industrial infelizmente estagnou, nenhuma robotização total esperada se seguiu e ninguém sabe porquê."
-          }
+          { "year": 1698, "text": "A máquina a vapor é inventada, quebrando pela primeira vez a dependência absoluta da humanidade em relação à força muscular e aos animais de tração." },
+          { "year": 1750, "text": "A revolução industrial começa na Inglaterra e amplia a produção em massa mecânica." },
+          { "year": 1800, "text": "A bateria química é inventada (e fica comercialmente disponível em larga escala nos EUA em 1896)." },
+          { "year": 1801, "text": "O tear automático é inventado – o primeiro dispositivo mecânico programável do mundo." },
+          { "year": 1809, "text": "A luz elétrica é inventada." },
+          { "year": 1831, "text": "O gerador é inventado e permite converter o movimento em energia elétrica controlável." },
+          { "year": 1859, "text": "A bateria recarregável é inventada, fechando o círculo para a força motriz armazenável e móvel." },
+          { "year": 1954, "text": "A primeira rede pública de energia nuclear entra em funcionamento." },
+          { "year": "Até os dias de hoje", "text": "Mas o que aconteceu depois? Paralisia coletiva. O desenvolvimento da revolução industrial estagnou, e a robotização total esperada nunca aconteceu. Então vamos fazer isso agora – e não esperar." }
         ],
         "section2Title": "Por que existe o Manifesto Mundial?",
         "paragraphs": [
@@ -460,42 +217,15 @@
         "description": "Некоторые вехи в технологическом развитии человечества — и почему существует Всемирный манифест.",
         "section1Title": "Исторические вехи",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Изобретена паровая машина, впервые разрушившая абсолютную зависимость человечества от мускульной силы и вьючных животных."
-          },
-          {
-            "year": 1750,
-            "text": "Промышленная революция начинается в Англии и масштабирует механическое массовое производство."
-          },
-          {
-            "year": 1800,
-            "text": "Изобретена химическая батарея (и в 1896 году она становится коммерчески доступной в больших масштабах в США)."
-          },
-          {
-            "year": 1801,
-            "text": "Изобретен автоматический ткацкий станок – первое в мире программируемое механическое устройство."
-          },
-          {
-            "year": 1809,
-            "text": "Изобретен электрический свет."
-          },
-          {
-            "year": 1831,
-            "text": "Изобретен генератор, позволяющий преобразовывать движение в управляемую электрическую энергию."
-          },
-          {
-            "year": 1859,
-            "text": "Изобретен аккумулятор, замкнувший круг для сохраняемой и мобильной движущей силы."
-          },
-          {
-            "year": 1954,
-            "text": "Введена в эксплуатацию первая общественная атомная электросеть."
-          },
-          {
-            "year": "До настоящего времени",
-            "text": "Но что произошло дальше? Произошло то, что развитие промышленной революции, к сожалению, застопорилось, ожидаемой полной роботизации не последовало, и никто не знает почему."
-          }
+          { "year": 1698, "text": "Изобретена паровая машина, впервые разрушившая абсолютную зависимость человечества от мускульной силы и вьючных животных." },
+          { "year": 1750, "text": "Промышленная революция начинается в Англии и масштабирует механическое массовое производство." },
+          { "year": 1800, "text": "Изобретена химическая батарея (и в 1896 году она становится коммерчески доступной в больших масштабах в США)." },
+          { "year": 1801, "text": "Изобретен автоматический ткацкий станок – первое в мире программируемое механическое устройство." },
+          { "year": 1809, "text": "Изобретен электрический свет." },
+          { "year": 1831, "text": "Изобретен генератор, позволяющий преобразовывать движение в управляемую электрическую энергию." },
+          { "year": 1859, "text": "Изобретен аккумулятор, замкнувший круг для сохраняемой и мобильной движущей силы." },
+          { "year": 1954, "text": "Введена в эксплуатацию первая общественная атомная электросеть." },
+          { "year": "До настоящего времени", "text": "Но что произошло потом? Коллективный паралич. Развитие промышленной революции остановилось, и ожидаемая полная роботизация так и не наступила. Так давайте сделаем это сейчас – и не будем ждать." }
         ],
         "section2Title": "Почему существует Всемирный манифест?",
         "paragraphs": [
@@ -510,42 +240,15 @@
         "description": "انسانیت کی تکنیکی ترقی کے چند سنگ میل — اور دی ورلڈ مینیفیستو کیوں وجود رکھتا ہے۔",
         "section1Title": "تاریخی سنگ میل",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "بھاپ کا انجن ایجاد ہوا، جس نے پہلی بار پٹھوں کی طاقت اور بار بردار جانوروں پر انسانیت کے مطلق انحصار کو ختم کر دیا۔"
-          },
-          {
-            "year": 1750,
-            "text": "انگلینڈ میں صنعتی انقلاب کا آغاز ہوتا ہے اور یہ میکانی بڑے پیمانے پر پیداوار کو وسعت دیتا ہے۔"
-          },
-          {
-            "year": 1800,
-            "text": "کیمیائی بیٹری ایجاد ہوئی (اور 1896 میں امریکہ میں بڑے پیمانے پر تجارتی طور پر دستیاب ہوئی)۔"
-          },
-          {
-            "year": 1801,
-            "text": "خودکار کھڈی ایجاد ہوئی – دنیا کا پہلا پروگرام ایبل میکانی آلہ۔"
-          },
-          {
-            "year": 1809,
-            "text": "برقی روشنی ایجاد ہوئی۔"
-          },
-          {
-            "year": 1831,
-            "text": "جنریٹر ایجاد ہوا اور حرکت کو قابو کے قابل برقی توانائی میں تبدیل کرنا ممکن بناتا ہے۔"
-          },
-          {
-            "year": 1859,
-            "text": "ری چارج ہونے والی بیٹری ایجاد ہوئی، جو ذخیرہ کرنے کے قابل اور متحرک طاقت کے دائرے کو مکمل کرتی ہے۔"
-          },
-          {
-            "year": 1954,
-            "text": "پہلا عوامی نیوکلیئر پاور گرڈ استعمال میں لایا گیا۔"
-          },
-          {
-            "year": "آج تک",
-            "text": "لیکن پھر کیا ہوا؟ جو ہوا وہ یہ تھا کہ بدقسمتی سے صنعتی انقلاب کی ترقی رک گئی، کوئی متوقع مکمل روبوٹائزیشن نہیں ہوئی، اور کوئی نہیں جانتا کیوں۔"
-          }
+          { "year": 1698, "text": "بھاپ کا انجن ایجاد ہوا، جس نے پہلی بار پٹھوں کی طاقت اور بار بردار جانوروں پر انسانیت کے مطلق انحصار کو ختم کر دیا۔" },
+          { "year": 1750, "text": "انگلینڈ میں صنعتی انقلاب کا آغاز ہوتا ہے اور یہ میکانی بڑے پیمانے پر پیداوار کو وسعت دیتا ہے۔" },
+          { "year": 1800, "text": "کیمیائی بیٹری ایجاد ہوئی (اور 1896 میں امریکہ میں بڑے پیمانے پر تجارتی طور پر دستیاب ہوئی)۔" },
+          { "year": 1801, "text": "خودکار کھڈی ایجاد ہوئی – دنیا کا پہلا پروگرام ایبل میکانی آلہ۔" },
+          { "year": 1809, "text": "برقی روشنی ایجاد ہوئی۔" },
+          { "year": 1831, "text": "جنریٹر ایجاد ہوا اور حرکت کو قابو کے قابل برقی توانائی میں تبدیل کرنا ممکن بناتا ہے۔" },
+          { "year": 1859, "text": "ری چارج ہونے والی بیٹری ایجاد ہوئی، جو ذخیرہ کرنے کے قابل اور متحرک طاقت کے دائرے کو مکمل کرتی ہے۔" },
+          { "year": 1954, "text": "پہلا عوامی نیوکلیئر پاور گرڈ استعمال میں لایا گیا۔" },
+          { "year": "آج تک", "text": "پھر آگے کیا ہوا؟ اجتماعی عمل کا فالج۔ صنعتی انقلاب کی ترقی رک گئی، اور جس مکمل روبوٹائزیشن کی توقع تھی وہ کبھی نہیں ہوئی۔ تو آئیے اب ہم یہ کریں – اور مزید انتظار نہ کریں۔" }
         ],
         "section2Title": "دی ورلڈ مینیفیستو کیوں وجود رکھتا ہے؟",
         "paragraphs": [
@@ -560,42 +263,15 @@
         "description": "ਮਨੁੱਖਤਾ ਦੇ ਤਕਨੀਕੀ ਵਿਕਾਸ ਦੇ ਕੁਝ ਮੀਲ-ਪੱਥਰ – ਅਤੇ ਦਿ ਵਰਲਡ ਮੈਨੀਫੈਸਟੋ ਕਿਉਂ ਹੋਂਦ ਵਿੱਚ ਹੈ।",
         "section1Title": "ਇਤਿਹਾਸਕ ਮੀਲ-ਪੱਥਰ",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "ਭਾਫ਼ ਇੰਜਣ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ। ਪਹਿਲੀ ਵਾਰ ਮਨੁੱਖਤਾ ਦੀ ਆਪਣੀ ਮਾਸਪੇਸ਼ੀ-ਸ਼ਕਤੀ ਅਤੇ ਭਾਰ ਢੋਣ ਵਾਲੇ ਪਸ਼ੂਆਂ ਉੱਤੇ ਪੂਰੀ ਨਿਰਭਰਤਾ ਟੁੱਟਦੀ ਹੈ।"
-          },
-          {
-            "year": 1750,
-            "text": "ਇੰਗਲੈਂਡ ਵਿੱਚ ਉਦਯੋਗਿਕ ਕ੍ਰਾਂਤੀ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ ਅਤੇ ਮਕੈਨੀਕਲ ਵੱਡੇ-ਪੱਧਰ ਦੇ ਉਤਪਾਦਨ ਦਾ ਵਿਸਤਾਰ ਹੁੰਦਾ ਹੈ।"
-          },
-          {
-            "year": 1800,
-            "text": "ਰਸਾਇਣਕ ਬੈਟਰੀ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ (1896 ਵਿੱਚ ਅਮਰੀਕਾ ਵਿੱਚ ਵੱਡੇ ਪੱਧਰ ’ਤੇ ਵਪਾਰਕ ਤੌਰ ’ਤੇ ਉਪਲਬਧ)।"
-          },
-          {
-            "year": 1801,
-            "text": "ਸਵੈਚਾਲਿਤ ਕਰਘੇ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ – ਦੁਨੀਆ ਦਾ ਪਹਿਲਾ ਪ੍ਰੋਗਰਾਮ-ਯੋਗ ਮਕੈਨੀਕਲ ਯੰਤਰ।"
-          },
-          {
-            "year": 1809,
-            "text": "ਬਿਜਲੀ ਦੀ ਰੌਸ਼ਨੀ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ।"
-          },
-          {
-            "year": 1831,
-            "text": "ਜਨਰੇਟਰ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ, ਜੋ ਗਤੀ ਨੂੰ ਨਿਯੰਤਰਿਤ ਬਿਜਲੀ-ਊਰਜਾ ਵਿੱਚ ਬਦਲਣਾ ਸੰਭਵ ਬਣਾਉਂਦਾ ਹੈ।"
-          },
-          {
-            "year": 1859,
-            "text": "ਰੀਚਾਰਜ-ਯੋਗ ਬੈਟਰੀ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਸੰਭਾਲੀ ਜਾ ਸਕਣ ਵਾਲੀ ਅਤੇ ਮੋਬਾਈਲ ਪ੍ਰੇਰਕ-ਸ਼ਕਤੀ ਦਾ ਚੱਕਰ ਪੂਰਾ ਹੁੰਦਾ ਹੈ।"
-          },
-          {
-            "year": 1954,
-            "text": "ਪਹਿਲਾ ਜਨਤਕ ਪ੍ਰਮਾਣੂ ਬਿਜਲੀ-ਗ੍ਰਿਡ ਵਰਤੋਂ ਵਿੱਚ ਲਿਆਂਦਾ ਜਾਂਦਾ ਹੈ।"
-          },
-          {
-            "year": "ਅੱਜ ਤੱਕ",
-            "text": "ਪਰ ਫਿਰ ਕੀ ਹੋਇਆ? ਜੋ ਹੋਇਆ ਉਹ ਇਹ ਸੀ ਕਿ ਬਦਕਿਸਮਤੀ ਨਾਲ ਉਦਯੋਗਿਕ ਕ੍ਰਾਂਤੀ ਦਾ ਵਿਕਾਸ ਰੁਕ ਗਿਆ, ਕੋਈ ਉਮੀਦ ਕੀਤੀ ਗਈ ਸੰਪੂਰਨ ਰੋਬੋਟੀਕਰਨ ਨਹੀਂ ਹੋਇਆ, ਅਤੇ ਕੋਈ ਨਹੀਂ ਜਾਣਦਾ ਕਿਉਂ।"
-          }
+          { "year": 1698, "text": "ਭਾਫ਼ ਇੰਜਣ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ। ਪਹਿਲੀ ਵਾਰ ਮਨੁੱਖਤਾ ਦੀ ਆਪਣੀ ਮਾਸਪੇਸ਼ੀ-ਸ਼ਕਤੀ ਅਤੇ ਭਾਰ ਢੋਣ ਵਾਲੇ ਪਸ਼ੂਆਂ ਉੱਤੇ ਪੂਰੀ ਨਿਰਭਰਤਾ ਟੁੱਟਦੀ ਹੈ।" },
+          { "year": 1750, "text": "ਇੰਗਲੈਂਡ ਵਿੱਚ ਉਦਯੋਗਿਕ ਕ੍ਰਾਂਤੀ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ ਅਤੇ ਮਕੈਨੀਕਲ ਵੱਡੇ-ਪੱਧਰ ਦੇ ਉਤਪਾਦਨ ਦਾ ਵਿਸਤਾਰ ਹੁੰਦਾ ਹੈ।" },
+          { "year": 1800, "text": "ਰਸਾਇਣਕ ਬੈਟਰੀ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ (1896 ਵਿੱਚ ਅਮਰੀਕਾ ਵਿੱਚ ਵੱਡੇ ਪੱਧਰ ’ਤੇ ਵਪਾਰਕ ਤੌਰ ’ਤੇ ਉਪਲਬਧ)।" },
+          { "year": 1801, "text": "ਸਵੈਚਾਲਿਤ ਕਰਘੇ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ – ਦੁਨੀਆ ਦਾ ਪਹਿਲਾ ਪ੍ਰੋਗਰਾਮ-ਯੋਗ ਮਕੈਨੀਕਲ ਯੰਤਰ।" },
+          { "year": 1809, "text": "ਬਿਜਲੀ ਦੀ ਰੌਸ਼ਨੀ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ।" },
+          { "year": 1831, "text": "ਜਨਰੇਟਰ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ, ਜੋ ਗਤੀ ਨੂੰ ਨਿਯੰਤਰਿਤ ਬਿਜਲੀ-ਊਰਜਾ ਵਿੱਚ ਬਦਲਣਾ ਸੰਭਵ ਬਣਾਉਂਦਾ ਹੈ।" },
+          { "year": 1859, "text": "ਰੀਚਾਰਜ-ਯੋਗ ਬੈਟਰੀ ਦੀ ਖੋਜ ਹੁੰਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਸੰਭਾਲੀ ਜਾ ਸਕਣ ਵਾਲੀ ਅਤੇ ਮੋਬਾਈਲ ਪ੍ਰੇਰਕ-ਸ਼ਕਤੀ ਦਾ ਚੱਕਰ ਪੂਰਾ ਹੁੰਦਾ ਹੈ।" },
+          { "year": 1954, "text": "ਪਹਿਲਾ ਜਨਤਕ ਪ੍ਰਮਾਣੂ ਬਿਜਲੀ-ਗ੍ਰਿਡ ਵਰਤੋਂ ਵਿੱਚ ਲਿਆਂਦਾ ਜਾਂਦਾ ਹੈ।" },
+          { "year": "ਅੱਜ ਤੱਕ", "text": "ਪਰ ਫਿਰ ਕੀ ਹੋਇਆ? ਸਾਂਝੀ ਕਾਰਵਾਈ ਦੀ ਅਸਮਰਥਤਾ। ਉਦਯੋਗਿਕ ਕ੍ਰਾਂਤੀ ਦਾ ਵਿਕਾਸ ਰੁਕ ਗਿਆ, ਅਤੇ ਉਮੀਦ ਕੀਤੀ ਗਈ ਪੂਰੀ ਰੋਬੋਟੀਕਰਨ ਕਦੇ ਹਕੀਕਤ ਨਾ ਬਣ ਸਕੀ। ਇਸ ਲਈ ਆਓ ਹੁਣ ਇਹ ਕਰੀਏ – ਅਤੇ ਉਡੀਕ ਨਾ ਕਰੀਏ।" }
         ],
         "section2Title": "ਦਿ ਵਰਲਡ ਮੈਨੀਫੈਸਟੋ ਕਿਉਂ ਹੋਂਦ ਵਿੱਚ ਹੈ?",
         "paragraphs": [
@@ -610,42 +286,15 @@
         "description": "人類の技術的発展におけるいくつかのマイルストーン — そして世界マニフェストが存在する理由。",
         "section1Title": "歴史的マイルストーン",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "蒸気機関が発明され、人類の筋肉労働や使役動物に対する絶対的な依存が初めて打ち破られる。"
-          },
-          {
-            "year": 1750,
-            "text": "イングランドで産業革命が始まり、機械による大量生産が拡大する。"
-          },
-          {
-            "year": 1800,
-            "text": "化学電池が発明される（1896年には米国で大規模に商業化される）。"
-          },
-          {
-            "year": 1801,
-            "text": "自動織機が発明される – 世界初のプログラム可能な機械式装置。"
-          },
-          {
-            "year": 1809,
-            "text": "電灯が発明される。"
-          },
-          {
-            "year": 1831,
-            "text": "発電機が発明され、運動を制御可能な電気エネルギーに変換することが可能になる。"
-          },
-          {
-            "year": 1859,
-            "text": "充電式バッテリーが発明され、蓄積可能で移動可能な動力源の輪が完成する。"
-          },
-          {
-            "year": 1954,
-            "text": "初の公共原子力発電グリッドが稼働を開始する。"
-          },
-          {
-            "year": "現在まで",
-            "text": "しかし、その後何が起きたのか？起きたのは、残念ながら産業革命の発展が停滞し、期待された完全なロボット化は続かず、なぜなのか誰も知らないということだった。"
-          }
+          { "year": 1698, "text": "蒸気機関が発明され、人類の筋肉労働や使役動物に対する絶対的な依存が初めて打ち破られる。" },
+          { "year": 1750, "text": "イングランドで産業革命が始まり、機械による大量生産が拡大する。" },
+          { "year": 1800, "text": "化学電池が発明される（1896年には米国で大規模に商業化される）。" },
+          { "year": 1801, "text": "自動織機が発明される – 世界初のプログラム可能な機械式装置。" },
+          { "year": 1809, "text": "電灯が発明される。" },
+          { "year": 1831, "text": "発電機が発明され、運動を制御可能な電気エネルギーに変換することが可能になる。" },
+          { "year": 1859, "text": "充電式バッテリーが発明され、蓄積可能で移動可能な動力源の輪が完成する。" },
+          { "year": 1954, "text": "初の公共原子力発電グリッドが稼働を開始する。" },
+          { "year": "現在まで", "text": "そしてその後、何が起きたのか？ 集団的行動麻痺。産業革命の発展は停滞し、期待されていた完全なロボット化は実現しなかった。だから、今すぐそれを実行しよう――待つのではなく。" }
         ],
         "section2Title": "なぜ世界マニフェストは存在するのか？",
         "paragraphs": [
@@ -660,42 +309,15 @@
         "description": "Ang ilang mga mahahalagang yugto sa pag-unlad ng teknolohiya ng sangkatauhan — at kung bakit umiiral ang Ang Pandaigdigang Manipesto.",
         "section1Title": "Mga Makasaysayang Yugto",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Naimbento ang makinang de-singaw, na sumira sa ganap na pag-asa ng sangkatauhan sa lakas ng kalamnan at mga hayop na panggawa sa kauna-unahang pagkakataon."
-          },
-          {
-            "year": 1750,
-            "text": "Nagsimula ang rebolusyong industriyal sa Inglatera at pinataas ang sukat ng mekanikal na mass production."
-          },
-          {
-            "year": 1800,
-            "text": "Naimbento ang kemikal na baterya (at naging komersyal na magagamit sa malaking saklaw sa USA noong 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Naimbento ang awtomatikong habihan – ang kauna-unahang programmable na mekanikal na aparato sa buong mundo."
-          },
-          {
-            "year": 1809,
-            "text": "Naimbento ang ilaw na de-kuryente."
-          },
-          {
-            "year": 1831,
-            "text": "Naimbento ang generator at nagbibigay-daan sa pagpapalit ng paggalaw sa nakokontrol na enerhiyang elektrikal."
-          },
-          {
-            "year": 1859,
-            "text": "Naimbento ang rechargeable na baterya, na kumukumpleto sa ikot para sa maiimbok at mobile na lakas-paggawa."
-          },
-          {
-            "year": 1954,
-            "text": "Inilagay sa paggamit ang unang publikong nuclear power grid."
-          },
-          {
-            "year": "Hanggang sa kasalukuyan",
-            "text": "Ngunit ano ang nangyari pagkatapos? Ang nangyari ay sa kasamaang palad ay tumigil ang pag-unlad ng rebolusyong industriyal, walang inaasahang kabuuang robotisasyon na sumunod, at walang nakakaalam kung bakit."
-          }
+          { "year": 1698, "text": "Naimbento ang makinang de-singaw, na sumira sa ganap na pag-asa ng sangkatauhan sa lakas ng kalamnan at mga hayop na panggawa sa kauna-unahang pagkakataon." },
+          { "year": 1750, "text": "Nagsimula ang rebolusyong industriyal sa Inglatera at pinataas ang sukat ng mekanikal na mass production." },
+          { "year": 1800, "text": "Naimbento ang kemikal na baterya (at naging komersyal na magagamit sa malaking saklaw sa USA noong 1896)." },
+          { "year": 1801, "text": "Naimbento ang awtomatikong habihan – ang kauna-unahang programmable na mekanikal na aparato sa buong mundo." },
+          { "year": 1809, "text": "Naimbento ang ilaw na de-kuryente." },
+          { "year": 1831, "text": "Naimbento ang generator at nagbibigay-daan sa pagpapalit ng paggalaw sa nakokontrol na enerhiyang elektrikal." },
+          { "year": 1859, "text": "Naimbento ang rechargeable na baterya, na kumukumpleto sa ikot para sa maiimbok at mobile na lakas-paggawa." },
+          { "year": 1954, "text": "Inilagay sa paggamit ang unang publikong nuclear power grid." },
+          { "year": "Hanggang sa kasalukuyan", "text": "Ngunit ano ang nangyari pagkatapos? Pagkaparalisa ng kolektibong pagkilos. Ang pag-unlad ng rebolusyong industriyal ay tumigil, at ang inaasahang ganap na robotisasyon ay hindi kailanman nangyari. Kaya gawin natin ito ngayon – at huwag maghintay." }
         ],
         "section2Title": "Bakit umiiral ang Ang Pandaigdigang Manipesto?",
         "paragraphs": [
@@ -710,42 +332,15 @@
         "description": "Einige Meilensteine in der technologischen Entwicklung der Menschheit — und warum das Weltmanifest existiert.",
         "section1Title": "Historische Meilensteine",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Die Dampfmaschine wird erfunden und bricht zum ersten Mal die absolute Abhängigkeit der Menschheit von Muskelkraft und Zugtieren."
-          },
-          {
-            "year": 1750,
-            "text": "Die industrielle Revolution beginnt in England und skaliert die mechanische Massenproduktion."
-          },
-          {
-            "year": 1800,
-            "text": "Die chemische Batterie wird erfunden (und ist 1896 in den USA in großem Maßstab kommerziell erhältlich)."
-          },
-          {
-            "year": 1801,
-            "text": "Der automatisierte Webstuhl wird erfunden – das weltweit erste programmierbare mechanische Gerät."
-          },
-          {
-            "year": 1809,
-            "text": "Elektrisches Licht wird erfunden."
-          },
-          {
-            "year": 1831,
-            "text": "Der Generator wird erfunden und ermöglicht die Umwandlung von Bewegung in steuerbare elektrische Energie."
-          },
-          {
-            "year": 1859,
-            "text": "Die wiederaufladbare Batterie wird erfunden, womit sich der Kreis für speicherbare und mobile Antriebskraft schließt."
-          },
-          {
-            "year": 1954,
-            "text": "Das erste öffentliche Kernkraftnetz wird in Betrieb genommen."
-          },
-          {
-            "year": "Bis heute",
-            "text": "Aber was geschah dann? Was geschah, war, dass die Entwicklung der industriellen Revolution leider ins Stocken geriet, keine erwartete totale Robotisierung folgte und niemand weiß warum."
-          }
+          { "year": 1698, "text": "Die Dampfmaschine wird erfunden und bricht zum ersten Mal die absolute Abhängigkeit der Menschheit von Muskelkraft und Zugtieren." },
+          { "year": 1750, "text": "Die industrielle Revolution beginnt in England und skaliert die mechanische Massenproduktion." },
+          { "year": 1800, "text": "Die chemische Batterie wird erfunden (und ist 1896 in den USA in großem Maßstab kommerziell erhältlich)." },
+          { "year": 1801, "text": "Der automatisierte Webstuhl wird erfunden – das weltweit erste programmierbare mechanische Gerät." },
+          { "year": 1809, "text": "Elektrisches Licht wird erfunden." },
+          { "year": 1831, "text": "Der Generator wird erfunden und ermöglicht die Umwandlung von Bewegung in steuerbare elektrische Energie." },
+          { "year": 1859, "text": "Die wiederaufladbare Batterie wird erfunden, womit sich der Kreis für speicherbare und mobile Antriebskraft schließt." },
+          { "year": 1954, "text": "Das erste öffentliche Kernkraftnetz wird in Betrieb genommen." },
+          { "year": "Bis heute", "text": "Aber was geschah dann? Kollektive Handlungsunfähigkeit. Die Entwicklung der industriellen Revolution stockte, und die erwartete totale Robotisierung blieb aus. Also lass es uns jetzt tun – und nicht warten." }
         ],
         "section2Title": "Warum existiert das Weltmanifest?",
         "paragraphs": [
@@ -760,42 +355,15 @@
         "description": "Sawetara tonggak sajarah ing pangembangan teknologi manungsa — lan kenapa Manifesto Donya iki ana.",
         "section1Title": "Tonggak Sajarah",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Mesin uap ditemokake, kanggo pisanan mecahake ketergantungan mutlak manungsa marang tenaga otot lan kewan penarik."
-          },
-          {
-            "year": 1750,
-            "text": "Revolusi Industri diwiwiti ing Inggris, ngembangake produksi massal mekanis."
-          },
-          {
-            "year": 1800,
-            "text": "Baterei kimia ditemokake (lan dadi kasedhiya kanthi komersial ing skala gedhe ing AS taun 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Alat tenun otomatis ditemokake – piranti mekanik pertama ing donya sing bisa diprogram."
-          },
-          {
-            "year": 1809,
-            "text": "Lampu listrik ditemokake."
-          },
-          {
-            "year": 1831,
-            "text": "Generator ditemokake, ngaktifake konversi gerakan dadi energi listrik sing bisa dikontrol."
-          },
-          {
-            "year": 1859,
-            "text": "Baterei sing bisa diisi ulang ditemokake, ngrampungake siklus kanggo daya gerak sing bisa disimpen lan dipindhah."
-          },
-          {
-            "year": 1954,
-            "text": "Jaringan listrik tenaga nuklir umum pertama diresmikake."
-          },
-          {
-            "year": "Nganti saiki",
-            "text": "Nanging apa sing kedadeyan sabanjure? Sing kedadeyan yaiku pangembangan revolusi industri sayange mandheg, ora ana robotisasi total sing diarep-arep sing ngetutake, lan ora ana sing ngerti kenapa."
-          }
+          { "year": 1698, "text": "Mesin uap ditemokake, kanggo pisanan mecahake ketergantungan mutlak manungsa marang tenaga otot lan kewan penarik." },
+          { "year": 1750, "text": "Revolusi Industri diwiwiti ing Inggris, ngembangake produksi massal mekanis." },
+          { "year": 1800, "text": "Baterei kimia ditemokake (lan dadi kasedhiya kanthi komersial ing skala gedhe ing AS taun 1896)." },
+          { "year": 1801, "text": "Alat tenun otomatis ditemokake – piranti mekanik pertama ing donya sing bisa diprogram." },
+          { "year": 1809, "text": "Lampu listrik ditemokake." },
+          { "year": 1831, "text": "Generator ditemokake, ngaktifake konversi gerakan dadi energi listrik sing bisa dikontrol." },
+          { "year": 1859, "text": "Baterei sing bisa diisi ulang ditemokake, ngrampungake siklus kanggo daya gerak sing bisa disimpen lan dipindhah." },
+          { "year": 1954, "text": "Jaringan listrik tenaga nuklir umum pertama diresmikake." },
+          { "year": "Nganti saiki", "text": "Nanging punapa ingkang kedadosan salajengipun? Kelumpuhaning tumindak kolektif. Pangembanganipun revolusi industri mandheg, lan robotisasi total ingkang dipunajeng-ajeng boten nate kalampahan. Mula sumangga kita lampahi sapunika – lan sampun ngentosi malih." }
         ],
         "section2Title": "Kenaapa Manifesto Donya iki ana?",
         "paragraphs": [
@@ -810,42 +378,15 @@
         "description": "人類科技發展嘅一啲里程碑 —— 同埋點解會有《世界宣言》。",
         "section1Title": "歷史里程碑",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "蒸汽機發明，首次打破人類對體力同拉車動物嘅絕對依賴。"
-          },
-          {
-            "year": 1750,
-            "text": "工業革命喺英國開始，大規模擴展機械化大量生產。"
-          },
-          {
-            "year": 1800,
-            "text": "化學電池發明（並喺1896年喺美國大規模商業化）。"
-          },
-          {
-            "year": 1801,
-            "text": "自動織布機發明——世界上第一部可編程機械裝置。"
-          },
-          {
-            "year": 1809,
-            "text": "電燈發明。"
-          },
-          {
-            "year": 1831,
-            "text": "發電機發明，令到可以將運動轉化為可控嘅電能。"
-          },
-          {
-            "year": 1859,
-            "text": "可充電電池發明，為可儲存同流動嘅動力完美收尾。"
-          },
-          {
-            "year": 1954,
-            "text": "首個公共核電網投入運作。"
-          },
-          {
-            "year": "直到今日",
-            "text": "但之後發生咗咩事？發生嘅係工業革命嘅發展不幸停滯不前，預期嘅全面機械人化並冇出現，而且冇人知道點解。"
-          }
+          { "year": 1698, "text": "蒸汽機發明，首次打破人類對體力同拉車動物嘅絕對依賴。" },
+          { "year": 1750, "text": "工業革命喺英國開始，大規模擴展機械化大量生產。" },
+          { "year": 1800, "text": "化學電池發明（並喺1896年喺美國大規模商業化）。" },
+          { "year": 1801, "text": "自動織布機發明——世界上第一部可編程機械裝置。" },
+          { "year": 1809, "text": "電燈發明。" },
+          { "year": 1831, "text": "發電機發明，令到可以將運動轉化為可控嘅電能。" },
+          { "year": 1859, "text": "可充電電池發明，為可儲存同流動嘅動力完美收尾。" },
+          { "year": 1954, "text": "首個公共核電網投入運作。" },
+          { "year": "直到今日", "text": "但係之後發生咗咩事？集體行動癱瘓。工業革命嘅發展停滯咗，而預期嘅全面機械人化始終冇實現。所以我哋而家就做——唔好再等。" }
         ],
         "section2Title": "點解要有世界宣言？",
         "paragraphs": [
@@ -860,42 +401,15 @@
         "description": "Một số cột mốc trong sự phát triển công nghệ của nhân loại — và lý do Bản Tuyên Ngôn Thế Giới tồn tại.",
         "section1Title": "Các cột mốc lịch sử",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Động cơ hơi nước được phát minh, lần đầu tiên phá vỡ sự phụ thuộc tuyệt đối của nhân loại vào sức cơ bắp và động vật kéo."
-          },
-          {
-            "year": 1750,
-            "text": "Cuộc cách mạng công nghiệp bắt đầu ở Anh và mở rộng quy mô sản xuất hàng loạt bằng cơ khí."
-          },
-          {
-            "year": 1800,
-            "text": "Pin hóa học được phát minh (và được thương mại hóa trên quy mô lớn tại Hoa Kỳ vào năm 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Khung cửi tự động được phát minh – thiết bị cơ khí có thể lập trình đầu tiên trên thế giới."
-          },
-          {
-            "year": 1809,
-            "text": "Đèn điện được phát minh."
-          },
-          {
-            "year": 1831,
-            "text": "Máy phát điện được phát minh và cho phép chuyển đổi chuyển động thành năng lượng điện có thể kiểm soát."
-          },
-          {
-            "year": 1859,
-            "text": "Pin sạc được phát minh, khép lại vòng tròn cho năng lượng động lực có thể lưu trữ và di động."
-          },
-          {
-            "year": 1954,
-            "text": "Lưới điện hạt nhân công cộng đầu tiên được đưa vào sử dụng."
-          },
-          {
-            "year": "Cho đến nay",
-            "text": "Nhưng điều gì đã xảy ra sau đó? Điều đã xảy ra là sự phát triển của cuộc cách mạng công nghiệp không may đã bị đình trệ, không có quá trình robot hóa toàn diện như mong đợi diễn ra tiếp theo, và không ai biết tại sao."
-          }
+          { "year": 1698, "text": "Động cơ hơi nước được phát minh, lần đầu tiên phá vỡ sự phụ thuộc tuyệt đối của nhân loại vào sức cơ bắp và động vật kéo." },
+          { "year": 1750, "text": "Cuộc cách mạng công nghiệp bắt đầu ở Anh và mở rộng quy mô sản xuất hàng loạt bằng cơ khí." },
+          { "year": 1800, "text": "Pin hóa học được phát minh (và được thương mại hóa trên quy mô lớn tại Hoa Kỳ vào năm 1896)." },
+          { "year": 1801, "text": "Khung cửi tự động được phát minh – thiết bị cơ khí có thể lập trình đầu tiên trên thế giới." },
+          { "year": 1809, "text": "Đèn điện được phát minh." },
+          { "year": 1831, "text": "Máy phát điện được phát minh và cho phép chuyển đổi chuyển động thành năng lượng điện có thể kiểm soát." },
+          { "year": 1859, "text": "Pin sạc được phát minh, khép lại vòng tròn cho năng lượng động lực có thể lưu trữ và di động." },
+          { "year": 1954, "text": "Lưới điện hạt nhân công cộng đầu tiên được đưa vào sử dụng." },
+          { "year": "Cho đến nay", "text": "Nhưng chuyện gì đã xảy ra sau đó? Tê liệt hành động tập thể. Sự phát triển của cuộc cách mạng công nghiệp đình trệ, và quá trình robot hóa hoàn toàn được mong đợi đã không bao giờ xảy ra. Vậy hãy làm điều đó ngay bây giờ – và đừng chờ đợi." }
         ],
         "section2Title": "Tại sao Bản Tuyên Ngôn Thế Giới tồn tại?",
         "paragraphs": [
@@ -910,42 +424,15 @@
         "description": "İnsanlığın teknolojik gelişimindeki bazı dönüm noktaları — ve Dünya Manifestosu neden var.",
         "section1Title": "Tarihi Dönüm Noktaları",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Buhar makinesi icat edilir, insanlığın kas gücüne ve yük hayvanlarına olan mutlak bağımlılığını ilk kez kırar."
-          },
-          {
-            "year": 1750,
-            "text": "Endüstri devrimi İngiltere'de başlar ve mekanik seri üretimi genişletir."
-          },
-          {
-            "year": 1800,
-            "text": "Kimyasal pil icat edilir (ve 1896'da ABD'de büyük ölçekte ticari olarak erişilebilir hale gelir)."
-          },
-          {
-            "year": 1801,
-            "text": "Otomatik dokuma tezgahı icat edilir – dünyanın ilk programlanabilir mekanik cihazı."
-          },
-          {
-            "year": 1809,
-            "text": "Elektrikli ışık icat edilir."
-          },
-          {
-            "year": 1831,
-            "text": "Jeneratör icat edilir ve hareketin kontrol edilebilir elektrik enerjisine dönüştürülmesini sağlar."
-          },
-          {
-            "year": 1859,
-            "text": "Şarj edilebilir pil icat edilir, depolanabilir ve taşınabilir hareket gücü döngüsünü tamamlar."
-          },
-          {
-            "year": 1954,
-            "text": "İlk kamu nükleer enerji şebekesi hizmete sokulur."
-          },
-          {
-            "year": "Günümüze kadar",
-            "text": "Peki sonra ne oldu? Olan şey, sanayi devriminin gelişiminin ne yazık ki duraklaması, beklenen tam robotlaşmanın gelmemesi ve kimsenin nedenini bilmemesiydi."
-          }
+          { "year": 1698, "text": "Buhar makinesi icat edilir, insanlığın kas gücüne ve yük hayvanlarına olan mutlak bağımlılığını ilk kez kırar." },
+          { "year": 1750, "text": "Endüstri devrimi İngiltere'de başlar ve mekanik seri üretimi genişletir." },
+          { "year": 1800, "text": "Kimyasal pil icat edilir (ve 1896'da ABD'de büyük ölçekte ticari olarak erişilebilir hale gelir)." },
+          { "year": 1801, "text": "Otomatik dokuma tezgahı icat edilir – dünyanın ilk programlanabilir mekanik cihazı." },
+          { "year": 1809, "text": "Elektrikli ışık icat edilir." },
+          { "year": 1831, "text": "Jeneratör icat edilir ve hareketin kontrol edilebilir elektrik enerjisine dönüştürülmesini sağlar." },
+          { "year": 1859, "text": "Şarj edilebilir pil icat edilir, depolanabilir ve taşınabilir hareket gücü döngüsünü tamamlar." },
+          { "year": 1954, "text": "İlk kamu nükleer enerji şebekesi hizmete sokulur." },
+          { "year": "Günümüze kadar", "text": "Ama sonra ne oldu? Kolektif eylem felci. Sanayi devriminin gelişimi durdu ve beklenen tam robotizasyon hiç gerçekleşmedi. Öyleyse bunu şimdi yapalım – ve beklemeyelim." }
         ],
         "section2Title": "Dünya Manifestosu neden var?",
         "paragraphs": [
@@ -960,42 +447,15 @@
         "description": "인류의 기술 발전에 있어 몇 가지 이정표 — 그리고 왜 세계 선언문이 존재하는지.",
         "section1Title": "역사적 이정표",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "증기 기관이 발명되어, 인류의 근력과 사역 동물에 대한 절대적 의존을 처음으로 깨뜨립니다."
-          },
-          {
-            "year": 1750,
-            "text": "영국에서 산업 혁명이 시작되어 기계식 대량 생산이 본격화됩니다."
-          },
-          {
-            "year": 1800,
-            "text": "화학 전지가 발명됩니다 (1896년 미국에서 대규모 상용화됨)."
-          },
-          {
-            "year": 1801,
-            "text": "자동 직기가 발명됩니다 – 세계 최초의 프로그래밍 가능한 기계 장치."
-          },
-          {
-            "year": 1809,
-            "text": "전등이 발명됩니다."
-          },
-          {
-            "year": 1831,
-            "text": "발전기가 발명되어 운동 에너지를 제어 가능한 전기 에너지로 변환할 수 있게 됩니다."
-          },
-          {
-            "year": 1859,
-            "text": "충전식 배터리가 발명되어, 저장 및 이동 가능한 동력원의 순환을 완성합니다."
-          },
-          {
-            "year": 1954,
-            "text": "최초의 공공 원자력 발전 전력망이 가동됩니다."
-          },
-          {
-            "year": "현재까지",
-            "text": "그런데 그 다음에는 무슨 일이 일어났을까? 일어난 일은 안타깝게도 산업 혁명의 발전이 정체되었고, 예상했던 완전한 로봇화가 뒤따르지 않았으며, 왜 그런지 아무도 모른다는 것이었다."
-          }
+          { "year": 1698, "text": "증기 기관이 발명되어, 인류의 근력과 사역 동물에 대한 절대적 의존을 처음으로 깨뜨립니다." },
+          { "year": 1750, "text": "영국에서 산업 혁명이 시작되어 기계식 대량 생산이 본격화됩니다." },
+          { "year": 1800, "text": "화학 전지가 발명됩니다 (1896년 미국에서 대규모 상용화됨)." },
+          { "year": 1801, "text": "자동 직기가 발명됩니다 – 세계 최초의 프로그래밍 가능한 기계 장치." },
+          { "year": 1809, "text": "전등이 발명됩니다." },
+          { "year": 1831, "text": "발전기가 발명되어 운동 에너지를 제어 가능한 전기 에너지로 변환할 수 있게 됩니다." },
+          { "year": 1859, "text": "충전식 배터리가 발명되어, 저장 및 이동 가능한 동력원의 순환을 완성합니다." },
+          { "year": 1954, "text": "최초의 공공 원자력 발전 전력망이 가동됩니다." },
+          { "year": "현재까지", "text": "그 후 무슨 일이 일어났는가? 집단적 행동 마비. 산업혁명의 발전은 정체되었고, 기대했던 완전한 로봇화는 결코 이루어지지 않았다. 그러니 지금 당장 그것을 실행하자 – 기다리지 말고." }
         ],
         "section2Title": "세계 선언문은 왜 존재하는가?",
         "paragraphs": [
@@ -1010,42 +470,15 @@
         "description": "เหตุการณ์สำคัญบางประการในพัฒนาการทางเทคโนโลยีของมนุษยชาติ — และเหตุผลว่าทำไมเดอะเวิลด์แมนิเฟสโตจึงมีอยู่",
         "section1Title": "เหตุการณ์สำคัญทางประวัติศาสตร์",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "เครื่องจักรไอน้ำถูกประดิษฐ์ขึ้น ซึ่งทำลายการพึ่งพาพลังงานกล้ามเนื้อและสัตว์ใช้งานของมนุษยชาติอย่างเบ็ดเสร็จเป็นครั้งแรก"
-          },
-          {
-            "year": 1750,
-            "text": "การปฏิวัติอุตสาหกรรมเริ่มต้นขึ้นในอังกฤษและขยายขนาดการผลิตจำนวนมากด้วยเครื่องจักร"
-          },
-          {
-            "year": 1800,
-            "text": "แบตเตอรี่เคมีถูกประดิษฐ์ขึ้น (และมีวางจำหน่ายในเชิงพาณิชย์เป็นวงกว้างในสหรัฐอเมริกาในปี 1896)"
-          },
-          {
-            "year": 1801,
-            "text": "เครื่องทอผ้าอัตโนมัติถูกประดิษฐ์ขึ้น – อุปกรณ์กลไกที่ตั้งโปรแกรมได้เครื่องแรกของโลก"
-          },
-          {
-            "year": 1809,
-            "text": "หลอดไฟไฟฟ้าถูกประดิษฐ์ขึ้น"
-          },
-          {
-            "year": 1831,
-            "text": "เครื่องกำเนิดไฟฟ้าถูกประดิษฐ์ขึ้นและทำให้สามารถแปลงการเคลื่อนไหวให้เป็นพลังงานไฟฟ้าที่ควบคุมได้"
-          },
-          {
-            "year": 1859,
-            "text": "แบตเตอรี่แบบชาร์จไฟได้ถูกประดิษฐ์ขึ้น ซึ่งเติมเต็มวงจรสำหรับกำลังขับเคลื่อนที่สามารถจัดเก็บและเคลื่อนย้ายได้"
-          },
-          {
-            "year": 1954,
-            "text": "กริดพลังงานนิวเคลียร์สาธารณะแห่งแรกถูกนำมาใช้งาน"
-          },
-          {
-            "year": "จนถึงปัจจุบัน",
-            "text": "แต่แล้วเกิดอะไรขึ้นต่อ? สิ่งที่เกิดขึ้นคือการพัฒนาของการปฏิวัติอุตสาหกรรมได้หยุดชะงักลงอย่างน่าเสียดาย ไม่มีการทำให้เป็นหุ่นยนต์โดยสมบูรณ์ตามที่คาดไว้ตามมา และไม่มีใครรู้ว่าทำไม"
-          }
+          { "year": 1698, "text": "เครื่องจักรไอน้ำถูกประดิษฐ์ขึ้น ซึ่งทำลายการพึ่งพาพลังงานกล้ามเนื้อและสัตว์ใช้งานของมนุษยชาติอย่างเบ็ดเสร็จเป็นครั้งแรก" },
+          { "year": 1750, "text": "การปฏิวัติอุตสาหกรรมเริ่มต้นขึ้นในอังกฤษและขยายขนาดการผลิตจำนวนมากด้วยเครื่องจักร" },
+          { "year": 1800, "text": "แบตเตอรี่เคมีถูกประดิษฐ์ขึ้น (และมีวางจำหน่ายในเชิงพาณิชย์เป็นวงกว้างในสหรัฐอเมริกาในปี 1896)" },
+          { "year": 1801, "text": "เครื่องทอผ้าอัตโนมัติถูกประดิษฐ์ขึ้น – อุปกรณ์กลไกที่ตั้งโปรแกรมได้เครื่องแรกของโลก" },
+          { "year": 1809, "text": "หลอดไฟไฟฟ้าถูกประดิษฐ์ขึ้น" },
+          { "year": 1831, "text": "เครื่องกำเนิดไฟฟ้าถูกประดิษฐ์ขึ้นและทำให้สามารถแปลงการเคลื่อนไหวให้เป็นพลังงานไฟฟ้าที่ควบคุมได้" },
+          { "year": 1859, "text": "แบตเตอรี่แบบชาร์จไฟได้ถูกประดิษฐ์ขึ้น ซึ่งเติมเต็มวงจรสำหรับกำลังขับเคลื่อนที่สามารถจัดเก็บและเคลื่อนย้ายได้" },
+          { "year": 1954, "text": "กริดพลังงานนิวเคลียร์สาธารณะแห่งแรกถูกนำมาใช้งาน" },
+          { "year": "จนถึงปัจจุบัน", "text": "แล้วเกิดอะไรขึ้นต่อจากนั้น? อัมพาตทางปฏิบัติร่วมกัน การพัฒนาของการปฏิวัติอุตสาหกรรมหยุดชะงักลง และการเปลี่ยนเป็นระบบหุ่นยนต์ทั้งหมดที่คาดหวังไว้ก็ไม่เคยเกิดขึ้นจริง ดังนั้น มาทำกันเลยตอนนี้ – และไม่ต้องรออีกต่อไป" }
         ],
         "section2Title": "ทำไมเดอะเวิลด์แมนิเฟสโตจึงมีอยู่?",
         "paragraphs": [
@@ -1060,42 +493,15 @@
         "description": "برخی از نقاط عطف در توسعه فناوری بشر — و اینکه چرا مانیفست جهانی وجود دارد.",
         "section1Title": "نقاط عطف تاریخی",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "موتور بخار اختراع شد و برای اولین بار وابستگی مطلق بشریت به نیروی ماهیچه و حیوانات بارکش را شکست."
-          },
-          {
-            "year": 1750,
-            "text": "انقلاب صنعتی در انگلستان آغاز می‌شود و تولید انبوه مکانیکی را گسترش می‌دهد."
-          },
-          {
-            "year": 1800,
-            "text": "باتری شیمیایی اختراع شد (و در سال 1896 در مقیاس بزرگ در ایالات متحده تجاری شد)."
-          },
-          {
-            "year": 1801,
-            "text": "دستگاه بافندگی خودکار اختراع شد – اولین دستگاه مکانیکی قابل برنامه‌ریزی در جهان."
-          },
-          {
-            "year": 1809,
-            "text": "نور الکتریکی اختراع شد."
-          },
-          {
-            "year": 1831,
-            "text": "ژنراتور اختراع شد و امکان تبدیل حرکت به انرژی الکتریکی قابل کنترل را فراهم کرد."
-          },
-          {
-            "year": 1859,
-            "text": "باتری قابل شارژ اختراع شد و چرخه نیروی محرک قابل ذخیره و متحرک را کامل کرد."
-          },
-          {
-            "year": 1954,
-            "text": "اولین شبکه برق هسته‌ای عمومی به بهره‌برداری رسید."
-          },
-          {
-            "year": "تا به امروز",
-            "text": "اما بعدش چه اتفاقی افتاد؟ آنچه اتفاق افتاد این بود که متأسفانه توسعه انقلاب صنعتی متوقف شد، هیچ رباتیک‌سازی کامل مورد انتظاری دنبال نشد و هیچ‌کس نمی‌داند چرا."
-          }
+          { "year": 1698, "text": "موتور بخار اختراع شد و برای اولین بار وابستگی مطلق بشریت به نیروی ماهیچه و حیوانات بارکش را شکست." },
+          { "year": 1750, "text": "انقلاب صنعتی در انگلستان آغاز می‌شود و تولید انبوه مکانیکی را گسترش می‌دهد." },
+          { "year": 1800, "text": "باتری شیمیایی اختراع شد (و در سال 1896 در مقیاس بزرگ در ایالات متحده تجاری شد)." },
+          { "year": 1801, "text": "دستگاه بافندگی خودکار اختراع شد – اولین دستگاه مکانیکی قابل برنامه‌ریزی در جهان." },
+          { "year": 1809, "text": "نور الکتریکی اختراع شد." },
+          { "year": 1831, "text": "ژنراتور اختراع شد و امکان تبدیل حرکت به انرژی الکتریکی قابل کنترل را فراهم کرد." },
+          { "year": 1859, "text": "باتری قابل شارژ اختراع شد و چرخه نیروی محرک قابل ذخیره و متحرک را کامل کرد." },
+          { "year": 1954, "text": "اولین شبکه برق هسته‌ای عمومی به بهره‌برداری رسید." },
+          { "year": "تا به امروز", "text": "اما بعد چه اتفاقی افتاد؟ فلج اقدام جمعی. توسعه انقلاب صنعتی متوقف شد، و رباتیزاسیون کامل مورد انتظار هرگز رخ نداد. پس بیایید همین الان انجامش دهیم – و منتظر نمانیم." }
         ],
         "section2Title": "چرا مانیفست جهانی وجود دارد؟",
         "paragraphs": [
@@ -1110,42 +516,15 @@
         "description": "Baadhi ya hatua muhimu katika maendeleo ya kiteknolojia ya binadamu — na kwa nini Ilani ya Ulimwengu ipo.",
         "section1Title": "Hatua Muhimu za Kihistoria",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Injini ya mvuke inavumbuliwa, ikivunja kwa mara ya kwanza utegemezi kamili wa ubinadamu kwa nguvu za misuli na wanyama wa mzigo."
-          },
-          {
-            "year": 1750,
-            "text": "Mapinduzi ya viwanda yanaanza nchini Uingereza na kupanua wigo wa uzalishaji mkubwa wa mitambo."
-          },
-          {
-            "year": 1800,
-            "text": "Betri ya kemikali inavumbuliwa (na kupatikana kibiashara kwa kiwango kikubwa nchini Marekani mnamo 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Mashine ya kufuma ya kiotomatiki inavumbuliwa – kifaa cha kwanza cha mitambo duniani kinachoweza kuratibiwa."
-          },
-          {
-            "year": 1809,
-            "text": "Taa ya umeme inavumbuliwa."
-          },
-          {
-            "year": 1831,
-            "text": "Jenereta inavumbuliwa na kuwezesha kubadilisha mwendo kuwa nishati ya umeme inayoweza kudhibitiwa."
-          },
-          {
-            "year": 1859,
-            "text": "Betri inayoweza kuchajiwa inavumbuliwa, ikikamilisha mzunguko wa nguvu ya kuendesha inayoweza kuhifadhiwa na kuhamishika."
-          },
-          {
-            "year": 1954,
-            "text": "Gridi ya kwanza ya umeme wa nyuklia ya umma inawekwa katika matumizi."
-          },
-          {
-            "year": "Hadi sasa",
-            "text": "Lakini nini kilitokea baadaye? Kilichotokea ni kwamba maendeleo ya mapinduzi ya viwanda kwa bahati mbaya yalikwama, hakuna roboti kamili iliyotazamiwa iliyofuata, na hakuna anayejua kwa nini."
-          }
+          { "year": 1698, "text": "Injini ya mvuke inavumbuliwa, ikivunja kwa mara ya kwanza utegemezi kamili wa ubinadamu kwa nguvu za misuli na wanyama wa mzigo." },
+          { "year": 1750, "text": "Mapinduzi ya viwanda yanaanza nchini Uingereza na kupanua wigo wa uzalishaji mkubwa wa mitambo." },
+          { "year": 1800, "text": "Betri ya kemikali inavumbuliwa (na kupatikana kibiashara kwa kiwango kikubwa nchini Marekani mnamo 1896)." },
+          { "year": 1801, "text": "Mashine ya kufuma ya kiotomatiki inavumbuliwa – kifaa cha kwanza cha mitambo duniani kinachoweza kuratibiwa." },
+          { "year": 1809, "text": "Taa ya umeme inavumbuliwa." },
+          { "year": 1831, "text": "Jenereta inavumbuliwa na kuwezesha kubadilisha mwendo kuwa nishati ya umeme inayoweza kudhibitiwa." },
+          { "year": 1859, "text": "Betri inayoweza kuchajiwa inavumbuliwa, ikikamilisha mzunguko wa nguvu ya kuendesha inayoweza kuhifadhiwa na kuhamishika." },
+          { "year": 1954, "text": "Gridi ya kwanza ya umeme wa nyuklia ya umma inawekwa katika matumizi." },
+          { "year": "Hadi sasa", "text": "Lakini nini kilitokea baadaye? Kupooza kwa hatua za pamoja. Maendeleo ya mapinduzi ya viwanda yalisimama, na roboti kamili iliyotarajiwa haikutokea kamwe. Kwa hivyo tuifanye sasa – na tusisubiri." }
         ],
         "section2Title": "Kwa nini Ilani ya Ulimwengu ipo?",
         "paragraphs": [
@@ -1160,42 +539,15 @@
         "description": "Alcune tappe fondamentali nello sviluppo tecnologico dell'umanità — e perché esiste il Manifesto Mondiale.",
         "section1Title": "Tappe storiche",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Viene inventata la macchina a vapore, rompendo per la prima volta l'assoluta dipendenza dell'umanità dalla forza muscolare e dagli animali da tiro."
-          },
-          {
-            "year": 1750,
-            "text": "La rivoluzione industriale inizia in Inghilterra e scala la produzione di massa meccanica."
-          },
-          {
-            "year": 1800,
-            "text": "Viene inventata la batteria chimica (ed è disponibile commercialmente su larga scala negli Stati Uniti nel 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Viene inventato il telaio automatizzato – il primo dispositivo meccanico programmabile al mondo."
-          },
-          {
-            "year": 1809,
-            "text": "Viene inventata la luce elettrica."
-          },
-          {
-            "year": 1831,
-            "text": "Viene inventato il generatore che consente la conversione del movimento in energia elettrica controllabile."
-          },
-          {
-            "year": 1859,
-            "text": "Viene inventata la batteria ricaricabile, chiudendo il cerchio per una forza motrice immagazzinabile e mobile."
-          },
-          {
-            "year": 1954,
-            "text": "Viene messa in servizio la prima rete pubblica di energia nucleare."
-          },
-          {
-            "year": "Fino ad oggi",
-            "text": "Ma cosa accadde poi? Quello che accadde fu che lo sviluppo della rivoluzione industriale purtroppo si arrestò, nessuna robotizzazione totale attesa seguì e nessuno sa perché."
-          }
+          { "year": 1698, "text": "Viene inventata la macchina a vapore, rompendo per la prima volta l'assoluta dipendenza dell'umanità dalla forza muscolare e dagli animali da tiro." },
+          { "year": 1750, "text": "La rivoluzione industriale inizia in Inghilterra e scala la produzione di massa meccanica." },
+          { "year": 1800, "text": "Viene inventata la batteria chimica (ed è disponibile commercialmente su larga scala negli Stati Uniti nel 1896)." },
+          { "year": 1801, "text": "Viene inventato il telaio automatizzato – il primo dispositivo meccanico programmabile al mondo." },
+          { "year": 1809, "text": "Viene inventata la luce elettrica." },
+          { "year": 1831, "text": "Viene inventato il generatore che consente la conversione del movimento in energia elettrica controllabile." },
+          { "year": 1859, "text": "Viene inventata la batteria ricaricabile, chiudendo il cerchio per una forza motrice immagazzinabile e mobile." },
+          { "year": 1954, "text": "Viene messa in servizio la prima rete pubblica di energia nucleare." },
+          { "year": "Fino ad oggi", "text": "Ma cosa è successo dopo? Paralisi collettiva. Lo sviluppo della rivoluzione industriale si è fermato, e la robotizzazione totale attesa non è mai arrivata. Quindi facciamolo ora – e non aspettiamo." }
         ],
         "section2Title": "Perché esiste il Manifesto Mondiale?",
         "paragraphs": [
@@ -1210,42 +562,15 @@
         "description": "Kilka kamieni milowych w rozwoju technologicznym ludzkości — oraz dlaczego istnieje Manifest Światowy.",
         "section1Title": "Historyczne kamienie milowe",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Wynaleziono maszynę parową, po raz pierwszy przełamując absolutne uzależnienie ludzkości od siły mięśni i zwierząt pociągowych."
-          },
-          {
-            "year": 1750,
-            "text": "Rewolucja przemysłowa rozpoczyna się w Anglii i skaluje mechaniczną masową produkcję."
-          },
-          {
-            "year": 1800,
-            "text": "Wynaleziono baterię chemiczną (i jest ona dostępna komercyjnie na dużą skalę w USA w 1896 roku)."
-          },
-          {
-            "year": 1801,
-            "text": "Wynaleziono zautomatyzowane krosno – pierwsze na świecie programowalne urządzenie mechaniczne."
-          },
-          {
-            "year": 1809,
-            "text": "Wynaleziono światło elektryczne."
-          },
-          {
-            "year": 1831,
-            "text": "Wynaleziono generator, który umożliwia przekształcanie ruchu w kontrolowaną energię elektryczną."
-          },
-          {
-            "year": 1859,
-            "text": "Wynaleziono akumulator, domykając krąg dla magazynowalnej i mobilnej siły napędowej."
-          },
-          {
-            "year": 1954,
-            "text": "Oddano do użytku pierwszą publiczną sieć energetyki jądrowej."
-          },
-          {
-            "year": "Do dziś",
-            "text": "Ale co stało się potem? Stało się to, że rozwój rewolucji przemysłowej niestety utknął w martwym punkcie, nie nastąpiła oczekiwana totalna robotyzacja i nikt nie wie dlaczego."
-          }
+          { "year": 1698, "text": "Wynaleziono maszynę parową, po raz pierwszy przełamując absolutne uzależnienie ludzkości od siły mięśni i zwierząt pociągowych." },
+          { "year": 1750, "text": "Rewolucja przemysłowa rozpoczyna się w Anglii i skaluje mechaniczną masową produkcję." },
+          { "year": 1800, "text": "Wynaleziono baterię chemiczną (i jest ona dostępna komercyjnie na dużą skalę w USA w 1896 roku)." },
+          { "year": 1801, "text": "Wynaleziono zautomatyzowane krosno – pierwsze na świecie programowalne urządzenie mechaniczne." },
+          { "year": 1809, "text": "Wynaleziono światło elektryczne." },
+          { "year": 1831, "text": "Wynaleziono generator, który umożliwia przekształcanie ruchu w kontrolowaną energię elektryczną." },
+          { "year": 1859, "text": "Wynaleziono akumulator, domykając krąg dla magazynowalnej i mobilnej siły napędowej." },
+          { "year": 1954, "text": "Oddano do użytku pierwszą publiczną sieć energetyki jądrowej." },
+          { "year": "Do dziś", "text": "Ale co stało się potem? Zbiorowy paraliż. Rozwój rewolucji przemysłowej zatrzymał się, a oczekiwana pełna robotyzacja nigdy nie nastąpiła. Więc zróbmy to teraz – i nie czekajmy." }
         ],
         "section2Title": "Dlaczego istnieje Manifest Światowy?",
         "paragraphs": [
@@ -1260,42 +585,15 @@
         "description": "Деякі віхи в технологічному розвитку людства — і чому існує Всесвітній маніфест.",
         "section1Title": "Історичні віхи",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Винайдено паровий двигун, що вперше зруйнував абсолютну залежність людства від м'язової сили та в'ючних тварин."
-          },
-          {
-            "year": 1750,
-            "text": "Промислова революція починається в Англії та масштабує механічне масове виробництво."
-          },
-          {
-            "year": 1800,
-            "text": "Винайдено хімічну батарею (і вона стає комерційно доступною у великих масштабах у США в 1896 році)."
-          },
-          {
-            "year": 1801,
-            "text": "Винайдено автоматичний ткацький верстат – перший у світі програмований механічний пристрій."
-          },
-          {
-            "year": 1809,
-            "text": "Винайдено електричне світло."
-          },
-          {
-            "year": 1831,
-            "text": "Винайдено генератор, що дозволяє перетворювати рух на керовану електричну енергію."
-          },
-          {
-            "year": 1859,
-            "text": "Винайдено акумуляторну батарею, що замикає цикл для накопичуваної та мобільної рушійної сили."
-          },
-          {
-            "year": 1954,
-            "text": "Введено в експлуатацію першу суспільну ядерну енергомережу."
-          },
-          {
-            "year": "До сьогодні",
-            "text": "Але що сталося потім? Сталося те, що розвиток промислової революції, на жаль, зупинився, очікуваної тотальної роботизації не відбулося, і ніхто не знає чому."
-          }
+          { "year": 1698, "text": "Винайдено паровий двигун, що вперше зруйнував абсолютну залежність людства від м'язової сили та в'ючних тварин." },
+          { "year": 1750, "text": "Промислова революція починається в Англії та масштабує механічне масове виробництво." },
+          { "year": 1800, "text": "Винайдено хімічну батарею (і вона стає комерційно доступною у великих масштабах у США в 1896 році)." },
+          { "year": 1801, "text": "Винайдено автоматичний ткацький верстат – перший у світі програмований механічний пристрій." },
+          { "year": 1809, "text": "Винайдено електричне світло." },
+          { "year": 1831, "text": "Винайдено генератор, що дозволяє перетворювати рух на керовану електричну енергію." },
+          { "year": 1859, "text": "Винайдено акумуляторну батарею, що замикає цикл для накопичуваної та мобільної рушійної сили." },
+          { "year": 1954, "text": "Введено в експлуатацію першу суспільну ядерну енергомережу." },
+          { "year": "До сьогодні", "text": "Але що сталося потім? Колективний параліч. Розвиток промислової революції зупинився, і очікувана повна роботизація так і не відбулася. Тож зробімо це зараз – і не чекаймо." }
         ],
         "section2Title": "Чому існує Всесвітній маніфест?",
         "paragraphs": [
@@ -1310,42 +608,15 @@
         "description": "Ezinye zezigaba ezibalulekile ekuthuthukisweni kwezobuchwepheshe besintu — nokuthi kungani i-World Manifesto ikhona.",
         "section1Title": "Izigaba ezibalulekile zomlando",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Umshini womusi uyasungulwa futhi okokuqala ngqa uphula ukuncika okuphelele kwesintu emandleni emisipha nasezilwaneni zokudonsa."
-          },
-          {
-            "year": 1750,
-            "text": "Uguquko lwezimboni luqala eNgilandi futhi lukhulisa ukukhiqizwa okukhulu kwemishini."
-          },
-          {
-            "year": 1800,
-            "text": "Ibhethri lamakhemikhali liyasungulwa (futhi latholakala kwezentengiselwano ngendlela enkulu e-USA ngo-1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Umshini wokuluka ozenzakalelayo uyasungulwa – umshini wokuqala emhlabeni ohlelekayo wemishini."
-          },
-          {
-            "year": 1809,
-            "text": "Ukukhanya kukagesi kuyasungulwa."
-          },
-          {
-            "year": 1831,
-            "text": "I-generator iyasungulwa futhi yenza kube lula ukuguqula ukunyakaza kube amandla kagesi alawulekayo."
-          },
-          {
-            "year": 1859,
-            "text": "Ibhethri elishajekayo liyasungulwa, okuhlanganisa umjikelezo wamandla okusebenza angagcineka futhi ahambayo."
-          },
-          {
-            "year": 1954,
-            "text": "Inethiwekhi yokuqala kagesi yomphakathi esebenzisa amandla enuzi iyaksethenziswa."
-          },
-          {
-            "year": "Kuze kube manje",
-            "text": "Kodwa kwenzekeni emva kwalokho? Okwenzekile ukuthi ukuthuthukiswa kwenguquko yezimboni ngeshwa kwamiswa, akukho ukwenza amarobhothi okuphelele obekulindelekile okulandelayo, futhi akekho owaziyo ukuthi kungani."
-          }
+          { "year": 1698, "text": "Umshini womusi uyasungulwa futhi okokuqala ngqa uphula ukuncika okuphelele kwesintu emandleni emisipha nasezilwaneni zokudonsa." },
+          { "year": 1750, "text": "Uguquko lwezimboni luqala eNgilandi futhi lukhulisa ukukhiqizwa okukhulu kwemishini." },
+          { "year": 1800, "text": "Ibhethri lamakhemikhali liyasungulwa (futhi latholakala kwezentengiselwano ngendlela enkulu e-USA ngo-1896)." },
+          { "year": 1801, "text": "Umshini wokuluka ozenzakalelayo uyasungulwa – umshini wokuqala emhlabeni ohlelekayo wemishini." },
+          { "year": 1809, "text": "Ukukhanya kukagesi kuyasungulwa." },
+          { "year": 1831, "text": "I-generator iyasungulwa futhi yenza kube lula ukuguqula ukunyakaza kube amandla kagesi alawulekayo." },
+          { "year": 1859, "text": "Ibhethri elishajekayo liyasungulwa, okuhlanganisa umjikelezo wamandla okusebenza angagcineka futhi ahambayo." },
+          { "year": 1954, "text": "Inethiwekhi yokuqala kagesi yomphakathi esebenzisa amandla enuzi iyaksethenziswa." },
+          { "year": "Kuze kube manje", "text": "Kodwa kwenzekani ngemuva kwalokho? Ukukhubazeka kokwenza okuhlanganyelwe. Ukuthuthukiswa kwe-Industrial Revolution kwama, futhi ukufakwa kwamarobhothi okuphelele obekulindelwe akuzange kwenzeke. Ngakho masikwenze manje – futhi singalindi." }
         ],
         "section2Title": "Kungani i-World Manifesto ikhona?",
         "paragraphs": [
@@ -1360,42 +631,15 @@
         "description": "Enkele mijlpalen in de technologische ontwikkeling van de mensheid — en waarom het Wereldmanifest bestaat.",
         "section1Title": "Historische mijlpalen",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "De stoommachine wordt uitgevonden, waarmee voor het eerst een einde komt aan de absolute afhankelijkheid van de mensheid van spierkracht en trekdieren."
-          },
-          {
-            "year": 1750,
-            "text": "De industriële revolutie begint in Engeland en schaalt mechanische massaproductie op."
-          },
-          {
-            "year": 1800,
-            "text": "De chemische batterij wordt uitgevonden (en is in 1896 commercieel verkrijgbaar in grote schaal in de VS)."
-          },
-          {
-            "year": 1801,
-            "text": "Het geautomatiseerde weefgetouw wordt uitgevonden – 's werelds eerste programmeerbare mechanische apparaat."
-          },
-          {
-            "year": 1809,
-            "text": "Elektrisch licht wordt uitgevonden."
-          },
-          {
-            "year": 1831,
-            "text": "De generator wordt uitgevonden en maakt de omzetting van beweging in beheersbare elektrische energie mogelijk."
-          },
-          {
-            "year": 1859,
-            "text": "De oplaadbare batterij wordt uitgevonden, waarmee de cirkel rond is voor opslaanbare en mobiele aandrijfkracht."
-          },
-          {
-            "year": 1954,
-            "text": "Het eerste openbare kernenergienet wordt in gebruik genomen."
-          },
-          {
-            "year": "Tot heden",
-            "text": "Maar wat gebeurde er daarna? Wat er gebeurde was dat de ontwikkeling van de industriële revolutie helaas stagneerde, er geen verwachte totale robotisering volgde en niemand weet waarom."
-          }
+          { "year": 1698, "text": "De stoommachine wordt uitgevonden, waarmee voor het eerst een einde komt aan de absolute afhankelijkheid van de mensheid van spierkracht en trekdieren." },
+          { "year": 1750, "text": "De industriële revolutie begint in Engeland en schaalt mechanische massaproductie op." },
+          { "year": 1800, "text": "De chemische batterij wordt uitgevonden (en is in 1896 commercieel verkrijgbaar in grote schaal in de VS)." },
+          { "year": 1801, "text": "Het geautomatiseerde weefgetouw wordt uitgevonden – 's werelds eerste programmeerbare mechanische apparaat." },
+          { "year": 1809, "text": "Elektrisch licht wordt uitgevonden." },
+          { "year": 1831, "text": "De generator wordt uitgevonden en maakt de omzetting van beweging in beheersbare elektrische energie mogelijk." },
+          { "year": 1859, "text": "De oplaadbare batterij wordt uitgevonden, waarmee de cirkel rond is voor opslaanbare en mobiele aandrijfkracht." },
+          { "year": 1954, "text": "Het eerste openbare kernenergienet wordt in gebruik genomen." },
+          { "year": "Tot heden", "text": "Maar wat gebeurde er daarna? Collectieve verlamming. De ontwikkeling van de industriële revolutie stokte, en de verwachte totale robotisering bleef uit. Dus laten we het nu doen – en niet wachten." }
         ],
         "section2Title": "Waarom bestaat het Wereldmanifest?",
         "paragraphs": [
@@ -1410,42 +654,15 @@
         "description": "Câteva repere în dezvoltarea tehnologică a umanității — și de ce există Manifestul Mondial.",
         "section1Title": "Repere istorice",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Este inventată mașina cu abur, rupând pentru prima dată dependența absolută a umanității de forța musculară și animalele de tracțiune."
-          },
-          {
-            "year": 1750,
-            "text": "Revoluția industrială începe în Anglia și extinde producția de masă mecanică."
-          },
-          {
-            "year": 1800,
-            "text": "Este inventată bateria chimică (și devine disponibilă comercial la scară largă în SUA în 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Este inventat războiul de țesut automatizat – primul dispozitiv mecanic programabil din lume."
-          },
-          {
-            "year": 1809,
-            "text": "Este inventată lumina electrică."
-          },
-          {
-            "year": 1831,
-            "text": "Este inventat generatorul și face posibilă conversia mișcării în energie electrică controlabilă."
-          },
-          {
-            "year": 1859,
-            "text": "Este inventată bateria reîncărcabilă, închizând cercul pentru o putere motrice stocabilă și mobilă."
-          },
-          {
-            "year": 1954,
-            "text": "Este pusă în funcțiune prima rețea publică de energie nucleară."
-          },
-          {
-            "year": "Până în prezent",
-            "text": "Dar ce s-a întâmplat apoi? Ceea ce s-a întâmplat a fost că dezvoltarea revoluției industriale din păcate a stagnat, nicio robotizare totală așteptată nu a urmat și nimeni nu știe de ce."
-          }
+          { "year": 1698, "text": "Este inventată mașina cu abur, rupând pentru prima dată dependența absolută a umanității de forța musculară și animalele de tracțiune." },
+          { "year": 1750, "text": "Revoluția industrială începe în Anglia și extinde producția de masă mecanică." },
+          { "year": 1800, "text": "Este inventată bateria chimică (și devine disponibilă comercial la scară largă în SUA în 1896)." },
+          { "year": 1801, "text": "Este inventat războiul de țesut automatizat – primul dispozitiv mecanic programabil din lume." },
+          { "year": 1809, "text": "Este inventată lumina electrică." },
+          { "year": 1831, "text": "Este inventat generatorul și face posibilă conversia mișcării în energie electrică controlabilă." },
+          { "year": 1859, "text": "Este inventată bateria reîncărcabilă, închizând cercul pentru o putere motrice stocabilă și mobilă." },
+          { "year": 1954, "text": "Este pusă în funcțiune prima rețea publică de energie nucleară." },
+          { "year": "Până în prezent", "text": "Dar ce s-a întâmplat apoi? Paralizie colectivă. Dezvoltarea revoluției industriale s-a oprit, iar robotizarea totală așteptată nu s-a întâmplat niciodată. Așa că hai să o facem acum – și să nu așteptăm." }
         ],
         "section2Title": "De ce există Manifestul Mondial?",
         "paragraphs": [
@@ -1460,42 +677,15 @@
         "description": "Enkele mylpale in die mensdom se tegnologiese ontwikkeling — en waarom die Wêreldmanifes bestaan.",
         "section1Title": "Historiese mylpale",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Die stoommasjien word uitgevind en breek vir die eerste keer die mensdom se absolute afhanklikheid van spierkrag en trekdiere."
-          },
-          {
-            "year": 1750,
-            "text": "Die industriële rewolusie begin in Engeland en skaal meganiese massaproduksie op."
-          },
-          {
-            "year": 1800,
-            "text": "Die chemiese battery word uitgevind (en is op groot skaal kommersieel beskikbaar in die VSA in 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Die geoutomatiseerde weefstoele word uitgevind – die wêreld se eerste programmeerbare meganiese toestel."
-          },
-          {
-            "year": 1809,
-            "text": "Elektriese lig word uitgevind."
-          },
-          {
-            "year": 1831,
-            "text": "Die generator word uitgevind en maak die omskakeling van beweging in beheerbare elektriese energie moontlik."
-          },
-          {
-            "year": 1859,
-            "text": "Die herlaaibare battery word uitgevind, wat die kringloop sluit vir stoorbare en mobiele dryfkrag."
-          },
-          {
-            "year": 1954,
-            "text": "Die eerste openbare kernkrag-kragnetwerk word in gebruik geneem."
-          },
-          {
-            "year": "Tot vandag toe",
-            "text": "Maar wat het daarna gebeur? Wat gebeur het, is dat die ontwikkeling van die industriële rewolusie ongelukkig tot stilstand gekom het, geen verwagte totale robotisering gevolg het nie, en niemand weet hoekom nie."
-          }
+          { "year": 1698, "text": "Die stoommasjien word uitgevind en breek vir die eerste keer die mensdom se absolute afhanklikheid van spierkrag en trekdiere." },
+          { "year": 1750, "text": "Die industriële rewolusie begin in Engeland en skaal meganiese massaproduksie op." },
+          { "year": 1800, "text": "Die chemiese battery word uitgevind (en is op groot skaal kommersieel beskikbaar in die VSA in 1896)." },
+          { "year": 1801, "text": "Die geoutomatiseerde weefstoele word uitgevind – die wêreld se eerste programmeerbare meganiese toestel." },
+          { "year": 1809, "text": "Elektriese lig word uitgevind." },
+          { "year": 1831, "text": "Die generator word uitgevind en maak die omskakeling van beweging in beheerbare elektriese energie moontlik." },
+          { "year": 1859, "text": "Die herlaaibare battery word uitgevind, wat die kringloop sluit vir stoorbare en mobiele dryfkrag." },
+          { "year": 1954, "text": "Die eerste openbare kernkrag-kragnetwerk word in gebruik geneem." },
+          { "year": "Tot vandag toe", "text": "Maar wat het daarna gebeur? Kollektiewe handelingverlamming. Die ontwikkeling van die industriële revolusie het tot stilstand gekom, en die verwagte totale robotisering het nooit gebeur nie. So kom ons doen dit nou – en moenie wag nie." }
         ],
         "section2Title": "Waarom bestaan die Wêreldmanifes?",
         "paragraphs": [
@@ -1510,42 +700,15 @@
         "description": "Ezinye zeziganeko eziphambili ekuhambeni kobuchwepheshe besintu — nokuba kutheni i-World Manifesto ikhona.",
         "section1Title": "Izigaba zomlando ezibalulekile",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Umshini womusi uyasungulwa kwaye okokuqala ngqa waphula ukuxhomekeka okuphelele koluntu kumandla emisipha nakwizilwane zokutsala."
-          },
-          {
-            "year": 1750,
-            "text": "Uguquko lwezoshishino luqala eNgilandi kwaye lukhulisa imveliso enkulu yoomatshini."
-          },
-          {
-            "year": 1800,
-            "text": "Ibhetri yamachiza iyasungulwa (kwaye yafumaneka kurhwebo ngobuninzi e-USA ngo-1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Isixhobo sokuluka esizenzekelayo siyasungulwa – isixhobo sokuqala somatshini esicwangcisekayo emhlabeni."
-          },
-          {
-            "year": 1809,
-            "text": "Ukukhanya kombane kuyasungulwa."
-          },
-          {
-            "year": 1831,
-            "text": "Ijenethi (generator) iyasungulwa kwaye yenza ukuba kube lula ukuguqula intshukumo ibe ngamandla ombane alawulekayo."
-          },
-          {
-            "year": 1859,
-            "text": "Ibhetri enokuphinda itshajwe iyasungulwa, nto leyo evala isangqa samandla okuqhuba anokugcinwa nangehamba."
-          },
-          {
-            "year": 1954,
-            "text": "Inethiwekhi yokuqala yombane kawonkewonke esebenzisa amandla enyukliya iyasetyenziswa."
-          },
-          {
-            "year": "Kude kube namhlanje",
-            "text": "Kodwa kwenzeka ntoni emva koko? Okwenzekileyo kukuba uphuhliso lotshintsho lwezoshishino ngelishwa lwema, akukho robhothi epheleleyo ebilindelwe eyayilandela, kwaye akukho mntu owaziyo ukuba kutheni."
-          }
+          { "year": 1698, "text": "Umshini womusi uyasungulwa kwaye okokuqala ngqa waphula ukuxhomekeka okuphelele koluntu kumandla emisipha nakwizilwane zokutsala." },
+          { "year": 1750, "text": "Uguquko lwezoshishino luqala eNgilandi kwaye lukhulisa imveliso enkulu yoomatshini." },
+          { "year": 1800, "text": "Ibhetri yamachiza iyasungulwa (kwaye yafumaneka kurhwebo ngobuninzi e-USA ngo-1896)." },
+          { "year": 1801, "text": "Isixhobo sokuluka esizenzekelayo siyasungulwa – isixhobo sokuqala somatshini esicwangcisekayo emhlabeni." },
+          { "year": 1809, "text": "Ukukhanya kombane kuyasungulwa." },
+          { "year": 1831, "text": "Ijenethi (generator) iyasungulwa kwaye yenza ukuba kube lula ukuguqula intshukumo ibe ngamandla ombane alawulekayo." },
+          { "year": 1859, "text": "Ibhetri enokuphinda itshajwe iyasungulwa, nto leyo evala isangqa samandla okuqhuba anokugcinwa nangehamba." },
+          { "year": 1954, "text": "Inethiwekhi yokuqala yombane kawonkewonke esebenzisa amandla enyukliya iyasetyenziswa." },
+          { "year": "Kude kube namhlanje", "text": "Kodwa kwenzeka ntoni emva koko? Ukukhubazeka kwesenzo ngokudibeneyo. Uphuhliso lweNguquko yoShishino lwema, kwaye ufakelelo lwerobhothi olupheleleyo ebekulindelwe aluzange lwenzeke. Ngoko masikwenze ngoku – kwaye singalindi." }
         ],
         "section2Title": "Kutheni i-World Manifesto ikhona?",
         "paragraphs": [
@@ -1560,42 +723,15 @@
         "description": "Některé milníky v technologickém vývoji lidstva — a proč Světový manifest existuje.",
         "section1Title": "Historické milníky",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Je vynalezen parní stroj, který poprvé prolamuje absolutní závislost lidstva na lidské síle a tažných zvířatech."
-          },
-          {
-            "year": 1750,
-            "text": "V Anglii začíná průmyslová revoluce a rozšiřuje mechanickou masovou výrobu."
-          },
-          {
-            "year": 1800,
-            "text": "Je vynalezena chemická baterie (a v roce 1896 je komerčně dostupná ve velkém měřítku v USA)."
-          },
-          {
-            "year": 1801,
-            "text": "Je vynalezen automatizovaný tkalcovský stav – první programovatelné mechanické zařízení na světě."
-          },
-          {
-            "year": 1809,
-            "text": "Je vynalezeno elektrické světlo."
-          },
-          {
-            "year": 1831,
-            "text": "Je vynalezen generátor, který umožňuje přeměnu pohybu v kontrolovatelnou elektrickou energii."
-          },
-          {
-            "year": 1859,
-            "text": "Je vynalezena dobíjecí baterie, čímž se uzavírá kruh pro skladovatelnou a mobilní pohonnou sílu."
-          },
-          {
-            "year": 1954,
-            "text": "Do provozu je uvedena první veřejná síť jaderné energie."
-          },
-          {
-            "year": "Až do současnosti",
-            "text": "Ale co se stalo potom? Stalo se to, že vývoj průmyslové revoluce bohužel ustal, nenásledovala očekávaná totální robotizace a nikdo neví proč."
-          }
+          { "year": 1698, "text": "Je vynalezen parní stroj, který poprvé prolamuje absolutní závislost lidstva na lidské síle a tažných zvířatech." },
+          { "year": 1750, "text": "V Anglii začíná průmyslová revoluce a rozšiřuje mechanickou masovou výrobu." },
+          { "year": 1800, "text": "Je vynalezena chemická baterie (a v roce 1896 je komerčně dostupná ve velkém měřítku v USA)." },
+          { "year": 1801, "text": "Je vynalezen automatizovaný tkalcovský stav – první programovatelné mechanické zařízení na světě." },
+          { "year": 1809, "text": "Je vynalezeno elektrické světlo." },
+          { "year": 1831, "text": "Je vynalezen generátor, který umožňuje přeměnu pohybu v kontrolovatelnou elektrickou energii." },
+          { "year": 1859, "text": "Je vynalezena dobíjecí baterie, čímž se uzavírá kruh pro skladovatelnou a mobilní pohonnou sílu." },
+          { "year": 1954, "text": "Do provozu je uvedena první veřejná síť jaderné energie." },
+          { "year": "Až do současnosti", "text": "Ale co se stalo potom? Kolektivní paralýza. Vývoj průmyslové revoluce se zastavil a očekávaná úplná robotizace nikdy nenastala. Tak to udělejme teď – a nečekejme." }
         ],
         "section2Title": "Proč Světový manifest existuje?",
         "paragraphs": [
@@ -1610,42 +746,15 @@
         "description": "Μερικά ορόσημα στην τεχνολογική ανάπτυξη της ανθρωπότητας — και γιατί υπάρχει το Παγκόσμιο Μανιφέστο.",
         "section1Title": "Ιστορικά ορόσημα",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Εφευρίσκεται η ατμομηχανή, σπάζοντας για πρώτη φορά την απόλυτη εξάρτηση της ανθρωπότητας από τη μυϊκή δύναμη και τα ζώα φορτίου."
-          },
-          {
-            "year": 1750,
-            "text": "Η βιομηχανική επανάσταση ξεκινά στην Αγγλία και κλιμακώνει τη μηχανική μαζική παραγωγή."
-          },
-          {
-            "year": 1800,
-            "text": "Εφευρίσκεται η χημική μπαταρία (και διατίθεται εμπορικά σε μεγάλη κλίμακα στις ΗΠΑ το 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Εφευρίσκεται ο αυτοματοποιημένος αργαλειός – η πρώτη προγραμματιζόμενη μηχανική συσκευή στον κόσμο."
-          },
-          {
-            "year": 1809,
-            "text": "Εφευρίσκεται το ηλεκτρικό φως."
-          },
-          {
-            "year": 1831,
-            "text": "Εφευρίσκεται η γεννήτρια και καθιστά δυνατή τη μετατροπή της κίνησης σε ελεγχόμενη ηλεκτρική ενέργεια."
-          },
-          {
-            "year": 1859,
-            "text": "Εφευρίσκεται η επαναφορτιζόμενη μπαταρία, κλείνοντας τον κύκλο για αποθηκεύσιμη και κινητή κινητήρια δύναμη."
-          },
-          {
-            "year": 1954,
-            "text": "Τίθεται σε λειτουργία το πρώτο δημόσιο δίκτυο πυρηνικής ενέργειας."
-          },
-          {
-            "year": "Μέχρι σήμερα",
-            "text": "Αλλά τι συνέβη μετά; Αυτό που συνέβη ήταν ότι η ανάπτυξη της βιομηχανικής επανάστασης δυστυχώς σταμάτησε, δεν ακολούθησε καμία αναμενόμενη ολική ρομποτοποίηση και κανείς δεν ξέρει γιατί."
-          }
+          { "year": 1698, "text": "Εφευρίσκεται η ατμομηχανή, σπάζοντας για πρώτη φορά την απόλυτη εξάρτηση της ανθρωπότητας από τη μυϊκή δύναμη και τα ζώα φορτίου." },
+          { "year": 1750, "text": "Η βιομηχανική επανάσταση ξεκινά στην Αγγλία και κλιμακώνει τη μηχανική μαζική παραγωγή." },
+          { "year": 1800, "text": "Εφευρίσκεται η χημική μπαταρία (και διατίθεται εμπορικά σε μεγάλη κλίμακα στις ΗΠΑ το 1896)." },
+          { "year": 1801, "text": "Εφευρίσκεται ο αυτοματοποιημένος αργαλειός – η πρώτη προγραμματιζόμενη μηχανική συσκευή στον κόσμο." },
+          { "year": 1809, "text": "Εφευρίσκεται το ηλεκτρικό φως." },
+          { "year": 1831, "text": "Εφευρίσκεται η γεννήτρια και καθιστά δυνατή τη μετατροπή της κίνησης σε ελεγχόμενη ηλεκτρική ενέργεια." },
+          { "year": 1859, "text": "Εφευρίσκεται η επαναφορτιζόμενη μπαταρία, κλείνοντας τον κύκλο για αποθηκεύσιμη και κινητή κινητήρια δύναμη." },
+          { "year": 1954, "text": "Τίθεται σε λειτουργία το πρώτο δημόσιο δίκτυο πυρηνικής ενέργειας." },
+          { "year": "Μέχρι σήμερα", "text": "Αλλά τι συνέβη μετά; Συλλογική παράλυση. Η ανάπτυξη της βιομηχανικής επανάστασης σταμάτησε, και η αναμενόμενη πλήρης ρομποτοποίηση δεν ήρθε ποτέ. Ας το κάνουμε λοιπόν τώρα – και ας μην περιμένουμε." }
         ],
         "section2Title": "Γιατί υπάρχει το Παγκόσμιο Μανιφέστο;",
         "paragraphs": [
@@ -1660,42 +769,15 @@
         "description": "Някои ключови етапи в технологичното развитие на човечеството — и защо Световният манифест съществува.",
         "section1Title": "Исторически етапи",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Изобретена е парната машина, която за първи път нарушава абсолютната зависимост на човечеството от мускулната сила и товарните животни."
-          },
-          {
-            "year": 1750,
-            "text": "Промишлената революция започва в Англия и разраства масовото механично производство."
-          },
-          {
-            "year": 1800,
-            "text": "Изобретена е химическата батерия (и става комерсиално достъпна в голям мащаб в САЩ през 1896 г.)."
-          },
-          {
-            "year": 1801,
-            "text": "Изобретен е автоматичният стан – първото в света програмируемо механично устройство."
-          },
-          {
-            "year": 1809,
-            "text": "Изобретена е електрическата светлина."
-          },
-          {
-            "year": 1831,
-            "text": "Изобретен е генераторът, който позволява преобразуването на движението в управляема електрическа енергия."
-          },
-          {
-            "year": 1859,
-            "text": "Изобретена е акумулаторната батерия, затваряща кръга за съхраняема и мобилна движеща сила."
-          },
-          {
-            "year": 1954,
-            "text": "Въведена е в експлоатация първата обществена ядрена енергийна мрежа."
-          },
-          {
-            "year": "Досега",
-            "text": "Но какво се случи след това? Това, което се случи, беше, че развитието на индустриалната революция за съжаление спря, не последва очакваната пълна роботизация и никой не знае защо."
-          }
+          { "year": 1698, "text": "Изобретена е парната машина, която за първи път нарушава абсолютната зависимост на човечеството от мускулната сила и товарните животни." },
+          { "year": 1750, "text": "Промишлената революция започва в Англия и разраства масовото механично производство." },
+          { "year": 1800, "text": "Изобретена е химическата батерия (и става комерсиално достъпна в голям мащаб в САЩ през 1896 г.)." },
+          { "year": 1801, "text": "Изобретен е автоматичният стан – първото в света програмируемо механично устройство." },
+          { "year": 1809, "text": "Изобретена е електрическата светлина." },
+          { "year": 1831, "text": "Изобретен е генераторът, който позволява преобразуването на движението в управляема електрическа енергия." },
+          { "year": 1859, "text": "Изобретена е акумулаторната батерия, затваряща кръга за съхраняема и мобилна движеща сила." },
+          { "year": 1954, "text": "Въведена е в експлоатация първата обществена ядрена енергийна мрежа." },
+          { "year": "Досега", "text": "Но какво се случи след това? Колективна парализа. Развитието на индустриалната революция спря и очакваната пълна роботизация така и не се случи. Така че нека го направим сега – и да не чакаме." }
         ],
         "section2Title": "Защо съществува Световният манифест?",
         "paragraphs": [
@@ -1710,42 +792,15 @@
         "description": "Några milstolpar i mänsklighetens tekniska utveckling — och varför Världsmanifestet finns.",
         "section1Title": "Historiska milstolpar",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Ångmaskinen uppfinns och bryter för första gången mänsklighetens absoluta beroende av muskelkraft och dragdjur."
-          },
-          {
-            "year": 1750,
-            "text": "Den industriella revolutionen inleds i England och skalar upp mekanisk massproduktion."
-          },
-          {
-            "year": 1800,
-            "text": "Det kemiska batteriet uppfinns (och finns kommersiellt tillgängligt i stor skala i USA år 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Den automatiserade vävstolen uppfinns – världens första programmerbara mekaniska anordning."
-          },
-          {
-            "year": 1809,
-            "text": "Elektriskt ljus uppfinns."
-          },
-          {
-            "year": 1831,
-            "text": "Generatorn uppfinns och möjliggör omvandling av rörelse till kontrollerbar elektrisk energi."
-          },
-          {
-            "year": 1859,
-            "text": "Det laddningsbara batteriet uppfinns, vilket sluter cirkeln för lagringsbar och mobil drivkraft."
-          },
-          {
-            "year": 1954,
-            "text": "Det första offentliga elnätet med kärnkraft tas i bruk."
-          },
-          {
-            "year": "Fram till nutid",
-            "text": "Men vad hände sen? Det som hände var att industrirevolutionens utveckling avstannade tyvärr, ingen väntad totalrobotisering följde, och ingen vet varför."
-          }
+          { "year": 1698, "text": "Ångmaskinen uppfinns och bryter för första gången mänsklighetens absoluta beroende av muskelkraft och dragdjur." },
+          { "year": 1750, "text": "Den industriella revolutionen inleds i England och skalar upp mekanisk massproduktion." },
+          { "year": 1800, "text": "Det kemiska batteriet uppfinns (och finns kommersiellt tillgängligt i stor skala i USA år 1896)." },
+          { "year": 1801, "text": "Den automatiserade vävstolen uppfinns – världens första programmerbara mekaniska anordning." },
+          { "year": 1809, "text": "Elektriskt ljus uppfinns." },
+          { "year": 1831, "text": "Generatorn uppfinns och möjliggör omvandling av rörelse till kontrollerbar elektrisk energi." },
+          { "year": 1859, "text": "Det laddningsbara batteriet uppfinns, vilket sluter cirkeln för lagringsbar och mobil drivkraft." },
+          { "year": 1954, "text": "Det första offentliga elnätet med kärnkraft tas i bruk." },
+          { "year": "Fram till nutid", "text": "Men vad hände sen? Kollektiv handlingsförlamning. Industrirevolutionens utveckling avstannade, och den förväntade totala robotiseringen blev aldrig av. Så låt oss göra det nu – och inte vänta." }
         ],
         "section2Title": "Varför finns Världsmanifestet?",
         "paragraphs": [
@@ -1760,42 +815,15 @@
         "description": "Néhány mérföldkő az emberiség technológiai fejlődésében — és hogy miért létezik a Világkiáltvány.",
         "section1Title": "Történelmi mérföldkövek",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Feltalálják a gőzgépet, amely először töri meg az emberiség abszolút függőségét az izomerőtől és a vonóállatoktól."
-          },
-          {
-            "year": 1750,
-            "text": "Az ipari forradalom elindul Angliában, és felskálázza a gépesített tömegtermelést."
-          },
-          {
-            "year": 1800,
-            "text": "Feltalálják a kémiai akkumulátort (és 1896-ban nagy skálán kereskedelmi forgalomba kerül az Egyesült Államokban)."
-          },
-          {
-            "year": 1801,
-            "text": "Feltalálják az automatizált szövőgépet – a világ első programozható mechanikus eszközét."
-          },
-          {
-            "year": 1809,
-            "text": "Feltalálják az elektromos fényt."
-          },
-          {
-            "year": 1831,
-            "text": "Feltalálják a generátort, amely lehetővé teszi a mozgás átalakítását irányítható elektromos energiává."
-          },
-          {
-            "year": 1859,
-            "text": "Feltalálják az újratölthető akkumulátort, bezárva a kört a tárolható és mobil hajtóerő számára."
-          },
-          {
-            "year": 1954,
-            "text": "Használatba veszik az első nyilvános nukleáris erőműhálózatot."
-          },
-          {
-            "year": "A mai napig",
-            "text": "De mi történt azután? Az történt, hogy az ipari forradalom fejlődése sajnos megakadt, nem következett a várt teljes robotizáció, és senki sem tudja, miért."
-          }
+          { "year": 1698, "text": "Feltalálják a gőzgépet, amely először töri meg az emberiség abszolút függőségét az izomerőtől és a vonóállatoktól." },
+          { "year": 1750, "text": "Az ipari forradalom elindul Angliában, és felskálázza a gépesített tömegtermelést." },
+          { "year": 1800, "text": "Feltalálják a kémiai akkumulátort (és 1896-ban nagy skálán kereskedelmi forgalomba kerül az Egyesült Államokban)." },
+          { "year": 1801, "text": "Feltalálják az automatizált szövőgépet – a világ első programozható mechanikus eszközét." },
+          { "year": 1809, "text": "Feltalálják az elektromos fényt." },
+          { "year": 1831, "text": "Feltalálják a generátort, amely lehetővé teszi a mozgás átalakítását irányítható elektromos energiává." },
+          { "year": 1859, "text": "Feltalálják az újratölthető akkumulátort, bezárva a kört a tárolható és mobil hajtóerő számára." },
+          { "year": 1954, "text": "Használatba veszik az első nyilvános nukleáris erőműhálózatot." },
+          { "year": "A mai napig", "text": "De mi történt ezután? Kollektív cselekvésképtelenség. Az ipari forradalom fejlődése megállt, és a várt teljes robotizáció soha nem valósult meg. Szóval tegyük meg most – és ne várjunk." }
         ],
         "section2Title": "Miért létezik a Világkiáltvány?",
         "paragraphs": [
@@ -1810,42 +838,15 @@
         "description": "כמה ציוני דרך בהתפתחות הטכנולוגית של האנושות — ומדוע קיים המניפסט העולמי.",
         "section1Title": "ציוני דרך היסטוריים",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "מומצאת מכונת הקיטור, ושוברת לראשונה את תלותה המוחלטת של האנושות בכוח השרירים ובחיות משא."
-          },
-          {
-            "year": 1750,
-            "text": "מתחילה המהפכה התעשייתית באנגליה ומרחיבה את הייצור ההמוני המכני."
-          },
-          {
-            "year": 1800,
-            "text": "מומצאת הסוללה הכימית (והופכת זמינה מסחרית בקנה מידה רחב בארה\"ב ב-1896)."
-          },
-          {
-            "year": 1801,
-            "text": "מומצא נול האריגה האוטומטי – ההתקן המכני הראשון בעולם הניתן לתכנות."
-          },
-          {
-            "year": 1809,
-            "text": "מומצא האור החשמלי."
-          },
-          {
-            "year": 1831,
-            "text": "מומצא הגנרטור ומאפשר את המרת התנועה לאנרגיה חשמלית ניתנת לשליטה."
-          },
-          {
-            "year": 1859,
-            "text": "מומצאת הסוללה הנטענת, המשלמת את המעגל עבור כוח מניע הניתן לאחסון ונייד."
-          },
-          {
-            "year": 1954,
-            "text": "מופעלת רשת החשמל הגרעינית הציבורית הראשונה."
-          },
-          {
-            "year": "עד היום",
-            "text": "אבל מה קרה אחר כך? מה שקרה הוא שהתפתחות המהפכה התעשייתית למרבה הצער נעצרה, שום רובוטיזציה כוללת צפויה לא באה בעקבותיה, ואף אחד לא יודע למה."
-          }
+          { "year": 1698, "text": "מומצאת מכונת הקיטור, ושוברת לראשונה את תלותה המוחלטת של האנושות בכוח השרירים ובחיות משא." },
+          { "year": 1750, "text": "מתחילה המהפכה התעשייתית באנגליה ומרחיבה את הייצור ההמוני המכני." },
+          { "year": 1800, "text": "מומצאת הסוללה הכימית (והופכת זמינה מסחרית בקנה מידה רחב בארה\"ב ב-1896)." },
+          { "year": 1801, "text": "מומצא נול האריגה האוטומטי – ההתקן המכני הראשון בעולם הניתן לתכנות." },
+          { "year": 1809, "text": "מומצא האור החשמלי." },
+          { "year": 1831, "text": "מומצא הגנרטור ומאפשר את המרת התנועה לאנרגיה חשמלית ניתנת לשליטה." },
+          { "year": 1859, "text": "מומצאת הסוללה הנטענת, המשלמת את המעגל עבור כוח מניע הניתן לאחסון ונייד." },
+          { "year": 1954, "text": "מופעלת רשת החשמל הגרעינית הציבורית הראשונה." },
+          { "year": "עד היום", "text": "אבל מה קרה אחר כך? שיתוק פעולה קולקטיבי. התפתחות המהפכה התעשייתית נעצרה, והרובוטיזציה המלאה הצפויה מעולם לא התרחשה. אז בואו נעשה זאת עכשיו – ולא נחכה." }
         ],
         "section2Title": "מדוע קיים המניפסט העולמי?",
         "paragraphs": [
@@ -1860,42 +861,15 @@
         "description": "Nogle milepæle i menneskehedens tekniske udvikling — og hvorfor Verdensmanifestet findes.",
         "section1Title": "Historiske milepæle",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Dampmaskinen opfindes og bryder for første gang menneskehedens absolutte afhængighed af muskelkraft og trækdyr."
-          },
-          {
-            "year": 1750,
-            "text": "Den industrielle revolution indledes i England og skalerer op for mekanisk masseproduktion."
-          },
-          {
-            "year": 1800,
-            "text": "Det kemiske batteri opfindes (og er kommercielt tilgængeligt i stor skala i USA i 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Den automatiserede vævstol opfindes – verdens første programmerbare mekaniske anordning."
-          },
-          {
-            "year": 1809,
-            "text": "Elektrisk lys opfindes."
-          },
-          {
-            "year": 1831,
-            "text": "Generatoren opfindes og muliggør omdannelse af bevægelse til kontrollerbar elektrisk energi."
-          },
-          {
-            "year": 1859,
-            "text": "Det genopladelige batteri opfindes, hvilket slutter cirklen for lagerbar og mobil drivkraft."
-          },
-          {
-            "year": 1954,
-            "text": "Det første offentlige elnet med kernekraft tages i brug."
-          },
-          {
-            "year": "Indtil i dag",
-            "text": "Men hvad skete der så? Det der skete var, at den industrielle revolutions udvikling desværre gik i stå, ingen ventet total robotisering fulgte, og ingen ved hvorfor."
-          }
+          { "year": 1698, "text": "Dampmaskinen opfindes og bryder for første gang menneskehedens absolutte afhængighed af muskelkraft og trækdyr." },
+          { "year": 1750, "text": "Den industrielle revolution indledes i England og skalerer op for mekanisk masseproduktion." },
+          { "year": 1800, "text": "Det kemiske batteri opfindes (og er kommercielt tilgængeligt i stor skala i USA i 1896)." },
+          { "year": 1801, "text": "Den automatiserede vævstol opfindes – verdens første programmerbare mekaniske anordning." },
+          { "year": 1809, "text": "Elektrisk lys opfindes." },
+          { "year": 1831, "text": "Generatoren opfindes og muliggør omdannelse af bevægelse til kontrollerbar elektrisk energi." },
+          { "year": 1859, "text": "Det genopladelige batteri opfindes, hvilket slutter cirklen for lagerbar og mobil drivkraft." },
+          { "year": 1954, "text": "Det første offentlige elnet med kernekraft tages i brug." },
+          { "year": "Indtil i dag", "text": "Men hvad skete der så? Kollektiv handlingslammelse. Den industrielle revolutions udvikling gik i stå, og den forventede totale robotisering blev aldrig til noget. Så lad os gøre det nu – og ikke vente." }
         ],
         "section2Title": "Hvorfor findes Verdensmanifestet?",
         "paragraphs": [
@@ -1910,42 +884,15 @@
         "description": "Muutama virstanpylväs ihmiskunnan teknologisessa kehityksessä — ja miksi Maailman manifesti on olemassa.",
         "section1Title": "Historialliset virstanpylväät",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Höyrykone keksitään ja se katkaisee ensimmäistä kertaa ihmiskunnan ehdottoman riippuvuuden lihasvoimasta ja vetojuomasta."
-          },
-          {
-            "year": 1750,
-            "text": "Teollinen vallankumous alkaa Englannissa ja skaalaa ylös mekaanista massatuotantoa."
-          },
-          {
-            "year": 1800,
-            "text": "Kemiallinen akku keksitään (ja se on kaupallisesti saatavilla laajoissa mitoissa USA:ssa vuonna 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Automatisoitu kangaspuu keksitään – maailman ensimmäinen ohjelmoitava mekaaninen laite."
-          },
-          {
-            "year": 1809,
-            "text": "Sähkövalo keksitään."
-          },
-          {
-            "year": 1831,
-            "text": "Generaattori keksitään ja se mahdollistaa liikkeen muuntamisen hallittavaksi sähköenergiaksi."
-          },
-          {
-            "year": 1859,
-            "text": "Ladattava akku keksitään, mikä sulkee ympyrän varastoitavalle ja mobiilille voimanlähteelle."
-          },
-          {
-            "year": 1954,
-            "text": "Ensimmäinen julkinen ydinvoiman sähköverkko otetaan käyttöön."
-          },
-          {
-            "year": "Tähän päivään asti",
-            "text": "Mutta mitä tapahtui sitten? Se mitä tapahtui oli, että teollisen vallankumouksen kehitys valitettavasti pysähtyi, odotettua täydellistä robotisaatiota ei seurannut, eikä kukaan tiedä miksi."
-          }
+          { "year": 1698, "text": "Höyrykone keksitään ja se katkaisee ensimmäistä kertaa ihmiskunnan ehdottoman riippuvuuden lihasvoimasta ja vetojuomasta." },
+          { "year": 1750, "text": "Teollinen vallankumous alkaa Englannissa ja skaalaa ylös mekaanista massatuotantoa." },
+          { "year": 1800, "text": "Kemiallinen akku keksitään (ja se on kaupallisesti saatavilla laajoissa mitoissa USA:ssa vuonna 1896)." },
+          { "year": 1801, "text": "Automatisoitu kangaspuu keksitään – maailman ensimmäinen ohjelmoitava mekaaninen laite." },
+          { "year": 1809, "text": "Sähkövalo keksitään." },
+          { "year": 1831, "text": "Generaattori keksitään ja se mahdollistaa liikkeen muuntamisen hallittavaksi sähköenergiaksi." },
+          { "year": 1859, "text": "Ladattava akku keksitään, mikä sulkee ympyrän varastoitavalle ja mobiilille voimanlähteelle." },
+          { "year": 1954, "text": "Ensimmäinen julkinen ydinvoiman sähköverkko otetaan käyttöön." },
+          { "year": "Tähän päivään asti", "text": "Mutta mitä tapahtui sen jälkeen? Kollektiivinen toimintahalvaus. Teollisen vallankumouksen kehitys pysähtyi, ja odotettu täydellinen robotisaatio ei koskaan toteutunut. Joten tehdään se nyt – eikä odoteta." }
         ],
         "section2Title": "Miksi Maailman manifesti on olemassa?",
         "paragraphs": [
@@ -1960,42 +907,15 @@
         "description": "Noen milepæler i menneskehetens tekniske utvikling — og hvorfor Verdensmanifestet finnes.",
         "section1Title": "Historiske milepæler",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Dampmaskinen oppvinnes og bryter for første gang menneskehetens absolutte avhengighet av muskelkraft og trekkdyr."
-          },
-          {
-            "year": 1750,
-            "text": "Den industrielle revolusjonen innledes i England og skalerer opp mekanisk masseproduksjon."
-          },
-          {
-            "year": 1800,
-            "text": "Det kjemiske batteriet oppvinnes (og er kommersielt tilgjengelig i stor skala i USA i 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Den automatiserte vevstolen oppvinnes – verdens første programmerbare mekaniske anordning."
-          },
-          {
-            "year": 1809,
-            "text": "Elektrisk lys oppvinnes."
-          },
-          {
-            "year": 1831,
-            "text": "Generatoren oppvinnes og muliggjør omdanning av bevegelse til kontrollerbar elektrisk energi."
-          },
-          {
-            "year": 1859,
-            "text": "Det oppladbare batteriet oppvinnes, noe som slutter sirkelen for lagringsbar og mobil drivkraft."
-          },
-          {
-            "year": 1954,
-            "text": "Det første offentlige strømnettet med kjernekraft tas i bruk."
-          },
-          {
-            "year": "Fram til i dag",
-            "text": "Men hva skjedde så? Det som skjedde var at utviklingen av den industrielle revolusjonen dessverre stoppet opp, ingen ventet total robotisering fulgte, og ingen vet hvorfor."
-          }
+          { "year": 1698, "text": "Dampmaskinen oppvinnes og bryter for første gang menneskehetens absolutte avhengighet av muskelkraft og trekkdyr." },
+          { "year": 1750, "text": "Den industrielle revolusjonen innledes i England og skalerer opp mekanisk masseproduksjon." },
+          { "year": 1800, "text": "Det kjemiske batteriet oppvinnes (og er kommersielt tilgjengelig i stor skala i USA i 1896)." },
+          { "year": 1801, "text": "Den automatiserte vevstolen oppvinnes – verdens første programmerbare mekaniske anordning." },
+          { "year": 1809, "text": "Elektrisk lys oppvinnes." },
+          { "year": 1831, "text": "Generatoren oppvinnes og muliggjør omdanning av bevegelse til kontrollerbar elektrisk energi." },
+          { "year": 1859, "text": "Det oppladbare batteriet oppvinnes, noe som slutter sirkelen for lagringsbar og mobil drivkraft." },
+          { "year": 1954, "text": "Det første offentlige strømnettet med kjernekraft tas i bruk." },
+          { "year": "Fram til i dag", "text": "Men hva skjedde etterpå? Kollektiv handlingslammelse. Den industrielle revolusjonens utvikling stoppet opp, og den forventede totale robotiseringen ble aldri noe av. Så la oss gjøre det nå – og ikke vente." }
         ],
         "section2Title": "Hvorfor finnes Verdensmanifestet?",
         "paragraphs": [
@@ -2010,42 +930,15 @@
         "description": "Nokkrir áfangar í tækniþróun mannkyns — og hvers vegna Heimsmanifestið er til.",
         "section1Title": "Sögulegir áfangar",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Gufuvélin er fundin upp, sem brýtur í fyrsta sinn algert háð mannkyns á vöskrafti og vinnudýrum."
-          },
-          {
-            "year": 1750,
-            "text": "Iðnbyltingin hefst á Englandi og stækkar umfang vélrænnar fjöldaframleiðslu."
-          },
-          {
-            "year": 1800,
-            "text": "Efnaverrafhlaðan er fundin upp (og verður almennt fáanleg í verslunum í Bandaríkjunum árið 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Sjálfvirki vefstóllinn er fundinn upp – fyrsta forritanlega vélræna tæki heims."
-          },
-          {
-            "year": 1809,
-            "text": "Rafljósið er fundið upp."
-          },
-          {
-            "year": 1831,
-            "text": "Rafallinn er fundinn upp og gerir kleift að breyta hreyfingu í stjórnanlega raforku."
-          },
-          {
-            "year": 1859,
-            "text": "Endurhlaðanleg rafhlaðan er fundin upp, sem lokar hringnum fyrir geymslanlegan og hreyfanlegan drifkraft."
-          },
-          {
-            "year": 1954,
-            "text": "Fyrsta almenna kjarnorkurafmagnsnetið er tekið í notkun."
-          },
-          {
-            "year": "Fram til dagsins í dag",
-            "text": "En hvað gerðist svo? Það sem gerðist var að þróun iðnbyltingarinnar stöðvaðist því miður, engin væntanleg heildar-vélmennavæðing fylgdi í kjölfarið og enginn veit af hverju."
-          }
+          { "year": 1698, "text": "Gufuvélin er fundin upp, sem brýtur í fyrsta sinn algert háð mannkyns á vöskrafti og vinnudýrum." },
+          { "year": 1750, "text": "Iðnbyltingin hefst á Englandi og stækkar umfang vélrænnar fjöldaframleiðslu." },
+          { "year": 1800, "text": "Efnaverrafhlaðan er fundin upp (og verður almennt fáanleg í verslunum í Bandaríkjunum árið 1896)." },
+          { "year": 1801, "text": "Sjálfvirki vefstóllinn er fundinn upp – fyrsta forritanlega vélræna tæki heims." },
+          { "year": 1809, "text": "Rafljósið er fundið upp." },
+          { "year": 1831, "text": "Rafallinn er fundinn upp og gerir kleift að breyta hreyfingu í stjórnanlega raforku." },
+          { "year": 1859, "text": "Endurhlaðanleg rafhlaðan er fundin upp, sem lokar hringnum fyrir geymslanlegan og hreyfanlegan drifkraft." },
+          { "year": 1954, "text": "Fyrsta almenna kjarnorkurafmagnsnetið er tekið í notkun." },
+          { "year": "Fram til dagsins í dag", "text": "En hvað gerðist svo? Sameiginleg aðgerðarlömun. Þróun iðnbyltingarinnar stöðvaðist og hin væntanlega algera vélmennavæðing varð aldrei að veruleika. Svo skulum við gera þetta núna – og ekki bíða." }
         ],
         "section2Title": "Hvers vegna er Heimsmanifestið til?",
         "paragraphs": [
@@ -2060,42 +953,15 @@
         "description": "Kèk moman kle dan devlopman teknolojik limanite — e akoz Manifès Mondyal i egziste.",
         "section1Title": "Moman Istorik",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Masin lo vape i ganny envante, pour premye fwa i kas depandans absoli limanite anver lafors miskilè ek bann zanimo tiraz."
-          },
-          {
-            "year": 1750,
-            "text": "Revolisyon endistriyel i konman an Angletè e i elarji prodiksyon an mas mekanik."
-          },
-          {
-            "year": 1800,
-            "text": "Batri chimik i ganny envante (e i vin disponib komèrsyalman lo gran lekèl dan Leta Zini an 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Latilye otomatik i ganny envante – premye aparèy mekanik ki kapab ganny programen dan lemond."
-          },
-          {
-            "year": 1809,
-            "text": "Lalimieren elektrik i ganny envante."
-          },
-          {
-            "year": 1831,
-            "text": "Dzenèrater i ganny envante e i pèrmèt konvèrt mouvman an enersiya elektrik ki kapab ganny kontwole."
-          },
-          {
-            "year": 1859,
-            "text": "Batri ki kapab ganny sarze ankò i ganny envante, i fer boukle sek lafors motiv ki kapab ganny stoké e deplase."
-          },
-          {
-            "year": 1954,
-            "text": "Premye rezo piblik enersiya nikleyè i antre dan fonksyonnman."
-          },
-          {
-            "year": "Ziska zordi",
-            "text": "Me ki in arive apre? Sa ki in arive se ki devlopman revolisyon endistriyel malerezman in blok, okenn total robotizasyon ki ti pe atann pa'n swiv, e personn pa kone pourkwa."
-          }
+          { "year": 1698, "text": "Masin lo vape i ganny envante, pour premye fwa i kas depandans absoli limanite anver lafors miskilè ek bann zanimo tiraz." },
+          { "year": 1750, "text": "Revolisyon endistriyel i konman an Angletè e i elarji prodiksyon an mas mekanik." },
+          { "year": 1800, "text": "Batri chimik i ganny envante (e i vin disponib komèrsyalman lo gran lekèl dan Leta Zini an 1896)." },
+          { "year": 1801, "text": "Latilye otomatik i ganny envante – premye aparèy mekanik ki kapab ganny programen dan lemond." },
+          { "year": 1809, "text": "Lalimieren elektrik i ganny envante." },
+          { "year": 1831, "text": "Dzenèrater i ganny envante e i pèrmèt konvèrt mouvman an enersiya elektrik ki kapab ganny kontwole." },
+          { "year": 1859, "text": "Batri ki kapab ganny sarze ankò i ganny envante, i fer boukle sek lafors motiv ki kapab ganny stoké e deplase." },
+          { "year": 1954, "text": "Premye rezo piblik enersiya nikleyè i antre dan fonksyonnman." },
+          { "year": "Ziska zordi", "text": "Me ki ti arive apre? Paralizi aksyon kolektif. Devlopman revolisyon industriyel ti arete, e robotizasyon total ki ti ganny espere pa ti ariv zanmen. Alor annou fer li konmela – e pa espere." }
         ],
         "section2Title": "Akoz Manifès Mondyal i egziste?",
         "paragraphs": [
@@ -2110,42 +976,15 @@
         "description": "Nakrir týdningarmiklir varðar í tøkniligu menning mannasamfelagsins — og hví Heimslýsingin er til.",
         "section1Title": "Søguligir varðar",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Dampmaskinan verður uppfunnin og brýtur fyri fyrstu ferð fullkomiliga bundinskap mannasamfelagsins av vøddafjøri og drápsdýrum."
-          },
-          {
-            "year": 1750,
-            "text": "Iðnaðarkollveltiran byrjar í Onglandi og skalar upp mekaniska massframleiðslu."
-          },
-          {
-            "year": 1800,
-            "text": "Kemiska battaríið verður uppfunnið (og er handilsliga tøkt í stórum stigi í USA í 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Tann automatiseraði vevstólurin verður uppfunnið – heimsins fyrsta forritanliga mekaniska amboð."
-          },
-          {
-            "year": 1809,
-            "text": "Elektriskt ljós verður uppfunnið."
-          },
-          {
-            "year": 1831,
-            "text": "Generatorin verður uppfunnið og ger tað møguligt at broyta rørslu til stýriliga elektriska energi."
-          },
-          {
-            "year": 1859,
-            "text": "Tað upplaðiliga battaríið verður uppfunnið, sum lokkar ringina til goymsluføra og mobila drívmegi."
-          },
-          {
-            "year": 1954,
-            "text": "Tað fyrsta almenna elnetið við kjarnorku verður tikið í nýtslu."
-          },
-          {
-            "year": "Fram til í dag",
-            "text": "Men hvat hendi síðan? Tað sum hendi var, at menningin av ídnaðarkollveltingini tíverri steðgaði, eingin væntað total robotisering fylgdi, og eingin veit hví."
-          }
+          { "year": 1698, "text": "Dampmaskinan verður uppfunnin og brýtur fyri fyrstu ferð fullkomiliga bundinskap mannasamfelagsins av vøddafjøri og drápsdýrum." },
+          { "year": 1750, "text": "Iðnaðarkollveltiran byrjar í Onglandi og skalar upp mekaniska massframleiðslu." },
+          { "year": 1800, "text": "Kemiska battaríið verður uppfunnið (og er handilsliga tøkt í stórum stigi í USA í 1896)." },
+          { "year": 1801, "text": "Tann automatiseraði vevstólurin verður uppfunnið – heimsins fyrsta forritanliga mekaniska amboð." },
+          { "year": 1809, "text": "Elektriskt ljós verður uppfunnið." },
+          { "year": 1831, "text": "Generatorin verður uppfunnið og ger tað møguligt at broyta rørslu til stýriliga elektriska energi." },
+          { "year": 1859, "text": "Tað upplaðiliga battaríið verður uppfunnið, sum lokkar ringina til goymsluføra og mobila drívmegi." },
+          { "year": 1954, "text": "Tað fyrsta almenna elnetið við kjarnorku verður tikið í nýtslu." },
+          { "year": "Fram til í dag", "text": "Men hvat hendi so? Felags handlingslamsni. Vøksturin í ídnaðarbyltingini steðgaði upp, og hin væntaða totala robotiseringin varð aldri til nakað. So lat okkum gera tað nú – og ikki bíða." }
         ],
         "section2Title": "Hví er Heimslýsingin til?",
         "paragraphs": [
@@ -2160,42 +999,15 @@
         "description": "Muhtun historjjálaš ceahkit olmmošvuođa teknihkalaš ovdáneamis — ja manne Máilmmimanifesta gávdno.",
         "section1Title": "Historjjálaš ceahkit",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Bálvemášina keksejuvvo ja botte vuosttas geardde olmmošvuođa ollislaš sorjavašvuođa lihkadanfámus ja geassetjeatniin."
-          },
-          {
-            "year": 1750,
-            "text": "Industriala revolušuvdna álgá Englánddas ja bajida mekaanalaš massabuvttadeami."
-          },
-          {
-            "year": 1800,
-            "text": "Kemalaš akku keksejuvvo (ja gávdno gávppálaččat stuorra mihtus USA:s jagi 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Automatiserenjuvvon gođđongálvu keksejuvvo – máilmmis vuosttas prográmmerenvejolaš mekaanalaš rusttet."
-          },
-          {
-            "year": 1809,
-            "text": "Elektralaš čuovga keksejuvvo."
-          },
-          {
-            "year": 1831,
-            "text": "Generáhtor keksejuvvo ja dahká vejolažžan earáhit lihkadusa stivrejuvvon elektralaš energiijai."
-          },
-          {
-            "year": 1859,
-            "text": "Akku man sáhttá laddet keksejuvvo, mii giddet birrasiid vurkkuhanvejolaš ja mobiila fievrridanfámus."
-          },
-          {
-            "year": 1954,
-            "text": "Vuosttas almmolaš šleađđofierpmádat atomfámus váldojuvvo geavahussii."
-          },
-          {
-            "year": "Dán áigái",
-            "text": "Muhto mii dalle dáhpáhuvai? Dát dáhpáhuvai ahte industriija revolušuvnna ovdáneapmi orru bisánit, ii gearddu vuorddašan ollislaš robotiseren ja ii oktage dieđe manin."
-          }
+          { "year": 1698, "text": "Bálvemášina keksejuvvo ja botte vuosttas geardde olmmošvuođa ollislaš sorjavašvuođa lihkadanfámus ja geassetjeatniin." },
+          { "year": 1750, "text": "Industriala revolušuvdna álgá Englánddas ja bajida mekaanalaš massabuvttadeami." },
+          { "year": 1800, "text": "Kemalaš akku keksejuvvo (ja gávdno gávppálaččat stuorra mihtus USA:s jagi 1896)." },
+          { "year": 1801, "text": "Automatiserenjuvvon gođđongálvu keksejuvvo – máilmmis vuosttas prográmmerenvejolaš mekaanalaš rusttet." },
+          { "year": 1809, "text": "Elektralaš čuovga keksejuvvo." },
+          { "year": 1831, "text": "Generáhtor keksejuvvo ja dahká vejolažžan earáhit lihkadusa stivrejuvvon elektralaš energiijai." },
+          { "year": 1859, "text": "Akku man sáhttá laddet keksejuvvo, mii giddet birrasiid vurkkuhanvejolaš ja mobiila fievrridanfámus." },
+          { "year": 1954, "text": "Vuosttas almmolaš šleađđofierpmádat atomfámus váldojuvvo geavahussii." },
+          { "year": "Dán áigái", "text": "Muhto mii dáhpáhuvai dasto? Oktasaš doaibmameahttunvuohta. Industriijarevolušuvnna ovdáneapmi bisánii, ja dat vuordojuvvon ollislaš robotiseren ii goassege šaddan duohtan. Nu ahte dahkat dan dál – eaige vuordde." }
         ],
         "section2Title": "Manne Máilmmimanifesta gávdno?",
         "paragraphs": [
@@ -2210,42 +1022,15 @@
         "description": "Muutamia virstanpylväitä ihmiskunnan teknillisessä kehityksessä — ja miksi Maailman manifesti on olemassa.",
         "section1Title": "Historialliset virstanpylväät",
         "timeline": [
-          {
-            "year": 1698,
-            "text": "Höyrykone kekshitäh, joka rikkoo ensimmälisen kerran ihmiskunnan ehottoman riippuvaisuuven lihasvoimasta ja vetojuomasta."
-          },
-          {
-            "year": 1750,
-            "text": "Teollinen vallankumous alkkaa Englannissa ja skaalatha ylös mekaanista massatuotanthoa."
-          },
-          {
-            "year": 1800,
-            "text": "Kemillinen akku kekshitäh (ja se löythyyt kaupallisesti saatavilla isossa mitassa USA:ssa vuonna 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Automatiseerattu kangaspuu kekshitäh – mailman ensimäinen ohjelmoitava mekaaninen laite."
-          },
-          {
-            "year": 1809,
-            "text": "Sähkövalo kekshitäh."
-          },
-          {
-            "year": 1831,
-            "text": "Generaattori kekshitäh ja se mahđollistaa liikkhumisen muuttamisen ohjattavaksi sähköenergiaksi."
-          },
-          {
-            "year": 1859,
-            "text": "Ladathava akku kekshitäh, joka sulkee kehän varastoitavalle ja mobiilille vetovoimalle."
-          },
-          {
-            "year": 1954,
-            "text": "Ensimäinen julkinen ydinvoiman sähköverkko otethaan käyttöön."
-          },
-          {
-            "year": "Tähän päivhään asti",
-            "text": "Mutta mitä tapahtu siitten? Se mitä tapahtu oli, ette teollisen vallankumhouksen kehitys valitettavasti pysähty, ei seurannu odotettua totaalirobotisointia, eikä kukhaan tiijä miksi."
-          }
+          { "year": 1698, "text": "Höyrykone kekshitäh, joka rikkoo ensimmälisen kerran ihmiskunnan ehottoman riippuvaisuuven lihasvoimasta ja vetojuomasta." },
+          { "year": 1750, "text": "Teollinen vallankumous alkkaa Englannissa ja skaalatha ylös mekaanista massatuotanthoa." },
+          { "year": 1800, "text": "Kemillinen akku kekshitäh (ja se löythyyt kaupallisesti saatavilla isossa mitassa USA:ssa vuonna 1896)." },
+          { "year": 1801, "text": "Automatiseerattu kangaspuu kekshitäh – mailman ensimäinen ohjelmoitava mekaaninen laite." },
+          { "year": 1809, "text": "Sähkövalo kekshitäh." },
+          { "year": 1831, "text": "Generaattori kekshitäh ja se mahđollistaa liikkhumisen muuttamisen ohjattavaksi sähköenergiaksi." },
+          { "year": 1859, "text": "Ladathava akku kekshitäh, joka sulkee kehän varastoitavalle ja mobiilille vetovoimalle." },
+          { "year": 1954, "text": "Ensimäinen julkinen ydinvoiman sähköverkko otethaan käyttöön." },
+          { "year": "Tähän päivhään asti", "text": "Mutta mitä tapahtu sen jälkhiin? Kollektiivinen toimintahalvaus. Teollisen vallankumouksen kehitys pysähty, ja se ootettu täyveliini robotiseerinki ei koskhaan tullu toteheen. Jotta tehthään se nyt – eikä ootetha." }
         ],
         "section2Title": "Miksi Maailman manifesti on olemassa?",
         "paragraphs": [
