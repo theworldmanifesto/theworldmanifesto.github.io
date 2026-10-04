@@ -3,6 +3,7 @@
    Fix: Huvudmenyn ska inte ligga långt till vänster och missas
    - Samma centrerade "gata" som resten av sajten (max 800px)
    - RTL-stöd: araber/hebreiska får speglad dropdown
+   - INFORUTA för "Om..." med stäng-knapp
    ============================================================ */
 
 #main-menu {
@@ -205,7 +206,10 @@ body.tropics-left[dir="rtl"] .dropdown-content {
     }
 }
 
-/* === INFORUTA FÖR "OM..." === */
+/* ============================================================
+   INFORUTA FÖR "OM..." - med stäng-knapp
+   ============================================================ */
+
 #aboutAuthorModal {
     display: none;
     position: fixed;
@@ -222,7 +226,6 @@ body.tropics-left[dir="rtl"] .dropdown-content {
     width: 90%;
     text-align: center;
     font-family: sans-serif;
-    cursor: pointer;
 }
 
 #aboutAuthorModal.visible {
@@ -244,12 +247,7 @@ body.tropics-left[dir="rtl"] .dropdown-content {
     color: #333;
 }
 
-/* RTL-stöd för inforutan */
-[dir="rtl"] #aboutAuthorModal {
-    text-align: center;
-}
-
-/* Stäng-knapp i inforutan */
+/* Stäng-knapp (×) uppe i högra hörnet */
 #aboutAuthorModal .close-btn {
     position: absolute;
     top: 10px;
