@@ -166,29 +166,31 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.appendChild(text);
         document.body.appendChild(modal);
 
-        // Stäng när man klickar på ×
-        closeBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            modal.classList.remove('visible');
-        });
-
         return modal;
     }
 
     const aboutModal = createAboutModal();
 
-    // Öppna rutan när man klickar på "Om..."
+    // === EN ENDA CLICK-HÄNDELSE – både öppna och stäng ===
     document.addEventListener('click', function(e) {
+
+        // 1. ÖPPNA: Om man klickar på "Om..."-länken
         const link = e.target.closest('#aboutAuthorLink');
         if (link) {
             e.preventDefault();
             e.stopPropagation();
             aboutModal.classList.add('visible');
+            return;
         }
-    });
 
-    // Stäng rutan när man klickar UTANFÖR den
-    document.addEventListener('click', function(e) {
+        // 2. STÄNG MED ×: Om man klickar på stäng-knappen
+        if (e.target.closest('#aboutAuthorModal .close-btn')) {
+            e.stopPropagation();
+            aboutModal.classList.remove('visible');
+            return;
+        }
+
+        // 3. STÄNG UTANFÖR: Om man klickar utanför rutan
         if (aboutModal && aboutModal.classList.contains('visible')) {
             if (!aboutModal.contains(e.target)) {
                 aboutModal.classList.remove('visible');
@@ -196,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Stäng rutan när man trycker på Escape-tangenten
+    // === STÄNG MED ESCAPE ===
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && aboutModal && aboutModal.classList.contains('visible')) {
             aboutModal.classList.remove('visible');
