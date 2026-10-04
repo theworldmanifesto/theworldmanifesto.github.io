@@ -210,7 +210,7 @@ body.tropics-left[dir="rtl"] .dropdown-content {
    INFORUTA FÖR "OM..." - med stäng-knapp
    ============================================================ */
 
-#aboutAuthorModal {
+#whyAuthorModal {
     display: none;
     position: fixed;
     top: 50%;
@@ -228,11 +228,11 @@ body.tropics-left[dir="rtl"] .dropdown-content {
     font-family: sans-serif;
 }
 
-#aboutAuthorModal.visible {
+#whyAuthorModal.visible {
     display: block;
 }
 
-#aboutAuthorModal h3 {
+#whyAuthorModal h3 {
     margin: 0 0 16px 0;
     font-size: 1.2rem;
     color: #1a1a1a;
@@ -240,7 +240,7 @@ body.tropics-left[dir="rtl"] .dropdown-content {
     padding-bottom: 10px;
 }
 
-#aboutAuthorModal p {
+#whyAuthorModal p {
     margin: 0;
     font-size: 1rem;
     line-height: 1.6;
@@ -248,7 +248,7 @@ body.tropics-left[dir="rtl"] .dropdown-content {
 }
 
 /* Stäng-knapp (×) uppe i högra hörnet */
-#aboutAuthorModal .close-btn {
+#whyAuthorModal .close-btn {
     position: absolute;
     top: 10px;
     right: 14px;
@@ -263,12 +263,12 @@ body.tropics-left[dir="rtl"] .dropdown-content {
     transition: color 0.2s;
 }
 
-#aboutAuthorModal .close-btn:hover {
+#whyAuthorModal .close-btn:hover {
     color: #333;
 }
 
 /* RTL-stöd: stäng-knappen till vänster */
-[dir="rtl"] #aboutAuthorModal .close-btn {
+[dir="rtl"] #whyAuthorModal .close-btn {
     right: auto;
     left: 14px;
 }
