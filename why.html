@@ -10,7 +10,7 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://theworldmanifesto.github.io/about.html">
+    <meta property="og:url" content="https://theworldmanifesto.github.io/why.html">
     <meta property="og:title" id="og-title" content="Varför? – Världsmanifestet">
     <meta property="og:description" id="og-description" content="">
     <meta property="og:image" content="https://theworldmanifesto.github.io/og-image.png">
@@ -19,7 +19,7 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://theworldmanifesto.github.io/about.html">
+    <meta name="twitter:url" content="https://theworldmanifesto.github.io/why.html">
     <meta name="twitter:title" id="tw-title" content="Varför? – Världsmanifestet">
     <meta name="twitter:description" id="tw-description" content="">
     <meta name="twitter:image" content="https://theworldmanifesto.github.io/og-image.png">
@@ -223,15 +223,15 @@
     <div class="container">
 
         <header>
-            <h1 id="about-heading"></h1>
-            <p class="subtitle" id="about-description"></p>
+            <h1 id="why-heading"></h1>
+            <p class="subtitle" id="why-description"></p>
         </header>
 
         <main>
             <article>
 
                 <h2>
-                    <img src="/pics/about_gear.png" class="section-icon" alt="">
+                    <img src="/pics/why_gear.png" class="section-icon" alt="">
                     <span id="section1-title"></span>
                 </h2>
 
@@ -256,10 +256,10 @@
         } from './lang/js/lang.js';
 
         // Färgordning för tidslinjens 9 punkter
-        // De 8 första följer den gamla about.html, den 9:e är röd för att markera samtidskommentaren
+        // De 8 första följer den gamla why.html, den 9:e är röd för att markera samtidskommentaren
         const TIMELINE_COLORS = ['orange', 'gray', 'blue', 'purple', 'lightblue', 'green', 'yellow', 'green', 'red'];
 
-        // UI-texter – bara det som inte finns i about.json
+        // UI-texter – bara det som inte finns i why.json
         const UI = {
             'sv': { pageTitle: 'Varför? – Världsmanifestet', ogLocale: 'sv_SE' },
             'en': { pageTitle: 'Why? – The World Manifesto', ogLocale: 'en_US' },
@@ -308,7 +308,7 @@
             'fit': { pageTitle: 'Miksi? – Mailmanmanifesti', ogLocale: 'fit_SE' }
         };
 
-        let aboutData = null;
+        let whyData = null;
         const urlParams = new URLSearchParams(window.location.search);
         const rawUrlLang = urlParams.get('lang');
         let currentLang = rawUrlLang ? pickBestLanguage(AVAILABLE, [rawUrlLang]) : pickBestLanguage();
@@ -330,20 +330,20 @@
             }
         }
 
-        function renderAbout(lang) {
-            if (!aboutData) return;
+        function renderWhy(lang) {
+            if (!whyData) return;
 
-            let t = aboutData.manifesto.languages[lang];
-            if (!t) t = aboutData.manifesto.languages['en'];
+            let t = whyData.manifesto.languages[lang];
+            if (!t) t = whyData.manifesto.languages['en'];
 
             setDocumentDirection(lang);
             setMetaTags(lang, t);
 
             // Rubrik
-            document.getElementById('about-heading').textContent = t.heading;
+            document.getElementById('why-heading').textContent = t.heading;
 
             // Underrubrik (description)
-            document.getElementById('about-description').textContent = t.description || '';
+            document.getElementById('why-description').textContent = t.description || '';
 
             // Sektion 1
             document.getElementById('section1-title').textContent = t.section1Title;
@@ -389,7 +389,7 @@
         function switchLanguage(newLang) {
             if (!AVAILABLE.includes(newLang)) newLang = 'en';
             currentLang = newLang;
-            renderAbout(newLang);
+            renderWhy(newLang);
         }
 
         document.getElementById('lang-select').addEventListener('change', function() {
@@ -409,20 +409,20 @@
             switchLanguage(lang);
         });
 
-        // Ladda about.json
-        fetch('about.json')
+        // Ladda why.json
+        fetch('why.json')
             .then(function(response) {
-                if (!response.ok) throw new Error('Kunde inte läsa about.json');
+                if (!response.ok) throw new Error('Kunde inte läsa why.json');
                 return response.json();
             })
             .then(function(data) {
-                aboutData = data;
+                whyData = data;
                 populateLangSelect(document.getElementById('lang-select'));
-                renderAbout(currentLang);
+                renderWhy(currentLang);
             })
             .catch(function(err) {
-                console.error('Fel vid laddning av about.json:', err);
-                document.getElementById('about-heading').textContent = 'Fel vid laddning';
+                console.error('Fel vid laddning av why.json:', err);
+                document.getElementById('why-heading').textContent = 'Fel vid laddning';
             });
     </script>
 
