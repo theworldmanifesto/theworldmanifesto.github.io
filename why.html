@@ -398,7 +398,7 @@
 
             const url = new URL(window.location);
             url.searchParams.set('lang', newLang);
-            history.pushState({ lang: newLang }, null, url);
+            history.pushState({ lang: newLang }, null, url.href);  // ← RÄTT: url.href är en sträng
 
             switchLanguage(newLang);
         });
