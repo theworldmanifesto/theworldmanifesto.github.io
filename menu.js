@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- ORDBOK FÖR ALLA 45 SPRÅK ---
     const translations = {
-        'sv': { menu: 'MENY', home: 'HEM', manifesto: 'Läs Världsmanifestet', staircase: 'Frihetstrappan (english)', tropics: 'Tropikerna', robotel: 'Robotel', qr: 'QR', share: 'Dela', why: 'Varför?', whyAuthor: 'Om...', aboutAuthorText: 'Författaren, Sven Yngerstedt, är född 1968 och kommer från Sverige.' },
+        'sv': { menu: 'MENY', home: 'HEM', manifesto: 'Läs Världsmanifestet', staircase: 'Frihetstrappan (english)', tropics: 'Tropikerna', robotel: 'Robotel', qr: 'QR', share: 'Dela', about: 'Varför?', aboutAuthor: 'Om...', aboutAuthorText: 'Författaren, Sven Yngerstedt, är född 1968 och kommer från Sverige.' },
         'en': { menu: 'MENU', home: 'HOME', manifesto: 'Read The World Manifesto', staircase: 'Freedom Staircase', tropics: 'The Tropics', robotel: 'Robotel', qr: 'QR', share: 'Share', why: 'Why?', whyAuthor: 'About...', aboutAuthorText: 'The author, Sven Yngerstedt, was born in 1968 and comes from Sweden.' },
         'fi': { menu: 'VALIKKO', home: 'ETUSIVU', manifesto: 'Lue Maailmanmanifesti', staircase: 'Vapauden portaat (english)', tropics: 'Trooppiset alueet', robotel: 'Robotel', qr: 'QR', share: 'Jaa', why: 'Miksi?', whyAuthor: 'Tietoja...', aboutAuthorText: 'Tekijä, Sven Yngerstedt, on syntynyt vuonna 1968 ja tulee Ruotsista.' },
         'zh': { menu: '菜单', home: '首页', manifesto: '阅读世界宣言', staircase: '自由阶梯 (english)', tropics: '热带地区', robotel: '机器人', qr: 'QR', share: '分享', why: '为什么？', whyAuthor: '关于...', aboutAuthorText: '作者 Sven Yngerstedt 生于1968年，来自瑞典。' },
