@@ -149,17 +149,30 @@ document.addEventListener('DOMContentLoaded', function() {
         const modal = document.createElement('div');
         modal.id = 'aboutAuthorModal';
 
+        // Stäng-knapp
+        const closeBtn = document.createElement('button');
+        closeBtn.className = 'close-btn';
+        closeBtn.setAttribute('aria-label', 'Close');
+        closeBtn.textContent = '×';
+
         const title = document.createElement('h3');
         title.textContent = t.aboutAuthor;
 
         const text = document.createElement('p');
         text.textContent = t.aboutAuthorText;
 
+        modal.appendChild(closeBtn);
         modal.appendChild(title);
         modal.appendChild(text);
         document.body.appendChild(modal);
 
-        // Stäng när man klickar PÅ rutan
+        // Stäng när man klickar PÅ stäng-knappen
+        closeBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            modal.classList.remove('visible');
+        });
+
+        // Stäng när man klickar PÅ rutan (utanför stäng-knappen)
         modal.addEventListener('click', function(e) {
             e.stopPropagation();
             modal.classList.remove('visible');
