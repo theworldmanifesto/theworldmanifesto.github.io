@@ -4,8 +4,8 @@ import { AVAILABLE, RELATED_FALLBACK, pickBestLanguage } from './lang/js/lang.js
 // MENU.JS - Global meny för The World Manifesto (45 språk)
 // UPPDATERAD: "About" / "Om" heter nu "Why?" / "Varför?"
 // NY: "Om..." som öppnar en inforuta med författarinformation
-// CSS flyttad till menu.css
-// Stängs med: klick på rutan, klick utanför, Escape-tangenten
+// CSS i menu.css
+// Stängs med: klick på ×, klick på rutan, klick utanför, Escape
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const modal = document.createElement('div');
         modal.id = 'aboutAuthorModal';
 
-        // Stäng-knapp
+        // Stäng-knapp (×)
         const closeBtn = document.createElement('button');
         closeBtn.className = 'close-btn';
         closeBtn.setAttribute('aria-label', 'Close');
@@ -166,14 +166,8 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.appendChild(text);
         document.body.appendChild(modal);
 
-        // Stäng när man klickar PÅ stäng-knappen
+        // Stäng när man klickar på ×
         closeBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            modal.classList.remove('visible');
-        });
-
-        // Stäng när man klickar PÅ rutan (utanför stäng-knappen)
-        modal.addEventListener('click', function(e) {
             e.stopPropagation();
             modal.classList.remove('visible');
         });
@@ -188,6 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const link = e.target.closest('#aboutAuthorLink');
         if (link) {
             e.preventDefault();
+            e.stopPropagation();
             aboutModal.classList.add('visible');
         }
     });
