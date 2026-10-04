@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Varför? – Världsmanifestet</title>
+    <link rel="icon" href="/pics/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/pics/favicon.svg" type="image/svg+xml">
+    <meta name="description" id="page-description" content="">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://theworldmanifesto.github.io/about.html">
+    <meta property="og:title" id="og-title" content="Varför? – Världsmanifestet">
+    <meta property="og:description" id="og-description" content="">
+    <meta property="og:image" content="https://theworldmanifesto.github.io/og-image.png">
+    <meta property="og:site_name" content="Världsmanifestet">
+    <meta property="og:locale" id="og-locale" content="sv_SE">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://theworldmanifesto.github.io/about.html">
+    <meta name="twitter:title" id="tw-title" content="Varför? – Världsmanifestet">
+    <meta name="twitter:description" id="tw-description" content="">
+    <meta name="twitter:image" content="https://theworldmanifesto.github.io/og-image.png">
+
+    <link rel="stylesheet" href="menu.css">
+
+    <style>
+        :root {
+            --bg-color: #fcfcfc;
+            --text-color: #222222;
+            --accent-color: #1a1a1a;
+            --border-color: #e0e0e0;
+            --max-width: 800px;
+            --blue: #1877F2;
+            --green: #25D366;
+            --lightblue: #26A5E4;
+            --orange: #f39c12;
+            --purple: #9b59b6;
+            --yellow: #f1c40f;
+            --red: #c0392b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 12px 20px;
+            background: transparent;
+            position: sticky;
+            top: 0;
+            z-index: 500;
+            flex-wrap: wrap;
+        }
+
+        .lang-select {
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(4px);
+            font-size: 13px;
+            font-family: sans-serif;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+        .lang-select:hover { border-color: #888; }
+        .lang-select:focus { outline: none; border-color: #555; }
+
+        #main-menu { display: inline-block; }
+
+        @media (max-width: 600px) {
+            .nav-wrapper { padding: 8px 12px; gap: 10px; }
+            .lang-select { font-size: 12px; padding: 4px 8px; }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            margin-bottom: 5px;
+            line-height: 1.2;
+            color: var(--accent-color);
+        }
+
+        .subtitle {
+            font-size: clamp(1.05rem, 2.3vw, 1.2rem);
+            color: #666;
+            margin-bottom: 40px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid var(--blue);
+        }
+
+        h2 .section-icon {
+            height: 1.4rem;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* === TIDSLINJE === */
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            border-left: 2px solid #e0e0e0;
+            padding-left: 25px;
+        }
+
+        .timeline-item {
+            margin-bottom: 22px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -32px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            box-shadow: 0 0 0 3px var(--bg-color);
+        }
+
+        .timeline-item[data-color="orange"]::before { background-color: var(--orange); }
+        .timeline-item[data-color="gray"]::before { background-color: #999; }
+        .timeline-item[data-color="blue"]::before { background-color: var(--blue); }
+        .timeline-item[data-color="purple"]::before { background-color: var(--purple); }
+        .timeline-item[data-color="green"]::before { background-color: var(--green); }
+        .timeline-item[data-color="yellow"]::before { background-color: var(--yellow); }
+        .timeline-item[data-color="lightblue"]::before { background-color: var(--lightblue); }
+        .timeline-item[data-color="red"]::before { background-color: var(--red); }
+
+        .year {
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .year.orange { color: var(--orange); }
+        .year.gray { color: #666; }
+        .year.blue { color: var(--blue); }
+        .year.purple { color: var(--purple); }
+        .year.green { color: var(--green); }
+        .year.yellow { color: #b8860b; }
+        .year.lightblue { color: var(--lightblue); }
+        .year.red { color: var(--red); }
+
+        .description {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* RTL-stöd */
+        [dir="rtl"] .timeline {
+            border-left: none;
+            border-right: 2px solid #e0e0e0;
+            padding-left: 0;
+            padding-right: 25px;
+        }
+        [dir="rtl"] .timeline-item::before {
+            left: auto;
+            right: -32px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="background_color.css">
+</head>
+<body>
+
+    <div class="nav-wrapper">
+        <div id="main-menu"></div>
+        <select id="lang-select" class="lang-select" aria-label="Language"></select>
+    </div>
+
+    <div class="container">
+
+        <header>
+            <h1 id="about-heading"></h1>
+            <p class="subtitle" id="about-description"></p>
+        </header>
+
+        <main>
+            <article>
+
+                <h2>
+                    <img src="/pics/about_gear.png" class="section-icon" alt="">
+                    <span id="section1-title"></span>
+                </h2>
+
+                <ul class="timeline" id="timeline"></ul>
+
+                <h2>
+                    <img src="/menu_icons/question_mark.png" class="section-icon" alt="">
+                    <span id="section2-title"></span>
+                </h2>
+
+                <div id="paragraphs"></div>
+
+            </article>
+        </main>
+
+    </div>
+
+    <script type="module">
+        import {
+            AVAILABLE, pickBestLanguage,
+            populateLangSelect, setDocumentDirection
+        } from './lang/js/lang.js';
+
+        // Färgordning för tidslinjens 9 punkter
+        // De 8 första följer den gamla about.html, den 9:e är röd för att markera samtidskommentaren
+        const TIMELINE_COLORS = ['orange', 'gray', 'blue', 'purple', 'lightblue', 'green', 'yellow', 'green', 'red'];
+
+        // UI-texter – bara det som inte finns i about.json
+        const UI = {
+            'sv': { pageTitle: 'Varför? – Världsmanifestet', ogLocale: 'sv_SE' },
+            'en': { pageTitle: 'Why? – The World Manifesto', ogLocale: 'en_US' },
+            'zh': { pageTitle: '为什么？ – 世界宣言', ogLocale: 'zh_CN' },
+            'yue': { pageTitle: '點解？ – 世界宣言', ogLocale: 'zh_HK' },
+            'hi': { pageTitle: 'क्यों? – विश्व घोषणापत्र', ogLocale: 'hi_IN' },
+            'es': { pageTitle: '¿Por qué? – El Manifiesto Mundial', ogLocale: 'es_ES' },
+            'fr': { pageTitle: 'Pourquoi ? – Le Manifeste Mondial', ogLocale: 'fr_FR' },
+            'de': { pageTitle: 'Warum? – Weltmanifest', ogLocale: 'de_DE' },
+            'ja': { pageTitle: 'なぜ？ – 世界宣言', ogLocale: 'ja_JP' },
+            'ko': { pageTitle: '왜? – 세계 선언문', ogLocale: 'ko_KR' },
+            'ru': { pageTitle: 'Почему? – Всемирный манифест', ogLocale: 'ru_RU' },
+            'pt': { pageTitle: 'Porquê? – O Manifesto Mundial', ogLocale: 'pt_PT' },
+            'it': { pageTitle: 'Perché? – Manifesto Mondiale', ogLocale: 'it_IT' },
+            'ar': { pageTitle: 'لماذا؟ – البيان العالمي', ogLocale: 'ar_AR' },
+            'id': { pageTitle: 'Mengapa? – Manifesto Dunia', ogLocale: 'id_ID' },
+            'jv': { pageTitle: 'Kenaapa? – Manifesto Donya', ogLocale: 'jv_ID' },
+            'bn': { pageTitle: 'কেন? – বিশ্ব ইশতেহার', ogLocale: 'bn_BD' },
+            'pa': { pageTitle: 'ਕਿਉਂ? – ਵਿਸ਼ਵ ਘੋਸ਼ਣਾ ਪੱਤਰ', ogLocale: 'pa_IN' },
+            'uk': { pageTitle: 'Чому? – Всесвітній маніфест', ogLocale: 'uk_UA' },
+            'bg': { pageTitle: 'Защо? – Световен манифест', ogLocale: 'bg_BG' },
+            'ur': { pageTitle: 'کیوں؟ – عالمی منشور', ogLocale: 'ur_PK' },
+            'fil': { pageTitle: 'Bakit? – Manipesto ng Mundo', ogLocale: 'fil_PH' },
+            'th': { pageTitle: 'ทำไม? – แถลงการณ์โลก', ogLocale: 'th_TH' },
+            'vi': { pageTitle: 'Tại sao? – Tuyên ngôn Thế giới', ogLocale: 'vi_VN' },
+            'tr': { pageTitle: 'Neden? – Dünya Manifestosu', ogLocale: 'tr_TR' },
+            'fa': { pageTitle: 'چرا؟ – مانیفست جهانی', ogLocale: 'fa_IR' },
+            'sw': { pageTitle: 'Kwa nini? – Ilani ya Dunia', ogLocale: 'sw_KE' },
+            'pl': { pageTitle: 'Dlaczego? – Manifest Światowy', ogLocale: 'pl_PL' },
+            'nl': { pageTitle: 'Waarom? – Wereldmanifest', ogLocale: 'nl_NL' },
+            'ro': { pageTitle: 'De ce? – Manifestul Mondial', ogLocale: 'ro_RO' },
+            'el': { pageTitle: 'Γιατί; – Παγκόσμιο Μανιφέστο', ogLocale: 'el_GR' },
+            'af': { pageTitle: 'Waarom? – Wêreldmanifest', ogLocale: 'af_ZA' },
+            'zu': { pageTitle: 'Kungani? – IManifesto Yomhlaba', ogLocale: 'zu_ZA' },
+            'xh': { pageTitle: 'Kutheni? – IManifesto Yehlabathi', ogLocale: 'xh_ZA' },
+            'cs': { pageTitle: 'Proč? – Světový manifest', ogLocale: 'cs_CZ' },
+            'hu': { pageTitle: 'Miért? – Világkiáltvány', ogLocale: 'hu_HU' },
+            'he': { pageTitle: 'למה? – מניפסט העולם', ogLocale: 'he_IL' },
+            'da': { pageTitle: 'Hvorfor? – Verdensmanifestet', ogLocale: 'da_DK' },
+            'fi': { pageTitle: 'Miksi? – Maailmanmanifesti', ogLocale: 'fi_FI' },
+            'no': { pageTitle: 'Hvorfor? – Verdensmanifestet', ogLocale: 'nb_NO' },
+            'is': { pageTitle: 'Af hverju? – Heimsmanifestið', ogLocale: 'is_IS' },
+            'crs': { pageTitle: 'Akoz? – Manifest lemonn', ogLocale: 'crs_SC' },
+            'fo': { pageTitle: 'Hví? – Heimsskráin', ogLocale: 'fo_FO' },
+            'se': { pageTitle: 'Manne? – Máilmmi Manifesta', ogLocale: 'se_NO' },
+            'fit': { pageTitle: 'Miksi? – Mailmanmanifesti', ogLocale: 'fit_SE' }
+        };
+
+        let aboutData = null;
+        const urlParams = new URLSearchParams(window.location.search);
+        const rawUrlLang = urlParams.get('lang');
+        let currentLang = rawUrlLang ? pickBestLanguage(AVAILABLE, [rawUrlLang]) : pickBestLanguage();
+
+        function setMetaTags(lang, t) {
+            const pageTitle = (UI[lang] && UI[lang].pageTitle) || (t.heading + ' – The World Manifesto');
+            const ogLocale = (UI[lang] && UI[lang].ogLocale) || 'en_US';
+
+            document.title = pageTitle;
+            document.getElementById('page-title').textContent = pageTitle;
+            document.getElementById('og-title').setAttribute('content', pageTitle);
+            document.getElementById('tw-title').setAttribute('content', pageTitle);
+            document.getElementById('og-locale').setAttribute('content', ogLocale);
+
+            if (t.description) {
+                document.getElementById('page-description').setAttribute('content', t.description);
+                document.getElementById('og-description').setAttribute('content', t.description);
+                document.getElementById('tw-description').setAttribute('content', t.description);
+            }
+        }
+
+        function renderAbout(lang) {
+            if (!aboutData) return;
+
+            let t = aboutData.manifesto.languages[lang];
+            if (!t) t = aboutData.manifesto.languages['en'];
+
+            setDocumentDirection(lang);
+            setMetaTags(lang, t);
+
+            // Rubrik
+            document.getElementById('about-heading').textContent = t.heading;
+
+            // Underrubrik (description)
+            document.getElementById('about-description').textContent = t.description || '';
+
+            // Sektion 1
+            document.getElementById('section1-title').textContent = t.section1Title;
+
+            // Tidslinje
+            const timelineEl = document.getElementById('timeline');
+            timelineEl.innerHTML = '';
+            t.timeline.forEach(function(item, idx) {
+                const color = TIMELINE_COLORS[idx] || 'blue';
+                const li = document.createElement('li');
+                li.className = 'timeline-item';
+                li.setAttribute('data-color', color);
+
+                const yearSpan = document.createElement('span');
+                yearSpan.className = 'year ' + color;
+                yearSpan.textContent = String(item.year);
+
+                const descSpan = document.createElement('span');
+                descSpan.className = 'description';
+                descSpan.textContent = item.text;
+
+                li.appendChild(yearSpan);
+                li.appendChild(descSpan);
+                timelineEl.appendChild(li);
+            });
+
+            // Sektion 2
+            document.getElementById('section2-title').textContent = t.section2Title;
+
+            // Paragrafer
+            const paraEl = document.getElementById('paragraphs');
+            paraEl.innerHTML = '';
+            t.paragraphs.forEach(function(p) {
+                const pEl = document.createElement('p');
+                pEl.textContent = p;
+                paraEl.appendChild(pEl);
+            });
+
+            // Uppdatera select
+            document.getElementById('lang-select').value = lang;
+        }
+
+        function switchLanguage(newLang) {
+            if (!AVAILABLE.includes(newLang)) newLang = 'en';
+            currentLang = newLang;
+            renderAbout(newLang);
+        }
+
+        document.getElementById('lang-select').addEventListener('change', function() {
+            const newLang = this.value;
+            if (newLang === currentLang) return;
+
+            const url = new URL(window.location);
+            url.searchParams.set('lang', newLang);
+            history.pushState({ lang: newLang }, null, url);
+
+            switchLanguage(newLang);
+        });
+
+        window.addEventListener('popstate', function() {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang') || pickBestLanguage();
+            switchLanguage(lang);
+        });
+
+        // Ladda about.json
+        fetch('about.json')
+            .then(function(response) {
+                if (!response.ok) throw new Error('Kunde inte läsa about.json');
+                return response.json();
+            })
+            .then(function(data) {
+                aboutData = data;
+                populateLangSelect(document.getElementById('lang-select'));
+                renderAbout(currentLang);
+            })
+            .catch(function(err) {
+                console.error('Fel vid laddning av about.json:', err);
+                document.getElementById('about-heading').textContent = 'Fel vid laddning';
+            });
+    </script>
+
+    <script type="module" src="menu.js"></script>
+    <script type="module" src="footer.js"></script>
+
+</body>
+</html>
