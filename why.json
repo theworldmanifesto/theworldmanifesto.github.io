@@ -353,56 +353,6 @@
           "يطالب البيان بشكل جديد من التشريعات الاقتصادية الدولية: تشريع يعترف بنضج التكنولوجيا، ويلغي نظام الديون، ويمنح جميع الناس الحق في الوفرة التي تخلقها الآلات."
         ]
       },
-            "id": {
-        "name": "Bahasa Indonesia (Indonesian)",
-        "backLink": "← Kembali ke Manifesto Dunia",
-        "heading": "Mengapa?",
-        "description": "Beberapa tonggak sejarah dalam perkembangan teknologi umat manusia — dan mengapa Manifesto Dunia ada.",
-        "section1Title": "Tonggak Sejarah",
-        "timeline": [
-          {
-            "year": 1698,
-            "text": "Mesin uap diciptakan, untuk pertama kalinya membebaskan umat manusia dari ketergantungan mutlak pada tenaga otot dan hewan beban."
-          },
-          {
-            "year": 1750,
-            "text": "Revolusi industri dimulai di Inggris dan meningkatkan skala produksi massal mekanis."
-          },
-          {
-            "year": 1800,
-            "text": "Baterai kimia diciptakan (dan tersedia secara komersial dalam skala besar di AS pada tahun 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Mesin tenun otomatis diciptakan – perangkat mekanis dapat diprogram pertama di dunia."
-          },
-          {
-            "year": 1809,
-            "text": "Lampu listrik diciptakan."
-          },
-          {
-            "year": 1831,
-            "text": "Generator diciptakan dan memungkinkan konversi gerakan menjadi energi listrik yang dapat dikendalikan."
-          },
-          {
-            "year": 1859,
-            "text": "Baterai isi ulang diciptakan, melengkapi siklus untuk daya penggerak yang dapat disimpan dan bergerak."
-          },
-          {
-            "year": 1954,
-            "text": "Jaringan tenaga nuklir publik pertama mulai digunakan."
-          },
-          {
-            "year": "Hingga saat ini",
-            "text": "Tapi apa yang terjadi kemudian? Yang terjadi adalah bahwa perkembangan revolusi industri sayangnya terhenti, tidak ada total robotisasi yang diharapkan terjadi, dan tidak ada yang tahu mengapa."
-          }
-        ],
-        "section2Title": "Mengapa Manifesto Dunia ada?",
-        "paragraphs": [
-          "Ini adalah platform siap pakai bagi siapa saja yang ingin membangun sesuatu yang baru — sebuah partai, sebuah gerakan, sebuah reformasi.",
-          "Manifesto ini menuntut bentuk undang-undang ekonomi internasional yang baru: undang-undang yang mengakui kematangan teknologi, menghapuskan sistem utang, dan memberikan semua orang hak atas kelimpahan yang diciptakan oleh mesin."
-        ]
-      },
       "bn": {
         "name": "বাংলা (Bengali)",
         "backLink": "← দ্য ওয়ার্ল্ড ম্যানিফেস্টোতে ফিরে যান",
@@ -451,56 +401,6 @@
         "paragraphs": [
           "এটি এমন যে কেউ নতুন কিছু তৈরি করতে চায় তার জন্য একটি তৈরি প্ল্যাটফর্ম — একটি দল, একটি আন্দোলন, একটি সংস্কার।",
           "ম্যানিফেস্টো আন্তর্জাতিক অর্থনৈতিক আইনের একটি নতুন রূপ দাবি করে: যা প্রযুক্তির পরিপক্কতাকে স্বীকৃতি দেয়, ঋণ ব্যবস্থাকে বিলুপ্ত করে এবং সমস্ত মানুষকে মেশিন দ্বারা সৃষ্ট প্রাচুর্যের অধিকার দেয়।"
-        ]
-      },
-            "crs": {
-        "name": "Seselwa (Seychellisk Kreol)",
-        "backLink": "← Retourn dan Manifès Mondyal",
-        "heading": "Akoz?",
-        "description": "Kèk moman kle dan devlopman teknolojik limanite — e akoz Manifès Mondyal i egziste.",
-        "section1Title": "Moman Istorik",
-        "timeline": [
-          {
-            "year": 1698,
-            "text": "Masin lo vape i ganny envante, pour premye fwa i liber limanite de so depandans absoli anver lafors miskilè ek bann zanimo tiraz."
-          },
-          {
-            "year": 1750,
-            "text": "Revolisyon endistriyel i konman an Angletè e i elarji prodiksyon an mas mekanik."
-          },
-          {
-            "year": 1800,
-            "text": "Batri chimik i ganny envante (e i vin disponib komèrsyalman lo gran lekèl dan Leta Zini an 1896)."
-          },
-          {
-            "year": 1801,
-            "text": "Latilye otomatik i ganny envante – premye aparèy mekanik ki kapab ganny programen dan lemond."
-          },
-          {
-            "year": 1809,
-            "text": "Lalimieren elektrik i ganny envante."
-          },
-          {
-            "year": 1831,
-            "text": "Dzenèrater i ganny envante e i pèrmèt konvèrt mouvman an enersiya elektrik ki kapab ganny kontwole."
-          },
-          {
-            "year": 1859,
-            "text": "Batri ki kapab ganny sarze ankò i ganny envante, i fer boukle sek lafors motiv ki kapab ganny stoké e deplase."
-          },
-          {
-            "year": 1954,
-            "text": "Premye rezo piblik enersiya nikleyè i antre dan fonksyonnman."
-          },
-          {
-            "year": "Ziska zordi",
-            "text": "Me ki in arive apre? Sa ki in arive se ki devlopman revolisyon endistriyel malerezman in blok, okenn total robotizasyon ki ti pe atann pa'n swiv, e personn pa kone pourkwa."
-          }
-        ],
-        "section2Title": "Akoz Manifès Mondyal i egziste?",
-        "paragraphs": [
-          "I enn platfòm pare pour servi pour nenport ki anvi bati en keksoz new — en parti, en mouvman, en refòrm.",
-          "Manifès i egzize en nouvo fòrm lezislasyon ekonomik enternasyonal: enn ki rekonèt matirite teknoloji, tir sistèm dèt, e donn tou dimoun drwa lo labondans ki bann masin i kreye."
         ]
       },
       "pt": {
