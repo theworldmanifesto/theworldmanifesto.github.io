@@ -194,6 +194,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (link) {
             e.preventDefault();
             e.stopPropagation();
+            // Stäng rullgardinsmenyn samtidigt
+            if (dropdown) {
+                dropdown.classList.remove('active');
+            }
             aboutModal.classList.add('visible');
             return;
         }
