@@ -322,16 +322,15 @@ body.tropics-page .dropdown-content a {
             margin-top: 5px;
             border-left: 3px solid #fff;
         }
-        /* --- Generella menyikoner (ersätter unicode-emojis) --- */
-        .menu-icon {
+
+        /* --- Snöflinge-ikon (ersätter Unicode ❄️) --- */
+        .snowflake-icon {
             display: inline-block;
             width: 1em;
             height: 1em;
             vertical-align: -0.15em;
             margin-right: 0.25em;
         }
-
-        /* --- Snöflinge-ikon (ersätter Unicode ❄️) --- */
         
         .globe-label {
             position: absolute;
@@ -1026,10 +1025,10 @@ body.tropics-page .dropdown-content a {
         const UI_TEXTS = {
             en: {
                 searchPlaceholder: "Search tropical destination...",
-                tourBtn: '<img src="tropics_pics/globe.svg" alt="" class="menu-icon"> Round-Trip",
-                tourBtnActive: '<img src="tropics_pics/stop.png" alt="" class="menu-icon"> Stop",
-                rotateBtn: '<img src="tropics_pics/rotate.svg" alt="" class="menu-icon"> Rotate",
-                rotateBtnActive: '<img src="tropics_pics/stop.png" alt="" class="menu-icon"> Stop",
+                tourBtn: "🌍 Round-Trip",
+                tourBtnActive: "⏹️ Stop",
+                rotateBtn: "🔄 Rotate",
+                rotateBtnActive: "⏹️ Stop",
                 coldestMonth: "Coldest month:",
                 country: "Country",
                 island: "Island",
@@ -1045,10 +1044,10 @@ body.tropics-page .dropdown-content a {
             },
             sv: {
                 searchPlaceholder: "Sök tropisk destination...",
-                tourBtn: '<img src="tropics_pics/globe.svg" alt="" class="menu-icon"> Rundresa",
-                tourBtnActive: '<img src="tropics_pics/stop.png" alt="" class="menu-icon"> Stopp",
-                rotateBtn: '<img src="tropics_pics/rotate.svg" alt="" class="menu-icon"> Rotera",
-                rotateBtnActive: '<img src="tropics_pics/stop.png" alt="" class="menu-icon"> Stopp",
+                tourBtn: "🌍 Rundresa",
+                tourBtnActive: "⏹️ Stopp",
+                rotateBtn: "🔄 Rotera",
+                rotateBtnActive: "⏹️ Stopp",
                 coldestMonth: "Kallaste månaden:",
                 country: "Land",
                 island: "Ö",
@@ -1064,10 +1063,10 @@ body.tropics-page .dropdown-content a {
             },
             zh: {
                 searchPlaceholder: "搜索热带目的地...",
-                tourBtn: '<img src="tropics_pics/globe.svg" alt="" class="menu-icon"> 环球之旅",
-                tourBtnActive: '<img src="tropics_pics/stop.png" alt="" class="menu-icon"> 停止",
-                rotateBtn: '<img src="tropics_pics/rotate.svg" alt="" class="menu-icon"> 旋转",
-                rotateBtnActive: '<img src="tropics_pics/stop.png" alt="" class="menu-icon"> 停止",
+                tourBtn: "🌍 环球之旅",
+                tourBtnActive: "⏹️ 停止",
+                rotateBtn: "🔄 旋转",
+                rotateBtnActive: "⏹️ 停止",
                 coldestMonth: "最冷月份:",
                 country: "国家",
                 island: "岛屿",
@@ -1499,7 +1498,7 @@ body.tropics-page .dropdown-content a {
         function nextTourStep() {
             visitedIdx.push(currentTourDest);
             const texts = UI_TEXTS[currentLang];
-            tourBtn.innerHTML = `<img src="tropics_pics/lat_long_globe.png" alt="" class="menu-icon"> ${visitedIdx.length}/${tourDestinations.length}`;
+            tourBtn.innerHTML = `🌐 ${visitedIdx.length}/${tourDestinations.length}`;
             flyToPlace(currentTourDest);
             openInfoCard(currentTourDest);
             if(visitedIdx.length >= tourDestinations.length) visitedIdx = [];
