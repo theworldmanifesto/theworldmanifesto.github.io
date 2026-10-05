@@ -1115,11 +1115,11 @@ body.tropics-page .dropdown-content a {
                 
                 const texts = UI_TEXTS[lang];
                 if (currentInfoItem.type === 'country') {
-                    document.getElementById('info-badge').innerHTML = `🌎 ${texts.country}`;
+                    document.getElementById('info-badge').innerHTML = `<img src="tropics_pics/globe.svg" alt="" class="menu-icon"> ${texts.country}`;
                 } else if (currentInfoItem.type === 'island') {
-                    document.getElementById('info-badge').innerHTML = `🏝️ ${texts.island}`;
+                    document.getElementById('info-badge').innerHTML = `<img src="tropics_pics/island.png" alt="" class="menu-icon"> ${texts.island}`;
                 } else if (currentInfoItem.type === 'territory') {
-                    document.getElementById('info-badge').innerHTML = `📌 ${texts.territory}`;
+                    document.getElementById('info-badge').innerHTML = `<img src="tropics_pics/territory.svg" alt="" class="menu-icon"> ${texts.territory}`;
                 }
                 
                 document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(currentInfoItem.coldestWinter)}</span>`;
@@ -1465,25 +1465,25 @@ body.tropics-page .dropdown-content a {
             const texts = UI_TEXTS[currentLang];
             
             if(item.type === 'country') {
-                infoBadge.innerHTML = `🌎 ${texts.country}`;
+                infoBadge.innerHTML = `<img src="tropics_pics/globe.svg" alt="" class="menu-icon"> ${texts.country}`;
                 infoBadge.className = 'badge country';
                 infoDesc.innerText = item.desc || (item._data ? item._data[currentLang].desc : '');
                 climateStat.style.display = 'block';
                 document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(item.coldestWinter)}</span>`;
             } else if(item.type === 'island') {
-                infoBadge.innerHTML = `🏝️ ${texts.island}`;
+                infoBadge.innerHTML = `<img src="tropics_pics/island.png" alt="" class="menu-icon"> ${texts.island}`;
                 infoBadge.className = 'badge island';
                 infoDesc.innerText = item.desc || (item._data ? item._data[currentLang].desc : '');
                 climateStat.style.display = 'block';
                 document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(item.coldestWinter)}</span>`;
             } else if(item.type === 'territory') {
-                infoBadge.innerHTML = `📌 ${texts.territory}`;
+                infoBadge.innerHTML = `<img src="tropics_pics/territory.svg" alt="" class="menu-icon"> ${texts.territory}`;
                 infoBadge.className = 'badge territory';
                 infoDesc.innerText = item.desc || (item._data ? item._data[currentLang].desc : '');
                 climateStat.style.display = 'block';
                 document.querySelector('#climate-stat-container').innerHTML = `${texts.coldestMonth}<br><span id="info-coldest-temp" class="climate-val">${formatTemp(item.coldestWinter)}</span>`;
             } else if(item.type === 'ocean') {
-                infoBadge.innerHTML = `🌊 OCEAN`;
+                infoBadge.innerHTML = `<img src="tropics_pics/ocean.svg" alt="" class="menu-icon"> OCEAN`;
                 infoBadge.className = 'badge';
                 infoDesc.innerText = '';
                 climateStat.style.display = 'none';
@@ -1507,7 +1507,7 @@ body.tropics-page .dropdown-content a {
         function nextTourStep() {
             visitedIdx.push(currentTourDest);
             const texts = UI_TEXTS[currentLang];
-            tourBtn.innerHTML = `🌐 ${visitedIdx.length}/${tourDestinations.length}`;
+            tourBtn.innerHTML = `<img src="tropics_pics/lat_long_globe.png" alt="" class="menu-icon"> ${visitedIdx.length}/${tourDestinations.length}`;
             flyToPlace(currentTourDest);
             openInfoCard(currentTourDest);
             if(visitedIdx.length >= tourDestinations.length) visitedIdx = [];
