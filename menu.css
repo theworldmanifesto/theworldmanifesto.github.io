@@ -217,8 +217,9 @@ body.tropics-left[dir="rtl"] .dropdown-content {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
+    border: 2px solid #d32f2f;   /* tunn röd bård */
+    border-radius: 6px;          /* om du vill ha mjuka hörn – valfritt */
+    box-sizing: border-box;      /* så padding inte spränger måtten */
     padding: 24px 28px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     z-index: 2000;
