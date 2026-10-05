@@ -133,13 +133,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const dropdown = document.getElementById('homeDropdown');
     const btn = document.getElementById('menuBtn');
-    if (btn && dropdown) {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            dropdown.classList.toggle('active');
-        });
-    }
+if (btn && dropdown) {
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // Stäng "Om..."-rutan om den är öppen
+        const modal = document.getElementById('aboutAuthorModal');
+        if (modal) {
+            modal.classList.remove('visible');
+        }
+        dropdown.classList.toggle('active');
+    });
+}
 
     document.addEventListener('click', function(e) {
         if (dropdown && !dropdown.contains(e.target)) {
@@ -226,4 +231,12 @@ document.addEventListener('DOMContentLoaded', function() {
             aboutModal.classList.remove('visible');
         }
     });
+
+    // === STÄNG VID SKROLLNING ===        ← NYTT: lägg till här
+    window.addEventListener('scroll', function() {
+        if (aboutModal && aboutModal.classList.contains('visible')) {
+            aboutModal.classList.remove('visible');
+        }
+    }, { passive: true });
+
 });
