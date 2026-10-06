@@ -5,7 +5,7 @@
 <title>Postcard — Back</title>
 <style>
     @page {
-        size: A4 landscape;
+        size: 297mm 210mm;
         margin: 0;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,23 +53,18 @@
         border: 0.3mm solid #000;
     }
 
-    /* Adresslinjer: höger sida, 4 linjer, 8 mm mellanrum */
-    .adress {
+    /* Adresslinjer: 4 linjer, 8 mm mellanrum, höger sida */
+    .adress-linje {
         position: absolute;
         left: 90mm;
         right: 5mm;
-    }
-    .adress-linje {
-        position: absolute;
-        left: 0;
-        right: 0;
         height: 0;
         border-top: 0.3mm solid #000;
     }
-    .adress-linje.l1 { top: 50mm; }
-    .adress-linje.l2 { top: 58mm; }
-    .adress-linje.l3 { top: 66mm; }
-    .adress-linje.l4 { top: 74mm; }
+    .adress-linje.l1 { top: 45mm; }
+    .adress-linje.l2 { top: 53mm; }
+    .adress-linje.l3 { top: 61mm; }
+    .adress-linje.l4 { top: 69mm; }
 
     /* Roterad text i mitten */
     .roterad-text {
@@ -95,48 +90,40 @@
         <!-- Övre vänstra vykortet -->
         <div class="vykort" style="top:0; left:0;">
             <div class="frimarke"></div>
-            <div class="adress">
-                <div class="adress-linje l1"></div>
-                <div class="adress-linje l2"></div>
-                <div class="adress-linje l3"></div>
-                <div class="adress-linje l4"></div>
-            </div>
+            <div class="adress-linje l1"></div>
+            <div class="adress-linje l2"></div>
+            <div class="adress-linje l3"></div>
+            <div class="adress-linje l4"></div>
             <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
         </div>
 
         <!-- Övre högra vykortet -->
         <div class="vykort" style="top:0; left:148.5mm;">
             <div class="frimarke"></div>
-            <div class="adress">
-                <div class="adress-linje l1"></div>
-                <div class="adress-linje l2"></div>
-                <div class="adress-linje l3"></div>
-                <div class="adress-linje l4"></div>
-            </div>
+            <div class="adress-linje l1"></div>
+            <div class="adress-linje l2"></div>
+            <div class="adress-linje l3"></div>
+            <div class="adress-linje l4"></div>
             <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
         </div>
 
         <!-- Nedre vänstra vykortet -->
         <div class="vykort" style="top:105mm; left:0;">
             <div class="frimarke"></div>
-            <div class="adress">
-                <div class="adress-linje l1"></div>
-                <div class="adress-linje l2"></div>
-                <div class="adress-linje l3"></div>
-                <div class="adress-linje l4"></div>
-            </div>
+            <div class="adress-linje l1"></div>
+            <div class="adress-linje l2"></div>
+            <div class="adress-linje l3"></div>
+            <div class="adress-linje l4"></div>
             <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
         </div>
 
         <!-- Nedre högra vykortet -->
         <div class="vykort" style="top:105mm; left:148.5mm;">
             <div class="frimarke"></div>
-            <div class="adress">
-                <div class="adress-linje l1"></div>
-                <div class="adress-linje l2"></div>
-                <div class="adress-linje l3"></div>
-                <div class="adress-linje l4"></div>
-            </div>
+            <div class="adress-linje l1"></div>
+            <div class="adress-linje l2"></div>
+            <div class="adress-linje l3"></div>
+            <div class="adress-linje l4"></div>
             <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
         </div>
 
