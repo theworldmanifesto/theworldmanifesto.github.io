@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Print — The World Manifesto</title>
+<link rel="icon" href="../pics/favicon.ico" sizes="32x32">
+<link rel="icon" href="../pics/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../menu.css">
 <link rel="stylesheet" href="../background_color.css">
 <style>
@@ -14,28 +16,66 @@
         padding: 20px;
         color: #1a1a1a;
     }
-    h1 { font-size: 28pt; margin-bottom: 10px; }
-    h2 { font-size: 18pt; margin-top: 30px; margin-bottom: 10px; }
-    p { font-size: 12pt; line-height: 1.6; margin-bottom: 15px; }
-    a { color: #1a1a1a; text-decoration: underline; }
-    a:hover { color: #666; }
+    h1 {
+        font-size: 28pt;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 18pt;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 12pt;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    a {
+        color: #1a1a1a;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #666;
+    }
+    .intro {
+        text-align: center;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    li {
+        margin-bottom: 8px;
+        font-size: 12pt;
+    }
+    li a {
+        text-decoration: underline;
+    }
 </style>
 </head>
 <body>
     <div id="main-menu"></div>
 
     <h1>Print</h1>
-    <p>Download and print materials for The World Manifesto.</p>
+    <p class="intro">Download and print materials for The World Manifesto.</p>
 
     <h2>Business Cards</h2>
-    <p><a href="businesscard.html">A4 template — 10 cards per sheet</a></p>
+    <p>
+        <a href="businesscard.html">A4 template — 10 cards per sheet</a>
+    </p>
 
     <h2>Postcards</h2>
     <p><em>Coming soon.</em></p>
 
     <h2>QR Code</h2>
-    <p><a href="../qr/qr.html">View the QR code</a></p>
+    <p>
+        <a href="../qr/qr.html">View and download the QR code</a>
+    </p>
 
     <script type="module" src="../menu.js"></script>
+    <script type="module" src="../footer.js"></script>
 </body>
 </html>
