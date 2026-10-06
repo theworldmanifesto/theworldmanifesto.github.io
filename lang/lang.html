@@ -243,98 +243,182 @@
         let authorNameFromText = "";
 
 async function loadText() {
+    const bodyContent = document.getElementById('body-content');
     try {
         const response = await fetch('lang_texts/' + lang + '.txt');
         if (!response.ok) throw new Error('Textfil saknas');
         const text = await response.text();
 
         const lines = text.split('\n');
+
+        // Författarnamnet är tredje icke-tomma raden
         const nonEmptyLines = lines.filter(function(line) { return line.trim() !== ''; });
-        const bodyContent = document.getElementById('body-content');
-        let currentHtml = '';
-
-        let tableRows = [];
-        let inTable = false;
-        let separatorsSeen = 0;
-
         if (nonEmptyLines.length >= 3) {
             authorNameFromText = nonEmptyLines[2].trim();
         }
 
-        // Loopen börjar på rad 4 (index 3) = separator 1
-        for (let i = 3; i < nonEmptyLines.length; i++) {
-            const rawLine = nonEmptyLines[i];
-            const line = rawLine.trim();
+        // Ta bort de tre första icke-tomma raderna (titel, undertitel, författare)
+        // Behåll resten med tomrader intakta
+        let bodyLines = [];
+        let nonEmptyCount = 0;
+        for (let i = 0; i < lines.length; i++) {
+            if (lines[i].trim() !== '') {
+                nonEmptyCount++;
+                if (nonEmptyCount <= 3) continue;
+            }
+            bodyLines.push(lines[i]);
+        }
+
+        // Ta bort inledande tomrader
+        while (bodyLines.length > 0 && bodyLines[0].trim() === '') {
+            bodyLines.shift();
+        }
+
+        // Hjälpfunktioner
+        function escapeHtml(s) {
+            return s
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+        }
+
+        function flushBuffer() {
+            if (buffer.length === 0) return;
+            const t = buffer.join('\n');
+            html += '<div class="body-text">' + escapeHtml(t) + '</div>';
+            buffer = [];
+        }
+
+        // Tabelldetektering (samma som tidigare)
+        function splitRow(row) {
+            if (row.includes('\t')) {
+                return row.split(/\t+/).map(function(c) { return c.trim(); }).filter(function(c) { return c !== ''; });
+            }
+            return row.split(/\s*\|\s*/).map(function(c) { return c.trim(); }).filter(function(c) { return c !== ''; });
+        }
+
+        function buildTable(rows) {
+            if (rows.length === 0) return '';
+            const splitRows = rows.map(function(row) { return splitRow(row); });
+            const maxCols = Math.max.apply(null, splitRows.map(function(r) { return r.length; }));
+            const normalizedRows = splitRows.map(function(r) {
+                while (r.length < maxCols) r.push('');
+                return r;
+            });
+
+            let t = '<table class="manifesto-table">';
+            const headers = normalizedRows[0];
+            t += '<thead><tr>';
+            headers.forEach(function(h) { t += '<th>' + escapeHtml(h) + '</th>'; });
+            t += '</tr></thead><tbody>';
+
+            for (let r = 1; r < normalizedRows.length; r++) {
+                const cells = normalizedRows[r];
+                t += '<tr>';
+                cells.forEach(function(c) { t += '<td>' + escapeHtml(c) + '</td>'; });
+                t += '</tr>';
+            }
+            t += '</tbody></table>';
+            return t;
+        }
+
+        // Innehållsförteckning
+        const tocKeywords = ['table of contents', 'innehållsförteckning', 'innholdsfortegnelse', 'indholdsfortegnelse', 'sisällysluettelo', 'table des matières', 'inhaltsverzeichnis', 'índice', 'indice', 'contenidos', 'sommario', 'περιεχόμενα', 'содержание', 'содржина', 'spis treści', 'obsah', 'tartalomjegyzék', 'cuprins', 'inhoudsopgave', 'sisukord', 'saturs', 'turinys', 'kazalo', 'sadržaj', 'зміст', 'fihirist', 'toc', 'daftar isi', '목차', '目次', '目录', '目錄', 'สารบัญ', 'mục lục', 'içindekiler', 'فهرست', 'محتويات', 'תוכן עניינים', 'अनुक्रमणिका', 'সূচিপত্র', 'taaloga', 'dilolo', 'okuqukethwe', 'yandikimo', 'efnisyfirlit', 'innihaldsyvirlit'];
+
+        function isTocLine(line) {
+            const lower = line.toLowerCase();
+            for (let k = 0; k < tocKeywords.length; k++) {
+                if (lower.includes(tocKeywords[k])) return true;
+            }
+            return false;
+        }
+
+        // Huvudloop
+        let separatorsSeen = 0;
+        let html = '';
+        let buffer = [];
+        let tableRows = [];
+        let inTable = false;
+
+        for (let i = 0; i < bodyLines.length; i++) {
+            const line = bodyLines[i];
+            const trimmed = line.trim();
 
             // Separatorhantering
-            if (line.match(/^=+$/)) {
+            if (trimmed.match(/^=+$/)) {
+                if (inTable && tableRows.length > 0) {
+                    flushBuffer();
+                    html += buildTable(tableRows);
+                    tableRows = [];
+                    inTable = false;
+                }
                 separatorsSeen++;
                 if (separatorsSeen <= 2) continue;
-                currentHtml += '<hr class="separator-line">';
+                flushBuffer();
+                html += '<hr class="separator-line">';
                 continue;
             }
 
-            // Hoppa över allt mellan separator 1 och separator 2
-            // (First Edition, ©-raden och eventuella andra rader)
             if (separatorsSeen === 1) continue;
 
             // Tabelldetektering
-            const pipeCount = (line.match(/\|/g) || []).length;
-            const tabCount = (line.match(/\t/g) || []).length;
+            const pipeCount = (trimmed.match(/\|/g) || []).length;
+            const tabCount = (trimmed.match(/\t/g) || []).length;
             const isTableRow = (pipeCount >= 2 || tabCount >= 2);
 
             if (isTableRow) {
+                if (buffer.length > 0) {
+                    flushBuffer();
+                }
                 if (!inTable) {
                     inTable = true;
                     tableRows = [];
                 }
-                tableRows.push(line);
+                tableRows.push(trimmed);
                 continue;
             }
 
+            // Om vi var i en tabell och raden inte är en tabellrad → avsluta tabellen
             if (inTable && tableRows.length > 0) {
-                currentHtml += buildTable(tableRows);
+                html += buildTable(tableRows);
                 tableRows = [];
                 inTable = false;
             }
 
-            // Innehållsförteckning
-            const lower = line.toLowerCase();
-            const tocKeywords = ['table of contents', 'innehållsförteckning', 'innholdsfortegnelse', 'indholdsfortegnelse', 'sisällysluettelo', 'table des matières', 'inhaltsverzeichnis', 'índice', 'indice', 'contenidos', 'sommario', 'περιεχόμενα', 'содержание', 'содржина', 'spis treści', 'obsah', 'tartalomjegyzék', 'cuprins', 'inhoudsopgave', 'sisukord', 'saturs', 'turinys', 'kazalo', 'sadržaj', 'зміст', 'fihirist', 'toc', 'daftar isi', '목차', '目次', '目录', '目錄', 'สารบัญ', 'mục lục', 'içindekiler', 'فهرست', 'محتويات', 'תוכן עניינים', 'अनुक्रमणिका', 'সূচিপত্র', 'taaloga', 'dilolo', 'okuqukethwe', 'yandikimo', 'efnisyfirlit', 'innihaldsyvirlit'];
-            let isToc = false;
-            for (let k = 0; k < tocKeywords.length; k++) {
-                if (lower.includes(tocKeywords[k])) { isToc = true; break; }
+            // Tom rad → buffra den (behåll)
+            if (trimmed === '') {
+                buffer.push('');
+                continue;
             }
-            if (isToc) {
-                currentHtml += '<h2 class="toc-title">' + line + '</h2><div style="height:0.8em"></div>';
+
+            // Innehållsförteckning
+            if (isTocLine(trimmed)) {
+                flushBuffer();
+                html += '<h2 class="toc-title">' + escapeHtml(trimmed) + '</h2><div style="height:0.8em"></div>';
                 continue;
             }
 
             // Citat
-            if (line.startsWith('"') && line.endsWith('"')) {
-                currentHtml += '<p class="body-text" style="font-style: italic; text-align: center;">' + line + '</p>';
+            if (trimmed.startsWith('"') && trimmed.endsWith('"')) {
+                flushBuffer();
+                html += '<p class="body-text" style="font-style: italic; text-align: center;">' + escapeHtml(trimmed) + '</p>';
                 continue;
             }
 
-            // Rubriker i versaler utan mellanslag
-            if (line === line.toUpperCase() && line.length > 3 && !line.includes(' ')) {
-                currentHtml += '<p class="body-text">' + line + '</p>';
-                continue;
-            }
-
-            // Vanlig text
-            currentHtml += '<p class="body-text">' + line + '</p>';
+            // Vanlig text → buffra
+            buffer.push(line);
         }
 
         if (inTable && tableRows.length > 0) {
-            currentHtml += buildTable(tableRows);
+            html += buildTable(tableRows);
         }
+        flushBuffer();
 
-        bodyContent.innerHTML = currentHtml;
+        bodyContent.innerHTML = html;
 
     } catch (error) {
         console.error('Fel vid laddning:', error);
-        document.getElementById('body-content').innerHTML = '<p class="body-text">Text could not be loaded.</p>';
+        bodyContent.innerHTML = '<p class="body-text">Text could not be loaded.</p>';
     }
 }
 
