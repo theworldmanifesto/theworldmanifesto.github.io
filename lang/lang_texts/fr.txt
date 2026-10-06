@@ -353,10 +353,10 @@ Ressource nationale brute	Annulation de la dette	Part de souveraineté
 (Taux de couverture			(Selon la loi				(Paiement de l'État)
 gratuite)					constitutionnelle)
 
-25 % (Nourriture de base,		25 % de toutes les dettes	Le premier paiement est
-énergie et électricité)			privées sont annulées		activé. Les citoyens
-							immédiatement.			reçoivent un pouvoir
-													d'achat.
+25 % (Nourriture de base,	25 % de toutes les dettes	Le premier paiement
+énergie et électricité)			privées sont annulées	est activé. Les
+							immédiatement.			citoyens reçoivent un
+													pouvoir d'achat.
 
 50 % (Logement et			50 % de toutes les		La part augmente
 transport)					dettes restantes sont		proportionnellement à la
