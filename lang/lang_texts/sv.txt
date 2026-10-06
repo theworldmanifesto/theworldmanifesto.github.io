@@ -599,7 +599,7 @@ BNR-kontorets AI kan uppdatera indexet med betydligt tätare intervaller än så
 Nedan följer den konstitutionella ritningen för hur skuld förvandlas till suveränitet, steg för steg.
 
 
-Frihetstrappan: Den konstitutionella utfasningen
+3. Frihetstrappan: Den konstitutionella utfasningen
 
 
 Bruttonationalresurs		Skuldavskrivning		Suveränitetsandel
