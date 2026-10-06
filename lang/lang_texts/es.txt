@@ -573,7 +573,7 @@ básicos, Energía y			deudas privadas se		pago. Los ciudadanos
 Electricidad)				cancelan de				reciben poder adquisitivo.
 							inmediato.
 
-50 % (Vivienda y				El 50 % de todas las		La cuota aumenta en
+50 % (Vivienda y			El 50 % de todas las		La cuota aumenta en
 Transporte)					deudas restantes se		proporción a la capacidad
 							cancelan.				de producción.
 
