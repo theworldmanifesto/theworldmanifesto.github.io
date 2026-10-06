@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Business Card — The World Manifesto</title>
+<style>
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: Georgia, 'Times New Roman', serif;
+        background: #fff;
+        color: #000;
+    }
+    .ark {
+        width: 210mm;
+        height: 297mm;
+        position: relative;
+    }
+    .skar-linje {
+        position: absolute;
+        border-color: #999;
+    }
+    .skar-linje.vertikal {
+        top: 0;
+        bottom: 0;
+        width: 0;
+        border-left: 0.2mm dashed #999;
+    }
+    .skar-linje.horisontell {
+        left: 0;
+        right: 0;
+        height: 0;
+        border-top: 0.2mm dashed #999;
+    }
+    .v1 { left: 105mm; }
+    .h1 { top: 59.4mm; }
+    .h2 { top: 118.8mm; }
+    .h3 { top: 178.2mm; }
+    .h4 { top: 237.6mm; }
 
+    .kort {
+        position: absolute;
+        width: 105mm;
+        height: 59.4mm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 4mm;
+        gap: 5mm;
+    }
+    .titel {
+        font-size: 14pt;
+        font-weight: bold;
+        letter-spacing: 0.3mm;
+        line-height: 1.1;
+    }
+    .qr {
+        width: 26mm;
+        height: 26mm;
+        display: block;
+        flex-shrink: 0;
+    }
+    .url {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 10pt;
+        letter-spacing: 0.1mm;
+    }
+</style>
+</head>
+<body>
+    <div class="ark">
+
+        <div class="skar-linje vertikal v1"></div>
+        <div class="skar-linje horisontell h1"></div>
+        <div class="skar-linje horisontell h2"></div>
+        <div class="skar-linje horisontell h3"></div>
+        <div class="skar-linje horisontell h4"></div>
+
+        <!-- Rad 1 -->
+        <div class="kort" style="top:0; left:0;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+        <div class="kort" style="top:0; left:105mm;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+
+        <!-- Rad 2 -->
+        <div class="kort" style="top:59.4mm; left:0;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+        <div class="kort" style="top:59.4mm; left:105mm;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+
+        <!-- Rad 3 -->
+        <div class="kort" style="top:118.8mm; left:0;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+        <div class="kort" style="top:118.8mm; left:105mm;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+
+        <!-- Rad 4 -->
+        <div class="kort" style="top:178.2mm; left:0;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+        <div class="kort" style="top:178.2mm; left:105mm;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+
+        <!-- Rad 5 -->
+        <div class="kort" style="top:237.6mm; left:0;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+        <div class="kort" style="top:237.6mm; left:105mm;">
+            <div class="titel">The World Manifesto</div>
+            <img src="../qr/qr-worldmanifesto.svg" alt="" class="qr">
+            <div class="url">theworldmanifesto.github.io</div>
+        </div>
+
+    </div>
+</body>
+</html>
