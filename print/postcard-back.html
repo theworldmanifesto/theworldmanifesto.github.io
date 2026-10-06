@@ -1,90 +1,132 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Vykort - Baksida</title>
-
+<title>Postcard — Back</title>
 <style>
-@page {
-    size: 148.5mm 105mm;
-    margin: 0;
-}
+    @page {
+        size: 297mm 210mm;
+        margin: 0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: Georgia, 'Times New Roman', serif;
+        background: #fff;
+        color: #000;
+    }
+    .ark {
+        width: 297mm;
+        height: 210mm;
+        position: relative;
+    }
+    .skar-linje {
+        position: absolute;
+        border-color: #999;
+    }
+    .skar-linje.vertikal {
+        top: 0; bottom: 0; width: 0;
+        border-left: 0.2mm dashed #999;
+    }
+    .skar-linje.horisontell {
+        left: 0; right: 0; height: 0;
+        border-top: 0.2mm dashed #999;
+    }
+    .v1 { left: 148.5mm; }
+    .h1 { top: 105mm; }
 
-* {
-    box-sizing: border-box;
-}
+    /* Vykort: 148,5 × 105 mm, liggande */
+    .vykort {
+        position: absolute;
+        width: 148.5mm;
+        height: 105mm;
+        background: #fff;
+        overflow: hidden;
+    }
 
-body {
-    margin: 0;
-    background: white;
-    font-family: Georgia, "Times New Roman", serif;
-}
+    /* Frimärkesruta: 25 × 30 mm, uppe till höger */
+    .frimarke {
+        position: absolute;
+        top: 5mm;
+        right: 5mm;
+        width: 25mm;
+        height: 30mm;
+        border: 0.3mm solid #000;
+    }
 
-.vykort {
-    position: relative;
-    width: 148.5mm;
-    height: 105mm;
-    background: white;
-}
+    /* Adresslinjer: 4 linjer, 8 mm mellanrum, höger sida */
+    .adress-linje {
+        position: absolute;
+        left: 90mm;
+        right: 5mm;
+        height: 0;
+        border-top: 0.3mm solid #000;
+    }
+    .adress-linje.l1 { top: 45mm; }
+    .adress-linje.l2 { top: 53mm; }
+    .adress-linje.l3 { top: 61mm; }
+    .adress-linje.l4 { top: 69mm; }
 
-/* Frimärkesruta */
-.frimarke {
-    position: absolute;
-    top: 5mm;
-    right: 5mm;
-    width: 25mm;
-    height: 30mm;
-    border: 0.3mm solid #000;
-}
-
-/* Adresslinjer */
-.adresslinje {
-    position: absolute;
-    left: 90mm;
-    right: 5mm;
-    border-top: 0.3mm solid #000;
-}
-
-.l1 { top: 45mm; }
-.l2 { top: 53mm; }
-.l3 { top: 61mm; }
-.l4 { top: 69mm; }
-
-/* Mittlinje */
-.mittlinje {
-    position: absolute;
-    top: 5mm;
-    bottom: 5mm;
-    left: 74.25mm;
-    border-left: 0.3mm solid #ccc;
-}
-
-/* Sidtext */
-.sidtext {
-    position: absolute;
-    left: 4mm;
-    top: 50%;
-    transform: translateY(-50%) rotate(-90deg);
-    transform-origin: left center;
-    color: #888;
-    font-size: 9pt;
-    white-space: nowrap;
-}
+    /* Roterad text i mitten */
+    .roterad-text {
+        position: absolute;
+        top: 50%;
+        left: 5mm;
+        transform: translateY(-50%) rotate(-90deg);
+        transform-origin: left center;
+        font-family: Georgia, serif;
+        font-size: 9pt;
+        color: #888;
+        white-space: nowrap;
+        letter-spacing: 0.5mm;
+    }
 </style>
 </head>
-
 <body>
+    <div class="ark">
 
-<div class="vykort">
+        <div class="skar-linje vertikal v1"></div>
+        <div class="skar-linje horisontell h1"></div>
 
-    <div class="mittlinje"></div>
+        <!-- Övre vänstra vykortet -->
+        <div class="vykort" style="top:0; left:0;">
+            <div class="frimarke"></div>
+            <div class="adress-linje l1"></div>
+            <div class="adress-linje l2"></div>
+            <div class="adress-linje l3"></div>
+            <div class="adress-linje l4"></div>
+            <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
+        </div>
 
-    <div class="frimarke"></div>
+        <!-- Övre högra vykortet -->
+        <div class="vykort" style="top:0; left:148.5mm;">
+            <div class="frimarke"></div>
+            <div class="adress-linje l1"></div>
+            <div class="adress-linje l2"></div>
+            <div class="adress-linje l3"></div>
+            <div class="adress-linje l4"></div>
+            <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
+        </div>
 
-    <div class="adresslinje l1"></div>
-    <div class="adresslinje l2"></div>
-    <div class="adresslinje l3"></div>
-    <div class="adresslinje l4"></div>
+        <!-- Nedre vänstra vykortet -->
+        <div class="vykort" style="top:105mm; left:0;">
+            <div class="frimarke"></div>
+            <div class="adress-linje l1"></div>
+            <div class="adress-linje l2"></div>
+            <div class="adress-linje l3"></div>
+            <div class="adress-linje l4"></div>
+            <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
+        </div>
 
-    <div class="sidtext">
-        The World Manifesto · theworldmanifesto
+        <!-- Nedre högra vykortet -->
+        <div class="vykort" style="top:105mm; left:148.5mm;">
+            <div class="frimarke"></div>
+            <div class="adress-linje l1"></div>
+            <div class="adress-linje l2"></div>
+            <div class="adress-linje l3"></div>
+            <div class="adress-linje l4"></div>
+            <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
+        </div>
+
+    </div>
+</body>
+</html>
