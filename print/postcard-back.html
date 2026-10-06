@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
 <meta charset="UTF-8">
 <title>Postcard — Back</title>
@@ -19,6 +19,8 @@
         height: 210mm;
         position: relative;
     }
+    
+    /* Skärlinjer för hela arket */
     .skar-linje {
         position: absolute;
         border-color: #999;
@@ -43,7 +45,43 @@
         overflow: hidden;
     }
 
-    /* Frimärkesruta: 25 × 30 mm, uppe till höger */
+    /* NYTT: Delningslinje i mitten av vykortet */
+    .delnings-linje {
+        position: absolute;
+        left: 74.25mm; /* Exakt hälften av 148.5mm */
+        top: 10mm;
+        bottom: 10mm;
+        border-left: 0.3mm solid #bbb;
+    }
+
+    /* NYTT: Centrerad text på vänster sida */
+    .meddelande-text {
+        position: absolute;
+        left: 0;
+        width: 74.25mm; /* Halva vykortets bredd */
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 0 6mm; /* Marginal mot ytterkant och mittlinje */
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #111;
+    }
+
+    /* Valfri liten text längst ner till vänster */
+    .webbadress {
+        position: absolute;
+        left: 0;
+        width: 74.25mm;
+        bottom: 6mm;
+        text-align: center;
+        font-size: 8pt;
+        color: #777;
+        letter-spacing: 0.5px;
+    }
+
+    /* Höger sida: Frimärkesruta (25 × 30 mm, uppe till höger) */
     .frimarke {
         position: absolute;
         top: 5mm;
@@ -53,10 +91,10 @@
         border: 0.3mm solid #000;
     }
 
-    /* Adresslinjer: 4 linjer, 8 mm mellanrum, höger sida */
+    /* Höger sida: Adresslinjer (4 linjer, 8 mm mellanrum) */
     .adress-linje {
         position: absolute;
-        left: 90mm;
+        left: 90mm; /* Börjar med god marginal från mittlinjen (74.25mm) */
         right: 5mm;
         height: 0;
         border-top: 0.3mm solid #000;
@@ -66,19 +104,6 @@
     .adress-linje.l3 { top: 61mm; }
     .adress-linje.l4 { top: 69mm; }
 
-    /* Roterad text i mitten */
-    .roterad-text {
-        position: absolute;
-        top: 50%;
-        left: 5mm;
-        transform: translateY(-50%) rotate(-90deg);
-        transform-origin: left center;
-        font-family: Georgia, serif;
-        font-size: 9pt;
-        color: #888;
-        white-space: nowrap;
-        letter-spacing: 0.5mm;
-    }
 </style>
 </head>
 <body>
@@ -89,42 +114,66 @@
 
         <!-- Övre vänstra vykortet -->
         <div class="vykort" style="top:0; left:0;">
+            <div class="delnings-linje"></div>
+            <div class="meddelande-text">
+                Från skuld och slit<br>
+                till frihet och överflöd.
+            </div>
+            <div class="webbadress">theworldmanifesto.github.io</div>
+            
             <div class="frimarke"></div>
             <div class="adress-linje l1"></div>
             <div class="adress-linje l2"></div>
             <div class="adress-linje l3"></div>
             <div class="adress-linje l4"></div>
-            <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
         </div>
 
         <!-- Övre högra vykortet -->
         <div class="vykort" style="top:0; left:148.5mm;">
+            <div class="delnings-linje"></div>
+            <div class="meddelande-text">
+                Robotar är Guld,<br>
+                Pengar är Skuld.
+            </div>
+            <div class="webbadress">theworldmanifesto.github.io</div>
+
             <div class="frimarke"></div>
             <div class="adress-linje l1"></div>
             <div class="adress-linje l2"></div>
             <div class="adress-linje l3"></div>
             <div class="adress-linje l4"></div>
-            <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
         </div>
 
         <!-- Nedre vänstra vykortet -->
         <div class="vykort" style="top:105mm; left:0;">
+            <div class="delnings-linje"></div>
+            <div class="meddelande-text">
+                Nollkostnadssamhället:<br>
+                Där ingenting saknas och ingen står i skuld.
+            </div>
+            <div class="webbadress">theworldmanifesto.github.io</div>
+
             <div class="frimarke"></div>
             <div class="adress-linje l1"></div>
             <div class="adress-linje l2"></div>
             <div class="adress-linje l3"></div>
             <div class="adress-linje l4"></div>
-            <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
         </div>
 
         <!-- Nedre högra vykortet -->
         <div class="vykort" style="top:105mm; left:148.5mm;">
+            <div class="delnings-linje"></div>
+            <div class="meddelande-text">
+                Bygg för evigheten –<br>
+                inte för soptippen.
+            </div>
+            <div class="webbadress">theworldmanifesto.github.io</div>
+
             <div class="frimarke"></div>
             <div class="adress-linje l1"></div>
             <div class="adress-linje l2"></div>
             <div class="adress-linje l3"></div>
             <div class="adress-linje l4"></div>
-            <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
         </div>
 
     </div>
