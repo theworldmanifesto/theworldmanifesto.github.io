@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Vykort framsida — Maskinkonstitutionen</title>
+<style>
+    @page { size: 297mm 210mm; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #fff; color: #111; }
+    .ark { width: 297mm; height: 210mm; position: relative; background: #fff; }
 
+    /* Klipplinjer */
+    .skar-linje.vertikal { position: absolute; left: 148.5mm; top: 0; bottom: 0; width: 0; border-left: 0.35mm dashed #AAA; z-index: 10; }
+    .skar-linje.horisontell { position: absolute; top: 105mm; left: 0; right: 0; height: 0; border-top: 0.35mm dashed #AAA; z-index: 10; }
+
+    /* Vykort: 148,5 × 105 mm */
+    .vykort {
+        position: absolute;
+        width: 148.5mm;
+        height: 105mm;
+        background: #fff;
+        overflow: hidden;
+        padding: 8mm 10mm;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Rubrik */
+    .titel {
+        font-family: Georgia, serif;
+        font-size: 14pt;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2mm;
+        letter-spacing: 0.2mm;
+    }
+    .undertitel {
+        font-family: Georgia, serif;
+        font-size: 9pt;
+        font-style: italic;
+        text-align: center;
+        color: #555;
+        margin-bottom: 4mm;
+    }
+
+    /* Konstitutionens punkter */
+    .punkt {
+        font-family: Georgia, serif;
+        font-size: 8.5pt;
+        line-height: 1.35;
+        margin-bottom: 2.5mm;
+        text-align: left;
+    }
+    .punkt strong {
+        font-weight: bold;
+    }
+
+    /* Sökväg */
+    .sokvag {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 7.5pt;
+        text-align: center;
+        color: #666;
+        margin-top: auto;
+        letter-spacing: 0.1mm;
+    }
+</style>
+</head>
+<body>
+<div class="ark">
+    <div class="skar-linje vertikal"></div>
+    <div class="skar-linje horisontell"></div>
+
+    <!-- Övre vänstra -->
+    <div class="vykort" style="top:0; left:0;">
+        <div class="titel">The World Manifesto</div>
+        <div class="undertitel">Maskinkonstitutionen</div>
+        <div class="punkt"><strong>Ingen Straffbeskattning:</strong> Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.</div>
+        <div class="punkt"><strong>Självägande Infrastruktur:</strong> Om roboten äger sig själv och sin energi (FMBR), finns det ingen aktieägare eller bank som kräver ränta eller vinst.</div>
+        <div class="punkt"><strong>Fysiskt Överflöd:</strong> När roboten inte har någon skuld och ingen ägare som ska bli rik, blir dess enda uppgift att producera. Priset på produkten blir då bara kostnaden för råmaterialet — och i en totalrobotiserad värld bryts även råmaterialet gratis av andra självägande robotar. Priset går mot noll.</div>
+        <div class="punkt"><strong>Varför arbeta?:</strong> När maskinen gör det 1000 % billigare och aldrig slår sig gul och blå! Lämna konkursboet. Aktivera din suveränitet.</div>
+        <div class="sokvag">theworldmanifesto.github.io</div>
+    </div>
+
+    <!-- Övre högra -->
+    <div class="vykort" style="top:0; left:148.5mm;">
+        <div class="titel">The World Manifesto</div>
+        <div class="undertitel">Maskinkonstitutionen</div>
+        <div class="punkt"><strong>Ingen Straffbeskattning:</strong> Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.</div>
+        <div class="punkt"><strong>Självägande Infrastruktur:</strong> Om roboten äger sig själv och sin energi (FMBR), finns det ingen aktieägare eller bank som kräver ränta eller vinst.</div>
+        <div class="punkt"><strong>Fysiskt Överflöd:</strong> När roboten inte har någon skuld och ingen ägare som ska bli rik, blir dess enda uppgift att producera. Priset på produkten blir då bara kostnaden för råmaterialet — och i en totalrobotiserad värld bryts även råmaterialet gratis av andra självägande robotar. Priset går mot noll.</div>
+        <div class="punkt"><strong>Varför arbeta?:</strong> När maskinen gör det 1000 % billigare och aldrig slår sig gul och blå! Lämna konkursboet. Aktivera din suveränitet.</div>
+        <div class="sokvag">theworldmanifesto.github.io</div>
+    </div>
+
+    <!-- Nedre vänstra -->
+    <div class="vykort" style="top:105mm; left:0;">
+        <div class="titel">The World Manifesto</div>
+        <div class="undertitel">Maskinkonstitutionen</div>
+        <div class="punkt"><strong>Ingen Straffbeskattning:</strong> Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.</div>
+        <div class="punkt"><strong>Självägande Infrastruktur:</strong> Om roboten äger sig själv och sin energi (FMBR), finns det ingen aktieägare eller bank som kräver ränta eller vinst.</div>
+        <div class="punkt"><strong>Fysiskt Överflöd:</strong> När roboten inte har någon skuld och ingen ägare som ska bli rik, blir dess enda uppgift att producera. Priset på produkten blir då bara kostnaden för råmaterialet — och i en totalrobotiserad värld bryts även råmaterialet gratis av andra självägande robotar. Priset går mot noll.</div>
+        <div class="punkt"><strong>Varför arbeta?:</strong> När maskinen gör det 1000 % billigare och aldrig slår sig gul och blå! Lämna konkursboet. Aktivera din suveränitet.</div>
+        <div class="sokvag">theworldmanifesto.github.io</div>
+    </div>
+
+    <!-- Nedre högra -->
+    <div class="vykort" style="top:105mm; left:148.5mm;">
+        <div class="titel">The World Manifesto</div>
+        <div class="undertitel">Maskinkonstitutionen</div>
+        <div class="punkt"><strong>Ingen Straffbeskattning:</strong> Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.</div>
+        <div class="punkt"><strong>Självägande Infrastruktur:</strong> Om roboten äger sig själv och sin energi (FMBR), finns det ingen aktieägare eller bank som kräver ränta eller vinst.</div>
+        <div class="punkt"><strong>Fysiskt Överflöd:</strong> När roboten inte har någon skuld och ingen ägare som ska bli rik, blir dess enda uppgift att producera. Priset på produkten blir då bara kostnaden för råmaterialet — och i en totalrobotiserad värld bryts även råmaterialet gratis av andra självägande robotar. Priset går mot noll.</div>
+        <div class="punkt"><strong>Varför arbeta?:</strong> När maskinen gör det 1000 % billigare och aldrig slår sig gul och blå! Lämna konkursboet. Aktivera din suveränitet.</div>
+        <div class="sokvag">theworldmanifesto.github.io</div>
+    </div>
+
+</div>
+</body>
+</html>
