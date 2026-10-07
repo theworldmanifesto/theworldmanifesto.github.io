@@ -1152,7 +1152,7 @@ Ingen Straffbeskattning: Istället för att beskatta robotar (vilket bromsar utv
 Självägande Infrastruktur: Om roboten äger sig själv och sin energi, finns det ingen aktieägare eller bank som kräver ränta eller vinst.
 
 
-Fysiskt Överflöd: När roboten inte har någon skuld och ingen ägare som ska bli rik, blir dess enda uppgift att producera gratis. Eftersom även råmaterialet bryts av andra självägande robotar, faller priset till noll.
+Fysiskt Överflöd: När roboten inte har några skulder och ingen ägare att berika, blir dess enda uppgift att producera gratis. Eftersom råvarorna dessutom utvinns av andra självägande robotar sjunker priset till noll.
 
 
 Varför arbeta?: När maskinen gör det 1000 % billigare med geometrisk precision! Lämna konkursboet. Aktivera din suveränitet.
