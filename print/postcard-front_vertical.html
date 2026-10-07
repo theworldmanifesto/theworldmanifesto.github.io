@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Vykort framsida — Maskinkonstitutionen (roterad)</title>
+<title>Postcard front — The Machine Constitution (rotated)</title>
 <style>
     @page { size: 297mm 210mm; margin: 0; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Georgia, serif; background: #fff; color: #111; }
     .ark { width: 297mm; height: 210mm; position: relative; background: #fff; }
 
-    /* Klipplinjer */
+    /* Cut lines */
     .skar-linje.vertikal { position: absolute; left: 148.5mm; top: 0; bottom: 0; width: 0; border-left: 0.35mm dashed #AAA; z-index: 10; }
     .skar-linje.horisontell { position: absolute; top: 105mm; left: 0; right: 0; height: 0; border-top: 0.35mm dashed #AAA; z-index: 10; }
 
-    /* Vykort: 148,5 × 105 mm */
+    /* Postcard: 148.5 × 105 mm */
     .vykort {
         position: absolute;
         width: 148.5mm;
@@ -22,30 +22,30 @@
         overflow: hidden;
     }
 
-    /* Roterad behållare — texten roteras moturs */
+    /* Rotated container — text is rotated counter-clockwise */
     .roterad {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(-90deg);
         transform-origin: center center;
-        width: 91mm;              /* 105 mm minus 7 mm marginal på var sida */
+        width: 91mm;              /* 105 mm minus 7 mm margin on each side */
         text-align: left;
         font-family: Georgia, serif;
     }
 
-    /* Rubrik */
+    /* Heading */
     .titel {
-        font-size: 20pt;
+        font-size: 14pt;
         font-weight: bold;
         text-align: center;
         margin-bottom: 3mm;
         letter-spacing: 0.2mm;
     }
 
-    /* Konstitutionens punkter */
+    /* Constitution points */
     .punkt {
-        font-size: 10.5pt;
+        font-size: 8.5pt;
         line-height: 1.35;
         margin-bottom: 2.5mm;
         text-align: left;
@@ -54,16 +54,16 @@
         font-weight: bold;
     }
 
-    /* Avslutningsord */
+    /* Closing words */
     .avslutning {
-        font-size: 11pt;
+        font-size: 9pt;
         font-style: italic;
         text-align: center;
         color: #444;
         margin-top: 3mm;
     }
 
-    /* Sökväg */
+    /* URL */
     .sokvag {
         font-family: 'Segoe UI', Arial, sans-serif;
         font-size: 7pt;
@@ -79,54 +79,54 @@
     <div class="skar-linje vertikal"></div>
     <div class="skar-linje horisontell"></div>
 
-    <!-- Övre vänstra -->
+    <!-- Top left -->
     <div class="vykort" style="top:0; left:0;">
         <div class="roterad">
-            <div class="titel">Maskinkonstitutionen</div>
-            <div class="punkt"><strong>Ingen Straffbeskattning:</strong> Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.</div>
-            <div class="punkt"><strong>Självägande Infrastruktur:</strong> Om roboten äger sig själv och sin energi (FMBR), finns det ingen aktieägare eller bank som kräver ränta eller vinst.</div>
-            <div class="punkt"><strong>Fysiskt Överflöd:</strong> När roboten inte har några skulder och ingen ägare att berika, blir dess enda uppgift att producera gratis. Eftersom råvarorna dessutom utvinns av andra självägande robotar sjunker priset till noll.</div>
-            <div class="punkt"><strong>Varför arbeta?:</strong> När maskinen gör det 1000 % billigare och aldrig slår sig gul och blå! Lämna konkursboet. Aktivera din suveränitet.</div>
-            <div class="avslutning">Världsmanifestet</div>
+            <div class="titel">The Machine Constitution</div>
+            <div class="punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
+            <div class="punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
+            <div class="punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
+            <div class="punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
+            <div class="avslutning">The World Manifesto</div>
             <div class="sokvag">theworldmanifesto.github.io</div>
         </div>
     </div>
 
-    <!-- Övre högra -->
+    <!-- Top right -->
     <div class="vykort" style="top:0; left:148.5mm;">
         <div class="roterad">
-            <div class="titel">Maskinkonstitutionen</div>
-            <div class="punkt"><strong>Ingen Straffbeskattning:</strong> Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.</div>
-            <div class="punkt"><strong>Självägande Infrastruktur:</strong> Om roboten äger sig själv och sin energi (FMBR), finns det ingen aktieägare eller bank som kräver ränta eller vinst.</div>
-            <div class="punkt"><strong>Fysiskt Överflöd:</strong> När roboten inte har några skulder och ingen ägare att berika, blir dess enda uppgift att producera gratis. Eftersom råvarorna dessutom utvinns av andra självägande robotar sjunker priset till noll.</div>
-            <div class="punkt"><strong>Varför arbeta?:</strong> När maskinen gör det 1000 % billigare och aldrig slår sig gul och blå! Lämna konkursboet. Aktivera din suveränitet.</div>
-            <div class="avslutning">Världsmanifestet</div>
+            <div class="titel">The Machine Constitution</div>
+            <div class="punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
+            <div class="punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
+            <div class="punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
+            <div class="punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
+            <div class="avslutning">The World Manifesto</div>
             <div class="sokvag">theworldmanifesto.github.io</div>
         </div>
     </div>
 
-    <!-- Nedre vänstra -->
+    <!-- Bottom left -->
     <div class="vykort" style="top:105mm; left:0;">
         <div class="roterad">
-            <div class="titel">Maskinkonstitutionen</div>
-            <div class="punkt"><strong>Ingen Straffbeskattning:</strong> Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.</div>
-            <div class="punkt"><strong>Självägande Infrastruktur:</strong> Om roboten äger sig själv och sin energi (FMBR), finns det ingen aktieägare eller bank som kräver ränta eller vinst.</div>
-            <div class="punkt"><strong>Fysiskt Överflöd:</strong> När roboten inte har några skulder och ingen ägare att berika, blir dess enda uppgift att producera gratis. Eftersom råvarorna dessutom utvinns av andra självägande robotar sjunker priset till noll.</div>
-            <div class="punkt"><strong>Varför arbeta?:</strong> När maskinen gör det 1000 % billigare och aldrig slår sig gul och blå! Lämna konkursboet. Aktivera din suveränitet.</div>
-            <div class="avslutning">Världsmanifestet</div>
+            <div class="titel">The Machine Constitution</div>
+            <div class="punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
+            <div class="punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
+            <div class="punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
+            <div class="punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
+            <div class="avslutning">The World Manifesto</div>
             <div class="sokvag">theworldmanifesto.github.io</div>
         </div>
     </div>
 
-    <!-- Nedre högra -->
+    <!-- Bottom right -->
     <div class="vykort" style="top:105mm; left:148.5mm;">
         <div class="roterad">
-            <div class="titel">Maskinkonstitutionen</div>
-            <div class="punkt"><strong>Ingen Straffbeskattning:</strong> Istället för att beskatta robotar (vilket bromsar utvecklingen), tar man bort roboten från det privata ägandet.</div>
-            <div class="punkt"><strong>Självägande Infrastruktur:</strong> Om roboten äger sig själv och sin energi (FMBR), finns det ingen aktieägare eller bank som kräver ränta eller vinst.</div>
-            <div class="punkt"><strong>Fysiskt Överflöd:</strong> När roboten inte har några skulder och ingen ägare att berika, blir dess enda uppgift att producera gratis. Eftersom råvarorna dessutom utvinns av andra självägande robotar sjunker priset till noll.</div>
-            <div class="punkt"><strong>Varför arbeta?:</strong> När maskinen gör det 1000 % billigare och aldrig slår sig gul och blå! Lämna konkursboet. Aktivera din suveränitet.</div>
-            <div class="avslutning">Världsmanifestet</div>
+            <div class="titel">The Machine Constitution</div>
+            <div class="punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
+            <div class="punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
+            <div class="punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
+            <div class="punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
+            <div class="avslutning">The World Manifesto</div>
             <div class="sokvag">theworldmanifesto.github.io</div>
         </div>
     </div>
