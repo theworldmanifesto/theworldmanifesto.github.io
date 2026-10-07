@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Vykort baksida - PERFEKT mellangrå klipplinjer - 4x A4</title>
+<style>
+    @page { size: 297mm 210mm; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #fff; }
+    .ark { width: 297mm; height: 210mm; position: relative; background: #fff; }
+    
+    /* Mellangrå småstreckade klipplinjer - vagt men klippbar */
+    .skar-linje.vertikal { position: absolute; left: 148.5mm; top: 0; bottom: 0; width: 0; border-left: 0.35mm dashed #AAA; z-index:10; }
+    .skar-linje.horisontell { position: absolute; top: 105mm; left: 0; right: 0; height: 0; border-top: 0.35mm dashed #AAA; z-index:10; }
+    
+    .vykort { position: absolute; width: 148.5mm; height: 105mm; background: #fff; overflow: hidden; }
+    
+    /* Mittdelande linje */
+    .mitt-linje { position: absolute; left: 64.25mm; top: 5mm; height: 85mm; width: 0; border-left: 0.3mm solid #111; z-index:1; }
+    
+    /* Roterad text exakt på mittdelande linjen */
+    .roterad-text { position: absolute; left: 64.25mm; top: 47.5mm; transform: translate(-50%,-50%) rotate(-90deg); font-size: 6.8pt; color: #777; white-space: nowrap; letter-spacing: 0.3mm; background: #fff; padding: 1.5mm 0; z-index:2; }
+    
+    /* NYTT: Meddelande-text på vänster sida */
+    .meddelande { 
+        position: absolute; 
+        left: 4mm; /* Liten marginal från vänsterkanten */
+        width: 56mm; /* Passar perfekt inom den 64.25mm breda vänstra halvan */
+        top: 50%; 
+        transform: translateY(-50%); 
+        text-align: center; 
+        font-size: 9.5pt; 
+        line-height: 1.4; 
+        color: #111; 
+        z-index: 5; 
+    }
+    .meddelande .slogan {
+        display: block;
+        font-weight: bold;
+        font-size: 10.5pt;
+        margin-bottom: 3mm;
+        color: #000;
+    }
 
+    .frimarke { position: absolute; top: 5mm; right: 5mm; width: 25mm; height: 25mm; border: 0.3mm solid #111; z-index:5; }
+    
+    .adress-linje { position: absolute; left: 70mm; right: 5mm; height: 0; border-top: 0.3mm solid #111; z-index:5; }
+    .adress-linje.l1 { top: 50mm; } 
+    .adress-linje.l2 { top: 60mm; } 
+    .adress-linje.l3 { top: 70mm; } 
+    .adress-linje.l4 { top: 90mm; } 
+    
+    .codierzone { position: absolute; left: 0; bottom: 0; width: 100%; height: 15mm; background: transparent; z-index: 1; }
+</style>
+</head>
+<body>
+<div class="ark">
+    <div class="skar-linje vertikal"></div>
+    <div class="skar-linje horisontell"></div>
+    
+    <!-- Övre vänstra vykortet -->
+    <div class="vykort" style="top:0; left:0;">
+        <div class="meddelande">
+            <span class="slogan">Från skuld och slit<br>till frihet och överflöd.</span>
+            Det gamla systemet har spelat ut sin roll.
+        </div>
+        <div class="mitt-linje"></div>
+        <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
+        <div class="frimarke"></div>
+        <div class="adress-linje l1"></div><div class="adress-linje l2"></div>
+        <div class="adress-linje l3"></div><div class="adress-linje l4"></div>
+        <div class="codierzone"></div>
+    </div>
+
+    <!-- Övre högra vykortet -->
+    <div class="vykort" style="top:0; left:148.5mm;">
+        <div class="meddelande">
+            <span class="slogan">Robotar är Guld,<br>Pengar är Skuld.</span>
+            Sluta tillbe svältekonomin – välj det automatiserade överflödet.
+        </div>
+        <div class="mitt-linje"></div>
+        <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
+        <div class="frimarke"></div>
+        <div class="adress-linje l1"></div><div class="adress-linje l2"></div>
+        <div class="adress-linje l3"></div><div class="adress-linje l4"></div>
+        <div class="codierzone"></div>
+    </div>
+
+    <!-- Nedre vänstra vykortet -->
+    <div class="vykort" style="top:105mm; left:0;">
+        <div class="meddelande">
+            <span class="slogan">Nollkostnadssamhället:<br>Där ingenting saknas.</span>
+            Aktivera din suveränitetsandel och kliv ur skuldcellen.
+        </div>
+        <div class="mitt-linje"></div>
+        <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
+        <div class="frimarke"></div>
+        <div class="adress-linje l1"></div><div class="adress-linje l2"></div>
+        <div class="adress-linje l3"></div><div class="adress-linje l4"></div>
+        <div class="codierzone"></div>
+    </div>
+
+    <!-- Nedre högra vykortet -->
+    <div class="vykort" style="top:105mm; left:148.5mm;">
+        <div class="meddelande">
+            <span class="slogan">Bygg för evigheten –<br>inte för soptippen.</span>
+            En ny maskinras tar nu över vår fysiska rätt att existera.
+        </div>
+        <div class="mitt-linje"></div>
+        <div class="roterad-text">The World Manifesto · theworldmanifesto.github.io</div>
+        <div class="frimarke"></div>
+        <div class="adress-linje l1"></div><div class="adress-linje l2"></div>
+        <div class="adress-linje l3"></div><div class="adress-linje l4"></div>
+        <div class="codierzone"></div>
+    </div>
+
+</div>
+</body>
+</html>
