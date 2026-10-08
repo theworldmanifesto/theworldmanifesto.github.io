@@ -24,17 +24,18 @@
 
     /* Rotated container — anchored to top-left of reading orientation */
     /* Content area: 138.5 × 95 mm (5 mm margin on all sides) */
-.roterad {
-    position: absolute;
-    top: 5mm;
-    left: 5mm;
-    width: 95mm;          /* textens bredd */
-    transform-origin: top left;
-    transform: rotate(-90deg) translate(-100%, 0);
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .roterad {
+        position: absolute;
+        top: 5mm;
+        left: 5mm;
+        width: 95mm;              /* textens bredd i läs-orienteringen */
+        height: 138.5mm;          /* textens höjd i läs-orienteringen */
+        transform-origin: top left;
+        transform: rotate(-90deg) translate(-100%, 0);
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
     /* Text block — takes remaining space */
     .text-block {
