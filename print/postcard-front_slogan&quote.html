@@ -26,25 +26,52 @@
         font-family: 'Arimo-VariableFont_wght', 'Roboto-Bold', Arial, Helvetica, sans-serif;
         background: #ffffff;
         color: #111111;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 105mm;
         width: 148.5mm;
-        text-align: center;
-        padding: 10mm;
+        position: relative;
+        overflow: hidden;
     }
 
+    /* Roterade texter i marginalerna */
+    .kant-text {
+        position: absolute;
+        font-family: 'Arimo-VariableFont_wght', 'Roboto-Bold', Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        font-weight: normal;
+        color: #AAA;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .kant-vanster {
+        top: 50%;
+        left: 5mm;
+        transform: translateY(-50%) rotate(-90deg);
+        transform-origin: center center;
+    }
+
+    .kant-hoger {
+        top: 50%;
+        right: 5mm;
+        transform: translateY(-50%) rotate(90deg);
+        transform-origin: center center;
+    }
+
+    /* Huvudinnehåll */
     .innehall {
+        position: absolute;
+        top: 10mm;
+        left: 15mm;
+        right: 15mm;
+        bottom: 10mm;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
-        width: 100%;
+        text-align: center;
     }
 
-    /* Översta delen: slogan + citat */
     .topp {
         display: flex;
         flex-direction: column;
@@ -70,7 +97,6 @@
         max-width: 90%;
     }
 
-    /* Mitten: titel + linje + sökväg (alla grå) */
     .mitten {
         display: flex;
         flex-direction: column;
@@ -81,7 +107,7 @@
     .manifesto-titel {
         font-family: 'Dancing Script', cursive;
         font-size: 24pt;
-        font-weight: normal;
+        font-weight: bold;
         color: #AAA;
         margin-bottom: 1.5mm;
     }
@@ -101,7 +127,6 @@
         color: #AAA;
     }
 
-    /* Nedersta delen: QR-kod */
     .botten {
         display: flex;
         justify-content: center;
@@ -137,6 +162,12 @@
 </head>
 <body>
     <div class="vattenstämpel"></div>
+
+    <!-- Roterade texter i marginalerna -->
+    <div class="kant-text kant-vanster">Modern Times</div>
+    <div class="kant-text kant-hoger">The Definitive Abundance</div>
+
+    <!-- Huvudinnehåll -->
     <div class="innehall">
         <div class="topp">
             <div class="slogan">
