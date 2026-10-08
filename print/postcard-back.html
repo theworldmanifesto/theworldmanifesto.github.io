@@ -19,7 +19,16 @@
     .adress-linje.l1 { top: 50mm; } /* 55mm från botten */
     .adress-linje.l2 { top: 60mm; } /* 45mm från botten */
     .adress-linje.l3 { top: 70mm; } /* 35mm från botten */
-    .adress-linje.l4 { top: 85mm; } /* 20mm från botten */
+    .adress-linje.l4 { top: 85mm; position: relative; } /* 20mm från botten */
+    .adress-linje.l4::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -1.5mm;
+        height: 0;
+        border-top: 0.6mm solid #111;
+    }
     .codierzone { position: absolute; left: 0; bottom: 0; width: 100%; height: 15mm; background: transparent; }
 </style>
 </head>
