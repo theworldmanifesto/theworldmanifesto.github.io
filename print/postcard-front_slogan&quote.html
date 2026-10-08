@@ -16,6 +16,12 @@
         font-weight: bold;
         font-style: normal;
     }
+    @font-face {
+        font-family: 'Homemade Apple';
+        src: url('../fonts/HomemadeApple-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
     @page {
         size: 148.5mm 105mm;
@@ -35,27 +41,30 @@
     /* Roterade texter i marginalerna */
     .kant-text {
         position: absolute;
-        font-family: 'Arimo-VariableFont_wght', 'Roboto-Bold', Arial, Helvetica, sans-serif;
-        font-size: 8pt;
+        font-size: 9pt;
         font-weight: normal;
         color: #AAA;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
+        letter-spacing: 0.1em;
         white-space: nowrap;
     }
 
     .kant-vanster {
         top: 50%;
-        left: 5mm;
+        left: 1mm;
         transform: translateY(-50%) rotate(-90deg);
         transform-origin: center center;
+        font-family: Georgia, 'Times New Roman', serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
     }
 
     .kant-hoger {
         top: 50%;
-        right: 5mm;
+        right: 1mm;
         transform: translateY(-50%) rotate(90deg);
         transform-origin: center center;
+        font-family: 'Homemade Apple', cursive;
+        font-size: 10pt;
     }
 
     /* Huvudinnehåll */
