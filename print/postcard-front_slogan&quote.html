@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Vykort — Framsida (4 per A4)</title>
+<title>Postcard Front — The World Manifesto</title>
+
 <style>
+    /* ============================================ */
+    /* FONTS — lokala filer från ../fonts/          */
+    /* ============================================ */
+    @font-face {
+        font-family: 'Arimo';
+        src: url('../fonts/Arimo-VariableFont_wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Arimo';
+        src: url('../fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'Gelasio';
+        src: url('../fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Gelasio';
+        src: url('../fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: italic;
+    }
     @font-face {
         font-family: 'Dancing Script';
         src: url('../fonts/DancingScript-Regular.ttf') format('truetype');
@@ -23,18 +51,23 @@
         font-style: normal;
     }
 
+    /* ============================================ */
+    /* SIDA — A4 liggande, 4 vykort i 2×2           */
+    /* ============================================ */
     @page { size: 297mm 210mm; margin: 0; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-        font-family: 'Arimo-VariableFont_wght', 'Roboto-Bold', Arial, Helvetica, sans-serif;
-        background: #fff;
-        color: #111;
-    }
+    body { font-family: 'Arimo', Arial, sans-serif; background: #fff; color: #111; }
     .ark { width: 297mm; height: 210mm; position: relative; background: #fff; }
 
     /* Klipplinjer */
-    .skar-linje.vertikal { position: absolute; left: 148.5mm; top: 0; bottom: 0; width: 0; border-left: 0.35mm dashed #AAA; z-index: 10; }
-    .skar-linje.horisontell { position: absolute; top: 105mm; left: 0; right: 0; height: 0; border-top: 0.35mm dashed #AAA; z-index: 10; }
+    .skar-linje.vertikal {
+        position: absolute; left: 148.5mm; top: 0; bottom: 0;
+        width: 0; border-left: 0.35mm dashed #AAA; z-index: 10;
+    }
+    .skar-linje.horisontell {
+        position: absolute; top: 105mm; left: 0; right: 0;
+        height: 0; border-top: 0.35mm dashed #AAA; z-index: 10;
+    }
 
     /* Vykort: 148,5 × 105 mm */
     .vykort {
@@ -45,42 +78,68 @@
         overflow: hidden;
     }
 
-    /* Roterade texter i marginalerna */
-    .kant-text {
+    /* Vattenstämpel — svag cirkel i mitten */
+    .watermark {
         position: absolute;
-        font-size: 9pt;
-        font-weight: normal;
-        color: #AAA;
-        letter-spacing: 0.1em;
-        white-space: nowrap;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60mm;
+        height: 60mm;
+        opacity: 0.035;
+        pointer-events: none;
+        z-index: 1;
+        border: 2.5mm solid #111;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .watermark::after {
+        content: '';
+        width: 38%;
+        height: 38%;
+        border: 1.2mm solid #111;
+        border-radius: 50%;
     }
 
-    .kant-vanster {
+    /* Sidotitlar — roterade 90°, i marginalerna */
+    .sidotitel {
+        position: absolute;
         top: 50%;
-        left: 10mm;
+        z-index: 10;
+        white-space: nowrap;
+        pointer-events: none;
+        color: #999;
+        line-height: 1;
+    }
+    .sidotitel.vanster {
+        left: -8.5mm;
+        font-family: 'Arimo', Arial, sans-serif;
+        font-size: 7pt;
+        font-weight: 600;
+        letter-spacing: 0.25em;
         transform: translateY(-50%) rotate(-90deg);
         transform-origin: center center;
-        font-family: Georgia, 'Times New Roman', serif;
-        text-transform: uppercase;
-        letter-spacing: 0.3em;
     }
-
-    .kant-hoger {
-        top: 50%;
-        right: 10mm;
+    .sidotitel.hoger {
+        right: -6mm;
+        font-family: 'Homemade Apple', cursive;
+        font-size: 11pt;
+        letter-spacing: 0.04em;
+        text-transform: lowercase;
+        color: #9A9A9A;
         transform: translateY(-50%) rotate(90deg);
         transform-origin: center center;
-        font-family: 'Homemade Apple', cursive;
-        font-size: 7pt;
     }
 
     /* Huvudinnehåll */
-    .innehall {
-        position: absolute;
-        top: 10mm;
-        left: 20mm;
-        right: 20mm;
-        bottom: 10mm;
+    .inner {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        padding: 10mm 16mm;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -93,24 +152,26 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-top: 2mm;
     }
-
     .slogan {
+        font-family: 'Arimo', Arial, sans-serif;
         font-size: 16pt;
-        font-weight: 900;
-        line-height: 1.3;
-        letter-spacing: -0.02em;
-        margin-bottom: 8mm;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.015em;
         text-transform: uppercase;
-        color: #111111;
+        color: #111;
+        margin-bottom: 6.5mm;
     }
-
     .subtext {
-        font-family: 'EBGaramond-Regular', 'Georgia', serif;
-        font-size: 11pt;
+        font-family: 'Gelasio', Georgia, serif;
+        font-size: 13.75pt;
         font-style: italic;
-        color: #444444;
-        max-width: 90%;
+        font-weight: 700;
+        line-height: 1.25;
+        color: #444;
+        max-width: 92%;
     }
 
     .mitten {
@@ -118,29 +179,30 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-top: 2mm;
     }
-
     .manifesto-titel {
         font-family: 'Dancing Script', cursive;
         font-size: 24pt;
-        font-weight: bold;
-        color: #AAA;
-        margin-bottom: 1.5mm;
+        font-weight: 700;
+        color: #AAAAAA;
+        margin-bottom: 2.2mm;
+        line-height: 1;
     }
-
     .separator {
         width: 40mm;
         height: 0;
-        border-top: 0.2mm solid #AAA;
-        margin-bottom: 1.5mm;
+        border: none;
+        border-top: 0.5px solid #AAAAAA;
+        margin-bottom: 2.2mm;
     }
-
     .webbadress {
-        font-size: 8pt;
-        font-weight: normal;
-        letter-spacing: 0.1em;
+        font-family: 'Arimo', Arial, sans-serif;
+        font-size: 7.5pt;
+        font-weight: 400;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
-        color: #AAA;
+        color: #AAAAAA;
     }
 
     .botten {
@@ -148,27 +210,12 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-bottom: 1mm;
     }
-
-    .qr-block img {
+    .qr-wrap {
         width: 20mm;
         height: 20mm;
         display: block;
-    }
-
-    .vattenstämpel {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60mm;
-        height: 60mm;
-        opacity: 0.04;
-        pointer-events: none;
-        background-image: url('../pics/favicon.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 
     @media print {
@@ -181,15 +228,15 @@
     <div class="skar-linje vertikal"></div>
     <div class="skar-linje horisontell"></div>
 
-    <!-- Övre vänstra -->
+    <!-- ===== Övre vänstra ===== -->
     <div class="vykort" style="top:0; left:0;">
-        <div class="vattenstämpel"></div>
-        <div class="kant-text kant-vanster">Modern Times</div>
-        <div class="kant-text kant-hoger">The Definitive Abundance</div>
-        <div class="innehall">
+        <div class="watermark" aria-hidden="true"></div>
+        <div class="sidotitel vanster">The Economy of Brilliance</div>
+        <div class="sidotitel hoger">"the definitive abundance"</div>
+        <div class="inner">
             <div class="topp">
-                <div class="slogan">Från skuld och slit<br>till frihet och överflöd.</div>
-                <div class="subtext">"När maskinerna kan leverera allt gratis, är det inte längre ekonomi att ta betalt. Det är förtryck."</div>
+                <div class="slogan">From debt and toil<br>to freedom and abundance.</div>
+                <div class="subtext">"Demanding payment for what machines produce for free is no longer economics—it is oppression."</div>
             </div>
             <div class="mitten">
                 <div class="manifesto-titel">The World Manifesto</div>
@@ -197,20 +244,20 @@
                 <div class="webbadress">theworldmanifesto.github.io</div>
             </div>
             <div class="botten">
-                <div class="qr-block"><img src="../qr/qr-worldmanifesto.svg" alt="QR"></div>
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR: theworldmanifesto.github.io" class="qr-wrap">
             </div>
         </div>
     </div>
 
-    <!-- Övre högra -->
+    <!-- ===== Övre högra ===== -->
     <div class="vykort" style="top:0; left:148.5mm;">
-        <div class="vattenstämpel"></div>
-        <div class="kant-text kant-vanster">Modern Times</div>
-        <div class="kant-text kant-hoger">The Definitive Abundance</div>
-        <div class="innehall">
+        <div class="watermark" aria-hidden="true"></div>
+        <div class="sidotitel vanster">The Economy of Brilliance</div>
+        <div class="sidotitel hoger">"the definitive abundance"</div>
+        <div class="inner">
             <div class="topp">
-                <div class="slogan">Från skuld och slit<br>till frihet och överflöd.</div>
-                <div class="subtext">"När maskinerna kan leverera allt gratis, är det inte längre ekonomi att ta betalt. Det är förtryck."</div>
+                <div class="slogan">From debt and toil<br>to freedom and abundance.</div>
+                <div class="subtext">"Demanding payment for what machines produce for free is no longer economics—it is oppression."</div>
             </div>
             <div class="mitten">
                 <div class="manifesto-titel">The World Manifesto</div>
@@ -218,20 +265,20 @@
                 <div class="webbadress">theworldmanifesto.github.io</div>
             </div>
             <div class="botten">
-                <div class="qr-block"><img src="../qr/qr-worldmanifesto.svg" alt="QR"></div>
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR: theworldmanifesto.github.io" class="qr-wrap">
             </div>
         </div>
     </div>
 
-    <!-- Nedre vänstra -->
+    <!-- ===== Nedre vänstra ===== -->
     <div class="vykort" style="top:105mm; left:0;">
-        <div class="vattenstämpel"></div>
-        <div class="kant-text kant-vanster">Modern Times</div>
-        <div class="kant-text kant-hoger">The Definitive Abundance</div>
-        <div class="innehall">
+        <div class="watermark" aria-hidden="true"></div>
+        <div class="sidotitel vanster">The Economy of Brilliance</div>
+        <div class="sidotitel hoger">"the definitive abundance"</div>
+        <div class="inner">
             <div class="topp">
-                <div class="slogan">Från skuld och slit<br>till frihet och överflöd.</div>
-                <div class="subtext">"När maskinerna kan leverera allt gratis, är det inte längre ekonomi att ta betalt. Det är förtryck."</div>
+                <div class="slogan">From debt and toil<br>to freedom and abundance.</div>
+                <div class="subtext">"Demanding payment for what machines produce for free is no longer economics—it is oppression."</div>
             </div>
             <div class="mitten">
                 <div class="manifesto-titel">The World Manifesto</div>
@@ -239,20 +286,20 @@
                 <div class="webbadress">theworldmanifesto.github.io</div>
             </div>
             <div class="botten">
-                <div class="qr-block"><img src="../qr/qr-worldmanifesto.svg" alt="QR"></div>
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR: theworldmanifesto.github.io" class="qr-wrap">
             </div>
         </div>
     </div>
 
-    <!-- Nedre högra -->
+    <!-- ===== Nedre högra ===== -->
     <div class="vykort" style="top:105mm; left:148.5mm;">
-        <div class="vattenstämpel"></div>
-        <div class="kant-text kant-vanster">Modern Times</div>
-        <div class="kant-text kant-hoger">The Definitive Abundance</div>
-        <div class="innehall">
+        <div class="watermark" aria-hidden="true"></div>
+        <div class="sidotitel vanster">The Economy of Brilliance</div>
+        <div class="sidotitel hoger">"the definitive abundance"</div>
+        <div class="inner">
             <div class="topp">
-                <div class="slogan">Från skuld och slit<br>till frihet och överflöd.</div>
-                <div class="subtext">"När maskinerna kan leverera allt gratis, är det inte längre ekonomi att ta betalt. Det är förtryck."</div>
+                <div class="slogan">From debt and toil<br>to freedom and abundance.</div>
+                <div class="subtext">"Demanding payment for what machines produce for free is no longer economics—it is oppression."</div>
             </div>
             <div class="mitten">
                 <div class="manifesto-titel">The World Manifesto</div>
@@ -260,7 +307,7 @@
                 <div class="webbadress">theworldmanifesto.github.io</div>
             </div>
             <div class="botten">
-                <div class="qr-block"><img src="../qr/qr-worldmanifesto.svg" alt="QR"></div>
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR: theworldmanifesto.github.io" class="qr-wrap">
             </div>
         </div>
     </div>
