@@ -1,317 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Postcard Front — The World Manifesto</title>
-
-<style>
-    /* ============================================ */
-    /* FONTS — lokala filer från ../fonts/          */
-    /* ============================================ */
-    @font-face {
-        font-family: 'Arimo';
-        src: url('../fonts/Arimo-VariableFont_wght.ttf') format('truetype');
-        font-weight: 100 900;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Arimo';
-        src: url('../fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
-        font-weight: 100 900;
-        font-style: italic;
-    }
-    @font-face {
-        font-family: 'Gelasio';
-        src: url('../fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
-        font-weight: 100 900;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Gelasio';
-        src: url('../fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
-        font-weight: 100 900;
-        font-style: italic;
-    }
-    @font-face {
-        font-family: 'Dancing Script';
-        src: url('../fonts/DancingScript-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Dancing Script';
-        src: url('../fonts/DancingScript-Bold.ttf') format('truetype');
-        font-weight: bold;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Homemade Apple';
-        src: url('../fonts/HomemadeApple-Regular.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    /* ============================================ */
-    /* SIDA — A4 liggande, 4 vykort i 2×2           */
-    /* ============================================ */
-    @page { size: 297mm 210mm; margin: 0; }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Arimo', Arial, sans-serif; background: #fff; color: #111; }
-    .ark { width: 297mm; height: 210mm; position: relative; background: #fff; }
-
-    /* Klipplinjer */
-    .skar-linje.vertikal {
-        position: absolute; left: 148.5mm; top: 0; bottom: 0;
-        width: 0; border-left: 0.35mm dashed #AAA; z-index: 10;
-    }
-    .skar-linje.horisontell {
-        position: absolute; top: 105mm; left: 0; right: 0;
-        height: 0; border-top: 0.35mm dashed #AAA; z-index: 10;
-    }
-
-    /* Vykort: 148,5 × 105 mm */
-    .vykort {
-        position: absolute;
-        width: 148.5mm;
-        height: 105mm;
-        background: #fff;
-        overflow: hidden;
-    }
-
-    /* Vattenstämpel — svag cirkel i mitten */
-    .watermark {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60mm;
-        height: 60mm;
-        opacity: 0.035;
-        pointer-events: none;
-        z-index: 1;
-        border: 2.5mm solid #111;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .watermark::after {
-        content: '';
-        width: 38%;
-        height: 38%;
-        border: 1.2mm solid #111;
-        border-radius: 50%;
-    }
-
-    /* Sidotitlar — roterade 90°, i marginalerna */
-    .sidotitel {
-        position: absolute;
-        top: 50%;
-        z-index: 10;
-        white-space: nowrap;
-        pointer-events: none;
-        color: #999;
-        line-height: 1;
-    }
-    .sidotitel.vanster {
-        left: -8.5mm;
-        font-family: 'Arimo', Arial, sans-serif;
-        font-size: 7pt;
-        font-weight: 600;
-        letter-spacing: 0.25em;
-        transform: translateY(-50%) rotate(-90deg);
-        transform-origin: center center;
-    }
-    .sidotitel.hoger {
-        right: -6mm;
-        font-family: 'Homemade Apple', cursive;
-        font-size: 11pt;
-        letter-spacing: 0.04em;
-        text-transform: lowercase;
-        color: #9A9A9A;
-        transform: translateY(-50%) rotate(90deg);
-        transform-origin: center center;
-    }
-
-    /* Huvudinnehåll */
-    .inner {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        padding: 10mm 16mm;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-    }
-
-    .topp {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 2mm;
-    }
-    .slogan {
-        font-family: 'Arimo', Arial, sans-serif;
-        font-size: 16pt;
-        font-weight: 400;
-        line-height: 1.22;
-        letter-spacing: -0.015em;
-        text-transform: uppercase;
-        color: #111;
-        margin-bottom: 6.5mm;
-    }
-    .subtext {
-        font-family: 'Gelasio', Georgia, serif;
-        font-size: 13.75pt;
-        font-style: italic;
-        font-weight: 700;
-        line-height: 1.25;
-        color: #444;
-        max-width: 92%;
-    }
-
-    .mitten {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 2mm;
-    }
-    .manifesto-titel {
-        font-family: 'Dancing Script', cursive;
-        font-size: 24pt;
-        font-weight: 700;
-        color: #AAAAAA;
-        margin-bottom: 2.2mm;
-        line-height: 1;
-    }
-    .separator {
-        width: 40mm;
-        height: 0;
-        border: none;
-        border-top: 0.5px solid #AAAAAA;
-        margin-bottom: 2.2mm;
-    }
-    .webbadress {
-        font-family: 'Arimo', Arial, sans-serif;
-        font-size: 7.5pt;
-        font-weight: 400;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: #AAAAAA;
-    }
-
-    .botten {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 1mm;
-    }
-    .qr-wrap {
-        width: 20mm;
-        height: 20mm;
-        display: block;
-    }
-
-    @media print {
-        body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    }
-</style>
-</head>
-<body>
-<div class="ark">
-    <div class="skar-linje vertikal"></div>
-    <div class="skar-linje horisontell"></div>
-
-    <!-- ===== Övre vänstra ===== -->
-    <div class="vykort" style="top:0; left:0;">
-        <div class="watermark" aria-hidden="true"></div>
-        <div class="sidotitel vanster">The Economy of Brilliance</div>
-        <div class="sidotitel hoger">"the definitive abundance"</div>
-        <div class="inner">
-            <div class="topp">
-                <div class="slogan">From debt and toil<br>to freedom and abundance.</div>
-                <div class="subtext">"Demanding payment for what machines produce for free is no longer economics—it is oppression."</div>
-            </div>
-            <div class="mitten">
-                <div class="manifesto-titel">The World Manifesto</div>
-                <div class="separator"></div>
-                <div class="webbadress">theworldmanifesto.github.io</div>
-            </div>
-            <div class="botten">
-                <img src="../qr/qr-worldmanifesto.svg" alt="QR: theworldmanifesto.github.io" class="qr-wrap">
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== Övre högra ===== -->
-    <div class="vykort" style="top:0; left:148.5mm;">
-        <div class="watermark" aria-hidden="true"></div>
-        <div class="sidotitel vanster">The Economy of Brilliance</div>
-        <div class="sidotitel hoger">"the definitive abundance"</div>
-        <div class="inner">
-            <div class="topp">
-                <div class="slogan">From debt and toil<br>to freedom and abundance.</div>
-                <div class="subtext">"Demanding payment for what machines produce for free is no longer economics—it is oppression."</div>
-            </div>
-            <div class="mitten">
-                <div class="manifesto-titel">The World Manifesto</div>
-                <div class="separator"></div>
-                <div class="webbadress">theworldmanifesto.github.io</div>
-            </div>
-            <div class="botten">
-                <img src="../qr/qr-worldmanifesto.svg" alt="QR: theworldmanifesto.github.io" class="qr-wrap">
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== Nedre vänstra ===== -->
-    <div class="vykort" style="top:105mm; left:0;">
-        <div class="watermark" aria-hidden="true"></div>
-        <div class="sidotitel vanster">The Economy of Brilliance</div>
-        <div class="sidotitel hoger">"the definitive abundance"</div>
-        <div class="inner">
-            <div class="topp">
-                <div class="slogan">From debt and toil<br>to freedom and abundance.</div>
-                <div class="subtext">"Demanding payment for what machines produce for free is no longer economics—it is oppression."</div>
-            </div>
-            <div class="mitten">
-                <div class="manifesto-titel">The World Manifesto</div>
-                <div class="separator"></div>
-                <div class="webbadress">theworldmanifesto.github.io</div>
-            </div>
-            <div class="botten">
-                <img src="../qr/qr-worldmanifesto.svg" alt="QR: theworldmanifesto.github.io" class="qr-wrap">
-            </div>
-        </div>
-    </div>
-
-    <!-- ===== Nedre högra ===== -->
-    <div class="vykort" style="top:105mm; left:148.5mm;">
-        <div class="watermark" aria-hidden="true"></div>
-        <div class="sidotitel vanster">The Economy of Brilliance</div>
-        <div class="sidotitel hoger">"the definitive abundance"</div>
-        <div class="inner">
-            <div class="topp">
-                <div class="slogan">From debt and toil<br>to freedom and abundance.</div>
-                <div class="subtext">"Demanding payment for what machines produce for free is no longer economics—it is oppression."</div>
-            </div>
-            <div class="mitten">
-                <div class="manifesto-titel">The World Manifesto</div>
-                <div class="separator"></div>
-                <div class="webbadress">theworldmanifesto.github.io</div>
-            </div>
-            <div class="botten">
-                <img src="../qr/qr-worldmanifesto.svg" alt="QR: theworldmanifesto.github.io" class="qr-wrap">
-            </div>
-        </div>
-    </div>
-
-</div>
-</body>
-</html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><title>file:///C:/Users/Sven/Documents/Global%20Robotic%20Reform%20-%20Robotiseringspartiet%20(Suver%C3%A4nitetspartiet)/Postcard-Front-Slogan-Quote.html</title><link rel="stylesheet" type="text/css" href="resource://content-accessible/viewsource.css"></head><body id="viewsource" style="tab-size: 4"><span id="line1"><span></span><span class="doctype">&lt;!DOCTYPE html&gt;</span><span>
+</span></span><span id="line2"><span></span><span>&lt;<span class="start-tag">html</span> <span class="attribute-name">lang</span>="<a class="attribute-value">en</a>"&gt;</span><span>
+</span></span><span id="line3"><span></span><span>&lt;<span class="start-tag">head</span>&gt;</span><span>
+</span></span><span id="line4"><span></span><span>&lt;<span class="start-tag">meta</span> <span class="attribute-name">charset</span>="<a class="attribute-value">UTF-8</a>"&gt;</span><span>
+</span></span><span id="line5"><span></span><span>&lt;<span class="start-tag">title</span>&gt;</span><span>Postcard Front — The World Manifesto</span><span>&lt;/<span class="end-tag">title</span>&gt;</span><span>
+</span></span><span id="line6"><span>
+</span></span><span id="line7"><span></span><span>&lt;<span class="start-tag">style</span>&gt;</span><span>
+</span></span><span id="line8"><span>    /* ============================================ */
+</span></span><span id="line9"><span>    /* FONTS — lokala filer från ../fonts/          */
+</span></span><span id="line10"><span>    /* ============================================ */
+</span></span><span id="line11"><span>    @font-face {
+</span></span><span id="line12"><span>        font-family: 'Arimo';
+</span></span><span id="line13"><span>        src: url('../fonts/Arimo-VariableFont_wght.ttf') format('truetype');
+</span></span><span id="line14"><span>        font-weight: 100 900;
+</span></span><span id="line15"><span>        font-style: normal;
+</span></span><span id="line16"><span>    }
+</span></span><span id="line17"><span>    @font-face {
+</span></span><span id="line18"><span>        font-family: 'Arimo';
+</span></span><span id="line19"><span>        src: url('../fonts/Arimo-Italic-VariableFont_wght.ttf') format('truetype');
+</span></span><span id="line20"><span>        font-weight: 100 900;
+</span></span><span id="line21"><span>        font-style: italic;
+</span></span><span id="line22"><span>    }
+</span></span><span id="line23"><span>    @font-face {
+</span></span><span id="line24"><span>        font-family: 'Gelasio';
+</span></span><span id="line25"><span>        src: url('../fonts/Gelasio-VariableFont_wght.ttf') format('truetype');
+</span></span><span id="line26"><span>        font-weight: 100 900;
+</span></span><span id="line27"><span>        font-style: normal;
+</span></span><span id="line28"><span>    }
+</span></span><span id="line29"><span>    @font-face {
+</span></span><span id="line30"><span>        font-family: 'Gelasio';
+</span></span><span id="line31"><span>        src: url('../fonts/Gelasio-Italic-VariableFont_wght.ttf') format('truetype');
+</span></span><span id="line32"><span>        font-weight: 100 900;
+</span></span><span id="line33"><span>        font-style: italic;
+</span></span><span id="line34"><span>    }
+</span></span><span id="line35"><span>    @font-face {
+</span></span><span id="line36"><span>        font-family: 'Dancing Script';
+</span></span><span id="line37"><span>        src: url('../fonts/DancingScript-Regular.ttf') format('truetype');
+</span></span><span id="line38"><span>        font-weight: normal;
+</span></span><span id="line39"><span>        font-style: normal;
+</span></span><span id="line40"><span>    }
+</span></span><span id="line41"><span>    @font-face {
+</span></span><span id="line42"><span>        font-family: 'Dancing Script';
+</span></span><span id="line43"><span>        src: url('../fonts/DancingScript-Bold.ttf') format('truetype');
+</span></span><span id="line44"><span>        font-weight: bold;
+</span></span><span id="line45"><span>        font-style: normal;
+</span></span><span id="line46"><span>    }
+</span></span><span id="line47"><span>    @font-face {
+</span></span><span id="line48"><span>        font-family: 'Homemade Apple';
+</span></span><span id="line49"><span>        src: url('../fonts/HomemadeApple-Regular.ttf') format('truetype');
+</span></span><span id="line50"><span>        font-weight: normal;
+</span></span><span id="line51"><span>        font-style: normal;
+</span></span><span id="line52"><span>    }
+</span></span><span id="line53"><span>
+</span></span><span id="line54"><span>    /* ============================================ */
+</span></span><span id="line55"><span>    /* SIDA — A4 liggande, 4 vykort i 2×2           */
+</span></span><span id="line56"><span>    /* ============================================ */
+</span></span><span id="line57"><span>    @page { size: 297mm 210mm; margin: 0; }
+</span></span><span id="line58"><span>    * { box-sizing: border-box; margin: 0; padding: 0; }
+</span></span><span id="line59"><span>    body { font-family: 'Arimo', Arial, sans-serif; background: #fff; color: #111; }
+</span></span><span id="line60"><span>    .ark { width: 297mm; height: 210mm; position: relative; background: #fff; }
+</span></span><span id="line61"><span>
+</span></span><span id="line62"><span>    /* Klipplinjer */
+</span></span><span id="line63"><span>    .skar-linje.vertikal {
+</span></span><span id="line64"><span>        position: absolute; left: 148.5mm; top: 0; bottom: 0;
+</span></span><span id="line65"><span>        width: 0; border-left: 0.35mm dashed #AAA; z-index: 10;
+</span></span><span id="line66"><span>    }
+</span></span><span id="line67"><span>    .skar-linje.horisontell {
+</span></span><span id="line68"><span>        position: absolute; top: 105mm; left: 0; right: 0;
+</span></span><span id="line69"><span>        height: 0; border-top: 0.35mm dashed #AAA; z-index: 10;
+</span></span><span id="line70"><span>    }
+</span></span><span id="line71"><span>
+</span></span><span id="line72"><span>    /* Vykort: 148,5 × 105 mm */
+</span></span><span id="line73"><span>    .vykort {
+</span></span><span id="line74"><span>        position: absolute;
+</span></span><span id="line75"><span>        width: 148.5mm;
+</span></span><span id="line76"><span>        height: 105mm;
+</span></span><span id="line77"><span>        background: #fff;
+</span></span><span id="line78"><span>        overflow: hidden;
+</span></span><span id="line79"><span>    }
+</span></span><span id="line80"><span>
+</span></span><span id="line81"><span>    /* Vattenstämpel — svag cirkel i mitten */
+</span></span><span id="line82"><span>    .watermark {
+</span></span><span id="line83"><span>        position: absolute;
+</span></span><span id="line84"><span>        top: 50%;
+</span></span><span id="line85"><span>        left: 50%;
+</span></span><span id="line86"><span>        transform: translate(-50%, -50%);
+</span></span><span id="line87"><span>        width: 60mm;
+</span></span><span id="line88"><span>        height: 60mm;
+</span></span><span id="line89"><span>        opacity: 0.035;
+</span></span><span id="line90"><span>        pointer-events: none;
+</span></span><span id="line91"><span>        z-index: 1;
+</span></span><span id="line92"><span>        border: 2.5mm solid #111;
+</span></span><span id="line93"><span>        border-radius: 50%;
+</span></span><span id="line94"><span>        display: flex;
+</span></span><span id="line95"><span>        justify-content: center;
+</span></span><span id="line96"><span>        align-items: center;
+</span></span><span id="line97"><span>    }
+</span></span><span id="line98"><span>    .watermark::after {
+</span></span><span id="line99"><span>        content: '';
+</span></span><span id="line100"><span>        width: 38%;
+</span></span><span id="line101"><span>        height: 38%;
+</span></span><span id="line102"><span>        border: 1.2mm solid #111;
+</span></span><span id="line103"><span>        border-radius: 50%;
+</span></span><span id="line104"><span>    }
+</span></span><span id="line105"><span>
+</span></span><span id="line106"><span>    /* Sidotitlar — roterade 90°, i marginalerna */
+</span></span><span id="line107"><span>    .sidotitel {
+</span></span><span id="line108"><span>        position: absolute;
+</span></span><span id="line109"><span>        top: 50%;
+</span></span><span id="line110"><span>        z-index: 10;
+</span></span><span id="line111"><span>        white-space: nowrap;
+</span></span><span id="line112"><span>        pointer-events: none;
+</span></span><span id="line113"><span>        color: #999;
+</span></span><span id="line114"><span>        line-height: 1;
+</span></span><span id="line115"><span>    }
+</span></span><span id="line116"><span>    .sidotitel.vanster {
+</span></span><span id="line117"><span>        left: -8.5mm;
+</span></span><span id="line118"><span>        font-family: 'Arimo', Arial, sans-serif;
+</span></span><span id="line119"><span>        font-size: 7pt;
+</span></span><span id="line120"><span>        font-weight: 600;
+</span></span><span id="line121"><span>        letter-spacing: 0.25em;
+</span></span><span id="line122"><span>        transform: translateY(-50%) rotate(-90deg);
+</span></span><span id="line123"><span>        transform-origin: center center;
+</span></span><span id="line124"><span>    }
+</span></span><span id="line125"><span>    .sidotitel.hoger {
+</span></span><span id="line126"><span>        right: -13.5mm;
+</span></span><span id="line127"><span>        font-family: 'Homemade Apple', cursive;
+</span></span><span id="line128"><span>        font-size: 11pt;
+</span></span><span id="line129"><span>        letter-spacing: 0.04em;
+</span></span><span id="line131"><span>        color: #9A9A9A;
+</span></span><span id="line132"><span>        transform: translateY(-50%) rotate(90deg);
+</span></span><span id="line133"><span>        transform-origin: center center;
+</span></span><span id="line134"><span>    }
+</span></span><span id="line135"><span>
+</span></span><span id="line136"><span>    /* Huvudinnehåll */
+</span></span><span id="line137"><span>    .inner {
+</span></span><span id="line138"><span>        position: relative;
+</span></span><span id="line139"><span>        z-index: 2;
+</span></span><span id="line140"><span>        width: 100%;
+</span></span><span id="line141"><span>        height: 100%;
+</span></span><span id="line142"><span>        padding: 10mm 16mm;
+</span></span><span id="line143"><span>        display: flex;
+</span></span><span id="line144"><span>        flex-direction: column;
+</span></span><span id="line145"><span>        justify-content: space-between;
+</span></span><span id="line146"><span>        align-items: center;
+</span></span><span id="line147"><span>        text-align: center;
+</span></span><span id="line148"><span>    }
+</span></span><span id="line149"><span>
+</span></span><span id="line150"><span>    .topp {
+</span></span><span id="line151"><span>        display: flex;
+</span></span><span id="line152"><span>        flex-direction: column;
+</span></span><span id="line153"><span>        align-items: center;
+</span></span><span id="line154"><span>        width: 100%;
+</span></span><span id="line155"><span>        margin-top: 2mm;
+</span></span><span id="line156"><span>    }
+</span></span><span id="line157"><span>    .slogan {
+</span></span><span id="line158"><span>        font-family: 'Arimo', Arial, sans-serif;
+</span></span><span id="line159"><span>        font-size: 16pt;
+</span></span><span id="line160"><span>        font-weight: 400;
+</span></span><span id="line161"><span>        line-height: 1.22;
+</span></span><span id="line162"><span>        letter-spacing: -0.015em;
+</span></span><span id="line163"><span>        text-transform: uppercase;
+</span></span><span id="line164"><span>        color: #111;
+</span></span><span id="line165"><span>        margin-bottom: 6.5mm;
+</span></span><span id="line166"><span>    }
+</span></span><span id="line167"><span>    .subtext {
+</span></span><span id="line168"><span>        font-family: 'Gelasio', Georgia, serif;
+</span></span><span id="line169"><span>        font-size: 13.75pt;
+</span></span><span id="line170"><span>        font-style: italic;
+</span></span><span id="line171"><span>        font-weight: 700;
+</span></span><span id="line172"><span>        line-height: 1.25;
+</span></span><span id="line173"><span>        color: #444;
+</span></span><span id="line174"><span>        max-width: 92%;
+</span></span><span id="line175"><span>    }
+</span></span><span id="line176"><span>
+</span></span><span id="line177"><span>    .mitten {
+</span></span><span id="line178"><span>        display: flex;
+</span></span><span id="line179"><span>        flex-direction: column;
+</span></span><span id="line180"><span>        align-items: center;
+</span></span><span id="line181"><span>        width: 100%;
+</span></span><span id="line182"><span>        margin-top: 2mm;
+</span></span><span id="line183"><span>    }
+</span></span><span id="line184"><span>    .manifesto-titel {
+</span></span><span id="line185"><span>        font-family: 'Dancing Script', cursive;
+</span></span><span id="line186"><span>        font-size: 24pt;
+</span></span><span id="line187"><span>        font-weight: 700;
+</span></span><span id="line188"><span>        color: #AAAAAA;
+</span></span><span id="line189"><span>        margin-bottom: 2.2mm;
+</span></span><span id="line190"><span>        line-height: 1;
+</span></span><span id="line191"><span>    }
+</span></span><span id="line192"><span>    .separator {
+</span></span><span id="line193"><span>        width: 40mm;
+</span></span><span id="line194"><span>        height: 0;
+</span></span><span id="line195"><span>        border: none;
+</span></span><span id="line196"><span>        border-top: 0.5px solid #AAAAAA;
+</span></span><span id="line197"><span>        margin-bottom: 2.2mm;
+</span></span><span id="line198"><span>    }
+</span></span><span id="line199"><span>    .webbadress {
+</span></span><span id="line200"><span>        font-family: 'Arimo', Arial, sans-serif;
+</span></span><span id="line201"><span>        font-size: 7.5pt;
+</span></span><span id="line202"><span>        font-weight: 400;
+</span></span><span id="line203"><span>        letter-spacing: 0.14em;
+</span></span><span id="line204"><span>        text-transform: uppercase;
+</span></span><span id="line205"><span>        color: #AAAAAA;
+</span></span><span id="line206"><span>    }
+</span></span><span id="line207"><span>
+</span></span><span id="line208"><span>    .botten {
+</span></span><span id="line209"><span>        display: flex;
+</span></span><span id="line210"><span>        justify-content: center;
+</span></span><span id="line211"><span>        align-items: center;
+</span></span><span id="line212"><span>        width: 100%;
+</span></span><span id="line213"><span>        margin-bottom: 1mm;
+</span></span><span id="line214"><span>    }
+</span></span><span id="line215"><span>    .qr-wrap {
+</span></span><span id="line216"><span>        width: 20mm;
+</span></span><span id="line217"><span>        height: 20mm;
+</span></span><span id="line218"><span>        display: block;
+</span></span><span id="line219"><span>    }
+</span></span><span id="line220"><span>
+</span></span><span id="line221"><span>    @media print {
+</span></span><span id="line222"><span>        body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+</span></span><span id="line223"><span>    }
+</span></span><span id="line224"><span></span><span>&lt;/<span class="end-tag">style</span>&gt;</span><span>
+</span></span><span id="line225"><span></span><span>&lt;/<span class="end-tag">head</span>&gt;</span><span>
+</span></span><span id="line226"><span></span><span>&lt;<span class="start-tag">body</span>&gt;</span><span>
+</span></span><span id="line227"><span></span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">ark</a>"&gt;</span><span>
+</span></span><span id="line228"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">skar-linje vertikal</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line229"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">skar-linje horisontell</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line230"><span>
+</span></span><span id="line231"><span>    </span><span class="comment">&lt;!-- ===== Övre vänstra ===== --&gt;</span><span>
+</span></span><span id="line232"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">vykort</a>" <span class="attribute-name">style</span>="<a class="attribute-value">top:0; left:0;</a>"&gt;</span><span>
+</span></span><span id="line233"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">watermark</a>" <span class="attribute-name">aria-hidden</span>="<a class="attribute-value">true</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line234"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">sidotitel vanster</a>"&gt;</span><span>The Economy of Brilliance</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line235"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">sidotitel hoger</a>"&gt;</span><span>"the definitive abundance"</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line236"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">inner</a>"&gt;</span><span>
+</span></span><span id="line237"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">topp</a>"&gt;</span><span>
+</span></span><span id="line238"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">slogan</a>"&gt;</span><span>From debt and toil</span><span>&lt;<span class="start-tag">br</span>&gt;</span><span>to freedom and abundance.</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line239"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">subtext</a>"&gt;</span><span>"Demanding payment for what machines produce for free is no longer economics—it is oppression."</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line240"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line241"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">mitten</a>"&gt;</span><span>
+</span></span><span id="line242"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">manifesto-titel</a>"&gt;</span><span>The World Manifesto</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line243"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line244"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">webbadress</a>"&gt;</span><span>theworldmanifesto.github.io</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line245"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line246"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">botten</a>"&gt;</span><span>
+</span></span><span id="line247"><span>                </span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:file:///C:/Users/Sven/Documents/qr/qr-worldmanifesto.svg">../qr/qr-worldmanifesto.svg</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">QR: theworldmanifesto.github.io</a>" <span class="attribute-name">class</span>="<a class="attribute-value">qr-wrap</a>"&gt;</span><span>
+</span></span><span id="line248"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line249"><span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line250"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line251"><span>
+</span></span><span id="line252"><span>    </span><span class="comment">&lt;!-- ===== Övre högra ===== --&gt;</span><span>
+</span></span><span id="line253"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">vykort</a>" <span class="attribute-name">style</span>="<a class="attribute-value">top:0; left:148.5mm;</a>"&gt;</span><span>
+</span></span><span id="line254"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">watermark</a>" <span class="attribute-name">aria-hidden</span>="<a class="attribute-value">true</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line255"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">sidotitel vanster</a>"&gt;</span><span>The Economy of Brilliance</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line256"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">sidotitel hoger</a>"&gt;</span><span>"the definitive abundance"</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line257"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">inner</a>"&gt;</span><span>
+</span></span><span id="line258"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">topp</a>"&gt;</span><span>
+</span></span><span id="line259"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">slogan</a>"&gt;</span><span>From debt and toil</span><span>&lt;<span class="start-tag">br</span>&gt;</span><span>to freedom and abundance.</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line260"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">subtext</a>"&gt;</span><span>"Demanding payment for what machines produce for free is no longer economics—it is oppression."</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line261"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line262"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">mitten</a>"&gt;</span><span>
+</span></span><span id="line263"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">manifesto-titel</a>"&gt;</span><span>The World Manifesto</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line264"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line265"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">webbadress</a>"&gt;</span><span>theworldmanifesto.github.io</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line266"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line267"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">botten</a>"&gt;</span><span>
+</span></span><span id="line268"><span>                </span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:file:///C:/Users/Sven/Documents/qr/qr-worldmanifesto.svg">../qr/qr-worldmanifesto.svg</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">QR: theworldmanifesto.github.io</a>" <span class="attribute-name">class</span>="<a class="attribute-value">qr-wrap</a>"&gt;</span><span>
+</span></span><span id="line269"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line270"><span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line271"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line272"><span>
+</span></span><span id="line273"><span>    </span><span class="comment">&lt;!-- ===== Nedre vänstra ===== --&gt;</span><span>
+</span></span><span id="line274"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">vykort</a>" <span class="attribute-name">style</span>="<a class="attribute-value">top:105mm; left:0;</a>"&gt;</span><span>
+</span></span><span id="line275"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">watermark</a>" <span class="attribute-name">aria-hidden</span>="<a class="attribute-value">true</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line276"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">sidotitel vanster</a>"&gt;</span><span>The Economy of Brilliance</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line277"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">sidotitel hoger</a>"&gt;</span><span>"the definitive abundance"</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line278"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">inner</a>"&gt;</span><span>
+</span></span><span id="line279"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">topp</a>"&gt;</span><span>
+</span></span><span id="line280"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">slogan</a>"&gt;</span><span>From debt and toil</span><span>&lt;<span class="start-tag">br</span>&gt;</span><span>to freedom and abundance.</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line281"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">subtext</a>"&gt;</span><span>"Demanding payment for what machines produce for free is no longer economics—it is oppression."</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line282"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line283"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">mitten</a>"&gt;</span><span>
+</span></span><span id="line284"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">manifesto-titel</a>"&gt;</span><span>The World Manifesto</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line285"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line286"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">webbadress</a>"&gt;</span><span>theworldmanifesto.github.io</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line287"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line288"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">botten</a>"&gt;</span><span>
+</span></span><span id="line289"><span>                </span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:file:///C:/Users/Sven/Documents/qr/qr-worldmanifesto.svg">../qr/qr-worldmanifesto.svg</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">QR: theworldmanifesto.github.io</a>" <span class="attribute-name">class</span>="<a class="attribute-value">qr-wrap</a>"&gt;</span><span>
+</span></span><span id="line290"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line291"><span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line292"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line293"><span>
+</span></span><span id="line294"><span>    </span><span class="comment">&lt;!-- ===== Nedre högra ===== --&gt;</span><span>
+</span></span><span id="line295"><span>    </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">vykort</a>" <span class="attribute-name">style</span>="<a class="attribute-value">top:105mm; left:148.5mm;</a>"&gt;</span><span>
+</span></span><span id="line296"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">watermark</a>" <span class="attribute-name">aria-hidden</span>="<a class="attribute-value">true</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line297"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">sidotitel vanster</a>"&gt;</span><span>The Economy of Brilliance</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line298"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">sidotitel hoger</a>"&gt;</span><span>"the definitive abundance"</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line299"><span>        </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">inner</a>"&gt;</span><span>
+</span></span><span id="line300"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">topp</a>"&gt;</span><span>
+</span></span><span id="line301"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">slogan</a>"&gt;</span><span>From debt and toil</span><span>&lt;<span class="start-tag">br</span>&gt;</span><span>to freedom and abundance.</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line302"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">subtext</a>"&gt;</span><span>"Demanding payment for what machines produce for free is no longer economics—it is oppression."</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line303"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line304"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">mitten</a>"&gt;</span><span>
+</span></span><span id="line305"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">manifesto-titel</a>"&gt;</span><span>The World Manifesto</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line306"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">separator</a>"&gt;</span><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line307"><span>                </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">webbadress</a>"&gt;</span><span>theworldmanifesto.github.io</span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line308"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line309"><span>            </span><span>&lt;<span class="start-tag">div</span> <span class="attribute-name">class</span>="<a class="attribute-value">botten</a>"&gt;</span><span>
+</span></span><span id="line310"><span>                </span><span>&lt;<span class="start-tag">img</span> <span class="attribute-name">src</span>="<a class="attribute-value" href="view-source:file:///C:/Users/Sven/Documents/qr/qr-worldmanifesto.svg">../qr/qr-worldmanifesto.svg</a>" <span class="attribute-name">alt</span>="<a class="attribute-value">QR: theworldmanifesto.github.io</a>" <span class="attribute-name">class</span>="<a class="attribute-value">qr-wrap</a>"&gt;</span><span>
+</span></span><span id="line311"><span>            </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line312"><span>        </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line313"><span>    </span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line314"><span>
+</span></span><span id="line315"><span></span><span>&lt;/<span class="end-tag">div</span>&gt;</span><span>
+</span></span><span id="line316"><span></span><span>&lt;/<span class="end-tag">body</span>&gt;</span><span>
+</span></span><span id="line317"><span></span><span>&lt;/<span class="end-tag">html</span>&gt;</span><span>
+</span></span><span id="line318"><span></span></span></body></html>
