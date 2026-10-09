@@ -78,29 +78,21 @@
         overflow: hidden;
     }
 
-    /* Vattenstämpel — svag cirkel i mitten */
+    /* Vattenstämpel — tre jordglober i rad */
     .watermark {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 60mm;
-        height: 60mm;
-        opacity: 0.035;
+        width: 100mm;
+        height: 33mm;
+        opacity: 0.08;
         pointer-events: none;
         z-index: 1;
-        border: 2.5mm solid #111;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .watermark::after {
-        content: '';
-        width: 38%;
-        height: 38%;
-        border: 1.2mm solid #111;
-        border-radius: 50%;
+        background-image: url('https://theworldmanifesto.github.io/pics/watermark.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     /* Sidotitlar — roterade 90°, i marginalerna */
