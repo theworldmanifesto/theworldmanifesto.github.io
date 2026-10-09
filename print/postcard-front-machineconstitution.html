@@ -22,8 +22,24 @@
         overflow: hidden;
     }
 
+    /* Vattenstämpel — jordglob */
+    .watermark {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100mm;
+        height: 100mm;
+        opacity: 0.08;
+        pointer-events: none;
+        z-index: 0;
+        background-image: url('https://theworldmanifesto.github.io/pics/watermark_machine_constitution.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
     /* Rotated container — anchored to top-left of reading orientation */
-    /* Content area: 128.5 × 85 mm (10 mm margin on all sides) */
     .roterad {
         position: absolute;
         top: 5mm;
@@ -35,8 +51,9 @@
         display: flex;
         flex-direction: column;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 7.5mm;             /* ← marginal runt hela innehållet */
-        box-sizing: border-box;   /* ← så padding räknas in i width/height */
+        padding: 7.5mm;
+        box-sizing: border-box;
+        z-index: 1;
     }
 
     /* Text block — takes remaining space */
@@ -103,6 +120,7 @@
 
     <!-- Top left -->
     <div class="vykort" style="top:0; left:0;">
+        <div class="watermark" aria-hidden="true"></div>
         <div class="roterad">
             <div class="text-block">
                 <div class="titel">The Machine Constitution</div>
@@ -121,6 +139,7 @@
 
     <!-- Top right -->
     <div class="vykort" style="top:0; left:148.5mm;">
+        <div class="watermark" aria-hidden="true"></div>
         <div class="roterad">
             <div class="text-block">
                 <div class="titel">The Machine Constitution</div>
@@ -139,6 +158,7 @@
 
     <!-- Bottom left -->
     <div class="vykort" style="top:105mm; left:0;">
+        <div class="watermark" aria-hidden="true"></div>
         <div class="roterad">
             <div class="text-block">
                 <div class="titel">The Machine Constitution</div>
@@ -157,6 +177,7 @@
 
     <!-- Bottom right -->
     <div class="vykort" style="top:105mm; left:148.5mm;">
+        <div class="watermark" aria-hidden="true"></div>
         <div class="roterad">
             <div class="text-block">
                 <div class="titel">The Machine Constitution</div>
