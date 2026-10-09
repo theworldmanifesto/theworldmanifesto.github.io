@@ -26,16 +26,17 @@
     .watermark {
         position: absolute;
         bottom: 0;
-        left: 0;
-        right: 0;
-        height: 80mm;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100mm;
+        height: 100mm;
         opacity: 0.08;
         pointer-events: none;
         z-index: 0;
         background-image: url('https://theworldmanifesto.github.io/pics/watermark_machine_constitution.png');
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center bottom;
+        background-position: bottom center;
     }
 
     /* Rotated container — anchored to top-left of reading orientation */
