@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Postcard front — The Machine Constitution (rotated)</title>
+<style>
+    @page { size: 297mm 210mm; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #fff; color: #111; }
+    .ark { width: 297mm; height: 210mm; position: relative; background: #fff; }
 
+    /* Cut lines */
+    .skar-linje.vertikal { position: absolute; left: 148.5mm; top: 0; bottom: 0; width: 0; border-left: 0.35mm dashed #AAA; z-index: 10; }
+    .skar-linje.horisontell { position: absolute; top: 105mm; left: 0; right: 0; height: 0; border-top: 0.35mm dashed #AAA; z-index: 10; }
+
+    /* Postcard: 148.5 × 105 mm */
+    .vykort {
+        position: absolute;
+        width: 148.5mm;
+        height: 105mm;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    /* Vattenstämpel — jordglob */
+    .watermark {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75mm;
+        height: 75mm;
+        opacity: 0.08;
+        pointer-events: none;
+        z-index: 0;
+        background-image: url('https://theworldmanifesto.github.io/pics/watermark.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    /* Rotated container — anchored to top-left of reading orientation */
+    .roterad {
+        position: absolute;
+        top: 5mm;
+        left: 5mm;
+        width: 95mm;
+        height: 138.5mm;
+        transform-origin: top left;
+        transform: rotate(-90deg) translate(-100%, 0);
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 7.5mm;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    /* Text block — takes remaining space */
+    .text-block {
+        flex: 1 1 auto;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    /* Heading */
+    .titel {
+        font-size: 16pt;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 4mm;
+        letter-spacing: 0.2mm;
+    }
+
+    /* Constitution points */
+    .punkt {
+        font-size: 9pt;
+        line-height: 1.3;
+        margin-bottom: 3.5mm;
+        text-align: left;
+    }
+    .punkt strong {
+        font-weight: bold;
+    }
+
+    /* Closing words */
+    .avslutning {
+        font-size: 16pt;
+        font-style: italic;
+        text-align: center;
+        color: #444;
+        margin-top: 3mm;
+    }
+
+    /* QR block — centred at the bottom */
+    .qr-block {
+        flex: 0 0 auto;
+        text-align: center;
+        padding-top: 2mm;
+    }
+    .qr-block img {
+        width: 18mm;
+        height: 18mm;
+        display: block;
+        margin: 0 auto 1mm auto;
+    }
+    .sokvag {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 6.5pt;
+        text-align: center;
+        color: #666;
+        letter-spacing: 0.1mm;
+    }
+</style>
+</head>
+<body>
+<div class="ark">
+    <div class="skar-linje vertikal"></div>
+    <div class="skar-linje horisontell"></div>
+
+    <!-- Top left -->
+    <div class="vykort" style="top:0; left:0;">
+        <div class="roterad">
+        <div class="watermark" aria-hidden="true"></div>
+            <div class="text-block">
+                <div class="titel">The Machine Constitution</div>
+                <div class="punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
+                <div class="punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
+                <div class="punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
+                <div class="punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
+                <div class="avslutning">The World Manifesto</div>
+            </div>
+            <div class="qr-block">
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR">
+                <div class="sokvag">theworldmanifesto.github.io</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top right -->
+    <div class="vykort" style="top:0; left:148.5mm;">
+        <div class="roterad">
+        <div class="watermark" aria-hidden="true"></div>
+            <div class="text-block">
+                <div class="titel">The Machine Constitution</div>
+                <div class="punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
+                <div class="punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
+                <div class="punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
+                <div class="punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
+                <div class="avslutning">The World Manifesto</div>
+            </div>
+            <div class="qr-block">
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR">
+                <div class="sokvag">theworldmanifesto.github.io</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom left -->
+    <div class="vykort" style="top:105mm; left:0;">
+        <div class="roterad">
+        <div class="watermark" aria-hidden="true"></div>
+            <div class="text-block">
+                <div class="titel">The Machine Constitution</div>
+                <div class="punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
+                <div class="punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
+                <div class="punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
+                <div class="punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
+                <div class="avslutning">The World Manifesto</div>
+            </div>
+            <div class="qr-block">
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR">
+                <div class="sokvag">theworldmanifesto.github.io</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom right -->
+    <div class="vykort" style="top:105mm; left:148.5mm;">
+        <div class="roterad">
+        <div class="watermark" aria-hidden="true"></div>
+            <div class="text-block">
+                <div class="titel">The Machine Constitution</div>
+                <div class="punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
+                <div class="punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
+                <div class="punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
+                <div class="punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
+                <div class="avslutning">The World Manifesto</div>
+            </div>
+            <div class="qr-block">
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR">
+                <div class="sokvag">theworldmanifesto.github.io</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
