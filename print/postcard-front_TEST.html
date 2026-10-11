@@ -326,8 +326,23 @@
         display: block;
     }
 
-    /* URL-sökväg — nedre vänstra hörnet */
-    .bild-url {
+    /* URL-sökväg — Bild 1: 5 mm från överkant, vänster */
+    .bild-url-1 {
+        position: absolute;
+        top: 5mm;
+        left: 5mm;
+        z-index: 5;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 7pt;
+        color: #444;
+        letter-spacing: 0.1mm;
+        background: #fff;
+        padding: 1mm 2mm;
+        border-radius: 1mm;
+    }
+
+    /* URL-sökväg — Bild 2: nedre vänstra hörnet */
+    .bild-url-2 {
         position: absolute;
         bottom: 7mm;
         left: 5mm;
@@ -414,7 +429,7 @@
         <div class="bild-qr-2">
             <img src="../qr/qr-worldmanifesto.svg" alt="QR">
         </div>
-        <div class="bild-url">theworldmanifesto.github.io</div>
+        <div class="bild-url-2">theworldmanifesto.github.io</div>
     </div>
 
 </div>
