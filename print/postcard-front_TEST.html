@@ -294,13 +294,12 @@
         display: block;
         object-fit: cover;
     }
-    /* QR-block ovanpå bilden */
+    /* QR-kod — nedre högra hörnet */
     .bild-qr {
         position: absolute;
         bottom: 5mm;
         right: 5mm;
         z-index: 5;
-        text-align: center;
         background: #fff;
         padding: 2mm;
         border-radius: 1mm;
@@ -310,12 +309,20 @@
         height: 15mm;
         display: block;
     }
-    .bild-qr .sokvag {
+
+    /* URL-sökväg — nedre vänstra hörnet */
+    .bild-url {
+        position: absolute;
+        bottom: 7mm;
+        left: 5mm;
+        z-index: 5;
         font-family: 'Segoe UI', Arial, sans-serif;
-        font-size: 5.5pt;
-        color: #666;
+        font-size: 7pt;
+        color: #444;
         letter-spacing: 0.1mm;
-        margin-top: 1mm;
+        background: #fff;
+        padding: 1mm 2mm;
+        border-radius: 1mm;
     }
 
     @media print {
@@ -379,8 +386,8 @@
         <img src="../pics/postcard_freedomstaircase.png" alt="Freedom Staircase">
         <div class="bild-qr">
             <img src="../qr/qr-worldmanifesto.svg" alt="QR">
-            <div class="sokvag">theworldmanifesto.github.io</div>
         </div>
+        <div class="bild-url">theworldmanifesto.github.io</div>
     </div>
 
     <!-- ============================================ -->
@@ -390,8 +397,8 @@
         <img src="../pics/postcard_freedomstaircase_table.png" alt="Freedom Staircase with table">
         <div class="bild-qr">
             <img src="../qr/qr-worldmanifesto.svg" alt="QR">
-            <div class="sokvag">theworldmanifesto.github.io</div>
         </div>
+        <div class="bild-url">theworldmanifesto.github.io</div>
     </div>
 
 </div>
