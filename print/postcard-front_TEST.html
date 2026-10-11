@@ -294,17 +294,33 @@
         display: block;
         object-fit: cover;
     }
-    /* QR-kod — nedre högra hörnet */
-    .bild-qr {
+    /* QR-kod — Bild 1: 5 mm från överkant, just till vänster om mitten */
+    .bild-qr-1 {
         position: absolute;
-        bottom: 5mm;
-        right: 5mm;
+        top: 5mm;
+        right: 50%;
         z-index: 5;
         background: #fff;
         padding: 2mm;
         border-radius: 1mm;
     }
-    .bild-qr img {
+    .bild-qr-1 img {
+        width: 15mm;
+        height: 15mm;
+        display: block;
+    }
+
+    /* QR-kod — Bild 2: just ovan mitten, just till vänster om mitten */
+    .bild-qr-2 {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        z-index: 5;
+        background: #fff;
+        padding: 2mm;
+        border-radius: 1mm;
+    }
+    .bild-qr-2 img {
         width: 15mm;
         height: 15mm;
         display: block;
@@ -384,7 +400,7 @@
     <!-- ============================================ -->
     <div class="vykort bild-vykort" style="top:105mm; left:0;">
         <img src="../pics/postcard_freedomstaircase.png" alt="Freedom Staircase">
-        <div class="bild-qr">
+        <div class="bild-qr-1">
             <img src="../qr/qr-worldmanifesto.svg" alt="QR">
         </div>
         <div class="bild-url">theworldmanifesto.github.io</div>
@@ -395,7 +411,7 @@
     <!-- ============================================ -->
     <div class="vykort bild-vykort" style="top:105mm; left:148.5mm;">
         <img src="../pics/postcard_freedomstaircase_table.png" alt="Freedom Staircase with table">
-        <div class="bild-qr">
+        <div class="bild-qr-2">
             <img src="../qr/qr-worldmanifesto.svg" alt="QR">
         </div>
         <div class="bild-url">theworldmanifesto.github.io</div>
