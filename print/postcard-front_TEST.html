@@ -285,7 +285,6 @@
         height: 20mm;
         display: block;
     }
-
     /* ============================================ */
     /* FRIHETSTRAPPAN — bildvykort                  */
     /* ============================================ */
@@ -294,6 +293,29 @@
         height: 100%;
         display: block;
         object-fit: cover;
+    }
+    /* QR-block ovanpå bilden */
+    .bild-qr {
+        position: absolute;
+        bottom: 5mm;
+        right: 5mm;
+        z-index: 5;
+        text-align: center;
+        background: #fff;
+        padding: 2mm;
+        border-radius: 1mm;
+    }
+    .bild-qr img {
+        width: 15mm;
+        height: 15mm;
+        display: block;
+    }
+    .bild-qr .sokvag {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 5.5pt;
+        color: #666;
+        letter-spacing: 0.1mm;
+        margin-top: 1mm;
     }
 
     @media print {
@@ -355,6 +377,10 @@
     <!-- ============================================ -->
     <div class="vykort bild-vykort" style="top:105mm; left:0;">
         <img src="../pics/postcard_freedomstaircase.png" alt="Freedom Staircase">
+        <div class="bild-qr">
+            <img src="../qr/qr-worldmanifesto.svg" alt="QR">
+            <div class="sokvag">theworldmanifesto.github.io</div>
+        </div>
     </div>
 
     <!-- ============================================ -->
@@ -362,6 +388,10 @@
     <!-- ============================================ -->
     <div class="vykort bild-vykort" style="top:105mm; left:148.5mm;">
         <img src="../pics/postcard_freedomstaircase_table.png" alt="Freedom Staircase with table">
+        <div class="bild-qr">
+            <img src="../qr/qr-worldmanifesto.svg" alt="QR">
+            <div class="sokvag">theworldmanifesto.github.io</div>
+        </div>
     </div>
 
 </div>
