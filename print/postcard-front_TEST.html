@@ -342,7 +342,7 @@
         border-radius: 1mm;
     }
 
-    /* URL-sökväg — Bild 2: ovan QR-koden, till vänster om mitten */
+    /* URL-sökväg — Bild 2: roterad -90°, ovan QR-koden */
     .bild-url-2 {
         position: absolute;
         bottom: calc(62% + 5mm);
@@ -356,6 +356,8 @@
         background: #fff;
         padding: 0 2mm;
         border-radius: 1mm;
+        transform: rotate(-90deg);
+        transform-origin: center center;
     }
 
     @media print {
