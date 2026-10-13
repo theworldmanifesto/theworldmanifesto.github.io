@@ -1,1 +1,26 @@
-
+{
+    "sv": {
+        "title": "Maskinkonstitutionen",
+        "p1_strong": "Ingen bestraffande beskattning:",
+        "p1_text": "Istället för att beskatta robotar (vilket bromsar utvecklingen) tas roboten ur privat ägande.",
+        "p2_strong": "Självägande infrastruktur:",
+        "p2_text": "Om roboten äger sig själv och sin energi finns ingen aktieägare eller bank som kräver ränta eller vinst.",
+        "p3_strong": "Fysisk överflöd:",
+        "p3_text": "När roboten är skuldfri och inte har någon ägare att berika blir dess enda uppgift att producera gratis. Eftersom råmaterialet också utvinns av andra självägande robotar sjunker priset till noll.",
+        "p4_strong": "Varför arbeta?:",
+        "p4_text": "När maskinen gör det 1 000 % billigare med geometrisk precision! Lämna konkursboet. Aktivera din suveränitet.",
+        "ending": "Världsmanifestet"
+    },
+    "en": {
+        "title": "The Machine Constitution",
+        "p1_strong": "No Punitive Taxation:",
+        "p1_text": "Instead of taxing robots (which slows down development), the robot is removed from private ownership.",
+        "p2_strong": "Self-Owning Infrastructure:",
+        "p2_text": "If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.",
+        "p3_strong": "Physical Abundance:",
+        "p3_text": "When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.",
+        "p4_strong": "Why work?:",
+        "p4_text": "When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.",
+        "ending": "The World Manifesto"
+    }
+}
