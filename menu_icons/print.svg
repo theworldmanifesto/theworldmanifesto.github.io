@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Vykortskropp -->
+  <rect x="6" y="12" width="52" height="40" rx="4" fill="#ffffff" stroke="#0284c7" stroke-width="3"/>
+  
+  <!-- Mittdelare -->
+  <line x1="32" y1="26" x2="32" y2="46" stroke="#38bdf8" stroke-width="2" stroke-dasharray="2 2"/>
+  
+  <!-- Frimärke -->
+  <rect x="42" y="18" width="12" height="14" fill="#ef4444" rx="1"/>
+  <circle cx="48" cy="25" r="3" fill="#f59e0b"/>
+  
+  <!-- Adresslinjer -->
+  <line x1="37" y1="32" x2="52" y2="32" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="37" y1="38" x2="52" y2="38" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+  <line x1="37" y1="44" x2="48" y2="44" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Sol & Berg på vykortssidan -->
+  <circle cx="16" cy="24" r="4" fill="#f59e0b"/>
+  <polygon points="10,44 18,32 26,44" fill="#10b981"/>
+</svg>
