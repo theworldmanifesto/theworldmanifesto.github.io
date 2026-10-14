@@ -356,10 +356,16 @@
     /* VYKORT 4 — The World Manifesto in 4 Steps    */
     /* ============================================ */
     .fs-wrapper {
-        padding: 10mm 12mm;
+        padding: 8mm 12mm 6mm 12mm;
         display: flex;
         flex-direction: column;
         height: 100%;
+    }
+    .fs-text-block {
+        flex: 1 1 auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
     .fs-titel {
         font-family: 'Arimo', Arial, sans-serif;
@@ -370,7 +376,6 @@
         line-height: 1.2;
     }
     .fs-steps {
-        flex: 1 1 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -383,6 +388,26 @@
         text-align: left;
     }
     .fs-step:last-child { margin-bottom: 0; }
+
+    /* QR-block — samma stil som vykort 1 */
+    .fs-qr-block {
+        flex: 0 0 auto;
+        text-align: center;
+        padding-top: 2mm;
+    }
+    .fs-qr-block img {
+        width: 18mm;
+        height: 18mm;
+        display: block;
+        margin: 0 auto 1mm auto;
+    }
+    .fs-sokvag {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        font-size: 6.5pt;
+        text-align: center;
+        color: #666;
+        letter-spacing: 0.1mm;
+    }
 
     @media print {
         body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -446,7 +471,13 @@
     <!-- NEDRE HÖGRA: The World Manifesto in 4 Steps   -->
     <!-- ============================================ -->
     <div class="vykort" style="top:105mm; left:148.5mm;">
-        <div class="fs-wrapper" data-postcard="four_steps"></div>
+        <div class="fs-wrapper">
+            <div class="fs-text-block" data-postcard="four_steps"></div>
+            <div class="fs-qr-block">
+                <img src="../qr/qr-worldmanifesto.svg" alt="QR">
+                <div class="fs-sokvag">theworldmanifesto.github.io</div>
+            </div>
+        </div>
     </div>
 
 </div>
