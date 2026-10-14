@@ -34,21 +34,23 @@ async function loadTranslations(lang) {
 
 function applyTranslations(t) {
     // Sätt text på alla element med id
-    const map = {
-        'print-title': t.title,
-        'print-intro': t.intro,
-        'business-cards-title': t.business_cards_title,
-        'business-cards-link': t.business_cards_link,
-        'postcards-title': t.postcards_title,
-        'postcards-front': t.postcards_front,
-        'postcards-back': t.postcards_back,
-        'postcards-note': t.postcards_note,
-        'posters-title': t.posters_title,
-        'posters-coming': t.posters_coming,
-        'poster-a4': t.poster_a4,
-        'qr-title': t.qr_title,
-        'qr-link': t.qr_link
-    };
+const map = {
+    'print-title': t.title,
+    'print-intro': t.intro,
+    'business-cards-title': t.business_cards_title,
+    'business-cards-link': t.business_cards_link,
+    'business-cards-note': t.business_cards_note,
+    'postcards-title': t.postcards_title,
+    'postcards-front': t.postcards_front,
+    'postcards-back': t.postcards_back,
+    'postcards-note': t.postcards_note,
+    'postcards-paper': t.postcards_paper,
+    'posters-title': t.posters_title,
+    'posters-coming': t.posters_coming,
+    'poster-a4': t.poster_a4,
+    'qr-title': t.qr_title,
+    'qr-link': t.qr_link
+};
 
     for (const [id, text] of Object.entries(map)) {
         const el = document.getElementById(id);
