@@ -1,1 +1,34 @@
-
+{
+    "sv": {
+        "title": "Tryck",
+        "intro": "Ladda ner och skriv ut material om Världsmanifestet.",
+        "business_cards_title": "Visitkort",
+        "business_cards_link": "A4-mall — 10 kort per ark",
+        "postcards_title": "Vykort",
+        "postcards_front": "Framsida",
+        "postcards_back": "Baksida",
+        "postcards_note": "Skriv ut framsidan och baksidan på samma ark och klipp längs linjerna.",
+        "posters_title": "Affischer",
+        "posters_coming": "Kommer snart.",
+        "poster_a4": "A4-affisch — Maskinkonstitutionen",
+        "poster_a5": "A5-affisch — Maskinkonstitutionen",
+        "qr_title": "QR-kod",
+        "qr_link": "Visa och ladda ner QR-koden"
+    },
+    "en": {
+        "title": "Print",
+        "intro": "Download and print materials about The World Manifesto.",
+        "business_cards_title": "Business Cards",
+        "business_cards_link": "A4 template — 10 cards per sheet",
+        "postcards_title": "Postcards",
+        "postcards_front": "Front",
+        "postcards_back": "Back",
+        "postcards_note": "Print the front and back on the same sheet, then cut along the lines.",
+        "posters_title": "Posters",
+        "posters_coming": "Coming soon.",
+        "poster_a4": "A4 Poster — The Machine Constitution",
+        "poster_a5": "A5 Poster — The Machine Constitution",
+        "qr_title": "QR Code",
+        "qr_link": "View and download the QR code"
+    }
+}
