@@ -18,7 +18,7 @@ import { AVAILABLE, pickBestLanguage } from '../../lang/js/lang.js';
 const RTL_LANGS = ['ar', 'he', 'ur', 'fa'];
 
 // Var ligger JSON-filerna (relativt postcard.js)?
-const JSON_BASE = '../json/';
+const JSON_BASE = 'json/';
 
 // Hämta språk från URL eller webbläsaren
 function getCurrentLang() {
