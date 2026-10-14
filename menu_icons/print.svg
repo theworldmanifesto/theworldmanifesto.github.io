@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Mjuk skugga -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- Papperston -->
+    <linearGradient id="cardPaper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Frimärke -->
+    <linearGradient id="stampGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4b2b"/>
+      <stop offset="100%" stop-color="#ff416c"/>
+    </linearGradient>
+
+    <!-- Tropiskt motiv i frimärket -->
+    <radialGradient id="sunGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#cardShadow)" transform="rotate(-6 64 64)">
+    <!-- Vykortsbas -->
+    <rect x="14" y="24" width="100" height="80" rx="6" fill="url(#cardPaper)" stroke="#cbd5e1" stroke-width="2"/>
+
+    <!-- Frimärke uppe till höger -->
+    <g transform="translate(80, 30)">
+      <rect x="0" y="0" width="26" height="32" fill="#e2e8f0" rx="1"/>
+      <rect x="3" y="3" width="20" height="26" fill="url(#stampGrad)" rx="1"/>
+      <circle cx="13" cy="16" r="6" fill="url(#sunGrad)"/>
+      <path d="M 9 16 C 11 13 15 13 17 16 C 15 19 11 19 9 16 Z" fill="#10b981"/>
+    </g>
+
+    <!-- Poststämpel -->
+    <g stroke="#94a3b8" stroke-width="1.5" fill="none" opacity="0.75">
+      <path d="M 58 38 Q 66 34 74 38 T 82 38"/>
+      <path d="M 58 44 Q 66 40 74 44 T 82 44"/>
+      <circle cx="62" cy="41" r="9" stroke="#94a3b8" stroke-width="1.5"/>
+    </g>
+
+    <!-- Mittlinje -->
+    <line x1="64" y1="58" x2="64" y2="92" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3 3"/>
+
+    <!-- Adresslinjer -->
+    <line x1="72" y1="66" x2="104" y2="66" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="72" y1="76" x2="104" y2="76" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+    <line x1="72" y1="86" x2="96" y2="86" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Motiv/Illustration till vänster -->
+    <path d="M 28 88 Q 30 68 40 62" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 40 62 Q 32 56 24 60" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 40 62 Q 44 52 52 56" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="26" cy="78" r="5" fill="#f59e0b" opacity="0.8"/>
+  </g>
+</svg>
