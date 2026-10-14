@@ -8,8 +8,8 @@
 //   <div data-postcard="freedom_staircase"></div>
 //   <div data-postcard="slogan_quote"></div>
 //
-// Filen läser ?lang=xx från URL:en, hämtar rätt JSON från
-// ../json/ och fyller i rätt element. Allt annat lämnas orört.
+// Filen läser ?lang=xx från URL:en, hämtar rätt JSON och
+// fyller i rätt element. Allt annat lämnas orört.
 // ============================================================
 
 import { AVAILABLE, pickBestLanguage } from '../../lang/js/lang.js';
@@ -17,8 +17,11 @@ import { AVAILABLE, pickBestLanguage } from '../../lang/js/lang.js';
 // RTL-språk — de som skrivs från höger till vänster
 const RTL_LANGS = ['ar', 'he', 'ur', 'fa'];
 
-// Var ligger JSON-filerna (relativt postcard.js)?
+// JSON-filer i print/json/ (relativt till postcard_front.html)
 const JSON_BASE = 'json/';
+
+// four_steps.json ligger i roten (används av index.html)
+const FOUR_STEPS_URL = '../../four_steps.json';
 
 // Hämta språk från URL eller webbläsaren
 function getCurrentLang() {
@@ -30,7 +33,7 @@ function getCurrentLang() {
     return pickBestLanguage();
 }
 
-// Hämta en JSON-fil
+// Hämta en JSON-fil från print/json/
 async function fetchJson(name) {
     const url = JSON_BASE + name + '.json';
     const res = await fetch(url);
@@ -71,15 +74,19 @@ async function fillMachineConstitution(el, lang) {
 
 // ============================================================
 // VYKORT 4 — The World Manifesto in 4 Steps
-// (använder four_steps.json som redan är översatt)
+// (använder four_steps.json i roten)
 // ============================================================
 async function fillFourSteps(el, lang) {
-    const data = await fetchJson('four_steps');
+    const res = await fetch(FOUR_STEPS_URL);
+    if (!res.ok) {
+        console.error('Kunde inte hämta four_steps.json:', res.status);
+        return;
+    }
+    const data = await res.json();
     if (!data || !data[lang]) return;
     const t = data[lang];
     applyDirection(el, lang);
 
-    // Bygg stegen som en lista
     const stepsHtml = t.steps.map(s => `<div class="fs-step">${s}</div>`).join('');
 
     el.innerHTML = `
@@ -97,7 +104,6 @@ async function fillFreedomStaircase(el, lang) {
     const t = data[lang];
     applyDirection(el, lang);
 
-    // Bygg tabellen: första raden är rubriker, resten är steg
     const headers = t.headers.map(h => `<th>${h}</th>`).join('');
     const rows = t.rows.map(row =>
         '<tr>' + row.map(cell => `<td>${cell}</td>`).join('') + '</tr>'
@@ -134,27 +140,31 @@ async function fillSloganQuote(el, lang) {
 document.addEventListener('DOMContentLoaded', async function() {
     const lang = getCurrentLang();
 
-    // Hitta alla element som ska fyllas
     const elements = document.querySelectorAll('[data-postcard]');
 
     for (const el of elements) {
         const type = el.getAttribute('data-postcard');
 
-        switch (type) {
-            case 'machine_constitution':
-                await fillMachineConstitution(el, lang);
-                break;
-            case 'four_steps':
-                await fillFourSteps(el, lang);
-                break;
-            case 'freedom_staircase':
-                await fillFreedomStaircase(el, lang);
-                break;
-            case 'slogan_quote':
-                await fillSloganQuote(el, lang);
-                break;
-            default:
-                console.warn('Okänd vykortstyp:', type);
+        try {
+            switch (type) {
+                case 'machine_constitution':
+                    await fillMachineConstitution(el, lang);
+                    break;
+                case 'four_steps':
+                    await fillFourSteps(el, lang);
+                    break;
+                case 'freedom_staircase':
+                    await fillFreedomStaircase(el, lang);
+                    break;
+                case 'slogan_quote':
+                    await fillSloganQuote(el, lang);
+                    break;
+                default:
+                    console.warn('Okänd vykortstyp:', type);
+            }
+        } catch (err) {
+            // Ett fel i ett vykort ska inte stoppa de andra
+            console.error('Fel vid ifyllning av', type, err);
         }
     }
 });
