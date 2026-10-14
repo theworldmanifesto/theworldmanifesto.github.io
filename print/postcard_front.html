@@ -81,7 +81,6 @@
     /* ============================================ */
     /* VATTENSTÄMPEL                                */
     /* ============================================ */
-    /* Standard — tre jordglober i rad (för Slogan & Quote) */
     .watermark-slogan {
         position: absolute;
         top: 80%;
@@ -97,7 +96,6 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    /* Maskinkonstitutionen — en jordglob */
     .watermark-mc {
         position: absolute;
         bottom: 10%;
@@ -285,6 +283,7 @@
         height: 20mm;
         display: block;
     }
+
     /* ============================================ */
     /* FRIHETSTRAPPAN — bildvykort                  */
     /* ============================================ */
@@ -294,7 +293,6 @@
         display: block;
         object-fit: cover;
     }
-    /* QR-kod — Bild 1: 5 mm från överkant, just till vänster om mitten */
     .bild-qr-1 {
         position: absolute;
         top: 5mm;
@@ -309,8 +307,6 @@
         height: 15mm;
         display: block;
     }
-
-    /* QR-kod — Bild 2: just ovan mitten, just till vänster om mitten */
     .bild-qr-2 {
         position: absolute;
         bottom: 50%;
@@ -325,8 +321,6 @@
         height: 15mm;
         display: block;
     }
-
-    /* URL-sökväg — Bild 1: 5 mm från överkant, vänster */
     .bild-url-1 {
         position: absolute;
         top: 5mm;
@@ -341,8 +335,6 @@
         padding: 0 2mm;
         border-radius: 1mm;
     }
-
-    /* URL-sökväg — Bild 2: roterad -90°, ovan QR-koden */
     .bild-url-2 {
         position: absolute;
         bottom: calc(50% + 9mm);
@@ -360,6 +352,38 @@
         transform-origin: center center;
     }
 
+    /* ============================================ */
+    /* VYKORT 4 — The World Manifesto in 4 Steps    */
+    /* ============================================ */
+    .fs-wrapper {
+        padding: 10mm 12mm;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .fs-titel {
+        font-family: 'Arimo', Arial, sans-serif;
+        font-size: 13pt;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 4mm;
+        line-height: 1.2;
+    }
+    .fs-steps {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Gelasio', Georgia, serif;
+        font-size: 8.5pt;
+        line-height: 1.35;
+    }
+    .fs-step {
+        margin-bottom: 2.5mm;
+        text-align: left;
+    }
+    .fs-step:last-child { margin-bottom: 0; }
+
     @media print {
         body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     }
@@ -376,14 +400,7 @@
     <div class="vykort" style="top:0; left:0;">
         <div class="mc-roterad">
             <div class="watermark-mc" aria-hidden="true"></div>
-            <div class="mc-text-block">
-                <div class="mc-titel">The Machine Constitution</div>
-                <div class="mc-punkt"><strong>No Punitive Taxation:</strong> Instead of taxing robots (which slows down development), the robot is removed from private ownership.</div>
-                <div class="mc-punkt"><strong>Self-Owning Infrastructure:</strong> If the robot owns itself and its energy, there is no shareholder or bank demanding interest or profit.</div>
-                <div class="mc-punkt"><strong>Physical Abundance:</strong> When the robot has no debt and no owner to enrich, its sole task becomes to produce for free. Since the raw materials are also extracted by other self-owning robots, the price drops to zero.</div>
-                <div class="mc-punkt"><strong>Why work?:</strong> When the machine does it 1,000% cheaper with geometric precision! Leave the bankruptcy estate. Activate your sovereignty.</div>
-                <div class="mc-avslutning">The World Manifesto</div>
-            </div>
+            <div class="mc-text-block" data-postcard="machine_constitution"></div>
             <div class="mc-qr-block">
                 <img src="../qr/qr-worldmanifesto.svg" alt="QR">
                 <div class="mc-sokvag">theworldmanifesto.github.io</div>
@@ -415,7 +432,7 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- NEDRE VÄNSTRA: Frihetstrappan #1              -->
+    <!-- NEDRE VÄNSTRA: Frihetstrappan (bild)          -->
     <!-- ============================================ -->
     <div class="vykort bild-vykort" style="top:105mm; left:0;">
         <img src="../pics/postcard_freedomstaircase.png" alt="Freedom Staircase">
@@ -426,16 +443,14 @@
     </div>
 
     <!-- ============================================ -->
-    <!-- NEDRE HÖGRA: Frihetstrappan #2 (med tabell)   -->
+    <!-- NEDRE HÖGRA: The World Manifesto in 4 Steps   -->
     <!-- ============================================ -->
-    <div class="vykort bild-vykort" style="top:105mm; left:148.5mm;">
-        <img src="../pics/postcard_freedomstaircase_table.png" alt="Freedom Staircase with table">
-        <div class="bild-qr-2">
-            <img src="../qr/qr-worldmanifesto.svg" alt="QR">
-        </div>
-        <div class="bild-url-2">theworldmanifesto.github.io</div>
+    <div class="vykort" style="top:105mm; left:148.5mm;">
+        <div class="fs-wrapper" data-postcard="four_steps"></div>
     </div>
 
 </div>
+
+<script type="module" src="js/postcard.js"></script>
 </body>
 </html>
