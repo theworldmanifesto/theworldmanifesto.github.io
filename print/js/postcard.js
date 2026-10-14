@@ -12,7 +12,7 @@
 // ../json/ och fyller i rätt element. Allt annat lämnas orört.
 // ============================================================
 
-import { AVAILABLE, pickBestLanguage } from '../lang/js/lang.js';
+import { AVAILABLE, pickBestLanguage } from '../../lang/js/lang.js';
 
 // RTL-språk — de som skrivs från höger till vänster
 const RTL_LANGS = ['ar', 'he', 'ur', 'fa'];
