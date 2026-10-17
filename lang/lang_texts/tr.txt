@@ -608,49 +608,33 @@ GNR Ofisi'nin YZ'si, endeksi bundan önemli ölçüde daha sık aralıklarla gü
 Aşağıda, borcun adım adım egemenliğe nasıl dönüştürüleceğine dair anayasal plan yer almaktadır.
 
 
+
 3. Özgürlük Merdiveni: Anayasal Aşamalı Kaldırma
 
 
-Gayri Safi Milli Kaynak Borç Silme Egemenlik Payı
+Gayri Safi Milli Kaynak		Borç Silme					Egemenlik Payı
+(Ücretsiz Karşılama Oranı)	(Anayasa Hukukuna Göre)		(Devlet Ödemesi)
+
+%25							Tüm özel borçların %25'i	İlk ödeme etkinleştirilir.
+(Temel Gıda, Enerji			derhal silinir.				Vatandaşlar, henüz ücretsiz
+ve Elektrik)											olmayan şeyler için satın
+														alma gücü alırlar.
+
+%50							Kalan tüm borçların %50'si	Pay artar, milli robot
+(Barınma ve Ulaşım)			silinir.					parkının üretim kapasitesiyle
+														orantılı olarak.
+
+%75							Tüm borçların %75'i			Pay optimize edilir. Para
+(Teknoloji, Premium			banka kayıtlarından			ihtiyacı, lüks alanı
+ve Eğitim)					silinir.					küçüldükçe dramatik
+														olarak düşer.
+
+%100						Tüm borçlar ve para			Sistem tamamlandı. Para
+(Kesin Bolluk)				var olmaktan çıkmıştır.		birimleri geçersiz hale gelir;
+														tamamen serbest bir ekonomi
+														hüküm sürer.
 
 
-(Ücretsiz Karşılama Oranı) (Anayasa Hukukuna Göre) (Devlet Ödemesi)
-
-%25 Tüm özel borçların %25'i İlk ödeme etkinleştirilir.
-
-(Temel Gıda, Enerji derhal silinir. Vatandaşlar, henüz ücretsiz
-
-ve Elektrik) olmayan şeyler için satın
-
-
-
-alma gücü alırlar.
-
-
-%50 Kalan tüm borçların %50'si Pay artar, milli robot
-
-(Barınma ve Ulaşım) silinir. parkının üretim kapasitesiyle
-
-orantılı olarak.
-
-
-%75 Tüm borçların %75'i Pay optimize edilir. Para
-
-(Teknoloji, Premium banka kayıtlarından silinir. ihtiyacı, lüks alanı
-
-ve Eğitim) küçüldükçe dramatik
-
-
-olarak düşer.
-
-%100 Tüm borçlar ve para Sistem tamamlandı. Para
-
-(Kesin Bolluk) var olmaktan çıkmıştır. birimleri geçersiz hale gelir;
-
-
-tamamen serbest bir ekonomi
-
-hüküm sürer.
 
 4. Özgürlük Merdiveni'nin Aşamalarının Gözden Geçirilmesi
 
