@@ -616,18 +616,18 @@ Gayri Safi Milli Kaynak	Borç Silme				Egemenlik Payı
 (Ücretsiz Karşılama		(Anayasa Hukukuna		(Devlet Ödemesi)
 Oranı)					Göre)
 
-%25						Tüm özel borçların		İlk ödeme etkinleştirilir.
-(Temel Gıda, Enerji		%25'i derhal silinir.	Vatandaşlar, henüz ücretsiz
-ve Elektrik)									olmayan şeyler için satın
+%25					Tüm özel borçların		İlk ödeme etkinleştirilir.
+(Temel Gıda, Enerji		%25'i derhal silinir.		Vatandaşlar, henüz ücretsiz
+ve Elektrik)										olmayan şeyler için satın
 												alma gücü alırlar.
 
-%50						Kalan tüm borçların		Pay artar, milli robot
+%50					Kalan tüm borçların		Pay artar, milli robot
 (Barınma ve Ulaşım)		%50'si silinir.			parkının üretim kapasitesiyle
 												orantılı olarak.
 
-%75						Tüm borçların %75'i		Pay optimize edilir. Para
+%75					Tüm borçların %75'i		Pay optimize edilir. Para
 (Teknoloji, Premium		banka kayıtlarından		ihtiyacı, lüks alanı
-ve Eğitim)				silinir.				küçüldükçe dramatik
+ve Eğitim)				silinir.					küçüldükçe dramatik
 												olarak düşer.
 
 %100					Tüm borçlar ve para		Sistem tamamlandı. Para
