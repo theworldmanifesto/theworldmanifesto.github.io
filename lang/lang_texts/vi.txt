@@ -622,7 +622,7 @@ Dưới đây là bản thiết kế hiến định về cách nợ được chu
 3. Nấc Thang Tự Do: Sự Loại Bỏ Dần Theo Hiến Định
 
 
-Tổng Tài nguyên Quốc gia		Xóa Nợ				Phần Chia Chủ Quyền
+Tổng Tài nguyên Quốc gia	Xóa Nợ				Phần Chia Chủ Quyền
 (Tỷ lệ Bao phủ Miễn phí)		(Theo Luật Hiến pháp)		(Chi trả của Nhà nước)
 
 25%						25% của tất cả các khoản	Đợt chi trả đầu tiên được kích hoạt.
@@ -635,9 +635,9 @@ Năng lượng & Điện)			ngay lập tức.			cho những gì chưa miễn ph�
 
 75%						75% của tất cả các khoản	Phần chia được tối ưu hóa.
 (Công nghệ, Cao cấp			nợ được xóa khỏi sổ sách	Nhu cầu tiền giảm mạnh
-& Giáo dục)				ngân hàng.			khi lĩnh vực xa xỉ thu hẹp.
+& Giáo dục)					ngân hàng.			khi lĩnh vực xa xỉ thu hẹp.
 
-100%					Tất cả các khoản nợ và	Hệ thống hoàn tất. Tiền tệ
+100%						Tất cả các khoản nợ và	Hệ thống hoàn tất. Tiền tệ
 (Sự Phong phú				tiền đã không còn tồn tại.	trở nên lỗi thời; một nền
 Dứt khoát)										kinh tế tự do toàn bộ
 											chiếm ưu thế.
