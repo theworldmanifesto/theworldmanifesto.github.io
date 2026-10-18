@@ -625,23 +625,28 @@ Risorsa Nazionale Lorda		Cancellazione del		Quota di Sovranità
 Gratuita)					Legge Costituzionale)
 
 25%							25% di tutti i debiti	Il primo pagamento viene
-(Cibo di Base, Energia		privati vengono			attivato. I cittadini ricevono
-ed Elettricità)				cancellati				potere d'acquisto per ciò che
-							immediatamente.			non è ancora gratuito.
+(Cibo di Base, Energia		privati vengono			attivato. I cittadini
+ed Elettricità)				cancellati				ricevono potere
+							immediatamente.			d'acquisto per ciò che
+													non è ancora gratuito.
 
 50%							50% di tutti i debiti	La quota aumenta in
-(Alloggio e Trasporto)		rimanenti vengono		proporzione alla capacità
-							cancellati.				produttiva del parco robotico
-													nazionale.
+(Alloggio e Trasporto)		rimanenti vengono		proporzione alla
+							cancellati.				capacità produttiva del
+													parco robotico nazionale.
 
-75%							75% di tutti i debiti	La quota viene ottimizzata. Il
-(Tecnologia, Premium		vengono cancellati		bisogno di denaro diminuisce
-e Istruzione)				dai libri bancari.		drasticamente man mano che
-													la sfera del lusso si restringe.
+75%							75% di tutti i debiti	La quota viene
+(Tecnologia, Premium		vengono cancellati		ottimizzata. Il bisogno
+e Istruzione)				dai libri bancari.		di denaro diminuisce
+													drasticamente man mano
+													che la sfera del lusso
+													si restringe.
 
-100%						Tutti i debiti e il		Sistema completo. Le valute
-(L'Abbondanza				denaro hanno cessato	diventano obsolete; prevale
-Definitiva)					di esistere.			un'economia totalmente libera.
+100%						Tutti i debiti e il		Sistema completo. Le
+(L'Abbondanza				denaro hanno cessato	valute diventano
+Definitiva)					di esistere.			obsolete; prevale
+													un'economia totalmente
+													libera.
 
 
 
