@@ -624,27 +624,27 @@ Risorsa Nazionale Lorda		Cancellazione del		Quota di Sovranità
 (Tasso di Copertura			Debito (Secondo la		(Pagamento Statale)
 Gratuita)					Legge Costituzionale)
 
-25%							25% di tutti i debiti	Il primo pagamento viene
+25%						25% di tutti i debiti		Il primo pagamento viene
 (Cibo di Base, Energia		privati vengono			attivato. I cittadini
 ed Elettricità)				cancellati				ricevono potere
-							immediatamente.			d'acquisto per ciò che
+							immediatamente.		d'acquisto per ciò che
 													non è ancora gratuito.
 
-50%							50% di tutti i debiti	La quota aumenta in
+50%						50% di tutti i debiti		La quota aumenta in
 (Alloggio e Trasporto)		rimanenti vengono		proporzione alla
 							cancellati.				capacità produttiva del
 													parco robotico nazionale.
 
-75%							75% di tutti i debiti	La quota viene
+75%						75% di tutti i debiti		La quota viene
 (Tecnologia, Premium		vengono cancellati		ottimizzata. Il bisogno
-e Istruzione)				dai libri bancari.		di denaro diminuisce
+e Istruzione)					dai libri bancari.		di denaro diminuisce
 													drasticamente man mano
 													che la sfera del lusso
 													si restringe.
 
-100%						Tutti i debiti e il		Sistema completo. Le
+100%						Tutti i debiti e il			Sistema completo. Le
 (L'Abbondanza				denaro hanno cessato	valute diventano
-Definitiva)					di esistere.			obsolete; prevale
+Definitiva)					di esistere.				obsolete; prevale
 													un'economia totalmente
 													libera.
 
