@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Demos | Instrumental Compositions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Anpassade stilar för stilrena ljudspelare */
+        audio::-webkit-media-controls-panel {
+            background-color: #f8fafc;
+            border-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
 
+    <!-- Header / Navigation -->
+    <header class="w-full border-b border-slate-200 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="inline-block w-3 h-3 rounded-full bg-emerald-500"></span>
+                <span class="font-semibold text-slate-900 tracking-tight text-sm uppercase">Sony Music Pitch Portfolio</span>
+            </div>
+            <span class="text-xs font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
+                Confidential A&R Preview
+            </span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-12 w-full flex-grow">
+        
+        <!-- Hero Section -->
+        <div class="mb-12 text-center md:text-left">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+                Instrumental Master Tracks
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+                Exklusiva kompositioner tillgängliga för artistinspelningar, film/TV-sync, dataspel och reklam. 
+                Producerade och levererade med fullständiga rättigheter för licensiering.
+            </p>
+        </div>
+
+        <!-- Audio Players Section (Högt uppe för snabb åtkomst) -->
+        <div class="space-y-6 mb-16">
+            <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
+                Utvalda Demos (Klicka för att lyssna)
+            </h2>
+
+            <!-- Låt 1: Surf Rock -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                                Surf Rock / Instro
+                            </span>
+                            <span class="text-slate-400 text-xs font-medium">2:25 min</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Surf Rock Instrumental</h3>
+                        <p class="text-sm text-slate-500 mt-1">
+                            Drivande tempo med tungt klangreverb och twangy gitarrlinjer. 
+                            <span class="text-slate-700 font-medium">Stilreferens:</span> Brian Setzers <em>"Hot Love"</em> (från albumet <em>Setzer Goes Instru-mental!</em>).
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Audio Player -->
+                <div class="w-full bg-slate-50 p-2 rounded-xl border border-slate-100">
+                    <!-- Ersätt 'surf-rock-demo.mp3' med sökvägen till din faktiska ljudfil -->
+                    <audio controls class="w-full h-10 outline-none">
+                        <source src="surf-rock-demo.mp3" type="audio/mpeg">
+                        Din webbläsare stöder inte ljudspelaren.
+                    </audio>
+                </div>
+                
+                <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-400">
+                    <span>• Lämplig för: Virtuosa gitarrartister</span>
+                    <span>• Film & Action Sync</span>
+                    <span>• Reklam</span>
+                </div>
+            </div>
+
+            <!-- Låt 2: Synth-Disco -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                                Synth-Disco / Sync
+                            </span>
+                            <span class="text-slate-400 text-xs font-medium">Full Track</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Synth-Disco Groove</h3>
+                        <p class="text-sm text-slate-500 mt-1">
+                            Energifylld, rytmisk och upplyftande disko med ett modernt elektroniskt gung och organiskt trumkomp.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Audio Player -->
+                <div class="w-full bg-slate-50 p-2 rounded-xl border border-slate-100">
+                    <!-- Ersätt 'synth-disco-demo.mp3' med sökvägen till din faktiska ljudfil -->
+                    <audio controls class="w-full h-10 outline-none">
+                        <source src="synth-disco-demo.mp3" type="audio/mpeg">
+                        Din webbläsare stöder inte ljudspelaren.
+                    </audio>
+                </div>
+                
+                <div class="mt-3 flex flex-wrap gap-2 text-xs text-slate-400">
+                    <span>• Lämplig för: Dataspels-soundtrack</span>
+                    <span>• Klubb & DJ</span>
+                    <span>• TV/Commercial Sync</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Presentation & Contact Section -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+            <div class="max-w-2xl">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Kompositör & Producent</h3>
+                <h4 class="text-2xl font-bold text-slate-900 mb-3">Roger Youngtown</h4>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                    Fokuserad på att skapa skräddarsydda, karaktärsfulla melodier och produktioner för både etablerade artister och globala medier. Verksam oberoende med full kontroll över upphovsrätt och masterrättigheter.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100 text-sm">
+                    <div>
+                        <span class="block text-xs text-slate-400 font-medium uppercase">Direktkontakt</span>
+                        <a href="mailto:demo.se@sonymusic.com" class="text-slate-900 font-semibold hover:underline">
+                            Kontakt via A&R-pitch
+                        </a>
+                    </div>
+                    <div>
+                        <span class="block text-xs text-slate-400 font-medium uppercase">Huvudsajt & Projekt</span>
+                        <a href="https://theworldmanifesto.github.io/" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center gap-1">
+                            The World Manifesto 
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-200 bg-white py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+            <p>© 2026 Roger Youngtown / Sven Roger Yngerstedt. Alla rättigheter förbehållna.</p>
+            <p>Pitchad exklusivt till Sony Music Sweden A&R.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
