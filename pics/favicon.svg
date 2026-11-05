@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Definierar en cirkel som används för att klippa formen -->
+  <defs>
+    <clipPath id="cirkel">
+      <circle cx="50" cy="50" r="50" />
+    </clipPath>
+  </defs>
+
+  <!-- Grupperar trianglarna och applicerar cirkelklippningen -->
+  <g clip-path="url(#cirkel)">
+    <!-- Röd triangel (vänster) -->
+    <polygon points="0,0 50,50 0,100" fill="#FF0000" />
+    
+    <!-- Gul triangel (topp) -->
+    <polygon points="0,0 100,0 50,50" fill="#FFFF00" />
+    
+    <!-- Blå triangel (höger) -->
+    <polygon points="100,0 100,100 50,50" fill="#0000FF" />
+    
+    <!-- Grön triangel (botten) -->
+    <polygon points="0,100 50,50 100,100" fill="#00FF00" />
+  </g>
+</svg>
